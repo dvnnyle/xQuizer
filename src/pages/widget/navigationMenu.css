@@ -37,3 +37,10 @@
   height: 20px;
   transition: transform 0.3s ease;
 }
+
+@media (max-width: 768px) {
+  .nav-menu {
+    bottom: 1rem;
+    left: 1rem;
+  }
+}
