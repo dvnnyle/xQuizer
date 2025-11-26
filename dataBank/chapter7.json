@@ -136,7 +136,7 @@
     ],
     "answerIndex": 1,
     "answer": "Because that belongs to later design decisions",
-    "explanation": "Requirements describe what and which qualities, not how to implement them. The 'how' is decided later during design.<br><br><strong>Example:</strong> Requirement: 'Users must securely log in.' This doesn't specify OAuth, passwords, or biometrics—that's the how. Designers later choose the best authentication method.<br><br><strong>Example:</strong> Requirement: 'Users must securely log in.' This doesn't specify OAuth, passwords, or biometrics—that's the how. Designers later choose the best authentication method.",
+    "explanation": "Requirements describe what and which qualities, not how to implement them. The 'how' is decided later during design.<br><br><strong>Example:</strong> Requirement: 'Users must securely log in.' This doesn't specify OAuth, passwords, or biometrics—that's the how. Designers later choose the best authentication method.",
     "shortExplanation": "Requirements define what, not how—implementation comes during design."
   },
   {
@@ -150,7 +150,7 @@
     ],
     "answerIndex": 0,
     "answer": "Assuming requirements exist ready-made without much interaction",
-    "explanation": "The term 'requirements gathering' suggests that requirements are just lying around to be picked up, with little interaction.<br><br><strong>Example:</strong> The term suggests requirements are like apples to pick from a tree. Reality: stakeholders have vague wishes ('make it better'), not clear requirements. Discovery requires deep conversation.<br><br><strong>Example:</strong> The term suggests requirements are like apples to pick from a tree. Reality: stakeholders have vague wishes ('make it better'), not clear requirements. Discovery requires deep conversation.",
+    "explanation": "The term 'requirements gathering' suggests that requirements are just lying around to be picked up, with little interaction.<br><br><strong>Example:</strong> The term suggests requirements are like apples to pick from a tree. Reality: stakeholders have vague wishes ('make it better'), not clear requirements. Discovery requires deep conversation.",
     "shortExplanation": "'Gathering' implies requirements exist ready-made, needing little discovery effort."
   },
   {
@@ -164,7 +164,7 @@
     ],
     "answerIndex": 3,
     "answer": "Requirements generation",
-    "explanation": "‘Requirements generation’ suggests creativity and going beyond just documenting current practice.<br><br><strong>Example:</strong> If you only document what users currently do, you miss innovation. Generation means asking: 'What could they do?' Like moving from paper forms to digital wizards—not just digitizing the old form.<br><br><strong>Example:</strong> If you only document what users currently do, you miss innovation. Generation means asking: 'What could they do?' Like moving from paper forms to digital wizards—not just digitizing the old form.",
+    "explanation": "‘Requirements generation’ suggests creativity and going beyond just documenting current practice.<br><br><strong>Example:</strong> If you only document what users currently do, you miss innovation. Generation means asking: 'What could they do?' Like moving from paper forms to digital wizards—not just digitizing the old form.",
     "shortExplanation": "'Generation' emphasizes creativity and going beyond current practice."
   },
   {
@@ -178,7 +178,7 @@
     ],
     "answerIndex": 1,
     "answer": "Requirements elicitation",
-    "explanation": "‘Requirements elicitation’ emphasises interactive conversations and discovery with stakeholders.<br><br><strong>Example:</strong> Elicitation means interviewing users, observing workflows, facilitating workshops. It's collaborative: 'Tell me about your typical day,' not just handing out surveys.<br><br><strong>Example:</strong> Elicitation means interviewing users, observing workflows, facilitating workshops. It's collaborative: 'Tell me about your typical day,' not just handing out surveys.",
+    "explanation": "‘Requirements elicitation’ emphasises interactive conversations and discovery with stakeholders.<br><br><strong>Example:</strong> Elicitation means interviewing users, observing workflows, facilitating workshops. It's collaborative: 'Tell me about your typical day,' not just handing out surveys.",
     "shortExplanation": "'Elicitation' emphasizes interactive discovery with stakeholders."
   },
   {
@@ -192,7 +192,7 @@
     ],
     "answerIndex": 0,
     "answer": "Requirements engineering",
-    "explanation": "‘Requirements engineering’ is the formal, structured approach commonly used in software engineering.<br><br><strong>Example:</strong> Large projects use requirements engineering: formal documents, traceability matrices, change control, sign-offs. Every requirement has an ID, priority, and test case.<br><br><strong>Example:</strong> Large projects use requirements engineering: formal documents, traceability matrices, change control, sign-offs. Every requirement has an ID, priority, and test case.",
+    "explanation": "‘Requirements engineering’ is the formal, structured approach commonly used in software engineering.<br><br><strong>Example:</strong> Large projects use requirements engineering: formal documents, traceability matrices, change control, sign-offs. Every requirement has an ID, priority, and test case.",
     "shortExplanation": "'Engineering' is the formal, structured approach in software development."
   },
   {
@@ -206,7 +206,7 @@
     ],
     "answerIndex": 1,
     "answer": "Because it combines both gathering and generating requirements",
-    "explanation": "'Understanding' captures both gathering from current practice and generating new possibilities.<br><br><strong>Example:</strong> Understanding means: learn current pain points (gathering), explore better ways (generation), involve users (elicitation). It's holistic, combining discovery and creativity.<br><br><strong>Example:</strong> Understanding means: learn current pain points (gathering), explore better ways (generation), involve users (elicitation). It's holistic, combining discovery and creativity.",
+    "explanation": "'Understanding' captures both gathering from current practice and generating new possibilities.<br><br><strong>Example:</strong> Understanding means: learn current pain points (gathering), explore better ways (generation), involve users (elicitation). It's holistic, combining discovery and creativity.",
     "shortExplanation": "'Understanding' captures both gathering existing needs and generating new possibilities."
   },
   {
@@ -220,7 +220,7 @@
     ],
     "answerIndex": 1,
     "answer": "A formal document that lists and explains requirements",
-    "explanation": "A requirements specification is a formal document that contains the system’s requirements, often used by clients and developers.<br><br><strong>Example:</strong> A 50-page spec: introduction, functional requirements (login, search, checkout), non-functional (performance, security), data requirements, constraints, acceptance criteria. Developers and clients both reference it.<br><br><strong>Example:</strong> A 50-page spec: introduction, functional requirements (login, search, checkout), non-functional (performance, security), data requirements, constraints, acceptance criteria. Developers and clients both reference it.",
+    "explanation": "A requirements specification is a formal document that contains the system’s requirements, often used by clients and developers.<br><br><strong>Example:</strong> A 50-page spec: introduction, functional requirements (login, search, checkout), non-functional (performance, security), data requirements, constraints, acceptance criteria. Developers and clients both reference it.",
     "shortExplanation": "A formal document listing and explaining all system requirements."
   },
   {
@@ -234,7 +234,7 @@
     ],
     "answerIndex": 1,
     "answer": "So they can cost and manage the project effectively",
-    "explanation": "Developers use requirements to estimate effort, cost, scope and to manage the development process.<br><br><strong>Example:</strong> Requirement: 'Support 50,000 concurrent users.' Developers estimate: need load balancers, caching, database sharding—3 months and $100k. Clear requirements enable accurate planning.<br><br><strong>Example:</strong> Requirement: 'Support 50,000 concurrent users.' Developers estimate: need load balancers, caching, database sharding—3 months and $100k. Clear requirements enable accurate planning.",
+    "explanation": "Developers use requirements to estimate effort, cost, scope and to manage the development process.<br><br><strong>Example:</strong> Requirement: 'Support 50,000 concurrent users.' Developers estimate: need load balancers, caching, database sharding—3 months and $100k. Clear requirements enable accurate planning.",
     "shortExplanation": "Developers use specs to estimate effort, cost, and manage scope."
   },
   {
@@ -248,7 +248,7 @@
     ],
     "answerIndex": 1,
     "answer": "Prototypes, screenshots and other media",
-    "explanation": "Modern requirements specifications may also include prototypes, wireframes, screenshots and other supporting media.<br><br><strong>Example:</strong> Instead of just text ('users can filter results'), specs now include: wireframe showing filter UI, clickable prototype, user flow diagram. Visuals reduce misunderstanding.<br><br><strong>Example:</strong> Instead of just text ('users can filter results'), specs now include: wireframe showing filter UI, clickable prototype, user flow diagram. Visuals reduce misunderstanding.",
+    "explanation": "Modern requirements specifications may also include prototypes, wireframes, screenshots and other supporting media.<br><br><strong>Example:</strong> Instead of just text ('users can filter results'), specs now include: wireframe showing filter UI, clickable prototype, user flow diagram. Visuals reduce misunderstanding.",
     "shortExplanation": "Modern specs include prototypes, wireframes, and other rich media."
   },
   {
@@ -262,7 +262,7 @@
     ],
     "answerIndex": 2,
     "answer": "To help readers understand the rationale and context behind requirements",
-    "explanation": "Evidence such as interview reports and photos explains why a requirement exists and where it came from.<br><br><strong>Example:</strong> Requirement: 'Add voice search.' Evidence: user interview transcripts showing elderly users struggle typing on small screens, analytics showing 40% abandon searches. Rationale is clear.<br><br><strong>Example:</strong> Requirement: 'Add voice search.' Evidence: user interview transcripts showing elderly users struggle typing on small screens, analytics showing 40% abandon searches. Rationale is clear.",
+    "explanation": "Evidence such as interview reports and photos explains why a requirement exists and where it came from.<br><br><strong>Example:</strong> Requirement: 'Add voice search.' Evidence: user interview transcripts showing elderly users struggle typing on small screens, analytics showing 40% abandon searches. Rationale is clear.",
     "shortExplanation": "Evidence explains why a requirement exists and where it came from."
   },
   {
@@ -276,7 +276,7 @@
     ],
     "answerIndex": 0,
     "answer": "A unique ID, one-sentence summary, source, and rationale",
-    "explanation": "Templates should at least include a unique reference, short summary, source(s) and rationale for each requirement.<br><br><strong>Example:</strong> REQ-042: Users must reset passwords via email. Source: Security audit, user interviews. Rationale: 30% of support tickets are password resets; email is most accessible method.<br><br><strong>Example:</strong> REQ-042: Users must reset passwords via email. Source: Security audit, user interviews. Rationale: 30% of support tickets are password resets; email is most accessible method.",
+    "explanation": "Templates should at least include a unique reference, short summary, source(s) and rationale for each requirement.<br><br><strong>Example:</strong> REQ-042: Users must reset passwords via email. Source: Security audit, user interviews. Rationale: 30% of support tickets are password resets; email is most accessible method.",
     "shortExplanation": "Templates structure requirements with ID, summary, source, and rationale."
   },
   {
@@ -290,7 +290,7 @@
     ],
     "answerIndex": 0,
     "answer": "Criteria for testing, importance grade, dependencies, and change history",
-    "explanation": "Including test criteria, priority, dependencies and change history makes requirements more useful and manageable.<br><br><strong>Example:</strong> REQ-055: System loads in 2s. Test: Lighthouse performance score >90. Priority: Must. Depends on: REQ-012 (CDN). History: Changed from 5s to 2s after user testing showed abandonment.<br><br><strong>Example:</strong> REQ-055: System loads in 2s. Test: Lighthouse performance score >90. Priority: Must. Depends on: REQ-012 (CDN). History: Changed from 5s to 2s after user testing showed abandonment.",
+    "explanation": "Including test criteria, priority, dependencies and change history makes requirements more useful and manageable.<br><br><strong>Example:</strong> REQ-055: System loads in 2s. Test: Lighthouse performance score >90. Priority: Must. Depends on: REQ-012 (CDN). History: Changed from 5s to 2s after user testing showed abandonment.",
     "shortExplanation": "Test criteria, priority, dependencies, and history make requirements actionable."
   },
   {
@@ -304,7 +304,7 @@
     ],
     "answerIndex": 1,
     "answer": "Prioritize requirements by importance",
-    "explanation": "MoSCoW is a prioritization technique that classifies requirements into Must, Should, Could, and Won’t (this time).<br><br><strong>Example:</strong> Online store: Must (add to cart, checkout), Should (wish lists, reviews), Could (gift wrapping), Won't this time (live chat—defer to v2). Priorities guide release planning.<br><br><strong>Example:</strong> Online store: Must (add to cart, checkout), Should (wish lists, reviews), Could (gift wrapping), Won't this time (live chat—defer to v2). Priorities guide release planning.",
+    "explanation": "MoSCoW is a prioritization technique that classifies requirements into Must, Should, Could, and Won’t (this time).<br><br><strong>Example:</strong> Online store: Must (add to cart, checkout), Should (wish lists, reviews), Could (gift wrapping), Won't this time (live chat—defer to v2). Priorities guide release planning.",
     "shortExplanation": "MoSCoW categorizes requirements by importance: Must, Should, Could, Won't."
   },
   {
@@ -318,7 +318,7 @@
     ],
     "answerIndex": 2,
     "answer": "Fundamental requirements without which the system is unusable",
-    "explanation": "'Must have' items form the minimum viable subset – without them the system is not workable.<br><br><strong>Example:</strong> E-commerce MVP must-haves: product listing, cart, checkout, payment. Without checkout, it's not a store. Should-haves like recommendations can wait.<br><br><strong>Example:</strong> E-commerce MVP must-haves: product listing, cart, checkout, payment. Without checkout, it's not a store. Should-haves like recommendations can wait.",
+    "explanation": "'Must have' items form the minimum viable subset – without them the system is not workable.<br><br><strong>Example:</strong> E-commerce MVP must-haves: product listing, cart, checkout, payment. Without checkout, it's not a store. Should-haves like recommendations can wait.",
     "shortExplanation": "Must-haves are non-negotiable—without them, the system doesn't work."
   },
   {
@@ -332,7 +332,7 @@
     ],
     "answerIndex": 1,
     "answer": "Requirements that would be important if time/resources allow",
-    "explanation": "'Should have' items are important but not absolutely essential to deliver a usable system in the current release.<br><br><strong>Example:</strong> A banking app should have budgeting tools and spending insights. Important features, but the app works without them. If time/budget tight, these can slip to v2.<br><br><strong>Example:</strong> A banking app should have budgeting tools and spending insights. Important features, but the app works without them. If time/budget tight, these can slip to v2.",
+    "explanation": "'Should have' items are important but not absolutely essential to deliver a usable system in the current release.<br><br><strong>Example:</strong> A banking app should have budgeting tools and spending insights. Important features, but the app works without them. If time/budget tight, these can slip to v2.",
     "shortExplanation": "Should-haves are important but not critical for the first release."
   },
   {
@@ -346,7 +346,7 @@
     ],
     "answerIndex": 0,
     "answer": "Low-priority requirements that can be left out if necessary",
-    "explanation": "'Could have' items are lower priority and can more easily be postponed or omitted.<br><br><strong>Example:</strong> A task app could have color themes, custom sounds, widget styles. Nice for some users, but low priority. Easily dropped if deadlines loom.<br><br><strong>Example:</strong> A task app could have color themes, custom sounds, widget styles. Nice for some users, but low priority. Easily dropped if deadlines loom.",
+    "explanation": "'Could have' items are lower priority and can more easily be postponed or omitted.<br><br><strong>Example:</strong> A task app could have color themes, custom sounds, widget styles. Nice for some users, but low priority. Easily dropped if deadlines loom.",
     "shortExplanation": "Could-haves are nice-to-have features that can be postponed."
   },
   {
@@ -360,7 +360,7 @@
     ],
     "answerIndex": 2,
     "answer": "The requirement is postponed to a later development",
-    "explanation": "'Won’t have this time round' indicates that the requirement is deferred to a future version, not discarded permanently.<br><br><strong>Example:</strong> Project management tool: Won't have Gantt charts this release (complex, time-consuming). Deferred to Q2. This sets clear scope and manages stakeholder expectations.<br><br><strong>Example:</strong> Project management tool: Won't have Gantt charts this release (complex, time-consuming). Deferred to Q2. This sets clear scope and manages stakeholder expectations.",
+    "explanation": "'Won’t have this time round' indicates that the requirement is deferred to a future version, not discarded permanently.<br><br><strong>Example:</strong> Project management tool: Won't have Gantt charts this release (complex, time-consuming). Deferred to Q2. This sets clear scope and manages stakeholder expectations.",
     "shortExplanation": "Won't-haves are deferred to future releases, not discarded forever."
   },
   {
@@ -374,7 +374,7 @@
     ],
     "answerIndex": 2,
     "answer": "Must-have items define the minimum viable product (MVP)",
-    "explanation": "In agile, the set of 'Must have' requirements often defines the minimum viable product for a release.<br><br><strong>Example:</strong> Building a ride-share app MVP: Must (request ride, track driver, pay). Should (scheduled rides, favorites). Could (ride splitting). Won't (loyalty program). MVP ships with musts only.<br><br><strong>Example:</strong> Building a ride-share app MVP: Must (request ride, track driver, pay). Should (scheduled rides, favorites). Could (ride splitting). Won't (loyalty program). MVP ships with musts only.",
+    "explanation": "In agile, the set of 'Must have' requirements often defines the minimum viable product for a release.<br><br><strong>Example:</strong> Building a ride-share app MVP: Must (request ride, track driver, pay). Should (scheduled rides, favorites). Could (ride splitting). Won't (loyalty program). MVP ships with musts only.",
     "shortExplanation": "In agile, Must-haves define the minimum viable product (MVP)."
   },
   {
@@ -388,7 +388,7 @@
     ],
     "answerIndex": 2,
     "answer": "Because new requirements emerge as designs are created and evaluated",
-    "explanation": "As concepts are designed and evaluated, new requirements appear and existing ones are refined – making the process iterative.<br><br><strong>Example:</strong> You draft requirements, sketch a design, prototype it, test with users. Testing reveals users need offline mode (new requirement). You refine requirements, redesign, test again. It's a cycle, not a line.<br><br><strong>Example:</strong> You draft requirements, sketch a design, prototype it, test with users. Testing reveals users need offline mode (new requirement). You refine requirements, redesign, test again. It's a cycle, not a line.",
+    "explanation": "As concepts are designed and evaluated, new requirements appear and existing ones are refined – making the process iterative.<br><br><strong>Example:</strong> You draft requirements, sketch a design, prototype it, test with users. Testing reveals users need offline mode (new requirement). You refine requirements, redesign, test again. It's a cycle, not a line.",
     "shortExplanation": "Requirements, design, prototyping, and testing happen iteratively, informing each other."
   },
   {
@@ -402,7 +402,7 @@
     ],
     "answerIndex": 2,
     "answer": "Customers, clients and other key stakeholders",
-    "explanation": "Requirements should be reviewed with customers, clients and other stakeholders to ensure they reflect real needs and priorities.<br><br><strong>Example:</strong> Draft requirements say 'advanced analytics dashboard.' Product owner reviews: 'Our users are beginners—they need simple reports, not complex dashboards.' Requirement revised based on stakeholder input.<br><br><strong>Example:</strong> Draft requirements say 'advanced analytics dashboard.' Product owner reviews: 'Our users are beginners—they need simple reports, not complex dashboards.' Requirement revised based on stakeholder input.",
+    "explanation": "Requirements should be reviewed with customers, clients and other stakeholders to ensure they reflect real needs and priorities.<br><br><strong>Example:</strong> Draft requirements say 'advanced analytics dashboard.' Product owner reviews: 'Our users are beginners—they need simple reports, not complex dashboards.' Requirement revised based on stakeholder input.",
     "shortExplanation": "Stakeholders validate that requirements reflect real needs and priorities."
   },
   {
@@ -416,7 +416,7 @@
     ],
     "answerIndex": 2,
     "answer": "Understanding People, Activities, Contexts and Technologies feeds into generating good requirements",
-    "explanation": "By analysing People, Activities, Contexts and Technologies, designers can derive grounded, realistic requirements.<br><br><strong>Example:</strong> Analyzing a gym app with PACT: People (varied fitness levels), Activities (track workouts, log meals), Contexts (gym, home, outdoors), Technologies (phone, wearables). This leads to requirements like 'wearable integration' and 'offline workout logging.'<br><br><strong>Example:</strong> Analyzing a gym app with PACT: People (varied fitness levels), Activities (track workouts, log meals), Contexts (gym, home, outdoors), Technologies (phone, wearables). This leads to requirements like 'wearable integration' and 'offline workout logging.'",
+    "explanation": "By analysing People, Activities, Contexts and Technologies, designers can derive grounded, realistic requirements.<br><br><strong>Example:</strong> Analyzing a gym app with PACT: People (varied fitness levels), Activities (track workouts, log meals), Contexts (gym, home, outdoors), Technologies (phone, wearables). This leads to requirements like 'wearable integration' and 'offline workout logging.'",
     "shortExplanation": "PACT analysis of People, Activities, Contexts, Technologies informs requirements."
   }
 ]

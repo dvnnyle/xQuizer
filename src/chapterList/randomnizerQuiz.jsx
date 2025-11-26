@@ -189,14 +189,12 @@ function RandomizerQuiz() {
                       })}
                     </div>
 
-                    {question.explanation && (
-                      <div className="review-explanation">
-                        <strong>Explanation:</strong>
-                        <div dangerouslySetInnerHTML={{ 
-                          __html: question.explanation.replace(/'([^']+)'/g, "<span class='highlight'>$1</span>") 
-                        }} />
-                      </div>
-                    )}
+                    <div className="review-explanation">
+                      <strong>Explanation:</strong>
+                      <div dangerouslySetInnerHTML={{ 
+                        __html: question.explanation.replace(/'([^']+)'/g, "<span class='highlight'>$1</span>") 
+                      }} />
+                    </div>
                   </div>
                 )
               })}
@@ -312,17 +310,6 @@ function RandomizerQuiz() {
               <div className="correct-answer">
                 The correct answer is: {currentQuestion.answer}
               </div>
-              {currentQuestion.shortExplanation && (
-                <p
-                  className="short-explanation"
-                  dangerouslySetInnerHTML={{
-                    __html: currentQuestion.shortExplanation.replace(
-                      /'([^']+)'/g,
-                      "<span class='highlight'>$1</span>"
-                    )
-                  }}
-                />
-              )}
               <p
                 className="explanation-text"
                 dangerouslySetInnerHTML={{

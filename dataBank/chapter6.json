@@ -19,12 +19,12 @@
     "section": "6.1",
     "question": "According to Benyon, experience design is best described as:",
     "options": [
-      "Designing for the whole journey, feelings and meanings of use",
       "Designing only the visual interface",
+      "Designing for the whole journey, feelings and meanings of use",
       "Designing primarily for business stakeholders",
       "Designing for hardware performance"
     ],
-    "answerIndex": 0,
+    "answerIndex": 1,
     "answer": "Designing for the whole journey, feelings and meanings of use",
     "shortExplanation": "It's holistic—covering the entire journey, emotions, context, and lifestyle.",
     "explanation": "Experience design is holistic: it looks at the entire user journey, emotional tone, context, lifestyle and meaning, not just isolated interactions.<br><br><strong>Example:</strong> Designing a hotel booking service means considering the entire trip: anticipation while browsing, anxiety during payment, excitement receiving confirmation, and satisfaction sharing photos afterward—not just the booking button."
@@ -34,12 +34,12 @@
     "section": "6.1",
     "question": "Which statement best captures the idea that designers cannot 'make' an experience?",
     "options": [
-      "Designers can only set up the conditions for experiences to emerge",
       "Designers control every aspect of user feelings",
       "Experiences do not depend on context",
-      "Experience is irrelevant to design"
+      "Experience is irrelevant to design",
+      "Designers can only set up the conditions for experiences to emerge"
     ],
-    "answerIndex": 0,
+    "answerIndex": 3,
     "answer": "Designers can only set up the conditions for experiences to emerge",
     "shortExplanation": "Experiences are personal—designers create conditions, people construct their own experiences.",
     "explanation": "Benyon emphasises that experiences are personal and interpretive; designers set up environments, interactions and cues, but people construct their own experiences.<br><br><strong>Example:</strong> A designer creates a meditation app with calming sounds and gentle animations, but one user finds it relaxing while another finds it boring—the designer sets conditions, but experiences vary."
@@ -49,12 +49,12 @@
     "section": "6.1",
     "question": "Which of the following thinkers is associated with 'Emotional Design' and the idea that aesthetics influence usability?",
     "options": [
-      "Don Norman",
       "Patrick Jordan",
       "Nathan Shedroff",
-      "Karen Holtzblatt"
+      "Karen Holtzblatt",
+      "Don Norman"
     ],
-    "answerIndex": 0,
+    "answerIndex": 3,
     "answer": "Don Norman",
     "shortExplanation": "Norman shows that aesthetics influence perceived usability—beautiful things seem easier to use.",
     "explanation": "Don Norman (2004) argues that attractive things can seem easier to use and that emotion and usability are closely linked.<br><br><strong>Example:</strong> Two apps with identical functionality—one has a sleek, modern design and the other looks dated. Users rate the attractive one as easier to use, even when both perform identically."
@@ -62,7 +62,7 @@
   {
     "id": 5,
     "section": "6.1",
-    "question": "Nathan Shedroff’s work contributes which focus to experience design?",
+    "question": "Nathan Shedroff's work contributes which focus to experience design?",
     "options": [
       "Engagement, authenticity and identity",
       "Pure performance metrics",
@@ -79,12 +79,12 @@
     "section": "6.2",
     "question": "In Chapter 6, 'engagement' primarily refers to:",
     "options": [
-      "Emotional, cognitive and physical involvement in an activity",
       "Financial commitment to a product",
       "Legal contracts with users",
+      "Emotional, cognitive and physical involvement in an activity",
       "Download counts in an app store"
     ],
-    "answerIndex": 0,
+    "answerIndex": 2,
     "answer": "Emotional, cognitive and physical involvement in an activity",
     "shortExplanation": "Engagement is about absorption, focus, and involvement during interaction.",
     "explanation": "Engagement is about how absorbed, focused and involved people feel when interacting with a system.<br><br><strong>Example:</strong> A user playing a puzzle game loses track of time, concentrates deeply on solving challenges, and taps the screen rapidly—showing high emotional, cognitive, and physical engagement."
@@ -94,12 +94,12 @@
     "section": "6.2",
     "question": "Which psychological concept does Benyon relate to engagement in UX?",
     "options": [
-      "Csikszentmihalyi’s flow theory",
-      "Maslow’s hierarchy of needs",
-      "Skinner’s reinforcement theory",
-      "Piaget’s stages of development"
+      "Maslow's hierarchy of needs",
+      "Skinner's reinforcement theory",
+      "Piaget's stages of development",
+      "Csikszentmihalyi's flow theory"
     ],
-    "answerIndex": 0,
+    "answerIndex": 3,
     "answer": "Csikszentmihalyi's flow theory",
     "shortExplanation": "Flow theory: balanced challenge and skill create deep involvement and enjoyment.",
     "explanation": "Engagement is linked to flow theory, where challenge and skill are balanced to create deep involvement and enjoyment.<br><br><strong>Example:</strong> A guitar learning app adjusts difficulty based on performance—easy songs for beginners, complex pieces for advanced players—keeping everyone in flow state where skill matches challenge."
@@ -122,14 +122,14 @@
   {
     "id": 9,
     "section": "6.2",
-    "question": "Which of Shedroff’s dimensions of engagement is about the experience feeling authentic to who the user is or wants to be?",
+    "question": "Which of Shedroff's dimensions of engagement is about the experience feeling authentic to who the user is or wants to be?",
     "options": [
-      "Identity",
       "Adaptivity",
       "Narrative",
+      "Identity",
       "Immersion"
     ],
-    "answerIndex": 0,
+    "answerIndex": 2,
     "answer": "Identity",
     "shortExplanation": "Identity means the experience aligns with who users are or want to be.",
     "explanation": "Identity is about authenticity and alignment with users' self-image or desired self.<br><br><strong>Example:</strong> A minimalist productivity app appeals to users who see themselves as focused and efficient professionals—the clean design reinforces their identity, making the experience feel authentic."
@@ -137,7 +137,7 @@
   {
     "id": 10,
     "section": "6.2",
-    "question": "In Shedroff’s model, which dimension involves the system adapting to user actions and skills over time?",
+    "question": "In Shedroff's model, which dimension involves the system adapting to user actions and skills over time?",
     "options": [
       "Adaptivity",
       "Flow",
@@ -154,12 +154,12 @@
     "section": "6.2",
     "question": "Narrative as a dimension of engagement refers to:",
     "options": [
-      "A sense of story or progression that gives meaning to actions",
       "The number of screens in an app",
       "Legal text in terms and conditions",
-      "Only the visuals used in branding"
+      "Only the visuals used in branding",
+      "A sense of story or progression that gives meaning to actions"
     ],
-    "answerIndex": 0,
+    "answerIndex": 3,
     "answer": "A sense of story or progression that gives meaning to actions",
     "shortExplanation": "Narrative creates a story-like journey, showing progress and meaning.",
     "explanation": "Narrative provides a story-like structure or journey, helping users see progress and meaning in their activities.<br><br><strong>Example:</strong> Duolingo creates a narrative journey through language learning—users unlock levels, follow a path from beginner to fluent, and complete chapters, making practice feel like progressing through a story."
@@ -184,12 +184,12 @@
     "section": "6.2",
     "question": "What caution does Benyon offer about gamification?",
     "options": [
-      "Engagement must not rely only on extrinsic rewards; the experience itself should be intrinsically satisfying",
       "Badges should always be hidden from users",
       "All systems must become full games",
+      "Engagement must not rely only on extrinsic rewards; the experience itself should be intrinsically satisfying",
       "Funware is illegal in some countries"
     ],
-    "answerIndex": 0,
+    "answerIndex": 2,
     "answer": "Engagement must not rely only on extrinsic rewards; the experience itself should be intrinsically satisfying",
     "shortExplanation": "Don't rely only on badges—the core activity must be intrinsically meaningful.",
     "explanation": "Benyon warns against designing only for points or badges; the core activity and experience should be meaningful and enjoyable on their own.<br><br><strong>Example:</strong> A budgeting app that only offers badges for logging expenses feels hollow. One that helps users understand spending patterns and achieve financial goals is intrinsically satisfying, with badges as bonus motivation."
@@ -197,14 +197,14 @@
   {
     "id": 14,
     "section": "6.3",
-    "question": "What is the central idea of Patrick Jordan’s 'Designing Pleasurable Products'?",
+    "question": "What is the central idea of Patrick Jordan's 'Designing Pleasurable Products'?",
     "options": [
-      "Products should provide different forms of pleasure, not just utility",
       "Usability is the only design goal",
       "Aesthetics should be ignored for functionality",
-      "Pleasure is irrelevant to interaction design"
+      "Pleasure is irrelevant to interaction design",
+      "Products should provide different forms of pleasure, not just utility"
     ],
-    "answerIndex": 0,
+    "answerIndex": 3,
     "answer": "Products should provide different forms of pleasure, not just utility",
     "shortExplanation": "Good design provides multiple pleasures: physical, social, psychological, ideological.",
     "explanation": "Jordan argues that good design supports multiple kinds of pleasure—physical, social, psychological and ideological.<br><br><strong>Example:</strong> An Apple Watch provides physio-pleasure (smooth haptics), socio-pleasure (sharing activity with friends), psycho-pleasure (achieving fitness goals), and ideo-pleasure (aligning with health values)."
@@ -229,12 +229,12 @@
     "section": "6.3",
     "question": "Sharing photos with friends on a social network is mainly an example of:",
     "options": [
-      "Socio-pleasure",
       "Physio-pleasure",
       "Psycho-pleasure",
+      "Socio-pleasure",
       "Ideo-pleasure"
     ],
-    "answerIndex": 0,
+    "answerIndex": 2,
     "answer": "Socio-pleasure",
     "shortExplanation": "Socio-pleasure arises from social interaction, belonging, and connection.",
     "explanation": "Socio-pleasure comes from social interaction, belonging and communication.<br><br><strong>Example:</strong> Instagram's stories feature lets users share moments and react to friends' content—the pleasure comes from social connection, feeling part of a community, and maintaining friendships."
@@ -244,12 +244,12 @@
     "section": "6.3",
     "question": "Completing a challenging level in a learning app and feeling proud mostly reflects:",
     "options": [
-      "Psycho-pleasure",
       "Physio-pleasure",
       "Socio-pleasure",
-      "Ideo-pleasure"
+      "Ideo-pleasure",
+      "Psycho-pleasure"
     ],
-    "answerIndex": 0,
+    "answerIndex": 3,
     "answer": "Psycho-pleasure",
     "shortExplanation": "Psycho-pleasure involves achievement, mastery, and emotional satisfaction.",
     "explanation": "Psycho-pleasure involves achievement, mastery, mental engagement and emotional satisfaction.<br><br><strong>Example:</strong> Completing a challenging Wordle puzzle provides psycho-pleasure—users feel smart, accomplished, and mentally stimulated from solving the word through deduction and strategy."
@@ -274,12 +274,12 @@
     "section": "6.3",
     "question": "Product attachment theory suggests that people become attached to products because:",
     "options": [
-      "They support roles, control, affiliation, affection and self-expression",
       "They are the cheapest option",
       "They always work flawlessly",
+      "They support roles, control, affiliation, affection and self-expression",
       "They are heavily advertised"
     ],
-    "answerIndex": 0,
+    "answerIndex": 2,
     "answer": "They support roles, control, affiliation, affection and self-expression",
     "shortExplanation": "Attachment forms through role support, control, affiliation, affection, and self-expression.",
     "explanation": "Role engagement, control, affiliation, affection and self-expression are key reasons people form strong emotional ties to products.<br><br><strong>Example:</strong> A photographer's attachment to their camera comes from: role (professional tool), control (mastery of settings), affiliation (community of photographers), affection (memories captured), and self-expression (artistic vision)."
@@ -289,12 +289,12 @@
     "section": "6.3",
     "question": "What is 'hedonomics' concerned with?",
     "options": [
-      "Pleasure and happiness in design",
       "Pure ergonomic safety",
       "Only error prevention",
-      "Only visual aesthetics"
+      "Only visual aesthetics",
+      "Pleasure and happiness in design"
     ],
-    "answerIndex": 0,
+    "answerIndex": 3,
     "answer": "Pleasure and happiness in design",
     "shortExplanation": "Hedonomics focuses on pleasure, enjoyment, and wellbeing in interaction.",
     "explanation": "Hedonomics extends ergonomics by focusing on pleasure, enjoyment and wellbeing in interaction.<br><br><strong>Example:</strong> Ergonomics ensures a chair supports your back. Hedonomics ensures the chair also feels luxurious, looks beautiful, and makes you feel good about working—focusing on pleasure beyond physical function."
@@ -307,7 +307,7 @@
       "How things look, sound and feel, and how this shapes emotion",
       "Only the colour of buttons",
       "The legal structure of a company",
-      "The device’s internal hardware layout"
+      "The device's internal hardware layout"
     ],
     "answerIndex": 0,
     "answer": "How things look, sound and feel, and how this shapes emotion",
@@ -317,14 +317,14 @@
   {
     "id": 22,
     "section": "6.4",
-    "question": "Which of Don Norman’s three levels deals with the immediate sensory reaction to a product’s appearance?",
+    "question": "Which of Don Norman's three levels deals with the immediate sensory reaction to a product's appearance?",
     "options": [
-      "Visceral level",
       "Behavioural level",
       "Reflective level",
+      "Visceral level",
       "Pragmatic level"
     ],
-    "answerIndex": 0,
+    "answerIndex": 2,
     "answer": "Visceral level",
     "shortExplanation": "Visceral level is immediate sensory reaction—first impressions and gut feelings.",
     "explanation": "The visceral level is about first impressions and gut reactions to look and feel.<br><br><strong>Example:</strong> Opening a beautifully designed app with vibrant colors and smooth animations creates an instant positive visceral response—you immediately feel it looks professional before even using it."
@@ -332,14 +332,14 @@
   {
     "id": 23,
     "section": "6.4",
-    "question": "Norman’s behavioural level focuses on:",
+    "question": "Norman's behavioural level focuses on:",
     "options": [
-      "Usability, control and how well the product works in use",
       "Marketing campaigns",
       "Brand storytelling",
-      "Manufacturing costs"
+      "Manufacturing costs",
+      "Usability, control and how well the product works in use"
     ],
-    "answerIndex": 0,
+    "answerIndex": 3,
     "answer": "Usability, control and how well the product works in use",
     "shortExplanation": "Behavioral level is about usability, interaction quality, and feeling in control.",
     "explanation": "Behavioural design is about interaction quality: smoothness, clarity of feedback and feeling in control.<br><br><strong>Example:</strong> Swiping to delete an email feels smooth and responsive, with clear visual feedback—this behavioral-level design makes interaction feel natural and controllable."
@@ -364,12 +364,12 @@
     "section": "6.4",
     "question": "According to Hassenzahl, hedonic qualities focus on:",
     "options": [
-      "Pleasure, identity, stimulation and meaning",
       "Only performance speed",
       "Only error-free usage",
+      "Pleasure, identity, stimulation and meaning",
       "Only accessibility compliance"
     ],
-    "answerIndex": 0,
+    "answerIndex": 2,
     "answer": "Pleasure, identity, stimulation and meaning",
     "shortExplanation": "Hedonic qualities support identity, pleasure, stimulation, and emotional richness.",
     "explanation": "Hedonic qualities are about how products support personal growth, identity and emotional richness.<br><br><strong>Example:</strong> A journal app with beautiful typography, inspiring quotes, and personal reflection prompts provides hedonic quality—it's not just functional but emotionally meaningful and identity-affirming."
@@ -377,14 +377,14 @@
   {
     "id": 26,
     "section": "6.4",
-    "question": "Lavie and Tractinsky’s 'classical aesthetics' are best described as:",
+    "question": "Lavie and Tractinsky's 'classical aesthetics' are best described as:",
     "options": [
-      "Clean, balanced and orderly designs",
       "Wild, chaotic visuals",
       "Purely text-based interfaces",
-      "Audio-only interfaces"
+      "Audio-only interfaces",
+      "Clean, balanced and orderly designs"
     ],
-    "answerIndex": 0,
+    "answerIndex": 3,
     "answer": "Clean, balanced and orderly designs",
     "shortExplanation": "Classical aesthetics emphasize symmetry, order, clarity, trust, and professionalism.",
     "explanation": "Classical aesthetics relate to symmetry, order and clarity, often associated with trust and professionalism.<br><br><strong>Example:</strong> A corporate banking website with centered layouts, balanced white space, and uniform typography follows classical aesthetics—communicating stability and trustworthiness."
@@ -409,12 +409,12 @@
     "section": "6.5",
     "question": "In the context of Chapter 6, designing for lifestyle primarily means:",
     "options": [
-      "Ensuring technology fits into people’s everyday routines, values and identities",
       "Maximising processor speed",
       "Reducing app download size",
+      "Ensuring technology fits into people's everyday routines, values and identities",
       "Standardising all interfaces"
     ],
-    "answerIndex": 0,
+    "answerIndex": 2,
     "answer": "Ensuring technology fits into people's everyday routines, values and identities",
     "shortExplanation": "Lifestyle design aligns products with how people live, their values, and identity.",
     "explanation": "Lifestyle design is about aligning products and services with how people live, what they value and how they see themselves.<br><br><strong>Example:</strong> Peloton doesn't just sell bikes—it designs for an active lifestyle with live classes, community features, and motivational content that fits into busy routines and supports an identity as a fitness enthusiast."
@@ -424,12 +424,12 @@
     "section": "6.5",
     "question": "Benyon argues that experience design increasingly focuses on:",
     "options": [
-      "Lifestyles and ecosystems of products and services",
       "Single standalone devices only",
       "Back-end architectures",
-      "Printer drivers"
+      "Printer drivers",
+      "Lifestyles and ecosystems of products and services"
     ],
-    "answerIndex": 0,
+    "answerIndex": 3,
     "answer": "Lifestyles and ecosystems of products and services",
     "shortExplanation": "Design focuses on ecosystems and lifestyles, not just individual devices.",
     "explanation": "Companies design entire ecosystems and experiences that express particular lifestyles and identities, not just isolated devices.<br><br><strong>Example:</strong> Apple designs an ecosystem (iPhone, Mac, Watch, AirPods, iCloud) that works seamlessly together, supporting a lifestyle of creativity, simplicity, and premium quality—not just individual products."
@@ -437,12 +437,12 @@
   {
     "id": 30,
     "section": "6.5",
-    "question": "Holtzblatt and Beyer’s 'Joy of Life' refers to:",
+    "question": "Holtzblatt and Beyer's 'Joy of Life' refers to:",
     "options": [
       "The broader happiness and meaning a product brings into daily life",
       "Only the joy of using buttons",
       "Short-term entertainment only",
-      "The company’s profit"
+      "The company's profit"
     ],
     "answerIndex": 0,
     "answer": "The broader happiness and meaning a product brings into daily life",
@@ -452,14 +452,14 @@
   {
     "id": 31,
     "section": "6.5",
-    "question": "In Holtzblatt and Beyer’s framework, 'Joy in Use' focuses on:",
+    "question": "In Holtzblatt and Beyer's framework, 'Joy in Use' focuses on:",
     "options": [
-      "Immediate satisfaction during interaction, such as ease, flow and responsiveness",
       "Long-term lifestyle change",
       "Marketing campaigns",
+      "Immediate satisfaction during interaction, such as ease, flow and responsiveness",
       "Only visual branding"
     ],
-    "answerIndex": 0,
+    "answerIndex": 2,
     "answer": "Immediate satisfaction during interaction, such as ease, flow and responsiveness",
     "shortExplanation": "Joy in use is immediate pleasure and smoothness during interaction.",
     "explanation": "Joy in use is the pleasure and smoothness users feel while actually interacting with the system.<br><br><strong>Example:</strong> Typing in Notion feels delightful—smooth text flow, instant formatting, quick commands—creating joy in use through responsive, effortless interaction while writing."
@@ -469,12 +469,12 @@
     "section": "6.5",
     "question": "Which design activity is especially important when designing for lifestyle fit?",
     "options": [
-      "Understanding users’ values, habits and aspirations through deep research",
       "Only checking system performance in the lab",
       "Avoiding contact with real users",
-      "Designing solely from technical requirements"
+      "Designing solely from technical requirements",
+      "Understanding users' values, habits and aspirations through deep research"
     ],
-    "answerIndex": 0,
+    "answerIndex": 3,
     "answer": "Understanding users' values, habits and aspirations through deep research",
     "shortExplanation": "Deep research into values, habits, and aspirations is essential for lifestyle design.",
     "explanation": "Lifestyle-centred experience design relies on rich understanding of people's everyday lives and what matters to them.<br><br><strong>Example:</strong> Before designing meal kit services, researchers shadow families during dinner prep, understand time pressures, discover that parents value teaching kids cooking, and learn about dietary preferences—informing lifestyle-fit design."
@@ -484,7 +484,7 @@
     "section": "6.5",
     "question": "A key outcome of successful lifestyle-oriented design is that:",
     "options": [
-      "The product becomes part of the user’s identity and story",
+      "The product becomes part of the user's identity and story",
       "The product has the lowest possible price",
       "The product is invisible in the marketplace",
       "The product requires no updates"
