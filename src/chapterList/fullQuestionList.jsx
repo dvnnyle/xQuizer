@@ -11,14 +11,32 @@ import chapter6Data from '../../dataBank/chapter6.json'
 import chapter8Data from '../../dataBank/chapter8.json'
 import chapter10Data from '../../dataBank/chapter10.json'
 
-// Combine all questions
+// Shuffle options and update answerIndex for each question
+function shuffleOptions(question) {
+  const options = [...question.options]
+  const correctAnswer = options[question.answerIndex]
+  // Shuffle options
+  for (let i = options.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[options[i], options[j]] = [options[j], options[i]]
+  }
+  // Find new index of correct answer
+  const newAnswerIndex = options.indexOf(correctAnswer)
+  return {
+    ...question,
+    options,
+    answerIndex: newAnswerIndex
+  }
+}
+
+// Combine all questions and shuffle options
 const allQuestionsData = [
-  ...chapter2Data.map(q => ({ ...q, chapter: 'Chapter 2' })),
-  ...chapter3Data.map(q => ({ ...q, chapter: 'Chapter 3' })),
-  ...chapter5Data.map(q => ({ ...q, chapter: 'Chapter 5' })),
-  ...chapter6Data.map(q => ({ ...q, chapter: 'Chapter 6' })),
-  ...chapter8Data.map(q => ({ ...q, chapter: 'Chapter 8' })),
-  ...chapter10Data.map(q => ({ ...q, chapter: 'Chapter 10' }))
+  ...chapter2Data.map(q => shuffleOptions({ ...q, chapter: 'Chapter 2' })),
+  ...chapter3Data.map(q => shuffleOptions({ ...q, chapter: 'Chapter 3' })),
+  ...chapter5Data.map(q => shuffleOptions({ ...q, chapter: 'Chapter 5' })),
+  ...chapter6Data.map(q => shuffleOptions({ ...q, chapter: 'Chapter 6' })),
+  ...chapter8Data.map(q => shuffleOptions({ ...q, chapter: 'Chapter 8' })),
+  ...chapter10Data.map(q => shuffleOptions({ ...q, chapter: 'Chapter 10' }))
 ]
 
 function FullQuestionList() {

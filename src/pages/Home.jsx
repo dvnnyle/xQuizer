@@ -86,8 +86,8 @@ function Home() {
         </nav>
       </aside>
       <div className="home-content">
-        <h1 className="home-title"> X Interaction Design</h1>
-        <p>Select a chapter to start practicing</p>
+        <h1 className="home-title"> UXUI Design</h1>
+        <p>Select to start practicing</p>
         <div className="chapter-list">
           <a href="/randomquiz" className="chapter-button featured" id="randomquiz">
             <h3>🎲 Random Mix</h3>

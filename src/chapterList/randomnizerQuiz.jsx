@@ -8,8 +8,27 @@ import chapter2Data from '../../dataBank/chapter2.json'
 import chapter3Data from '../../dataBank/chapter3.json'
 import chapter5Data from '../../dataBank/chapter5.json'
 import chapter6Data from '../../dataBank/chapter6.json'
+import chapter7Data from '../../dataBank/chapter7.json'
 import chapter8Data from '../../dataBank/chapter8.json'
 import chapter10Data from '../../dataBank/chapter10.json'
+
+// Shuffle options and update answerIndex for each question
+function shuffleOptions(question) {
+  const options = [...question.options]
+  const correctAnswer = options[question.answerIndex]
+  // Shuffle options
+  for (let i = options.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[options[i], options[j]] = [options[j], options[i]]
+  }
+  // Find new index of correct answer
+  const newAnswerIndex = options.indexOf(correctAnswer)
+  return {
+    ...question,
+    options,
+    answerIndex: newAnswerIndex
+  }
+}
 
 // Generate random questions once
 const generateRandomQuestions = () => {
@@ -18,11 +37,15 @@ const generateRandomQuestions = () => {
     ...chapter3Data,
     ...chapter5Data,
     ...chapter6Data,
+    ...chapter7Data,
     ...chapter8Data,
     ...chapter10Data
   ]
-  const shuffled = [...allQuestions].sort(() => Math.random() - 0.5)
-  return shuffled.slice(0, 30)
+  // Shuffle questions
+  const shuffledQuestions = [...allQuestions].sort(() => Math.random() - 0.5)
+  // Shuffle options for each question
+  const shuffledWithOptions = shuffledQuestions.map(q => shuffleOptions(q))
+  return shuffledWithOptions.slice(0, 30)
 }
 
 function RandomizerQuiz() {
@@ -232,7 +255,7 @@ function RandomizerQuiz() {
       <NavigationMenu />
       <div className="quiz-container">
         <div className="quiz-header">
-          <h2>🎲 Random UX Quiz - 30 Questions (Chapters 2, 3, 5, 6, 8, 10)</h2>
+          <h2>🎲 Random UX Quiz - 30 Questions</h2>
           <div className="progress-info">
             <div style={{ display: 'flex', alignItems: 'center', width: '100%' }}>
               <span>Question {currentQuestionIndex + 1} of {questionsData.length}</span>
