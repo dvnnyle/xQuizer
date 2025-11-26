@@ -4,6 +4,7 @@ import NavigationMenu from '../pages/widget/navigationMenu'
 import './chapter3.css'
 
 // Import all chapter data
+import chapter2Data from '../../dataBank/chapter2.json'
 import chapter3Data from '../../dataBank/chapter3.json'
 import chapter5Data from '../../dataBank/chapter5.json'
 import chapter6Data from '../../dataBank/chapter6.json'
@@ -13,6 +14,7 @@ import chapter10Data from '../../dataBank/chapter10.json'
 // Generate random questions once
 const generateRandomQuestions = () => {
   const allQuestions = [
+    ...chapter2Data,
     ...chapter3Data,
     ...chapter5Data,
     ...chapter6Data,
@@ -226,7 +228,7 @@ function RandomizerQuiz() {
       <NavigationMenu />
       <div className="quiz-container">
         <div className="quiz-header">
-          <h2>🎲 Random UX Quiz - 30 Questions</h2>
+          <h2>🎲 Random UX Quiz - 30 Questions (Chapters 2, 3, 5, 6, 8, 10)</h2>
           <div className="progress-info">
             <span>Question {currentQuestionIndex + 1} of {questionsData.length}</span>
             <span>Score: {score}/{answeredQuestions}</span>

@@ -91,13 +91,13 @@ function Home() {
         <div className="chapter-list">
           <a href="/randomquiz" className="chapter-button featured" id="randomquiz">
             <h3>🎲 Random Mix</h3>
-            <p>30 random questions from all chapters</p>
-            <span className="question-count">Chapters 3, 5, 6, 8, 10</span>
+            <p>Chapters 2, 3, 5, 6, 7, 8, 10</p>
+            <span className="question-count">30 random questions </span>
           </a>
           <a href="/fullquestions" className="chapter-button featured red-theme" id="fullquestions">
             <h3>🔥 All Questions</h3>
-            <p>Every question from chapters 3, 5, 6, 8, and 10</p>
-            <span className="question-count">148 questions total</span>
+            <p>Every question from chapters 2, 3, 5, 6, 7, 8, and 10</p>
+            <span className="question-count">178 questions total</span>
           </a>
           <div className="chapter-divider">
             <span>Chapters</span>

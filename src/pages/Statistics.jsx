@@ -25,7 +25,7 @@ function Statistics() {
       { id: 'chapter10', name: 'Chapter 10', total: 30 },
       { id: 'chaptertest', name: 'Test Chapter', total: 5 },
       { id: 'randomizer', name: '🎲 Random Quiz', total: 30 },
-      { id: 'fulllist', name: '🔥 All Questions', total: 148 },
+      { id: 'fulllist', name: '🔥 All Questions', total: 178 },
       { id: 'uxquiz1', name: '🎯 UX Laws Quiz', total: 21 },
       { id: 'uxquiz2', name: '🎯 UX Laws Quiz 2', total: 21 }
     ]
