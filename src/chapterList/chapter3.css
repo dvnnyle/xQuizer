@@ -1,3 +1,18 @@
+/* Streak Centering */
+.streak-center {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.streak-fire {
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: 600;
+  color: #ff9800;
+}
 .quiz-container {
   max-width: 800px;
   margin: 0 auto;

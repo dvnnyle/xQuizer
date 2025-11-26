@@ -12,6 +12,7 @@ function Chapter8() {
   const [answeredQuestions, setAnsweredQuestions] = useState(0)
   const [userAnswers, setUserAnswers] = useState([])
   const [showReview, setShowReview] = useState(false)
+  const [streak, setStreak] = useState(0)
 
   const currentQuestion = questionsData[currentQuestionIndex]
 
@@ -27,6 +28,9 @@ function Chapter8() {
 
     if (isCorrect) {
       setScore(score + 1)
+      setStreak(streak + 1)
+    } else {
+      setStreak(0)
     }
   }
 
@@ -182,8 +186,14 @@ function Chapter8() {
         <div className="quiz-header">
           <h2>Chapter 8: Envisionment</h2>
           <div className="progress-info">
-            <span>Question {currentQuestionIndex + 1} of {questionsData.length}</span>
-            <span>Score: {score}/{answeredQuestions}</span>
+            <div style={{ display: 'flex', alignItems: 'center', width: '100%' }}>
+              <span>Question {currentQuestionIndex + 1} of {questionsData.length}</span>
+              <div style={{ flex: 1 }}></div>
+              {streak >= 2 && (
+                <span className="streak-fire" style={{ marginRight: '1.5rem' }}>🔥 {streak}</span>
+              )}
+              <span>Score: {score}/{answeredQuestions}</span>
+            </div>
           </div>
           <div className="progress-bar">
             <div 
@@ -239,21 +249,21 @@ function Chapter8() {
                 The correct answer is: {currentQuestion.answer}
               </div>
               {currentQuestion.shortExplanation && (
-                <p 
+                <p
                   className="short-explanation"
-                  dangerouslySetInnerHTML={{ 
+                  dangerouslySetInnerHTML={{
                     __html: currentQuestion.shortExplanation.replace(
-                      /'([^']+)'/g, 
+                      /'([^']+)'/g,
                       "<span class='highlight'>$1</span>"
                     )
                   }}
                 />
               )}
-              <p 
+              <p
                 className="explanation-text"
-                dangerouslySetInnerHTML={{ 
+                dangerouslySetInnerHTML={{
                   __html: currentQuestion.explanation.replace(
-                    /'([^']+)'/g, 
+                    /'([^']+)'/g,
                     "<span class='highlight'>$1</span>"
                   )
                 }}

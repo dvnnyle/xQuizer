@@ -34,6 +34,7 @@ function RandomizerQuiz() {
   const [answeredQuestions, setAnsweredQuestions] = useState(0)
   const [userAnswers, setUserAnswers] = useState([])
   const [showReview, setShowReview] = useState(false)
+  const [streak, setStreak] = useState(0)
 
   const currentQuestion = questionsData[currentQuestionIndex]
 
@@ -50,6 +51,9 @@ function RandomizerQuiz() {
 
     if (isCorrect) {
       setScore(score + 1)
+      setStreak(streak + 1)
+    } else {
+      setStreak(0)
     }
   }
 
@@ -230,8 +234,14 @@ function RandomizerQuiz() {
         <div className="quiz-header">
           <h2>🎲 Random UX Quiz - 30 Questions (Chapters 2, 3, 5, 6, 8, 10)</h2>
           <div className="progress-info">
-            <span>Question {currentQuestionIndex + 1} of {questionsData.length}</span>
-            <span>Score: {score}/{answeredQuestions}</span>
+            <div style={{ display: 'flex', alignItems: 'center', width: '100%' }}>
+              <span>Question {currentQuestionIndex + 1} of {questionsData.length}</span>
+              <div style={{ flex: 1 }}></div>
+              {streak >= 2 && (
+                <span className="streak-fire" style={{ marginRight: '1.5rem' }}>🔥 {streak}</span>
+              )}
+              <span>Score: {score}/{answeredQuestions}</span>
+            </div>
           </div>
           <div className="progress-bar">
             <div 
@@ -280,21 +290,21 @@ function RandomizerQuiz() {
                 The correct answer is: {currentQuestion.answer}
               </div>
               {currentQuestion.shortExplanation && (
-                <p 
+                <p
                   className="short-explanation"
-                  dangerouslySetInnerHTML={{ 
+                  dangerouslySetInnerHTML={{
                     __html: currentQuestion.shortExplanation.replace(
-                      /'([^']+)'/g, 
+                      /'([^']+)'/g,
                       "<span class='highlight'>$1</span>"
                     )
                   }}
                 />
               )}
-              <p 
+              <p
                 className="explanation-text"
-                dangerouslySetInnerHTML={{ 
+                dangerouslySetInnerHTML={{
                   __html: currentQuestion.explanation.replace(
-                    /'([^']+)'/g, 
+                    /'([^']+)'/g,
                     "<span class='highlight'>$1</span>"
                   )
                 }}

@@ -1,3 +1,27 @@
+// Map law names to official lawsofux.com slugs
+const lawSlugMap = {
+  'Aesthetic Usability Effect': 'aesthetic-usability-effect',
+  'Doherty Threshold': 'doherty-threshold',
+  "Fitts' Law": 'fitts-law',
+  "Hick's Law": 'hicks-law',
+  "Jakob's Law": 'jakobs-law',
+  'Law of Common Region': 'law-of-common-region',
+  'Law of Prägnanz': 'law-of-pragnanz',
+  'Law of Proximity': 'law-of-proximity',
+  'Law of Similarity': 'law-of-similarity',
+  'Law of Uniform Connectedness': 'law-of-uniform-connectedness',
+  "Miller's Law": 'millers-law',
+  "Occam's Razor": 'occams-razor',
+  'Pareto Principle': 'pareto-principle',
+  "Parkinson's Law": 'parkinsons-law',
+  'Peak-End Rule': 'peak-end-rule',
+  "Postel's Law": 'postels-law',
+  'Serial Position Effect': 'serial-position-effect',
+  "Tesler's Law": 'teslers-law',
+  'Von Restorff Effect': 'von-restorff-effect',
+  'Zeigarnik Effect': 'zeigarnik-effect',
+  'Chunking': 'chunking'
+}
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import NavigationMenu from '../pages/widget/navigationMenu'
@@ -243,37 +267,8 @@ function UxLaws() {
               </div>
             </div>
             
-            <div className="modal-body">
-              <div className="modal-header">
-                <h2>{selectedLaw.law}</h2>
-                <span className="modal-number">#{selectedLaw.id}</span>
-              </div>
-              
-              <div className="modal-description">
-                <h4>Description</h4>
-                <p>{selectedLaw.description}</p>
-              </div>
-              
-              <div className="modal-example">
-                <h4>Example</h4>
-                <p>{selectedLaw.example}</p>
-              </div>
-              
-              <div className="modal-actions">
-                <a 
-                  href={selectedLaw.image} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="learn-more-btn"
-                >
-                  Learn More
-                </a>
-              </div>
-              
-              <div className="modal-divider"></div>
-            </div>
-            
-            <div className="modal-nav-group">
+            {/* Floating nav group above modal-body */}
+            <div className="modal-nav-group floating-nav">
               <button 
                 className="carousel-btn prev-btn" 
                 onClick={showPreviousLaw}
@@ -294,6 +289,65 @@ function UxLaws() {
               >
                 Next &#8594;
               </button>
+            </div>
+
+            <div className="modal-body">
+              <div className="modal-header">
+                <h2>{selectedLaw.law}</h2>
+                <span className="modal-number">#{selectedLaw.id}</span>
+              </div>
+
+              <div className="modal-description">
+                <h4>Description</h4>
+                <p>{selectedLaw.description}</p>
+              </div>
+
+              {selectedLaw.takeaways && selectedLaw.takeaways.length > 0 && (
+                <div className="modal-takeaways" style={{ marginTop: '1em' }}>
+                  <h4>Takeaways</h4>
+                  <ul>
+                    {selectedLaw.takeaways.map((takeaway, idx) => (
+                      <li key={idx}>{takeaway}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {selectedLaw.origins && (
+                <div className="modal-origins" style={{ marginTop: '1em' }}>
+                  <h4>Origins</h4>
+                  <p>{selectedLaw.origins}</p>
+                </div>
+              )}
+
+              <div className="modal-example" style={{ marginTop: '1em' }}>
+                <h4>Example</h4>
+                <p>{selectedLaw.example}</p>
+              </div>
+
+              <div className="modal-actions">
+                <a
+                  href={
+                    selectedLaw.law === 'Aesthetic Usability Effect'
+                      ? 'https://lawsofux.com/aesthetic-usability-effect/'
+                      : `https://lawsofux.com/${
+                          lawSlugMap[selectedLaw.law]
+                            ? lawSlugMap[selectedLaw.law]
+                            : selectedLaw.law
+                                .toLowerCase()
+                                .replace(/[^a-z0-9 ]/g, '')
+                                .trim()
+                                .replace(/\s+/g, '-')
+                        }/`
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="learn-more-btn"
+                >
+                  Learn More
+                </a>
+              </div>
+              
+                <div className="modal-divider"></div>
             </div>
           </motion.div>
         </motion.div>

@@ -10,7 +10,7 @@
     ],
     "answerIndex": 1,
     "answer": "Something the product must do or a quality it must have",
-    "explanation": "A requirement is defined as something the product must do or a quality that the product must have (behaviour or quality).<br><br><strong>Example:</strong> Functional requirement: 'Users must be able to reset their password via email.' Quality requirement: 'The system must respond to user actions within 2 seconds.' Both define must-haves.<br><br><strong>Example:</strong> Functional requirement: 'Users must be able to reset their password via email.' Quality requirement: 'The system must respond to user actions within 2 seconds.' Both define must-haves.",
+    "explanation": "A requirement is defined as something the product must do or a quality that the product must have (behaviour or quality).<br><br><strong>Example:</strong> Functional requirement: 'Users must be able to reset their password via email.' Quality requirement: 'The system must respond to user actions within 2 seconds.' Both define must-haves.",
     "shortExplanation": "A requirement defines what the product must do or a quality it must have."
   },
   {
@@ -24,7 +24,7 @@
     ],
     "answerIndex": 2,
     "answer": "To understand people, activities, contexts and generate requirements",
-    "explanation": "Understanding is about researching people, activities and contexts (PACT) to generate grounded requirements for the system.<br><br><strong>Example:</strong> A team building a delivery app doesn't jump to wireframes. They first observe drivers, interview customers, map delivery contexts (traffic, weather, rural areas), then generate requirements like 'offline route caching' based on real needs.<br><br><strong>Example:</strong> A team building a delivery app doesn't jump to wireframes. They first observe drivers, interview customers, map delivery contexts (traffic, weather, rural areas), then generate requirements like 'offline route caching' based on real needs.",
+    "explanation": "Understanding is about researching people, activities and contexts (PACT) to generate grounded requirements for the system.<br><br><strong>Example:</strong> A team building a delivery app doesn't jump to wireframes. They first observe drivers, interview customers, map delivery contexts (traffic, weather, rural areas), then generate requirements like 'offline route caching' based on real needs.",
     "shortExplanation": "Understanding means researching real people and contexts to generate grounded requirements."
   },
   {
@@ -38,7 +38,7 @@
     ],
     "answerIndex": 2,
     "answer": "They guide design, reduce assumptions, and define what success looks like",
-    "explanation": "Requirements focus design on real needs, reduce guesswork, and provide a basis for judging whether the system is successful.<br><br><strong>Example:</strong> Without requirements, one designer builds a complex admin panel while another builds a simple dashboard—both guessing. With requirements ('system must support 10,000 concurrent users'), everyone designs toward measurable goals.<br><br><strong>Example:</strong> Without requirements, one designer builds a complex admin panel while another builds a simple dashboard—both guessing. With requirements ('system must support 10,000 concurrent users'), everyone designs toward measurable goals.",
+    "explanation": "Requirements focus design on real needs, reduce guesswork, and provide a basis for judging whether the system is successful.<br><br><strong>Example:</strong> Without requirements, one designer builds a complex admin panel while another builds a simple dashboard—both guessing. With requirements ('system must support 10,000 concurrent users'), everyone designs toward measurable goals.",
     "shortExplanation": "Requirements guide design, reduce guesswork, and define success criteria."
   },
   {
@@ -52,7 +52,7 @@
     ],
     "answerIndex": 2,
     "answer": "Functional and non-functional",
-    "explanation": "Requirements are conventionally divided into functional (what the system does) and non-functional (qualities it must have).<br><br><strong>Example:</strong> Functional: 'Users can upload photos.' Non-functional: 'Photos must upload in under 5 seconds,' 'System must store photos encrypted.' Function vs. quality.<br><br><strong>Example:</strong> Functional: 'Users can upload photos.' Non-functional: 'Photos must upload in under 5 seconds,' 'System must store photos encrypted.' Function vs. quality.",
+    "explanation": "Requirements are conventionally divided into functional (what the system does) and non-functional (qualities it must have).<br><br><strong>Example:</strong> Functional: 'Users can upload photos.' Non-functional: 'Photos must upload in under 5 seconds,' 'System must store photos encrypted.' Function vs. quality.",
     "shortExplanation": "Functional (what it does) and non-functional (qualities like speed, security)."
   },
   {
@@ -66,7 +66,7 @@
     ],
     "answerIndex": 1,
     "answer": "The system must support two-factor authentication for login",
-    "explanation": "Functional requirements specify what the system must do – here, supporting two-factor authentication is a concrete function.<br><br><strong>Example:</strong> Two-factor authentication is a concrete function: the system sends a code, user enters it, system verifies. It's what the system does, not a quality like speed or reliability.<br><br><strong>Example:</strong> Two-factor authentication is a concrete function: the system sends a code, user enters it, system verifies. It's what the system does, not a quality like speed or reliability.",
+    "explanation": "Functional requirements specify what the system must do – here, supporting two-factor authentication is a concrete function.<br><br><strong>Example:</strong> Two-factor authentication is a concrete function: the system sends a code, user enters it, system verifies. It's what the system does, not a quality like speed or reliability.",
     "shortExplanation": "Functional requirements specify system actions or features."
   },
   {
@@ -80,7 +80,7 @@
     ],
     "answerIndex": 2,
     "answer": "The app must load the home screen within 2 seconds",
-    "explanation": "Non-functional requirements describe qualities such as performance, usability or security – here, response time is a quality.<br><br><strong>Example:</strong> Loading the home screen in 2 seconds is a performance quality, not a feature. Other qualities: '99.9% uptime' (reliability), 'WCAG AA compliant' (accessibility), 'works offline' (availability).<br><br><strong>Example:</strong> Loading the home screen in 2 seconds is a performance quality, not a feature. Other qualities: '99.9% uptime' (reliability), 'WCAG AA compliant' (accessibility), 'works offline' (availability).",
+    "explanation": "Non-functional requirements describe qualities such as performance, usability or security – here, response time is a quality.<br><br><strong>Example:</strong> Loading the home screen in 2 seconds is a performance quality, not a feature. Other qualities: '99.9% uptime' (reliability), 'WCAG AA compliant' (accessibility), 'works offline' (availability).",
     "shortExplanation": "Non-functional requirements describe qualities like performance, security, usability."
   },
   {
@@ -94,7 +94,7 @@
     ],
     "answerIndex": 2,
     "answer": "System uptime of at least 99.5%",
-    "explanation": "Qualities like reliability, performance, security and availability are non-functional requirements.<br><br><strong>Example:</strong> 99.5% uptime means the system can only be down 3.6 hours per month. This quality affects architecture (redundancy, failover) but isn't a feature users click.<br><br><strong>Example:</strong> 99.5% uptime means the system can only be down 3.6 hours per month. This quality affects architecture (redundancy, failover) but isn't a feature users click.",
+    "explanation": "Qualities like reliability, performance, security and availability are non-functional requirements.<br><br><strong>Example:</strong> 99.5% uptime means the system can only be down 3.6 hours per month. This quality affects architecture (redundancy, failover) but isn't a feature users click.",
     "shortExplanation": "Reliability and availability are non-functional quality requirements."
   },
   {
@@ -108,7 +108,7 @@
     ],
     "answerIndex": 1,
     "answer": "What types of content and media the system must handle",
-    "explanation": "Data/media requirements define what content (text, images, audio, video, etc.) and media formats the system must support.<br><br><strong>Example:</strong> A recipe app must handle: text (ingredients, steps), images (food photos, JPG/PNG), video (cooking tutorials, MP4), user ratings (numbers), comments (text). Knowing this shapes database and UI design.<br><br><strong>Example:</strong> A recipe app must handle: text (ingredients, steps), images (food photos, JPG/PNG), video (cooking tutorials, MP4), user ratings (numbers), comments (text). Knowing this shapes database and UI design.",
+    "explanation": "Data/media requirements define what content (text, images, audio, video, etc.) and media formats the system must support.<br><br><strong>Example:</strong> A recipe app must handle: text (ingredients, steps), images (food photos, JPG/PNG), video (cooking tutorials, MP4), user ratings (numbers), comments (text). Knowing this shapes database and UI design.",
     "shortExplanation": "Data requirements specify content types and formats the system must handle."
   },
   {
@@ -122,7 +122,7 @@
     ],
     "answerIndex": 2,
     "answer": "In clear, unambiguous language that can be tested",
-    "explanation": "Requirements should be expressed clearly and unambiguously and written so that it is possible to test whether they are met.<br><br><strong>Example:</strong> Bad: 'System should be fast.' (Vague—how fast?) Good: 'Search results must appear within 2 seconds of query submission.' (Testable, specific, measurable.)<br><br><strong>Example:</strong> Bad: 'System should be fast.' (Vague—how fast?) Good: 'Search results must appear within 2 seconds of query submission.' (Testable, specific, measurable.)",
+    "explanation": "Requirements should be expressed clearly and unambiguously and written so that it is possible to test whether they are met.<br><br><strong>Example:</strong> Bad: 'System should be fast.' (Vague—how fast?) Good: 'Search results must appear within 2 seconds of query submission.' (Testable, specific, measurable.)",
     "shortExplanation": "Clear, testable requirements prevent ambiguity and enable verification."
   },
   {

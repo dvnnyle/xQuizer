@@ -4,7 +4,11 @@ import NavigationMenu from '../pages/widget/navigationMenu'
 import questionsData from '../../dataBank/chapter2.json'
 import './chapter3.css'
 
+
+
 function Chapter2() {
+  // Use the original questions data directly
+    // ...existing code...
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [selectedAnswer, setSelectedAnswer] = useState(null)
   const [showResult, setShowResult] = useState(false)
@@ -12,6 +16,7 @@ function Chapter2() {
   const [answeredQuestions, setAnsweredQuestions] = useState(0)
   const [userAnswers, setUserAnswers] = useState([])
   const [showReview, setShowReview] = useState(false)
+  const [streak, setStreak] = useState(0)
 
   const currentQuestion = questionsData[currentQuestionIndex]
 
@@ -28,6 +33,9 @@ function Chapter2() {
 
     if (isCorrect) {
       setScore(score + 1)
+      setStreak(streak + 1)
+    } else {
+      setStreak(0)
     }
   }
 
@@ -214,8 +222,14 @@ function Chapter2() {
         <div className="quiz-header">
           <h2>CHAPTER 2 — PACT: A Framework for Designing UX</h2>
           <div className="progress-info">
-            <span>Question {currentQuestionIndex + 1} of {questionsData.length}</span>
-            <span>Score: {score}/{answeredQuestions}</span>
+              <div style={{ display: 'flex', alignItems: 'center', width: '100%' }}>
+                <span>Question {currentQuestionIndex + 1} of {questionsData.length}</span>
+                <div style={{ flex: 1 }}></div>
+                {streak >= 2 && (
+                  <span className="streak-fire" style={{ marginRight: '1.5rem' }}>🔥 {streak}</span>
+                )}
+                <span>Score: {score}/{answeredQuestions}</span>
+              </div>
           </div>
           <div className="progress-bar">
             <div 

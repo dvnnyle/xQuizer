@@ -407,6 +407,14 @@
   .quiz-grid {
     grid-template-columns: 1fr;
   }
+  .logo-background {
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .scroll-to-top {
