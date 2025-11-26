@@ -255,14 +255,14 @@
 }
 
 .modal-image {
-  height: 250px;
+  height: 16rem;
   background: linear-gradient(135deg, rgba(100, 108, 255, 0.1), rgba(139, 147, 255, 0.1));
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px ;
 }
 
 .modal-image img {
