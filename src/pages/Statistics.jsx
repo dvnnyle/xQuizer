@@ -16,9 +16,11 @@ function Statistics() {
   useEffect(() => {
     // Load statistics from localStorage
     const chapters = [
+      { id: 'chapter2', name: 'Chapter 2', total: 31 },
       { id: 'chapter3', name: 'Chapter 3', total: 29 },
       { id: 'chapter5', name: 'Chapter 5', total: 30 },
       { id: 'chapter6', name: 'Chapter 6', total: 33 },
+      { id: 'chapter7', name: 'Chapter 7', total: 30 },
       { id: 'chapter8', name: 'Chapter 8', total: 26 },
       { id: 'chapter10', name: 'Chapter 10', total: 30 },
       { id: 'chaptertest', name: 'Test Chapter', total: 5 },
@@ -216,9 +218,11 @@ function Statistics() {
             className="stats-button secondary"
             onClick={() => {
               if (confirm('Are you sure you want to reset all statistics? This cannot be undone.')) {
+                localStorage.removeItem('quiz_chapter2')
                 localStorage.removeItem('quiz_chapter3')
                 localStorage.removeItem('quiz_chapter5')
                 localStorage.removeItem('quiz_chapter6')
+                localStorage.removeItem('quiz_chapter7')
                 localStorage.removeItem('quiz_chapter8')
                 localStorage.removeItem('quiz_chapter10')
                 localStorage.removeItem('quiz_chaptertest')

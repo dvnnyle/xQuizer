@@ -28,7 +28,7 @@
 .table-of-contents {
   position: fixed;
   left: 1rem;
-  top: 40%;
+  top: 50%;
   transform: translateY(-50%);
   border-radius: 25px;
   padding: 12px;

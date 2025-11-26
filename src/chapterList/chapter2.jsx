@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import NavigationMenu from '../pages/widget/navigationMenu'
-import questionsData from '../../dataBank/chapter10.json'
-import '../chapterList/chapter3.css'
+import questionsData from '../../dataBank/chapter2.json'
+import './chapter3.css'
 
-function Chapter10() {
+function Chapter2() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [selectedAnswer, setSelectedAnswer] = useState(null)
   const [showResult, setShowResult] = useState(false)
@@ -16,11 +16,12 @@ function Chapter10() {
   const currentQuestion = questionsData[currentQuestionIndex]
 
   const handleAnswerClick = (index) => {
-    if (selectedAnswer !== null) return
+    if (selectedAnswer !== null) return // Already answered
 
     setSelectedAnswer(index)
     const isCorrect = index === currentQuestion.answerIndex
 
+    // Store the answer
     const newAnswers = [...userAnswers]
     newAnswers[currentQuestionIndex] = { selectedIndex: index, isCorrect }
     setUserAnswers(newAnswers)
@@ -41,13 +42,13 @@ function Chapter10() {
       const finalScore = score + (currentQuestion.answerIndex === selectedAnswer ? 1 : 0)
       
       // Save to localStorage
-      const existingData = localStorage.getItem('quiz_chapter10')
+      const existingData = localStorage.getItem('quiz_chapter2')
       const previousData = existingData ? JSON.parse(existingData) : { bestScore: 0, attempts: 0, attemptHistory: [] }
       
       const newAttempt = { score: finalScore, date: new Date().toISOString() }
       const attemptHistory = [...(previousData.attemptHistory || []), newAttempt]
       
-      localStorage.setItem('quiz_chapter10', JSON.stringify({
+      localStorage.setItem('quiz_chapter2', JSON.stringify({
         score: finalScore,
         completed: questionsData.length,
         total: questionsData.length,
@@ -92,73 +93,79 @@ function Chapter10() {
     
     if (showReview) {
       return (
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <NavigationMenu />
           <div className="quiz-container">
             <div className="quiz-header">
-              <h2>Answer Review - Chapter 10</h2>
-              <div className="progress-info"><span>Score: {score}/{questionsData.length} ({percentage}%)</span></div>
+              <h2>CHAPTER 2 — PACT: A Framework for Designing UX</h2>
+              <div className="progress-info">
+                <span>Score: {score}/{questionsData.length} ({percentage}%)</span>
+              </div>
             </div>
+
             <div className="review-container">
               {questionsData.map((question, qIndex) => {
                 const userAnswer = userAnswers[qIndex]
                 const isCorrect = userAnswer?.isCorrect
                 const userSelectedIndex = userAnswer?.selectedIndex
+
                 return (
                   <div key={question.id} className="review-question-card">
                     <div className="review-header">
                       <span className="question-number">Question {qIndex + 1}</span>
-                      <span className={`result-badge ${isCorrect ? 'correct-badge' : 'wrong-badge'}`}>{isCorrect ? '✓ Correct' : '✗ Incorrect'}</span>
+                      <span className={`result-badge ${isCorrect ? 'correct-badge' : 'wrong-badge'}`}>
+                        {isCorrect ? '✓ Correct' : '✗ Incorrect'}
+                      </span>
                     </div>
+                    
                     <h3 className="question-text">{question.question}</h3>
+                    
                     <div className="review-options">
                       {question.options.map((option, optIndex) => {
                         const isCorrectOption = optIndex === question.answerIndex
                         const isUserSelection = optIndex === userSelectedIndex
+                        
                         let optionClass = 'review-option'
                         if (isCorrectOption) optionClass += ' correct-option'
                         if (isUserSelection && !isCorrect) optionClass += ' wrong-option'
+                        
                         return (
                           <div key={optIndex} className={optionClass}>
-                            <span className="option-letter">{String.fromCharCode(65 + optIndex)}</span>
+                            <span className="option-letter">
+                              {String.fromCharCode(65 + optIndex)}
+                            </span>
                             <span className="option-text">{option}</span>
-                            {isUserSelection && <span className="selection-badge">Your answer</span>}
-                            {isCorrectOption && <span className="correct-badge-mini">Correct</span>}
+                            {isUserSelection && (
+                              <span className="selection-badge">Your answer</span>
+                            )}
+                            {isCorrectOption && (
+                              <span className="correct-badge-mini">Correct</span>
+                            )}
                           </div>
                         )
                       })}
                     </div>
+                    
                     <div className="review-explanation">
-                      <strong>Explanation:</strong>
-                      {question.shortExplanation && (
-                        <div className="short-explanation">
-                          <span
-                            dangerouslySetInnerHTML={{
-                              __html: question.shortExplanation.replace(
-                                /'([^']+)'/g,
-                                "<span class='highlight'>$1</span>"
-                              )
-                            }}
-                          />
-                        </div>
-                      )}
-                      <p
-                        className="explanation-text"
-                        dangerouslySetInnerHTML={{
-                          __html: question.explanation.replace(
-                            /'([^']+)'/g,
-                            "<span class='highlight'>$1</span>"
-                          )
-                        }}
-                      />
+                      <strong>Explanation:</strong> {question.explanation}
                     </div>
                   </div>
                 )
               })}
             </div>
+
             <div className="review-actions">
-              <button onClick={handleBackToResults} className="next-button">← Back to Results</button>
-              <button onClick={handleRestart} className="restart-button">Try Again</button>
+              <button onClick={handleBackToResults} className="next-button">
+                ← Back to Results
+              </button>
+              <button onClick={handleRestart} className="restart-button">
+                Try Again
+              </button>
             </div>
           </div>
         </motion.div>
@@ -179,7 +186,9 @@ function Chapter10() {
               {Math.round((score / questionsData.length) * 100)}%
             </div>
             <div className="button-group">
-              <button onClick={handleShowReview} className="next-button" style={{ marginBottom: '10px' }}>📋 Review Answers</button>
+              <button onClick={handleShowReview} className="next-button" style={{ marginBottom: '10px' }}>
+                📋 Review Answers
+              </button>
               <button onClick={handleRestart} className="restart-button">
                 Try Again
               </button>
@@ -203,7 +212,7 @@ function Chapter10() {
       <NavigationMenu />
       <div className="quiz-container">
         <div className="quiz-header">
-          <h2>Chapter 10: Evaluation</h2>
+          <h2>CHAPTER 2 — PACT: A Framework for Designing UX</h2>
           <div className="progress-info">
             <span>Question {currentQuestionIndex + 1} of {questionsData.length}</span>
             <span>Score: {score}/{answeredQuestions}</span>
@@ -217,14 +226,10 @@ function Chapter10() {
         </div>
 
         <div className="question-card">
-          <div className="section-badge">Section {currentQuestion.section}</div>
-          <h3 className="question-text">{currentQuestion.question}</h3>
-          
-          {currentQuestion.imageUrl && (
-            <div className="question-image">
-              <img src={currentQuestion.imageUrl} alt="Question illustration" />
-            </div>
+          {currentQuestion.section && (
+            <div className="section-badge">Section {currentQuestion.section}</div>
           )}
+          <h3 className="question-text">{currentQuestion.question}</h3>
           
           <div className="options-list">
             {currentQuestion.options.map((option, index) => {
@@ -304,4 +309,4 @@ function Chapter10() {
   )
 }
 
-export default Chapter10
+export default Chapter2

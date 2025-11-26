@@ -1,0 +1,467 @@
+[
+  {
+    "id": 1,
+    "section": "2.1",
+    "question": "What does the PACT framework stand for?",
+    "options": [
+      "People, Activities, Contexts, Technologies",
+      "Persons, Actions, Culture, Tools",
+      "Performance, Accessibility, Consistency, Testing",
+      "People, Architecture, Content, Technology"
+    ],
+    "answerIndex": 0,
+    "answer": "People, Activities, Contexts, Technologies",
+    "explanation": "PACT is a core UX framework that stands for People, Activities, Contexts and Technologies, used to structure understanding of design situations.<br><br><strong>Example:</strong> When designing a mobile banking app, designers use PACT to consider: People (tech-savvy millennials vs. older users), Activities (checking balance, transferring money), Contexts (on-the-go, at home, poor signal), Technologies (smartphone, fingerprint sensor, push notifications).",
+    "shortExplanation": "PACT stands for People, Activities, Contexts, Technologies."
+  },
+  {
+    "id": 2,
+    "section": "2.1",
+    "question": "What is the main purpose of using the PACT framework in UX design?",
+    "options": [
+      "To break down messy real-world situations into manageable parts",
+      "To choose a programming language",
+      "To estimate the project budget",
+      "To design the company logo"
+    ],
+    "answerIndex": 0,
+    "answer": "To break down messy real-world situations into manageable parts",
+    "explanation": "PACT helps designers analyse who is involved, what they do, where they do it, and with what tools, turning complex situations into understandable elements.<br><br><strong>Example:</strong> A messy problem: 'People want better train travel.' Using PACT, designers break this down: who travels (commuters, tourists), what they do (buy tickets, find platforms), where (busy stations), with what tools (kiosks, apps). Now the problem is clearer.",
+    "shortExplanation": "PACT helps structure messy real-world design situations into manageable parts."
+  },
+  {
+    "id": 3,
+    "section": "2.2",
+    "question": "In PACT, which element focuses on the diversity of human abilities and characteristics?",
+    "options": [
+      "People",
+      "Activities",
+      "Contexts",
+      "Technologies"
+    ],
+    "answerIndex": 0,
+    "answer": "People",
+    "explanation": "The People element covers physical, cognitive, experiential and social differences between users.<br><br><strong>Example:</strong> Designing a fitness tracker: People vary in age (young athletes vs. retirees), physical ability (wheelchair users need different metrics), tech experience (some never used apps before), and motivation (competitive vs. casual).",
+    "shortExplanation": "'People' focuses on physical, cognitive, experiential and social diversity."
+  },
+  {
+    "id": 4,
+    "section": "2.2",
+    "question": "Which of the following is a cognitive characteristic of users?",
+    "options": [
+      "Memory and attention abilities",
+      "Height and hand size",
+      "Office temperature preference",
+      "Type of device owned"
+    ],
+    "answerIndex": 0,
+    "answer": "Memory and attention abilities",
+    "explanation": "Cognitive characteristics include memory, attention, problem-solving and other mental abilities.<br><br><strong>Example:</strong> A complex admin dashboard overwhelms users with poor working memory. Good design chunks information, uses visual cues, and provides clear navigation to reduce cognitive load.",
+    "shortExplanation": "Cognitive characteristics include memory, attention, and problem-solving abilities."
+  },
+  {
+    "id": 5,
+    "section": "2.2",
+    "question": "Why is designing for an 'average user' considered problematic in PACT?",
+    "options": [
+      "Because average users rarely exist in real life",
+      "Because average users are too skilled",
+      "Because average users never use technology",
+      "Because average users do not like prototypes"
+    ],
+    "answerIndex": 0,
+    "answer": "Because average users rarely exist in real life",
+    "explanation": "The chapter explains that average users don't really exist; people vary widely in abilities, experiences and contexts.<br><br><strong>Example:</strong> An 'average user' might be 30 years old with moderate tech skills. But real users include a 65-year-old retiree with no smartphone experience and a 20-year-old developer. Both need different design considerations.",
+    "shortExplanation": "Real users vary widely; designing for an 'average' ignores important differences."
+  },
+  {
+    "id": 6,
+    "section": "2.2",
+    "question": "Which example best illustrates differences in experience/familiarity among users?",
+    "options": [
+      "Tech-savvy young adults vs. older adults new to digital banking",
+      "Short vs. tall users",
+      "Users in bright vs. dark rooms",
+      "Users with different internet providers"
+    ],
+    "answerIndex": 0,
+    "answer": "Tech-savvy young adults vs. older adults new to digital banking",
+    "explanation": "Differences in prior experience (novices vs. experts) strongly affect how people understand and use systems.<br><br><strong>Example:</strong> Young adults comfortable with mobile banking can navigate complex menus easily. Older adults new to digital banking may struggle with the same interface, needing simpler language, clearer steps, and more reassurance.",
+    "shortExplanation": "Novices and experts have very different mental models and needs."
+  },
+  {
+    "id": 7,
+    "section": "2.2",
+    "question": "Personality and motivation in PACT mainly affect:",
+    "options": [
+      "How willing and confident users are in using a system",
+      "The colour of the interface",
+      "The size of the device screen",
+      "The number of bugs in the code"
+    ],
+    "answerIndex": 0,
+    "answer": "How willing and confident users are in using a system",
+    "explanation": "User attitudes, confidence and motivation influence how they approach tasks and how much support they need.<br><br><strong>Example:</strong> Confident users explore features boldly. Anxious users worry about making mistakes (especially with money apps) and need reassurance: clear undo buttons, confirmation steps, and friendly error messages.",
+    "shortExplanation": "Motivation and confidence shape how users approach tasks."
+  },
+  {
+    "id": 8,
+    "section": "2.3",
+    "question": "In PACT, 'activities' refer to:",
+    "options": [
+      "What users actually do and how they do it",
+      "The hardware configuration of the system",
+      "The company's business goals only",
+      "The visual style of the interface"
+    ],
+    "answerIndex": 0,
+    "answer": "What users actually do and how they do it",
+    "explanation": "Activities are the tasks and actions users carry out, including their steps, goals and characteristics.<br><br><strong>Example:</strong> In a recipe app, activities include: searching for recipes, saving favorites, checking ingredients, setting timers. Each activity has different steps and goals designers must support.",
+    "shortExplanation": "Activities are what users do: their tasks, goals and steps."
+  },
+  {
+    "id": 9,
+    "section": "2.3",
+    "question": "Which of the following is an activity characteristic described in the chapter?",
+    "options": [
+      "Complexity, frequency and time pressure",
+      "Screen resolution and colour depth",
+      "Network bandwidth and latency",
+      "Company size and revenue"
+    ],
+    "answerIndex": 0,
+    "answer": "Complexity, frequency and time pressure",
+    "explanation": "Activities differ in complexity, how often they are done, how quickly they must be done, and more.<br><br><strong>Example:</strong> Checking email (simple, frequent, low pressure) vs. filing taxes online (complex, infrequent, deadline pressure). Tax software needs extra guidance, validation, and save-as-you-go features.",
+    "shortExplanation": "Activities vary in complexity, frequency, and time pressure."
+  },
+  {
+    "id": 10,
+    "section": "2.3",
+    "question": "Buying a train ticket in a busy station during rush hour is best described as an activity that is:",
+    "options": [
+      "Time-sensitive and stressful",
+      "Slow and exploratory",
+      "Creative and open-ended",
+      "Rare and low-risk"
+    ],
+    "answerIndex": 0,
+    "answer": "Time-sensitive and stressful",
+    "explanation": "The chapter uses examples like ticket purchase that are fast, time-pressured and sometimes stressful.<br><br><strong>Example:</strong> At rush hour, commuters need to buy tickets in seconds: big buttons, saved payment methods, default options. No time for lengthy forms or confusing menus when the train leaves in 2 minutes.",
+    "shortExplanation": "Buying tickets under time pressure is stressful and urgent."
+  },
+  {
+    "id": 11,
+    "section": "2.3",
+    "question": "Which activity is most likely to be creative and open-ended?",
+    "options": [
+      "Editing a video project",
+      "Entering fixed data into a tax form",
+      "Confirming a bank transaction",
+      "Checking a train timetable quickly"
+    ],
+    "answerIndex": 0,
+    "answer": "Editing a video project",
+    "explanation": "Creative activities, such as video editing, are long, exploratory and open-ended compared to rigid data entry tasks.<br><br><strong>Example:</strong> Video editing (creative, exploratory, hours-long) needs timeline views, easy undo, experimentation tools. Tax forms (rigid, structured) need validation, clear fields, and step-by-step guidance.",
+    "shortExplanation": "Creative activities are exploratory and open-ended, unlike rigid data entry."
+  },
+  {
+    "id": 12,
+    "section": "2.3",
+    "question": "Why must designers consider whether activities are cooperative or individual?",
+    "options": [
+      "Because group work changes communication and coordination needs",
+      "Because only individuals care about usability",
+      "Because group tasks never use technology",
+      "Because cooperative tasks are always slower"
+    ],
+    "answerIndex": 0,
+    "answer": "Because group work changes communication and coordination needs",
+    "explanation": "Cooperative activities involve multiple people, which introduces coordination, shared awareness and communication requirements.<br><br><strong>Example:</strong> A solo user edits a document alone. A team collaborating on that document needs: real-time presence indicators, commenting, version control, and conflict resolution when two people edit the same paragraph.",
+    "shortExplanation": "Group activities need coordination, communication, and shared awareness tools."
+  },
+  {
+    "id": 13,
+    "section": "2.4",
+    "question": "In PACT, what does 'context' mainly refer to?",
+    "options": [
+      "The physical, social and organisational environments of use",
+      "Only the technical architecture",
+      "Only the user's previous experience",
+      "The marketing context of the product"
+    ],
+    "answerIndex": 0,
+    "answer": "The physical, social and organisational environments of use",
+    "explanation": "Contexts are where and under what conditions activities take place: physical, social and organisational.<br><br><strong>Example:</strong> A doctor using a tablet in an emergency room faces: bright lights (physical), colleagues watching (social), strict privacy rules (organizational). Design must work in all these contexts.",
+    "shortExplanation": "Context includes physical, social, and organizational environments."
+  },
+  {
+    "id": 14,
+    "section": "2.4",
+    "question": "Which of these is an example of physical context?",
+    "options": [
+      "Using a phone in bright sunlight",
+      "A strict company hierarchy",
+      "A policy requiring data encryption",
+      "Users with limited memory"
+    ],
+    "answerIndex": 0,
+    "answer": "Using a phone in bright sunlight",
+    "explanation": "Physical context includes light, noise, movement, space and other environmental conditions.<br><br><strong>Example:</strong> Using a phone outdoors in bright sunlight: screen glare makes text unreadable. Good design uses high contrast, larger text, and brightness auto-adjustment.",
+    "shortExplanation": "Physical context includes light, noise, movement, and space."
+  },
+  {
+    "id": 15,
+    "section": "2.4",
+    "question": "Which scenario best illustrates social context?",
+    "options": [
+      "Using a phone during a quiet meeting where speaking is frowned upon",
+      "Using a laptop outdoors in bright light",
+      "Typing with gloves on in winter",
+      "Waiting for a slow Wi-Fi connection"
+    ],
+    "answerIndex": 0,
+    "answer": "Using a phone during a quiet meeting where speaking is frowned upon",
+    "explanation": "Social context includes norms, roles and expectations from other people in the environment.<br><br><strong>Example:</strong> In a quiet meeting, voice commands are inappropriate. Users need silent alternatives: text input, gestures, or vibration feedback instead of loud notifications.",
+    "shortExplanation": "Social context includes norms, roles, and others' expectations."
+  },
+  {
+    "id": 16,
+    "section": "2.4",
+    "question": "What is an example of organisational context from the chapter?",
+    "options": [
+      "A hospital requiring data confidentiality",
+      "A user with poor eyesight",
+      "A noisy street market",
+      "A smartphone with a small screen"
+    ],
+    "answerIndex": 0,
+    "answer": "A hospital requiring data confidentiality",
+    "explanation": "Organisational context involves policies and rules, such as confidentiality regulations in hospitals.<br><br><strong>Example:</strong> Hospital apps must comply with HIPAA: encrypted data, access logs, user authentication. A casual notes app has no such constraints. Context changes requirements.",
+    "shortExplanation": "Organizational context includes policies, rules, and regulations."
+  },
+  {
+    "id": 17,
+    "section": "2.4",
+    "question": "Why do systems that work well in a lab often fail in real contexts?",
+    "options": [
+      "Because lab tests ignore noise, interruptions and social constraints",
+      "Because users behave identically everywhere",
+      "Because technology does not matter in real life",
+      "Because lab interfaces are always poorly designed"
+    ],
+    "answerIndex": 0,
+    "answer": "Because lab tests ignore noise, interruptions and social constraints",
+    "explanation": "The chapter stresses that ignoring real physical, social and organisational conditions can make designs fail after deployment.<br><br><strong>Example:</strong> A kiosk works perfectly in a quiet lab. In a real train station: sun glare, crowds pushing, noise, rushed users, luggage in hands. The interface that worked in the lab fails in reality.",
+    "shortExplanation": "Lab testing misses real-world noise, interruptions, and constraints."
+  },
+  {
+    "id": 18,
+    "section": "2.5",
+    "question": "In PACT, 'technologies' are defined as:",
+    "options": [
+      "The tools and systems people use to carry out activities",
+      "Only the programming languages used",
+      "Only the back-end databases",
+      "Only the company's hardware budget"
+    ],
+    "answerIndex": 0,
+    "answer": "The tools and systems people use to carry out activities",
+    "explanation": "Technologies are the devices, systems and tools, including their inputs, outputs and capabilities.<br><br><strong>Example:</strong> A smartwatch (small screen, wrist-worn, always-on) vs. a desktop (large screen, keyboard, stationary). Each technology affords different interactions: taps vs. typing, glances vs. detailed work.",
+    "shortExplanation": "Technologies are the devices, systems, and tools supporting activities."
+  },
+  {
+    "id": 19,
+    "section": "2.5",
+    "question": "Which of the following is an example of an input modality mentioned in the chapter?",
+    "options": [
+      "Touch or voice input",
+      "Screen brightness",
+      "Battery level",
+      "Company policy documents"
+    ],
+    "answerIndex": 0,
+    "answer": "Touch or voice input",
+    "explanation": "Input modalities include touch, voice, gestures and typing—ways users provide information to the system.<br><br><strong>Example:</strong> Voice input works hands-free while driving. Touch input works in loud environments. Gestures work for VR. Good design offers appropriate modalities for each context.",
+    "shortExplanation": "Input modalities are ways users provide information: touch, voice, typing, gestures."
+  },
+  {
+    "id": 20,
+    "section": "2.5",
+    "question": "Which statement best describes the relationship between technology and UX in PACT?",
+    "options": [
+      "Different technologies afford different kinds of interactions",
+      "All technologies support exactly the same activities",
+      "Technology is irrelevant if people are skilled",
+      "Technologies only matter for developers"
+    ],
+    "answerIndex": 0,
+    "answer": "Different technologies afford different kinds of interactions",
+    "explanation": "A watch, phone, desktop or VR headset all enable different interaction possibilities and constraints.<br><br><strong>Example:</strong> A smartwatch: quick glances, simple taps. A phone: detailed reading, photos. A desktop: long documents, multitasking. A VR headset: immersive 3D interaction. Each affords unique experiences.",
+    "shortExplanation": "Different technologies enable different interaction possibilities."
+  },
+  {
+    "id": 21,
+    "section": "2.5",
+    "question": "Why is a smartwatch display a design constraint in PACT terms?",
+    "options": [
+      "Its small screen limits how much information can be shown at once",
+      "It has no processing power",
+      "It always requires a keyboard",
+      "It is only used indoors"
+    ],
+    "answerIndex": 0,
+    "answer": "Its small screen limits how much information can be shown at once",
+    "explanation": "Small display size restricts layout, density of information and interaction possibilities.<br><br><strong>Example:</strong> A smartwatch can show 'Meeting in 5 min' but not your full calendar. Designers must prioritize: show only essential info, use notifications, allow drill-down to phone for details.",
+    "shortExplanation": "Small screens limit information density and layout options."
+  },
+  {
+    "id": 22,
+    "section": "2.5",
+    "question": "Why must designers consider connectivity as part of technology in PACT?",
+    "options": [
+      "Unstable or offline conditions change what the system can reliably do",
+      "Connectivity only affects developers",
+      "High bandwidth is always guaranteed",
+      "Connectivity has no effect on UX"
+    ],
+    "answerIndex": 0,
+    "answer": "Unstable or offline conditions change what the system can reliably do",
+    "explanation": "Connectivity (offline, unstable, or fast networks) heavily shapes what experiences are feasible.<br><br><strong>Example:</strong> A navigation app offline: can't load new maps or traffic data. Good design pre-downloads maps, caches recent searches, shows offline mode clearly, and syncs when connection returns.",
+    "shortExplanation": "Poor connectivity changes what features work reliably."
+  },
+  {
+    "id": 23,
+    "section": "2.6",
+    "question": "What is the main purpose of 'scoping' a problem using PACT?",
+    "options": [
+      "To define the boundaries and opportunities of the design problem",
+      "To write the final technical specification",
+      "To decide on colour schemes",
+      "To choose the cheapest hardware"
+    ],
+    "answerIndex": 0,
+    "answer": "To define the boundaries and opportunities of the design problem",
+    "explanation": "Scoping with PACT clarifies who, what, where and with what tools, so the design problem is properly framed.<br><br><strong>Example:</strong> Vague: 'Build a better shopping app.' Scoped with PACT: Who (busy parents), What (quick reorders of weekly groceries), Where (home, noisy kitchens), With what (smartphones with poor Wi-Fi). Now requirements are clear.",
+    "shortExplanation": "Scoping defines who, what, where, and with what—framing the problem clearly."
+  },
+  {
+    "id": 24,
+    "section": "2.6",
+    "question": "In the train-ticket kiosk example, which PACT element does 'commuters, tourists, elderly, disabled users' belong to?",
+    "options": [
+      "People",
+      "Activities",
+      "Contexts",
+      "Technologies"
+    ],
+    "answerIndex": 0,
+    "answer": "People",
+    "explanation": "These describe different user groups, so they are part of the People element.<br><br><strong>Example:</strong> Kiosk users: commuters (rushed, frequent), tourists (unfamiliar, need guidance), elderly (slower, larger text), disabled (wheelchair height, audio support). Each group has different People characteristics.",
+    "shortExplanation": "User groups belong to the 'People' element."
+  },
+  {
+    "id": 25,
+    "section": "2.6",
+    "question": "In the same example, 'noisy station, time pressure, queues' refer mainly to:",
+    "options": [
+      "Contexts",
+      "People",
+      "Activities",
+      "Technologies"
+    ],
+    "answerIndex": 0,
+    "answer": "Contexts",
+    "explanation": "Noise, pressure and queues are aspects of the physical and social context of use.<br><br><strong>Example:</strong> A noisy station (can't hear audio), time pressure (need fast checkout), queues (stress, impatience). These context factors demand: visual feedback, defaults, progress indicators, and simple flows.",
+    "shortExplanation": "Environmental conditions are part of 'Contexts'."
+  },
+  {
+    "id": 26,
+    "section": "2.6",
+    "question": "'Select route, pay quickly, find platform info' in the kiosk example are:",
+    "options": [
+      "Activities",
+      "Technologies",
+      "Contexts",
+      "Organisational factors"
+    ],
+    "answerIndex": 0,
+    "answer": "Activities",
+    "explanation": "These describe the tasks users must perform—i.e., activities.<br><br><strong>Example:</strong> Kiosk activities: select destination (browse or search), choose ticket type (single, return), pay (card, contactless), get confirmation (print or digital). Each activity needs clear UI support.",
+    "shortExplanation": "Tasks users perform are 'Activities'."
+  },
+  {
+    "id": 27,
+    "section": "2.6",
+    "question": "Why does the chapter describe PACT as the backbone of human-centred design?",
+    "options": [
+      "Because it grounds design in real people, activities, contexts and technologies",
+      "Because it replaces all other design methods",
+      "Because it only focuses on technology performance",
+      "Because it eliminates the need for evaluation"
+    ],
+    "answerIndex": 0,
+    "answer": "Because it grounds design in real people, activities, contexts and technologies",
+    "explanation": "PACT ensures design is rooted in who is doing what, where, and with what tools, which is central to human-centred design.<br><br><strong>Example:</strong> Human-centred design means understanding actual users in real situations. PACT forces designers to ask: Who will use this? Doing what? Where? With what? This grounds design in reality, not assumptions.",
+    "shortExplanation": "PACT ensures design is rooted in real-world people, activities, contexts, and tools."
+  },
+  {
+    "id": 28,
+    "section": "2.6",
+    "question": "Which question corresponds to the 'People' part of PACT when scoping a problem?",
+    "options": [
+      "Who are we designing for?",
+      "What is the network bandwidth?",
+      "Which programming language should we use?",
+      "How much will the system cost to host?"
+    ],
+    "answerIndex": 0,
+    "answer": "Who are we designing for?",
+    "explanation": "'Who are we designing for?' is the core People question.<br><br><strong>Example:</strong> Designing a health app: Are we designing for young athletes tracking performance? Elderly patients managing medications? Doctors viewing records? Each 'who' drives different requirements.",
+    "shortExplanation": "'Who are we designing for?' identifies user groups and their characteristics."
+  },
+  {
+    "id": 29,
+    "section": "2.6",
+    "question": "Which question corresponds to the 'Activities' part of PACT?",
+    "options": [
+      "What must users accomplish?",
+      "Where will servers be located?",
+      "What is the company's yearly revenue?",
+      "Which fonts should we use?"
+    ],
+    "answerIndex": 0,
+    "answer": "What must users accomplish?",
+    "explanation": "Activities are about what users need to achieve.<br><br><strong>Example:</strong> Users must accomplish: finding a product, comparing prices, adding to cart, checking out, tracking delivery. Listing activities helps prioritize features.",
+    "shortExplanation": "'What must users accomplish?' defines goals and tasks."
+  },
+  {
+    "id": 30,
+    "section": "2.6",
+    "question": "Which question corresponds to the 'Contexts' part of PACT?",
+    "options": [
+      "Where and under what conditions does this take place?",
+      "Which APIs will be integrated?",
+      "How many developers are on the team?",
+      "What is the legal company name?"
+    ],
+    "answerIndex": 0,
+    "answer": "Where and under what conditions does this take place?",
+    "explanation": "Contexts are about where and under what conditions activities happen.<br><br><strong>Example:</strong> Where: outdoors (sun glare), moving vehicles (bumpy), public spaces (privacy concerns), poor signal (offline mode needed). Conditions shape technical requirements.",
+    "shortExplanation": "'Where and under what conditions?' identifies environmental factors."
+  },
+  {
+    "id": 31,
+    "section": "2.6",
+    "question": "Which question corresponds to the 'Technologies' part of PACT?",
+    "options": [
+      "What tools and devices are available or possible?",
+      "How often will the office be cleaned?",
+      "What is the team's favourite framework?",
+      "How many pages will the report have?"
+    ],
+    "answerIndex": 0,
+    "answer": "What tools and devices are available or possible?",
+    "explanation": "Technologies are the tools and devices that support the activities.<br><br><strong>Example:</strong> Available technologies: smartphones (GPS, camera, touch), wearables (sensors, small screen), desktops (large display, keyboard). Each tool offers different capabilities to leverage.",
+    "shortExplanation": "'What tools and devices?' determines technical possibilities and constraints."
+  }
+]

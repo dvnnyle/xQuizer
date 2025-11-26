@@ -73,9 +73,11 @@ function Home() {
         <nav className="toc-nav">
           <a href="#randomquiz" className="toc-link">Random Mix</a>
           <a href="#fullquestions" className="toc-link">All Questions</a>
+          <a href="#chapter2" className="toc-link">Chapter 2</a>
           <a href="#chapter3" className="toc-link">Chapter 3</a>
           <a href="#chapter5" className="toc-link">Chapter 5</a>
           <a href="#chapter6" className="toc-link">Chapter 6</a>
+          <a href="#chapter7" className="toc-link">Chapter 7</a>
           <a href="#chapter8" className="toc-link">Chapter 8</a>
           <a href="#chapter10" className="toc-link">Chapter 10</a>
           <a href="#uxlaws" className="toc-link">UX Laws</a>
@@ -100,6 +102,11 @@ function Home() {
           <div className="chapter-divider">
             <span>Chapters</span>
           </div>
+          <a href="/chapter2" className="chapter-button" id="chapter2">
+            <h3>Chapter 2</h3>
+            <p>PACT: A Framework for Designing UX</p>
+            <span className="question-count">31 questions</span>
+          </a>
           <a href="/chapter3" className="chapter-button" id="chapter3">
             <h3>Chapter 3</h3>
             <p>The process of human-centred UX design</p>
@@ -114,6 +121,11 @@ function Home() {
             <h3>Chapter 6</h3>
             <p>Designing for experience</p>
             <span className="question-count">33 questions</span>
+          </a>
+          <a href="/chapter7" className="chapter-button" id="chapter7">
+            <h3>Chapter 7</h3>
+            <p>Understanding</p>
+            <span className="question-count">30 questions</span>
           </a>
           <a href="/chapter8" className="chapter-button" id="chapter8">
             <h3>Chapter 8</h3>

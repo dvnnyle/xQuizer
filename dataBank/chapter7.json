@@ -1,0 +1,422 @@
+[
+  {
+    "id": 1,
+    "question": "In Chapter 7, how is a requirement defined?",
+    "options": [
+      "A rough idea for a future feature",
+      "Something the product must do or a quality it must have",
+      "Any suggestion made by a stakeholder",
+      "A technical specification written by developers only"
+    ],
+    "answerIndex": 1,
+    "answer": "Something the product must do or a quality it must have",
+    "explanation": "A requirement is defined as something the product must do or a quality that the product must have (behaviour or quality).<br><br><strong>Example:</strong> Functional requirement: 'Users must be able to reset their password via email.' Quality requirement: 'The system must respond to user actions within 2 seconds.' Both define must-haves.<br><br><strong>Example:</strong> Functional requirement: 'Users must be able to reset their password via email.' Quality requirement: 'The system must respond to user actions within 2 seconds.' Both define must-haves.",
+    "shortExplanation": "A requirement defines what the product must do or a quality it must have."
+  },
+  {
+    "id": 2,
+    "question": "What is the main goal of the 'understanding' phase in Chapter 7?",
+    "options": [
+      "To immediately sketch user interfaces",
+      "To choose the technology stack",
+      "To understand people, activities, contexts and generate requirements",
+      "To write the final user manual"
+    ],
+    "answerIndex": 2,
+    "answer": "To understand people, activities, contexts and generate requirements",
+    "explanation": "Understanding is about researching people, activities and contexts (PACT) to generate grounded requirements for the system.<br><br><strong>Example:</strong> A team building a delivery app doesn't jump to wireframes. They first observe drivers, interview customers, map delivery contexts (traffic, weather, rural areas), then generate requirements like 'offline route caching' based on real needs.<br><br><strong>Example:</strong> A team building a delivery app doesn't jump to wireframes. They first observe drivers, interview customers, map delivery contexts (traffic, weather, rural areas), then generate requirements like 'offline route caching' based on real needs.",
+    "shortExplanation": "Understanding means researching real people and contexts to generate grounded requirements."
+  },
+  {
+    "id": 3,
+    "question": "Why are requirements important before starting detailed design and implementation?",
+    "options": [
+      "They help marketing choose a logo",
+      "They prevent teams from making any changes later",
+      "They guide design, reduce assumptions, and define what success looks like",
+      "They replace the need for any user research"
+    ],
+    "answerIndex": 2,
+    "answer": "They guide design, reduce assumptions, and define what success looks like",
+    "explanation": "Requirements focus design on real needs, reduce guesswork, and provide a basis for judging whether the system is successful.<br><br><strong>Example:</strong> Without requirements, one designer builds a complex admin panel while another builds a simple dashboard—both guessing. With requirements ('system must support 10,000 concurrent users'), everyone designs toward measurable goals.<br><br><strong>Example:</strong> Without requirements, one designer builds a complex admin panel while another builds a simple dashboard—both guessing. With requirements ('system must support 10,000 concurrent users'), everyone designs toward measurable goals.",
+    "shortExplanation": "Requirements guide design, reduce guesswork, and define success criteria."
+  },
+  {
+    "id": 4,
+    "question": "What is the usual division of requirements described in Chapter 7?",
+    "options": [
+      "Technical and non-technical",
+      "User and business",
+      "Functional and non-functional",
+      "Mandatory and optional"
+    ],
+    "answerIndex": 2,
+    "answer": "Functional and non-functional",
+    "explanation": "Requirements are conventionally divided into functional (what the system does) and non-functional (qualities it must have).<br><br><strong>Example:</strong> Functional: 'Users can upload photos.' Non-functional: 'Photos must upload in under 5 seconds,' 'System must store photos encrypted.' Function vs. quality.<br><br><strong>Example:</strong> Functional: 'Users can upload photos.' Non-functional: 'Photos must upload in under 5 seconds,' 'System must store photos encrypted.' Function vs. quality.",
+    "shortExplanation": "Functional (what it does) and non-functional (qualities like speed, security)."
+  },
+  {
+    "id": 5,
+    "question": "Which of the following best describes a functional requirement?",
+    "options": [
+      "The app must look modern and attractive",
+      "The system must support two-factor authentication for login",
+      "The system must respond within 2 seconds",
+      "The UI must comply with brand guidelines"
+    ],
+    "answerIndex": 1,
+    "answer": "The system must support two-factor authentication for login",
+    "explanation": "Functional requirements specify what the system must do – here, supporting two-factor authentication is a concrete function.<br><br><strong>Example:</strong> Two-factor authentication is a concrete function: the system sends a code, user enters it, system verifies. It's what the system does, not a quality like speed or reliability.<br><br><strong>Example:</strong> Two-factor authentication is a concrete function: the system sends a code, user enters it, system verifies. It's what the system does, not a quality like speed or reliability.",
+    "shortExplanation": "Functional requirements specify system actions or features."
+  },
+  {
+    "id": 6,
+    "question": "Which of the following is a non-functional requirement?",
+    "options": [
+      "The system must allow users to reset their password",
+      "The system must support user registration",
+      "The app must load the home screen within 2 seconds",
+      "The app must provide a search function"
+    ],
+    "answerIndex": 2,
+    "answer": "The app must load the home screen within 2 seconds",
+    "explanation": "Non-functional requirements describe qualities such as performance, usability or security – here, response time is a quality.<br><br><strong>Example:</strong> Loading the home screen in 2 seconds is a performance quality, not a feature. Other qualities: '99.9% uptime' (reliability), 'WCAG AA compliant' (accessibility), 'works offline' (availability).<br><br><strong>Example:</strong> Loading the home screen in 2 seconds is a performance quality, not a feature. Other qualities: '99.9% uptime' (reliability), 'WCAG AA compliant' (accessibility), 'works offline' (availability).",
+    "shortExplanation": "Non-functional requirements describe qualities like performance, security, usability."
+  },
+  {
+    "id": 7,
+    "question": "Which of these is a typical example of a non-functional requirement mentioned in the book?",
+    "options": [
+      "Support for exporting reports to PDF",
+      "Users can view their transaction history",
+      "System uptime of at least 99.5%",
+      "Ability to filter results by date"
+    ],
+    "answerIndex": 2,
+    "answer": "System uptime of at least 99.5%",
+    "explanation": "Qualities like reliability, performance, security and availability are non-functional requirements.<br><br><strong>Example:</strong> 99.5% uptime means the system can only be down 3.6 hours per month. This quality affects architecture (redundancy, failover) but isn't a feature users click.<br><br><strong>Example:</strong> 99.5% uptime means the system can only be down 3.6 hours per month. This quality affects architecture (redundancy, failover) but isn't a feature users click.",
+    "shortExplanation": "Reliability and availability are non-functional quality requirements."
+  },
+  {
+    "id": 8,
+    "question": "According to Chapter 7, data or media requirements are important because they specify:",
+    "options": [
+      "Which programming language must be used",
+      "What types of content and media the system must handle",
+      "How many developers are needed",
+      "Which operating systems are supported"
+    ],
+    "answerIndex": 1,
+    "answer": "What types of content and media the system must handle",
+    "explanation": "Data/media requirements define what content (text, images, audio, video, etc.) and media formats the system must support.<br><br><strong>Example:</strong> A recipe app must handle: text (ingredients, steps), images (food photos, JPG/PNG), video (cooking tutorials, MP4), user ratings (numbers), comments (text). Knowing this shapes database and UI design.<br><br><strong>Example:</strong> A recipe app must handle: text (ingredients, steps), images (food photos, JPG/PNG), video (cooking tutorials, MP4), user ratings (numbers), comments (text). Knowing this shapes database and UI design.",
+    "shortExplanation": "Data requirements specify content types and formats the system must handle."
+  },
+  {
+    "id": 9,
+    "question": "What does the book recommend about how requirements should be written?",
+    "options": [
+      "In casual, conversational language",
+      "Using as much technical jargon as possible",
+      "In clear, unambiguous language that can be tested",
+      "Only as diagrams, not as text"
+    ],
+    "answerIndex": 2,
+    "answer": "In clear, unambiguous language that can be tested",
+    "explanation": "Requirements should be expressed clearly and unambiguously and written so that it is possible to test whether they are met.<br><br><strong>Example:</strong> Bad: 'System should be fast.' (Vague—how fast?) Good: 'Search results must appear within 2 seconds of query submission.' (Testable, specific, measurable.)<br><br><strong>Example:</strong> Bad: 'System should be fast.' (Vague—how fast?) Good: 'Search results must appear within 2 seconds of query submission.' (Testable, specific, measurable.)",
+    "shortExplanation": "Clear, testable requirements prevent ambiguity and enable verification."
+  },
+  {
+    "id": 10,
+    "question": "Why should requirements not specify how the technology will meet them?",
+    "options": [
+      "Because developers refuse to read requirements",
+      "Because that belongs to later design decisions",
+      "Because technology is not important in UX design",
+      "Because requirements must be as vague as possible"
+    ],
+    "answerIndex": 1,
+    "answer": "Because that belongs to later design decisions",
+    "explanation": "Requirements describe what and which qualities, not how to implement them. The 'how' is decided later during design.<br><br><strong>Example:</strong> Requirement: 'Users must securely log in.' This doesn't specify OAuth, passwords, or biometrics—that's the how. Designers later choose the best authentication method.<br><br><strong>Example:</strong> Requirement: 'Users must securely log in.' This doesn't specify OAuth, passwords, or biometrics—that's the how. Designers later choose the best authentication method.",
+    "shortExplanation": "Requirements define what, not how—implementation comes during design."
+  },
+  {
+    "id": 11,
+    "question": "Which of these best describes 'requirements gathering'?",
+    "options": [
+      "Assuming requirements exist ready-made without much interaction",
+      "Inventing new technologies",
+      "Writing code quickly",
+      "Testing final prototypes with users"
+    ],
+    "answerIndex": 0,
+    "answer": "Assuming requirements exist ready-made without much interaction",
+    "explanation": "The term 'requirements gathering' suggests that requirements are just lying around to be picked up, with little interaction.<br><br><strong>Example:</strong> The term suggests requirements are like apples to pick from a tree. Reality: stakeholders have vague wishes ('make it better'), not clear requirements. Discovery requires deep conversation.<br><br><strong>Example:</strong> The term suggests requirements are like apples to pick from a tree. Reality: stakeholders have vague wishes ('make it better'), not clear requirements. Discovery requires deep conversation.",
+    "shortExplanation": "'Gathering' implies requirements exist ready-made, needing little discovery effort."
+  },
+  {
+    "id": 12,
+    "question": "Which term suggests a more creative activity that may de-emphasize existing practice?",
+    "options": [
+      "Requirements engineering",
+      "Requirements elicitation",
+      "Requirements gathering",
+      "Requirements generation"
+    ],
+    "answerIndex": 3,
+    "answer": "Requirements generation",
+    "explanation": "‘Requirements generation’ suggests creativity and going beyond just documenting current practice.<br><br><strong>Example:</strong> If you only document what users currently do, you miss innovation. Generation means asking: 'What could they do?' Like moving from paper forms to digital wizards—not just digitizing the old form.<br><br><strong>Example:</strong> If you only document what users currently do, you miss innovation. Generation means asking: 'What could they do?' Like moving from paper forms to digital wizards—not just digitizing the old form.",
+    "shortExplanation": "'Generation' emphasizes creativity and going beyond current practice."
+  },
+  {
+    "id": 13,
+    "question": "Which term for working with requirements emphasizes interaction between stakeholders and designers?",
+    "options": [
+      "Requirements gathering",
+      "Requirements elicitation",
+      "Requirements generation",
+      "Requirements engineering"
+    ],
+    "answerIndex": 1,
+    "answer": "Requirements elicitation",
+    "explanation": "‘Requirements elicitation’ emphasises interactive conversations and discovery with stakeholders.<br><br><strong>Example:</strong> Elicitation means interviewing users, observing workflows, facilitating workshops. It's collaborative: 'Tell me about your typical day,' not just handing out surveys.<br><br><strong>Example:</strong> Elicitation means interviewing users, observing workflows, facilitating workshops. It's collaborative: 'Tell me about your typical day,' not just handing out surveys.",
+    "shortExplanation": "'Elicitation' emphasizes interactive discovery with stakeholders."
+  },
+  {
+    "id": 14,
+    "question": "Which term is often used in formal software engineering projects?",
+    "options": [
+      "Requirements engineering",
+      "Requirements dreaming",
+      "Requirements sketching",
+      "Requirements mapping"
+    ],
+    "answerIndex": 0,
+    "answer": "Requirements engineering",
+    "explanation": "‘Requirements engineering’ is the formal, structured approach commonly used in software engineering.<br><br><strong>Example:</strong> Large projects use requirements engineering: formal documents, traceability matrices, change control, sign-offs. Every requirement has an ID, priority, and test case.<br><br><strong>Example:</strong> Large projects use requirements engineering: formal documents, traceability matrices, change control, sign-offs. Every requirement has an ID, priority, and test case.",
+    "shortExplanation": "'Engineering' is the formal, structured approach in software development."
+  },
+  {
+    "id": 15,
+    "question": "Why does the author prefer to talk about 'understanding' instead of just 'requirements gathering'?",
+    "options": [
+      "Because understanding ignores stakeholders",
+      "Because it combines both gathering and generating requirements",
+      "Because the term is more fashionable",
+      "Because requirements are no longer needed"
+    ],
+    "answerIndex": 1,
+    "answer": "Because it combines both gathering and generating requirements",
+    "explanation": "'Understanding' captures both gathering from current practice and generating new possibilities.<br><br><strong>Example:</strong> Understanding means: learn current pain points (gathering), explore better ways (generation), involve users (elicitation). It's holistic, combining discovery and creativity.<br><br><strong>Example:</strong> Understanding means: learn current pain points (gathering), explore better ways (generation), involve users (elicitation). It's holistic, combining discovery and creativity.",
+    "shortExplanation": "'Understanding' captures both gathering existing needs and generating new possibilities."
+  },
+  {
+    "id": 16,
+    "question": "In Chapter 7, what is a 'requirements specification'?",
+    "options": [
+      "A user manual for the final system",
+      "A formal document that lists and explains requirements",
+      "A list of programming tasks",
+      "A visual mockup of the interface only"
+    ],
+    "answerIndex": 1,
+    "answer": "A formal document that lists and explains requirements",
+    "explanation": "A requirements specification is a formal document that contains the system’s requirements, often used by clients and developers.<br><br><strong>Example:</strong> A 50-page spec: introduction, functional requirements (login, search, checkout), non-functional (performance, security), data requirements, constraints, acceptance criteria. Developers and clients both reference it.<br><br><strong>Example:</strong> A 50-page spec: introduction, functional requirements (login, search, checkout), non-functional (performance, security), data requirements, constraints, acceptance criteria. Developers and clients both reference it.",
+    "shortExplanation": "A formal document listing and explaining all system requirements."
+  },
+  {
+    "id": 17,
+    "question": "Why do developers need a clear requirements specification?",
+    "options": [
+      "So they can avoid testing",
+      "So they can cost and manage the project effectively",
+      "So they never have to talk to users",
+      "So they can pick their favourite tools"
+    ],
+    "answerIndex": 1,
+    "answer": "So they can cost and manage the project effectively",
+    "explanation": "Developers use requirements to estimate effort, cost, scope and to manage the development process.<br><br><strong>Example:</strong> Requirement: 'Support 50,000 concurrent users.' Developers estimate: need load balancers, caching, database sharding—3 months and $100k. Clear requirements enable accurate planning.<br><br><strong>Example:</strong> Requirement: 'Support 50,000 concurrent users.' Developers estimate: need load balancers, caching, database sharding—3 months and $100k. Clear requirements enable accurate planning.",
+    "shortExplanation": "Developers use specs to estimate effort, cost, and manage scope."
+  },
+  {
+    "id": 18,
+    "question": "What extra materials are increasingly included in requirements specifications according to the book?",
+    "options": [
+      "Memes and jokes",
+      "Prototypes, screenshots and other media",
+      "Only source code snippets",
+      "Legal contracts between team members"
+    ],
+    "answerIndex": 1,
+    "answer": "Prototypes, screenshots and other media",
+    "explanation": "Modern requirements specifications may also include prototypes, wireframes, screenshots and other supporting media.<br><br><strong>Example:</strong> Instead of just text ('users can filter results'), specs now include: wireframe showing filter UI, clickable prototype, user flow diagram. Visuals reduce misunderstanding.<br><br><strong>Example:</strong> Instead of just text ('users can filter results'), specs now include: wireframe showing filter UI, clickable prototype, user flow diagram. Visuals reduce misunderstanding.",
+    "shortExplanation": "Modern specs include prototypes, wireframes, and other rich media."
+  },
+  {
+    "id": 19,
+    "question": "Why is it helpful to attach supporting evidence (e.g. interview notes, photos) to requirements?",
+    "options": [
+      "To make the document longer",
+      "To confuse stakeholders",
+      "To help readers understand the rationale and context behind requirements",
+      "To replace the need for testing"
+    ],
+    "answerIndex": 2,
+    "answer": "To help readers understand the rationale and context behind requirements",
+    "explanation": "Evidence such as interview reports and photos explains why a requirement exists and where it came from.<br><br><strong>Example:</strong> Requirement: 'Add voice search.' Evidence: user interview transcripts showing elderly users struggle typing on small screens, analytics showing 40% abandon searches. Rationale is clear.<br><br><strong>Example:</strong> Requirement: 'Add voice search.' Evidence: user interview transcripts showing elderly users struggle typing on small screens, analytics showing 40% abandon searches. Rationale is clear.",
+    "shortExplanation": "Evidence explains why a requirement exists and where it came from."
+  },
+  {
+    "id": 20,
+    "question": "Which items are recommended as a minimum in a requirements template?",
+    "options": [
+      "A unique ID, one-sentence summary, source, and rationale",
+      "Only a title and a diagram",
+      "A long story and user quotes only",
+      "Programming language and database type"
+    ],
+    "answerIndex": 0,
+    "answer": "A unique ID, one-sentence summary, source, and rationale",
+    "explanation": "Templates should at least include a unique reference, short summary, source(s) and rationale for each requirement.<br><br><strong>Example:</strong> REQ-042: Users must reset passwords via email. Source: Security audit, user interviews. Rationale: 30% of support tickets are password resets; email is most accessible method.<br><br><strong>Example:</strong> REQ-042: Users must reset passwords via email. Source: Security audit, user interviews. Rationale: 30% of support tickets are password resets; email is most accessible method.",
+    "shortExplanation": "Templates structure requirements with ID, summary, source, and rationale."
+  },
+  {
+    "id": 21,
+    "question": "What additional elements can greatly increase the value of a requirements specification?",
+    "options": [
+      "Criteria for testing, importance grade, dependencies, and change history",
+      "Only colourful icons and branding",
+      "Developer names and salaries",
+      "A list of all meetings held"
+    ],
+    "answerIndex": 0,
+    "answer": "Criteria for testing, importance grade, dependencies, and change history",
+    "explanation": "Including test criteria, priority, dependencies and change history makes requirements more useful and manageable.<br><br><strong>Example:</strong> REQ-055: System loads in 2s. Test: Lighthouse performance score >90. Priority: Must. Depends on: REQ-012 (CDN). History: Changed from 5s to 2s after user testing showed abandonment.<br><br><strong>Example:</strong> REQ-055: System loads in 2s. Test: Lighthouse performance score >90. Priority: Must. Depends on: REQ-012 (CDN). History: Changed from 5s to 2s after user testing showed abandonment.",
+    "shortExplanation": "Test criteria, priority, dependencies, and history make requirements actionable."
+  },
+  {
+    "id": 22,
+    "question": "What does MoSCoW help designers do with requirements?",
+    "options": [
+      "Estimate database size",
+      "Prioritize requirements by importance",
+      "Translate requirements into code",
+      "Remove all non-functional requirements"
+    ],
+    "answerIndex": 1,
+    "answer": "Prioritize requirements by importance",
+    "explanation": "MoSCoW is a prioritization technique that classifies requirements into Must, Should, Could, and Won’t (this time).<br><br><strong>Example:</strong> Online store: Must (add to cart, checkout), Should (wish lists, reviews), Could (gift wrapping), Won't this time (live chat—defer to v2). Priorities guide release planning.<br><br><strong>Example:</strong> Online store: Must (add to cart, checkout), Should (wish lists, reviews), Could (gift wrapping), Won't this time (live chat—defer to v2). Priorities guide release planning.",
+    "shortExplanation": "MoSCoW categorizes requirements by importance: Must, Should, Could, Won't."
+  },
+  {
+    "id": 23,
+    "question": "In the MoSCoW method, what does 'Must have' mean?",
+    "options": [
+      "Nice to include if there is time",
+      "Features planned for future releases only",
+      "Fundamental requirements without which the system is unusable",
+      "Requirements that are optional for users"
+    ],
+    "answerIndex": 2,
+    "answer": "Fundamental requirements without which the system is unusable",
+    "explanation": "'Must have' items form the minimum viable subset – without them the system is not workable.<br><br><strong>Example:</strong> E-commerce MVP must-haves: product listing, cart, checkout, payment. Without checkout, it's not a store. Should-haves like recommendations can wait.<br><br><strong>Example:</strong> E-commerce MVP must-haves: product listing, cart, checkout, payment. Without checkout, it's not a store. Should-haves like recommendations can wait.",
+    "shortExplanation": "Must-haves are non-negotiable—without them, the system doesn't work."
+  },
+  {
+    "id": 24,
+    "question": "In MoSCoW, what does 'Should have' typically represent?",
+    "options": [
+      "Requirements that are unnecessary",
+      "Requirements that would be important if time/resources allow",
+      "Requirements never to be implemented",
+      "Requirements only for testers"
+    ],
+    "answerIndex": 1,
+    "answer": "Requirements that would be important if time/resources allow",
+    "explanation": "'Should have' items are important but not absolutely essential to deliver a usable system in the current release.<br><br><strong>Example:</strong> A banking app should have budgeting tools and spending insights. Important features, but the app works without them. If time/budget tight, these can slip to v2.<br><br><strong>Example:</strong> A banking app should have budgeting tools and spending insights. Important features, but the app works without them. If time/budget tight, these can slip to v2.",
+    "shortExplanation": "Should-haves are important but not critical for the first release."
+  },
+  {
+    "id": 25,
+    "question": "In MoSCoW, what does 'Could have' usually indicate?",
+    "options": [
+      "Low-priority requirements that can be left out if necessary",
+      "Essential requirements",
+      "Requirements that break the system",
+      "Requirements that are illegal"
+    ],
+    "answerIndex": 0,
+    "answer": "Low-priority requirements that can be left out if necessary",
+    "explanation": "'Could have' items are lower priority and can more easily be postponed or omitted.<br><br><strong>Example:</strong> A task app could have color themes, custom sounds, widget styles. Nice for some users, but low priority. Easily dropped if deadlines loom.<br><br><strong>Example:</strong> A task app could have color themes, custom sounds, widget styles. Nice for some users, but low priority. Easily dropped if deadlines loom.",
+    "shortExplanation": "Could-haves are nice-to-have features that can be postponed."
+  },
+  {
+    "id": 26,
+    "question": "In MoSCoW, 'Won’t have this time round' means:",
+    "options": [
+      "The requirement is rejected forever",
+      "The requirement is illegal",
+      "The requirement is postponed to a later development",
+      "The requirement must be implemented first"
+    ],
+    "answerIndex": 2,
+    "answer": "The requirement is postponed to a later development",
+    "explanation": "'Won’t have this time round' indicates that the requirement is deferred to a future version, not discarded permanently.<br><br><strong>Example:</strong> Project management tool: Won't have Gantt charts this release (complex, time-consuming). Deferred to Q2. This sets clear scope and manages stakeholder expectations.<br><br><strong>Example:</strong> Project management tool: Won't have Gantt charts this release (complex, time-consuming). Deferred to Q2. This sets clear scope and manages stakeholder expectations.",
+    "shortExplanation": "Won't-haves are deferred to future releases, not discarded forever."
+  },
+  {
+    "id": 27,
+    "question": "How is MoSCoW linked to agile development in the book?",
+    "options": [
+      "It replaces user stories",
+      "It is used only for bug fixing",
+      "Must-have items define the minimum viable product (MVP)",
+      "It decides the team size"
+    ],
+    "answerIndex": 2,
+    "answer": "Must-have items define the minimum viable product (MVP)",
+    "explanation": "In agile, the set of 'Must have' requirements often defines the minimum viable product for a release.<br><br><strong>Example:</strong> Building a ride-share app MVP: Must (request ride, track driver, pay). Should (scheduled rides, favorites). Could (ride splitting). Won't (loyalty program). MVP ships with musts only.<br><br><strong>Example:</strong> Building a ride-share app MVP: Must (request ride, track driver, pay). Should (scheduled rides, favorites). Could (ride splitting). Won't (loyalty program). MVP ships with musts only.",
+    "shortExplanation": "In agile, Must-haves define the minimum viable product (MVP)."
+  },
+  {
+    "id": 28,
+    "question": "Why is it said that requirements work, design, envisionment and evaluation are 'tightly interwoven'?",
+    "options": [
+      "Because they happen only once in sequence",
+      "Because understanding requirements is impossible",
+      "Because new requirements emerge as designs are created and evaluated",
+      "Because evaluation comes only at the very end"
+    ],
+    "answerIndex": 2,
+    "answer": "Because new requirements emerge as designs are created and evaluated",
+    "explanation": "As concepts are designed and evaluated, new requirements appear and existing ones are refined – making the process iterative.<br><br><strong>Example:</strong> You draft requirements, sketch a design, prototype it, test with users. Testing reveals users need offline mode (new requirement). You refine requirements, redesign, test again. It's a cycle, not a line.<br><br><strong>Example:</strong> You draft requirements, sketch a design, prototype it, test with users. Testing reveals users need offline mode (new requirement). You refine requirements, redesign, test again. It's a cycle, not a line.",
+    "shortExplanation": "Requirements, design, prototyping, and testing happen iteratively, informing each other."
+  },
+  {
+    "id": 29,
+    "question": "Which stakeholders should be involved in reviewing and prioritizing requirements?",
+    "options": [
+      "Only developers",
+      "Only end users",
+      "Customers, clients and other key stakeholders",
+      "Only managers"
+    ],
+    "answerIndex": 2,
+    "answer": "Customers, clients and other key stakeholders",
+    "explanation": "Requirements should be reviewed with customers, clients and other stakeholders to ensure they reflect real needs and priorities.<br><br><strong>Example:</strong> Draft requirements say 'advanced analytics dashboard.' Product owner reviews: 'Our users are beginners—they need simple reports, not complex dashboards.' Requirement revised based on stakeholder input.<br><br><strong>Example:</strong> Draft requirements say 'advanced analytics dashboard.' Product owner reviews: 'Our users are beginners—they need simple reports, not complex dashboards.' Requirement revised based on stakeholder input.",
+    "shortExplanation": "Stakeholders validate that requirements reflect real needs and priorities."
+  },
+  {
+    "id": 30,
+    "question": "How does PACT relate to requirements in Chapter 7?",
+    "options": [
+      "PACT replaces requirements completely",
+      "PACT is irrelevant once coding starts",
+      "Understanding People, Activities, Contexts and Technologies feeds into generating good requirements",
+      "PACT is only used for evaluating usability, not requirements"
+    ],
+    "answerIndex": 2,
+    "answer": "Understanding People, Activities, Contexts and Technologies feeds into generating good requirements",
+    "explanation": "By analysing People, Activities, Contexts and Technologies, designers can derive grounded, realistic requirements.<br><br><strong>Example:</strong> Analyzing a gym app with PACT: People (varied fitness levels), Activities (track workouts, log meals), Contexts (gym, home, outdoors), Technologies (phone, wearables). This leads to requirements like 'wearable integration' and 'offline workout logging.'<br><br><strong>Example:</strong> Analyzing a gym app with PACT: People (varied fitness levels), Activities (track workouts, log meals), Contexts (gym, home, outdoors), Technologies (phone, wearables). This leads to requirements like 'wearable integration' and 'offline workout logging.'",
+    "shortExplanation": "PACT analysis of People, Activities, Contexts, Technologies informs requirements."
+  }
+]

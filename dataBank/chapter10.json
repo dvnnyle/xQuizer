@@ -11,7 +11,8 @@
     ],
     "answerIndex": 0,
     "answer": "To check whether a design meets its usability and UX goals",
-    "explanation": "Evaluation is checking a design idea, prototype, product or service to see if it meets the intended goals for usability and user experience.<br><br><strong>Example:</strong> A team designs a checkout flow aiming for '90% task completion in under 2 minutes.' Evaluation tests with real users to measure if this goal is achieved and identifies obstacles."
+      "shortExplanation": "Evaluation checks if a design meets its usability and UX goals.",
+      "explanation": "Evaluation is checking a design idea, prototype, product or service to see if it meets the intended goals for usability and user experience.<br><br><strong>Example:</strong> A team designs a checkout flow aiming for '90% task completion in under 2 minutes.' Evaluation tests with real users to measure if this goal is achieved and identifies obstacles."
   },
   {
     "id": 2,
@@ -25,7 +26,8 @@
     ],
     "answerIndex": 3,
     "answer": "Is the code written in the latest JavaScript framework?",
-    "explanation": "Evaluation cares about learnability, effectiveness, accommodation and fitness for purpose, not about which implementation framework is used.<br><br><strong>Example:</strong> Evaluators test whether elderly users can successfully book appointments (usability), not whether the app uses React or Vue (technical implementation choice)."
+      "shortExplanation": "Evaluation focuses on usability, not technical implementation details.",
+      "explanation": "Evaluation cares about learnability, effectiveness, accommodation and fitness for purpose, not about which implementation framework is used.<br><br><strong>Example:</strong> Evaluators test whether elderly users can successfully book appointments (usability), not whether the app uses React or Vue (technical implementation choice)."
   },
   {
     "id": 3,
@@ -39,7 +41,8 @@
     ],
     "answerIndex": 1,
     "answer": "Because it is done throughout the whole process and drives iteration",
-    "explanation": "Evaluation happens early, midway and late, and it drives iteration and improvement across the whole human‑centred design process.<br><br><strong>Example:</strong> Slack evaluates constantly: early sketches with employees, mid-development prototypes with beta users, and live metrics after launch—continuous evaluation drives ongoing improvements."
+      "shortExplanation": "Evaluation drives iteration and improvement throughout the design process.",
+      "explanation": "Evaluation happens early, midway and late, and it drives iteration and improvement across the whole human‑centred design process.<br><br><strong>Example:</strong> Slack evaluates constantly: early sketches with employees, mid-development prototypes with beta users, and live metrics after launch—continuous evaluation drives ongoing improvements."
   },
   {
     "id": 4,
