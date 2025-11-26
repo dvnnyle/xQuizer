@@ -4,6 +4,54 @@ import NavigationMenu from '../pages/widget/navigationMenu'
 import uxLawsData from '../../dataBank/dataSub/uxData.json'
 import './uxLaws.css'
 
+// Import all images
+import AestheticUsabilityEffect from '../assets/uxImg/AestheticUsabilityEffect.png'
+import DohertyThreshold from '../assets/uxImg/DohertyThreshold.png'
+import FittsLaw from '../assets/uxImg/FittsLaw.png'
+import hicksLaw from '../assets/uxImg/hicksLaw.png'
+import jakobLaw from '../assets/uxImg/jakobLaw.png'
+import lawofcommenregion from '../assets/uxImg/lawofcommenregion.png'
+import lawofpragnaz from '../assets/uxImg/lawofpragnaz.png'
+import lawofproximity from '../assets/uxImg/lawofproximity.png'
+import lawofsimilaraity from '../assets/uxImg/lawofsimilaraity.png'
+import lawofuniformconectedneess from '../assets/uxImg/lawofuniformconectedneess.png'
+import millersLaw from '../assets/uxImg/millersLaw.png'
+import occamRazor from '../assets/uxImg/occamRazor.png'
+import ParetoPrinciple from '../assets/uxImg/ParetoPrinciple.png'
+import parkinsonslaw from '../assets/uxImg/parkinsonslaw.png'
+import peakEndrule from '../assets/uxImg/peakEndrule.png'
+import postelslaw from '../assets/uxImg/postelslaw.png'
+import SerialpostitonEffect from '../assets/uxImg/SerialpostitonEffect.png'
+import teslerLaw from '../assets/uxImg/teslerLaw.png'
+import vonRestorffEffect from '../assets/uxImg/vonRestorffEffect.png'
+import ZeigarnikEffect from '../assets/uxImg/ZeigarnikEffect.png'
+import chunking from '../assets/uxImg/chunking.png'
+
+// Map image imports to their names
+const imageMap = {
+  'AestheticUsabilityEffect.png': AestheticUsabilityEffect,
+  'DohertyThreshold.png': DohertyThreshold,
+  'FittsLaw.png': FittsLaw,
+  'hicksLaw.png': hicksLaw,
+  'jakobLaw.png': jakobLaw,
+  'lawofcommenregion.png': lawofcommenregion,
+  'lawofpragnaz.png': lawofpragnaz,
+  'lawofproximity.png': lawofproximity,
+  'lawofsimilaraity.png': lawofsimilaraity,
+  'lawofuniformconectedneess.png': lawofuniformconectedneess,
+  'millersLaw.png': millersLaw,
+  'occamRazor.png': occamRazor,
+  'ParetoPrinciple.png': ParetoPrinciple,
+  'parkinsonslaw.png': parkinsonslaw,
+  'peakEndrule.png': peakEndrule,
+  'postelslaw.png': postelslaw,
+  'SerialpostitonEffect.png': SerialpostitonEffect,
+  'teslerLaw.png': teslerLaw,
+  'vonRestorffEffect.png': vonRestorffEffect,
+  'ZeigarnikEffect.png': ZeigarnikEffect,
+  'chunking.png': chunking
+}
+
 function UxLaws() {
   const [uxLaws, setUxLaws] = useState([])
   const [searchTerm, setSearchTerm] = useState('')
@@ -11,8 +59,15 @@ function UxLaws() {
   const [selectedLawIndex, setSelectedLawIndex] = useState(null)
 
   useEffect(() => {
-    // Load UX Laws data
-    setUxLaws(uxLawsData)
+    // Load UX Laws data and map images
+    const lawsWithImages = uxLawsData.map(law => {
+      const imageName = law.image.split('/').pop()
+      return {
+        ...law,
+        image: imageMap[imageName] || law.image
+      }
+    })
+    setUxLaws(lawsWithImages)
   }, [])
 
   const filteredLaws = uxLaws.filter(law =>
