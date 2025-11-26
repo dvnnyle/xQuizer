@@ -57,17 +57,27 @@ function UxLaws() {
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedLaw, setSelectedLaw] = useState(null)
   const [selectedLawIndex, setSelectedLawIndex] = useState(null)
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    // Load UX Laws data and map images
-    const lawsWithImages = uxLawsData.map(law => {
-      const imageName = law.image.split('/').pop()
-      return {
-        ...law,
-        image: imageMap[imageName] || law.image
-      }
-    })
-    setUxLaws(lawsWithImages)
+    // Simulate loading delay to map images
+    const loadData = async () => {
+      setIsLoading(true)
+      // Small delay to show skeleton on slow networks
+      await new Promise(resolve => setTimeout(resolve, 300))
+      
+      const lawsWithImages = uxLawsData.map(law => {
+        const imageName = law.image.split('/').pop()
+        return {
+          ...law,
+          image: imageMap[imageName] || law.image
+        }
+      })
+      setUxLaws(lawsWithImages)
+      setIsLoading(false)
+    }
+    
+    loadData()
   }, [])
 
   const filteredLaws = uxLaws.filter(law =>
@@ -136,7 +146,21 @@ function UxLaws() {
         </div>
 
         <div className="laws-grid">
-          {filteredLaws.map((law) => (
+          {isLoading ? (
+            // Skeleton cards
+            Array(21).fill(0).map((_, index) => (
+              <div key={index} className="law-card skeleton-card">
+                <div className="skeleton-image"></div>
+                <div className="skeleton-number"></div>
+                <div className="law-content">
+                  <div className="skeleton-title"></div>
+                  <div className="skeleton-description"></div>
+                  <div className="skeleton-description short"></div>
+                </div>
+              </div>
+            ))
+          ) : (
+            filteredLaws.map((law) => (
             <motion.div
               key={law.id}
               className="law-card"
@@ -173,10 +197,11 @@ function UxLaws() {
                 <p className="law-description">{law.description}</p>
               </div>
             </motion.div>
-          ))}
+          ))
+          )}
         </div>
 
-        {filteredLaws.length === 0 && (
+        {!isLoading && filteredLaws.length === 0 && (
           <div className="no-results">
             <p>No UX laws found matching your search.</p>
           </div>

@@ -10,7 +10,10 @@ import Chapter8 from './chapterList/chapter8'
 import Chapter10 from './chapterList/chapter10'
 import ChapterTest from './chapterList/chapterTest'
 import RandomizerQuiz from './chapterList/randomnizerQuiz'
+import FullQuestionList from './chapterList/fullQuestionList'
 import UxLaws from './litterature/uxLaws'
+import UxQuiz1 from './moreQuizes/uxQuiz1'
+import UxQuiz2 from './moreQuizes/uxQuiz2'
 
 function AnimatedRoutes() {
   const location = useLocation()
@@ -28,7 +31,10 @@ function AnimatedRoutes() {
         <Route path="/chapter10" element={<Chapter10 key="ch10" />} />
         <Route path="/chaptertest" element={<ChapterTest key="chtest" />} />
         <Route path="/randomquiz" element={<RandomizerQuiz key="random" />} />
+        <Route path="/fullquestions" element={<FullQuestionList key="fullq" />} />
         <Route path="/uxlaws" element={<UxLaws key="uxlaws" />} />
+        <Route path="/uxquiz1" element={<UxQuiz1 key="uxquiz1" />} />
+        <Route path="/uxquiz2" element={<UxQuiz2 key="uxquiz2" />} />
       </Routes>
     </AnimatePresence>
   )

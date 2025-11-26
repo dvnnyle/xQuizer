@@ -68,6 +68,13 @@
   transform: translateX(5px);
 }
 
+.toc-link:active {
+  color: #fff;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.8),
+               0 0 25px rgba(255, 255, 255, 0.5);
+  transform: translateX(8px);
+}
+
 .home-content {
   max-width: 800px;
   margin: -3rem auto 0;
@@ -195,6 +202,36 @@
   animation: pulseGlow 1.5s ease-in-out;
 }
 
+@keyframes pulseGlowRed {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.7);
+    border-color: rgba(255, 71, 87, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 30px 10px rgba(255, 71, 87, 0.4);
+    border-color: rgba(255, 71, 87, 0.8);
+  }
+}
+
+.chapter-button.red-theme.pulse-effect {
+  animation: pulseGlowRed 1.5s ease-in-out;
+}
+
+@keyframes pulseGlowGreen {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+    border-color: rgba(16, 185, 129, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 30px 10px rgba(16, 185, 129, 0.4);
+    border-color: rgba(16, 185, 129, 0.8);
+  }
+}
+
+.chapter-button.green-theme.pulse-effect {
+  animation: pulseGlowGreen 1.5s ease-in-out;
+}
+
 .chapter-button.disabled {
   opacity: 0.5;
   cursor: not-allowed;
@@ -249,6 +286,94 @@
   transform: scale(1.08);
 }
 
+/* Red theme variant for All Questions button */
+.chapter-button.featured.red-theme {
+  background: linear-gradient(135deg, #2e1a1a 0%, #3e1616 100%);
+  border: 2px solid #ff4757;
+  box-shadow: 0 4px 20px rgba(255, 71, 87, 0.3);
+}
+
+.chapter-button.featured.red-theme::before {
+  background: linear-gradient(135deg, rgba(255, 71, 87, 0.2) 0%, rgba(255, 71, 87, 0.1) 100%);
+  opacity: 1;
+}
+
+.chapter-button.featured.red-theme:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(255, 71, 87, 0.4);
+  border-color: #ff6b7a;
+}
+
+.chapter-button.featured.red-theme h3 {
+  color: #ff6b7a;
+  font-size: 1.75rem;
+}
+
+.chapter-button.featured.red-theme:hover h3 {
+  color: #ff8593;
+}
+
+.chapter-button.featured.red-theme p {
+  color: #aaa;
+}
+
+.chapter-button.featured.red-theme .question-count {
+  background: rgba(255, 71, 87, 0.3);
+  border-color: rgba(255, 71, 87, 0.6);
+  color: #ff8593;
+  font-weight: 600;
+}
+
+.chapter-button.featured.red-theme:hover .question-count {
+  background: rgba(255, 71, 87, 0.4);
+  border-color: #ff6b7a;
+  transform: scale(1.08);
+}
+
+/* Green theme variant for UX Laws button */
+.chapter-button.green-theme {
+  background: linear-gradient(135deg, #1a2e1a 0%, #163e16 100%);
+  border: 2px solid #10b981;
+  box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
+}
+
+.chapter-button.green-theme::before {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(16, 185, 129, 0.1) 100%);
+  opacity: 1;
+}
+
+.chapter-button.green-theme:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(16, 185, 129, 0.4);
+  border-color: #34d399;
+}
+
+.chapter-button.green-theme h3 {
+  color: #34d399;
+  font-size: 1.5rem;
+}
+
+.chapter-button.green-theme:hover h3 {
+  color: #6ee7b7;
+}
+
+.chapter-button.green-theme p {
+  color: #aaa;
+}
+
+.chapter-button.green-theme .question-count {
+  background: rgba(16, 185, 129, 0.3);
+  border-color: rgba(16, 185, 129, 0.6);
+  color: #6ee7b7;
+  font-weight: 600;
+}
+
+.chapter-button.green-theme:hover .question-count {
+  background: rgba(16, 185, 129, 0.4);
+  border-color: #34d399;
+  transform: scale(1.08);
+}
+
 .chapter-divider {
   display: flex;
   align-items: center;
@@ -270,6 +395,18 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 600;
+}
+
+.quiz-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .quiz-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .scroll-to-top {
@@ -294,6 +431,8 @@
 
 .scroll-to-top:hover {
   background-color: rgba(60, 60, 60, 0.9);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {

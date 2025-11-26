@@ -22,7 +22,10 @@ function Statistics() {
       { id: 'chapter8', name: 'Chapter 8', total: 26 },
       { id: 'chapter10', name: 'Chapter 10', total: 30 },
       { id: 'chaptertest', name: 'Test Chapter', total: 5 },
-      { id: 'randomizer', name: '🎲 Random Quiz', total: 30 }
+      { id: 'randomizer', name: '🎲 Random Quiz', total: 30 },
+      { id: 'fulllist', name: '🔥 All Questions', total: 148 },
+      { id: 'uxquiz1', name: '🎯 UX Laws Quiz', total: 21 },
+      { id: 'uxquiz2', name: '🎯 UX Laws Quiz 2', total: 21 }
     ]
 
     const chapterProgress = chapters.map(chapter => {
@@ -219,6 +222,10 @@ function Statistics() {
                 localStorage.removeItem('quiz_chapter8')
                 localStorage.removeItem('quiz_chapter10')
                 localStorage.removeItem('quiz_chaptertest')
+                localStorage.removeItem('quiz_randomizer')
+                localStorage.removeItem('quiz_fulllist')
+                localStorage.removeItem('quiz_uxquiz1')
+                localStorage.removeItem('quiz_uxquiz2')
                 window.location.reload()
               }
             }}

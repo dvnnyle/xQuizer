@@ -1,0 +1,149 @@
+[
+  {
+    "id": 1,
+    "law": "Aesthetic-Usability Effect",
+    "description": "Users perceive aesthetically pleasing design as easier to use.",
+    "example": "A clean interface feels more usable even before the user learns it.",
+    "image": "/src/assets/uxImg/AestheticUsabilityEffect.png"
+  },
+  {
+    "id": 2,
+    "law": "Doherty Threshold",
+    "description": "Productivity increases when a system responds in less than 400ms.",
+    "example": "Showing skeleton loaders immediately keeps users engaged.",
+    "image": "/src/assets/uxImg/DohertyThreshold.png"
+  },
+  {
+    "id": 3,
+    "law": "Fitts's Law",
+    "description": "The time to reach a target depends on its size and distance.",
+    "example": "Make primary buttons large and easy to tap.",
+    "image": "/src/assets/uxImg/FittsLaw.png"
+  },
+  {
+    "id": 4,
+    "law": "Hick's Law",
+    "description": "Decision time increases with the number of choices.",
+    "example": "Group menu options into categories for faster decisions.",
+    "image": "/src/assets/uxImg/hicksLaw.png"
+  },
+  {
+    "id": 5,
+    "law": "Jakob's Law",
+    "description": "Users prefer your product to work like other familiar products.",
+    "example": "Use common UI patterns so users feel at home instantly.",
+    "image": "/src/assets/uxImg/jakobLaw.png"
+  },
+  {
+    "id": 6,
+    "law": "Law of Common Region",
+    "description": "Elements sharing a boundary are perceived as grouped.",
+    "example": "Product information inside a card clearly belongs together.",
+    "image": "/src/assets/uxImg/lawofcommenregion.png"
+  },
+  {
+    "id": 7,
+    "law": "Law of Prägnanz",
+    "description": "People perceive complex forms in the simplest way possible.",
+    "example": "Icons use simplified shapes to make recognition easier.",
+    "image": "/src/assets/uxImg/lawofpragnaz.png"
+  },
+  {
+    "id": 8,
+    "law": "Law of Proximity",
+    "description": "Elements close together are seen as related.",
+    "example": "Labels placed near input fields show clear connection.",
+    "image": "/src/assets/uxImg/lawofproximity.png"
+  },
+  {
+    "id": 9,
+    "law": "Law of Similarity",
+    "description": "Similar items appear related.",
+    "example": "All primary buttons use the same color and style.",
+    "image": "/src/assets/uxImg/lawofsimilaraity.png"
+  },
+  {
+    "id": 10,
+    "law": "Law of Uniform Connectedness",
+    "description": "Connected items are seen as more related than unconnected items.",
+    "example": "Links grouped by a line or background are perceived as a unit.",
+    "image": "/src/assets/uxImg/lawofuniformconectedneess.png"
+  },
+  {
+    "id": 11,
+    "law": "Miller's Law",
+    "description": "People can store about 7±2 items in short-term memory.",
+    "example": "Group information into smaller chunks.",
+    "image": "/src/assets/uxImg/millersLaw.png"
+  },
+  {
+    "id": 12,
+    "law": "Occam's Razor",
+    "description": "The simplest solution is usually the best.",
+    "example": "A login form should only ask for email and password.",
+    "image": "/src/assets/uxImg/occamRazor.png"
+  },
+  {
+    "id": 13,
+    "law": "Pareto Principle",
+    "description": "80% of the effects come from 20% of the causes.",
+    "example": "Focus design efforts on the most-used features.",
+    "image": "/src/assets/uxImg/ParetoPrinciple.png"
+  },
+  {
+    "id": 14,
+    "law": "Parkinson's Law",
+    "description": "Work expands to fill the time available.",
+    "example": "Short onboarding steps increase completion speed.",
+    "image": "/src/assets/uxImg/parkinsonslaw.png"
+  },
+  {
+    "id": 15,
+    "law": "Peak-End Rule",
+    "description": "People judge an experience by its peak and end moments.",
+    "example": "A delightful success animation improves memory of the journey.",
+    "image": "/src/assets/uxImg/peakEndrule.png"
+  },
+  {
+    "id": 16,
+    "law": "Postel's Law",
+    "description": "Be liberal in what you accept, and conservative in what you send.",
+    "example": "Allow flexible phone number formats during input.",
+    "image": "/src/assets/uxImg/postelslaw.png"
+  },
+  {
+    "id": 17,
+    "law": "Serial Position Effect",
+    "description": "People remember the first and last items best.",
+    "example": "Put important items at the top or bottom of lists.",
+    "image": "/src/assets/uxImg/SerialpostitonEffect.png"
+  },
+  {
+    "id": 18,
+    "law": "Tesler's Law",
+    "description": "Every system has irreducible complexity—manage it wisely.",
+    "example": "Password helpers reduce user complexity.",
+    "image": "/src/assets/uxImg/teslerLaw.png"
+  },
+  {
+    "id": 19,
+    "law": "Von Restorff Effect",
+    "description": "Distinct items are more memorable.",
+    "example": "A red delete button stands out from other options.",
+    "image": "/src/assets/uxImg/vonRestorffEffect.png"
+  },
+  {
+    "id": 20,
+    "law": "Zeigarnik Effect",
+    "description": "People remember incomplete tasks better than completed ones.",
+    "example": "A progress indicator encourages finishing a profile.",
+    "image": "/src/assets/uxImg/ZeigarnikEffect.png"
+  },
+  {
+    "id": 21,
+    "law": "Chunking",
+    "description": "Breaking content into small units improves understanding.",
+    "example": "Phone numbers and credit card entries are grouped into chunks.",
+    "image": "/src/assets/uxImg/chunking.png"
+  }
+]

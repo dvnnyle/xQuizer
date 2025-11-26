@@ -1,0 +1,317 @@
+[
+  {
+    "id": 1,
+    "section": "UX",
+    "question": "Which UX law states: \"Attractive designs feel easier to use\"?",
+    "imageUrl": "/src/assets/uxImg/AestheticUsabilityEffect.png",
+    "options": [
+      "Aesthetic-Usability Effect",
+      "Jakob's Law",
+      "Fitts's Law",
+      "Von Restorff Effect"
+    ],
+    "answerIndex": 0,
+    "answer": "Aesthetic-Usability Effect",
+    "explanation": "The Aesthetic-Usability Effect states that users perceive aesthetically pleasing designs as easier to use, even before they learn how to actually use them. <strong><strong>Example:</strong></strong> A clean, modern interface with good typography and spacing makes users feel more confident about using an app, even if they haven't explored its features yet."
+  },
+  {
+    "id": 2,
+    "section": "UX",
+    "question": "What does Hick's Law describe?",
+    "imageUrl": "/src/assets/uxImg/hicksLaw.png",
+    "options": [
+      "Bigger targets are easier to click",
+      "More choices lead to slower decisions",
+      "People remember the first and last items best",
+      "Systems should respond within 400ms"
+    ],
+    "answerIndex": 1,
+    "answer": "More choices lead to slower decisions",
+    "explanation": "Hick's Law states that decision time increases with the number of choices available. Designers should limit options to reduce cognitive load. <strong><strong>Example:</strong></strong> A restaurant menu with 5 categories is easier to navigate than one with 20 categories. Netflix groups content into genres to avoid overwhelming users."
+  },
+  {
+    "id": 3,
+    "section": "UX",
+    "question": "Which law is about target size and distance affecting interaction time?",
+    "imageUrl": "/src/assets/uxImg/FittsLaw.png",
+    "options": [
+      "Miller's Law",
+      "Fitts's Law",
+      "Hick's Law",
+      "Tesler's Law"
+    ],
+    "answerIndex": 1,
+    "answer": "Fitts's Law",
+    "explanation": "Fitts's Law states that the time to reach a target depends on its size and distance. Larger, closer targets are easier and faster to interact with. <strong><strong>Example:</strong></strong> Mobile apps make primary action buttons large and positioned at thumb-friendly locations. Small close buttons in the corner are harder to tap."
+  },
+  {
+    "id": 4,
+    "section": "UX",
+    "question": "People can remember about 7±2 items in working memory. This is known as:",
+    "imageUrl": "/src/assets/uxImg/millersLaw.png",
+    "options": [
+      "Chunking",
+      "Zeigarnik Effect",
+      "Miller's Law",
+      "Serial Position Effect"
+    ],
+    "answerIndex": 2,
+    "answer": "Miller's Law",
+    "explanation": "Miller's Law states that the average person can hold about 7 (plus or minus 2) items in their working memory at once. <strong><strong>Example:</strong></strong> Phone numbers are chunked into groups (555-123-4567), and navigation menus typically have 5-7 main items. Credit card numbers are shown in 4-digit groups."
+  },
+  {
+    "id": 5,
+    "section": "UX",
+    "question": "\"Users prefer designs similar to ones they already know\" describes which law?",
+    "imageUrl": "/src/assets/uxImg/jakobLaw.png",
+    "options": [
+      "Jakob's Law",
+      "Law of Similarity",
+      "Law of Common Region",
+      "Aesthetic-Usability Effect"
+    ],
+    "answerIndex": 0,
+    "answer": "Jakob's Law",
+    "explanation": "Jakob's Law states that users spend most of their time on other sites, so they prefer your site to work the same way as sites they already know. <strong><strong>Example:</strong></strong> E-commerce sites put shopping carts in the top-right corner and use familiar checkout flows because that's what users expect from Amazon and other major retailers."
+  },
+  {
+    "id": 6,
+    "section": "UX",
+    "question": "Which Gestalt principle states that items close together appear related?",
+    "imageUrl": "/src/assets/uxImg/lawofproximity.png",
+    "options": [
+      "Law of Similarity",
+      "Law of Proximity",
+      "Law of Uniform Connectedness",
+      "Law of Common Region"
+    ],
+    "answerIndex": 1,
+    "answer": "Law of Proximity",
+    "explanation": "The Law of Proximity states that objects near each other tend to be grouped together in perception. <strong><strong>Example:</strong></strong> Form labels placed directly above their input fields show they belong together. Product images positioned close to their prices indicate the relationship between them."
+  },
+  {
+    "id": 7,
+    "section": "UX",
+    "question": "Items that look similar are perceived as related. This is called:",
+    "imageUrl": "/src/assets/uxImg/lawofsimilaraity.png",
+    "options": [
+      "Law of Proximity",
+      "Law of Common Region",
+      "Law of Similarity",
+      "Law of Prägnanz"
+    ],
+    "answerIndex": 2,
+    "answer": "Law of Similarity",
+    "explanation": "The Law of Similarity states that elements with similar visual characteristics are perceived as being more related than dissimilar elements. <strong><strong>Example:</strong></strong> All buttons with the same blue color are understood as clickable actions, while gray text indicates non-interactive labels. Links share the same underline style."
+  },
+  {
+    "id": 8,
+    "section": "UX",
+    "question": "Which law states that items inside the same boundary appear grouped?",
+    "imageUrl": "/src/assets/uxImg/lawofcommenregion.png",
+    "options": [
+      "Law of Proximity",
+      "Law of Common Region",
+      "Law of Uniform Connectedness",
+      "Law of Similarity"
+    ],
+    "answerIndex": 1,
+    "answer": "Law of Common Region",
+    "explanation": "The Law of Common Region states that elements within a clearly defined boundary are perceived as part of a group. <strong><strong>Example:</strong></strong> A card container with a border groups related information together. Pricing tables use boxes to separate different plan tiers."
+  },
+  {
+    "id": 9,
+    "section": "UX",
+    "question": "Visually connected items seem related. This describes:",
+    "imageUrl": "/src/assets/uxImg/lawofuniformconectedneess.png",
+    "options": [
+      "Law of Proximity",
+      "Law of Uniform Connectedness",
+      "Law of Similarity",
+      "Law of Common Region"
+    ],
+    "answerIndex": 1,
+    "answer": "Law of Uniform Connectedness",
+    "explanation": "The Law of Uniform Connectedness states that elements visually connected through lines, colors, or other properties are perceived as more related. <strong><strong>Example:</strong></strong> Progress bars connect steps in a checkout process. Connected dots in a timeline show the flow of events."
+  },
+  {
+    "id": 10,
+    "section": "UX",
+    "question": "People interpret shapes in the simplest form possible. This is:",
+    "imageUrl": "/src/assets/uxImg/lawofpragnaz.png",
+    "options": [
+      "Occam's Razor",
+      "Law of Prägnanz",
+      "Tesler's Law",
+      "Miller's Law"
+    ],
+    "answerIndex": 1,
+    "answer": "Law of Prägnanz",
+    "explanation": "The Law of Prägnanz (Good Figure) states that people perceive ambiguous or complex images in their simplest, most stable form. <strong><strong>Example:</strong></strong> The Olympic rings are seen as overlapping circles, not complex curved shapes. Logos use simple geometric forms that are easy to recognize and remember."
+  },
+  {
+    "id": 11,
+    "section": "UX",
+    "question": "Every system has unavoidable complexity that can only be moved, not eliminated. This is:",
+    "imageUrl": "/src/assets/uxImg/teslerLaw.png",
+    "options": [
+      "Parkinson's Law",
+      "Tesler's Law",
+      "Hick's Law",
+      "Occam's Razor"
+    ],
+    "answerIndex": 1,
+    "answer": "Tesler's Law",
+    "explanation": "Tesler's Law (Law of Conservation of Complexity) states that every system has inherent complexity that cannot be removed, only shifted between the user and the system. <strong><strong>Example:</strong></strong> Email apps handle spam filtering complexity behind the scenes so users don't have to. Smart defaults reduce user choices but require more system intelligence."
+  },
+  {
+    "id": 12,
+    "section": "UX",
+    "question": "20% of actions produce 80% of results. This describes:",
+    "imageUrl": "/src/assets/uxImg/ParetoPrinciple.png",
+    "options": [
+      "Pareto Principle",
+      "Peak-End Rule",
+      "Parkinson's Law",
+      "Serial Position Effect"
+    ],
+    "answerIndex": 0,
+    "answer": "Pareto Principle",
+    "explanation": "The Pareto Principle (80/20 Rule) states that roughly 80% of effects come from 20% of causes. In UX, 80% of users typically use 20% of features. <strong><strong>Example:</strong></strong> Microsoft found that 80% of errors come from 20% of bugs. Focus on optimizing the most-used features like search, checkout, and navigation rather than rarely-used advanced settings."
+  },
+  {
+    "id": 13,
+    "section": "UX",
+    "question": "Work expands to fill the available time. This is known as:",
+    "imageUrl": "/src/assets/uxImg/parkinsonslaw.png",
+    "options": [
+      "Tesler's Law",
+      "Parkinson's Law",
+      "Hick's Law",
+      "Doherty Threshold"
+    ],
+    "answerIndex": 1,
+    "answer": "Parkinson's Law",
+    "explanation": "Parkinson's Law states that work expands to fill the time available for its completion. Setting constraints can improve productivity and decision-making. <strong><strong>Example:</strong></strong> Limited-time offers create urgency. Twitter's character limit forces concise communication. Countdown timers in checkout flows reduce cart abandonment."
+  },
+  {
+    "id": 14,
+    "section": "UX",
+    "question": "People judge experiences by the peak moment and the ending. This is called:",
+    "imageUrl": "/src/assets/uxImg/peakEndrule.png",
+    "options": [
+      "Serial Position Effect",
+      "Zeigarnik Effect",
+      "Peak-End Rule",
+      "Von Restorff Effect"
+    ],
+    "answerIndex": 2,
+    "answer": "Peak-End Rule",
+    "explanation": "The Peak-End Rule states that people judge experiences based on how they felt at the peak (most intense point) and at the end, not the average. <strong><strong>Example:</strong></strong> Uber shows a summary screen at trip end. Duolingo celebrates lesson completion with animations. Airbnb sends thank-you messages after checkout."
+  },
+  {
+    "id": 15,
+    "section": "UX",
+    "question": "Accept flexible input; give clean and consistent output. This describes:",
+    "imageUrl": "/src/assets/uxImg/postelslaw.png",
+    "options": [
+      "Jakob's Law",
+      "Postel's Law",
+      "Tesler's Law",
+      "Occam's Razor"
+    ],
+    "answerIndex": 1,
+    "answer": "Postel's Law",
+    "explanation": "Postel's Law (Robustness Principle) states: Be liberal in what you accept from others, and conservative in what you send. Systems should be flexible with input but provide consistent output. <strong><strong>Example:</strong></strong> Search accepts misspellings, different formats, and variations. Phone number inputs accept various formats (555-1234, 555 1234, 5551234) but display consistently."
+  },
+  {
+    "id": 16,
+    "section": "UX",
+    "question": "People remember the first and last items best. This is the:",
+    "imageUrl": "/src/assets/uxImg/SerialpostitonEffect.png",
+    "options": [
+      "Von Restorff Effect",
+      "Zeigarnik Effect",
+      "Serial Position Effect",
+      "Peak-End Rule"
+    ],
+    "answerIndex": 2,
+    "answer": "Serial Position Effect",
+    "explanation": "The Serial Position Effect shows that users remember the first items (primacy) and last items (recency) in a series best, while middle items are less memorable. <strong><strong>Example:</strong></strong> Place important navigation items at the start and end of menus. Put key features first in lists. Show important terms at the beginning and end of agreements."
+  },
+  {
+    "id": 17,
+    "section": "UX",
+    "question": "Distinct items stand out more and are better remembered. This is:",
+    "imageUrl": "/src/assets/uxImg/vonRestorffEffect.png",
+    "options": [
+      "Serial Position Effect",
+      "Von Restorff Effect",
+      "Aesthetic-Usability Effect",
+      "Law of Similarity"
+    ],
+    "answerIndex": 1,
+    "answer": "Von Restorff Effect",
+    "explanation": "The Von Restorff Effect (Isolation Effect) states that when multiple similar objects are present, the one that differs is most likely to be remembered. <strong><strong>Example:</strong></strong> Call-to-action buttons use bright colors (green 'Sign Up' among gray buttons). Featured pricing plans are highlighted. Important notifications use distinct colors or icons."
+  },
+  {
+    "id": 18,
+    "section": "UX",
+    "question": "People remember incomplete tasks better than completed ones. This is the:",
+    "imageUrl": "/src/assets/uxImg/ZeigarnikEffect.png",
+    "options": [
+      "Peak-End Rule",
+      "Zeigarnik Effect",
+      "Serial Position Effect",
+      "Von Restorff Effect"
+    ],
+    "answerIndex": 1,
+    "answer": "Zeigarnik Effect",
+    "explanation": "The Zeigarnik Effect states that people remember uncompleted or interrupted tasks better than completed tasks. Use this in progress indicators and onboarding. <strong><strong>Example:</strong></strong> LinkedIn shows 'Profile 80% complete' to motivate completion. Saved shopping carts remind users of unfinished purchases. Progress bars in multi-step forms keep users engaged."
+  },
+  {
+    "id": 19,
+    "section": "UX",
+    "question": "Systems should respond within ~400ms for optimal flow. This is:",
+    "imageUrl": "/src/assets/uxImg/DohertyThreshold.png",
+    "options": [
+      "Fitts's Law",
+      "Hick's Law",
+      "Doherty Threshold",
+      "Parkinson's Law"
+    ],
+    "answerIndex": 2,
+    "answer": "Doherty Threshold",
+    "explanation": "The Doherty Threshold states that productivity increases when system response time is less than 400ms, keeping users engaged and in flow. <strong><strong>Example:</strong></strong> Google shows instant search suggestions as you type. Skeleton screens appear immediately while content loads. Button presses provide instant visual feedback."
+  },
+  {
+    "id": 20,
+    "section": "UX",
+    "question": "The simplest solution is usually correct. This principle is:",
+    "imageUrl": "/src/assets/uxImg/occamRazor.png",
+    "options": [
+      "Occam's Razor",
+      "Law of Prägnanz",
+      "Tesler's Law",
+      "Jakob's Law"
+    ],
+    "answerIndex": 0,
+    "answer": "Occam's Razor",
+    "explanation": "Occam's Razor states that among competing solutions, the simplest one is usually the best. In UX, remove unnecessary elements and focus on essential features. <strong><strong>Example:</strong></strong> Google's homepage has just a search box. Instagram's camera-first interface removes complexity. One-click checkout simplifies the buying process."
+  },
+  {
+    "id": 21,
+    "section": "UX",
+    "question": "Group information into small, manageable units. This technique is called:",
+    "imageUrl": "/src/assets/uxImg/chunking.png",
+    "options": [
+      "Miller's Law",
+      "Chunking",
+      "Serial Position Effect",
+      "Law of Common Region"
+    ],
+    "answerIndex": 1,
+    "answer": "Chunking",
+    "explanation": "Chunking is the practice of breaking information into smaller, manageable pieces. This helps users process and remember information more effectively, working with Miller's Law. <strong><strong>Example:</strong></strong> Multi-step forms break long processes into digestible sections. Credit cards display numbers in 4-digit chunks. Tutorial wizards present information step-by-step."
+  }
+]

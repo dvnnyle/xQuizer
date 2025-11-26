@@ -72,13 +72,15 @@ function Home() {
         <h3>List</h3>
         <nav className="toc-nav">
           <a href="#randomquiz" className="toc-link">Random Mix</a>
+          <a href="#fullquestions" className="toc-link">All Questions</a>
           <a href="#chapter3" className="toc-link">Chapter 3</a>
           <a href="#chapter5" className="toc-link">Chapter 5</a>
           <a href="#chapter6" className="toc-link">Chapter 6</a>
           <a href="#chapter8" className="toc-link">Chapter 8</a>
           <a href="#chapter10" className="toc-link">Chapter 10</a>
           <a href="#uxlaws" className="toc-link">UX Laws</a>
-          <a href="#chaptertest" className="toc-link">Test Chapter</a>
+          <a href="#uxquiz1" className="toc-link">UX Quiz</a>
+          <a href="#uxquiz2" className="toc-link">UX Quiz 2</a>
         </nav>
       </aside>
       <div className="home-content">
@@ -89,6 +91,11 @@ function Home() {
             <h3>🎲 Random Mix</h3>
             <p>30 random questions from all chapters</p>
             <span className="question-count">Chapters 3, 5, 6, 8, 10</span>
+          </a>
+          <a href="/fullquestions" className="chapter-button featured red-theme" id="fullquestions">
+            <h3>🔥 All Questions</h3>
+            <p>Every question from chapters 3, 5, 6, 8, and 10</p>
+            <span className="question-count">148 questions total</span>
           </a>
           <div className="chapter-divider">
             <span>Chapters</span>
@@ -118,15 +125,26 @@ function Home() {
             <p>Evaluation</p>
             <span className="question-count">30 questions</span>
           </a>
-          <div className="chapter-button" id="uxlaws">
-            <h3>UX Laws</h3>
-            <p>Coming Soon</p>
+          <div className="chapter-divider">
+            <span>UX Laws</span>
           </div>
-          <a href="/chaptertest" className="chapter-button" id="chaptertest">
-            <h3>Test Chapter</h3>
-            <p>Sample questions for testing</p>
-            <span className="question-count">5 questions</span>
+          <a href="/uxlaws" className="chapter-button green-theme" id="uxlaws">
+            <h3>📚 UX Laws</h3>
+            <p>Read about essential principles for user experience design</p>
+            <span className="question-count">21 laws</span>
           </a>
+          <div className="quiz-grid">
+            <a href="/uxquiz1" className="chapter-button" id="uxquiz1">
+              <h3>🎯 UX Laws Quiz</h3>
+              <p>Test your knowledge of UX principles</p>
+              <span className="question-count">21 questions</span>
+            </a>
+            <a href="/uxquiz2" className="chapter-button" id="uxquiz2">
+              <h3>🎯 UX Laws Quiz 2</h3>
+              <p>Match laws with descriptions</p>
+              <span className="question-count">21 questions</span>
+            </a>
+          </div>
         </div>
       </div>
       <Footer />
