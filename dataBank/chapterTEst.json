@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "section": "Test",
+    "question": "What is the capital of France?",
+    "options": [
+      "London",
+      "Berlin",
+      "Paris",
+      "Madrid"
+    ],
+    "answerIndex": 2,
+    "answer": "Paris",
+    "explanation": "Paris is the capital and largest city of France, known for landmarks like the Eiffel Tower."
+  },
+  {
+    "id": 2,
+    "section": "Test",
+    "question": "Which planet is known as the Red Planet?",
+    "options": [
+      "Venus",
+      "Mars",
+      "Jupiter",
+      "Saturn"
+    ],
+    "answerIndex": 1,
+    "answer": "Mars",
+    "explanation": "Mars appears red due to iron oxide (rust) on its surface, earning it the nickname 'Red Planet'."
+  },
+  {
+    "id": 3,
+    "section": "Test",
+    "question": "What is 2 + 2?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answerIndex": 1,
+    "answer": "4",
+    "explanation": "Basic arithmetic: 2 plus 2 equals 4."
+  },
+  {
+    "id": 4,
+    "section": "Test",
+    "question": "Which programming language is known for web styling?",
+    "options": [
+      "Python",
+      "Java",
+      "CSS",
+      "C++"
+    ],
+    "answerIndex": 2,
+    "answer": "CSS",
+    "explanation": "CSS (Cascading Style Sheets) is used to style and layout web pages."
+  },
+  {
+    "id": 5,
+    "section": "Test",
+    "question": "What does HTML stand for?",
+    "options": [
+      "Hyper Text Markup Language",
+      "High Tech Modern Language",
+      "Home Tool Markup Language",
+      "Hyperlinks and Text Markup Language"
+    ],
+    "answerIndex": 0,
+    "answer": "Hyper Text Markup Language",
+    "explanation": "HTML stands for Hyper Text Markup Language and is the standard markup language for creating web pages."
+  }
+]

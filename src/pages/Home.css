@@ -206,6 +206,72 @@
   color: #888;
 }
 
+.chapter-button.featured {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border: 2px solid #646cff;
+  box-shadow: 0 4px 20px rgba(100, 108, 255, 0.3);
+}
+
+.chapter-button.featured::before {
+  background: linear-gradient(135deg, rgba(100, 108, 255, 0.2) 0%, rgba(100, 108, 255, 0.1) 100%);
+  opacity: 1;
+}
+
+.chapter-button.featured:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(100, 108, 255, 0.4);
+  border-color: #8b93ff;
+}
+
+.chapter-button.featured h3 {
+  color: #8b93ff;
+  font-size: 1.75rem;
+}
+
+.chapter-button.featured:hover h3 {
+  color: #a5adff;
+}
+
+.chapter-button.featured p {
+  color: #aaa;
+}
+
+.chapter-button.featured .question-count {
+  background: rgba(100, 108, 255, 0.3);
+  border-color: rgba(100, 108, 255, 0.6);
+  color: #a5adff;
+  font-weight: 600;
+}
+
+.chapter-button.featured:hover .question-count {
+  background: rgba(100, 108, 255, 0.4);
+  border-color: #8b93ff;
+  transform: scale(1.08);
+}
+
+.chapter-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.chapter-divider::before,
+.chapter-divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.chapter-divider span {
+  padding: 0 1rem;
+  color: #888;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
 .scroll-to-top {
   position: fixed;
   right: 1.5rem;

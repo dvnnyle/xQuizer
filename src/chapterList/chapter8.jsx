@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 import NavigationMenu from '../pages/widget/navigationMenu'
 import questionsData from '../../dataBank/chapter8.json'
 import '../chapterList/chapter3.css'
@@ -10,6 +11,7 @@ function Chapter8() {
   const [score, setScore] = useState(0)
   const [answeredQuestions, setAnsweredQuestions] = useState(0)
   const [userAnswers, setUserAnswers] = useState([])
+  const [showReview, setShowReview] = useState(false)
 
   const currentQuestion = questionsData[currentQuestionIndex]
 
@@ -36,6 +38,25 @@ function Chapter8() {
       setAnsweredQuestions(answeredQuestions + 1)
     } else {
       setAnsweredQuestions(answeredQuestions + 1)
+      const finalScore = score + (currentQuestion.answerIndex === selectedAnswer ? 1 : 0)
+      
+      // Save to localStorage
+      const existingData = localStorage.getItem('quiz_chapter8')
+      const previousData = existingData ? JSON.parse(existingData) : { bestScore: 0, attempts: 0, attemptHistory: [] }
+      
+      const newAttempt = { score: finalScore, date: new Date().toISOString() }
+      const attemptHistory = [...(previousData.attemptHistory || []), newAttempt]
+      
+      localStorage.setItem('quiz_chapter8', JSON.stringify({
+        score: finalScore,
+        completed: questionsData.length,
+        total: questionsData.length,
+        bestScore: Math.max(finalScore, previousData.bestScore || 0),
+        attempts: attemptHistory.length,
+        lastAttempt: new Date().toISOString(),
+        attemptHistory: attemptHistory
+      }))
+      
       setShowResult(true)
     }
   }
@@ -52,12 +73,75 @@ function Chapter8() {
     setCurrentQuestionIndex(0)
     setSelectedAnswer(null)
     setShowResult(false)
+    setShowReview(false)
     setScore(0)
     setAnsweredQuestions(0)
     setUserAnswers([])
   }
 
+  const handleShowReview = () => {
+    setShowReview(true)
+  }
+
+  const handleBackToResults = () => {
+    setShowReview(false)
+  }
+
   if (showResult) {
+    const percentage = ((score / questionsData.length) * 100).toFixed(1)
+    
+    if (showReview) {
+      return (
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
+          <NavigationMenu />
+          <div className="quiz-container">
+            <div className="quiz-header">
+              <h2>Answer Review - Chapter 8</h2>
+              <div className="progress-info"><span>Score: {score}/{questionsData.length} ({percentage}%)</span></div>
+            </div>
+            <div className="review-container">
+              {questionsData.map((question, qIndex) => {
+                const userAnswer = userAnswers[qIndex]
+                const isCorrect = userAnswer?.isCorrect
+                const userSelectedIndex = userAnswer?.selectedIndex
+                return (
+                  <div key={question.id} className="review-question-card">
+                    <div className="review-header">
+                      <span className="question-number">Question {qIndex + 1}</span>
+                      <span className={`result-badge ${isCorrect ? 'correct-badge' : 'wrong-badge'}`}>{isCorrect ? '✓ Correct' : '✗ Incorrect'}</span>
+                    </div>
+                    <h3 className="question-text">{question.question}</h3>
+                    <div className="review-options">
+                      {question.options.map((option, optIndex) => {
+                        const isCorrectOption = optIndex === question.answerIndex
+                        const isUserSelection = optIndex === userSelectedIndex
+                        let optionClass = 'review-option'
+                        if (isCorrectOption) optionClass += ' correct-option'
+                        if (isUserSelection && !isCorrect) optionClass += ' wrong-option'
+                        return (
+                          <div key={optIndex} className={optionClass}>
+                            <span className="option-letter">{String.fromCharCode(65 + optIndex)}</span>
+                            <span className="option-text">{option}</span>
+                            {isUserSelection && <span className="selection-badge">Your answer</span>}
+                            {isCorrectOption && <span className="correct-badge-mini">Correct</span>}
+                          </div>
+                        )
+                      })}
+                    </div>
+                    <div className="review-explanation"><strong>Explanation:</strong> {question.explanation}</div>
+                  </div>
+                )
+              })}
+            </div>
+            <div className="review-actions">
+              <button onClick={handleBackToResults} className="next-button">← Back to Results</button>
+              <button onClick={handleRestart} className="restart-button">Try Again</button>
+            </div>
+          </div>
+        </motion.div>
+      )
+    }
+    
     return (
       <>
         <NavigationMenu />
@@ -72,6 +156,7 @@ function Chapter8() {
               {Math.round((score / questionsData.length) * 100)}%
             </div>
             <div className="button-group">
+              <button onClick={handleShowReview} className="next-button" style={{ marginBottom: '10px' }}>📋 Review Answers</button>
               <button onClick={handleRestart} className="restart-button">
                 Try Again
               </button>
@@ -86,7 +171,12 @@ function Chapter8() {
   }
 
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <NavigationMenu />
       <div className="quiz-container">
         <div className="quiz-header">
@@ -187,7 +277,7 @@ function Chapter8() {
           </div>
         </div>
       </div>
-    </>
+    </motion.div>
   )
 }
 

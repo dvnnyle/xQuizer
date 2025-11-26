@@ -1,10 +1,30 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import NavigationMenu from '../pages/widget/navigationMenu'
-import questionsData from '../../dataBank/chapter5.json'
-import '../chapterList/chapter3.css'
+import './chapter3.css'
 
-function Chapter5() {
+// Import all chapter data
+import chapter3Data from '../../dataBank/chapter3.json'
+import chapter5Data from '../../dataBank/chapter5.json'
+import chapter6Data from '../../dataBank/chapter6.json'
+import chapter8Data from '../../dataBank/chapter8.json'
+import chapter10Data from '../../dataBank/chapter10.json'
+
+// Generate random questions once
+const generateRandomQuestions = () => {
+  const allQuestions = [
+    ...chapter3Data,
+    ...chapter5Data,
+    ...chapter6Data,
+    ...chapter8Data,
+    ...chapter10Data
+  ]
+  const shuffled = [...allQuestions].sort(() => Math.random() - 0.5)
+  return shuffled.slice(0, 30)
+}
+
+function RandomizerQuiz() {
+  const [questionsData] = useState(generateRandomQuestions())
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [selectedAnswer, setSelectedAnswer] = useState(null)
   const [showResult, setShowResult] = useState(false)
@@ -16,11 +36,12 @@ function Chapter5() {
   const currentQuestion = questionsData[currentQuestionIndex]
 
   const handleAnswerClick = (index) => {
-    if (selectedAnswer !== null) return
+    if (selectedAnswer !== null) return // Already answered
 
     setSelectedAnswer(index)
     const isCorrect = index === currentQuestion.answerIndex
 
+    // Store the answer
     const newAnswers = [...userAnswers]
     newAnswers[currentQuestionIndex] = { selectedIndex: index, isCorrect }
     setUserAnswers(newAnswers)
@@ -41,13 +62,13 @@ function Chapter5() {
       const finalScore = score + (currentQuestion.answerIndex === selectedAnswer ? 1 : 0)
       
       // Save to localStorage
-      const existingData = localStorage.getItem('quiz_chapter5')
+      const existingData = localStorage.getItem('quiz_randomizer')
       const previousData = existingData ? JSON.parse(existingData) : { bestScore: 0, attempts: 0, attemptHistory: [] }
       
       const newAttempt = { score: finalScore, date: new Date().toISOString() }
       const attemptHistory = [...(previousData.attemptHistory || []), newAttempt]
       
-      localStorage.setItem('quiz_chapter5', JSON.stringify({
+      localStorage.setItem('quiz_randomizer', JSON.stringify({
         score: finalScore,
         completed: questionsData.length,
         total: questionsData.length,
@@ -70,13 +91,7 @@ function Chapter5() {
   }
 
   const handleRestart = () => {
-    setCurrentQuestionIndex(0)
-    setSelectedAnswer(null)
-    setShowResult(false)
-    setShowReview(false)
-    setScore(0)
-    setAnsweredQuestions(0)
-    setUserAnswers([])
+    window.location.reload() // Reload to get new random questions
   }
 
   const handleShowReview = () => {
@@ -92,50 +107,79 @@ function Chapter5() {
     
     if (showReview) {
       return (
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <NavigationMenu />
           <div className="quiz-container">
             <div className="quiz-header">
-              <h2>Answer Review - Chapter 5</h2>
-              <div className="progress-info"><span>Score: {score}/{questionsData.length} ({percentage}%)</span></div>
+              <h2>Answer Review - 🎲 Random Quiz</h2>
+              <div className="progress-info">
+                <span>Score: {score}/{questionsData.length} ({percentage}%)</span>
+              </div>
             </div>
-            <div className="review-container">
-              {questionsData.map((question, qIndex) => {
-                const userAnswer = userAnswers[qIndex]
-                const isCorrect = userAnswer?.isCorrect
-                const userSelectedIndex = userAnswer?.selectedIndex
+
+            <div className="review-list">
+              {questionsData.map((question, index) => {
+                const userAnswerData = userAnswers[index]
+                if (!userAnswerData) return null
+
+                const isCorrect = userAnswerData.isCorrect
+
                 return (
-                  <div key={question.id} className="review-question-card">
-                    <div className="review-header">
-                      <span className="question-number">Question {qIndex + 1}</span>
-                      <span className={`result-badge ${isCorrect ? 'correct-badge' : 'wrong-badge'}`}>{isCorrect ? '✓ Correct' : '✗ Incorrect'}</span>
+                  <div key={index} className="review-item">
+                    <div className="review-question-header">
+                      <span className="review-question-number">Q{index + 1}</span>
+                      <span className={`review-status ${isCorrect ? 'correct' : 'wrong'}`}>
+                        {isCorrect ? '✓ Correct' : '✗ Wrong'}
+                      </span>
                     </div>
-                    <h3 className="question-text">{question.question}</h3>
+
+                    <h3 className="review-question">{question.question}</h3>
+
                     <div className="review-options">
-                      {question.options.map((option, optIndex) => {
-                        const isCorrectOption = optIndex === question.answerIndex
-                        const isUserSelection = optIndex === userSelectedIndex
+                      {question.options.map((option, optionIndex) => {
+                        const isUserAnswer = userAnswerData.selectedIndex === optionIndex
+                        const isCorrectAnswer = question.answerIndex === optionIndex
+
                         let optionClass = 'review-option'
-                        if (isCorrectOption) optionClass += ' correct-option'
-                        if (isUserSelection && !isCorrect) optionClass += ' wrong-option'
+                        if (isCorrectAnswer) optionClass += ' correct'
+                        if (isUserAnswer && !isCorrect) optionClass += ' wrong'
+
                         return (
-                          <div key={optIndex} className={optionClass}>
-                            <span className="option-letter">{String.fromCharCode(65 + optIndex)}</span>
-                            <span className="option-text">{option}</span>
-                            {isUserSelection && <span className="selection-badge">Your answer</span>}
-                            {isCorrectOption && <span className="correct-badge-mini">Correct</span>}
+                          <div key={optionIndex} className={optionClass}>
+                            <span className="option-letter">{String.fromCharCode(65 + optionIndex)}</span>
+                            <span>{option}</span>
+                            {isUserAnswer && <span className="badge">Your answer</span>}
+                            {isCorrectAnswer && <span className="badge">Correct</span>}
                           </div>
                         )
                       })}
                     </div>
-                    <div className="review-explanation"><strong>Explanation:</strong> {question.explanation}</div>
+
+                    {question.explanation && (
+                      <div className="review-explanation">
+                        <strong>Explanation:</strong>
+                        <div dangerouslySetInnerHTML={{ 
+                          __html: question.explanation.replace(/'([^']+)'/g, "<span class='highlight'>$1</span>") 
+                        }} />
+                      </div>
+                    )}
                   </div>
                 )
               })}
             </div>
+
             <div className="review-actions">
-              <button onClick={handleBackToResults} className="next-button">← Back to Results</button>
-              <button onClick={handleRestart} className="restart-button">Try Again</button>
+              <button onClick={handleBackToResults} className="next-button">
+                ← Back to Results
+              </button>
+              <button onClick={handleRestart} className="restart-button">
+                Try New Random Quiz
+              </button>
             </div>
           </div>
         </motion.div>
@@ -156,9 +200,11 @@ function Chapter5() {
               {Math.round((score / questionsData.length) * 100)}%
             </div>
             <div className="button-group">
-              <button onClick={handleShowReview} className="next-button" style={{ marginBottom: '10px' }}>📋 Review Answers</button>
+              <button onClick={handleShowReview} className="next-button" style={{ marginBottom: '10px' }}>
+                📋 Review Answers
+              </button>
               <button onClick={handleRestart} className="restart-button">
-                Try Again
+                Try New Random Quiz
               </button>
               <a href="/" className="home-link">
                 Back to Home
@@ -180,7 +226,7 @@ function Chapter5() {
       <NavigationMenu />
       <div className="quiz-container">
         <div className="quiz-header">
-          <h2>Chapter 5: Designing for people</h2>
+          <h2>🎲 Random UX Quiz - 30 Questions</h2>
           <div className="progress-info">
             <span>Question {currentQuestionIndex + 1} of {questionsData.length}</span>
             <span>Score: {score}/{answeredQuestions}</span>
@@ -189,19 +235,13 @@ function Chapter5() {
             <div 
               className="progress-fill" 
               style={{ width: `${((currentQuestionIndex + 1) / questionsData.length) * 100}%` }}
-            />
+            ></div>
           </div>
         </div>
 
         <div className="question-card">
-          <div className="section-badge">Section {currentQuestion.section}</div>
+          <div className="section-badge">Random Mix</div>
           <h3 className="question-text">{currentQuestion.question}</h3>
-          
-          {currentQuestion.imageUrl && (
-            <div className="question-image">
-              <img src={currentQuestion.imageUrl} alt="Question illustration" />
-            </div>
-          )}
           
           <div className="options-list">
             {currentQuestion.options.map((option, index) => {
@@ -219,7 +259,6 @@ function Chapter5() {
                 >
                   <span className="option-letter">{String.fromCharCode(65 + index)}</span>
                   <span className="option-text">{option}</span>
-                  {isSelected && <span className="you-chose">You chose</span>}
                 </button>
               )
             })}
@@ -281,4 +320,4 @@ function Chapter5() {
   )
 }
 
-export default Chapter5
+export default RandomizerQuiz

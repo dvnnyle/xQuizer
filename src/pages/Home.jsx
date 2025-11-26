@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { motion } from 'framer-motion'
 import '../App.css'
 import './Home.css'
 import NavigationMenu from './widget/navigationMenu'
@@ -59,24 +60,39 @@ function Home() {
   }
 
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <NavigationMenu />
       <CustomMenu />
       <aside className="table-of-contents">
         <h3>List</h3>
         <nav className="toc-nav">
+          <a href="#randomquiz" className="toc-link">Random Mix</a>
           <a href="#chapter3" className="toc-link">Chapter 3</a>
           <a href="#chapter5" className="toc-link">Chapter 5</a>
           <a href="#chapter6" className="toc-link">Chapter 6</a>
           <a href="#chapter8" className="toc-link">Chapter 8</a>
           <a href="#chapter10" className="toc-link">Chapter 10</a>
           <a href="#uxlaws" className="toc-link">UX Laws</a>
+          <a href="#chaptertest" className="toc-link">Test Chapter</a>
         </nav>
       </aside>
       <div className="home-content">
         <h1 className="home-title"> X Interaction Design</h1>
         <p>Select a chapter to start practicing</p>
         <div className="chapter-list">
+          <a href="/randomquiz" className="chapter-button featured" id="randomquiz">
+            <h3>🎲 Random Mix</h3>
+            <p>30 random questions from all chapters</p>
+            <span className="question-count">Chapters 3, 5, 6, 8, 10</span>
+          </a>
+          <div className="chapter-divider">
+            <span>Chapters</span>
+          </div>
           <a href="/chapter3" className="chapter-button" id="chapter3">
             <h3>Chapter 3</h3>
             <p>The process of human-centred UX design</p>
@@ -106,6 +122,11 @@ function Home() {
             <h3>UX Laws</h3>
             <p>Coming Soon</p>
           </div>
+          <a href="/chaptertest" className="chapter-button" id="chaptertest">
+            <h3>Test Chapter</h3>
+            <p>Sample questions for testing</p>
+            <span className="question-count">5 questions</span>
+          </a>
         </div>
       </div>
       <Footer />
@@ -115,7 +136,7 @@ function Home() {
           ↑
         </button>
       )}
-    </>
+    </motion.div>
   )
 }
 

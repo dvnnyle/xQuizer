@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import NavigationMenu from '../pages/widget/navigationMenu'
-import questionsData from '../../dataBank/chapter5.json'
+import questionsData from '../../dataBank/chapterTest.json'
 import '../chapterList/chapter3.css'
 
-function Chapter5() {
+function ChapterTest() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [selectedAnswer, setSelectedAnswer] = useState(null)
   const [showResult, setShowResult] = useState(false)
@@ -16,38 +16,41 @@ function Chapter5() {
   const currentQuestion = questionsData[currentQuestionIndex]
 
   const handleAnswerClick = (index) => {
-    if (selectedAnswer !== null) return
+    if (selectedAnswer !== null) return // Already answered
 
     setSelectedAnswer(index)
     const isCorrect = index === currentQuestion.answerIndex
 
-    const newAnswers = [...userAnswers]
-    newAnswers[currentQuestionIndex] = { selectedIndex: index, isCorrect }
-    setUserAnswers(newAnswers)
-
     if (isCorrect) {
       setScore(score + 1)
     }
+
+    setAnsweredQuestions(answeredQuestions + 1)
+    setUserAnswers([
+      ...userAnswers,
+      {
+        questionId: currentQuestion.id,
+        selectedIndex: index,
+        isCorrect,
+      },
+    ])
   }
 
   const handleNext = () => {
     if (currentQuestionIndex < questionsData.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1)
-      const nextAnswer = userAnswers[currentQuestionIndex + 1]
-      setSelectedAnswer(nextAnswer ? nextAnswer.selectedIndex : null)
-      setAnsweredQuestions(answeredQuestions + 1)
+      setSelectedAnswer(null)
     } else {
-      setAnsweredQuestions(answeredQuestions + 1)
       const finalScore = score + (currentQuestion.answerIndex === selectedAnswer ? 1 : 0)
       
       // Save to localStorage
-      const existingData = localStorage.getItem('quiz_chapter5')
+      const existingData = localStorage.getItem('quiz_chaptertest')
       const previousData = existingData ? JSON.parse(existingData) : { bestScore: 0, attempts: 0, attemptHistory: [] }
       
       const newAttempt = { score: finalScore, date: new Date().toISOString() }
       const attemptHistory = [...(previousData.attemptHistory || []), newAttempt]
       
-      localStorage.setItem('quiz_chapter5', JSON.stringify({
+      localStorage.setItem('quiz_chaptertest', JSON.stringify({
         score: finalScore,
         completed: questionsData.length,
         total: questionsData.length,
@@ -64,8 +67,8 @@ function Chapter5() {
   const handlePrevious = () => {
     if (currentQuestionIndex > 0) {
       setCurrentQuestionIndex(currentQuestionIndex - 1)
-      const prevAnswer = userAnswers[currentQuestionIndex - 1]
-      setSelectedAnswer(prevAnswer ? prevAnswer.selectedIndex : null)
+      const previousAnswer = userAnswers[currentQuestionIndex - 1]
+      setSelectedAnswer(previousAnswer ? previousAnswer.selectedIndex : null)
     }
   }
 
@@ -92,50 +95,79 @@ function Chapter5() {
     
     if (showReview) {
       return (
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <NavigationMenu />
           <div className="quiz-container">
             <div className="quiz-header">
-              <h2>Answer Review - Chapter 5</h2>
-              <div className="progress-info"><span>Score: {score}/{questionsData.length} ({percentage}%)</span></div>
+              <h2>Answer Review</h2>
+              <div className="progress-info">
+                <span>Score: {score}/{questionsData.length} ({percentage}%)</span>
+              </div>
             </div>
+
             <div className="review-container">
               {questionsData.map((question, qIndex) => {
                 const userAnswer = userAnswers[qIndex]
                 const isCorrect = userAnswer?.isCorrect
                 const userSelectedIndex = userAnswer?.selectedIndex
+
                 return (
                   <div key={question.id} className="review-question-card">
                     <div className="review-header">
                       <span className="question-number">Question {qIndex + 1}</span>
-                      <span className={`result-badge ${isCorrect ? 'correct-badge' : 'wrong-badge'}`}>{isCorrect ? '✓ Correct' : '✗ Incorrect'}</span>
+                      <span className={`result-badge ${isCorrect ? 'correct-badge' : 'wrong-badge'}`}>
+                        {isCorrect ? '✓ Correct' : '✗ Incorrect'}
+                      </span>
                     </div>
+                    
                     <h3 className="question-text">{question.question}</h3>
+                    
                     <div className="review-options">
                       {question.options.map((option, optIndex) => {
                         const isCorrectOption = optIndex === question.answerIndex
                         const isUserSelection = optIndex === userSelectedIndex
+                        
                         let optionClass = 'review-option'
                         if (isCorrectOption) optionClass += ' correct-option'
                         if (isUserSelection && !isCorrect) optionClass += ' wrong-option'
+                        
                         return (
                           <div key={optIndex} className={optionClass}>
-                            <span className="option-letter">{String.fromCharCode(65 + optIndex)}</span>
+                            <span className="option-letter">
+                              {String.fromCharCode(65 + optIndex)}
+                            </span>
                             <span className="option-text">{option}</span>
-                            {isUserSelection && <span className="selection-badge">Your answer</span>}
-                            {isCorrectOption && <span className="correct-badge-mini">Correct</span>}
+                            {isUserSelection && (
+                              <span className="selection-badge">Your answer</span>
+                            )}
+                            {isCorrectOption && (
+                              <span className="correct-badge-mini">Correct</span>
+                            )}
                           </div>
                         )
                       })}
                     </div>
-                    <div className="review-explanation"><strong>Explanation:</strong> {question.explanation}</div>
+                    
+                    <div className="review-explanation">
+                      <strong>Explanation:</strong> {question.explanation}
+                    </div>
                   </div>
                 )
               })}
             </div>
+
             <div className="review-actions">
-              <button onClick={handleBackToResults} className="next-button">← Back to Results</button>
-              <button onClick={handleRestart} className="restart-button">Try Again</button>
+              <button onClick={handleBackToResults} className="next-button">
+                ← Back to Results
+              </button>
+              <button onClick={handleRestart} className="restart-button">
+                Try Again
+              </button>
             </div>
           </div>
         </motion.div>
@@ -152,11 +184,11 @@ function Chapter5() {
               <div className="score-number">{score}</div>
               <div className="score-total">out of {questionsData.length}</div>
             </div>
-            <div className="score-percentage">
-              {Math.round((score / questionsData.length) * 100)}%
-            </div>
+            <div className="score-percentage">{percentage}%</div>
             <div className="button-group">
-              <button onClick={handleShowReview} className="next-button" style={{ marginBottom: '10px' }}>📋 Review Answers</button>
+              <button onClick={handleShowReview} className="next-button" style={{ marginBottom: '10px' }}>
+                📋 Review Answers
+              </button>
               <button onClick={handleRestart} className="restart-button">
                 Try Again
               </button>
@@ -180,7 +212,7 @@ function Chapter5() {
       <NavigationMenu />
       <div className="quiz-container">
         <div className="quiz-header">
-          <h2>Chapter 5: Designing for people</h2>
+          <h2>Test Chapter: Sample Questions</h2>
           <div className="progress-info">
             <span>Question {currentQuestionIndex + 1} of {questionsData.length}</span>
             <span>Score: {score}/{answeredQuestions}</span>
@@ -194,32 +226,37 @@ function Chapter5() {
         </div>
 
         <div className="question-card">
-          <div className="section-badge">Section {currentQuestion.section}</div>
+          <span className="section-badge">{currentQuestion.section}</span>
           <h3 className="question-text">{currentQuestion.question}</h3>
-          
-          {currentQuestion.imageUrl && (
-            <div className="question-image">
-              <img src={currentQuestion.imageUrl} alt="Question illustration" />
-            </div>
-          )}
-          
+
           <div className="options-list">
             {currentQuestion.options.map((option, index) => {
               const isSelected = selectedAnswer === index
               const isCorrect = index === currentQuestion.answerIndex
-              const showCorrect = selectedAnswer !== null && isCorrect
-              const showWrong = selectedAnswer !== null && isSelected && !isCorrect
+              const showResult = selectedAnswer !== null
+
+              let className = 'option-button'
+              if (showResult) {
+                if (isCorrect) className += ' correct'
+                else if (isSelected) className += ' wrong'
+              } else if (isSelected) {
+                className += ' selected'
+              }
 
               return (
                 <button
                   key={index}
+                  className={className}
                   onClick={() => handleAnswerClick(index)}
-                  className={`option-button ${isSelected ? 'selected' : ''} ${showCorrect ? 'correct' : ''} ${showWrong ? 'wrong' : ''}`}
                   disabled={selectedAnswer !== null}
                 >
-                  <span className="option-letter">{String.fromCharCode(65 + index)}</span>
+                  <span className="option-letter">
+                    {String.fromCharCode(65 + index)}
+                  </span>
                   <span className="option-text">{option}</span>
-                  {isSelected && <span className="you-chose">You chose</span>}
+                  {isSelected && showResult && (
+                    <span className="you-chose">You chose</span>
+                  )}
                 </button>
               )
             })}
@@ -228,47 +265,30 @@ function Chapter5() {
           {selectedAnswer !== null && (
             <div className="explanation-box">
               <div className="explanation-header">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <circle cx="12" cy="12" r="10"></circle>
-                  <line x1="12" y1="16" x2="12" y2="12"></line>
-                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  <path d="M12 16v-4"></path>
+                  <path d="M12 8h.01"></path>
                 </svg>
                 <span>Explanation</span>
               </div>
-              <div className="correct-answer">
-                The correct answer is: {currentQuestion.answer}
-              </div>
-              {currentQuestion.shortExplanation && (
-                <p 
-                  className="short-explanation"
-                  dangerouslySetInnerHTML={{ 
-                    __html: currentQuestion.shortExplanation.replace(
-                      /'([^']+)'/g, 
-                      "<span class='highlight'>$1</span>"
-                    )
-                  }}
-                />
-              )}
-              <p 
-                className="explanation-text"
-                dangerouslySetInnerHTML={{ 
-                  __html: currentQuestion.explanation.replace(
-                    /'([^']+)'/g, 
-                    "<span class='highlight'>$1</span>"
-                  )
-                }}
-              />
+              <p className="correct-answer">
+                ✓ Correct answer: {currentQuestion.answer}
+              </p>
+              <p className="explanation-text">{currentQuestion.explanation}</p>
             </div>
           )}
 
           <div className="navigation-buttons">
-            {currentQuestionIndex > 0 && (
-              <button onClick={handlePrevious} className="previous-button">
-                Previous
-              </button>
-            )}
-            <button 
-              onClick={handleNext} 
+            <button
+              onClick={handlePrevious}
+              className="previous-button"
+              disabled={currentQuestionIndex === 0}
+            >
+              ← Previous
+            </button>
+            <button
+              onClick={handleNext}
               className="next-button"
               disabled={selectedAnswer === null}
             >
@@ -281,4 +301,4 @@ function Chapter5() {
   )
 }
 
-export default Chapter5
+export default ChapterTest
