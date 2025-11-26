@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import NavigationMenu from '../pages/widget/navigationMenu'
-import questionsData from '../../dataBank/chapterTest.json'
+import questionsData from '../../dataBank/chapterTEst.json'
 import '../chapterList/chapter3.css'
 
 function ChapterTest() {
