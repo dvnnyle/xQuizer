@@ -15,7 +15,7 @@ function ToastModal({ isOpen, onClose }) {
           </svg>
         </button>
         <h2 className="modal-title">About This Quiz App</h2>
-        <div className="modal-divider"></div>
+        <div className="toast-modal-divider"></div>
         <div className="modal-body">
           <p>Welcome to the <strong>UX Interaction Design Quiz App</strong>!</p>
           
@@ -46,7 +46,7 @@ function ToastModal({ isOpen, onClose }) {
             <li><strong>Chapter 10: </strong>Evaluation</li>
           </ul>
         </div>
-        <div className="modal-divider"></div>
+        <div className="toast-modal-divider"></div>
         <div className="modal-footer">
           <img src={logo} alt="Day17 Logo" className="modal-logo" />
           <p className="modal-creator">Created by Danny Nguyen Le</p>
