@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import NavigationMenu from '../pages/widget/navigationMenu'
+import uxLawsData from '../../dataBank/dataSub/uxData.json'
 import './uxLaws.css'
 
 function UxLaws() {
@@ -11,10 +12,7 @@ function UxLaws() {
 
   useEffect(() => {
     // Load UX Laws data
-    fetch('/dataBank/dataSub.json/uxData.json')
-      .then(response => response.json())
-      .then(data => setUxLaws(data))
-      .catch(error => console.error('Error loading UX laws:', error))
+    setUxLaws(uxLawsData)
   }, [])
 
   const filteredLaws = uxLaws.filter(law =>
