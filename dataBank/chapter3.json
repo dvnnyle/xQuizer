@@ -1,0 +1,437 @@
+[
+  {
+    "id": 1,
+    "section": "3.1",
+    "question": "According to David Kelley, which activity is about grasping the messy problem space?",
+    "options": [
+      "Observe",
+      "Visualise",
+      "Understand",
+      "Evaluate"
+    ],
+    "answerIndex": 2,
+    "answer": "Understand",
+    "shortExplanation": "Designers first grasp the messy problem space before observing or building.",
+    "explanation": "David Kelley says design is messy and that designers first try to understand this mess. 'Understand' is about making sense of the problem space before observing users or deciding what to build.<br><br><strong>Example:</strong> A team designing a food delivery app starts by understanding the messy problem: Are users struggling with checkout? Do they want faster delivery? Are they comparing prices? They research and clarify the problem before designing solutions."
+  },
+  {
+    "id": 2,
+    "section": "3.1",
+    "question": "What is the main idea of the Double Diamond model?",
+    "options": [
+      "Design goes from low-fidelity to high-fidelity prototypes",
+      "Design is a single linear path from problem to solution",
+      "Design always starts with personas before scenarios",
+      "Design alternates between divergence and convergence"
+    ],
+    "answerIndex": 3,
+    "answer": "Design alternates between divergence and convergence",
+    "shortExplanation": "Four phases alternate between opening up (divergent) and narrowing down (convergent) thinking.",
+    "explanation": "The Double Diamond model has four phases (Discover, Define, Design, Deliver) which move between opening up (divergent thinking) and narrowing down (convergent thinking) around problems and solutions.<br><br><strong>Example:</strong> A hospital redesigning their appointment system first explores broadly (Discover: interviews, observations), then narrows to key problems (Define: long wait times), expands solution ideas (Design: self-check-in kiosks, apps, SMS reminders), and finally delivers the best solution."
+  },
+  {
+    "id": 3,
+    "section": "3.1",
+    "question": "Which phase of the Double Diamond is focused on exploring problems and opportunities broadly?",
+    "options": [
+      "Discover",
+      "Define",
+      "Design",
+      "Deliver"
+    ],
+    "answerIndex": 0,
+    "answer": "Discover",
+    "shortExplanation": "Discover phase explores problems broadly before defining the core issue.",
+    "explanation": "The Discover phase is the first diamond: the team explores the problem space, learns about users, and looks widely for insights and opportunities before defining the core problem.<br><br><strong>Example:</strong> A team creating a budgeting app starts Discover by interviewing people about money habits, observing how they track expenses, and researching competitors—casting a wide net before defining specific pain points."
+  },
+  {
+    "id": 4,
+    "section": "3.1",
+    "question": "What is a key characteristic of UX design as described in Chapter 3?",
+    "options": [
+      "It is a fixed, one-time process",
+      "It is mostly about visual aesthetics",
+      "It is complex and iterative",
+      "It never involves users directly"
+    ],
+    "answerIndex": 2,
+    "answer": "It is complex and iterative",
+    "shortExplanation": "UX design is non-linear—understanding and solutions evolve together through loops.",
+    "explanation": "The chapter emphasises that UX design is not linear. Understanding and solutions evolve together, and designers loop between research, ideation, prototyping and evaluation.<br><br><strong>Example:</strong> Spotify didn't create playlists perfectly on the first try—they tested ideas, learned from users, refined algorithms, evaluated again, and continuously improved the feature through multiple cycles."
+  },
+  {
+    "id": 5,
+    "section": "3.1",
+    "question": "In the PACT framework, which element is concerned with where and under what circumstances the system is used?",
+    "options": [
+      "People",
+      "Activities",
+      "Context",
+      "Technologies"
+    ],
+    "answerIndex": 2,
+    "answer": "Context",
+    "shortExplanation": "Context covers where, when, and under what conditions interaction happens.",
+    "explanation": "PACT stands for People, Activities, Context and Technologies. Context is specifically about where, when and under what conditions interaction happens, such as environment, devices and social setting.<br><br><strong>Example:</strong> A running app must consider Context: users are outdoors, moving, in bright sunlight, wearing headphones, and sweating—affecting button size, audio feedback, and screen brightness needs."
+  },
+  {
+    "id": 6,
+    "section": "3.1",
+    "question": "How do personas and scenarios relate to each other in the design process?",
+    "options": [
+      "They are unrelated and used in different projects",
+      "Scenarios are created only after coding is finished",
+      "Personas are based on scenarios, but scenarios never change",
+      "They evolve together and help imagine people’s activities in context"
+    ],
+    "answerIndex": 3,
+    "answer": "They evolve together and help imagine people's activities in context",
+    "explanation": "The book explains that thinking about people naturally leads to thinking about their activities and vice versa. Personas capture user types, while scenarios tell stories of what they do in specific contexts, and both are refined together.<br><br><strong>Example:</strong> Creating a persona 'Sarah, a busy working mom' naturally leads to scenarios like 'Sarah orders groceries during her lunch break on her phone while juggling calls'—the persona and scenario inform each other.",
+    "shortExplanation": "Personas and scenarios co-evolve—imagining people leads to imagining their activities and vice versa."
+  },
+  {
+    "id": 7,
+    "section": "3.2",
+    "question": "Which four core activities frame the UX design process in Chapter 3.2?",
+    "options": [
+      "Discover, Define, Design, Deliver",
+      "Research, Build, Test, Launch",
+      "Understanding, Design, Envisionment, Evaluation",
+      "Planning, Coding, Testing, Deployment"
+    ],
+    "answerIndex": 2,
+    "answer": "Understanding, Design, Envisionment, Evaluation",
+    "shortExplanation": "The four core activities are Understanding, Design, Envisionment, and Evaluation—with evaluation at the center.",
+    "explanation": "The chapter introduces an overall UX design cycle of four activities: understanding requirements, designing, envisioning the design, and evaluating. These activities can occur in any order, but evaluation sits at the centre.<br><br><strong>Example:</strong> A team designing a calendar app cycles through: Understanding (users need quick event entry), Design (conceptual model of events/reminders), Envisionment (sketches and prototypes), and Evaluation (testing if users can add events quickly)."
+  },
+  {
+    "id": 8,
+    "section": "3.2",
+    "question": "What is the main focus of the 'Understanding' activity?",
+    "options": [
+      "Choosing fonts and colours",
+      "Writing unit tests",
+      "Gathering and analysing requirements",
+      "Optimizing database queries"
+    ],
+    "answerIndex": 2,
+    "answer": "Gathering and analysing requirements",
+    "shortExplanation": "Understanding involves researching people, activities, and contexts to gather and analyze requirements.",
+    "explanation": "Understanding is about requirements: what the system must do, what it should be like, and how it fits with other systems. Designers research people, activities, contexts and technologies to clarify needs and constraints.<br><br><strong>Example:</strong> Before designing a university library app, designers interview students to understand requirements: book search, room booking, opening hours, study space availability, and integration with existing student ID systems."
+  },
+  {
+    "id": 9,
+    "section": "3.2",
+    "question": "Which statement best describes functional vs non-functional requirements?",
+    "options": [
+      "Functional = performance; Non-functional = security only",
+      "Functional = what the system does; Non-functional = qualities like usability and aesthetics",
+      "Functional = business goals; Non-functional = user goals",
+      "Functional = design sketches; Non-functional = prototypes"
+    ],
+    "answerIndex": 1,
+    "answer": "Functional = what the system does; Non-functional = qualities like usability and aesthetics",
+    "shortExplanation": "Functional requirements define what the system does; non-functional describe qualities like usability and performance.",
+    "explanation": "Functional requirements describe capabilities and behaviours (e.g. booking a ticket). Non-functional requirements describe qualities and constraints, like usability, security, performance and aesthetics.<br><br><strong>Example:</strong> For a banking app, functional requirements include 'transfer money between accounts' and 'view transaction history.' Non-functional requirements include 'must load in under 2 seconds' and 'must be usable by visually impaired users.'"
+  },
+  {
+    "id": 10,
+    "section": "3.2",
+    "question": "What is conceptual design mainly concerned with?",
+    "options": [
+      "Exact pixel-perfect layout of buttons",
+      "Abstract structure of information, functions and concepts",
+      "Only the database schema",
+      "Colour palettes and branding"
+    ],
+    "answerIndex": 1,
+    "answer": "Abstract structure of information, functions and concepts",
+    "shortExplanation": "Conceptual design focuses on abstract structure—what information, functions, and concepts exist and how they relate.",
+    "explanation": "Conceptual design is at an abstract level: deciding what information, functions and concepts exist in the system and how they relate, so that users can form a clear mental model before specific screens are designed.<br><br><strong>Example:</strong> For an email app, conceptual design defines concepts like 'folders', 'labels', 'threads', 'drafts', and 'archive'—and how they relate—before deciding on button placement or colors."
+  },
+  {
+    "id": 11,
+    "section": "3.2",
+    "question": "Which of the following is an example of physical design?",
+    "options": [
+      "Deciding that users can 'bookmark' favourite items",
+      "Mapping conceptual entities in an ER diagram",
+      "Creating a clickable wireframe of the main screens",
+      "Writing user stories for the backlog"
+    ],
+    "answerIndex": 2,
+    "answer": "Creating a clickable wireframe of the main screens",
+    "explanation": "Physical design turns concepts into concrete form: layouts, interaction patterns, and prototypes. A clickable wireframe is a physical representation of the interface, not just abstract structure.<br><br><strong>Example:</strong> After defining 'shopping cart' conceptually, physical design creates a wireframe showing the cart icon in the top-right corner, items listed with thumbnails, and a 'Checkout' button at the bottom.",
+    "shortExplanation": "Physical design creates concrete layouts, interactions, and prototypes from abstract concepts."
+  },
+  {
+    "id": 12,
+    "section": "3.2",
+    "question": "What is the purpose of envisionment in UX design?",
+    "options": [
+      "To generate final code for deployment",
+      "To turn abstract ideas into shareable representations like sketches and prototypes",
+      "To replace user research completely",
+      "To measure server performance under load"
+    ],
+    "answerIndex": 1,
+    "answer": "To turn abstract ideas into shareable representations like sketches and prototypes",
+    "explanation": "Envisionment uses representations such as sketches, storyboards, models and prototypes to communicate ideas, explore options and enable early evaluation with stakeholders.<br><br><strong>Example:</strong> Instead of just describing a new messaging feature, designers create a clickable prototype showing how conversations flow, allowing the team and users to experience and critique it before development.",
+    "shortExplanation": "Envisionment uses sketches, prototypes, and models to communicate and explore design ideas."
+  },
+  {
+    "id": 13,
+    "section": "3.2",
+    "question": "Which statement best captures the role of evaluation in Chapter 3.2?",
+    "options": [
+      "Evaluation happens only after the product is released",
+      "Evaluation is a separate phase that comes once after design",
+      "Evaluation is central and happens throughout all activities",
+      "Evaluation is optional if the design team is experienced"
+    ],
+    "answerIndex": 2,
+    "answer": "Evaluation is central and happens throughout all activities",
+    "explanation": "The model places evaluation at the centre of the process. Everything—requirements, concepts, prototypes and implementations—should be evaluated repeatedly to refine the design and ensure good UX.<br><br><strong>Example:</strong> Airbnb evaluates at every stage: testing personas with stakeholders, validating sketches with users, running usability tests on prototypes, and analyzing live booking data after launch—evaluation never stops.",
+    "shortExplanation": "Evaluation sits at the center and happens throughout all design activities, not just at the end."
+  },
+  {
+    "id": 14,
+    "section": "3.3",
+    "question": "What are personas in UX design?",
+    "options": [
+      "Real individuals hired to test the product",
+      "Fictional but research-based profiles representing different user types",
+      "Random characters invented by the designer with no data",
+      "Marketing slogans for the brand"
+    ],
+    "answerIndex": 1,
+    "answer": "Fictional but research-based profiles representing different user types",
+    "explanation": "Personas are concrete, fictional characters grounded in user research. They summarise key patterns in goals, behaviours and contexts so the team can design for real kinds of users, not themselves.<br><br><strong>Example:</strong> Based on interviews with 20 shoppers, a retail app creates 'Emma, 28, shops online weekly for convenience, values fast checkout, uses mobile during commute'—representing a real user segment, not a random invention.",
+    "shortExplanation": "Personas are fictional but research-based profiles representing different user types."
+  },
+  {
+    "id": 15,
+    "section": "3.3",
+    "question": "According to Alan Cooper, which three kinds of goals should a persona include?",
+    "options": [
+      "Business goals, system goals, technical goals",
+      "Experience goals, end goals, life goals",
+      "Short-term goals, mid-term goals, long-term goals",
+      "UI goals, backend goals, database goals"
+    ],
+    "answerIndex": 1,
+    "answer": "Experience goals, end goals, life goals",
+    "explanation": "Cooper distinguishes experience goals (what the interaction should feel like), end goals (what users want to achieve) and life goals (broader aspirations and values). Good personas represent all three.<br><br><strong>Example:</strong> For a fitness app persona: Experience goal = 'Feel motivated and not overwhelmed', End goal = 'Complete 30-min workouts 3x/week', Life goal = 'Live healthier to keep up with young kids.'",
+    "shortExplanation": "Cooper's three goals are experience goals (feel), end goals (achieve), and life goals (aspirations)."
+  },
+  {
+    "id": 16,
+    "section": "3.3",
+    "question": "Which of the following is a risk when using personas?",
+    "options": [
+      "They encourage designers to empathise with users",
+      "They help bring emotional and hedonic aspects into focus",
+      "They may turn into stereotypes if not based on real research",
+      "They make communication with stakeholders harder"
+    ],
+    "answerIndex": 2,
+    "answer": "They may turn into stereotypes if not based on real research",
+    "explanation": "The book warns that poorly made personas can just mirror the designer or become clichés. Personas should be grounded in real data and remain flexible rather than fixed stereotypes.<br><br><strong>Example:</strong> A bad persona: 'Tech-savvy millennial who loves social media and avocado toast'—this is a stereotype. A good persona: 'Jordan, 26, uses Instagram daily for recipe ideas, struggles with complex settings, prefers visual tutorials'—based on real research.",
+    "shortExplanation": "Without real research, personas risk becoming stereotypes rather than useful design tools."
+  },
+  {
+    "id": 17,
+    "section": "3.4",
+    "question": "What is a scenario in UX design?",
+    "options": [
+      "A UML diagram of system classes",
+      "A story of people doing activities in context, using technology",
+      "A list of system requirements",
+      "A detailed budget for the project"
+    ],
+    "answerIndex": 1,
+    "answer": "A story of people doing activities in context, using technology",
+    "explanation": "Scenarios are narrative descriptions of people undertaking activities in real contexts with technologies. They highlight use, not just system functions, and help keep design human-focused.<br><br><strong>Example:</strong> 'Sarah, rushing between meetings, opens the parking app on her phone, sees 3 minutes remaining on her meter, and extends it by 30 minutes with two taps while walking'—this scenario shows real context and activity.",
+    "shortExplanation": "Scenarios are narrative stories showing people doing activities in context with technology."
+  },
+  {
+    "id": 18,
+    "section": "3.4",
+    "question": "According to John Carroll, why are scenarios useful for design?",
+    "options": [
+      "They eliminate the need for any user research",
+      "They hide the constraints and complexity of design problems",
+      "They help manage the difficulties of design, such as constraints and changing problems",
+      "They guarantee scientific predictions about user behaviour"
+    ],
+    "answerIndex": 2,
+    "answer": "They help manage the difficulties of design, such as constraints and changing problems",
+    "explanation": "Carroll argues that scenarios address issues like external constraints, the many side effects of design decisions, the gap between practice and theory, the need to reflect and act, and the slippery nature of design problems.<br><br><strong>Example:</strong> While designing a hospital check-in system, a scenario reveals that elderly patients struggle with touchscreens in bright lobbies—uncovering a constraint (lighting) and side effect (accessibility) that theory alone wouldn't expose.",
+    "shortExplanation": "Scenarios help manage design difficulties like constraints, side effects, and changing problems."
+  },
+  {
+    "id": 19,
+    "section": "3.4",
+    "question": "Which of the following is one benefit of using scenarios?",
+    "options": [
+      "They force the design to stay very abstract and technical",
+      "They provide vivid descriptions of end-user experience",
+      "They guarantee that there will be no redesign",
+      "They remove the need to think about context"
+    ],
+    "answerIndex": 1,
+    "answer": "They provide vivid descriptions of end-user experience",
+    "explanation": "Scenarios are story-like and detailed enough to imagine what it is like for users. This vividness supports empathy, communication and creative thinking about better experiences.<br><br><strong>Example:</strong> Reading 'Maria tries to split the dinner bill on her phone, but the app crashes twice, making everyone wait awkwardly' creates empathy and urgency that a requirement like 'app should not crash' lacks.",
+    "shortExplanation": "Scenarios provide vivid, story-like descriptions that create empathy and aid communication."
+  },
+  {
+    "id": 20,
+    "section": "3.5",
+    "question": "Which type of scenario is the most abstract, created by stripping away unnecessary details from stories?",
+    "options": [
+      "Concrete scenario",
+      "Conceptual scenario",
+      "Use case",
+      "Persona scenario"
+    ],
+    "answerIndex": 1,
+    "answer": "Conceptual scenario",
+    "explanation": "Conceptual scenarios are simplified and generalised from real stories. They remove situational details so designers can focus on core activities and requirements.<br><br><strong>Example:</strong> Real story: 'Sarah in London books a taxi at 7am on a rainy Monday.' Conceptual scenario: 'User requests ride from current location.' The abstract version strips away specific details to focus on the core action.",
+    "shortExplanation": "Conceptual scenarios strip away situational details to focus on core activities and requirements."
+  },
+  {
+    "id": 21,
+    "section": "3.5",
+    "question": "What is the correct order of transformation in scenario-based design?",
+    "options": [
+      "Use cases → Concrete scenarios → Conceptual scenarios → Stories",
+      "Stories → Concrete scenarios → Conceptual scenarios → Use cases",
+      "Stories → Conceptual scenarios → Concrete scenarios → Use cases",
+      "Conceptual scenarios → Stories → Concrete scenarios → Use cases"
+    ],
+    "answerIndex": 2,
+    "answer": "Stories → Conceptual scenarios → Concrete scenarios → Use cases",
+    "explanation": "The chapter describes a flow where rich real-world stories inspire conceptual scenarios, which in turn lead to concrete scenarios with specific design decisions, and finally formal use cases for implementation.<br><br><strong>Example:</strong> Story: 'Tom struggles to find parking downtown.' → Conceptual: 'User searches for parking.' → Concrete: 'User taps search icon, sees map with green dots for available spots.' → Use case: 'System queries parking database, filters by distance.'",
+    "shortExplanation": "Stories transform into conceptual scenarios, then concrete scenarios, then use cases."
+  },
+  {
+    "id": 22,
+    "section": "3.5",
+    "question": "What is claims analysis used for in scenario work?",
+    "options": [
+      "To calculate system performance metrics",
+      "To identify pros and cons of design choices in scenarios",
+      "To generate random ideas for ideation",
+      "To estimate project budgets"
+    ],
+    "answerIndex": 1,
+    "answer": "To identify pros and cons of design choices in scenarios",
+    "explanation": "Claims analysis looks at the positive and negative consequences (claims) of a design feature in a scenario, helping designers reason explicitly about trade-offs and impacts on UX.<br><br><strong>Example:</strong> Scenario: 'App sends push notifications for new messages.' Claims: (+) Users stay informed immediately. (–) Frequent interruptions annoy users. Claims analysis helps weigh this trade-off and decide on frequency settings.",
+    "shortExplanation": "Claims analysis explicitly identifies positive and negative consequences of design choices."
+  },
+  {
+    "id": 23,
+    "section": "3.6",
+    "question": "In the scenario-based UX design method, what is a 'scenario corpus'?",
+    "options": [
+      "A single detailed story about a user",
+      "A library of scenarios capturing different usage contexts",
+      "A list of bugs found during testing",
+      "A set of UI design guidelines"
+    ],
+    "answerIndex": 1,
+    "answer": "A library of scenarios capturing different usage contexts",
+    "explanation": "The scenario corpus is the collection of stories, conceptual and concrete scenarios that the team builds up. It becomes a shared knowledge base about how people might use the system in many situations.<br><br><strong>Example:</strong> A navigation app's scenario corpus includes: 'commuter driving to work', 'tourist exploring a new city on foot', 'delivery driver following multiple stops', and 'cyclist avoiding highways'—covering diverse usage contexts.",
+    "shortExplanation": "The scenario corpus is a library of scenarios covering different usage contexts."
+  },
+  {
+    "id": 24,
+    "section": "3.6",
+    "question": "What is the role of a conceptual model in the scenario-based UX design method?",
+    "options": [
+      "To store all the analytics data",
+      "To describe technical implementation details like database indexes",
+      "To provide an abstract representation of how the system works for designers and users",
+      "To specify only visual style rules"
+    ],
+    "answerIndex": 2,
+    "answer": "To provide an abstract representation of how the system works for designers and users",
+    "explanation": "A conceptual model captures the key concepts, functions and relationships in the system. It helps ensure a clear, shared mental model for both designers and eventual users.<br><br><strong>Example:</strong> For a music app, the conceptual model might define: 'Songs belong to Albums, Albums belong to Artists, Users create Playlists containing Songs, Users can Like songs'—clarifying core concepts before designing screens.",
+    "shortExplanation": "The conceptual model provides an abstract representation of how the system works."
+  },
+  {
+    "id": 25,
+    "section": "3.6",
+    "question": "What is the purpose of a design language in this method?",
+    "options": [
+      "To define programming language syntax",
+      "To specify conventions and patterns for expressing design ideas consistently",
+      "To translate the interface into multiple human languages",
+      "To describe only colour and typography choices"
+    ],
+    "answerIndex": 1,
+    "answer": "To specify conventions and patterns for expressing design ideas consistently",
+    "explanation": "A design language defines components, symbols and rules for combining them. It ensures that prototypes and interfaces share a consistent look, feel and interaction style across the system.<br><br><strong>Example:</strong> Google's Material Design is a design language defining: button styles (raised, flat), color schemes (primary/accent), spacing rules (8dp grid), and animation patterns—ensuring consistency across all Google apps.",
+    "shortExplanation": "The design language defines patterns, widgets, and interaction styles for consistent implementation."
+  },
+  {
+    "id": 26,
+    "section": "3.6",
+    "question": "Which statement best describes the overall process of the scenario-based UX design method?",
+    "options": [
+      "It moves in a straight line from requirements to final code with no feedback",
+      "It cycles through understanding, design, envisionment and evaluation, refining scenarios over time",
+      "It focuses only on visual design and ignores evaluation",
+      "It replaces all need for user research"
+    ],
+    "answerIndex": 1,
+    "answer": "It cycles through understanding, design, envisionment and evaluation, refining scenarios over time",
+    "explanation": "The method integrates the four main UX activities with scenario work. Designers loop through understanding people, designing, envisioning, and evaluating while evolving scenarios from stories to use cases.<br><br><strong>Example:</strong> A hotel booking app starts with user stories, creates personas and scenarios (understanding), sketches interfaces (design), builds prototypes (envisionment), tests with users (evaluation), then refines scenarios and repeats the cycle.",
+    "shortExplanation": "Prototypes allow early testing of concrete scenarios before full implementation."
+  },
+  {
+    "id": 27,
+    "section": "3.7",
+    "question": "What was the main design goal of the 'Secret City – Edinburgh' case study?",
+    "options": [
+      "A banking app for residents",
+      "A mobile city guide for tourists in Edinburgh",
+      "An email client for students",
+      "A social network for local businesses"
+    ],
+    "answerIndex": 1,
+    "answer": "A mobile city guide for tourists in Edinburgh",
+    "explanation": "The Secret City project used the scenario-based UX design method to create a mobile guide that helped visitors explore Edinburgh with maps, cultural information and storytelling.<br><br><strong>Example:</strong> The app provided walking tours highlighting Edinburgh's hidden history, showing locations on a map, offering audio narration, and revealing stories about landmarks—transforming tourist exploration into an engaging narrative experience.",
+    "shortExplanation": "Claims analysis helps designers reason about trade-offs and make informed decisions."
+  },
+  {
+    "id": 28,
+    "section": "3.7",
+    "question": "How did personas help in the Secret City project?",
+    "options": [
+      "They replaced the need for any evaluation",
+      "They represented different kinds of tourists and their needs",
+      "They were only used for marketing and branding",
+      "They were created after the app was fully implemented"
+    ],
+    "answerIndex": 1,
+    "answer": "They represented different kinds of tourists and their needs",
+    "explanation": "Personas in Secret City described visitors such as culture-seeking tourists and families with children. This ensured the guide supported varied needs like navigation, cultural depth and family-friendly content.<br><br><strong>Example:</strong> Persona 'Alex, history enthusiast, 45' needs detailed historical context and longer tours, while 'Kim, parent with 2 kids, 35' needs shorter, interactive routes with child-friendly activities—different features for different users.",
+    "shortExplanation": "Scenario-based design keeps the focus on human activity, not just system functions."
+  },
+  {
+    "id": 29,
+    "section": "3.7",
+    "question": "Which of the following best summarises the lesson from the Secret City case study?",
+    "options": [
+      "Technical performance matters more than user needs",
+      "Personas and scenarios are only useful in academic projects",
+      "Iterative prototyping with personas and scenarios leads to a more engaging, human-centred product",
+      "UX design should avoid testing with real users to save time"
+    ],
+    "answerIndex": 2,
+    "answer": "Iterative prototyping with personas and scenarios leads to a more engaging, human-centred product",
+    "explanation": "The case study shows that combining personas, scenarios, prototypes and real-world evaluation lets designers refine the guide so it fits real tourists' needs and creates a richer experience.<br><br><strong>Example:</strong> After testing prototypes, the team discovered tourists wanted offline maps and shorter tours—feedback that led to redesigned features, proving that iteration with real users creates better products than assumptions alone.",
+    "shortExplanation": "The method integrates understanding, design, and evaluation through scenarios at every stage."
+  }
+]

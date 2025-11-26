@@ -1,0 +1,422 @@
+[
+  {
+    "id": 1,
+    "section": "10.1",
+    "question": "What is the main purpose of evaluation in UX design?",
+    "options": [
+      "To check whether a design meets its usability and UX goals",
+      "To write technical documentation",
+      "To reduce development cost only",
+      "To decide colours and fonts"
+    ],
+    "answerIndex": 0,
+    "answer": "To check whether a design meets its usability and UX goals",
+    "explanation": "Evaluation is checking a design idea, prototype, product or service to see if it meets the intended goals for usability and user experience.<br><br><strong>Example:</strong> A team designs a checkout flow aiming for '90% task completion in under 2 minutes.' Evaluation tests with real users to measure if this goal is achieved and identifies obstacles."
+  },
+  {
+    "id": 2,
+    "section": "10.1",
+    "question": "Which of the following is NOT a typical question evaluation asks?",
+    "options": [
+      "Is it learnable?",
+      "Is it effective?",
+      "Is it accommodating to different people?",
+      "Is the code written in the latest JavaScript framework?"
+    ],
+    "answerIndex": 3,
+    "answer": "Is the code written in the latest JavaScript framework?",
+    "explanation": "Evaluation cares about learnability, effectiveness, accommodation and fitness for purpose, not about which implementation framework is used.<br><br><strong>Example:</strong> Evaluators test whether elderly users can successfully book appointments (usability), not whether the app uses React or Vue (technical implementation choice)."
+  },
+  {
+    "id": 3,
+    "section": "10.1",
+    "question": "Why is evaluation described as central to human-centred design?",
+    "options": [
+      "Because it is done once at the very end",
+      "Because it is done throughout the whole process and drives iteration",
+      "Because only managers perform it",
+      "Because it replaces the need for design"
+    ],
+    "answerIndex": 1,
+    "answer": "Because it is done throughout the whole process and drives iteration",
+    "explanation": "Evaluation happens early, midway and late, and it drives iteration and improvement across the whole human‑centred design process.<br><br><strong>Example:</strong> Slack evaluates constantly: early sketches with employees, mid-development prototypes with beta users, and live metrics after launch—continuous evaluation drives ongoing improvements."
+  },
+  {
+    "id": 4,
+    "section": "10.1",
+    "question": "Which of these is a key reason to run evaluations early in the process?",
+    "options": [
+      "To check concepts and prototypes before investing heavily",
+      "To guarantee there will be no errors later",
+      "To finalise the visual design",
+      "To avoid talking to stakeholders"
+    ],
+    "answerIndex": 0,
+    "answer": "To check concepts and prototypes before investing heavily",
+    "explanation": "Early evaluation is used to check ideas, mockups and prototypes so major usability problems are found before large development effort is spent.<br><br><strong>Example:</strong> Before coding a new feature, Dropbox shows paper sketches to users, discovers confusion about folder sharing, and revises the concept—saving weeks of wasted development."
+  },
+  {
+    "id": 5,
+    "section": "10.1",
+    "question": "Which of the following is NOT one of the three main types of evaluation listed?",
+    "options": [
+      "Expert-based evaluation",
+      "Participant-based evaluation",
+      "Data analytics",
+      "Marketing campaign testing"
+    ],
+    "answerIndex": 3,
+    "answer": "Marketing campaign testing",
+    "explanation": "The three main types are expert-based, participant-based and data‑analytics‑based evaluations; marketing testing is different.<br><br><strong>Example:</strong> A banking app uses expert review (UX specialists check heuristics), usability testing (customers try tasks), and analytics (track login success rates)—these are UX evaluations, not marketing ads."
+  },
+  {
+    "id": 6,
+    "section": "10.2",
+    "question": "What is the focus of data analytics in UX?",
+    "options": [
+      "Collecting and analysing real usage data from deployed systems",
+      "Asking managers for their opinions",
+      "Designing logos and branding",
+      "Writing user manuals"
+    ],
+    "answerIndex": 0,
+    "answer": "Collecting and analysing real usage data from deployed systems",
+    "explanation": "Data analytics is collecting and analysing behavioural data from real system use to understand what people actually do.<br><br><strong>Example:</strong> Netflix analyzes billions of clicks to see which thumbnails users click, how far they watch shows, and when they pause—revealing real behavior patterns that guide design decisions."
+  },
+  {
+    "id": 7,
+    "section": "10.2",
+    "question": "Which of these is a common metric in UX analytics?",
+    "options": [
+      "Task success or conversion rate",
+      "Amount of source code written",
+      "Number of team meetings",
+      "Size of design files"
+    ],
+    "answerIndex": 0,
+    "answer": "Task success or conversion rate",
+    "explanation": "UX analytics often track page views, clicks, funnels, time on task and conversion or completion rates to judge design performance.<br><br><strong>Example:</strong> An e-commerce site tracks that only 45% of users complete checkout (low conversion rate), revealing a major usability problem in the payment step that needs fixing."
+  },
+  {
+    "id": 8,
+    "section": "10.2",
+    "question": "In A/B testing, what happens?",
+    "options": [
+      "Two versions of a design are shown to different users to compare performance",
+      "Two experts argue about the best design",
+      "The same user tests the design twice in a row",
+      "Only visual design is evaluated"
+    ],
+    "answerIndex": 0,
+    "answer": "Two versions of a design are shown to different users to compare performance",
+    "explanation": "A/B tests randomly assign users to different design variants and use analytics to see which version leads to better outcomes.<br><br><strong>Example:</strong> Booking.com tests two button colors: 50% of users see a green 'Book Now' button, 50% see blue. Analytics show green leads to 12% more bookings, so they adopt green."
+  },
+  {
+    "id": 9,
+    "section": "10.2",
+    "question": "Which is a key limitation of analytics alone?",
+    "options": [
+      "They only work for small samples",
+      "They show what people do, but not why",
+      "They cannot measure clicks",
+      "They make usability testing unnecessary"
+    ],
+    "answerIndex": 1,
+    "answer": "They show what people do, but not why",
+    "explanation": "Analytics reveal what users do at scale but cannot explain motivations or emotions, so they must be combined with qualitative methods.<br><br><strong>Example:</strong> Analytics show 80% of users abandon the sign-up form at step 3, but don't explain why. User interviews reveal the password requirements are confusing—analytics shows what, interviews explain why."
+  },
+  {
+    "id": 10,
+    "section": "10.2",
+    "question": "What is a good use case for analytics in UX?",
+    "options": [
+      "Improving conversion or completion rates in a funnel",
+      "Picking colour palettes",
+      "Designing icons",
+      "Writing legal terms and conditions"
+    ],
+    "answerIndex": 0,
+    "answer": "Improving conversion or completion rates in a funnel",
+    "explanation": "Analytics are especially useful for optimising flows, such as sign‑up or checkout funnels, by highlighting where users drop out.<br><br><strong>Example:</strong> A travel site's analytics reveal 60% drop-off at the payment page. Investigation shows the page loads slowly, prompting optimization that raises conversion from 40% to 65%."
+  },
+  {
+    "id": 11,
+    "section": "10.3",
+    "question": "What is expert evaluation (usability inspection)?",
+    "options": [
+      "Experts review a design against principles without involving real users",
+      "Only developers test their own code",
+      "Random users try the system at home",
+      "Managers fill in a satisfaction survey"
+    ],
+    "answerIndex": 0,
+    "answer": "Experts review a design against principles without involving real users",
+    "explanation": "Expert evaluation involves trained UX or usability specialists reviewing a design using known principles and heuristics to find issues quickly and cheaply.<br><br><strong>Example:</strong> A UX expert walks through a mobile app checking for consistency, feedback, and error prevention (heuristics), identifying 15 issues in 2 hours without needing to recruit any users."
+  },
+  {
+    "id": 12,
+    "section": "10.3",
+    "question": "When is expert evaluation especially useful?",
+    "options": [
+      "Very early in the design process",
+      "Only after product launch",
+      "Only when analytics data exists",
+      "Only for finished products"
+    ],
+    "answerIndex": 0,
+    "answer": "Very early in the design process",
+    "explanation": "It is particularly helpful early on to catch obvious problems before more costly usability testing with participants.<br><br><strong>Example:</strong> Before recruiting participants, experts review wireframes and catch that the 'Save' button is hidden three menus deep—saving the team from wasting time testing a fundamentally flawed design."
+  },
+  {
+    "id": 13,
+    "section": "10.3",
+    "question": "Which of the following is a type of expert evaluation method?",
+    "options": [
+      "Heuristic evaluation",
+      "Random evaluation",
+      "Monetary evaluation",
+      "Gamified evaluation"
+    ],
+    "answerIndex": 0,
+    "answer": "Heuristic evaluation",
+    "explanation": "Heuristic evaluation reviews a design against usability heuristics like visibility, consistency, feedback and recovery.<br><br><strong>Example:</strong> Using Nielsen's 10 heuristics, an expert evaluates a banking app and finds violations: no confirmation after transfers (missing feedback), inconsistent button placement (lacks consistency), no undo option (poor error recovery)."
+  },
+  {
+    "id": 14,
+    "section": "10.3",
+    "question": "What do usability heuristics typically cover?",
+    "options": [
+      "Core design principles such as visibility, consistency, feedback and constraints",
+      "Only graphic design rules",
+      "Only legal requirements",
+      "Only back‑end performance"
+    ],
+    "answerIndex": 0,
+    "answer": "Core design principles such as visibility, consistency, feedback and constraints",
+    "explanation": "The notes list principles like visibility, consistency, familiarity, affordances, navigation, control, feedback, recovery, constraints, flexibility, style and conviviality as heuristics.<br><br><strong>Example:</strong> Evaluating a form: Visibility (are required fields marked?), Consistency (do all buttons look similar?), Feedback (does submission show success?), Constraints (are invalid inputs prevented?)."
+  },
+  {
+    "id": 15,
+    "section": "10.3",
+    "question": "Which is a key weakness of expert evaluation?",
+    "options": [
+      "Experts are not real users and may miss emotional or contextual issues",
+      "It is too slow and expensive",
+      "It always requires analytics data",
+      "It cannot be used with prototypes"
+    ],
+    "answerIndex": 0,
+    "answer": "Experts are not real users and may miss emotional or contextual issues",
+    "explanation": "Experts have different goals and mental models from real users and may miss issues of delight, frustration or real‑world context.<br><br><strong>Example:</strong> Experts approve a medical app's interface, but patient testing reveals that medical terminology scares non-experts and the tone feels cold—emotional issues experts didn't anticipate."
+  },
+  {
+    "id": 16,
+    "section": "10.4",
+    "question": "Participant-based evaluation is mainly concerned with:",
+    "options": [
+      "Observing real users performing tasks with the system",
+      "Checking code quality",
+      "Comparing design tools",
+      "Only counting page views"
+    ],
+    "answerIndex": 0,
+    "answer": "Observing real users performing tasks with the system",
+    "explanation": "Participant‑based evaluation (usability testing) observes real users doing realistic tasks to see where they struggle or succeed.<br><br><strong>Example:</strong> Six participants attempt to 'find and book a hotel room for next weekend.' Observers note that 4 out of 6 struggle with the date picker, revealing a critical usability problem."
+  },
+  {
+    "id": 17,
+    "section": "10.4",
+    "question": "Which metric is commonly measured in participant-based usability tests?",
+    "options": [
+      "Task success rate",
+      "Number of design meetings",
+      "CPU temperature",
+      "Amount of code written"
+    ],
+    "answerIndex": 0,
+    "answer": "Task success rate",
+    "explanation": "Usability tests often record task success, time on task, errors and user satisfaction to assess effectiveness and efficiency.<br><br><strong>Example:</strong> Testing a recipe app: 8 out of 10 users successfully save a recipe (80% success rate), average time is 45 seconds, 3 users make errors clicking the wrong icon before succeeding."
+  },
+  {
+    "id": 18,
+    "section": "10.4",
+    "question": "Why is recruiting representative participants important?",
+    "options": [
+      "Different users reveal different issues that reflect the real target group",
+      "Any person can reveal all problems",
+      "Only experts can participate",
+      "It reduces the need for planning"
+    ],
+    "answerIndex": 0,
+    "answer": "Different users reveal different issues that reflect the real target group",
+    "explanation": "Participants must match the actual user group, otherwise you may misjudge skills, goals and accessibility needs.<br><br><strong>Example:</strong> Testing a retirement planning app with 25-year-old tech workers misses issues that 60-year-old retirees face, like small font sizes and unfamiliar financial jargon—recruit the right age group."
+  },
+  {
+    "id": 19,
+    "section": "10.4",
+    "question": "What is a key difference between lab and field testing?",
+    "options": [
+      "Lab tests are more controlled, field tests are more realistic but messy",
+      "Lab tests are cheaper than field tests",
+      "Field tests never collect metrics",
+      "Lab tests only use paper prototypes"
+    ],
+    "answerIndex": 0,
+    "answer": "Lab tests are more controlled, field tests are more realistic but messy",
+    "explanation": "Labs provide a controlled, measurable environment, while field tests capture behaviour in real contexts with more noise and complexity.<br><br><strong>Example:</strong> Lab test: Users try the navigation app on a desk with stable Wi-Fi. Field test: Users navigate while driving, with sun glare, spotty GPS, and traffic noise—revealing real-world usability issues."
+  },
+  {
+    "id": 20,
+    "section": "10.4",
+    "question": "About how many participants are often enough to find most major usability issues in early tests?",
+    "options": [
+      "5–8 participants",
+      "1 participant",
+      "50–100 participants",
+      "No participants are needed"
+    ],
+    "answerIndex": 0,
+    "answer": "5–8 participants",
+    "explanation": "Small tests with around 5–8 participants typically uncover most major issues early on.<br><br><strong>Example:</strong> Testing a prototype with 6 users reveals that 5 struggle with the same navigation issue, 3 can't find the search button, and 4 miss confirmation messages—enough to identify major problems without testing 50 people."
+  },
+  {
+    "id": 21,
+    "section": "10.5",
+    "question": "What is usually the first step in a full evaluation project?",
+    "options": [
+      "Establish aims and scope",
+      "Recruit users",
+      "Run analytics",
+      "Write the final report"
+    ],
+    "answerIndex": 0,
+    "answer": "Establish aims and scope",
+    "explanation": "The workflow begins by clarifying what questions the evaluation must answer, who the users are, and the context of use.<br><br><strong>Example:</strong> Before testing a fitness app, the team defines: Aim = 'Can users log a workout in under 1 minute?' Users = 'adults 25-45, mix of fitness levels.' Context = 'at gym, sweaty hands, distracted.'"
+  },
+  {
+    "id": 22,
+    "section": "10.5",
+    "question": "Why combine expert review with participant testing?",
+    "options": [
+      "Expert reviews catch obvious issues early; user tests reveal real difficulties",
+      "To double project cost",
+      "To avoid planning tasks",
+      "So that users never see unfinished designs"
+    ],
+    "answerIndex": 0,
+    "answer": "Expert reviews catch obvious issues early; user tests reveal real difficulties",
+    "explanation": "Experts help surface big problems and focus later tests, while participants show real behaviour and struggles.<br><br><strong>Example:</strong> Experts identify that the checkout button is barely visible (easy catch). User tests then reveal that people mistrust entering credit cards because there's no security badge (real emotional concern experts missed)."
+  },
+  {
+    "id": 23,
+    "section": "10.5",
+    "question": "Which of the following is a common quantitative metric to track in evaluation?",
+    "options": [
+      "Completion rate",
+      "Number of design tools used",
+      "Team size",
+      "Marketing budget"
+    ],
+    "answerIndex": 0,
+    "answer": "Completion rate",
+    "explanation": "Completion rate (task success) is a standard metric, alongside time on task, errors and satisfaction scores.<br><br><strong>Example:</strong> In testing an airline booking flow, metrics show: 85% completion rate, average time 3.5 minutes, 2.1 errors per user, and satisfaction score of 6.2/10—quantifying usability performance."
+  },
+  {
+    "id": 24,
+    "section": "10.5",
+    "question": "What is the 'big rule' about evaluation reporting mentioned in the notes?",
+    "options": [
+      "If no one acts on your evaluation, the evaluation fails",
+      "Reports must always be 100 pages long",
+      "Only managers may read reports",
+      "Reports should not suggest fixes"
+    ],
+    "answerIndex": 0,
+    "answer": "If no one acts on your evaluation, the evaluation fails",
+    "explanation": "Evaluation only has impact if findings lead to design changes; otherwise it has failed its purpose.<br><br><strong>Example:</strong> A usability report identifies 20 critical issues, but the team ignores it and launches unchanged. Six months later, users complain and ratings drop—the evaluation was wasted because nobody acted on it."
+  },
+  {
+    "id": 25,
+    "section": "10.5",
+    "question": "Which practice helps make evaluation results impactful?",
+    "options": [
+      "Prioritising issues by severity and suggesting improvements",
+      "Listing all issues in random order",
+      "Hiding problems to keep morale high",
+      "Only reporting positive findings"
+    ],
+    "answerIndex": 0,
+    "answer": "Prioritising issues by severity and suggesting improvements",
+    "explanation": "High‑impact reporting organises issues by severity, links them to principles, and proposes concrete fixes so designers can act on them.<br><br><strong>Example:</strong> Report says: 'Critical: 6/8 users couldn't complete checkout (missing feedback). Fix: Add confirmation message and progress indicator.' This is actionable. 'Users found it confusing' is not."
+  },
+  {
+    "id": 26,
+    "section": "10.6",
+    "question": "Why must evaluation fit the context of use?",
+    "options": [
+      "Because environment (noise, mobility, lighting) strongly influences behaviour",
+      "Because labs are always better",
+      "So that tests are shorter",
+      "So we can avoid recruiting users"
+    ],
+    "answerIndex": 0,
+    "answer": "Because environment (noise, mobility, lighting) strongly influences behaviour",
+    "explanation": "Evaluation should reflect real physical and social environments; otherwise results may be misleading, especially for mobile, wearables and public services.<br><br><strong>Example:</strong> A museum audio guide works perfectly in a quiet lab but fails in the actual museum where echoing crowds and bright exhibits distract users—context matters for accurate evaluation."
+  },
+  {
+    "id": 27,
+    "section": "10.6",
+    "question": "What does 'fidelity' refer to in prototypes?",
+    "options": [
+      "How realistic a prototype is in look and behaviour",
+      "The number of users recruited",
+      "The ethical standards of the team",
+      "The cost of the evaluation"
+    ],
+    "answerIndex": 0,
+    "answer": "How realistic a prototype is in look and behaviour",
+    "explanation": "Fidelity is the degree of realism of a prototype; low‑fidelity sketches cannot reveal timing or animations, while high‑fidelity prototypes can.<br><br><strong>Example:</strong> Low-fidelity: Paper sketches show layout but not button clicks. High-fidelity: Interactive Figma prototype with working buttons, animations, and realistic timing—allows testing actual interactions."
+  },
+  {
+    "id": 28,
+    "section": "10.6",
+    "question": "Why can prototypes limit what you can evaluate?",
+    "options": [
+      "You can only test what the prototype represents",
+      "They always crash",
+      "Users refuse to use prototypes",
+      "They are too realistic"
+    ],
+    "answerIndex": 0,
+    "answer": "You can only test what the prototype represents",
+    "explanation": "If a prototype does not implement errors, animations or certain flows, you cannot meaningfully evaluate those aspects.<br><br><strong>Example:</strong> A clickable prototype shows the happy path (successful login) but doesn't show what happens with wrong passwords—so you can't evaluate error handling or recovery flows."
+  },
+  {
+    "id": 29,
+    "section": "10.6",
+    "question": "What is a confounding variable in an evaluation?",
+    "options": [
+      "An external factor that affects the test result",
+      "A design principle",
+      "A type of user error",
+      "A measure of satisfaction"
+    ],
+    "answerIndex": 0,
+    "answer": "An external factor that affects the test result",
+    "explanation": "Confounding variables are outside influences that change outcomes (e.g., different devices or instructions) and must be controlled or noted.<br><br><strong>Example:</strong> Testing a web app, but half the users have fast laptops and half have slow tablets. Slow performance may be the device, not the design—device is a confounding variable that must be controlled."
+  },
+  {
+    "id": 30,
+    "section": "10.6",
+    "question": "Why is combining methods recommended?",
+    "options": [
+      "Different methods have complementary strengths and weaknesses",
+      "One method is always perfect",
+      "It reduces the need for planning",
+      "It makes reports unnecessary"
+    ],
+    "answerIndex": 0,
+    "answer": "Different methods have complementary strengths and weaknesses",
+    "explanation": "Expert reviews, user testing and analytics each contribute different insights; using them together gives a stronger picture of UX.<br><br><strong>Example:</strong> Experts identify that a button violates consistency heuristics. Analytics show 70% of users click it anyway. User tests reveal they click it but feel confused—three methods, three complementary insights."
+  }
+]
