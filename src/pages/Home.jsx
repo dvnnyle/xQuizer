@@ -169,7 +169,7 @@ function Home() {
             <p>Learn the 12 fundamental principles of UX design</p>
             <span className="question-count">12 principles</span>
           </a>
-          <a href="/benyon12" className="chapter-button blue-theme" id="benyon12">
+          <a href="/benyon12" className="chapter-button" id="benyon12">
             <h3>📐 Benyon's 12 Principles</h3>
             <p>Master fundamental UX design principles</p>
             <span className="question-count">20 questions</span>
