@@ -1,13 +1,13 @@
-﻿[
+[
   {
     "id": 1,
     "section": "8.1",
     "question": "What is the main aim of envisionment in UX design?",
     "options": [
       "To bring abstract ideas to life so they can be explored and evaluated",
-      "To finalize code before testing",
-      "To gather business requirements",
-      "To conduct data analytics"
+      "To finalize code before testing for optimal results",
+      "To gather business requirements for optimal results",
+      "To conduct data analytics and implementation details"
     ],
     "answerIndex": 0,
     "answer": "To bring abstract ideas to life so they can be explored and evaluated",
@@ -80,9 +80,9 @@
     "question": "High-fidelity prototypes are:",
     "options": [
       "More realistic and detailed, showing behaviour and styling",
-      "Always paper-based",
-      "Used only after deployment",
-      "Not suitable for evaluation"
+      "Always paper-based and implementation details",
+      "Used only after deployment and related design considerations",
+      "Not suitable for evaluation and implementation details"
     ],
     "answerIndex": 0,
     "answer": "More realistic and detailed, showing behaviour and styling",
@@ -110,9 +110,9 @@
     "question": "Sketches are particularly useful because they:",
     "options": [
       "Are fast, disposable and encourage dI'vergence",
-      "Require high technical skill",
-      "Lock the design early",
-      "Are meant to look polished"
+      "Require high technical skill and expertise",
+      "Lock the design early in development process",
+      "Are meant to look polished and professional"
     ],
     "answerIndex": 0,
     "answer": "Are fast, disposable and encourage dI'vergence",
@@ -125,9 +125,9 @@
     "question": "Storyboards typically represent:",
     "options": [
       "Sequences of user actions over time",
-      "Database schema",
-      "Final UI code",
-      "Marketing personas"
+      "Database schema and implementation details",
+      "Final UI code and implementation details",
+      "Marketing personas strategies and promotional campaigns"
     ],
     "answerIndex": 0,
     "answer": "Sequences of user actions over time",
@@ -305,9 +305,9 @@
     "question": "Envisionment supports iteration by:",
     "options": [
       "Providing concrete artefacts to critique and refine",
-      "Eliminating need for feedback",
-      "Finalising design instantly",
-      "Reducing design options"
+      "Eliminating need for feedback and implementation details",
+      "Finalising design instantly guidelines and visual styling choices",
+      "Reducing design options guidelines and visual styling choices"
     ],
     "answerIndex": 0,
     "answer": "Providing concrete artefacts to critique and refine",

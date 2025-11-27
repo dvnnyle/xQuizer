@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": 1,
     "section": "3.1",
@@ -139,10 +139,10 @@
     "section": "3.2",
     "question": "What is conceptual design mainly concerned with?",
     "options": [
-      "Exact pixel-perfect layout of buttons",
+      "Exact pixel-perfect layout of buttons and precise positioning specifications",
       "Abstract structure of information, functions and concepts",
-      "Only the database schema",
-      "Colour palettes and branding"
+      "Only the database schema and related design considerations",
+      "Colour palettes and branding strategies and promotional campaigns"
     ],
     "answerIndex": 1,
     "answer": "Abstract structure of information, functions and concepts",
@@ -169,10 +169,10 @@
     "section": "3.2",
     "question": "What is the purpose of envisionment in UX design?",
     "options": [
-      "To generate final code for deployment",
+      "To generate final code for deployment for optimal results",
       "To turn abstract ideas into shareable representations like sketches and prototypes",
-      "To replace user research completely",
-      "To measure server performance under load"
+      "To replace user research completely for optimal results",
+      "To measure server performance under load for optimal results"
     ],
     "answerIndex": 1,
     "answer": "To turn abstract ideas into shareable representations like sketches and prototypes",
@@ -244,10 +244,10 @@
     "section": "3.4",
     "question": "What is a scenario in UX design?",
     "options": [
-      "A UML diagram of system classes",
+      "A UML diagram of system classes for optimal results",
       "A story of people doing activities in context, using technology",
-      "A list of system requirements",
-      "A detailed budget for the project"
+      "A list of system requirements metrics and technical specifications",
+      "A detailed budget for the project for optimal results"
     ],
     "answerIndex": 1,
     "answer": "A story of people doing activities in context, using technology",
@@ -349,10 +349,10 @@
     "section": "3.6",
     "question": "What is the role of a conceptual model in the scenario-based UX design method?",
     "options": [
-      "To store all the analytics data",
-      "To describe technical implementation details like database indexes",
+      "To store all the analytics data for optimal results",
+      "To describe technical implementation details like database indexes and query optimization",
       "To provide an abstract representation of how the system works for designers and users",
-      "To specify only visual style rules"
+      "To specify only visual style rules and related design considerations"
     ],
     "answerIndex": 2,
     "answer": "To provide an abstract representation of how the system works for designers and users",

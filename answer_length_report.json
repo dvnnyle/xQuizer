@@ -1,0 +1,1472 @@
+[
+  {
+    "id": 31,
+    "section": "6.5",
+    "question": "In Holtzblatt and Beyers framework, Joy in Use focuses on:",
+    "correct_length": 81,
+    "avg_incorrect_length": 21.666666666666668,
+    "diff_percentage": 273.8461538461538,
+    "correct_answer": "Immediate satisfaction during interaction, such as ease, flow and responsI'veness",
+    "incorrect_answers": [
+      "Long-term lifestyle change",
+      "Marketing campaigns",
+      "Only visual branding"
+    ],
+    "file": "chapter6.json"
+  },
+  {
+    "id": 14,
+    "section": "10.3",
+    "question": "What do usability heuristics typically cover?",
+    "correct_length": 80,
+    "avg_incorrect_length": 24.333333333333332,
+    "diff_percentage": 228.76712328767127,
+    "correct_answer": "Core design principles such as visibility, consistency, feedback and constraints",
+    "incorrect_answers": [
+      "Only graphic design rules",
+      "Only legal requirements",
+      "Only back-end performance"
+    ],
+    "file": "chapter10.json"
+  },
+  {
+    "id": 28,
+    "section": "6.5",
+    "question": "In the context of Chapter 6, designing for lifestyle primarily means:",
+    "correct_length": 79,
+    "avg_incorrect_length": 26.666666666666668,
+    "diff_percentage": 196.24999999999997,
+    "correct_answer": "Ensuring technology fIt's into peoples everyday routines, values and identities",
+    "incorrect_answers": [
+      "Maximising processor speed",
+      "Reducing app download size",
+      "Standardising all interfaces"
+    ],
+    "file": "chapter6.json"
+  },
+  {
+    "id": 13,
+    "section": "6.2",
+    "question": "What caution does Benyon offer about gamification?",
+    "correct_length": 109,
+    "avg_incorrect_length": 37.0,
+    "diff_percentage": 194.5945945945946,
+    "correct_answer": "Engagement must not rely only on extrinsic rewards; the experience It'self should be intrinsically satisfying",
+    "incorrect_answers": [
+      "Badges should always be hidden from users",
+      "All systems must become full games",
+      "Funware is illegal in some countries"
+    ],
+    "file": "chapter6.json"
+  },
+  {
+    "id": 23,
+    "section": "5.4",
+    "question": "TAM (Technology Acceptance Model) includes:",
+    "correct_length": 42,
+    "avg_incorrect_length": 14.333333333333334,
+    "diff_percentage": 193.02325581395345,
+    "correct_answer": "Ease of use & EffectI'veness (later Trust)",
+    "incorrect_answers": [
+      "System cost only",
+      "Marketing channels",
+      "File size"
+    ],
+    "file": "chapter5.json"
+  },
+  {
+    "id": 22,
+    "section": "10.5",
+    "question": "Why combine expert review with participant testing?",
+    "correct_length": 78,
+    "avg_incorrect_length": 29.0,
+    "diff_percentage": 168.9655172413793,
+    "correct_answer": "Expert reviews catch obvious issues early; user tests reveal real difficulties",
+    "incorrect_answers": [
+      "To double project cost",
+      "To avoid planning tasks",
+      "So that users never see unfinished designs"
+    ],
+    "file": "chapter10.json"
+  },
+  {
+    "id": 27,
+    "section": "5.5",
+    "question": "Learnability principle emphasises:",
+    "correct_length": 48,
+    "avg_incorrect_length": 18.0,
+    "diff_percentage": 166.66666666666669,
+    "correct_answer": "Visibility, consistency, familiarity, affordance",
+    "incorrect_answers": [
+      "Ads, branding, speed",
+      "Animations only",
+      "Removing navigation"
+    ],
+    "file": "chapter5.json"
+  },
+  {
+    "id": 19,
+    "section": "N/A",
+    "question": "Why is it helpful to attach supporting evidence (e.g. interview notes, photos) t...",
+    "correct_length": 72,
+    "avg_incorrect_length": 27.0,
+    "diff_percentage": 166.66666666666669,
+    "correct_answer": "To help readers understand the rationale and context behind requirements",
+    "incorrect_answers": [
+      "To make the document longer",
+      "To confuse stakeholders",
+      "To replace the need for testing"
+    ],
+    "file": "chapter7.json"
+  },
+  {
+    "id": 26,
+    "section": "10.6",
+    "question": "Why must evaluation fit the context of use?",
+    "correct_length": 77,
+    "avg_incorrect_length": 29.0,
+    "diff_percentage": 165.51724137931035,
+    "correct_answer": "Because environment (noise, mobility, lighting) strongly influences behaviour",
+    "incorrect_answers": [
+      "Because labs are always better",
+      "So that tests are shorter",
+      "So we can avoid recruiting users"
+    ],
+    "file": "chapter10.json"
+  },
+  {
+    "id": 28,
+    "section": "5.5",
+    "question": "EffectI'veness principles include:",
+    "correct_length": 39,
+    "avg_incorrect_length": 15.0,
+    "diff_percentage": 160.0,
+    "correct_answer": "Navigation, control, feedback, recovery",
+    "incorrect_answers": [
+      "Only color theory",
+      "Only typography",
+      "Only gestures"
+    ],
+    "file": "chapter5.json"
+  },
+  {
+    "id": 21,
+    "section": "N/A",
+    "question": "What additional elements can greatly increase the value of a requirements specif...",
+    "correct_length": 72,
+    "avg_incorrect_length": 29.333333333333332,
+    "diff_percentage": 145.45454545454547,
+    "correct_answer": "Criteria for testing, importance grade, dependencies, and change history",
+    "incorrect_answers": [
+      "Only colourful icons and branding",
+      "Developer names and salaries",
+      "A list of all meetings held"
+    ],
+    "file": "chapter7.json"
+  },
+  {
+    "id": 6,
+    "section": "8.2",
+    "question": "High-fidelity prototypes are:",
+    "correct_length": 58,
+    "avg_incorrect_length": 23.666666666666668,
+    "diff_percentage": 145.07042253521124,
+    "correct_answer": "More realistic and detailed, showing behaviour and styling",
+    "incorrect_answers": [
+      "Always paper-based",
+      "Used only after deployment",
+      "Not suitable for evaluation"
+    ],
+    "file": "chapter8.json"
+  },
+  {
+    "id": 1,
+    "section": "8.1",
+    "question": "What is the main aim of envisionment in UX design?",
+    "correct_length": 69,
+    "avg_incorrect_length": 29.0,
+    "diff_percentage": 137.93103448275863,
+    "correct_answer": "To bring abstract ideas to life so they can be explored and evaluated",
+    "incorrect_answers": [
+      "To finalize code before testing",
+      "To gather business requirements",
+      "To conduct data analytics"
+    ],
+    "file": "chapter8.json"
+  },
+  {
+    "id": 16,
+    "section": "10.4",
+    "question": "Participant-based evaluation is mainly concerned with:",
+    "correct_length": 53,
+    "avg_incorrect_length": 22.333333333333332,
+    "diff_percentage": 137.31343283582092,
+    "correct_answer": "Observing real users performing tasks with the system",
+    "incorrect_answers": [
+      "Checking code quality",
+      "Comparing design tools",
+      "Only counting page views"
+    ],
+    "file": "chapter10.json"
+  },
+  {
+    "id": 18,
+    "section": "10.4",
+    "question": "Why is recruiting representatI've participants important?",
+    "correct_length": 74,
+    "avg_incorrect_length": 31.333333333333332,
+    "diff_percentage": 136.17021276595747,
+    "correct_answer": "Different users reveal different issues that reflect the real target group",
+    "incorrect_answers": [
+      "Any person can reveal all problems",
+      "Only experts can participate",
+      "It reduces the need for planning"
+    ],
+    "file": "chapter10.json"
+  },
+  {
+    "id": 9,
+    "section": "8.3",
+    "question": "Storyboards typically represent:",
+    "correct_length": 35,
+    "avg_incorrect_length": 15.333333333333334,
+    "diff_percentage": 128.26086956521735,
+    "correct_answer": "Sequences of user actions over time",
+    "incorrect_answers": [
+      "Database schema",
+      "Final UI code",
+      "Marketing personas"
+    ],
+    "file": "chapter8.json"
+  },
+  {
+    "id": 6,
+    "section": "10.2",
+    "question": "What is the focus of data analytics in UX?",
+    "correct_length": 62,
+    "avg_incorrect_length": 27.333333333333332,
+    "diff_percentage": 126.82926829268295,
+    "correct_answer": "Collecting and analysing real usage data from deployed systems",
+    "incorrect_answers": [
+      "Asking managers for their opinions",
+      "Designing logos and branding",
+      "Writing user manuals"
+    ],
+    "file": "chapter10.json"
+  },
+  {
+    "id": 29,
+    "section": "10.6",
+    "question": "What is a confounding variable in an evaluation?",
+    "correct_length": 47,
+    "avg_incorrect_length": 21.0,
+    "diff_percentage": 123.80952380952381,
+    "correct_answer": "An external factor that affects the test result",
+    "incorrect_answers": [
+      "A design principle",
+      "A type of user error",
+      "A measure of satisfaction"
+    ],
+    "file": "chapter10.json"
+  },
+  {
+    "id": 24,
+    "section": "5.4",
+    "question": "Political acceptability concerns:",
+    "correct_length": 23,
+    "avg_incorrect_length": 10.333333333333334,
+    "diff_percentage": 122.5806451612903,
+    "correct_answer": "Trust, rights, fairness",
+    "incorrect_answers": [
+      "UI colors",
+      "CPU speed",
+      "Server uptime"
+    ],
+    "file": "chapter5.json"
+  },
+  {
+    "id": 30,
+    "section": "N/A",
+    "question": "How does PACT relate to requirements in Chapter 7?",
+    "correct_length": 99,
+    "avg_incorrect_length": 44.666666666666664,
+    "diff_percentage": 121.64179104477613,
+    "correct_answer": "Understanding People, Activities, Contexts and Technologies feeds into generating good requirements",
+    "incorrect_answers": [
+      "PACT replaces requirements completely",
+      "PACT is irrelevant once coding starts",
+      "PACT is only used for evaluating usability, not requirements"
+    ],
+    "file": "chapter7.json"
+  },
+  {
+    "id": 15,
+    "section": "10.3",
+    "question": "Which is a key weakness of expert evaluation?",
+    "correct_length": 70,
+    "avg_incorrect_length": 31.666666666666668,
+    "diff_percentage": 121.05263157894734,
+    "correct_answer": "Experts are not real users and may miss emotional or contextual issues",
+    "incorrect_answers": [
+      "It is too slow and expensI've",
+      "It always requires analytics data",
+      "It cannot be used with prototypes"
+    ],
+    "file": "chapter10.json"
+  },
+  {
+    "id": 29,
+    "section": "6.5",
+    "question": "Benyon argues that experience design increasingly focuses on:",
+    "correct_length": 50,
+    "avg_incorrect_length": 22.666666666666668,
+    "diff_percentage": 120.58823529411764,
+    "correct_answer": "Lifestyles and ecosystems of products and services",
+    "incorrect_answers": [
+      "Single standalone devices only",
+      "Back-end architectures",
+      "Printer drI'vers"
+    ],
+    "file": "chapter6.json"
+  },
+  {
+    "id": 12,
+    "section": "3.2",
+    "question": "What is the purpose of envisionment in UX design?",
+    "correct_length": 82,
+    "avg_incorrect_length": 37.333333333333336,
+    "diff_percentage": 119.64285714285714,
+    "correct_answer": "To turn abstract ideas into shareable representations like sketches and prototypes",
+    "incorrect_answers": [
+      "To generate final code for deployment",
+      "To replace user research completely",
+      "To measure server performance under load"
+    ],
+    "file": "chapter3.json"
+  },
+  {
+    "id": 10,
+    "section": "10.2",
+    "question": "What is a good use case for analytics in UX?",
+    "correct_length": 52,
+    "avg_incorrect_length": 24.0,
+    "diff_percentage": 116.66666666666667,
+    "correct_answer": "Improving conversion or completion rates in a funnel",
+    "incorrect_answers": [
+      "Picking colour palettes",
+      "Designing icons",
+      "Writing legal terms and conditions"
+    ],
+    "file": "chapter10.json"
+  },
+  {
+    "id": 27,
+    "section": "N/A",
+    "question": "How is MoSCoW linked to agile development in the book?",
+    "correct_length": 55,
+    "avg_incorrect_length": 26.0,
+    "diff_percentage": 111.53846153846155,
+    "correct_answer": "Must-have items define the minimum viable product (MVP)",
+    "incorrect_answers": [
+      "It replaces user stories",
+      "It is used only for bug fixing",
+      "It decides the team size"
+    ],
+    "file": "chapter7.json"
+  },
+  {
+    "id": 2,
+    "section": "N/A",
+    "question": "What is the main goal of the understanding phase in Chapter 7?",
+    "correct_length": 68,
+    "avg_incorrect_length": 32.333333333333336,
+    "diff_percentage": 110.30927835051546,
+    "correct_answer": "To understand people, activities, contexts and generate requirements",
+    "incorrect_answers": [
+      "To immediately sketch user interfaces",
+      "To choose the technology stack",
+      "To write the final user manual"
+    ],
+    "file": "chapter7.json"
+  },
+  {
+    "id": 25,
+    "section": "N/A",
+    "question": "In MoSCoW, what does Could have usually indicate?",
+    "correct_length": 59,
+    "avg_incorrect_length": 28.333333333333332,
+    "diff_percentage": 108.23529411764707,
+    "correct_answer": "Low-priority requirements that can be left out if necessary",
+    "incorrect_answers": [
+      "Essential requirements",
+      "Requirements that break the system",
+      "Requirements that are illegal"
+    ],
+    "file": "chapter7.json"
+  },
+  {
+    "id": 30,
+    "section": "10.6",
+    "question": "Why is combining methods recommended?",
+    "correct_length": 61,
+    "avg_incorrect_length": 29.333333333333332,
+    "diff_percentage": 107.95454545454545,
+    "correct_answer": "Different methods have complementary strengths and weaknesses",
+    "incorrect_answers": [
+      "One method is always perfect",
+      "It reduces the need for planning",
+      "It makes reports unnecessary"
+    ],
+    "file": "chapter10.json"
+  },
+  {
+    "id": 6,
+    "section": "6.2",
+    "question": "In Chapter 6, engagement primarily refers to:",
+    "correct_length": 61,
+    "avg_incorrect_length": 30.0,
+    "diff_percentage": 103.33333333333334,
+    "correct_answer": "Emotional, cognitI've and physical involvement in an activity",
+    "incorrect_answers": [
+      "Financial commitment to a product",
+      "Legal contracts with users",
+      "Download counts in an app store"
+    ],
+    "file": "chapter6.json"
+  },
+  {
+    "id": 17,
+    "section": "3.4",
+    "question": "What is a scenario in UX design?",
+    "correct_length": 63,
+    "avg_incorrect_length": 31.0,
+    "diff_percentage": 103.2258064516129,
+    "correct_answer": "A story of people doing activities in context, using technology",
+    "incorrect_answers": [
+      "A UML diagram of system classes",
+      "A list of system requirements",
+      "A detailed budget for the project"
+    ],
+    "file": "chapter3.json"
+  },
+  {
+    "id": 19,
+    "section": "10.4",
+    "question": "What is a key difference between lab and field testing?",
+    "correct_length": 71,
+    "avg_incorrect_length": 35.333333333333336,
+    "diff_percentage": 100.94339622641509,
+    "correct_answer": "Lab tests are more controlled, field tests are more realistic but messy",
+    "incorrect_answers": [
+      "Lab tests are cheaper than field tests",
+      "Field tests never collect metrics",
+      "Lab tests only use paper prototypes"
+    ],
+    "file": "chapter10.json"
+  },
+  {
+    "id": 1,
+    "section": "6.1",
+    "question": "What is the main shift described in Chapter 6 compared to traditional usability-...",
+    "correct_length": 77,
+    "avg_incorrect_length": 38.333333333333336,
+    "diff_percentage": 100.8695652173913,
+    "correct_answer": "From focusing only on efficiency to also designing for experience and emotion",
+    "incorrect_answers": [
+      "From desktop to mobile devices",
+      "From user research to pure aesthetics",
+      "From qualitatI've methods to only data analytics"
+    ],
+    "file": "chapter6.json"
+  },
+  {
+    "id": 8,
+    "section": "10.2",
+    "question": "In A/B testing, what happens?",
+    "correct_length": 76,
+    "avg_incorrect_length": 38.333333333333336,
+    "diff_percentage": 98.26086956521738,
+    "correct_answer": "Two versions of a design are shown to different users to compare performance",
+    "incorrect_answers": [
+      "Two experts argue about the best design",
+      "The same user tests the design twice in a row",
+      "Only visual design is evaluated"
+    ],
+    "file": "chapter10.json"
+  },
+  {
+    "id": 11,
+    "section": "10.3",
+    "question": "What is expert evaluation (usability inspection)?",
+    "correct_length": 71,
+    "avg_incorrect_length": 36.0,
+    "diff_percentage": 97.22222222222221,
+    "correct_answer": "Experts review a design against principles without involving real users",
+    "incorrect_answers": [
+      "Only developers test their own code",
+      "Random users try the system at home",
+      "Managers fill in a satisfaction survey"
+    ],
+    "file": "chapter10.json"
+  },
+  {
+    "id": 22,
+    "section": "5.4",
+    "question": "Acceptability is mainly about:",
+    "correct_length": 40,
+    "avg_incorrect_length": 20.333333333333332,
+    "diff_percentage": 96.72131147540985,
+    "correct_answer": "How well technology fIt's into real life",
+    "incorrect_answers": [
+      "How fast system loads",
+      "How many icons exist",
+      "How bright screen is"
+    ],
+    "file": "chapter5.json"
+  },
+  {
+    "id": 1,
+    "section": "10.1",
+    "question": "What is the main purpose of evaluation in UX design?",
+    "correct_length": 59,
+    "avg_incorrect_length": 30.0,
+    "diff_percentage": 96.66666666666667,
+    "correct_answer": "To check whether a design meets It's usability and UX goals",
+    "incorrect_answers": [
+      "To write technical documentation",
+      "To reduce development cost only",
+      "To decide colours and fonts"
+    ],
+    "file": "chapter10.json"
+  },
+  {
+    "id": 24,
+    "section": "3.6",
+    "question": "What is the role of a conceptual model in the scenario-based UX design method?",
+    "correct_length": 85,
+    "avg_incorrect_length": 43.666666666666664,
+    "diff_percentage": 94.65648854961833,
+    "correct_answer": "To provide an abstract representation of how the system works for designers and users",
+    "incorrect_answers": [
+      "To store all the analytics data",
+      "To describe technical implementation details like database indexes",
+      "To specify only visual style rules"
+    ],
+    "file": "chapter3.json"
+  },
+  {
+    "id": 21,
+    "section": "8.7",
+    "question": "Envisionment supports iteration by:",
+    "correct_length": 51,
+    "avg_incorrect_length": 26.333333333333332,
+    "diff_percentage": 93.67088607594938,
+    "correct_answer": "Providing concrete artefacts to critique and refine",
+    "incorrect_answers": [
+      "Eliminating need for feedback",
+      "Finalising design instantly",
+      "Reducing design options"
+    ],
+    "file": "chapter8.json"
+  },
+  {
+    "id": 10,
+    "section": "3.2",
+    "question": "What is conceptual design mainly concerned with?",
+    "correct_length": 57,
+    "avg_incorrect_length": 29.666666666666668,
+    "diff_percentage": 92.13483146067415,
+    "correct_answer": "Abstract structure of information, functions and concepts",
+    "incorrect_answers": [
+      "Exact pixel-perfect layout of buttons",
+      "Only the database schema",
+      "Colour palettes and branding"
+    ],
+    "file": "chapter3.json"
+  },
+  {
+    "id": 21,
+    "section": "6.4",
+    "question": "In Chapter 6, aesthetics in UX design refers to:",
+    "correct_length": 60,
+    "avg_incorrect_length": 31.333333333333332,
+    "diff_percentage": 91.48936170212767,
+    "correct_answer": "How things look, sound and feel, and how this shapes emotion",
+    "incorrect_answers": [
+      "Only the colour of buttons",
+      "The legal structure of a company",
+      "The devices internal hardware layout"
+    ],
+    "file": "chapter6.json"
+  },
+  {
+    "id": 11,
+    "section": "6.2",
+    "question": "NarratI've as a dimension of engagement refers to:",
+    "correct_length": 62,
+    "avg_incorrect_length": 32.666666666666664,
+    "diff_percentage": 89.79591836734696,
+    "correct_answer": "A sense of story or progression that gI'ves meaning to actions",
+    "incorrect_answers": [
+      "The number of screens in an app",
+      "Legal text in terms and conditions",
+      "Only the visuals used in branding"
+    ],
+    "file": "chapter6.json"
+  },
+  {
+    "id": 3,
+    "section": "10.1",
+    "question": "Why is evaluation described as central to human-centred design?",
+    "correct_length": 69,
+    "avg_incorrect_length": 36.666666666666664,
+    "diff_percentage": 88.1818181818182,
+    "correct_answer": "Because it is done throughout the whole process and drI'ves iteration",
+    "incorrect_answers": [
+      "Because it is done once at the very end",
+      "Because only managers perform it",
+      "Because it replaces the need for design"
+    ],
+    "file": "chapter10.json"
+  },
+  {
+    "id": 8,
+    "section": "6.2",
+    "question": "According to flow theory, people are in flow when:",
+    "correct_length": 57,
+    "avg_incorrect_length": 30.333333333333332,
+    "diff_percentage": 87.91208791208793,
+    "correct_answer": "Challenge matches their skills—not too easy, not too hard",
+    "incorrect_answers": [
+      "They are multitasking continuously",
+      "They receI've constant external rewards",
+      "They have no goals"
+    ],
+    "file": "chapter6.json"
+  },
+  {
+    "id": 32,
+    "section": "6.5",
+    "question": "Which design activity is especially important when designing for lifestyle fit?",
+    "correct_length": 73,
+    "avg_incorrect_length": 39.666666666666664,
+    "diff_percentage": 84.03361344537817,
+    "correct_answer": "Understanding users values, habIt's and aspirations through deep research",
+    "incorrect_answers": [
+      "Only checking system performance in the lab",
+      "Avoiding contact with real users",
+      "Designing solely from technical requirements"
+    ],
+    "file": "chapter6.json"
+  },
+  {
+    "id": 8,
+    "section": "8.3",
+    "question": "Sketches are particularly useful because they:",
+    "correct_length": 46,
+    "avg_incorrect_length": 25.0,
+    "diff_percentage": 84.0,
+    "correct_answer": "Are fast, disposable and encourage dI'vergence",
+    "incorrect_answers": [
+      "Require high technical skill",
+      "Lock the design early",
+      "Are meant to look polished"
+    ],
+    "file": "chapter8.json"
+  },
+  {
+    "id": 24,
+    "section": "N/A",
+    "question": "In MoSCoW, what does Should have typically represent?",
+    "correct_length": 60,
+    "avg_incorrect_length": 32.666666666666664,
+    "diff_percentage": 83.67346938775512,
+    "correct_answer": "Requirements that would be important if time/resources allow",
+    "incorrect_answers": [
+      "Requirements that are unnecessary",
+      "Requirements never to be implemented",
+      "Requirements only for testers"
+    ],
+    "file": "chapter7.json"
+  },
+  {
+    "id": 12,
+    "section": "6.2",
+    "question": "What is funware or gamification in the context of engagement?",
+    "correct_length": 70,
+    "avg_incorrect_length": 38.333333333333336,
+    "diff_percentage": 82.6086956521739,
+    "correct_answer": "Using game-like elements such as points and badges in non-game systems",
+    "incorrect_answers": [
+      "Releasing only entertainment apps",
+      "Removing serious features from productivity tools",
+      "Measuring only fun in evaluations"
+    ],
+    "file": "chapter6.json"
+  },
+  {
+    "id": 25,
+    "section": "5.4",
+    "question": "Cultural acceptability example:",
+    "correct_length": 26,
+    "avg_incorrect_length": 14.333333333333334,
+    "diff_percentage": 81.3953488372093,
+    "correct_answer": "Not using phones in cinema",
+    "incorrect_answers": [
+      "Device overheating",
+      "Slow downloads",
+      "Low storage"
+    ],
+    "file": "chapter5.json"
+  },
+  {
+    "id": 17,
+    "section": "8.5",
+    "question": "Paper prototyping is especially helpful for:",
+    "correct_length": 39,
+    "avg_incorrect_length": 21.666666666666668,
+    "diff_percentage": 80.0,
+    "correct_answer": "Rapid ideation and participatory design",
+    "incorrect_answers": [
+      "Testing server performance",
+      "Developing animations",
+      "Producing final UI"
+    ],
+    "file": "chapter8.json"
+  },
+  {
+    "id": 25,
+    "section": "6.4",
+    "question": "According to Hassenzahl, hedonic qualities focus on:",
+    "correct_length": 43,
+    "avg_incorrect_length": 24.0,
+    "diff_percentage": 79.16666666666666,
+    "correct_answer": "Pleasure, identity, stimulation and meaning",
+    "incorrect_answers": [
+      "Only performance speed",
+      "Only error-free usage",
+      "Only accessibility compliance"
+    ],
+    "file": "chapter6.json"
+  },
+  {
+    "id": 3,
+    "section": "N/A",
+    "question": "Why are requirements important before starting detailed design and implementatio...",
+    "correct_length": 73,
+    "avg_incorrect_length": 41.333333333333336,
+    "diff_percentage": 76.61290322580643,
+    "correct_answer": "They guide design, reduce assumptions, and define what success looks like",
+    "incorrect_answers": [
+      "They help marketing choose a logo",
+      "They prevent teams from making any changes later",
+      "They replace the need for any user research"
+    ],
+    "file": "chapter7.json"
+  },
+  {
+    "id": 29,
+    "section": "3.7",
+    "question": "Which of the following best summarises the lesson from the Secret City case stud...",
+    "correct_length": 98,
+    "avg_incorrect_length": 56.0,
+    "diff_percentage": 75.0,
+    "correct_answer": "IteratI've prototyping with personas and scenarios leads to a more engaging, human-centred product",
+    "incorrect_answers": [
+      "Technical performance matters more than user needs",
+      "Personas and scenarios are only useful in academic projects",
+      "UX design should avoid testing with real users to save time"
+    ],
+    "file": "chapter3.json"
+  },
+  {
+    "id": 26,
+    "section": "3.6",
+    "question": "Which statement best describes the overall process of the scenario-based UX desi...",
+    "correct_length": 98,
+    "avg_incorrect_length": 56.333333333333336,
+    "diff_percentage": 73.9644970414201,
+    "correct_answer": "It cycles through understanding, design, envisionment and evaluation, refining scenarios over time",
+    "incorrect_answers": [
+      "It moves in a straight line from requirements to final code with no feedback",
+      "It focuses only on visual design and ignores evaluation",
+      "It replaces all need for user research"
+    ],
+    "file": "chapter3.json"
+  },
+  {
+    "id": 25,
+    "section": "10.5",
+    "question": "Which practice helps make evaluation results impactful?",
+    "correct_length": 59,
+    "avg_incorrect_length": 34.0,
+    "diff_percentage": 73.52941176470588,
+    "correct_answer": "Prioritising issues by severity and suggesting improvements",
+    "incorrect_answers": [
+      "Listing all issues in random order",
+      "Hiding problems to keep morale high",
+      "Only reporting positI've findings"
+    ],
+    "file": "chapter10.json"
+  },
+  {
+    "id": 22,
+    "section": "8.7",
+    "question": "Why is envisionment crucial for uncovering hidden assumptions?",
+    "correct_length": 63,
+    "avg_incorrect_length": 36.333333333333336,
+    "diff_percentage": 73.39449541284402,
+    "correct_answer": "It externalises ideas so gaps and contradictions become visible",
+    "incorrect_answers": [
+      "Designers always document every assumption",
+      "Users never misunderstand prototypes",
+      "Storyboards eliminate ambiguity"
+    ],
+    "file": "chapter8.json"
+  },
+  {
+    "id": 20,
+    "section": "N/A",
+    "question": "Which items are recommended as a minimum in a requirements template?",
+    "correct_length": 56,
+    "avg_incorrect_length": 32.333333333333336,
+    "diff_percentage": 73.19587628865978,
+    "correct_answer": "A unique ID, one-sentence summary, source, and rationale",
+    "incorrect_answers": [
+      "Only a title and a diagram",
+      "A long story and user quotes only",
+      "Programming language and database type"
+    ],
+    "file": "chapter7.json"
+  },
+  {
+    "id": 27,
+    "section": "2.6",
+    "question": "Why does the chapter describe PACT as the backbone of human-centred design?",
+    "correct_length": 79,
+    "avg_incorrect_length": 46.0,
+    "diff_percentage": 71.73913043478261,
+    "correct_answer": "Because it grounds design in real people, activities, contexts and technologies",
+    "incorrect_answers": [
+      "Because it replaces all other design methods",
+      "Because it only focuses on technology performance",
+      "Because it eliminates the need for evaluation"
+    ],
+    "file": "chapter2.json"
+  },
+  {
+    "id": 23,
+    "section": "3.6",
+    "question": "In the scenario-based UX design method, what is a scenario corpus?",
+    "correct_length": 57,
+    "avg_incorrect_length": 33.333333333333336,
+    "diff_percentage": 70.99999999999999,
+    "correct_answer": "A library of scenarios capturing different usage contexts",
+    "incorrect_answers": [
+      "A single detailed story about a user",
+      "A list of bugs found during testing",
+      "A set of UI design guidelines"
+    ],
+    "file": "chapter3.json"
+  },
+  {
+    "id": 27,
+    "section": "10.6",
+    "question": "What does fidelity refer to in prototypes?",
+    "correct_length": 50,
+    "avg_incorrect_length": 29.333333333333332,
+    "diff_percentage": 70.45454545454545,
+    "correct_answer": "How realistic a prototype is in look and behaviour",
+    "incorrect_answers": [
+      "The number of users recruited",
+      "The ethical standards of the team",
+      "The cost of the evaluation"
+    ],
+    "file": "chapter10.json"
+  },
+  {
+    "id": 18,
+    "section": "8.6",
+    "question": "When working with clients, envisionment helps by:",
+    "correct_length": 39,
+    "avg_incorrect_length": 23.0,
+    "diff_percentage": 69.56521739130434,
+    "correct_answer": "Making ideas concrete enough to discuss",
+    "incorrect_answers": [
+      "Completing final testing",
+      "Replacing business analysis",
+      "Avoiding iteration"
+    ],
+    "file": "chapter8.json"
+  },
+  {
+    "id": 3,
+    "section": "6.1",
+    "question": "Which statement best captures the idea that designers cannot make an experience?",
+    "correct_length": 66,
+    "avg_incorrect_length": 39.0,
+    "diff_percentage": 69.23076923076923,
+    "correct_answer": "Designers can only set up the conditions for experiences to emerge",
+    "incorrect_answers": [
+      "Designers control every aspect of user feelings",
+      "Experiences do not depend on context",
+      "Experience is irrelevant to design"
+    ],
+    "file": "chapter6.json"
+  },
+  {
+    "id": 14,
+    "section": "6.3",
+    "question": "What is the central idea of Patrick JordansDesigning Pleasurable Products?",
+    "correct_length": 69,
+    "avg_incorrect_length": 41.0,
+    "diff_percentage": 68.29268292682927,
+    "correct_answer": "Products should provide different forms of pleasure, not just utility",
+    "incorrect_answers": [
+      "Usability is the only design goal",
+      "Aesthetics should be ignored for functionality",
+      "Pleasure is irrelevant to interaction design"
+    ],
+    "file": "chapter6.json"
+  },
+  {
+    "id": 24,
+    "section": "10.5",
+    "question": "What is the big rule about evaluation reporting mentioned in the notes?",
+    "correct_length": 55,
+    "avg_incorrect_length": 33.0,
+    "diff_percentage": 66.66666666666666,
+    "correct_answer": "If no one acts on your evaluation, the evaluation fails",
+    "incorrect_answers": [
+      "Reports must always be 100 pages long",
+      "Only managers may read reports",
+      "Reports should not suggest fixes"
+    ],
+    "file": "chapter10.json"
+  },
+  {
+    "id": 14,
+    "section": "3.3",
+    "question": "What are personas in UX design?",
+    "correct_length": 71,
+    "avg_incorrect_length": 42.666666666666664,
+    "diff_percentage": 66.40625000000001,
+    "correct_answer": "Fictional but research-based profiles representing different user types",
+    "incorrect_answers": [
+      "Real individuals hired to test the product",
+      "Random characters invented by the designer with no data",
+      "Marketing slogans for the brand"
+    ],
+    "file": "chapter3.json"
+  },
+  {
+    "id": 16,
+    "section": "N/A",
+    "question": "In Chapter 7, what is a requirements specification?",
+    "correct_length": 54,
+    "avg_incorrect_length": 32.666666666666664,
+    "diff_percentage": 65.30612244897961,
+    "correct_answer": "A formal document that lists and explains requirements",
+    "incorrect_answers": [
+      "A user manual for the final system",
+      "A list of programming tasks",
+      "A visual mockup of the interface only"
+    ],
+    "file": "chapter7.json"
+  },
+  {
+    "id": 19,
+    "section": "8.6",
+    "question": "Why is co-creation valuable in envisionment?",
+    "correct_length": 56,
+    "avg_incorrect_length": 34.0,
+    "diff_percentage": 64.70588235294117,
+    "correct_answer": "Users and stakeholders contribute ideas and reveal needs",
+    "incorrect_answers": [
+      "Designers avoid all responsibility",
+      "It replaces all other evaluation methods",
+      "It guarantees perfect design"
+    ],
+    "file": "chapter8.json"
+  },
+  {
+    "id": 14,
+    "section": "8.4",
+    "question": "What does abstraction in envisionment allow?",
+    "correct_length": 45,
+    "avg_incorrect_length": 27.333333333333332,
+    "diff_percentage": 64.63414634146342,
+    "correct_answer": "Focus on core ideas without irrelevant detail",
+    "incorrect_answers": [
+      "Complete elimination of iteration",
+      "Exact measurement of timing",
+      "Implementing full code"
+    ],
+    "file": "chapter8.json"
+  },
+  {
+    "id": 25,
+    "section": "3.6",
+    "question": "What is the purpose of a design language in this method?",
+    "correct_length": 76,
+    "avg_incorrect_length": 46.333333333333336,
+    "diff_percentage": 64.02877697841726,
+    "correct_answer": "To specify conventions and patterns for expressing design ideas consistently",
+    "incorrect_answers": [
+      "To define programming language syntax",
+      "To translate the interface into multiple human languages",
+      "To describe only colour and typography choices"
+    ],
+    "file": "chapter3.json"
+  },
+  {
+    "id": 6,
+    "section": "5.2",
+    "question": "InclusI've design is:",
+    "correct_length": 41,
+    "avg_incorrect_length": 25.0,
+    "diff_percentage": 64.0,
+    "correct_answer": "A pragmatic approach minimizing exclusion",
+    "incorrect_answers": [
+      "Design only for disabled users",
+      "Only aesthetic improvements",
+      "A marketing method"
+    ],
+    "file": "chapter5.json"
+  },
+  {
+    "id": 22,
+    "section": "3.5",
+    "question": "What is claims analysis used for in scenario work?",
+    "correct_length": 56,
+    "avg_incorrect_length": 34.333333333333336,
+    "diff_percentage": 63.106796116504846,
+    "correct_answer": "To identify pros and cons of design choices in scenarios",
+    "incorrect_answers": [
+      "To calculate system performance metrics",
+      "To generate random ideas for ideation",
+      "To estimate project budgets"
+    ],
+    "file": "chapter3.json"
+  },
+  {
+    "id": 23,
+    "section": "N/A",
+    "question": "In the MoSCoW method, what does Must have mean?",
+    "correct_length": 61,
+    "avg_incorrect_length": 37.666666666666664,
+    "diff_percentage": 61.946902654867266,
+    "correct_answer": "Fundamental requirements without which the system is unusable",
+    "incorrect_answers": [
+      "Nice to include if there is time",
+      "Features planned for future releases only",
+      "Requirements that are optional for users"
+    ],
+    "file": "chapter7.json"
+  },
+  {
+    "id": 9,
+    "section": "3.2",
+    "question": "Which statement best describes functional vs non-functional requirements?",
+    "correct_length": 91,
+    "avg_incorrect_length": 56.333333333333336,
+    "diff_percentage": 61.53846153846153,
+    "correct_answer": "Functional = what the system does; Non-functional = qualities like usability and aesthetics",
+    "incorrect_answers": [
+      "Functional = performance; Non-functional = security only",
+      "Functional = business goals; Non-functional = user goals",
+      "Functional = design sketches; Non-functional = prototypes"
+    ],
+    "file": "chapter3.json"
+  },
+  {
+    "id": 2,
+    "section": "6.1",
+    "question": "According to Benyon, experience design is best described as:",
+    "correct_length": 61,
+    "avg_incorrect_length": 38.0,
+    "diff_percentage": 60.526315789473685,
+    "correct_answer": "Designing for the whole journey, feelings and meanings of use",
+    "incorrect_answers": [
+      "Designing only the visual interface",
+      "Designing primarily for business stakeholders",
+      "Designing for hardware performance"
+    ],
+    "file": "chapter6.json"
+  },
+  {
+    "id": 18,
+    "section": "3.4",
+    "question": "According to John Carroll, why are scenarios useful for design?",
+    "correct_length": 86,
+    "avg_incorrect_length": 54.0,
+    "diff_percentage": 59.25925925925925,
+    "correct_answer": "They help manage the difficulties of design, such as constraints and changing problems",
+    "incorrect_answers": [
+      "They eliminate the need for any user research",
+      "They hide the constraints and complexity of design problems",
+      "They guarantee scientific predictions about user behaviour"
+    ],
+    "file": "chapter3.json"
+  },
+  {
+    "id": 17,
+    "section": "N/A",
+    "question": "Why do developers need a clear requirements specification?",
+    "correct_length": 52,
+    "avg_incorrect_length": 32.666666666666664,
+    "diff_percentage": 59.18367346938776,
+    "correct_answer": "So they can cost and manage the project effectI'vely",
+    "incorrect_answers": [
+      "So they can avoid testing",
+      "So they never have to talk to users",
+      "So they can pick their favourite tools"
+    ],
+    "file": "chapter7.json"
+  },
+  {
+    "id": 12,
+    "section": "5.3",
+    "question": "EffectI'veness means:",
+    "correct_length": 35,
+    "avg_incorrect_length": 22.0,
+    "diff_percentage": 59.09090909090909,
+    "correct_answer": "System provides the right functions",
+    "incorrect_answers": [
+      "System looks pretty",
+      "System loads ads quickly",
+      "System entertains users"
+    ],
+    "file": "chapter5.json"
+  },
+  {
+    "id": 15,
+    "section": "N/A",
+    "question": "Why does the author prefer to talk about understanding instead of just requireme...",
+    "correct_length": 62,
+    "avg_incorrect_length": 39.666666666666664,
+    "diff_percentage": 56.302521008403374,
+    "correct_answer": "Because it combines both gathering and generating requirements",
+    "incorrect_answers": [
+      "Because understanding ignores stakeholders",
+      "Because the term is more fashionable",
+      "Because requirements are no longer needed"
+    ],
+    "file": "chapter7.json"
+  },
+  {
+    "id": 10,
+    "section": "5.3",
+    "question": "Which is NOT a classic usability characteristic?",
+    "correct_length": 13,
+    "avg_incorrect_length": 8.333333333333334,
+    "diff_percentage": 55.99999999999999,
+    "correct_answer": "Profitability",
+    "incorrect_answers": [
+      "Utility",
+      "Safety",
+      "Learnability"
+    ],
+    "file": "chapter5.json"
+  },
+  {
+    "id": 7,
+    "section": "5.2",
+    "question": "Design for All (UnI'versal Design) aims to:",
+    "correct_length": 33,
+    "avg_incorrect_length": 21.333333333333332,
+    "diff_percentage": 54.687500000000014,
+    "correct_answer": "Support widest range of abilities",
+    "incorrect_answers": [
+      "Design solely for experts",
+      "Design only for mobile",
+      "Remove creativity"
+    ],
+    "file": "chapter5.json"
+  },
+  {
+    "id": 18,
+    "section": "N/A",
+    "question": "What extra materials are increasingly included in requirements specifications ac...",
+    "correct_length": 39,
+    "avg_incorrect_length": 25.333333333333332,
+    "diff_percentage": 53.947368421052644,
+    "correct_answer": "Prototypes, screenshots and other media",
+    "incorrect_answers": [
+      "Memes and jokes",
+      "Only source code snippets",
+      "Legal contracts between team members"
+    ],
+    "file": "chapter7.json"
+  },
+  {
+    "id": 8,
+    "section": "N/A",
+    "question": "According to Chapter 7, data or media requirements are important because they sp...",
+    "correct_length": 54,
+    "avg_incorrect_length": 35.333333333333336,
+    "diff_percentage": 52.83018867924527,
+    "correct_answer": "What types of content and media the system must handle",
+    "incorrect_answers": [
+      "Which programming language must be used",
+      "How many developers are needed",
+      "Which operating systems are supported"
+    ],
+    "file": "chapter7.json"
+  },
+  {
+    "id": 28,
+    "section": "N/A",
+    "question": "Why is it said that requirements work, design, envisionment and evaluation are t...",
+    "correct_length": 68,
+    "avg_incorrect_length": 44.666666666666664,
+    "diff_percentage": 52.23880597014926,
+    "correct_answer": "Because new requirements emerge as designs are created and evaluated",
+    "incorrect_answers": [
+      "Because they happen only once in sequence",
+      "Because understanding requirements is impossible",
+      "Because evaluation comes only at the very end"
+    ],
+    "file": "chapter7.json"
+  },
+  {
+    "id": 8,
+    "section": "3.2",
+    "question": "What is the main focus of the Understanding activity?",
+    "correct_length": 36,
+    "avg_incorrect_length": 23.666666666666668,
+    "diff_percentage": 52.112676056338024,
+    "correct_answer": "Gathering and analysing requirements",
+    "incorrect_answers": [
+      "Choosing fonts and colours",
+      "Writing unit tests",
+      "Optimizing database queries"
+    ],
+    "file": "chapter3.json"
+  },
+  {
+    "id": 24,
+    "section": "8.8",
+    "question": "Prototypes in evaluation are used to:",
+    "correct_length": 38,
+    "avg_incorrect_length": 25.0,
+    "diff_percentage": 52.0,
+    "correct_answer": "Test ideas before committing resources",
+    "incorrect_answers": [
+      "Benchmark hardware performance",
+      "Check marketing strategy",
+      "Replace user research"
+    ],
+    "file": "chapter8.json"
+  },
+  {
+    "id": 26,
+    "section": "6.4",
+    "question": "Lavie and Tractinskysclassical aesthetics are best described as:",
+    "correct_length": 35,
+    "avg_incorrect_length": 23.333333333333332,
+    "diff_percentage": 50.000000000000014,
+    "correct_answer": "Clean, balanced and orderly designs",
+    "incorrect_answers": [
+      "Wild, chaotic visuals",
+      "Purely text-based interfaces",
+      "Audio-only interfaces"
+    ],
+    "file": "chapter6.json"
+  },
+  {
+    "id": 26,
+    "section": "N/A",
+    "question": "In MoSCoW, 'Won't have this time round means:",
+    "correct_length": 51,
+    "avg_incorrect_length": 34.0,
+    "diff_percentage": 50.0,
+    "correct_answer": "The requirement is postponed to a later development",
+    "incorrect_answers": [
+      "The requirement is rejected forever",
+      "The requirement is illegal",
+      "The requirement must be implemented first"
+    ],
+    "file": "chapter7.json"
+  },
+  {
+    "id": 21,
+    "section": "10.5",
+    "question": "What is usually the first step in a full evaluation project?",
+    "correct_length": 24,
+    "avg_incorrect_length": 16.0,
+    "diff_percentage": 50.0,
+    "correct_answer": "Establish aims and scope",
+    "incorrect_answers": [
+      "Recruit users",
+      "Run analytics",
+      "Write the final report"
+    ],
+    "file": "chapter10.json"
+  },
+  {
+    "id": 12,
+    "section": "8.4",
+    "question": "Which of the following is a property of good representations?",
+    "correct_length": 40,
+    "avg_incorrect_length": 26.666666666666668,
+    "diff_percentage": 49.99999999999999,
+    "correct_answer": "They focus attention on relevant aspects",
+    "incorrect_answers": [
+      "They hide usability issues",
+      "They must be visually perfect",
+      "They cannot be criticised"
+    ],
+    "file": "chapter8.json"
+  },
+  {
+    "id": 16,
+    "section": "8.5",
+    "question": "Tools like Figma or Adobe XD are mainly used for:",
+    "correct_length": 34,
+    "avg_incorrect_length": 23.0,
+    "diff_percentage": 47.82608695652174,
+    "correct_answer": "High-fidelity digital envisionment",
+    "incorrect_answers": [
+      "Collecting analytics",
+      "Conducting field studies",
+      "Requirement documentation"
+    ],
+    "file": "chapter8.json"
+  },
+  {
+    "id": 2,
+    "section": "5.1",
+    "question": "What does usability primarily focus on?",
+    "correct_length": 40,
+    "avg_incorrect_length": 27.333333333333332,
+    "diff_percentage": 46.341463414634156,
+    "correct_answer": "How well the system works in interaction",
+    "incorrect_answers": [
+      "How cheap the system is",
+      "How trendy the design looks",
+      "How many features the system has"
+    ],
+    "file": "chapter5.json"
+  },
+  {
+    "id": 33,
+    "section": "6.5",
+    "question": "A key outcome of successful lifestyle-oriented design is that:",
+    "correct_length": 56,
+    "avg_incorrect_length": 38.333333333333336,
+    "diff_percentage": 46.08695652173912,
+    "correct_answer": "The product becomes part of the users identity and story",
+    "incorrect_answers": [
+      "The product has the lowest possible price",
+      "The product is invisible in the marketplace",
+      "The product requires no updates"
+    ],
+    "file": "chapter6.json"
+  },
+  {
+    "id": 11,
+    "section": "5.3",
+    "question": "Efficiency in usability means:",
+    "correct_length": 28,
+    "avg_incorrect_length": 19.333333333333332,
+    "diff_percentage": 44.827586206896555,
+    "correct_answer": "Tasks require minimal effort",
+    "incorrect_answers": [
+      "System has many features",
+      "UI is colorful",
+      "System is expensI've"
+    ],
+    "file": "chapter5.json"
+  },
+  {
+    "id": 5,
+    "section": "10.1",
+    "question": "Which of the following is NOT one of the three main types of evaluation listed?",
+    "correct_length": 31,
+    "avg_incorrect_length": 21.666666666666668,
+    "diff_percentage": 43.076923076923066,
+    "correct_answer": "Automated accessibility testing",
+    "incorrect_answers": [
+      "Expert-based evaluation",
+      "Participant-based evaluation",
+      "Data analytics"
+    ],
+    "file": "chapter10.json"
+  },
+  {
+    "id": 28,
+    "section": "10.6",
+    "question": "Why can prototypes limit what you can evaluate?",
+    "correct_length": 47,
+    "avg_incorrect_length": 33.0,
+    "diff_percentage": 42.42424242424242,
+    "correct_answer": "You can only test what the prototype represents",
+    "incorrect_answers": [
+      "They may lack necessary fidelity",
+      "They may not include all flows",
+      "They may not reflect real performance"
+    ],
+    "file": "chapter10.json"
+  },
+  {
+    "id": 24,
+    "section": "6.4",
+    "question": "Hassenzahl distinguishes between pragmatic and hedonic qualities. Pragmatic qual...",
+    "correct_length": 28,
+    "avg_incorrect_length": 19.666666666666668,
+    "diff_percentage": 42.37288135593219,
+    "correct_answer": "Functionality and usefulness",
+    "incorrect_answers": [
+      "Identity and stimulation",
+      "Brand image only",
+      "Visual novelty only"
+    ],
+    "file": "chapter6.json"
+  },
+  {
+    "id": 7,
+    "section": "3.2",
+    "question": "Which four core activities frame the UX design process in Chapter 3.2?",
+    "correct_length": 47,
+    "avg_incorrect_length": 33.333333333333336,
+    "diff_percentage": 40.99999999999999,
+    "correct_answer": "Understanding, Design, Envisionment, Evaluation",
+    "incorrect_answers": [
+      "Discover, Define, Design, DelI'ver",
+      "Research, Build, Test, Launch",
+      "Planning, Coding, Testing, Deployment"
+    ],
+    "file": "chapter3.json"
+  },
+  {
+    "id": 25,
+    "section": "8.8",
+    "question": "Why is iteration natural in envisionment?",
+    "correct_length": 37,
+    "avg_incorrect_length": 26.333333333333332,
+    "diff_percentage": 40.50632911392405,
+    "correct_answer": "New representations reveal new issues",
+    "incorrect_answers": [
+      "Designers avoid feedback",
+      "Stakeholders refuse prototypes",
+      "It prevents brainstorming"
+    ],
+    "file": "chapter8.json"
+  },
+  {
+    "id": 9,
+    "section": "N/A",
+    "question": "What does the book recommend about how requirements should be written?",
+    "correct_length": 49,
+    "avg_incorrect_length": 35.0,
+    "diff_percentage": 40.0,
+    "correct_answer": "In clear, unambiguous language that can be tested",
+    "incorrect_answers": [
+      "In casual, conversational language",
+      "Using as much technical jargon as possible",
+      "Only as diagrams, not as text"
+    ],
+    "file": "chapter7.json"
+  }
+]

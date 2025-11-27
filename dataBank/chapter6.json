@@ -1,13 +1,13 @@
-﻿[
+[
   {
     "id": 1,
     "section": "6.1",
     "question": "What is the main shift described in Chapter 6 compared to traditional usability-focused design?",
     "options": [
       "From focusing only on efficiency to also designing for experience and emotion",
-      "From desktop to mobile devices",
-      "From user research to pure aesthetics",
-      "From qualitatI've methods to only data analytics"
+      "From desktop computing platforms to mobile device interfaces and touch interactions",
+      "From user research methodologies to pure aesthetics and visual design decisions",
+      "From qualitatI've methods and interviews to only data analytics and metrics tracking"
     ],
     "answerIndex": 0,
     "answer": "From focusing only on efficiency to also designing for experience and emotion",
@@ -79,10 +79,10 @@
     "section": "6.2",
     "question": "In Chapter 6, engagement primarily refers to:",
     "options": [
-      "Financial commitment to a product",
-      "Legal contracts with users",
+      "Financial commitment to a product through subscription or purchase decisions",
+      "Legal contracts and binding agreements established with service users",
       "Emotional, cognitI've and physical involvement in an activity",
-      "Download counts in an app store"
+      "Download counts and installation metrics tracked in mobile app stores"
     ],
     "answerIndex": 2,
     "answer": "Emotional, cognitI've and physical involvement in an activity",
@@ -110,9 +110,9 @@
     "question": "According to flow theory, people are in flow when:",
     "options": [
       "Challenge matches their skills—not too easy, not too hard",
-      "They are multitasking continuously",
-      "They receI've constant external rewards",
-      "They have no goals"
+      "They are multitasking continuously across multiple activities",
+      "They receI've constant external rewards and incentives",
+      "They have no clear goals or objectives to accomplish"
     ],
     "answerIndex": 0,
     "answer": "Challenge matches their skills—not too easy, not too hard",
@@ -184,10 +184,10 @@
     "section": "6.2",
     "question": "What caution does Benyon offer about gamification?",
     "options": [
-      "Badges should always be hidden from users",
-      "All systems must become full games",
+      "Badges and points should always be hidden from users to prevent competitive behavior and social comparison",
+      "All systems must become full games with comprehensive scoring mechanics and achievement progression",
       "Engagement must not rely only on extrinsic rewards; the experience It'self should be intrinsically satisfying",
-      "Funware is illegal in some countries"
+      "Funware and gamification mechanics are illegal in some countries due to regulatory compliance issues"
     ],
     "answerIndex": 2,
     "answer": "Engagement must not rely only on extrinsic rewards; the experience It'self should be intrinsically satisfying",
@@ -274,10 +274,10 @@
     "section": "6.3",
     "question": "Product attachment theory suggests that people become attached to products because:",
     "options": [
-      "They are the cheapest option",
-      "They always work flawlessly",
+      "They are the cheapest option available in the current market",
+      "They always work flawlessly without any technical issues whatsoever",
       "They support roles, control, affiliation, affection and self-expression",
-      "They are heavily advertised"
+      "They are heavily advertised through widespread marketing campaigns"
     ],
     "answerIndex": 2,
     "answer": "They support roles, control, affiliation, affection and self-expression",
@@ -305,8 +305,8 @@
     "question": "In Chapter 6, aesthetics in UX design refers to:",
     "options": [
       "How things look, sound and feel, and how this shapes emotion",
-      "Only the colour of buttons",
-      "The legal structure of a company",
+      "Only the colour of buttons and related design considerations",
+      "The legal structure of a company for optimal results",
       "The devices internal hardware layout"
     ],
     "answerIndex": 0,
@@ -334,9 +334,9 @@
     "section": "6.4",
     "question": "Normans behavioural level focuses on:",
     "options": [
-      "Marketing campaigns",
-      "Brand storytelling",
-      "Manufacturing costs",
+      "Marketing campaigns and promotional advertising strategies",
+      "Brand storytelling and narrative communication approaches",
+      "Manufacturing costs and production efficiency optimization",
       "Usability, control and how well the product works in use"
     ],
     "answerIndex": 3,
@@ -409,10 +409,10 @@
     "section": "6.5",
     "question": "In the context of Chapter 6, designing for lifestyle primarily means:",
     "options": [
-      "Maximising processor speed",
-      "Reducing app download size",
+      "Maximising processor speed and computational efficiency for technical performance",
+      "Reducing app download size and minimizing storage footprint on user devices",
       "Ensuring technology fIt's into peoples everyday routines, values and identities",
-      "Standardising all interfaces"
+      "Standardising all interfaces according to uniform design system guidelines"
     ],
     "answerIndex": 2,
     "answer": "Ensuring technology fIt's into peoples everyday routines, values and identities",
@@ -424,9 +424,9 @@
     "section": "6.5",
     "question": "Benyon argues that experience design increasingly focuses on:",
     "options": [
-      "Single standalone devices only",
-      "Back-end architectures",
-      "Printer drI'vers",
+      "Single standalone devices only with isolated functionality",
+      "Back-end architectures and server infrastructure design",
+      "Printer drI'vers and hardware compatibility layer protocols",
       "Lifestyles and ecosystems of products and services"
     ],
     "answerIndex": 3,
@@ -440,9 +440,9 @@
     "question": "Holtzblatt and BeyersJoy of Life refers to:",
     "options": [
       "The broader happiness and meaning a product brings into daily life",
-      "Only the joy of using buttons",
-      "Short-term entertainment only",
-      "The companys profit"
+      "Only the joy of using buttons and interacting with interface controls",
+      "Short-term entertainment only without considering long-term satisfaction",
+      "The companys profit margins and revenue generation from product sales"
     ],
     "answerIndex": 0,
     "answer": "The broader happiness and meaning a product brings into daily life",
@@ -454,10 +454,10 @@
     "section": "6.5",
     "question": "In Holtzblatt and Beyers framework, Joy in Use focuses on:",
     "options": [
-      "Long-term lifestyle change",
-      "Marketing campaigns",
+      "Long-term lifestyle change and sustained behavioral transformation over extended periods",
+      "Marketing campaigns and promotional messaging strategies for user acquisition",
       "Immediate satisfaction during interaction, such as ease, flow and responsI'veness",
-      "Only visual branding"
+      "Only visual branding guidelines and aesthetic styling choices for interface elements"
     ],
     "answerIndex": 2,
     "answer": "Immediate satisfaction during interaction, such as ease, flow and responsI'veness",
@@ -469,9 +469,9 @@
     "section": "6.5",
     "question": "Which design activity is especially important when designing for lifestyle fit?",
     "options": [
-      "Only checking system performance in the lab",
-      "Avoiding contact with real users",
-      "Designing solely from technical requirements",
+      "Only checking system performance in controlled laboratory environments",
+      "Avoiding contact with real users to maintain design purity",
+      "Designing solely from technical requirements and specifications",
       "Understanding users values, habIt's and aspirations through deep research"
     ],
     "answerIndex": 3,

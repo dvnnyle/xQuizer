@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": 1,
     "question": "In Chapter 7, how is a requirement defined?",
@@ -17,10 +17,10 @@
     "id": 2,
     "question": "What is the main goal of the understanding phase in Chapter 7?",
     "options": [
-      "To immediately sketch user interfaces",
-      "To choose the technology stack",
+      "To immediately sketch user interfaces for optimal results",
+      "To choose the technology stack for optimal results",
       "To understand people, activities, contexts and generate requirements",
-      "To write the final user manual"
+      "To write the final user manual for optimal results"
     ],
     "answerIndex": 2,
     "answer": "To understand people, activities, contexts and generate requirements",
@@ -255,10 +255,10 @@
     "id": 19,
     "question": "Why is it helpful to attach supporting evidence (e.g. interview notes, photos) to requirements?",
     "options": [
-      "To make the document longer",
-      "To confuse stakeholders",
+      "To make the document longer and implementation details",
+      "To confuse stakeholders and implementation details",
       "To help readers understand the rationale and context behind requirements",
-      "To replace the need for testing"
+      "To replace the need for testing for optimal results"
     ],
     "answerIndex": 2,
     "answer": "To help readers understand the rationale and context behind requirements",
@@ -284,9 +284,9 @@
     "question": "What additional elements can greatly increase the value of a requirements specification?",
     "options": [
       "Criteria for testing, importance grade, dependencies, and change history",
-      "Only colourful icons and branding",
-      "Developer names and salaries",
-      "A list of all meetings held"
+      "Only colourful icons and branding and related design considerations",
+      "Developer names and salaries and implementation details",
+      "A list of all meetings held and implementation details"
     ],
     "answerIndex": 0,
     "answer": "Criteria for testing, importance grade, dependencies, and change history",
@@ -325,10 +325,10 @@
     "id": 24,
     "question": "In MoSCoW, what does Should have typically represent?",
     "options": [
-      "Requirements that are unnecessary",
+      "Requirements that are unnecessary and add no value",
       "Requirements that would be important if time/resources allow",
-      "Requirements never to be implemented",
-      "Requirements only for testers"
+      "Requirements never to be implemented in any release",
+      "Requirements only for testers and quality assurance"
     ],
     "answerIndex": 1,
     "answer": "Requirements that would be important if time/resources allow",
@@ -340,9 +340,9 @@
     "question": "In MoSCoW, what does Could have usually indicate?",
     "options": [
       "Low-priority requirements that can be left out if necessary",
-      "Essential requirements",
-      "Requirements that break the system",
-      "Requirements that are illegal"
+      "Essential requirements and implementation details",
+      "Requirements that break the system and cause technical failures if implemented",
+      "Requirements that are illegal and implementation details"
     ],
     "answerIndex": 0,
     "answer": "Low-priority requirements that can be left out if necessary",
@@ -367,10 +367,10 @@
     "id": 27,
     "question": "How is MoSCoW linked to agile development in the book?",
     "options": [
-      "It replaces user stories",
-      "It is used only for bug fixing",
+      "It replaces user stories research and behavioral analysis",
+      "It is used only for bug fixing and related design considerations",
       "Must-have items define the minimum viable product (MVP)",
-      "It decides the team size"
+      "It decides the team size and implementation details"
     ],
     "answerIndex": 2,
     "answer": "Must-have items define the minimum viable product (MVP)",
@@ -395,10 +395,10 @@
     "id": 29,
     "question": "Which stakeholders should be involved in reviewing and prioritizing requirements?",
     "options": [
-      "Only developers",
-      "Only end users",
+      "Only developers who understand technical feasibility",
+      "Only end users who will interact with the system",
       "Customers, clients and other key stakeholders",
-      "Only managers"
+      "Only managers who control project budgets"
     ],
     "answerIndex": 2,
     "answer": "Customers, clients and other key stakeholders",
@@ -409,10 +409,10 @@
     "id": 30,
     "question": "How does PACT relate to requirements in Chapter 7?",
     "options": [
-      "PACT replaces requirements completely",
-      "PACT is irrelevant once coding starts",
+      "PACT replaces requirements completely for optimal results",
+      "PACT is irrelevant once coding starts for optimal results",
       "Understanding People, Activities, Contexts and Technologies feeds into generating good requirements",
-      "PACT is only used for evaluating usability, not requirements"
+      "PACT is only used for evaluating usability, not requirements and related design considerations"
     ],
     "answerIndex": 2,
     "answer": "Understanding People, Activities, Contexts and Technologies feeds into generating good requirements",

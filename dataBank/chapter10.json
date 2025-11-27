@@ -1,18 +1,18 @@
-﻿[
+[
   {
     "id": 1,
     "section": "10.1",
     "question": "What is the main purpose of evaluation in UX design?",
     "options": [
-      "To write technical documentation",
+      "To write technical documentation for optimal results",
       "To check whether a design meets It's usability and UX goals",
-      "To reduce development cost only",
-      "To decide colours and fonts"
+      "To reduce development cost only and related design considerations",
+      "To decide colours and fonts and implementation details"
     ],
     "answerIndex": 1,
     "answer": "To check whether a design meets It's usability and UX goals",
-      "shortExplanation": "Evaluation checks if a design meets It's usability and UX goals.",
-      "explanation": "Evaluation is checking a design idea, prototype, product or service to see if it meets the intended goals for usability and user experience.<br><br><strong>Example:</strong> A team designs a checkout flow aiming for 90% task completion in under 2 minutes. Evaluation tests with real users to measure if this goal is achieved and identifies obstacles."
+    "shortExplanation": "Evaluation checks if a design meets It's usability and UX goals.",
+    "explanation": "Evaluation is checking a design idea, prototype, product or service to see if it meets the intended goals for usability and user experience.<br><br><strong>Example:</strong> A team designs a checkout flow aiming for 90% task completion in under 2 minutes. Evaluation tests with real users to measure if this goal is achieved and identifies obstacles."
   },
   {
     "id": 2,
@@ -26,23 +26,23 @@
     ],
     "answerIndex": 3,
     "answer": "What technology framework is used?",
-      "shortExplanation": "Evaluation focuses on usability, not technical implementation details.",
-      "explanation": "Evaluation cares about learnability, effectI'veness, accommodation and fitness for purpose, not about which implementation framework is used.<br><br><strong>Example:</strong> Evaluators test whether elderly users can successfully book appointments (usability), not whether the app uses React or Vue (technical implementation choice)."
+    "shortExplanation": "Evaluation focuses on usability, not technical implementation details.",
+    "explanation": "Evaluation cares about learnability, effectI'veness, accommodation and fitness for purpose, not about which implementation framework is used.<br><br><strong>Example:</strong> Evaluators test whether elderly users can successfully book appointments (usability), not whether the app uses React or Vue (technical implementation choice)."
   },
   {
     "id": 3,
     "section": "10.1",
     "question": "Why is evaluation described as central to human-centred design?",
     "options": [
-      "Because it is done once at the very end",
-      "Because only managers perform it",
+      "Because it is done once at the very end of development",
+      "Because only managers and stakeholders perform evaluation",
       "Because it is done throughout the whole process and drI'ves iteration",
-      "Because it replaces the need for design"
+      "Because it completely replaces the need for upfront design"
     ],
     "answerIndex": 2,
     "answer": "Because it is done throughout the whole process and drI'ves iteration",
-      "shortExplanation": "Evaluation drI'ves iteration and improvement throughout the design process.",
-      "explanation": "Evaluation happens early, midway and late, and it drI'ves iteration and improvement across the whole human-centred design process.<br><br><strong>Example:</strong> Slack evaluates constantly: early sketches with employees, mid-development prototypes with beta users, and lI've metrics after launch—continuous evaluation drI'ves ongoing improvements."
+    "shortExplanation": "Evaluation drI'ves iteration and improvement throughout the design process.",
+    "explanation": "Evaluation happens early, midway and late, and it drI'ves iteration and improvement across the whole human-centred design process.<br><br><strong>Example:</strong> Slack evaluates constantly: early sketches with employees, mid-development prototypes with beta users, and lI've metrics after launch—continuous evaluation drI'ves ongoing improvements."
   },
   {
     "id": 4,
@@ -77,10 +77,10 @@
     "section": "10.2",
     "question": "What is the focus of data analytics in UX?",
     "options": [
-      "Asking managers for their opinions",
+      "Asking managers for their opinions and gathering stakeholder feedback",
       "Collecting and analysing real usage data from deployed systems",
-      "Designing logos and branding",
-      "Writing user manuals"
+      "Designing logos and branding guidelines for visual identity systems",
+      "Writing user manuals and technical documentation for end users"
     ],
     "answerIndex": 1,
     "answer": "Collecting and analysing real usage data from deployed systems",
@@ -105,9 +105,9 @@
     "section": "10.2",
     "question": "In A/B testing, what happens?",
     "options": [
-      "Two experts argue about the best design",
-      "The same user tests the design twice in a row",
-      "Only visual design is evaluated",
+      "Two experts argue about the best design for optimal results",
+      "The same user tests the design twice in a row to compare experiences",
+      "Only visual design is evaluated and related design considerations",
       "Two versions of a design are shown to different users to compare performance"
     ],
     "answerIndex": 3,
@@ -133,10 +133,10 @@
     "section": "10.2",
     "question": "What is a good use case for analytics in UX?",
     "options": [
-      "Picking colour palettes",
+      "Picking colour palettes and implementation details",
       "Improving conversion or completion rates in a funnel",
-      "Designing icons",
-      "Writing legal terms and conditions"
+      "Designing icons guidelines and visual styling choices",
+      "Writing legal terms and conditions documentation for compliance and user agreements"
     ],
     "answerIndex": 1,
     "answer": "Improving conversion or completion rates in a funnel",
@@ -147,10 +147,10 @@
     "section": "10.3",
     "question": "What is expert evaluation (usability inspection)?",
     "options": [
-      "Only developers test their own code",
-      "Random users try the system at home",
+      "Only developers test their own code and related design considerations",
+      "Random users try the system at home for optimal results",
       "Experts review a design against principles without involving real users",
-      "Managers fill in a satisfaction survey"
+      "Managers fill in a satisfaction survey for optimal results"
     ],
     "answerIndex": 2,
     "answer": "Experts review a design against principles without involving real users",
@@ -189,10 +189,10 @@
     "section": "10.3",
     "question": "What do usability heuristics typically cover?",
     "options": [
-      "Only graphic design rules",
-      "Only legal requirements",
+      "Only graphic design rules and visual styling guidelines for aesthetics and branding",
+      "Only legal requirements and regulatory compliance standards for data protection",
       "Core design principles such as visibility, consistency, feedback and constraints",
-      "Only back-end performance"
+      "Only back-end performance metrics like server response times and database queries"
     ],
     "answerIndex": 2,
     "answer": "Core design principles such as visibility, consistency, feedback and constraints",
@@ -203,9 +203,9 @@
     "section": "10.3",
     "question": "Which is a key weakness of expert evaluation?",
     "options": [
-      "It is too slow and expensI've",
-      "It always requires analytics data",
-      "It cannot be used with prototypes",
+      "It is too slow and expensI've and implementation details",
+      "It always requires analytics data for optimal results",
+      "It cannot be used with prototypes for optimal results",
       "Experts are not real users and may miss emotional or contextual issues"
     ],
     "answerIndex": 3,
@@ -217,10 +217,10 @@
     "section": "10.4",
     "question": "Participant-based evaluation is mainly concerned with:",
     "options": [
-      "Checking code quality",
+      "Checking code quality and reviewing software architecture",
       "Observing real users performing tasks with the system",
-      "Comparing design tools",
-      "Only counting page views"
+      "Comparing design tools and evaluating software capabilities",
+      "Only counting page views and tracking analytics metrics"
     ],
     "answerIndex": 1,
     "answer": "Observing real users performing tasks with the system",
@@ -245,9 +245,9 @@
     "section": "10.4",
     "question": "Why is recruiting representatI've participants important?",
     "options": [
-      "Any person can reveal all problems",
-      "Only experts can participate",
-      "It reduces the need for planning",
+      "Any person can reveal all problems regardless of background or expertise level",
+      "Only experts can participate effectively in meaningful usability testing sessions",
+      "It reduces the need for planning detailed test protocols and evaluation criteria",
       "Different users reveal different issues that reflect the real target group"
     ],
     "answerIndex": 3,
@@ -259,10 +259,10 @@
     "section": "10.4",
     "question": "What is a key difference between lab and field testing?",
     "options": [
-      "Lab tests are cheaper than field tests",
+      "Lab tests are cheaper than field tests for optimal results",
       "Lab tests are more controlled, field tests are more realistic but messy",
-      "Field tests never collect metrics",
-      "Lab tests only use paper prototypes"
+      "Field tests never collect metrics for optimal results",
+      "Lab tests only use paper prototypes and related design considerations"
     ],
     "answerIndex": 1,
     "answer": "Lab tests are more controlled, field tests are more realistic but messy",
@@ -301,10 +301,10 @@
     "section": "10.5",
     "question": "Why combine expert review with participant testing?",
     "options": [
-      "To double project cost",
-      "To avoid planning tasks",
+      "To double project cost and maximize the budget allocation for evaluation activities",
+      "To avoid planning tasks and eliminate the need for structured evaluation protocols",
       "Expert reviews catch obvious issues early; user tests reveal real difficulties",
-      "So that users never see unfinished designs"
+      "So that users never see unfinished designs and only experience polished final products"
     ],
     "answerIndex": 2,
     "answer": "Expert reviews catch obvious issues early; user tests reveal real difficulties",
@@ -357,10 +357,10 @@
     "section": "10.6",
     "question": "Why must evaluation fit the context of use?",
     "options": [
-      "Because labs are always better",
-      "So that tests are shorter",
+      "Because labs are always better and provide more controlled experimental conditions",
+      "So that tests are shorter and evaluation sessions require less time to complete",
       "Because environment (noise, mobility, lighting) strongly influences behaviour",
-      "So we can avoid recruiting users"
+      "So we can avoid recruiting users and rely solely on automated testing approaches"
     ],
     "answerIndex": 2,
     "answer": "Because environment (noise, mobility, lighting) strongly influences behaviour",
@@ -399,10 +399,10 @@
     "section": "10.6",
     "question": "What is a confounding variable in an evaluation?",
     "options": [
-      "A design principle",
-      "A type of user error",
+      "A design principle guidelines and visual styling choices",
+      "A type of user error research and behavioral analysis",
       "An external factor that affects the test result",
-      "A measure of satisfaction"
+      "A measure of satisfaction and implementation details"
     ],
     "answerIndex": 2,
     "answer": "An external factor that affects the test result",
@@ -413,9 +413,9 @@
     "section": "10.6",
     "question": "Why is combining methods recommended?",
     "options": [
-      "One method is always perfect",
-      "It reduces the need for planning",
-      "It makes reports unnecessary",
+      "One method is always perfect and implementation details",
+      "It reduces the need for planning for optimal results",
+      "It makes reports unnecessary and implementation details",
       "Different methods have complementary strengths and weaknesses"
     ],
     "answerIndex": 3,

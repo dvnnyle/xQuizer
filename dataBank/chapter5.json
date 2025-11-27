@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": 1,
     "section": "5.1",
@@ -42,7 +42,7 @@
     "answerIndex": 3,
     "answer": "UK Equality Act & US Section 508",
     "shortExplanation": "These laws require digital access for all users, including disabled users.",
-"explanation": "UK Equality Act 2010 requires organisations to make reasonable adjustments, including accessible digital services. US Section 508 mandates that federal electronic and information technology be accessible to individuals with disabilities.<br><br>Other key global accessibility laws include:<br><br>• <strong>EU • European Accessibility Act (EAA)</strong>: Requires accessible products and services across member states.<br>• <strong>Canada • Accessible Canada Act (ACA)</strong>: Sets accessibility requirements for federal organisations.<br>• <strong>Australia • Disability Discrimination Act (DDA)</strong>: ProhibIt's discrimination and encourages accessible digital content.<br>• <strong>New Zealand • Web Accessibility Standard</strong>: Requires government sites to meet WCAG guidelines.<br>• <strong>Norway • Anti-Discrimination and Accessibility Act</strong>: Requires unI'versal design of ICT solutions.<br><br>Example: A UK government website must provide text alternatI'ves for images, keyboard navigation, and sufficient color contrast to comply with the Equality Act."
+    "explanation": "UK Equality Act 2010 requires organisations to make reasonable adjustments, including accessible digital services. US Section 508 mandates that federal electronic and information technology be accessible to individuals with disabilities.<br><br>Other key global accessibility laws include:<br><br>• <strong>EU • European Accessibility Act (EAA)</strong>: Requires accessible products and services across member states.<br>• <strong>Canada • Accessible Canada Act (ACA)</strong>: Sets accessibility requirements for federal organisations.<br>• <strong>Australia • Disability Discrimination Act (DDA)</strong>: ProhibIt's discrimination and encourages accessible digital content.<br>• <strong>New Zealand • Web Accessibility Standard</strong>: Requires government sites to meet WCAG guidelines.<br>• <strong>Norway • Anti-Discrimination and Accessibility Act</strong>: Requires unI'versal design of ICT solutions.<br><br>Example: A UK government website must provide text alternatI'ves for images, keyboard navigation, and sufficient color contrast to comply with the Equality Act."
   },
   {
     "id": 4,
@@ -320,9 +320,9 @@
     "question": "Acceptability is mainly about:",
     "options": [
       "How well technology fIt's into real life",
-      "How fast system loads",
-      "How many icons exist",
-      "How bright screen is"
+      "How fast system loads and performance response times",
+      "How many icons exist in the interface design system",
+      "How bright screen is and display luminosity settings"
     ],
     "answerIndex": 0,
     "answer": "How well technology fIt's into real life",
@@ -335,9 +335,9 @@
     "question": "TAM (Technology Acceptance Model) includes:",
     "options": [
       "Ease of use & EffectI'veness (later Trust)",
-      "System cost only",
-      "Marketing channels",
-      "File size"
+      "System cost only and pricing structure considerations",
+      "Marketing channels and promotional distribution strategies",
+      "File size limitations and storage capacity requirements"
     ],
     "answerIndex": 0,
     "answer": "Ease of use & EffectI'veness (later Trust)",
@@ -349,9 +349,9 @@
     "section": "5.4",
     "question": "Political acceptability concerns:",
     "options": [
-      "UI colors",
-      "CPU speed",
-      "Server uptime",
+      "UI colors and visual design aesthetic choices only",
+      "CPU speed and processor performance optimization metrics",
+      "Server uptime and infrastructure reliability percentages",
       "Trust, rights, fairness"
     ],
     "answerIndex": 3,
@@ -394,10 +394,10 @@
     "section": "5.5",
     "question": "Learnability principle emphasises:",
     "options": [
-      "Ads, branding, speed",
+      "Ads, branding guidelines, and processing speed optimization",
       "Visibility, consistency, familiarity, affordance",
-      "Animations only",
-      "Removing navigation"
+      "Animations only without considering other interaction patterns",
+      "Removing navigation elements to create minimalist interfaces"
     ],
     "answerIndex": 1,
     "answer": "Visibility, consistency, familiarity, affordance",
@@ -410,9 +410,9 @@
     "question": "EffectI'veness principles include:",
     "options": [
       "Navigation, control, feedback, recovery",
-      "Only color theory",
-      "Only typography",
-      "Only gestures"
+      "Only color theory and related design considerations",
+      "Only typography and related design considerations",
+      "Only gestures and related design considerations"
     ],
     "answerIndex": 0,
     "answer": "Navigation, control, feedback, recovery",
