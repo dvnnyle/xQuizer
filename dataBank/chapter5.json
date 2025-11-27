@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": 1,
     "section": "5.1",
@@ -11,8 +11,8 @@
     ],
     "answerIndex": 2,
     "answer": "Accessibility, Usability, Acceptability",
-    "shortExplanation": "Chapter 5 explains good design balances accessibility (can everyone use it?), usability (is it efficient/effectI've?), and acceptability (does it fit into users lI'ves?).",
-    "explanation": "Chapter 5 explains good design balances three core qualities:<br><br>• <strong>Accessibility</strong>: Can everyone use it? Ensures the design is usable by people with dI'verse abilities and disabilities.<br>• <strong>Usability</strong>: Is it efficient and effectI've? Focuses on how well the system works in interaction.<br>• <strong>Acceptability</strong>: Does it fit into users lI'ves? Considers cultural, political, social, and economic factors.<br><br>All three must work together for truly successful design.<br><br>Example: A banking app must be accessible (screen reader support), usable (clear navigation, quick transfers), and acceptable (trustworthy security, fIt's users financial habIt's)."
+    "shortExplanation": "Chapter 5 explains good design balances accessibility (can everyone use it?), usability (is it efficient/effective?), and acceptability (does it fit into users lives?).",
+    "explanation": "Chapter 5 explains good design balances three core qualities:<br><br>• <strong>Accessibility</strong>: Can everyone use it? Ensures the design is usable by people with diverse abilities and disabilities.<br>• <strong>Usability</strong>: Is it efficient and effective? Focuses on how well the system works in interaction.<br>• <strong>Acceptability</strong>: Does it fit into users lives? Considers cultural, political, social, and economic factors.<br><br>All three must work together for truly successful design.<br><br>Example: A banking app must be accessible (screen reader support), usable (clear navigation, quick transfers), and acceptable (trustworthy security, fits users financial habits)."
   },
   {
     "id": 2,
@@ -27,14 +27,14 @@
     "answerIndex": 1,
     "answer": "How well the system works in interaction",
     "shortExplanation": "Usability is about efficiency, error minimization, learnability and overall interaction quality.",
-    "explanation": "Usability focuses on how well the system works in interaction. Key aspects include:<br><br>• <strong>Efficiency</strong>: Tasks completed with minimal effort<br>• <strong>EffectI'veness</strong>: System provides right functions for user goals<br>• <strong>Learnability</strong>: Easy to learn and remember<br>• <strong>Safety</strong>: Error minimization and recovery<br>• <strong>Utility</strong>: Provides needed functionality<br><br>It's about the quality of the user experience during interaction.<br><br>Example: A weather app with high usability lets users check tomorrows forecast in 2 seconds, offers hourly and weekly views, is intuitI've for first-time users, and allows easy correction of location mistakes."
+    "explanation": "Usability focuses on how well the system works in interaction. Key aspects include:<br><br>• <strong>Efficiency</strong>: Tasks completed with minimal effort<br>• <strong>effectiveness</strong>: System provides right functions for user goals<br>• <strong>Learnability</strong>: Easy to learn and remember<br>• <strong>Safety</strong>: Error minimization and recovery<br>• <strong>Utility</strong>: Provides needed functionality<br><br>It's about the quality of the user experience during interaction.<br><br>Example: A weather app with high usability lets users check tomorrows forecast in 2 seconds, offers hourly and weekly views, is intuitive for first-time users, and allows easy correction of location mistakes."
   },
   {
     "id": 3,
     "section": "5.2",
     "question": "Accessibility laws mentioned include:",
     "options": [
-      "EU Web DirectI've & WCAG Guidelines",
+      "EU Web directive & WCAG Guidelines",
       "ADA Standards & Rehabilitation Act",
       "Canadian ACA & Australian DDA",
       "UK Equality Act & US Section 508"
@@ -42,7 +42,7 @@
     "answerIndex": 3,
     "answer": "UK Equality Act & US Section 508",
     "shortExplanation": "These laws require digital access for all users, including disabled users.",
-    "explanation": "UK Equality Act 2010 requires organisations to make reasonable adjustments, including accessible digital services. US Section 508 mandates that federal electronic and information technology be accessible to individuals with disabilities.<br><br>Other key global accessibility laws include:<br><br>• <strong>EU • European Accessibility Act (EAA)</strong>: Requires accessible products and services across member states.<br>• <strong>Canada • Accessible Canada Act (ACA)</strong>: Sets accessibility requirements for federal organisations.<br>• <strong>Australia • Disability Discrimination Act (DDA)</strong>: ProhibIt's discrimination and encourages accessible digital content.<br>• <strong>New Zealand • Web Accessibility Standard</strong>: Requires government sites to meet WCAG guidelines.<br>• <strong>Norway • Anti-Discrimination and Accessibility Act</strong>: Requires unI'versal design of ICT solutions.<br><br>Example: A UK government website must provide text alternatI'ves for images, keyboard navigation, and sufficient color contrast to comply with the Equality Act."
+    "explanation": "UK Equality Act 2010 requires organisations to make reasonable adjustments, including accessible digital services. US Section 508 mandates that federal electronic and information technology be accessible to individuals with disabilities.<br><br>Other key global accessibility laws include:<br><br>• <strong>EU • European Accessibility Act (EAA)</strong>: Requires accessible products and services across member states.<br>• <strong>Canada • Accessible Canada Act (ACA)</strong>: Sets accessibility requirements for federal organisations.<br>• <strong>Australia • Disability Discrimination Act (DDA)</strong>: ProhibIt's discrimination and encourages accessible digital content.<br>• <strong>New Zealand • Web Accessibility Standard</strong>: Requires government sites to meet WCAG guidelines.<br>• <strong>Norway • Anti-Discrimination and Accessibility Act</strong>: Requires universal design of ICT solutions.<br><br>Example: A UK government website must provide text alternatives for images, keyboard navigation, and sufficient color contrast to comply with the Equality Act."
   },
   {
     "id": 4,
@@ -67,17 +67,17 @@
       "Technical jargon prevents user comprehension",
       "Users cannot understand system commands",
       "Complex mental models confuse users",
-      "Unfamiliar metaphors create cognitI've barriers"
+      "Unfamiliar metaphors create cognitive barriers"
     ],
     "answerIndex": 1,
     "answer": "Users can't understand commands",
-    "shortExplanation": "Conceptual exclusion = cognitI've difficulty forming mental models.",
-    "explanation": "Conceptual exclusion occurs when users face cognitI've difficulties understanding how a system works. This happens when:<br><br>• <strong>Commands or terminology are unclear</strong>: Users don't understand what actions mean<br>• <strong>Mental models don't match system behavior</strong>: System works differently than users expect<br>• <strong>Metaphors are culturally unfamiliar</strong>: References don't translate across cultures<br>• <strong>Interface logic is too complex</strong>: Too many steps or confusing workflows<br><br>Example: A cloud storage app that uses terms like sync conflict or versioning without clear explanations creates conceptual barriers for non-technical users trying to understand why their files look different."
+    "shortExplanation": "Conceptual exclusion = cognitive difficulty forming mental models.",
+    "explanation": "Conceptual exclusion occurs when users face cognitive difficulties understanding how a system works. This happens when:<br><br>• <strong>Commands or terminology are unclear</strong>: Users don't understand what actions mean<br>• <strong>Mental models don't match system behavior</strong>: System works differently than users expect<br>• <strong>Metaphors are culturally unfamiliar</strong>: References don't translate across cultures<br>• <strong>Interface logic is too complex</strong>: Too many steps or confusing workflows<br><br>Example: A cloud storage app that uses terms like sync conflict or versioning without clear explanations creates conceptual barriers for non-technical users trying to understand why their files look different."
   },
   {
     "id": 6,
     "section": "5.2",
-    "question": "InclusI've design is:",
+    "question": "inclusive design is:",
     "options": [
       "Design only for disabled users",
       "Only aesthetic improvements",
@@ -86,13 +86,13 @@
     ],
     "answerIndex": 2,
     "answer": "A pragmatic approach minimizing exclusion",
-    "shortExplanation": "InclusI've design accepts full inclusion is not always possible but aims to reduce barriers.",
-    "explanation": "InclusI've design is a pragmatic approach that acknowledges that 100% inclusion may not always be possible, but actI'vely works to minimize exclusion. It differs from UnI'versal Design by:<br><br>• <strong>Accepting practical constraints</strong>: Recognizes real-world limitations<br>• <strong>Focusing on reducing barriers</strong>: Aims for improvement rather than perfection<br>• <strong>Considering dI'verse abilities from the start</strong>: Builds accessibility in, not retrofIt's<br>• <strong>Making reasonable adjustments</strong>: Required by law, balances accessibility with feasibility<br><br>The goal is to include as many people as practically possible.<br><br>Example: A video streaming service designs large, high-contrast buttons and keyboard controls to reduce barriers for users with visual or motor impairments, while acknowledging some limitations remain."
+    "shortExplanation": "inclusive design accepts full inclusion is not always possible but aims to reduce barriers.",
+    "explanation": "inclusive design is a pragmatic approach that acknowledges that 100% inclusion may not always be possible, but actively works to minimize exclusion. It differs from universal Design by:<br><br>• <strong>Accepting practical constraints</strong>: Recognizes real-world limitations<br>• <strong>Focusing on reducing barriers</strong>: Aims for improvement rather than perfection<br>• <strong>Considering diverse abilities from the start</strong>: Builds accessibility in, not retrofits<br>• <strong>Making reasonable adjustments</strong>: Required by law, balances accessibility with feasibility<br><br>The goal is to include as many people as practically possible.<br><br>Example: A video streaming service designs large, high-contrast buttons and keyboard controls to reduce barriers for users with visual or motor impairments, while acknowledging some limitations remain."
   },
   {
     "id": 7,
     "section": "5.2",
-    "question": "Design for All (UnI'versal Design) aims to:",
+    "question": "Design for All (universal Design) aims to:",
     "options": [
       "Design solely for experts",
       "Design only for mobile",
@@ -101,23 +101,23 @@
     ],
     "answerIndex": 3,
     "answer": "Support widest range of abilities",
-    "shortExplanation": "UnI'versal Design is a philosophy targeting the widest human abilities.",
-    "explanation": "UnI'versal Design (also called Design for All) is an ambitious philosophy aiming to create products usable by the widest possible range of human abilities. Seven principles include:<br><br>• <strong>Equitable use</strong>: Same means of use for all users<br>• <strong>Flexibility in use</strong>: Accommodates wide range of preferences and abilities<br>• <strong>Simple and intuitI've</strong>: Easy to understand regardless of experience<br>• <strong>Perceptible information</strong>: Communicates effectI'vely regardless of conditions<br>• <strong>Tolerance for error</strong>: Minimizes hazards and adverse consequences<br>• <strong>Low physical effort</strong>: Used efficiently with minimal fatigue<br>• <strong>Size and space for approach</strong>: Appropriate size for access and use<br><br>Example: Automatic sliding doors at a supermarket benefit wheelchair users, elderly customers with walkers, paren'ts pushing strollers, and shoppers carrying heavy bags—demonstrating unI'versal design in action."
+    "shortExplanation": "universal Design is a philosophy targeting the widest human abilities.",
+    "explanation": "universal Design (also called Design for All) is an ambitious philosophy aiming to create products usable by the widest possible range of human abilities. Seven principles include:<br><br>• <strong>Equitable use</strong>: Same means of use for all users<br>• <strong>Flexibility in use</strong>: Accommodates wide range of preferences and abilities<br>• <strong>Simple and intuitive</strong>: Easy to understand regardless of experience<br>• <strong>Perceptible information</strong>: Communicates effectively regardless of conditions<br>• <strong>Tolerance for error</strong>: Minimizes hazards and adverse consequences<br>• <strong>Low physical effort</strong>: Used efficiently with minimal fatigue<br>• <strong>Size and space for approach</strong>: Appropriate size for access and use<br><br>Example: Automatic sliding doors at a supermarket benefit wheelchair users, elderly customers with walkers, parents pushing strollers, and shoppers carrying heavy bags—demonstrating universal design in action."
   },
   {
     "id": 8,
     "section": "5.2",
-    "question": "AssistI've tech example:",
+    "question": "assistive tech example:",
     "options": [
       "Screen reader software",
-      "AdaptI've UI themes",
+      "adaptive UI themes",
       "Braille display",
       "Context-aware notification systems"
     ],
     "answerIndex": 0,
     "answer": "Screen reader software",
     "shortExplanation": "Screen readers convert on-screen text to speech for visually impaired users.",
-    "explanation": "AssistI've technology are specialized tools that help people with disabilities use digital systems. Common examples include:<br><br>• <strong>Screen readers</strong>: Read screen content aloud for visually impaired users<br>• <strong>Screen magnifiers</strong>: Enlarge screen areas<br>• <strong>AlternatI've keyboards</strong>: For motor impairments<br>• <strong>Voice control</strong>: Hands-free operation<br>• <strong>Braille displays</strong>: Convert text to tactile Braille<br><br>Designers must ensure their interfaces work well with these technologies.<br><br>Example: A shopping website must properly label all buttons and images so that a screen reader like JAWS can announce Add to cart button instead of just reading button or staying silent."
+    "explanation": "assistive technology are specialized tools that help people with disabilities use digital systems. Common examples include:<br><br>• <strong>Screen readers</strong>: Read screen content aloud for visually impaired users<br>• <strong>Screen magnifiers</strong>: Enlarge screen areas<br>• <strong>alternative keyboards</strong>: For motor impairments<br>• <strong>Voice control</strong>: Hands-free operation<br>• <strong>Braille displays</strong>: Convert text to tactile Braille<br><br>Designers must ensure their interfaces work well with these technologies.<br><br>Example: A shopping website must properly label all buttons and images so that a screen reader like JAWS can announce Add to cart button instead of just reading button or staying silent."
   },
   {
     "id": 9,
@@ -132,7 +132,7 @@
     "answerIndex": 1,
     "answer": "Adding accessibility too late",
     "shortExplanation": "Accessibility must be planned early, not added last.",
-    "explanation": "A major mistake is treating accessibility as an afterthought rather than building it in from the start. Problems with late accessibility:<br><br>• <strong>Much more expensI've to retrofit</strong>: Costs 5-10x more to fix after launch<br>• <strong>Often incomplete or poorly implemented</strong>: Rushed fixes miss edge cases<br>• <strong>May require major redesigns</strong>: Core architecture may not support accessibility<br>• <strong>Creates technical debt</strong>: Ongoing maintenance burden increases<br><br>Best practice: Include accessibility requirements in initial design specifications and test with assistI've technologies throughout development.<br><br>Example: A social media platform launches without keyboard navigation, then spends months and significan't budget retrofitting focus indicators and skip links after receiving accessibility complaints."
+    "explanation": "A major mistake is treating accessibility as an afterthought rather than building it in from the start. Problems with late accessibility:<br><br>• <strong>Much more expensive to retrofit</strong>: Costs 5-10x more to fix after launch<br>• <strong>Often incomplete or poorly implemented</strong>: Rushed fixes miss edge cases<br>• <strong>May require major redesigns</strong>: Core architecture may not support accessibility<br>• <strong>Creates technical debt</strong>: Ongoing maintenance burden increases<br><br>Best practice: Include accessibility requirements in initial design specifications and test with assistive technologies throughout development.<br><br>Example: A social media platform launches without keyboard navigation, then spends months and significan't budget retrofitting focus indicators and skip links after receiving accessibility complaints."
   },
   {
     "id": 10,
@@ -147,7 +147,7 @@
     "answerIndex": 3,
     "answer": "Profitability",
     "shortExplanation": "Profitability is a business metric, not usability property.",
-    "explanation": "Classic usability characteristics include:<br><br>• <strong>Utility</strong>: Provides needed functionality<br>• <strong>Safety</strong>: Error minimization and recovery<br>• <strong>Learnability</strong>: Easy to learn and remember<br>• <strong>Efficiency</strong>: Tasks completed with minimal effort<br>• <strong>EffectI'veness</strong>: System provides right functions for user goals<br>• <strong>Profitability</strong>: NOT a usability property—it's a business metric measuring financial performance<br><br>While good usability often leads to business success, profitability measures financial performance, not user experience quality. Usability focuses purely on how well users can interact with and accomplish goals using the system.<br><br>Example: An airline booking app can be highly usable (easy to search flights, clear seat selection) but unprofitable due to high operational costs or pricing strategy—usability and profit are separate concerns."
+    "explanation": "Classic usability characteristics include:<br><br>• <strong>Utility</strong>: Provides needed functionality<br>• <strong>Safety</strong>: Error minimization and recovery<br>• <strong>Learnability</strong>: Easy to learn and remember<br>• <strong>Efficiency</strong>: Tasks completed with minimal effort<br>• <strong>effectiveness</strong>: System provides right functions for user goals<br>• <strong>Profitability</strong>: NOT a usability property—it's a business metric measuring financial performance<br><br>While good usability often leads to business success, profitability measures financial performance, not user experience quality. Usability focuses purely on how well users can interact with and accomplish goals using the system.<br><br>Example: An airline booking app can be highly usable (easy to search flights, clear seat selection) but unprofitable due to high operational costs or pricing strategy—usability and profit are separate concerns."
   },
   {
     "id": 11,
@@ -157,17 +157,17 @@
       "System has many features",
       "UI is colorful",
       "Tasks require minimal effort",
-      "System is expensI've"
+      "System is expensive"
     ],
     "answerIndex": 2,
     "answer": "Tasks require minimal effort",
     "shortExplanation": "Efficiency means completing tasks with appropriate effort.",
-    "explanation": "Efficiency in usability means users can complete tasks with appropriate minimal effort, time, and steps. Efficient designs:<br><br>• <strong>Reduce unnecessary clicks or actions</strong>: Streamline workflows, remove redundant steps<br>• <strong>Provide shortcuts for expert users</strong>: Keyboard shortcuts, quick actions<br>• <strong>Minimize cognitI've load</strong>: don't make users remember information across screens<br>• <strong>Use clear navigation paths</strong>: Logical flow, obvious next steps<br>• <strong>Remember user preferences</strong>: Save settings, auto-fill forms<br><br>Example: Amazons1-Click Ordering lets returning customers purchase items with a single click, eliminating repeated form entries and reducing checkout from 5 steps to 1."
+    "explanation": "Efficiency in usability means users can complete tasks with appropriate minimal effort, time, and steps. Efficient designs:<br><br>• <strong>Reduce unnecessary clicks or actions</strong>: Streamline workflows, remove redundant steps<br>• <strong>Provide shortcuts for expert users</strong>: Keyboard shortcuts, quick actions<br>• <strong>Minimize cognitive load</strong>: don't make users remember information across screens<br>• <strong>Use clear navigation paths</strong>: Logical flow, obvious next steps<br>• <strong>Remember user preferences</strong>: Save settings, auto-fill forms<br><br>Example: Amazons1-Click Ordering lets returning customers purchase items with a single click, eliminating repeated form entries and reducing checkout from 5 steps to 1."
   },
   {
     "id": 12,
     "section": "5.3",
-    "question": "EffectI'veness means:",
+    "question": "effectiveness means:",
     "options": [
       "System provides the right functions",
       "System looks pretty",
@@ -176,8 +176,8 @@
     ],
     "answerIndex": 0,
     "answer": "System provides the right functions",
-    "shortExplanation": "EffectI'veness = supporting user goals with proper functionality.",
-    "explanation": "EffectI'veness means the system provides the right functions to support user goals. Key aspects:<br><br>• <strong>Does what users actually need</strong>: Features match real user requirements<br>• <strong>Supports complete task workflows</strong>: Users can accomplish end-to-end goals<br>• <strong>Provides accurate results</strong>: Output is correct and reliable<br>• <strong>Matches user mental models</strong>: System behavior aligns with user expectations<br>• <strong>Solves real problems</strong>: Addresses genuine user pain points<br><br>Example: Google Maps is effectI've because it provides essential navigation functions (turn-by-turn directions, real-time traffic, alternatI've routes) that help users actually reach their destinations successfully."
+    "shortExplanation": "effectiveness = supporting user goals with proper functionality.",
+    "explanation": "effectiveness means the system provides the right functions to support user goals. Key aspects:<br><br>• <strong>Does what users actually need</strong>: Features match real user requirements<br>• <strong>Supports complete task workflows</strong>: Users can accomplish end-to-end goals<br>• <strong>Provides accurate results</strong>: Output is correct and reliable<br>• <strong>Matches user mental models</strong>: System behavior aligns with user expectations<br>• <strong>Solves real problems</strong>: Addresses genuine user pain points<br><br>Example: Google Maps is effective because it provides essential navigation functions (turn-by-turn directions, real-time traffic, alternative routes) that help users actually reach their destinations successfully."
   },
   {
     "id": 13,
@@ -207,7 +207,7 @@
     "answerIndex": 2,
     "answer": "Difficulty turning goals into actions",
     "shortExplanation": "Gulf of Execution = mapping user goals to available actions.",
-    "explanation": "Normans Gulf of Execution describes the mental and physical effort required to translate what you want to do (your goal) into the specific actions the system requires. A wide gulf means users struggle to figure out how to accomplish their intentions. A narrow gulf makes the path from goal to action obvious and effortless.<br><br><strong>What creates a wide Gulf of Execution:</strong><br>• Hidden or unclear controls (can't find the right button)<br>• Non-obvious action sequences (don't know what to do first)<br>• Unfamiliar terminology or icons (don't understand what options mean)<br>• Complex multi-step procedures (goal requires too many actions)<br>• Lack of affordances (can't tell what's clickable/interactI've)<br><br><strong>How to bridge the gulf:</strong><br>• Make functions visible and discoverable<br>• Use clear, task-oriented labels (Send Message not Transmit)<br>• Provide affordances showing what's possible (buttons look pressable)<br>• Minimize steps between intention and completion<br>• Offer feedforward (show what will happen before you act)<br><br><strong>Example:</strong> A user wants to delete an old email (goal). In a poorly designed app, the delete function is buried: tap the email, tap three-dot menu, scroll down, tap More Options,tapDelete in a submenu—that's a wide Gulf of Execution requiring 5 actions and knowledge of hidden menus. Users think How do I delete this? and gI've up. In a well-designed app, swipe left on the email reveals a red Delete button—one intuitI've gesture, narrow gulf. The swipe affordance (visible when you start the gesture) and the red color (unI'versal deletion signal) bridge the gulf by making the path from goal (delete this) to action (swipe) obvious."
+    "explanation": "Normans Gulf of Execution describes the mental and physical effort required to translate what you want to do (your goal) into the specific actions the system requires. A wide gulf means users struggle to figure out how to accomplish their intentions. A narrow gulf makes the path from goal to action obvious and effortless.<br><br><strong>What creates a wide Gulf of Execution:</strong><br>• Hidden or unclear controls (can't find the right button)<br>• Non-obvious action sequences (don't know what to do first)<br>• Unfamiliar terminology or icons (don't understand what options mean)<br>• Complex multi-step procedures (goal requires too many actions)<br>• Lack of affordances (can't tell what's clickable/interactive)<br><br><strong>How to bridge the gulf:</strong><br>• Make functions visible and discoverable<br>• Use clear, task-oriented labels (Send Message not Transmit)<br>• Provide affordances showing what's possible (buttons look pressable)<br>• Minimize steps between intention and completion<br>• Offer feedforward (show what will happen before you act)<br><br><strong>Example:</strong> A user wants to delete an old email (goal). In a poorly designed app, the delete function is buried: tap the email, tap three-dot menu, scroll down, tap More Options,tapDelete in a submenu—that's a wide Gulf of Execution requiring 5 actions and knowledge of hidden menus. Users think How do I delete this? and give up. In a well-designed app, swipe left on the email reveals a red Delete button—one intuitive gesture, narrow gulf. The swipe affordance (visible when you start the gesture) and the red color (universal deletion signal) bridge the gulf by making the path from goal (delete this) to action (swipe) obvious."
   },
   {
     "id": 15,
@@ -229,7 +229,7 @@
     "section": "5.3",
     "question": "Affordances support usability by:",
     "options": [
-      "Including comprehensI've legal disclaimers",
+      "Including comprehensive legal disclaimers",
       "Indicating what interactions are possible",
       "Optimizing central processing unit speed",
       "Minimizing available functionality options"
@@ -242,9 +242,9 @@
   {
     "id": 17,
     "section": "5.3",
-    "question": "Feedforward gI'ves:",
+    "question": "Feedforward gives:",
     "options": [
-      "PredictI've cues before taking action",
+      "predictive cues before taking action",
       "Confirmation responses after taking action",
       "Promotional discount code information",
       "Critical security and privacy warnings"
@@ -257,9 +257,9 @@
   {
     "id": 18,
     "section": "5.3",
-    "question": "Feedback gI'ves:",
+    "question": "Feedback gives:",
     "options": [
-      "PredictI've guidance before taking any action",
+      "predictive guidance before taking any action",
       "Promotional content and marketing materials",
       "Confirmation of action results and outcomes",
       "Technical diagnostic logs for development"
@@ -272,7 +272,7 @@
   {
     "id": 19,
     "section": "5.3",
-    "question": "Value-sensitI've design focuses on:",
+    "question": "Value-sensitive design focuses on:",
     "options": [
       "Optimizing application performance and speed",
       "Creating minimalist user interface layouts",
@@ -282,7 +282,7 @@
     "answerIndex": 3,
     "answer": "Human values, ethics & usability",
     "shortExplanation": "It incorporates human values + usability + social impact.",
-    "explanation": "Value-sensitI've design integrates human values, ethics, and usability throughout the design process. It considers:<br><br>• <strong>Privacy and security</strong><br>• <strong>Trust and transparency</strong><br>• <strong>Fairness and equity</strong><br>• <strong>Autonomy and consent</strong><br>• <strong>Environmental impact</strong><br><br>Example: A mental health app using value-sensitI've design encrypts all therapy session notes, allows users to delete their data anytime, and clearly explains how information is used—prioritizing privacy and autonomy."
+    "explanation": "Value-sensitive design integrates human values, ethics, and usability throughout the design process. It considers:<br><br>• <strong>Privacy and security</strong><br>• <strong>Trust and transparency</strong><br>• <strong>Fairness and equity</strong><br>• <strong>Autonomy and consent</strong><br>• <strong>Environmental impact</strong><br><br>Example: A mental health app using value-sensitive design encrypts all therapy session notes, allows users to delete their data anytime, and clearly explains how information is used—prioritizing privacy and autonomy."
   },
   {
     "id": 20,
@@ -319,30 +319,30 @@
     "section": "5.4",
     "question": "Acceptability is mainly about:",
     "options": [
-      "How well technology fIt's into real life",
+      "How well technology fits into real life",
       "How fast system loads and performance response times",
       "How many icons exist in the interface design system",
       "How bright screen is and display luminosity settings"
     ],
     "answerIndex": 0,
-    "answer": "How well technology fIt's into real life",
+    "answer": "How well technology fits into real life",
     "shortExplanation": "Acceptability concerns cultural, political, social, economic fit.",
-    "explanation": "Acceptability concerns how well technology fIt's into users real lI'ves across multiple dimensions:<br><br>• <strong>Cultural acceptability</strong>: FIt's social norms and values<br>• <strong>Political acceptability</strong>: Trust, rights, fairness<br>• <strong>Social acceptability</strong>: Appropriate for social contexts<br>• <strong>Economic acceptability</strong>: Affordable, good value<br><br>A system can be accessible and usable but still fail if It's not acceptable to users in their real context.<br><br>Example: Google Glass failed partly due to social acceptability—people felt uncomfortable being recorded in public, making the technology socially unacceptable despite It's technical capabilities."
+    "explanation": "Acceptability concerns how well technology fits into users real lives across multiple dimensions:<br><br>• <strong>Cultural acceptability</strong>: fits social norms and values<br>• <strong>Political acceptability</strong>: Trust, rights, fairness<br>• <strong>Social acceptability</strong>: Appropriate for social contexts<br>• <strong>Economic acceptability</strong>: Affordable, good value<br><br>A system can be accessible and usable but still fail if It's not acceptable to users in their real context.<br><br>Example: Google Glass failed partly due to social acceptability—people felt uncomfortable being recorded in public, making the technology socially unacceptable despite It's technical capabilities."
   },
   {
     "id": 23,
     "section": "5.4",
     "question": "TAM (Technology Acceptance Model) includes:",
     "options": [
-      "Ease of use & EffectI'veness (later Trust)",
+      "Ease of use & effectiveness (later Trust)",
       "System cost only and pricing structure considerations",
       "Marketing channels and promotional distribution strategies",
       "File size limitations and storage capacity requirements"
     ],
     "answerIndex": 0,
-    "answer": "Ease of use & EffectI'veness (later Trust)",
+    "answer": "Ease of use & effectiveness (later Trust)",
     "shortExplanation": "TAM states adoption depends on ease of use, usefulness, and trust.",
-    "explanation": "The Technology Acceptance Model (TAM) predicts technology adoption based on user perceptions:<br><br>• <strong>PerceI'ved ease of use</strong>: How easy is it to use?<br>• <strong>PerceI'ved usefulness</strong>: Does it help achieve goals?<br>• <strong>Trust</strong> (added later): Is it reliable and secure?<br><br>TAM shows that even powerful technology fails if users perceI've it as difficult or not useful for their needs.<br><br>Example: Many people avoid using password managers because they perceI've them as complicated (low ease of use), even though experts know they're useful for security."
+    "explanation": "The Technology Acceptance Model (TAM) predicts technology adoption based on user perceptions:<br><br>• <strong>perceived ease of use</strong>: How easy is it to use?<br>• <strong>perceived usefulness</strong>: Does it help achieve goals?<br>• <strong>Trust</strong> (added later): Is it reliable and secure?<br><br>TAM shows that even powerful technology fails if users perceive it as difficult or not useful for their needs.<br><br>Example: Many people avoid using password managers because they perceive them as complicated (low ease of use), even though experts know they're useful for security."
   },
   {
     "id": 24,
@@ -372,7 +372,7 @@
     "answerIndex": 2,
     "answer": "Not using phones in cinema",
     "shortExplanation": "Cultural norms shape acceptable behavior.",
-    "explanation": "Cultural acceptability refers to whether technology use fIt's social norms and cultural expectations. Examples include:<br><br>• Not using phones during movies or meetings<br>• Wearing headphones in public spaces<br>• Respecting quiet zones on trains<br>• Photography restrictions in sacred spaces<br>• Different emoji meanings across cultures<br><br>Technology that violates cultural norms faces resistance regardless of technical quality."
+    "explanation": "Cultural acceptability refers to whether technology use fits social norms and cultural expectations. Examples include:<br><br>• Not using phones during movies or meetings<br>• Wearing headphones in public spaces<br>• Respecting quiet zones on trains<br>• Photography restrictions in sacred spaces<br>• Different emoji meanings across cultures<br><br>Technology that violates cultural norms faces resistance regardless of technical quality."
   },
   {
     "id": 26,
@@ -381,13 +381,13 @@
     "options": [
       "Provides value in users actual context",
       "Solves genuine problems users face daily",
-      "FIt's seamlessly into existing workflows",
+      "fits seamlessly into existing workflows",
       "Addresses real needs beyond novelty"
     ],
     "answerIndex": 0,
     "answer": "Value in real context",
     "shortExplanation": "Usefulness goes beyond usability: must matter in real life.",
-    "explanation": "Usefulness means technology provides genuine value in users real-world context, going beyond just usability:<br><br>• <strong>Solves actual user problems</strong>: Addresses real pain points, not imagined needs<br>• <strong>FIt's into existing workflows</strong>: Integrates seamlessly with how users already work<br>• <strong>Worth the time and effort to use</strong>: BenefIt's outweigh learning curve<br>• <strong>Provides tangible benefIt's</strong>: Measurable improvement in user outcomes<br>• <strong>Addresses real needs, not assumed ones</strong>: Based on user research, not designer assumptions<br><br>Example: A beautifully designed app (high usability) is not useful if it solves a problem users don't have."
+    "explanation": "Usefulness means technology provides genuine value in users real-world context, going beyond just usability:<br><br>• <strong>Solves actual user problems</strong>: Addresses real pain points, not imagined needs<br>• <strong>fits into existing workflows</strong>: Integrates seamlessly with how users already work<br>• <strong>Worth the time and effort to use</strong>: Benefits outweigh learning curve<br>• <strong>Provides tangible benefits</strong>: Measurable improvement in user outcomes<br>• <strong>Addresses real needs, not assumed ones</strong>: Based on user research, not designer assumptions<br><br>Example: A beautifully designed app (high usability) is not useful if it solves a problem users don't have."
   },
   {
     "id": 27,
@@ -401,13 +401,13 @@
     ],
     "answerIndex": 1,
     "answer": "Visibility, consistency, familiarity, affordance",
-    "shortExplanation": "Learnability supports intuitI've interaction via clarity and familiarity.",
-    "explanation": "The learnability principle emphasizes making systems easy to learn through:<br><br>• <strong>Visibility</strong>: Functions are discoverable and obvious<br>• <strong>Consistency</strong>: Similar things work similarly<br>• <strong>Familiarity</strong>: Uses known patterns and conventions<br>• <strong>Affordance</strong>: Shows what actions are possible<br><br>These principles work together to create intuitI've interfaces that users can understand with minimal training."
+    "shortExplanation": "Learnability supports intuitive interaction via clarity and familiarity.",
+    "explanation": "The learnability principle emphasizes making systems easy to learn through:<br><br>• <strong>Visibility</strong>: Functions are discoverable and obvious<br>• <strong>Consistency</strong>: Similar things work similarly<br>• <strong>Familiarity</strong>: Uses known patterns and conventions<br>• <strong>Affordance</strong>: Shows what actions are possible<br><br>These principles work together to create intuitive interfaces that users can understand with minimal training."
   },
   {
     "id": 28,
     "section": "5.5",
-    "question": "EffectI'veness principles include:",
+    "question": "effectiveness principles include:",
     "options": [
       "Navigation, control, feedback, recovery",
       "Only color theory and related design considerations",
@@ -416,8 +416,8 @@
     ],
     "answerIndex": 0,
     "answer": "Navigation, control, feedback, recovery",
-    "shortExplanation": "EffectI'veness ensures control, clarity and error recovery.",
-    "explanation": "EffectI'veness principles ensure users can accomplish goals successfully:<br><br>• <strong>Navigation</strong>: Clear paths to reach any function<br>• <strong>Control</strong>: Users direct actions, not the system<br>• <strong>Feedback</strong>: Immediate response to actions<br>• <strong>Recovery</strong>: Easy error correction with undo/redo<br><br>These principles focus on giving users power and clarity to work effectI'vely toward their goals."
+    "shortExplanation": "effectiveness ensures control, clarity and error recovery.",
+    "explanation": "effectiveness principles ensure users can accomplish goals successfully:<br><br>• <strong>Navigation</strong>: Clear paths to reach any function<br>• <strong>Control</strong>: Users direct actions, not the system<br>• <strong>Feedback</strong>: Immediate response to actions<br>• <strong>Recovery</strong>: Easy error correction with undo/redo<br><br>These principles focus on giving users power and clarity to work effectively toward their goals."
   },
   {
     "id": 29,
@@ -431,8 +431,8 @@
     ],
     "answerIndex": 1,
     "answer": "Not all users are the same",
-    "shortExplanation": "Accommodation supports dI'verse abilities and preferences.",
-    "explanation": "Accommodation recognizes that users have dI'verse abilities, preferences, and needs. Good design accommodates this through:<br><br>• <strong>Customization options</strong>: Adjustable font size, color contrast, layout density<br>• <strong>Multiple ways to complete tasks</strong>: Keyboard, mouse, touch, voice options<br>• <strong>Support for different skill levels</strong>: Simple mode for beginners, advanced for experts<br>• <strong>Accessibility features built-in</strong>: Screen reader support, captions, alternatI'ves<br>• <strong>Flexible interaction methods</strong>: Adapts to user capabilities and preferences<br><br>Example: Offering both keyboard shortcuts (for experts) and menu navigation (for beginners) accommodates different user types."
+    "shortExplanation": "Accommodation supports diverse abilities and preferences.",
+    "explanation": "Accommodation recognizes that users have diverse abilities, preferences, and needs. Good design accommodates this through:<br><br>• <strong>Customization options</strong>: Adjustable font size, color contrast, layout density<br>• <strong>Multiple ways to complete tasks</strong>: Keyboard, mouse, touch, voice options<br>• <strong>Support for different skill levels</strong>: Simple mode for beginners, advanced for experts<br>• <strong>Accessibility features built-in</strong>: Screen reader support, captions, alternatives<br>• <strong>Flexible interaction methods</strong>: Adapts to user capabilities and preferences<br><br>Example: Offering both keyboard shortcuts (for experts) and menu navigation (for beginners) accommodates different user types."
   },
   {
     "id": 30,
@@ -447,6 +447,6 @@
     "answerIndex": 3,
     "answer": "User control & trust",
     "shortExplanation": "Dark patterns intentionally mislead users, violating usability & trust.",
-    "explanation": "Dark patterns are deceptI've design practices that violate user control and trust. Common examples include:<br><br>• <strong>Hidden costs revealed at checkout</strong>: Fees appear only at final step<br>• <strong>Difficult unsubscribe processes</strong>: Easy to sign up, hard to cancel<br>• <strong>Pre-checked boxes for unwanted options</strong>: Opt-out instead of opt-in<br>• <strong>Fake urgency</strong>: Only 2 left! pressure tactics without real scarcity<br>• <strong>Misleading button labels</strong>: No thanks, I don't want to save money guilt trips<br><br>Dark patterns prioritize business goals over user needs, damaging trust and often violating consumer protection laws. Ethical design puts user interests first."
+    "explanation": "Dark patterns are deceptive design practices that violate user control and trust. Common examples include:<br><br>• <strong>Hidden costs revealed at checkout</strong>: Fees appear only at final step<br>• <strong>Difficult unsubscribe processes</strong>: Easy to sign up, hard to cancel<br>• <strong>Pre-checked boxes for unwanted options</strong>: Opt-out instead of opt-in<br>• <strong>Fake urgency</strong>: Only 2 left! pressure tactics without real scarcity<br>• <strong>Misleading button labels</strong>: No thanks, I don't want to save money guilt trips<br><br>Dark patterns prioritize business goals over user needs, damaging trust and often violating consumer protection laws. Ethical design puts user interests first."
   }
 ]

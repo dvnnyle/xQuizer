@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": 1,
     "section": "8.1",
@@ -50,7 +50,7 @@
     "question": "Low-fidelity prototypes are best described as:",
     "options": [
       "Quick, rough representations used early",
-      "Fully interactI've final systems",
+      "Fully interactive final systems",
       "Final UI layouts ready for development",
       "Marketing materials"
     ],
@@ -109,15 +109,15 @@
     "section": "8.3",
     "question": "Sketches are particularly useful because they:",
     "options": [
-      "Are fast, disposable and encourage dI'vergence",
+      "Are fast, disposable and encourage divergence",
       "Require high technical skill and expertise",
       "Lock the design early in development process",
       "Are meant to look polished and professional"
     ],
     "answerIndex": 0,
-    "answer": "Are fast, disposable and encourage dI'vergence",
-    "shortExplanation": "Sketches are fast, disposable, and encourage creatI've exploration.",
-    "explanation": "Sketches support early creativity and exploration without commitment.<br><br><strong>Example:</strong> In 20 minutes, a designer sketches 8 different homepage layouts on napkins—quickly exploring dI'verse ideas without worrying about perfection or commitment."
+    "answer": "Are fast, disposable and encourage divergence",
+    "shortExplanation": "Sketches are fast, disposable, and encourage creative exploration.",
+    "explanation": "Sketches support early creativity and exploration without commitment.<br><br><strong>Example:</strong> In 20 minutes, a designer sketches 8 different homepage layouts on napkins—quickly exploring diverse ideas without worrying about perfection or commitment."
   },
   {
     "id": 9,
@@ -146,7 +146,7 @@
     ],
     "answerIndex": 0,
     "answer": "Tell stories of users interacting in context",
-    "shortExplanation": "Scenarios are narratI've stories embedding people, activities, and context.",
+    "shortExplanation": "Scenarios are narrative stories embedding people, activities, and context.",
     "explanation": "Scenarios embed people, activities and context to frame design thinking.<br><br><strong>Example:</strong> Maria, a busy nurse, checks her schedule during her 15-minute break in a noisy hospital cafeteria on her phone with low battery—a scenario grounding design in real context."
   },
   {
@@ -177,7 +177,7 @@
     "answerIndex": 0,
     "answer": "They focus attention on relevant aspects",
     "shortExplanation": "Good representations highlight essential elements and direct attention.",
-    "explanation": "Good representations highlight essential elements, directing attention effectI'vely.<br><br><strong>Example:</strong> A grayscale wireframe focuses attention on layout and hierarchy, deliberately hiding color debates. Adding color would distract from structure decisions."
+    "explanation": "Good representations highlight essential elements, directing attention effectively.<br><br><strong>Example:</strong> A grayscale wireframe focuses attention on layout and hierarchy, deliberately hiding color debates. Adding color would distract from structure decisions."
   },
   {
     "id": 13,
@@ -222,7 +222,7 @@
     "answerIndex": 0,
     "answer": "The medium shapes what can be expressed",
     "shortExplanation": "The medium (paper, digital tools) shapes what can be expressed.",
-    "explanation": "Different materials (paper, digital tools, whiteboards) change what is easy or hard to express.<br><br><strong>Example:</strong> Paper makes rough sketching easy but animations impossible. Figma makes interactI've flows easy but collaboratI've whiteboarding harder. Each medium affords different explorations."
+    "explanation": "Different materials (paper, digital tools, whiteboards) change what is easy or hard to express.<br><br><strong>Example:</strong> Paper makes rough sketching easy but animations impossible. Figma makes interactive flows easy but collaborative whiteboarding harder. Each medium affords different explorations."
   },
   {
     "id": 16,
@@ -236,8 +236,8 @@
     ],
     "answerIndex": 0,
     "answer": "High-fidelity digital envisionment",
-    "shortExplanation": "Figma and Adobe XD create interactI've, high-fidelity visual prototypes.",
-    "explanation": "These tools allow interactI've, visual, high-fidelity mockups of interfaces.<br><br><strong>Example:</strong> In Figma, designers create a clickable prototype with real fonts, images, buttons, and page transitions—looking and behaving almost like the final product."
+    "shortExplanation": "Figma and Adobe XD create interactive, high-fidelity visual prototypes.",
+    "explanation": "These tools allow interactive, visual, high-fidelity mockups of interfaces.<br><br><strong>Example:</strong> In Figma, designers create a clickable prototype with real fonts, images, buttons, and page transitions—looking and behaving almost like the final product."
   },
   {
     "id": 17,
@@ -251,7 +251,7 @@
     ],
     "answerIndex": 0,
     "answer": "Rapid ideation and participatory design",
-    "shortExplanation": "Paper prototypes enable fast ideation and collaboratI've participation.",
+    "shortExplanation": "Paper prototypes enable fast ideation and collaborative participation.",
     "explanation": "Paper mockups invite collaboration and quick changes.<br><br><strong>Example:</strong> A team sIt's with users, drawing interface elements on index cards. Users rearrange cards, suggest changes, and co-create the design—paper makes collaboration tangible and accessible."
   },
   {
@@ -267,7 +267,7 @@
     "answerIndex": 0,
     "answer": "Making ideas concrete enough to discuss",
     "shortExplanation": "Envisionment makes ideas concrete, enabling shared understanding with clients.",
-    "explanation": "Representations enable shared understanding and alignment with stakeholders.<br><br><strong>Example:</strong> Instead of describing a dashboard verbally, showing a wireframe lets clients see exactly what you mean, point to elements, and gI've specific feedback."
+    "explanation": "Representations enable shared understanding and alignment with stakeholders.<br><br><strong>Example:</strong> Instead of describing a dashboard verbally, showing a wireframe lets clients see exactly what you mean, point to elements, and give specific feedback."
   },
   {
     "id": 19,
@@ -311,7 +311,7 @@
     ],
     "answerIndex": 0,
     "answer": "Providing concrete artefacts to critique and refine",
-    "shortExplanation": "Concrete artifacts enable critique, evaluation, and iteratI've refinement.",
+    "shortExplanation": "Concrete artifacts enable critique, evaluation, and iterative refinement.",
     "explanation": "Representation encourages evaluation, critique and refinement.<br><br><strong>Example:</strong> After testing a prototype, users identify confusing navigation. The team revises the design, tests again, finds new issues, iterates—envisionment makes this cycle tangible."
   },
   {
@@ -356,7 +356,7 @@
     ],
     "answerIndex": 0,
     "answer": "Test ideas before committing resources",
-    "shortExplanation": "Prototypes test usability and ideas before expensI've development.",
+    "shortExplanation": "Prototypes test usability and ideas before expensive development.",
     "explanation": "Prototypes help evaluate usability, flow and understanding early.<br><br><strong>Example:</strong> Testing a clickable prototype reveals users can't find the save button. Fixing it in the prototype takes 5 minutes; fixing it in code would take days—early evaluation saves resources."
   },
   {
@@ -387,6 +387,6 @@
     "answerIndex": 0,
     "answer": "It reduces the cost of changes",
     "shortExplanation": "Early envisionment catches issues when changes are cheap.",
-    "explanation": "Early visualisation and critique reduce cost by catching issues early.<br><br><strong>Example:</strong> Discovering a fundamental navigation problem in a sketch costs nothing to fix. Finding it after coding takes weeks to repair—envisionment prevents expensI've late-stage changes."
+    "explanation": "Early visualisation and critique reduce cost by catching issues early.<br><br><strong>Example:</strong> Discovering a fundamental navigation problem in a sketch costs nothing to fix. Finding it after coding takes weeks to repair—envisionment prevents expensive late-stage changes."
   }
 ]

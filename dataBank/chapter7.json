@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": 1,
     "question": "In Chapter 7, how is a requirement defined?",
@@ -24,7 +24,7 @@
     ],
     "answerIndex": 2,
     "answer": "To understand people, activities, contexts and generate requirements",
-    "explanation": "Understanding is about researching people, activities and contexts (PACT) to generate grounded requirements for the system.<br><br><strong>Example:</strong> A team building a delI'very app doesn't jump to wireframes. They first observe drI'vers, interview customers, map delI'very contexts (traffic, weather, rural areas), then generate requirements like offline route caching based on real needs.",
+    "explanation": "Understanding is about researching people, activities and contexts (PACT) to generate grounded requirements for the system.<br><br><strong>Example:</strong> A team building a delivery app doesn't jump to wireframes. They first observe drivers, interview customers, map delivery contexts (traffic, weather, rural areas), then generate requirements like offline route caching based on real needs.",
     "shortExplanation": "Understanding means researching real people and contexts to generate grounded requirements."
   },
   {
@@ -145,7 +145,7 @@
     "options": [
       "Collecting requirements that exist ready-made",
       "Co-creating requirements with stakeholders",
-      "Generating creatI've new requirements",
+      "Generating creative new requirements",
       "Formally engineering requirements with traceability"
     ],
     "answerIndex": 0,
@@ -155,7 +155,7 @@
   },
   {
     "id": 12,
-    "question": "Which term suggests a more creatI've activity that may de-emphasize existing practice?",
+    "question": "Which term suggests a more creative activity that may de-emphasize existing practice?",
     "options": [
       "Requirements engineering",
       "Requirements elicitation",
@@ -178,8 +178,8 @@
     ],
     "answerIndex": 1,
     "answer": "Requirements elicitation",
-    "explanation": "Requirements elicitation emphasises interactI've conversations and discovery with stakeholders.<br><br><strong>Example:</strong> Elicitation means interviewing users, observing workflows, facilitating workshops. It's collaboratI've: Tell me about your typical day, not just handing out surveys.",
-    "shortExplanation": "Elicitation emphasizes interactI've discovery with stakeholders."
+    "explanation": "Requirements elicitation emphasises interactive conversations and discovery with stakeholders.<br><br><strong>Example:</strong> Elicitation means interviewing users, observing workflows, facilitating workshops. It's collaborative: Tell me about your typical day, not just handing out surveys.",
+    "shortExplanation": "Elicitation emphasizes interactive discovery with stakeholders."
   },
   {
     "id": 14,
@@ -228,12 +228,12 @@
     "question": "Why do developers need a clear requirements specification?",
     "options": [
       "So they can avoid testing",
-      "So they can cost and manage the project effectI'vely",
+      "So they can cost and manage the project effectively",
       "So they never have to talk to users",
       "So they can pick their favourite tools"
     ],
     "answerIndex": 1,
-    "answer": "So they can cost and manage the project effectI'vely",
+    "answer": "So they can cost and manage the project effectively",
     "explanation": "Developers use requirements to estimate effort, cost, scope and to manage the development process.<br><br><strong>Example:</strong> Requirement: Support 50,000 concurrent users. Developers estimate: need load balancers, caching, database sharding—3 months and $100k. Clear requirements enable accurate planning.",
     "shortExplanation": "Developers use specs to estimate effort, cost, and manage scope."
   },
@@ -304,7 +304,7 @@
     ],
     "answerIndex": 1,
     "answer": "Prioritize requirements by importance",
-    "explanation": "MoSCoW is a prioritization technique that classifies requirements into Must, Should, Could, and Won—t (this time).<br><br><strong>Example:</strong> Online store: Must (add to cart, checkout), Should (wish lists, reviews), Could (gift wrapping), won't this time (lI've chat—defer to v2). Priorities guide release planning.",
+    "explanation": "MoSCoW is a prioritization technique that classifies requirements into Must, Should, Could, and Won—t (this time).<br><br><strong>Example:</strong> Online store: Must (add to cart, checkout), Should (wish lists, reviews), Could (gift wrapping), won't this time (live chat—defer to v2). Priorities guide release planning.",
     "shortExplanation": "MoSCoW categorizes requirements by importance: Must, Should, Could, won't."
   },
   {
@@ -332,7 +332,7 @@
     ],
     "answerIndex": 1,
     "answer": "Requirements that would be important if time/resources allow",
-    "explanation": "Should have items are important but not absolutely essential to delI'ver a usable system in the current release.<br><br><strong>Example:</strong> A banking app should have budgeting tools and spending insights. Important features, but the app works without them. If time/budget tight, these can slip to v2.",
+    "explanation": "Should have items are important but not absolutely essential to deliver a usable system in the current release.<br><br><strong>Example:</strong> A banking app should have budgeting tools and spending insights. Important features, but the app works without them. If time/budget tight, these can slip to v2.",
     "shortExplanation": "Should-haves are important but not critical for the first release."
   },
   {
@@ -374,7 +374,7 @@
     ],
     "answerIndex": 2,
     "answer": "Must-have items define the minimum viable product (MVP)",
-    "explanation": "In agile, the set of Must have requirements often defines the minimum viable product for a release.<br><br><strong>Example:</strong> Building a ride-share app MVP: Must (request ride, track drI'ver, pay). Should (scheduled rides, favorites). Could (ride splitting). won't (loyalty program). MVP ships with musts only.",
+    "explanation": "In agile, the set of Must have requirements often defines the minimum viable product for a release.<br><br><strong>Example:</strong> Building a ride-share app MVP: Must (request ride, track driver, pay). Should (scheduled rides, favorites). Could (ride splitting). won't (loyalty program). MVP ships with musts only.",
     "shortExplanation": "In agile, Must-haves define the minimum viable product (MVP)."
   },
   {
@@ -388,8 +388,8 @@
     ],
     "answerIndex": 2,
     "answer": "Because new requirements emerge as designs are created and evaluated",
-    "explanation": "As concepts are designed and evaluated, new requirements appear and existing ones are refined • making the process iteratI've.<br><br><strong>Example:</strong> You draft requirements, sketch a design, prototype it, test with users. Testing reveals users need offline mode (new requirement). You refine requirements, redesign, test again. It's a cycle, not a line.",
-    "shortExplanation": "Requirements, design, prototyping, and testing happen iteratI'vely, informing each other."
+    "explanation": "As concepts are designed and evaluated, new requirements appear and existing ones are refined • making the process iterative.<br><br><strong>Example:</strong> You draft requirements, sketch a design, prototype it, test with users. Testing reveals users need offline mode (new requirement). You refine requirements, redesign, test again. It's a cycle, not a line.",
+    "shortExplanation": "Requirements, design, prototyping, and testing happen iteratively, informing each other."
   },
   {
     "id": 29,
@@ -416,7 +416,7 @@
     ],
     "answerIndex": 2,
     "answer": "Understanding People, Activities, Contexts and Technologies feeds into generating good requirements",
-    "explanation": "By analysing People, Activities, Contexts and Technologies, designers can derI've grounded, realistic requirements.<br><br><strong>Example:</strong> Analyzing a gym app with PACT: People (varied fitness levels), Activities (track workouts, log meals), Contexts (gym, home, outdoors), Technologies (phone, wearables). This leads to requirements like wearable integration and offline workout logging.",
+    "explanation": "By analysing People, Activities, Contexts and Technologies, designers can derive grounded, realistic requirements.<br><br><strong>Example:</strong> Analyzing a gym app with PACT: People (varied fitness levels), Activities (track workouts, log meals), Contexts (gym, home, outdoors), Technologies (phone, wearables). This leads to requirements like wearable integration and offline workout logging.",
     "shortExplanation": "PACT analysis of People, Activities, Contexts, Technologies informs requirements."
   }
 ]

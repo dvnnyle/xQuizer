@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": 1,
     "section": "10.1",
@@ -20,14 +20,14 @@
     "question": "Which of the following is NOT a typical question evaluation asks?",
     "options": [
       "Is it learnable?",
-      "Is it effectI've?",
+      "Is it effective?",
       "Is it accommodating to different people?",
       "What technology framework is used?"
     ],
     "answerIndex": 3,
     "answer": "What technology framework is used?",
     "shortExplanation": "Evaluation focuses on usability, not technical implementation details.",
-    "explanation": "Evaluation cares about learnability, effectI'veness, accommodation and fitness for purpose, not about which implementation framework is used.<br><br><strong>Example:</strong> Evaluators test whether elderly users can successfully book appointments (usability), not whether the app uses React or Vue (technical implementation choice)."
+    "explanation": "Evaluation cares about learnability, effectiveness, accommodation and fitness for purpose, not about which implementation framework is used.<br><br><strong>Example:</strong> Evaluators test whether elderly users can successfully book appointments (usability), not whether the app uses React or Vue (technical implementation choice)."
   },
   {
     "id": 3,
@@ -36,13 +36,13 @@
     "options": [
       "Because it is done once at the very end of development",
       "Because only managers and stakeholders perform evaluation",
-      "Because it is done throughout the whole process and drI'ves iteration",
+      "Because it is done throughout the whole process and drives iteration",
       "Because it completely replaces the need for upfront design"
     ],
     "answerIndex": 2,
-    "answer": "Because it is done throughout the whole process and drI'ves iteration",
-    "shortExplanation": "Evaluation drI'ves iteration and improvement throughout the design process.",
-    "explanation": "Evaluation happens early, midway and late, and it drI'ves iteration and improvement across the whole human-centred design process.<br><br><strong>Example:</strong> Slack evaluates constantly: early sketches with employees, mid-development prototypes with beta users, and lI've metrics after launch—continuous evaluation drI'ves ongoing improvements."
+    "answer": "Because it is done throughout the whole process and drives iteration",
+    "shortExplanation": "Evaluation drives iteration and improvement throughout the design process.",
+    "explanation": "Evaluation happens early, midway and late, and it drives iteration and improvement across the whole human-centred design process.<br><br><strong>Example:</strong> Slack evaluates constantly: early sketches with employees, mid-development prototypes with beta users, and live metrics after launch—continuous evaluation drives ongoing improvements."
   },
   {
     "id": 4,
@@ -126,7 +126,7 @@
     ],
     "answerIndex": 1,
     "answer": "They show what people do, but not why",
-    "explanation": "Analytics reveal what users do at scale but cannot explain motivations or emotions, so they must be combined with qualitatI've methods.<br><br><strong>Example:</strong> Analytics show 80% of users abandon the sign-up form at step 3, but don't explain why. User interviews reveal the password requirements are confusing—analytics shows what, interviews explain why."
+    "explanation": "Analytics reveal what users do at scale but cannot explain motivations or emotions, so they must be combined with qualitative methods.<br><br><strong>Example:</strong> Analytics show 80% of users abandon the sign-up form at step 3, but don't explain why. User interviews reveal the password requirements are confusing—analytics shows what, interviews explain why."
   },
   {
     "id": 10,
@@ -203,7 +203,7 @@
     "section": "10.3",
     "question": "Which is a key weakness of expert evaluation?",
     "options": [
-      "It is too slow and expensI've and implementation details",
+      "It is too slow and expensive and implementation details",
       "It always requires analytics data for optimal results",
       "It cannot be used with prototypes for optimal results",
       "Experts are not real users and may miss emotional or contextual issues"
@@ -238,12 +238,12 @@
     ],
     "answerIndex": 2,
     "answer": "Task success rate",
-    "explanation": "Usability tests often record task success, time on task, errors and user satisfaction to assess effectI'veness and efficiency.<br><br><strong>Example:</strong> Testing a recipe app: 8 out of 10 users successfully save a recipe (80% success rate), average time is 45 seconds, 3 users make errors clicking the wrong icon before succeeding."
+    "explanation": "Usability tests often record task success, time on task, errors and user satisfaction to assess effectiveness and efficiency.<br><br><strong>Example:</strong> Testing a recipe app: 8 out of 10 users successfully save a recipe (80% success rate), average time is 45 seconds, 3 users make errors clicking the wrong icon before succeeding."
   },
   {
     "id": 18,
     "section": "10.4",
-    "question": "Why is recruiting representatI've participants important?",
+    "question": "Why is recruiting representative participants important?",
     "options": [
       "Any person can reveal all problems regardless of background or expertise level",
       "Only experts can participate effectively in meaningful usability testing sessions",
@@ -313,7 +313,7 @@
   {
     "id": 23,
     "section": "10.5",
-    "question": "Which of the following is a common quantitatI've metric to track in evaluation?",
+    "question": "Which of the following is a common quantitative metric to track in evaluation?",
     "options": [
       "Number of design tools used",
       "Team size",
@@ -346,7 +346,7 @@
       "Listing all issues in random order",
       "Hiding problems to keep morale high",
       "Prioritising issues by severity and suggesting improvements",
-      "Only reporting positI've findings"
+      "Only reporting positive findings"
     ],
     "answerIndex": 2,
     "answer": "Prioritising issues by severity and suggesting improvements",
@@ -378,7 +378,7 @@
     ],
     "answerIndex": 1,
     "answer": "How realistic a prototype is in look and behaviour",
-    "explanation": "Fidelity is the degree of realism of a prototype; low-fidelity sketches cannot reveal timing or animations, while high-fidelity prototypes can.<br><br><strong>Example:</strong> Low-fidelity: Paper sketches show layout but not button clicks. High-fidelity: InteractI've Figma prototype with working buttons, animations, and realistic timing—allows testing actual interactions."
+    "explanation": "Fidelity is the degree of realism of a prototype; low-fidelity sketches cannot reveal timing or animations, while high-fidelity prototypes can.<br><br><strong>Example:</strong> Low-fidelity: Paper sketches show layout but not button clicks. High-fidelity: Interactive Figma prototype with working buttons, animations, and realistic timing—allows testing actual interactions."
   },
   {
     "id": 28,
@@ -420,6 +420,6 @@
     ],
     "answerIndex": 3,
     "answer": "Different methods have complementary strengths and weaknesses",
-    "explanation": "Expert reviews, user testing and analytics each contribute different insights; using them together gI'ves a stronger picture of UX.<br><br><strong>Example:</strong> Experts identify that a button violates consistency heuristics. Analytics show 70% of users click it anyway. User tests reveal they click it but feel confused—three methods, three complementary insights."
+    "explanation": "Expert reviews, user testing and analytics each contribute different insights; using them together gives a stronger picture of UX.<br><br><strong>Example:</strong> Experts identify that a button violates consistency heuristics. Analytics show 70% of users click it anyway. User tests reveal they click it but feel confused—three methods, three complementary insights."
   }
 ]

@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": 1,
     "section": "6.1",
@@ -7,12 +7,12 @@
       "From focusing only on efficiency to also designing for experience and emotion",
       "From desktop computing platforms to mobile device interfaces and touch interactions",
       "From user research methodologies to pure aesthetics and visual design decisions",
-      "From qualitatI've methods and interviews to only data analytics and metrics tracking"
+      "From qualitative methods and interviews to only data analytics and metrics tracking"
     ],
     "answerIndex": 0,
     "answer": "From focusing only on efficiency to also designing for experience and emotion",
     "shortExplanation": "Experience design goes beyond usability to include emotion, pleasure, and meaning.",
-    "explanation": "Chapter 6 explains a move beyond usability (efficiency, effectI'veness) towards experience design, which includes emotion, pleasure, identity and meaning.<br><br><strong>Example:</strong> Traditional design asks Can users complete checkout quickly?Experience design also asksDo users feel confident and delighted while shopping? Does the brand resonate with their identity?"
+    "explanation": "Chapter 6 explains a move beyond usability (efficiency, effectiveness) towards experience design, which includes emotion, pleasure, identity and meaning.<br><br><strong>Example:</strong> Traditional design asks Can users complete checkout quickly?Experience design also asksDo users feel confident and delighted while shopping? Does the brand resonate with their identity?"
   },
   {
     "id": 2,
@@ -42,7 +42,7 @@
     "answerIndex": 3,
     "answer": "Designers can only set up the conditions for experiences to emerge",
     "shortExplanation": "Experiences are personal designers create conditions, people construct their own experiences.",
-    "explanation": "Benyon emphasises that experiences are personal and interpretI've; designers set up environments, interactions and cues, but people construct their own experiences.<br><br><strong>Example:</strong> A designer creates a meditation app with calming sounds and gentle animations, but one user finds it relaxing while another finds it boring—the designer sets conditions, but experiences vary."
+    "explanation": "Benyon emphasises that experiences are personal and interpretive; designers set up environments, interactions and cues, but people construct their own experiences.<br><br><strong>Example:</strong> A designer creates a meditation app with calming sounds and gentle animations, but one user finds it relaxing while another finds it boring—the designer sets conditions, but experiences vary."
   },
   {
     "id": 4,
@@ -56,8 +56,8 @@
     ],
     "answerIndex": 3,
     "answer": "Don Norman",
-    "shortExplanation": "Norman shows that aesthetics influence perceI'ved usability—beautiful things seem easier to use.",
-    "explanation": "Don Norman (2004) argues that attractI've things can seem easier to use and that emotion and usability are closely linked.<br><br><strong>Example:</strong> Two apps with identical functionality—one has a sleek, modern design and the other looks dated. Users rate the attractI've one as easier to use, even when both perform identically."
+    "shortExplanation": "Norman shows that aesthetics influence perceived usability—beautiful things seem easier to use.",
+    "explanation": "Don Norman (2004) argues that attractive things can seem easier to use and that emotion and usability are closely linked.<br><br><strong>Example:</strong> Two apps with identical functionality—one has a sleek, modern design and the other looks dated. Users rate the attractive one as easier to use, even when both perform identically."
   },
   {
     "id": 5,
@@ -81,13 +81,13 @@
     "options": [
       "Financial commitment to a product through subscription or purchase decisions",
       "Legal contracts and binding agreements established with service users",
-      "Emotional, cognitI've and physical involvement in an activity",
+      "Emotional, cognitive and physical involvement in an activity",
       "Download counts and installation metrics tracked in mobile app stores"
     ],
     "answerIndex": 2,
-    "answer": "Emotional, cognitI've and physical involvement in an activity",
+    "answer": "Emotional, cognitive and physical involvement in an activity",
     "shortExplanation": "Engagement is about absorption, focus, and involvement during interaction.",
-    "explanation": "Engagement is about how absorbed, focused and involved people feel when interacting with a system.<br><br><strong>Example:</strong> A user playing a puzzle game loses track of time, concentrates deeply on solving challenges, and taps the screen rapidly—showing high emotional, cognitI've, and physical engagement."
+    "explanation": "Engagement is about how absorbed, focused and involved people feel when interacting with a system.<br><br><strong>Example:</strong> A user playing a puzzle game loses track of time, concentrates deeply on solving challenges, and taps the screen rapidly—showing high emotional, cognitive, and physical engagement."
   },
   {
     "id": 7,
@@ -111,7 +111,7 @@
     "options": [
       "Challenge matches their skills—not too easy, not too hard",
       "They are multitasking continuously across multiple activities",
-      "They receI've constant external rewards and incentives",
+      "They receive constant external rewards and incentives",
       "They have no clear goals or objectives to accomplish"
     ],
     "answerIndex": 0,
@@ -125,7 +125,7 @@
     "question": "Which of Shedroffs dimensions of engagement is about the experience feeling authentic to who the user is or wants to be?",
     "options": [
       "Adaptivity",
-      "NarratI've",
+      "narrative",
       "Identity",
       "Immersion"
     ],
@@ -141,8 +141,8 @@
     "options": [
       "Adaptivity",
       "Flow",
-      "NarratI've",
-      "ReflectI've"
+      "narrative",
+      "reflective"
     ],
     "answerIndex": 0,
     "answer": "Adaptivity",
@@ -152,17 +152,17 @@
   {
     "id": 11,
     "section": "6.2",
-    "question": "NarratI've as a dimension of engagement refers to:",
+    "question": "narrative as a dimension of engagement refers to:",
     "options": [
       "The number of screens in an app",
       "Legal text in terms and conditions",
       "Only the visuals used in branding",
-      "A sense of story or progression that gI'ves meaning to actions"
+      "A sense of story or progression that gives meaning to actions"
     ],
     "answerIndex": 3,
-    "answer": "A sense of story or progression that gI'ves meaning to actions",
-    "shortExplanation": "NarratI've creates a story-like journey, showing progress and meaning.",
-    "explanation": "NarratI've provides a story-like structure or journey, helping users see progress and meaning in their activities.<br><br><strong>Example:</strong> Duolingo creates a narratI've journey through language learning—users unlock levels, follow a path from beginner to fluent, and complete chapters, making practice feel like progressing through a story."
+    "answer": "A sense of story or progression that gives meaning to actions",
+    "shortExplanation": "narrative creates a story-like journey, showing progress and meaning.",
+    "explanation": "narrative provides a story-like structure or journey, helping users see progress and meaning in their activities.<br><br><strong>Example:</strong> Duolingo creates a narrative journey through language learning—users unlock levels, follow a path from beginner to fluent, and complete chapters, making practice feel like progressing through a story."
   },
   {
     "id": 12,
@@ -320,14 +320,14 @@
     "question": "Which of Don Normans three levels deals with the immediate sensory reaction to a products appearance?",
     "options": [
       "Behavioural level",
-      "ReflectI've level",
+      "reflective level",
       "Visceral level",
       "Pragmatic level"
     ],
     "answerIndex": 2,
     "answer": "Visceral level",
     "shortExplanation": "Visceral level is immediate sensory reaction—first impressions and gut feelings.",
-    "explanation": "The visceral level is about first impressions and gut reactions to look and feel.<br><br><strong>Example:</strong> Opening a beautifully designed app with vibrant colors and smooth animations creates an instant positI've visceral response—you immediately feel it looks professional before even using it."
+    "explanation": "The visceral level is about first impressions and gut reactions to look and feel.<br><br><strong>Example:</strong> Opening a beautifully designed app with vibrant colors and smooth animations creates an instant positive visceral response—you immediately feel it looks professional before even using it."
   },
   {
     "id": 23,
@@ -342,7 +342,7 @@
     "answerIndex": 3,
     "answer": "Usability, control and how well the product works in use",
     "shortExplanation": "Behavioral level is about usability, interaction quality, and feeling in control.",
-    "explanation": "Behavioural design is about interaction quality: smoothness, clarity of feedback and feeling in control.<br><br><strong>Example:</strong> Swiping to delete an email feels smooth and responsI've, with clear visual feedback—this behavioral-level design makes interaction feel natural and controllable."
+    "explanation": "Behavioural design is about interaction quality: smoothness, clarity of feedback and feeling in control.<br><br><strong>Example:</strong> Swiping to delete an email feels smooth and responsive, with clear visual feedback—this behavioral-level design makes interaction feel natural and controllable."
   },
   {
     "id": 24,
@@ -357,7 +357,7 @@
     "answerIndex": 0,
     "answer": "Functionality and usefulness",
     "shortExplanation": "Pragmatic qualities are about functionality and achieving goals efficiently.",
-    "explanation": "Pragmatic qualities concern how well a product helps users achieve goals efficiently and effectI'vely.<br><br><strong>Example:</strong> Google Search has high pragmatic quality—it reliably finds information quickly, helping users accomplish their task of finding answers with minimal effort."
+    "explanation": "Pragmatic qualities concern how well a product helps users achieve goals efficiently and effectively.<br><br><strong>Example:</strong> Google Search has high pragmatic quality—it reliably finds information quickly, helping users accomplish their task of finding answers with minimal effort."
   },
   {
     "id": 25,
@@ -394,15 +394,15 @@
     "section": "6.4",
     "question": "What does the aesthetic—usability effect suggest?",
     "options": [
-      "Beautiful interfaces are perceI'ved as easier to use",
+      "Beautiful interfaces are perceived as easier to use",
       "Usability has no relation to aesthetics",
       "Only ugly interfaces are trusted",
       "Aesthetic choices never affect user judgement"
     ],
     "answerIndex": 0,
-    "answer": "Beautiful interfaces are perceI'ved as easier to use",
-    "shortExplanation": "Beautiful designs are perceI'ved as easier to use, even if not objectI'vely better.",
-    "explanation": "Research shows that attractI've designs are often judged as more usable, influencing tolerance and trust.<br><br><strong>Example:</strong> Two calendar apps with identical features—users rate the visually polished one as easier to use and more reliable, even though both function identically, demonstrating the aesthetic-usability effect."
+    "answer": "Beautiful interfaces are perceived as easier to use",
+    "shortExplanation": "Beautiful designs are perceived as easier to use, even if not objectively better.",
+    "explanation": "Research shows that attractive designs are often judged as more usable, influencing tolerance and trust.<br><br><strong>Example:</strong> Two calendar apps with identical features—users rate the visually polished one as easier to use and more reliable, even though both function identically, demonstrating the aesthetic-usability effect."
   },
   {
     "id": 28,
@@ -411,13 +411,13 @@
     "options": [
       "Maximising processor speed and computational efficiency for technical performance",
       "Reducing app download size and minimizing storage footprint on user devices",
-      "Ensuring technology fIt's into peoples everyday routines, values and identities",
+      "Ensuring technology fits into peoples everyday routines, values and identities",
       "Standardising all interfaces according to uniform design system guidelines"
     ],
     "answerIndex": 2,
-    "answer": "Ensuring technology fIt's into peoples everyday routines, values and identities",
-    "shortExplanation": "Lifestyle design aligns products with how people lI've, their values, and identity.",
-    "explanation": "Lifestyle design is about aligning products and services with how people lI've, what they value and how they see themselves.<br><br><strong>Example:</strong> Peloton doesn't just sell bikes—it designs for an actI've lifestyle with lI've classes, community features, and motivational content that fIt's into busy routines and supports an identity as a fitness enthusiast."
+    "answer": "Ensuring technology fits into peoples everyday routines, values and identities",
+    "shortExplanation": "Lifestyle design aligns products with how people live, their values, and identity.",
+    "explanation": "Lifestyle design is about aligning products and services with how people live, what they value and how they see themselves.<br><br><strong>Example:</strong> Peloton doesn't just sell bikes—it designs for an active lifestyle with live classes, community features, and motivational content that fits into busy routines and supports an identity as a fitness enthusiast."
   },
   {
     "id": 29,
@@ -426,7 +426,7 @@
     "options": [
       "Single standalone devices only with isolated functionality",
       "Back-end architectures and server infrastructure design",
-      "Printer drI'vers and hardware compatibility layer protocols",
+      "Printer drivers and hardware compatibility layer protocols",
       "Lifestyles and ecosystems of products and services"
     ],
     "answerIndex": 3,
@@ -456,13 +456,13 @@
     "options": [
       "Long-term lifestyle change and sustained behavioral transformation over extended periods",
       "Marketing campaigns and promotional messaging strategies for user acquisition",
-      "Immediate satisfaction during interaction, such as ease, flow and responsI'veness",
+      "Immediate satisfaction during interaction, such as ease, flow and responsiveness",
       "Only visual branding guidelines and aesthetic styling choices for interface elements"
     ],
     "answerIndex": 2,
-    "answer": "Immediate satisfaction during interaction, such as ease, flow and responsI'veness",
+    "answer": "Immediate satisfaction during interaction, such as ease, flow and responsiveness",
     "shortExplanation": "Joy in use is immediate pleasure and smoothness during interaction.",
-    "explanation": "Joy in use is the pleasure and smoothness users feel while actually interacting with the system.<br><br><strong>Example:</strong> Typing in Notion feels delightful—smooth text flow, instant formatting, quick commands—creating joy in use through responsI've, effortless interaction while writing."
+    "explanation": "Joy in use is the pleasure and smoothness users feel while actually interacting with the system.<br><br><strong>Example:</strong> Typing in Notion feels delightful—smooth text flow, instant formatting, quick commands—creating joy in use through responsive, effortless interaction while writing."
   },
   {
     "id": 32,
@@ -472,12 +472,12 @@
       "Only checking system performance in controlled laboratory environments",
       "Avoiding contact with real users to maintain design purity",
       "Designing solely from technical requirements and specifications",
-      "Understanding users values, habIt's and aspirations through deep research"
+      "Understanding users values, habits and aspirations through deep research"
     ],
     "answerIndex": 3,
-    "answer": "Understanding users values, habIt's and aspirations through deep research",
-    "shortExplanation": "Deep research into values, habIt's, and aspirations is essential for lifestyle design.",
-    "explanation": "Lifestyle-centred experience design relies on rich understanding of peoples everyday lI'ves and what matters to them.<br><br><strong>Example:</strong> Before designing meal kit services, researchers shadow families during dinner prep, understand time pressures, discover that paren'ts value teaching kids cooking, and learn about dietary preferences—informing lifestyle-fit design."
+    "answer": "Understanding users values, habits and aspirations through deep research",
+    "shortExplanation": "Deep research into values, habits, and aspirations is essential for lifestyle design.",
+    "explanation": "Lifestyle-centred experience design relies on rich understanding of peoples everyday lives and what matters to them.<br><br><strong>Example:</strong> Before designing meal kit services, researchers shadow families during dinner prep, understand time pressures, discover that parents value teaching kids cooking, and learn about dietary preferences—informing lifestyle-fit design."
   },
   {
     "id": 33,
@@ -491,7 +491,7 @@
     ],
     "answerIndex": 0,
     "answer": "The product becomes part of the users identity and story",
-    "shortExplanation": "Successful lifestyle design becomes part of user identity and personal narratI've.",
-    "explanation": "When a design fIt's lifestyle well, it becomes something users identify with and integrate into their personal narratI've.<br><br><strong>Example:</strong> Someone says Im a Notion personorIm an analog bullet journal user—the tool becomes part of how they describe themselves, integrated into their identity story."
+    "shortExplanation": "Successful lifestyle design becomes part of user identity and personal narrative.",
+    "explanation": "When a design fits lifestyle well, it becomes something users identify with and integrate into their personal narrative.<br><br><strong>Example:</strong> Someone says Im a Notion personorIm an analog bullet journal user—the tool becomes part of how they describe themselves, integrated into their identity story."
   }
 ]
