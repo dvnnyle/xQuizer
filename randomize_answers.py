@@ -1,8 +1,8 @@
 import json
 import random
 
-# Read the uxQuiz2Data.json file
-with open('dataBank/dataSub/uxQuiz2Data.json', 'r', encoding='utf-8-sig') as f:
+# Read the uxDataQBank.json file
+with open('dataBank/dataSub/uxDataQBank.json', 'r', encoding='utf-8-sig') as f:
     questions = json.load(f)
 
 # Shuffle options for each question
@@ -22,8 +22,8 @@ for question in questions:
     question['answerIndex'] = next(i for i, (_, is_correct) in enumerate(options_with_flag) if is_correct)
 
 # Write back
-with open('dataBank/dataSub/uxQuiz2Data.json', 'w', encoding='utf-8') as f:
+with open('dataBank/dataSub/uxDataQBank.json', 'w', encoding='utf-8') as f:
     json.dump(questions, f, indent=2, ensure_ascii=False)
 
-print("Randomized answer positions in uxQuiz2Data.json")
+print("Randomized answer positions in uxDataQBank.json")
 print(f"Answer indices: {[q['answerIndex'] for q in questions]}")
