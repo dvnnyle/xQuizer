@@ -222,7 +222,7 @@
     "answerIndex": 0,
     "answer": "The medium shapes what can be expressed",
     "shortExplanation": "The medium (paper, digital tools) shapes what can be expressed.",
-    "explanation": "Different materials (paper, digital tools, whiteboards) change what is easy or hard to express.<br><br><strong>Example:</strong> Paper makes rough sketching easy but animations impossible. Figma makes interactive flows easy but collaborative whiteboarding harder. Each medium affords different explorations."
+    "explanation": "Different materials change what is easy or hard to express in design exploration:<br><br><strong>Common media and their affordances:</strong><br>• <strong>Paper:</strong> Quick rough sketching, low commitment, easy iteration, but can't show animations or interactions<br>• <strong>Digital tools (Figma, Adobe XD):</strong> Interactive flows, precise layouts, reusable components, but slower for initial ideation<br>• <strong>Whiteboards:</strong> Collaborative group exploration, easy to erase/revise, spatial thinking, but hard to preserve or share digitally<br><br><strong>Example:</strong> Paper makes rough sketching easy but animations impossible. Figma makes interactive flows easy but collaborative whiteboarding harder. Each medium affords different explorations."
   },
   {
     "id": 16,

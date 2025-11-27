@@ -70,7 +70,7 @@
     ],
     "answerIndex": 3,
     "answer": "Automated accessibility testing",
-    "explanation": "The three main types are expert-based, participant-based and data-analytics-based evaluations; marketing testing is different.<br><br><strong>Example:</strong> A banking app uses expert review (UX specialists check heuristics), usability testing (customers try tasks), and analytics (track login success rates)•these are UX evaluations, not marketing ads."
+    "explanation": "The three main types of UX evaluation:<br><br><strong>Three evaluation approaches:</strong><br>• <strong>Expert-based:</strong> UX specialists review designs using heuristics and principles (quick, finds many issues without users)<br>• <strong>Participant-based:</strong> Real users test the design while performing tasks (reveals actual usage problems and behaviors)<br>• <strong>Data analytics-based:</strong> Analyze behavioral data from actual usage (shows patterns at scale, objective metrics)<br><br>Marketing testing focuses on brand perception and sales, not usability.<br><br><strong>Example:</strong> A banking app uses expert review (UX specialists check heuristics), usability testing (customers try tasks), and analytics (track login success rates)•these are UX evaluations, not marketing ads."
   },
   {
     "id": 6,
@@ -182,7 +182,7 @@
     ],
     "answerIndex": 1,
     "answer": "Heuristic evaluation",
-    "explanation": "Heuristic evaluation reviews a design against usability heuristics like visibility, consistency, feedback and recovery.<br><br><strong>Example:</strong> Using Nielsens 10 heuristics, an expert evaluates a banking app and finds violations: no confirmation after transfers (missing feedback), inconsistent button placement (lacks consistency), no undo option (poor error recovery)."
+    "explanation": "Heuristic evaluation reviews a design against usability heuristics like visibility, consistency, feedback and recovery.<br><br><strong>Key heuristics:</strong><br>• <strong>Visibility:</strong> Important information and functions are clearly visible and discoverable<br>• <strong>Consistency:</strong> Similar elements behave similarly across the interface<br>• <strong>Feedback:</strong> System provides clear responses to user actions<br>• <strong>Recovery:</strong> Users can easily undo mistakes and recover from errors<br><br><strong>Example:</strong> Using Nielsens 10 heuristics, an expert evaluates a banking app and finds violations: no confirmation after transfers (missing feedback), inconsistent button placement (lacks consistency), no undo option (poor error recovery)."
   },
   {
     "id": 14,
@@ -196,7 +196,7 @@
     ],
     "answerIndex": 2,
     "answer": "Core design principles such as visibility, consistency, feedback and constraints",
-    "explanation": "The notes list principles like visibility, consistency, familiarity, affordances, navigation, control, feedback, recovery, constraints, flexibility, style and conviviality as heuristics.<br><br><strong>Example:</strong> Evaluating a form: Visibility (are required fields marked?), Consistency (do all buttons look similar?), Feedback (does submission show success?), Constraints (are invalid inputs prevented?)."
+    "explanation": "The notes list principles like visibility, consistency, familiarity, affordances, navigation, control, feedback, recovery, constraints, flexibility, style and conviviality as heuristics.<br><br><strong>Common heuristics explained:</strong><br>• <strong>Visibility:</strong> Functions and information are easy to find and see<br>• <strong>Consistency:</strong> Interface elements work the same way throughout<br>• <strong>Feedback:</strong> System responds clearly to every user action<br>• <strong>Constraints:</strong> Design prevents errors by limiting invalid options<br>• <strong>Recovery:</strong> Easy undo and error correction mechanisms<br>• <strong>Affordances:</strong> Elements show what they can do (buttons look clickable)<br><br><strong>Example:</strong> Evaluating a form: Visibility (are required fields marked?), Consistency (do all buttons look similar?), Feedback (does submission show success?), Constraints (are invalid inputs prevented?)."
   },
   {
     "id": 15,
