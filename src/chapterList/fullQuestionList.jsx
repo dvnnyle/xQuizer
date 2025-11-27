@@ -8,6 +8,7 @@ import chapter2Data from '../../dataBank/chapter2.json'
 import chapter3Data from '../../dataBank/chapter3.json'
 import chapter5Data from '../../dataBank/chapter5.json'
 import chapter6Data from '../../dataBank/chapter6.json'
+import chapter7Data from '../../dataBank/chapter7.json'
 import chapter8Data from '../../dataBank/chapter8.json'
 import chapter10Data from '../../dataBank/chapter10.json'
 
@@ -35,6 +36,7 @@ const allQuestionsData = [
   ...chapter3Data.map(q => shuffleOptions({ ...q, chapter: 'Chapter 3' })),
   ...chapter5Data.map(q => shuffleOptions({ ...q, chapter: 'Chapter 5' })),
   ...chapter6Data.map(q => shuffleOptions({ ...q, chapter: 'Chapter 6' })),
+  ...chapter7Data.map(q => shuffleOptions({ ...q, chapter: 'Chapter 7' })),
   ...chapter8Data.map(q => shuffleOptions({ ...q, chapter: 'Chapter 8' })),
   ...chapter10Data.map(q => shuffleOptions({ ...q, chapter: 'Chapter 10' }))
 ]

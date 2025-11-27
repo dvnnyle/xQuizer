@@ -25,9 +25,12 @@ function Statistics() {
       { id: 'chapter10', name: 'Chapter 10', total: 30 },
       { id: 'chaptertest', name: 'Test Chapter', total: 5 },
       { id: 'randomizer', name: '🎲 Random Quiz', total: 30 },
-      { id: 'fulllist', name: '🔥 All Questions', total: 178 },
+      { id: 'fulllist', name: '🔥 All Questions', total: 209 },
       { id: 'uxquiz1', name: '🎯 UX Laws Quiz', total: 21 },
-      { id: 'uxquiz2', name: '🎯 UX Laws Quiz 2', total: 21 }
+      { id: 'uxquiz2', name: '🎯 UX Laws Quiz 2', total: 21 },
+      { id: 'benyon12', name: '📚 Benyon\'s 12 Principles', total: 20 },
+      { id: 'findincorrect', name: '🔍 Find Incorrect', total: 6 },
+      { id: 'findincorrect2', name: '🔍 Find Incorrect 2', total: 4 }
     ]
 
     const chapterProgress = chapters.map(chapter => {
@@ -57,8 +60,8 @@ function Statistics() {
     })
 
     const totalQuestions = chapters.reduce((sum, ch) => sum + ch.total, 0)
-    const completedQuestions = chapterProgress.reduce((sum, ch) => sum + ch.completed, 0)
-    const correctAnswers = chapterProgress.reduce((sum, ch) => sum + ch.correct, 0)
+    const completedQuestions = chapterProgress.reduce((sum, ch) => sum + (ch.attempts > 0 ? ch.total : 0), 0)
+    const correctAnswers = chapterProgress.reduce((sum, ch) => sum + ch.lastScore, 0)
 
     setStats({
       totalQuestions,
@@ -230,6 +233,9 @@ function Statistics() {
                 localStorage.removeItem('quiz_fulllist')
                 localStorage.removeItem('quiz_uxquiz1')
                 localStorage.removeItem('quiz_uxquiz2')
+                localStorage.removeItem('quiz_benyon12')
+                localStorage.removeItem('quiz_findincorrect')
+                localStorage.removeItem('quiz_findincorrect2')
                 window.location.reload()
               }
             }}
