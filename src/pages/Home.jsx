@@ -149,11 +149,6 @@ function Home() {
             <p>Read about essential principles for user experience design</p>
             <span className="question-count">21 laws</span>
           </a>
-          <a href="/benyon12lit" className="chapter-button green-theme" id="benyon12lit">
-            <h3>📖 Benyon's Principles</h3>
-            <p>Learn the 12 fundamental principles of UX design</p>
-            <span className="question-count">12 principles</span>
-          </a>
           <div className="quiz-grid">
             <a href="/uxquiz1" className="chapter-button" id="uxquiz1">
               <h3>🎯 UX Laws Quiz</h3>
@@ -169,6 +164,11 @@ function Home() {
           <div className="chapter-divider">
             <span>Extra</span>
           </div>
+          <a href="/benyon12lit" className="chapter-button green-theme" id="benyon12lit">
+            <h3>📖 Benyon's Principles</h3>
+            <p>Learn the 12 fundamental principles of UX design</p>
+            <span className="question-count">12 principles</span>
+          </a>
           <a href="/benyon12" className="chapter-button blue-theme" id="benyon12">
             <h3>📐 Benyon's 12 Principles</h3>
             <p>Master fundamental UX design principles</p>
