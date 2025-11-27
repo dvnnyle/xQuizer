@@ -22,10 +22,10 @@
       "Is it learnable?",
       "Is it effective?",
       "Is it accommodating to different people?",
-      "Is the code written in the latest JavaScript framework?"
+      "What technology framework is used?"
     ],
     "answerIndex": 3,
-    "answer": "Is the code written in the latest JavaScript framework?",
+    "answer": "What technology framework is used?",
       "shortExplanation": "Evaluation focuses on usability, not technical implementation details.",
       "explanation": "Evaluation cares about learnability, effectiveness, accommodation and fitness for purpose, not about which implementation framework is used.<br><br><strong>Example:</strong> Evaluators test whether elderly users can successfully book appointments (usability), not whether the app uses React or Vue (technical implementation choice)."
   },
@@ -49,13 +49,13 @@
     "section": "10.1",
     "question": "Which of these is a key reason to run evaluations early in the process?",
     "options": [
-      "To guarantee there will be no errors later",
-      "To finalise the visual design",
-      "To avoid talking to stakeholders",
-      "To check concepts and prototypes before investing heavily"
+      "To validate concepts with minimal investment",
+      "To finalise the visual design direction",
+      "To gather baseline user behavior data",
+      "To check concepts before investing heavily"
     ],
     "answerIndex": 3,
-    "answer": "To check concepts and prototypes before investing heavily",
+    "answer": "To check concepts before investing heavily",
     "explanation": "Early evaluation is used to check ideas, mockups and prototypes so major usability problems are found before large development effort is spent.<br><br><strong>Example:</strong> Before coding a new feature, Dropbox shows paper sketches to users, discovers confusion about folder sharing, and revises the concept—saving weeks of wasted development."
   },
   {
@@ -66,10 +66,10 @@
       "Expert-based evaluation",
       "Participant-based evaluation",
       "Data analytics",
-      "Marketing campaign testing"
+      "Automated accessibility testing"
     ],
     "answerIndex": 3,
-    "answer": "Marketing campaign testing",
+    "answer": "Automated accessibility testing",
     "explanation": "The three main types are expert-based, participant-based and data‑analytics‑based evaluations; marketing testing is different.<br><br><strong>Example:</strong> A banking app uses expert review (UX specialists check heuristics), usability testing (customers try tasks), and analytics (track login success rates)—these are UX evaluations, not marketing ads."
   },
   {
@@ -385,10 +385,10 @@
     "section": "10.6",
     "question": "Why can prototypes limit what you can evaluate?",
     "options": [
-      "They always crash",
-      "Users refuse to use prototypes",
+      "They may lack necessary fidelity",
+      "They may not include all flows",
       "You can only test what the prototype represents",
-      "They are too realistic"
+      "They may not reflect real performance"
     ],
     "answerIndex": 2,
     "answer": "You can only test what the prototype represents",

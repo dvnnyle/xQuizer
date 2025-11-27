@@ -20,9 +20,9 @@
     "question": "What is the main purpose of using the PACT framework in UX design?",
     "options": [
       "To break down messy real-world situations into manageable parts",
-      "To choose a programming language",
-      "To design the company logo",
-      "To estimate the project budget"
+      "To prioritize features based on business value and user needs",
+      "To document technical specifications for development teams",
+      "To evaluate interface aesthetics and visual consistency"
     ],
     "answerIndex": 0,
     "answer": "To break down messy real-world situations into manageable parts",
@@ -49,10 +49,10 @@
     "section": "2.2",
     "question": "Which of the following is a cognitive characteristic of users?",
     "options": [
-      "Height and hand size",
-      "Type of device owned",
+      "Physical dexterity and motor control",
+      "Prior experience with similar systems",
       "Memory and attention abilities",
-      "Office temperature preference"
+      "Visual acuity and color perception"
     ],
     "answerIndex": 2,
     "answer": "Memory and attention abilities",
@@ -65,9 +65,9 @@
     "question": "Why is designing for an 'average user' considered problematic in PACT?",
     "options": [
       "Because average users rarely exist in real life",
-      "Because average users are too skilled",
-      "Because average users never use technology",
-      "Because average users do not like prototypes"
+      "Because it focuses too much on expert users",
+      "Because statistical averages hide individual differences",
+      "Because user research is more cost-effective"
     ],
     "answerIndex": 0,
     "answer": "Because average users rarely exist in real life",
@@ -80,9 +80,9 @@
     "question": "Which example best illustrates differences in experience/familiarity among users?",
     "options": [
       "Tech-savvy young adults vs. older adults new to digital banking",
-      "Users in bright vs. dark rooms",
-      "Users with different internet providers",
-      "Short vs. tall users"
+      "Users working in noisy offices vs. quiet home environments",
+      "Users accessing the system on mobile vs. desktop devices",
+      "Frequent daily users vs. occasional monthly users"
     ],
     "answerIndex": 0,
     "answer": "Tech-savvy young adults vs. older adults new to digital banking",
@@ -95,9 +95,9 @@
     "question": "Personality and motivation in PACT mainly affect:",
     "options": [
       "How willing and confident users are in using a system",
-      "The number of bugs in the code",
-      "The colour of the interface",
-      "The size of the device screen"
+      "The physical ergonomics of device interaction",
+      "The technical performance and response times",
+      "The visual hierarchy of interface elements"
     ],
     "answerIndex": 0,
     "answer": "How willing and confident users are in using a system",
@@ -109,9 +109,9 @@
     "section": "2.3",
     "question": "In PACT, 'activities' refer to:",
     "options": [
-      "The visual style of the interface",
-      "The hardware configuration of the system",
-      "The company's business goals only",
+      "The organizational workflows and approval processes",
+      "The system's technical capabilities and limitations",
+      "The business objectives and strategic initiatives",
       "What users actually do and how they do it"
     ],
     "answerIndex": 3,
@@ -124,10 +124,10 @@
     "section": "2.3",
     "question": "Which of the following is an activity characteristic described in the chapter?",
     "options": [
-      "Screen resolution and colour depth",
+      "Device capabilities and screen dimensions",
       "Complexity, frequency and time pressure",
-      "Network bandwidth and latency",
-      "Company size and revenue"
+      "User demographics and skill levels",
+      "Environmental noise and lighting conditions"
     ],
     "answerIndex": 1,
     "answer": "Complexity, frequency and time pressure",
@@ -139,10 +139,10 @@
     "section": "2.3",
     "question": "Buying a train ticket in a busy station during rush hour is best described as an activity that is:",
     "options": [
-      "Slow and exploratory",
+      "Routine and highly repetitive",
       "Time-sensitive and stressful",
-      "Rare and low-risk",
-      "Creative and open-ended"
+      "Complex and multi-step",
+      "Collaborative and social"
     ],
     "answerIndex": 1,
     "answer": "Time-sensitive and stressful",
@@ -155,9 +155,9 @@
     "question": "Which activity is most likely to be creative and open-ended?",
     "options": [
       "Editing a video project",
-      "Entering fixed data into a tax form",
-      "Confirming a bank transaction",
-      "Checking a train timetable quickly"
+      "Completing a structured online form",
+      "Reviewing and approving documents",
+      "Searching for specific information"
     ],
     "answerIndex": 0,
     "answer": "Editing a video project",
@@ -169,10 +169,10 @@
     "section": "2.3",
     "question": "Why must designers consider whether activities are cooperative or individual?",
     "options": [
-      "Because cooperative tasks are always slower",
-      "Because group tasks never use technology",
+      "Because collaborative tasks require different security protocols",
+      "Because individual work is more efficient and measurable",
       "Because group work changes communication and coordination needs",
-      "Because only individuals care about usability"
+      "Because team activities need more processing power"
     ],
     "answerIndex": 2,
     "answer": "Because group work changes communication and coordination needs",
@@ -184,10 +184,10 @@
     "section": "2.4",
     "question": "In PACT, what does 'context' mainly refer to?",
     "options": [
-      "Only the user's previous experience",
-      "Only the technical architecture",
+      "The user's prior knowledge and experience level",
+      "The system's technical infrastructure and architecture",
       "The physical, social and organisational environments of use",
-      "The marketing context of the product"
+      "The competitive landscape and market positioning"
     ],
     "answerIndex": 2,
     "answer": "The physical, social and organisational environments of use",
@@ -200,9 +200,9 @@
     "question": "Which of these is an example of physical context?",
     "options": [
       "Using a phone in bright sunlight",
-      "A strict company hierarchy",
-      "Users with limited memory",
-      "A policy requiring data encryption"
+      "Working within regulatory compliance rules",
+      "Following established workplace protocols",
+      "Adhering to company security policies"
     ],
     "answerIndex": 0,
     "answer": "Using a phone in bright sunlight",
@@ -214,10 +214,10 @@
     "section": "2.4",
     "question": "Which scenario best illustrates social context?",
     "options": [
-      "Waiting for a slow Wi-Fi connection",
+      "Using a device while commuting on crowded public transport",
       "Using a phone during a quiet meeting where speaking is frowned upon",
-      "Typing with gloves on in winter",
-      "Using a laptop outdoors in bright light"
+      "Working on a laptop in a cafe with unreliable Wi-Fi",
+      "Accessing a system from a shared workspace with multiple users"
     ],
     "answerIndex": 1,
     "answer": "Using a phone during a quiet meeting where speaking is frowned upon",
@@ -229,10 +229,10 @@
     "section": "2.4",
     "question": "What is an example of organisational context from the chapter?",
     "options": [
-      "A noisy street market",
+      "Working in environments with frequent interruptions",
       "A hospital requiring data confidentiality",
-      "A smartphone with a small screen",
-      "A user with poor eyesight"
+      "Using devices with limited battery life",
+      "Accessing systems through slow network connections"
     ],
     "answerIndex": 1,
     "answer": "A hospital requiring data confidentiality",
@@ -244,10 +244,10 @@
     "section": "2.4",
     "question": "Why do systems that work well in a lab often fail in real contexts?",
     "options": [
-      "Because technology does not matter in real life",
+      "Because lab testing focuses primarily on technical performance",
       "Because lab tests ignore noise, interruptions and social constraints",
-      "Because lab interfaces are always poorly designed",
-      "Because users behave identically everywhere"
+      "Because controlled environments eliminate user variability factors",
+      "Because lab participants are typically more tech-savvy than average"
     ],
     "answerIndex": 1,
     "answer": "Because lab tests ignore noise, interruptions and social constraints",
@@ -260,9 +260,9 @@
     "question": "In PACT, 'technologies' are defined as:",
     "options": [
       "The tools and systems people use to carry out activities",
-      "Only the back-end databases",
-      "Only the programming languages used",
-      "Only the company's hardware budget"
+      "The software development methodologies and frameworks",
+      "The infrastructure and networking equipment available",
+      "The programming languages and technical stack chosen"
     ],
     "answerIndex": 0,
     "answer": "The tools and systems people use to carry out activities",
@@ -275,9 +275,9 @@
     "question": "Which of the following is an example of an input modality mentioned in the chapter?",
     "options": [
       "Touch or voice input",
-      "Battery level",
-      "Screen brightness",
-      "Company policy documents"
+      "Display resolution and refresh rate",
+      "Processing speed and memory capacity",
+      "Network connectivity and bandwidth"
     ],
     "answerIndex": 0,
     "answer": "Touch or voice input",
@@ -289,10 +289,10 @@
     "section": "2.5",
     "question": "Which statement best describes the relationship between technology and UX in PACT?",
     "options": [
-      "Technology is irrelevant if people are skilled",
+      "Technology capabilities should match user skill levels",
       "Different technologies afford different kinds of interactions",
-      "Technologies only matter for developers",
-      "All technologies support exactly the same activities"
+      "Advanced technology always improves user experience",
+      "Technology selection depends primarily on cost"
     ],
     "answerIndex": 1,
     "answer": "Different technologies afford different kinds of interactions",
@@ -305,9 +305,9 @@
     "question": "Why is a smartwatch display a design constraint in PACT terms?",
     "options": [
       "Its small screen limits how much information can be shown at once",
-      "It always requires a keyboard",
-      "It has no processing power",
-      "It is only used indoors"
+      "It requires constant connection to a paired smartphone device",
+      "Its battery life restricts continuous usage and functionality",
+      "Its input methods are limited to simple gestures and taps"
     ],
     "answerIndex": 0,
     "answer": "Its small screen limits how much information can be shown at once",
@@ -319,9 +319,9 @@
     "section": "2.5",
     "question": "Why must designers consider connectivity as part of technology in PACT?",
     "options": [
-      "Connectivity has no effect on UX",
-      "Connectivity only affects developers",
-      "High bandwidth is always guaranteed",
+      "Connectivity determines the visual quality of media content",
+      "Connectivity affects the speed of interface animations",
+      "Connectivity influences server-side processing capabilities",
       "Unstable or offline conditions change what the system can reliably do"
     ],
     "answerIndex": 3,
@@ -334,10 +334,10 @@
     "section": "2.6",
     "question": "What is the main purpose of 'scoping' a problem using PACT?",
     "options": [
-      "To write the final technical specification",
+      "To create detailed technical implementation documentation",
       "To define the boundaries and opportunities of the design problem",
-      "To decide on colour schemes",
-      "To choose the cheapest hardware"
+      "To establish project timelines and resource allocation",
+      "To generate initial wireframes and visual mockups"
     ],
     "answerIndex": 1,
     "answer": "To define the boundaries and opportunities of the design problem",
@@ -409,9 +409,9 @@
     "section": "2.6",
     "question": "Which question corresponds to the 'People' part of PACT when scoping a problem?",
     "options": [
-      "How much will the system cost to host?",
-      "What is the network bandwidth?",
-      "Which programming language should we use?",
+      "What devices will be supported?",
+      "What tasks need to be completed?",
+      "Where will the system be used?",
       "Who are we designing for?"
     ],
     "answerIndex": 3,
@@ -425,9 +425,9 @@
     "question": "Which question corresponds to the 'Activities' part of PACT?",
     "options": [
       "What must users accomplish?",
-      "Which fonts should we use?",
-      "Where will servers be located?",
-      "What is the company's yearly revenue?"
+      "Who are the primary stakeholders?",
+      "Where will interaction occur?",
+      "What devices are available?"
     ],
     "answerIndex": 0,
     "answer": "What must users accomplish?",
@@ -439,10 +439,10 @@
     "section": "2.6",
     "question": "Which question corresponds to the 'Contexts' part of PACT?",
     "options": [
-      "How many developers are on the team?",
-      "What is the legal company name?",
+      "What are the user's goals and motivations?",
+      "What tasks need to be supported by the system?",
       "Where and under what conditions does this take place?",
-      "Which APIs will be integrated?"
+      "What input methods will be provided?"
     ],
     "answerIndex": 2,
     "answer": "Where and under what conditions does this take place?",
@@ -454,10 +454,10 @@
     "section": "2.6",
     "question": "Which question corresponds to the 'Technologies' part of PACT?",
     "options": [
-      "How many pages will the report have?",
+      "What environmental factors affect usage?",
       "What tools and devices are available or possible?",
-      "How often will the office be cleaned?",
-      "What is the team's favourite framework?"
+      "What are the user's characteristics?",
+      "What workflows need to be supported?"
     ],
     "answerIndex": 1,
     "answer": "What tools and devices are available or possible?",

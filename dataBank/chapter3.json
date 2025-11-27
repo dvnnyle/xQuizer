@@ -49,10 +49,10 @@
     "section": "3.1",
     "question": "What is a key characteristic of UX design as described in Chapter 3?",
     "options": [
-      "It is a fixed, one-time process",
-      "It is mostly about visual aesthetics",
+      "It follows a fixed, linear progression",
+      "It focuses primarily on visual aesthetics",
       "It is complex and iterative",
-      "It never involves users directly"
+      "It requires minimal user involvement"
     ],
     "answerIndex": 2,
     "answer": "It is complex and iterative",
@@ -79,10 +79,10 @@
     "section": "3.1",
     "question": "How do personas and scenarios relate to each other in the design process?",
     "options": [
-      "They are unrelated and used in different projects",
-      "Scenarios are created only after coding is finished",
-      "Personas are based on scenarios, but scenarios never change",
-      "They evolve together and help imagine people’s activities in context"
+      "They are independent design artifacts used separately",
+      "Scenarios document personas after development begins",
+      "Personas inform scenarios which then remain fixed",
+      "They co-evolve to capture users and their activities"
     ],
     "answerIndex": 3,
     "answer": "They evolve together and help imagine people's activities in context",
@@ -154,10 +154,10 @@
     "section": "3.2",
     "question": "Which of the following is an example of physical design?",
     "options": [
-      "Deciding that users can 'bookmark' favourite items",
-      "Mapping conceptual entities in an ER diagram",
-      "Creating a clickable wireframe of the main screens",
-      "Writing user stories for the backlog"
+      "Defining the 'bookmark' concept and its properties",
+      "Documenting system entities and their relationships",
+      "Creating a clickable wireframe showing screen layouts",
+      "Sketching interaction flows between major features"
     ],
     "answerIndex": 2,
     "answer": "Creating a clickable wireframe of the main screens",
@@ -394,10 +394,10 @@
     "section": "3.7",
     "question": "What was the main design goal of the 'Secret City – Edinburgh' case study?",
     "options": [
-      "A banking app for residents",
-      "A mobile city guide for tourists in Edinburgh",
-      "An email client for students",
-      "A social network for local businesses"
+      "A banking application for Edinburgh residents",
+      "A mobile tourism guide for Edinburgh visitors",
+      "An email platform for university students",
+      "A social network for local business owners"
     ],
     "answerIndex": 1,
     "answer": "A mobile city guide for tourists in Edinburgh",

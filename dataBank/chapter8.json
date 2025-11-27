@@ -36,11 +36,11 @@
     "options": [
       "Generating new ideas",
       "Detecting design flaws early",
-      "Making financial projections",
+      "Calculating development budgets",
       "Supporting evaluation"
     ],
     "answerIndex": 2,
-    "answer": "Making financial projections",
+    "answer": "Calculating development budgets",
     "shortExplanation": "Envisionment supports creativity, flaw detection, and evaluation—not budgeting.",
     "explanation": "Envisionment tools support creativity, detection of flaws, and evaluation—not budgeting tasks.<br><br><strong>Example:</strong> Designers create wireframes to explore layouts, test user flows, and spot usability issues—not to calculate development costs or project ROI."
   },
@@ -95,9 +95,9 @@
     "question": "Which limitation applies to prototypes?",
     "options": [
       "You can only evaluate what the prototype represents",
-      "Users refuse to use prototypes",
-      "Prototypes always represent the final system",
-      "Prototypes are legally restricted"
+      "Prototypes may not reflect real system performance",
+      "Prototypes can create false expectations",
+      "Prototypes require significant time to build"
     ],
     "answerIndex": 0,
     "answer": "You can only evaluate what the prototype represents",
@@ -185,9 +185,9 @@
     "question": "A representation that is too detailed early on may:",
     "options": [
       "Limit creativity and exploration",
-      "Improve brainstorming",
-      "Be easier to change",
-      "Always produce better results"
+      "Make stakeholders resist changes",
+      "Take too long to produce",
+      "Create premature commitment to solutions"
     ],
     "answerIndex": 0,
     "answer": "Limit creativity and exploration",
@@ -290,9 +290,9 @@
     "question": "Which of the following is a danger of polished mockups too early?",
     "options": [
       "Stakeholders may think the design is final",
-      "Stakeholders become more creative",
-      "It improves exploration",
-      "It guarantees accurate testing"
+      "Teams may resist fundamental changes",
+      "Focus shifts to surface details over concept",
+      "Time spent on polish delays exploration"
     ],
     "answerIndex": 0,
     "answer": "Stakeholders may think the design is final",

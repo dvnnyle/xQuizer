@@ -59,13 +59,13 @@
     "id": 5,
     "question": "Which of the following best describes a functional requirement?",
     "options": [
-      "The app must look modern and attractive",
-      "The system must support two-factor authentication for login",
+      "The app must have a modern visual design",
+      "The system must support two-factor authentication",
       "The system must respond within 2 seconds",
-      "The UI must comply with brand guidelines"
+      "The UI must comply with accessibility standards"
     ],
     "answerIndex": 1,
-    "answer": "The system must support two-factor authentication for login",
+    "answer": "The system must support two-factor authentication",
     "explanation": "Functional requirements specify what the system must do – here, supporting two-factor authentication is a concrete function.<br><br><strong>Example:</strong> Two-factor authentication is a concrete function: the system sends a code, user enters it, system verifies. It's what the system does, not a quality like speed or reliability.",
     "shortExplanation": "Functional requirements specify system actions or features."
   },
@@ -73,13 +73,13 @@
     "id": 6,
     "question": "Which of the following is a non-functional requirement?",
     "options": [
-      "The system must allow users to reset their password",
+      "The system must allow password resets",
       "The system must support user registration",
-      "The app must load the home screen within 2 seconds",
+      "The app must load within 2 seconds",
       "The app must provide a search function"
     ],
     "answerIndex": 2,
-    "answer": "The app must load the home screen within 2 seconds",
+    "answer": "The app must load within 2 seconds",
     "explanation": "Non-functional requirements describe qualities such as performance, usability or security – here, response time is a quality.<br><br><strong>Example:</strong> Loading the home screen in 2 seconds is a performance quality, not a feature. Other qualities: '99.9% uptime' (reliability), 'WCAG AA compliant' (accessibility), 'works offline' (availability).",
     "shortExplanation": "Non-functional requirements describe qualities like performance, security, usability."
   },
@@ -143,13 +143,13 @@
     "id": 11,
     "question": "Which of these best describes 'requirements gathering'?",
     "options": [
-      "Assuming requirements exist ready-made without much interaction",
-      "Inventing new technologies",
-      "Writing code quickly",
-      "Testing final prototypes with users"
+      "Collecting requirements that exist ready-made",
+      "Co-creating requirements with stakeholders",
+      "Generating creative new requirements",
+      "Formally engineering requirements with traceability"
     ],
     "answerIndex": 0,
-    "answer": "Assuming requirements exist ready-made without much interaction",
+    "answer": "Collecting requirements that exist ready-made",
     "explanation": "The term 'requirements gathering' suggests that requirements are just lying around to be picked up, with little interaction.<br><br><strong>Example:</strong> The term suggests requirements are like apples to pick from a tree. Reality: stakeholders have vague wishes ('make it better'), not clear requirements. Discovery requires deep conversation.",
     "shortExplanation": "'Gathering' implies requirements exist ready-made, needing little discovery effort."
   },

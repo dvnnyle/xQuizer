@@ -289,9 +289,9 @@
     "section": "6.3",
     "question": "What is 'hedonomics' concerned with?",
     "options": [
-      "Pure ergonomic safety",
-      "Only error prevention",
-      "Only visual aesthetics",
+      "Ergonomic safety and efficiency",
+      "Error prevention only",
+      "Visual aesthetics only",
       "Pleasure and happiness in design"
     ],
     "answerIndex": 3,
@@ -394,13 +394,13 @@
     "section": "6.4",
     "question": "What does the 'aesthetic–usability effect' suggest?",
     "options": [
-      "Users perceive beautiful interfaces as easier to use, even if they are not objectively more usable",
+      "Beautiful interfaces are perceived as easier to use",
       "Usability has no relation to aesthetics",
       "Only ugly interfaces are trusted",
       "Aesthetic choices never affect user judgement"
     ],
     "answerIndex": 0,
-    "answer": "Users perceive beautiful interfaces as easier to use, even if they are not objectively more usable",
+    "answer": "Beautiful interfaces are perceived as easier to use",
     "shortExplanation": "Beautiful designs are perceived as easier to use, even if not objectively better.",
     "explanation": "Research shows that attractive designs are often judged as more usable, influencing tolerance and trust.<br><br><strong>Example:</strong> Two calendar apps with identical features—users rate the visually polished one as easier to use and more reliable, even though both function identically, demonstrating the aesthetic-usability effect."
   },

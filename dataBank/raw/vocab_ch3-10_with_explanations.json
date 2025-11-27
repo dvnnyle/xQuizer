@@ -1,0 +1,590 @@
+[
+  {
+    "id": 1,
+    "section": "3-vocab",
+    "question": "What does the PACT framework stand for?",
+    "options": [
+      "People, Activities, Contexts, Technologies",
+      "Products, Actions, Concepts, Tasks",
+      "People, Architecture, Content, Technology",
+      "Performance, Accessibility, Consistency, Testing"
+    ],
+    "answerIndex": 0,
+    "answer": "People, Activities, Contexts, Technologies",
+    "explanation": "PACT is a core UX analysis framework: People, Activities, Contexts and Technologies."
+  },
+  {
+    "id": 2,
+    "section": "3-vocab",
+    "question": "What is a persona in UX design?",
+    "options": [
+      "A fictional, research-based profile representing a user type",
+      "A real user hired full-time by the design team",
+      "A random character invented without data",
+      "A legal description of the customer"
+    ],
+    "answerIndex": 0,
+    "answer": "A fictional, research-based profile representing a user type",
+    "explanation": "Personas are fictional but evidence-based archetypes that capture key user goals, behaviours and contexts."
+  },
+  {
+    "id": 3,
+    "section": "3-vocab",
+    "question": "What is a scenario in UX design?",
+    "options": [
+      "A story describing people undertaking activities in context, using technology",
+      "A database schema",
+      "A list of technical requirements",
+      "A project budget"
+    ],
+    "answerIndex": 0,
+    "answer": "A story describing people undertaking activities in context, using technology",
+    "explanation": "Scenarios are narrative descriptions of users doing activities in specific contexts with a system."
+  },
+  {
+    "id": 4,
+    "section": "3-vocab",
+    "question": "What is a conceptual scenario?",
+    "options": [
+      "An abstracted scenario focusing on core activities and goals",
+      "A detailed log of system errors",
+      "A final use case specification",
+      "A project management plan"
+    ],
+    "answerIndex": 0,
+    "answer": "An abstracted scenario focusing on core activities and goals",
+    "explanation": "Conceptual scenarios strip away detail to highlight essential actions and requirements."
+  },
+  {
+    "id": 5,
+    "section": "3-vocab",
+    "question": "What is a concrete scenario?",
+    "options": [
+      "A detailed scenario that includes specific design decisions and technologies",
+      "A general business case",
+      "A high-level project vision",
+      "An emotional storyboard only"
+    ],
+    "answerIndex": 0,
+    "answer": "A detailed scenario that includes specific design decisions and technologies",
+    "explanation": "Concrete scenarios add design choices (UI, devices, flow) to abstract scenarios."
+  },
+  {
+    "id": 6,
+    "section": "3-vocab",
+    "question": "In scenario-based design, what is a use case?",
+    "options": [
+      "A formal description of user–system interactions to achieve a goal",
+      "A marketing persona",
+      "A low-fidelity sketch",
+      "A hardware specification"
+    ],
+    "answerIndex": 0,
+    "answer": "A formal description of user–system interactions to achieve a goal",
+    "explanation": "Use cases formalise concrete scenarios into structured interactions for implementation."
+  },
+  {
+    "id": 7,
+    "section": "3-vocab",
+    "question": "What is a scenario corpus?",
+    "options": [
+      "A collection of scenarios used as a shared knowledge base",
+      "A database of error logs",
+      "A list of programming languages",
+      "A set of marketing slogans"
+    ],
+    "answerIndex": 0,
+    "answer": "A collection of scenarios used as a shared knowledge base",
+    "explanation": "The scenario corpus is the library of stories, conceptual and concrete scenarios used across the design."
+  },
+  {
+    "id": 8,
+    "section": "3-vocab",
+    "question": "What is claims analysis?",
+    "options": [
+      "A method to identify pros and cons of a design feature in context",
+      "A way to calculate project cost",
+      "A testing strategy for security flaws",
+      "A branding technique"
+    ],
+    "answerIndex": 0,
+    "answer": "A method to identify pros and cons of a design feature in context",
+    "explanation": "Claims analysis examines positive and negative consequences (claims) of design decisions in scenarios."
+  },
+  {
+    "id": 9,
+    "section": "5-vocab",
+    "question": "What is accessibility in UX?",
+    "options": [
+      "Ensuring people with diverse abilities can use the system",
+      "Ensuring the system runs on all browsers",
+      "Ensuring the system is cheap",
+      "Ensuring marketing is effective"
+    ],
+    "answerIndex": 0,
+    "answer": "Ensuring people with diverse abilities can use the system",
+    "explanation": "Accessibility is about removing barriers so people with different physical, sensory and cognitive abilities can use the system."
+  },
+  {
+    "id": 10,
+    "section": "5-vocab",
+    "question": "What is inclusive design?",
+    "options": [
+      "A practical approach that aims to minimise exclusion under real constraints",
+      "Design only for expert users",
+      "Design that ignores disabled users",
+      "Aesthetic-only design"
+    ],
+    "answerIndex": 0,
+    "answer": "A practical approach that aims to minimise exclusion under real constraints",
+    "explanation": "Inclusive design recognises that full inclusion is not always possible, but aims to reduce avoidable exclusion."
+  },
+  {
+    "id": 11,
+    "section": "5-vocab",
+    "question": "What is 'Design for All' (universal design)?",
+    "options": [
+      "A philosophy aiming to make products usable by the widest range of people",
+      "Design only for one target group",
+      "Design only for desktop computers",
+      "A cost-cutting strategy"
+    ],
+    "answerIndex": 0,
+    "answer": "A philosophy aiming to make products usable by the widest range of people",
+    "explanation": "Universal design aspires to serve as many people as possible regardless of age or ability."
+  },
+  {
+    "id": 12,
+    "section": "5-vocab",
+    "question": "What is usability?",
+    "options": [
+      "How effectively, efficiently and satisfactorily users can achieve goals",
+      "How many features a product has",
+      "How beautiful a product is",
+      "How cheap a product is"
+    ],
+    "answerIndex": 0,
+    "answer": "How effectively, efficiently and satisfactorily users can achieve goals",
+    "explanation": "Usability combines effectiveness, efficiency, safety, learnability and utility."
+  },
+  {
+    "id": 13,
+    "section": "5-vocab",
+    "question": "In UX, what is learnability?",
+    "options": [
+      "How easy it is for users to learn how to use the system",
+      "How quickly the system loads",
+      "How cheap the product is",
+      "How many colours are used"
+    ],
+    "answerIndex": 0,
+    "answer": "How easy it is for users to learn how to use the system",
+    "explanation": "Learnability describes how quickly and easily new users can become competent."
+  },
+  {
+    "id": 14,
+    "section": "5-vocab",
+    "question": "What is the Gulf of Execution?",
+    "options": [
+      "The gap between a user's goals and the actions available in the interface",
+      "The delay between clicks and responses",
+      "The difference between design and code",
+      "The cost of hardware upgrades"
+    ],
+    "answerIndex": 0,
+    "answer": "The gap between a user's goals and the actions available in the interface",
+    "explanation": "The Gulf of Execution is the difficulty users have translating intentions into system actions."
+  },
+  {
+    "id": 15,
+    "section": "5-vocab",
+    "question": "What is the Gulf of Evaluation?",
+    "options": [
+      "The gap between system output and the user’s ability to interpret it",
+      "The time it takes to evaluate a project",
+      "The difference between two designs",
+      "The number of tests performed"
+    ],
+    "answerIndex": 0,
+    "answer": "The gap between system output and the user’s ability to interpret it",
+    "explanation": "The Gulf of Evaluation is the difficulty users have understanding system feedback and whether goals were achieved."
+  },
+  {
+    "id": 16,
+    "section": "5-vocab",
+    "question": "What is an affordance in interaction design?",
+    "options": [
+      "A perceived possible action that an object or element supports",
+      "A legal contract",
+      "A performance metric",
+      "A marketing bonus"
+    ],
+    "answerIndex": 0,
+    "answer": "A perceived possible action that an object or element supports",
+    "explanation": "Affordances communicate what users can do, like a button suggesting it can be clicked."
+  },
+  {
+    "id": 17,
+    "section": "5-vocab",
+    "question": "What is feedforward?",
+    "options": [
+      "Information that helps users predict what will happen before they act",
+      "System logs written after an action",
+      "Historical analytics data",
+      "System error messages"
+    ],
+    "answerIndex": 0,
+    "answer": "Information that helps users predict what will happen before they act",
+    "explanation": "Feedforward provides cues about the outcome of an action prior to performing it."
+  },
+  {
+    "id": 18,
+    "section": "5-vocab",
+    "question": "What is feedback in UX?",
+    "options": [
+      "Information the system gives after a user action",
+      "Company feedback to employees",
+      "Market research interviews",
+      "Hardware debugging logs only"
+    ],
+    "answerIndex": 0,
+    "answer": "Information the system gives after a user action",
+    "explanation": "Feedback tells users what happened as a result of their actions, helping them evaluate success."
+  },
+  {
+    "id": 19,
+    "section": "5-vocab",
+    "question": "What is acceptability in UX?",
+    "options": [
+      "Whether a system fits people's lives socially, culturally, politically and economically",
+      "Whether the code compiles",
+      "Whether the UI follows a grid",
+      "Whether the product is open source"
+    ],
+    "answerIndex": 0,
+    "answer": "Whether a system fits people's lives socially, culturally, politically and economically",
+    "explanation": "Acceptability is about adoption: does the technology fit into real contexts, norms and constraints?"
+  },
+  {
+    "id": 20,
+    "section": "5-vocab",
+    "question": "What does TAM (Technology Acceptance Model) primarily emphasise?",
+    "options": [
+      "Ease of use, perceived usefulness and later trust",
+      "Only visual design trends",
+      "Only hardware performance",
+      "Only accessibility compliance"
+    ],
+    "answerIndex": 0,
+    "answer": "Ease of use, perceived usefulness and later trust",
+    "explanation": "TAM explains acceptance mainly through perceived usefulness, ease of use and trust."
+  },
+  {
+    "id": 21,
+    "section": "6-vocab",
+    "question": "What is experience design?",
+    "options": [
+      "Designing for the whole user journey, including feelings and meaning",
+      "Designing only for speed",
+      "Designing only back-end systems",
+      "Designing only for legal compliance"
+    ],
+    "answerIndex": 0,
+    "answer": "Designing for the whole user journey, including feelings and meaning",
+    "explanation": "Experience design looks beyond usability to emotions, identity, stories and long-term meaning."
+  },
+  {
+    "id": 22,
+    "section": "6-vocab",
+    "question": "What is 'flow' in interaction?",
+    "options": [
+      "A state of deep, focused engagement when challenge and skill are balanced",
+      "A list of screens in a UI",
+      "Network data streaming",
+      "A project plan"
+    ],
+    "answerIndex": 0,
+    "answer": "A state of deep, focused engagement when challenge and skill are balanced",
+    "explanation": "Flow, from Csikszentmihalyi, is when users are fully absorbed and time seems to pass quickly."
+  },
+  {
+    "id": 23,
+    "section": "6-vocab",
+    "question": "What is gamification?",
+    "options": [
+      "Using game-like elements (points, badges, levels) in non-game contexts",
+      "Turning all apps into full video games",
+      "Removing all serious functions from software",
+      "Testing console hardware"
+    ],
+    "answerIndex": 0,
+    "answer": "Using game-like elements (points, badges, levels) in non-game contexts",
+    "explanation": "Gamification adds game mechanics to other activities to drive motivation and engagement."
+  },
+  {
+    "id": 24,
+    "section": "6-vocab",
+    "question": "According to Patrick Jordan, what is physio-pleasure?",
+    "options": [
+      "Pleasure derived from the body and senses",
+      "Pleasure from social interaction",
+      "Pleasure from intellectual challenge",
+      "Pleasure from ethical alignment"
+    ],
+    "answerIndex": 0,
+    "answer": "Pleasure derived from the body and senses",
+    "explanation": "Physio-pleasure comes from sensory experiences such as touch, sound and visual appeal."
+  },
+  {
+    "id": 25,
+    "section": "6-vocab",
+    "question": "What is socio-pleasure?",
+    "options": [
+      "Pleasure from social interaction, belonging and communication",
+      "Pleasure from perfect performance",
+      "Pleasure from low prices",
+      "Pleasure from aesthetics alone"
+    ],
+    "answerIndex": 0,
+    "answer": "Pleasure from social interaction, belonging and communication",
+    "explanation": "Socio-pleasure arises from being connected to others and participating in social groups."
+  },
+  {
+    "id": 26,
+    "section": "6-vocab",
+    "question": "In Jordan’s model, what is ideo-pleasure?",
+    "options": [
+      "Pleasure from alignment with personal values and ideals",
+      "Pleasure from physical comfort",
+      "Pleasure from speed",
+      "Pleasure from novelty only"
+    ],
+    "answerIndex": 0,
+    "answer": "Pleasure from alignment with personal values and ideals",
+    "explanation": "Ideo-pleasure is about ideological fit: ethics, beliefs, culture and worldview."
+  },
+  {
+    "id": 27,
+    "section": "6-vocab",
+    "question": "In Hassenzahl’s model, what are pragmatic qualities?",
+    "options": [
+      "Qualities related to usefulness and task support",
+      "Qualities related to identity and stimulation",
+      "Qualities related only to beauty",
+      "Qualities related only to cost"
+    ],
+    "answerIndex": 0,
+    "answer": "Qualities related to usefulness and task support",
+    "explanation": "Pragmatic qualities are about how well a product helps users achieve their goals."
+  },
+  {
+    "id": 28,
+    "section": "6-vocab",
+    "question": "In Hassenzahl’s model, what are hedonic qualities?",
+    "options": [
+      "Qualities related to pleasure, identity and personal growth",
+      "Qualities related only to speed",
+      "Qualities related to error prevention only",
+      "Qualities related to hardware reliability"
+    ],
+    "answerIndex": 0,
+    "answer": "Qualities related to pleasure, identity and personal growth",
+    "explanation": "Hedonic qualities refer to stimulation, identification and evoking positive experiences beyond utility."
+  },
+  {
+    "id": 29,
+    "section": "6-vocab",
+    "question": "What is the aesthetic–usability effect?",
+    "options": [
+      "Users judge attractive interfaces as more usable",
+      "Usability has no relation to aesthetics",
+      "Ugly designs are always more usable",
+      "Aesthetic choices never affect user judgement"
+    ],
+    "answerIndex": 0,
+    "answer": "Users judge attractive interfaces as more usable",
+    "explanation": "People often perceive beautiful designs as easier to use, even if objective usability is the same."
+  },
+  {
+    "id": 30,
+    "section": "6-vocab",
+    "question": "In experience design, what does 'lifestyle fit' refer to?",
+    "options": [
+      "How well a product aligns with users’ routines, values and identity",
+      "How fast the product loads",
+      "How cheap the product is",
+      "How many platforms it supports"
+    ],
+    "answerIndex": 0,
+    "answer": "How well a product aligns with users’ routines, values and identity",
+    "explanation": "Lifestyle fit is about how naturally a product fits into everyday life and self-image."
+  },
+  {
+    "id": 31,
+    "section": "8-vocab",
+    "question": "What is envisionment in UX design?",
+    "options": [
+      "The activity of representing and exploring design ideas before they are fully built",
+      "The act of writing final code",
+      "The process of market launch",
+      "The legal registration of a product"
+    ],
+    "answerIndex": 0,
+    "answer": "The activity of representing and exploring design ideas before they are fully built",
+    "explanation": "Envisionment turns abstract ideas into concrete representations to explore, communicate and evaluate them."
+  },
+  {
+    "id": 32,
+    "section": "8-vocab",
+    "question": "What is a low-fidelity prototype?",
+    "options": [
+      "A quick, rough representation such as sketches or paper mockups",
+      "A fully implemented product",
+      "A high-resolution visual design",
+      "A performance benchmark"
+    ],
+    "answerIndex": 0,
+    "answer": "A quick, rough representation such as sketches or paper mockups",
+    "explanation": "Low-fidelity prototypes use simple materials to explore structure and flow without detail."
+  },
+  {
+    "id": 33,
+    "section": "8-vocab",
+    "question": "What is a high-fidelity prototype?",
+    "options": [
+      "A realistic prototype that closely mimics the final system’s look and behaviour",
+      "A prototype with no visual design",
+      "A text-only specification",
+      "A hardware datasheet"
+    ],
+    "answerIndex": 0,
+    "answer": "A realistic prototype that closely mimics the final system’s look and behaviour",
+    "explanation": "High-fidelity prototypes are detailed and interactive enough to approximate the final product."
+  },
+  {
+    "id": 34,
+    "section": "8-vocab",
+    "question": "What is fidelity in prototyping?",
+    "options": [
+      "The degree of realism of a prototype",
+      "The cost of producing a prototype",
+      "The number of features included",
+      "The security level of a prototype"
+    ],
+    "answerIndex": 0,
+    "answer": "The degree of realism of a prototype",
+    "explanation": "Fidelity refers to how closely a prototype resembles the intended final system in look and behaviour."
+  },
+  {
+    "id": 35,
+    "section": "8-vocab",
+    "question": "Why do designers use storyboards?",
+    "options": [
+      "To show sequences of user actions and events over time",
+      "To document server architecture",
+      "To record raw analytics data",
+      "To write legal contracts"
+    ],
+    "answerIndex": 0,
+    "answer": "To show sequences of user actions and events over time",
+    "explanation": "Storyboards illustrate user journeys as a sequence of frames, emphasising flow and context."
+  },
+  {
+    "id": 36,
+    "section": "10-vocab",
+    "question": "What is evaluation in UX?",
+    "options": [
+      "Systematically checking a design against usability and UX goals",
+      "Writing design documentation",
+      "Implementing the database",
+      "Launching a marketing campaign"
+    ],
+    "answerIndex": 0,
+    "answer": "Systematically checking a design against usability and UX goals",
+    "explanation": "Evaluation assesses whether concepts, prototypes or products meet intended goals and user needs."
+  },
+  {
+    "id": 37,
+    "section": "10-vocab",
+    "question": "What is an expert evaluation (inspection)?",
+    "options": [
+      "A review where usability experts inspect a design against principles",
+      "A review by random users",
+      "A load test on a server",
+      "A marketing survey"
+    ],
+    "answerIndex": 0,
+    "answer": "A review where usability experts inspect a design against principles",
+    "explanation": "Expert evaluations use heuristics and guidelines to identify issues without involving end users initially."
+  },
+  {
+    "id": 38,
+    "section": "10-vocab",
+    "question": "What is participant-based evaluation?",
+    "options": [
+      "Observing real or representative users performing tasks with the system",
+      "Inspecting code quality",
+      "Running automated performance tests",
+      "Reviewing design in team meetings only"
+    ],
+    "answerIndex": 0,
+    "answer": "Observing real or representative users performing tasks with the system",
+    "explanation": "Participant-based evaluations (like usability tests) involve users attempting realistic tasks while researchers observe."
+  },
+  {
+    "id": 39,
+    "section": "10-vocab",
+    "question": "What is heuristic evaluation?",
+    "options": [
+      "An expert-led review using a set of usability heuristics",
+      "A fully automated test",
+      "A random A/B test",
+      "A security penetration test"
+    ],
+    "answerIndex": 0,
+    "answer": "An expert-led review using a set of usability heuristics",
+    "explanation": "Heuristic evaluation checks a design against rules of thumb such as visibility, consistency, feedback and error prevention."
+  },
+  {
+    "id": 40,
+    "section": "10-vocab",
+    "question": "In UX, what is A/B testing?",
+    "options": [
+      "Comparing two design variants with real users to see which performs better",
+      "Comparing two programming languages",
+      "Comparing two hardware devices",
+      "Alternating between two design tools"
+    ],
+    "answerIndex": 0,
+    "answer": "Comparing two design variants with real users to see which performs better",
+    "explanation": "A/B tests present different versions to users and use data to decide which design works better."
+  },
+  {
+    "id": 41,
+    "section": "10-vocab",
+    "question": "What is UX analytics (data analytics)?",
+    "options": [
+      "Collecting and analysing usage data from deployed systems",
+      "Writing SQL queries for backups only",
+      "Analysing developer productivity",
+      "Reviewing marketing spend"
+    ],
+    "answerIndex": 0,
+    "answer": "Collecting and analysing usage data from deployed systems",
+    "explanation": "UX analytics use logs and metrics (clicks, funnels, time, conversion) to understand real user behaviour at scale."
+  },
+  {
+    "id": 42,
+    "section": "10-vocab",
+    "question": "What is a confounding variable in evaluation?",
+    "options": [
+      "An external factor that unintentionally influences the results",
+      "A key usability metric",
+      "A type of user interface element",
+      "A project role"
+    ],
+    "answerIndex": 0,
+    "answer": "An external factor that unintentionally influences the results",
+    "explanation": "Confounding variables, like different devices or instructions, can affect outcomes and must be controlled or documented."
+  }
+]

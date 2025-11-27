@@ -1,0 +1,392 @@
+[
+  {
+    "id": 1,
+    "question": "What does UX stand for?",
+    "options": [
+      "User Experience",
+      "User Exchange",
+      "Unified Experiment",
+      "Universal X-design"
+    ],
+    "answerIndex": 0,
+    "answer": "User Experience",
+    "explanation": "UX = User Experience."
+  },
+  {
+    "id": 2,
+    "question": "What does UI stand for?",
+    "options": [
+      "User Interface",
+      "Universal Interaction",
+      "User Integration",
+      "Unified Input"
+    ],
+    "answerIndex": 0,
+    "answer": "User Interface",
+    "explanation": "UI = User Interface."
+  },
+  {
+    "id": 3,
+    "question": "What does PACT stand for?",
+    "options": [
+      "People, Activities, Contexts, Technologies",
+      "Products, Actions, Concepts, Tasks",
+      "Performance, Accessibility, Consistency, Testing",
+      "People, Architecture, Content, Technology"
+    ],
+    "answerIndex": 0,
+    "answer": "People, Activities, Contexts, Technologies",
+    "explanation": "PACT = People, Activities, Contexts, Technologies."
+  },
+  {
+    "id": 4,
+    "question": "What does HCI stand for?",
+    "options": [
+      "Human–Computer Interaction",
+      "Human–Centered Innovation",
+      "Hybrid Computing Interface",
+      "Human Code Integration"
+    ],
+    "answerIndex": 0,
+    "answer": "Human–Computer Interaction",
+    "explanation": "HCI = Human–Computer Interaction."
+  },
+  {
+    "id": 5,
+    "question": "What does UCD stand for?",
+    "options": [
+      "User-Centered Design",
+      "Universal Creative Design",
+      "User-Controlled Development",
+      "Unified Conceptual Design"
+    ],
+    "answerIndex": 0,
+    "answer": "User-Centered Design",
+    "explanation": "UCD = User-Centered Design."
+  },
+  {
+    "id": 6,
+    "question": "What does UXD stand for?",
+    "options": [
+      "User Experience Design",
+      "Universal Experience Document",
+      "User Exchange Dynamics",
+      "Unified Experience Development"
+    ],
+    "answerIndex": 0,
+    "answer": "User Experience Design",
+    "explanation": "UXD = User Experience Design."
+  },
+  {
+    "id": 7,
+    "question": "What does IA stand for?",
+    "options": [
+      "Information Architecture",
+      "Interactive Application",
+      "Interface Arrangement",
+      "Information Analysis"
+    ],
+    "answerIndex": 0,
+    "answer": "Information Architecture",
+    "explanation": "IA = Information Architecture."
+  },
+  {
+    "id": 8,
+    "question": "What does CTA stand for?",
+    "options": [
+      "Call To Action",
+      "Customer Target Analysis",
+      "Click Tracking Algorithm",
+      "Critical Task Area"
+    ],
+    "answerIndex": 0,
+    "answer": "Call To Action",
+    "explanation": "CTA = Call To Action."
+  },
+  {
+    "id": 9,
+    "question": "What does KPI stand for?",
+    "options": [
+      "Key Performance Indicator",
+      "Knowledge Processing Interface",
+      "Key Platform Interaction",
+      "Kinetic Performance Index"
+    ],
+    "answerIndex": 0,
+    "answer": "Key Performance Indicator",
+    "explanation": "KPI = Key Performance Indicator."
+  },
+  {
+    "id": 10,
+    "question": "What does A/B Testing mean?",
+    "options": [
+      "Comparing two design versions",
+      "Comparing two codebases",
+      "Comparing two servers",
+      "Comparing two personas"
+    ],
+    "answerIndex": 0,
+    "answer": "Comparing two design versions",
+    "explanation": "A/B testing compares two design variants."
+  },
+  {
+    "id": 11,
+    "question": "What does MVP stand for?",
+    "options": [
+      "Minimum Viable Product",
+      "Maximum Visual Prototype",
+      "Main Value Proposition",
+      "Multi-Version Product"
+    ],
+    "answerIndex": 0,
+    "answer": "Minimum Viable Product",
+    "explanation": "MVP = Minimum Viable Product."
+  },
+  {
+    "id": 12,
+    "question": "What does API stand for?",
+    "options": [
+      "Application Programming Interface",
+      "Automated Process Integration",
+      "Advanced Protocol Interface",
+      "Application Performance Index"
+    ],
+    "answerIndex": 0,
+    "answer": "Application Programming Interface",
+    "explanation": "API = Application Programming Interface."
+  },
+  {
+    "id": 13,
+    "question": "What does CRUD stand for?",
+    "options": [
+      "Create, Read, Update, Delete",
+      "Compile, Run, Update, Deploy",
+      "Control, Review, Update, Design",
+      "Create, Render, Upload, Download"
+    ],
+    "answerIndex": 0,
+    "answer": "Create, Read, Update, Delete",
+    "explanation": "CRUD = Create, Read, Update, Delete."
+  },
+  {
+    "id": 14,
+    "question": "What does GDPR stand for?",
+    "options": [
+      "General Data Protection Regulation",
+      "Global Digital Privacy Rules",
+      "General Data Processing Requirements",
+      "Government Data Privacy Regulation"
+    ],
+    "answerIndex": 0,
+    "answer": "General Data Protection Regulation",
+    "explanation": "GDPR = General Data Protection Regulation."
+  },
+  {
+    "id": 15,
+    "question": "What does UI Kit mean?",
+    "options": [
+      "User Interface Kit",
+      "Unified Input Kernel",
+      "Universal Icon Kit",
+      "User Interaction Knowledge"
+    ],
+    "answerIndex": 0,
+    "answer": "User Interface Kit",
+    "explanation": "A UI Kit = reusable UI components."
+  },
+  {
+    "id": 16,
+    "question": "What does UXR stand for?",
+    "options": [
+      "User Experience Research",
+      "Unified Experience Report",
+      "User Exchange Recording",
+      "User Reaction Review"
+    ],
+    "answerIndex": 0,
+    "answer": "User Experience Research",
+    "explanation": "UXR = User Experience Research."
+  },
+  {
+    "id": 17,
+    "question": "What does Lo-Fi mean?",
+    "options": [
+      "Low Fidelity",
+      "Low Finance",
+      "Local File",
+      "Logical Filter"
+    ],
+    "answerIndex": 0,
+    "answer": "Low Fidelity",
+    "explanation": "Lo‑Fi = Low fidelity prototypes."
+  },
+  {
+    "id": 18,
+    "question": "What does Hi-Fi mean?",
+    "options": [
+      "High Fidelity",
+      "High Finance",
+      "Hyper Interactive",
+      "Highly Functional Interface"
+    ],
+    "answerIndex": 0,
+    "answer": "High Fidelity",
+    "explanation": "Hi‑Fi = High fidelity prototypes."
+  },
+  {
+    "id": 19,
+    "question": "What does CPU stand for?",
+    "options": [
+      "Central Processing Unit",
+      "Computer Program Utility",
+      "Control Processing Unit",
+      "Central Performance Utility"
+    ],
+    "answerIndex": 0,
+    "answer": "Central Processing Unit",
+    "explanation": "CPU = Central Processing Unit."
+  },
+  {
+    "id": 20,
+    "question": "What does GUI stand for?",
+    "options": [
+      "Graphical User Interface",
+      "General User Input",
+      "Guided User Interaction",
+      "Graphical Universal Integration"
+    ],
+    "answerIndex": 0,
+    "answer": "Graphical User Interface",
+    "explanation": "GUI = Graphical User Interface."
+  },
+  {
+    "id": 21,
+    "question": "What does URL stand for?",
+    "options": [
+      "Uniform Resource Locator",
+      "Universal Reference Link",
+      "Unified Routing Layer",
+      "User Resource Link"
+    ],
+    "answerIndex": 0,
+    "answer": "Uniform Resource Locator",
+    "explanation": "URL = Uniform Resource Locator."
+  },
+  {
+    "id": 22,
+    "question": "What does QR stand for?",
+    "options": [
+      "Quick Response",
+      "Query Result",
+      "Quality Reference",
+      "Queued Routing"
+    ],
+    "answerIndex": 0,
+    "answer": "Quick Response",
+    "explanation": "QR = Quick Response code."
+  },
+  {
+    "id": 23,
+    "question": "What does SEO stand for?",
+    "options": [
+      "Search Engine Optimization",
+      "Software Engineering Operations",
+      "System Execution Order",
+      "Service Endpoint Output"
+    ],
+    "answerIndex": 0,
+    "answer": "Search Engine Optimization",
+    "explanation": "SEO = Search Engine Optimization."
+  },
+  {
+    "id": 24,
+    "question": "What does HTTP stand for?",
+    "options": [
+      "HyperText Transfer Protocol",
+      "High Transfer Text Process",
+      "Hyperlink Technology Transport Package",
+      "Host Terminal Transfer Protocol"
+    ],
+    "answerIndex": 0,
+    "answer": "HyperText Transfer Protocol",
+    "explanation": "HTTP = HyperText Transfer Protocol."
+  },
+  {
+    "id": 25,
+    "question": "What does HTTPS stand for?",
+    "options": [
+      "HyperText Transfer Protocol Secure",
+      "High Transfer Protocol Service",
+      "Hyperlink Technology Transport Secure",
+      "Host Terminal Transfer Secure"
+    ],
+    "answerIndex": 0,
+    "answer": "HyperText Transfer Protocol Secure",
+    "explanation": "HTTPS = HTTP + encrypted security."
+  },
+  {
+    "id": 26,
+    "question": "What does OS stand for?",
+    "options": [
+      "Operating System",
+      "Open Software",
+      "Online Service",
+      "Operational Script"
+    ],
+    "answerIndex": 0,
+    "answer": "Operating System",
+    "explanation": "OS = Operating System."
+  },
+  {
+    "id": 27,
+    "question": "What does SQL stand for?",
+    "options": [
+      "Structured Query Language",
+      "System Query Logic",
+      "Sequential Query Layout",
+      "Software Query Layer"
+    ],
+    "answerIndex": 0,
+    "answer": "Structured Query Language",
+    "explanation": "SQL = Structured Query Language."
+  },
+  {
+    "id": 28,
+    "question": "What does CSS stand for?",
+    "options": [
+      "Cascading Style Sheets",
+      "Central Style System",
+      "Creative Styling Syntax",
+      "Component Style Set"
+    ],
+    "answerIndex": 0,
+    "answer": "Cascading Style Sheets",
+    "explanation": "CSS = Cascading Style Sheets."
+  },
+  {
+    "id": 29,
+    "question": "What does HTML stand for?",
+    "options": [
+      "HyperText Markup Language",
+      "High Transfer Markup Logic",
+      "Hyperlink Text Management Language",
+      "Hosted Template Markup Language"
+    ],
+    "answerIndex": 0,
+    "answer": "HyperText Markup Language",
+    "explanation": "HTML = HyperText Markup Language."
+  },
+  {
+    "id": 30,
+    "question": "What does UX KPI mean?",
+    "options": [
+      "A measurable UX success metric",
+      "A UI element",
+      "A wireframing tool",
+      "A developer role"
+    ],
+    "answerIndex": 0,
+    "answer": "A measurable UX success metric",
+    "explanation": "UX KPIs measure user experience outcomes."
+  }
+]

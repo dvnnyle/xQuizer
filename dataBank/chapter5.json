@@ -35,9 +35,9 @@
     "question": "Accessibility laws mentioned include:",
     "options": [
       "UK Equality Act & US Section 508",
-      "GDPR & DMCA",
-      "ISO 9001 & IEEE 802.11",
-      "None"
+      "EU Web Directive & WCAG Guidelines",
+      "ADA Standards & Rehabilitation Act",
+      "Canadian ACA & Australian DDA"
     ],
     "answerIndex": 0,
     "answer": "UK Equality Act & US Section 508",
@@ -49,10 +49,10 @@
     "section": "5.2",
     "question": "Which is an example of physical exclusion?",
     "options": [
-      "ATM too high for wheelchair users",
-      "Confusing metaphors",
-      "Too expensive service",
-      "Language barriers"
+      "ATM mounted too high for wheelchair access",
+      "Touchscreen requiring precise finger control",
+      "Small buttons difficult to press accurately",
+      "Device requiring two-handed operation"
     ],
     "answerIndex": 0,
     "answer": "ATM too high for wheelchair users",
@@ -64,10 +64,10 @@
     "section": "5.2",
     "question": "Conceptual exclusion happens when:",
     "options": [
-      "Users can’t understand commands",
-      "Devices are physically out of reach",
-      "Users can’t afford tech",
-      "Cultural norms conflict"
+      "Users cannot understand system commands",
+      "Technical jargon prevents user comprehension",
+      "Complex mental models confuse users",
+      "Unfamiliar metaphors create cognitive barriers"
     ],
     "answerIndex": 0,
     "answer": "Users can't understand commands",
@@ -109,10 +109,10 @@
     "section": "5.2",
     "question": "Assistive tech example:",
     "options": [
-      "Screen reader",
-      "Push notifications",
-      "3D graphics",
-      "VR games"
+      "Screen reader software",
+      "Voice control systems",
+      "Alternative input keyboards",
+      "Screen magnification tools"
     ],
     "answerIndex": 0,
     "answer": "Screen reader",
@@ -124,10 +124,10 @@
     "section": "5.2",
     "question": "A common mistake in accessibility design is:",
     "options": [
-      "Adding accessibility too late",
-      "Testing with disabled users",
-      "Following guidelines",
-      "Providing keyboard access"
+      "Treating accessibility as an afterthought",
+      "Assuming all users have similar abilities",
+      "Ignoring screen reader compatibility",
+      "Using color alone to convey information"
     ],
     "answerIndex": 0,
     "answer": "Adding accessibility too late",
@@ -379,10 +379,10 @@
     "section": "5.4",
     "question": "Usefulness means:",
     "options": [
-      "Value in real context",
-      "Cool animations",
-      "Short onboarding",
-      "Trendy colors"
+      "Provides value in users' actual context",
+      "Solves genuine problems users face daily",
+      "Fits seamlessly into existing workflows",
+      "Addresses real needs beyond novelty"
     ],
     "answerIndex": 0,
     "answer": "Value in real context",
