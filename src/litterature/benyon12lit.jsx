@@ -111,8 +111,6 @@ function Benyon12Lit() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: principle.id * 0.05 }}
               >
-                <div className="law-number">#{principle.id}</div>
-                
                 <div className="law-content">
                   <h3 className="law-title">{principle.principle}</h3>
                   <p className="law-description">{principle.description}</p>
@@ -172,7 +170,6 @@ function Benyon12Lit() {
             <div className="modal-body">
               <div className="modal-header">
                 <h2>{selectedPrinciple.principle}</h2>
-                <span className="modal-number">#{selectedPrinciple.id}</span>
               </div>
 
               <div className="modal-description">
