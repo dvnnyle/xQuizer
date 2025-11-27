@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": 1,
     "question": "During interviews for understanding user needs, which statements are INCORRECT?",
@@ -50,7 +50,7 @@
       "a": "They can be performed by experts using a Cognitive Walkthrough approach.",
       "b": "Participants are encouraged to comment on what they are doing, why, and any difficulties.",
       "c": "They are useful for evaluating usability.",
-      "d": "They are called 'cooperative' because participants act as co-evaluators rather than passive subjects."
+      "d": "They are called cooperative because participants act as co-evaluators rather than passive subjects."
     },
     "incorrectAnswers": ["a"],
     "explanation": {

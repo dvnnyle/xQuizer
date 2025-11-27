@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": 1,
     "section": "Test",
@@ -25,7 +25,7 @@
     ],
     "answerIndex": 1,
     "answer": "Mars",
-    "explanation": "Mars appears red due to iron oxide (rust) on its surface, earning it the nickname 'Red Planet'."
+    "explanation": "Mars appears red due to iron oxide (rust) on its surface, earning it the nickname Red Planet."
   },
   {
     "id": 3,

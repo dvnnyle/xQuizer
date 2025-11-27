@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": 1,
     "section": "6.1",
@@ -12,7 +12,7 @@
     "answerIndex": 0,
     "answer": "From focusing only on efficiency to also designing for experience and emotion",
     "shortExplanation": "Experience design goes beyond usability to include emotion, pleasure, and meaning.",
-    "explanation": "Chapter 6 explains a move beyond usability (efficiency, effectiveness) towards experience design, which includes emotion, pleasure, identity and meaning.<br><br><strong>Example:</strong> Traditional design asks 'Can users complete checkout quickly?' Experience design also asks 'Do users feel confident and delighted while shopping? Does the brand resonate with their identity?'"
+    "explanation": "Chapter 6 explains a move beyond usability (efficiency, effectiveness) towards experience design, which includes emotion, pleasure, identity and meaning.<br><br><strong>Example:</strong> Traditional design asks 'Can users complete checkout quickly?Experience design also asksDo users feel confident and delighted while shopping? Does the brand resonate with their identity?'"
   },
   {
     "id": 2,
@@ -32,7 +32,7 @@
   {
     "id": 3,
     "section": "6.1",
-    "question": "Which statement best captures the idea that designers cannot 'make' an experience?",
+    "question": "Which statement best captures the idea that designers cannot make an experience?",
     "options": [
       "Designers control every aspect of user feelings",
       "Experiences do not depend on context",
@@ -47,7 +47,7 @@
   {
     "id": 4,
     "section": "6.1",
-    "question": "Which of the following thinkers is associated with 'Emotional Design' and the idea that aesthetics influence usability?",
+    "question": "Which of the following thinkers is associated with Emotional Design and the idea that aesthetics influence usability?",
     "options": [
       "Patrick Jordan",
       "Nathan Shedroff",
@@ -77,7 +77,7 @@
   {
     "id": 6,
     "section": "6.2",
-    "question": "In Chapter 6, 'engagement' primarily refers to:",
+    "question": "In Chapter 6, engagement primarily refers to:",
     "options": [
       "Financial commitment to a product",
       "Legal contracts with users",
@@ -107,7 +107,7 @@
   {
     "id": 8,
     "section": "6.2",
-    "question": "According to flow theory, people are 'in flow' when:",
+    "question": "According to flow theory, people are in flow when:",
     "options": [
       "Challenge matches their skills—not too easy, not too hard",
       "They are multitasking continuously",
@@ -167,7 +167,7 @@
   {
     "id": 12,
     "section": "6.2",
-    "question": "What is 'funware' or gamification in the context of engagement?",
+    "question": "What is funware or gamification in the context of engagement?",
     "options": [
       "Using game-like elements such as points and badges in non-game systems",
       "Releasing only entertainment apps",
@@ -197,7 +197,7 @@
   {
     "id": 14,
     "section": "6.3",
-    "question": "What is the central idea of Patrick Jordan's 'Designing Pleasurable Products'?",
+    "question": "What is the central idea of Patrick JordansDesigning Pleasurable Products'?",
     "options": [
       "Usability is the only design goal",
       "Aesthetics should be ignored for functionality",
@@ -237,7 +237,7 @@
     "answerIndex": 2,
     "answer": "Socio-pleasure",
     "shortExplanation": "Socio-pleasure arises from social interaction, belonging, and connection.",
-    "explanation": "Socio-pleasure comes from social interaction, belonging and communication.<br><br><strong>Example:</strong> Instagram's stories feature lets users share moments and react to friends' content—the pleasure comes from social connection, feeling part of a community, and maintaining friendships."
+    "explanation": "Socio-pleasure comes from social interaction, belonging and communication.<br><br><strong>Example:</strong> Instagrams stories feature lets users share moments and react to friends content—the pleasure comes from social connection, feeling part of a community, and maintaining friendships."
   },
   {
     "id": 17,
@@ -287,7 +287,7 @@
   {
     "id": 20,
     "section": "6.3",
-    "question": "What is 'hedonomics' concerned with?",
+    "question": "What is hedonomics concerned with?",
     "options": [
       "Ergonomic safety and efficiency",
       "Error prevention only",
@@ -317,7 +317,7 @@
   {
     "id": 22,
     "section": "6.4",
-    "question": "Which of Don Norman's three levels deals with the immediate sensory reaction to a product's appearance?",
+    "question": "Which of Don Normans three levels deals with the immediate sensory reaction to a products appearance?",
     "options": [
       "Behavioural level",
       "Reflective level",
@@ -377,7 +377,7 @@
   {
     "id": 26,
     "section": "6.4",
-    "question": "Lavie and Tractinsky's 'classical aesthetics' are best described as:",
+    "question": "Lavie and Tractinskysclassical aesthetics' are best described as:",
     "options": [
       "Wild, chaotic visuals",
       "Purely text-based interfaces",
@@ -437,7 +437,7 @@
   {
     "id": 30,
     "section": "6.5",
-    "question": "Holtzblatt and Beyer's 'Joy of Life' refers to:",
+    "question": "Holtzblatt and BeyersJoy of Life' refers to:",
     "options": [
       "The broader happiness and meaning a product brings into daily life",
       "Only the joy of using buttons",
@@ -452,7 +452,7 @@
   {
     "id": 31,
     "section": "6.5",
-    "question": "In Holtzblatt and Beyer's framework, 'Joy in Use' focuses on:",
+    "question": "In Holtzblatt and Beyer's framework, Joy in Use focuses on:",
     "options": [
       "Long-term lifestyle change",
       "Marketing campaigns",
@@ -492,6 +492,6 @@
     "answerIndex": 0,
     "answer": "The product becomes part of the user's identity and story",
     "shortExplanation": "Successful lifestyle design becomes part of user identity and personal narrative.",
-    "explanation": "When a design fits lifestyle well, it becomes something users identify with and integrate into their personal narrative.<br><br><strong>Example:</strong> Someone says 'I'm a Notion person' or 'I'm an analog bullet journal user'—the tool becomes part of how they describe themselves, integrated into their identity story."
+    "explanation": "When a design fits lifestyle well, it becomes something users identify with and integrate into their personal narrative.<br><br><strong>Example:</strong> Someone says Im a Notion personorIm an analog bullet journal user—the tool becomes part of how they describe themselves, integrated into their identity story."
   }
 ]

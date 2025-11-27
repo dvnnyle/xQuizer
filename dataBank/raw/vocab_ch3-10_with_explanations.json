@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": 1,
     "section": "3-vocab",
@@ -142,7 +142,7 @@
   {
     "id": 11,
     "section": "5-vocab",
-    "question": "What is 'Design for All' (universal design)?",
+    "question": "What is Design for All (universal design)?",
     "options": [
       "A philosophy aiming to make products usable by the widest range of people",
       "Design only for one target group",
@@ -296,7 +296,7 @@
   {
     "id": 22,
     "section": "6-vocab",
-    "question": "What is 'flow' in interaction?",
+    "question": "What is flow in interaction?",
     "options": [
       "A state of deep, focused engagement when challenge and skill are balanced",
       "A list of screens in a UI",
@@ -408,7 +408,7 @@
   {
     "id": 30,
     "section": "6-vocab",
-    "question": "In experience design, what does 'lifestyle fit' refer to?",
+    "question": "In experience design, what does lifestyle fit refer to?",
     "options": [
       "How well a product aligns with users’ routines, values and identity",
       "How fast the product loads",

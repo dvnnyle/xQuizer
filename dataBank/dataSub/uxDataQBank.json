@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": 1,
     "section": "UX",
@@ -42,7 +42,7 @@
     ],
     "answerIndex": 1,
     "answer": "Time depends on target size and distance",
-    "explanation": "Fitts's Law states that the time required to move to a target area is a function of the distance to the target divided by the size of the target. In UX design, this means making interactive elements larger and placing them closer to where users need them improves usability.<br><br><strong><strong>Example:</strong></strong> Mobile apps place primary action buttons (like 'Send' or 'Next') large and at the bottom of the screen where thumbs naturally rest. iOS's back button is positioned at the top-left corner—easy to reach—and is large enough to tap quickly without precision."
+    "explanation": "Fitts's Law states that the time required to move to a target area is a function of the distance to the target divided by the size of the target. In UX design, this means making interactive elements larger and placing them closer to where users need them improves usability.<br><br><strong><strong>Example:</strong></strong> Mobile apps place primary action buttons (like Send or Next) large and at the bottom of the screen where thumbs naturally rest. iOS's back button is positioned at the top-left corner—easy to reach—and is large enough to tap quickly without precision."
   },
   {
     "id": 4,
@@ -72,7 +72,7 @@
     ],
     "answerIndex": 1,
     "answer": "Users expect your site to work like other sites they know",
-    "explanation": "Jakob's Law states that users spend most of their time on other sites, so they prefer your site to work the same way as all the other sites they already know. This means designers should leverage existing mental models and familiar patterns rather than reinventing common interactions.<br><br><strong><strong>Example:</strong></strong> E-commerce sites consistently place shopping carts in the top-right corner because that's where Amazon put it and users now expect it there. Login buttons typically appear in the top-right, and hamburger menus (☰) universally mean 'navigation menu' because users learned these patterns elsewhere."
+    "explanation": "Jakob's Law states that users spend most of their time on other sites, so they prefer your site to work the same way as all the other sites they already know. This means designers should leverage existing mental models and familiar patterns rather than reinventing common interactions.<br><br><strong><strong>Example:</strong></strong> E-commerce sites consistently place shopping carts in the top-right corner because that's where Amazon put it and users now expect it there. Login buttons typically appear in the top-right, and hamburger menus (☰) universally mean navigation menu because users learned these patterns elsewhere."
   },
   {
     "id": 6,
@@ -87,7 +87,7 @@
     ],
     "answerIndex": 1,
     "answer": "A clearly defined boundary",
-    "explanation": "The Law of Common Region is a Gestalt principle stating that elements are perceived as part of a group if they are located within the same closed region or boundary. This can be achieved through backgrounds, borders, or containers that visually separate groups of content.<br><br><strong><strong>Example:</strong></strong> Airbnb uses card containers with subtle borders to group each property listing (image, price, location, rating) together. Pricing tables use boxes with different background colors to separate 'Basic', 'Pro', and 'Enterprise' plans into distinct regions."
+    "explanation": "The Law of Common Region is a Gestalt principle stating that elements are perceived as part of a group if they are located within the same closed region or boundary. This can be achieved through backgrounds, borders, or containers that visually separate groups of content.<br><br><strong><strong>Example:</strong></strong> Airbnb uses card containers with subtle borders to group each property listing (image, price, location, rating) together. Pricing tables use boxes with different background colors to separate Basic, Pro, and Enterprise plans into distinct regions."
   },
   {
     "id": 7,
@@ -177,7 +177,7 @@
     ],
     "answerIndex": 1,
     "answer": "The simplest solution is usually the best",
-    "explanation": "Occam's Razor states that among competing solutions, the simplest one is usually the best. In UX design, this means removing unnecessary elements, simplifying interactions, and focusing on essential features. Complexity should only be added when it serves a clear purpose.<br><br><strong><strong>Example:</strong></strong> Google's homepage has just a search box and logo—nothing else. WhatsApp focuses on messaging without unnecessary social features. The 'Sign in with Google' button reduces login from multiple form fields to one click."
+    "explanation": "Occam's Razor states that among competing solutions, the simplest one is usually the best. In UX design, this means removing unnecessary elements, simplifying interactions, and focusing on essential features. Complexity should only be added when it serves a clear purpose.<br><br><strong><strong>Example:</strong></strong> Google's homepage has just a search box and logo—nothing else. WhatsApp focuses on messaging without unnecessary social features. The Sign in with Google button reduces login from multiple form fields to one click."
   },
   {
     "id": 13,
@@ -237,7 +237,7 @@
     ],
     "answerIndex": 1,
     "answer": "Be liberal in what you accept, conservative in what you send",
-    "explanation": "Postel's Law states: 'Be liberal in what you accept from others, and conservative in what you send.' In UX, this means systems should be flexible with user input (accepting various formats, forgiving errors) while providing clear, consistent output. This reduces user frustration and improves usability.<br><br><strong><strong>Example:</strong></strong> Phone number fields accept multiple formats (555-1234, (555) 1234, 555.1234, 5551234) but always display consistently. Search engines accept misspellings and typos ('gogle' finds 'google') but return properly formatted, consistent results."
+    "explanation": "Postel's Law states: 'Be liberal in what you accept from others, and conservative in what you send.' In UX, this means systems should be flexible with user input (accepting various formats, forgiving errors) while providing clear, consistent output. This reduces user frustration and improves usability.<br><br><strong><strong>Example:</strong></strong> Phone number fields accept multiple formats (555-1234, (555) 1234, 555.1234, 5551234) but always display consistently. Search engines accept misspellings and typos (gogle finds google) but return properly formatted, consistent results."
   },
   {
     "id": 17,
@@ -267,7 +267,7 @@
     ],
     "answerIndex": 2,
     "answer": "Every system has inherent complexity that cannot be removed, only moved",
-    "explanation": "Tesler's Law states that for any system there is a certain amount of complexity that cannot be reduced, only shifted. Designers must decide whether to handle complexity on the user's side or the system's side. Good design often means taking on complexity to make things simpler for users.<br><br><strong><strong>Example:</strong></strong> Email spam filtering handles complexity behind the scenes (analyzing patterns, maintaining blacklists) so users just see a clean inbox. Smart home devices use complex algorithms internally but present users with simple on/off switches and voice commands."
+    "explanation": "Tesler's Law states that for any system there is a certain amount of complexity that cannot be reduced, only shifted. Designers must decide whether to handle complexity on the users side or the systems side. Good design often means taking on complexity to make things simpler for users.<br><br><strong><strong>Example:</strong></strong> Email spam filtering handles complexity behind the scenes (analyzing patterns, maintaining blacklists) so users just see a clean inbox. Smart home devices use complex algorithms internally but present users with simple on/off switches and voice commands."
   },
   {
     "id": 19,
@@ -282,7 +282,7 @@
     ],
     "answerIndex": 1,
     "answer": "Visually distinct from surrounding items",
-    "explanation": "The Von Restorff Effect states that when multiple similar objects are present, the one that differs from the rest is most likely to be remembered. In UX, this principle is used to make important elements (like call-to-action buttons) stand out through color, size, position, or other visual properties.<br><br><strong><strong>Example:</strong></strong> A bright green 'Sign Up' button stands out among gray interface elements. In pricing tables, the 'Recommended' plan is highlighted with a different color and border. Emergency 'Delete Account' buttons use red to distinguish them from regular actions."
+    "explanation": "The Von Restorff Effect states that when multiple similar objects are present, the one that differs from the rest is most likely to be remembered. In UX, this principle is used to make important elements (like call-to-action buttons) stand out through color, size, position, or other visual properties.<br><br><strong><strong>Example:</strong></strong> A bright green Sign Up button stands out among gray interface elements. In pricing tables, the Recommended plan is highlighted with a different color and border. Emergency Delete Account buttons use red to distinguish them from regular actions."
   },
   {
     "id": 20,

@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": 1,
     "section": "10.1",
@@ -112,7 +112,7 @@
     ],
     "answerIndex": 3,
     "answer": "Two versions of a design are shown to different users to compare performance",
-    "explanation": "A/B tests randomly assign users to different design variants and use analytics to see which version leads to better outcomes.<br><br><strong>Example:</strong> Booking.com tests two button colors: 50% of users see a green 'Book Now' button, 50% see blue. Analytics show green leads to 12% more bookings, so they adopt green."
+    "explanation": "A/B tests randomly assign users to different design variants and use analytics to see which version leads to better outcomes.<br><br><strong>Example:</strong> Booking.com tests two button colors: 50% of users see a green Book Now button, 50% see blue. Analytics show green leads to 12% more bookings, so they adopt green."
   },
   {
     "id": 9,
@@ -168,7 +168,7 @@
     ],
     "answerIndex": 3,
     "answer": "Very early in the design process",
-    "explanation": "It is particularly helpful early on to catch obvious problems before more costly usability testing with participants.<br><br><strong>Example:</strong> Before recruiting participants, experts review wireframes and catch that the 'Save' button is hidden three menus deep—saving the team from wasting time testing a fundamentally flawed design."
+    "explanation": "It is particularly helpful early on to catch obvious problems before more costly usability testing with participants.<br><br><strong>Example:</strong> Before recruiting participants, experts review wireframes and catch that the Save button is hidden three menus deep—saving the team from wasting time testing a fundamentally flawed design."
   },
   {
     "id": 13,
@@ -327,7 +327,7 @@
   {
     "id": 24,
     "section": "10.5",
-    "question": "What is the 'big rule' about evaluation reporting mentioned in the notes?",
+    "question": "What is the big rule about evaluation reporting mentioned in the notes?",
     "options": [
       "Reports must always be 100 pages long",
       "If no one acts on your evaluation, the evaluation fails",
@@ -350,7 +350,7 @@
     ],
     "answerIndex": 2,
     "answer": "Prioritising issues by severity and suggesting improvements",
-    "explanation": "High‑impact reporting organises issues by severity, links them to principles, and proposes concrete fixes so designers can act on them.<br><br><strong>Example:</strong> Report says: 'Critical: 6/8 users couldn't complete checkout (missing feedback). Fix: Add confirmation message and progress indicator.' This is actionable. 'Users found it confusing' is not."
+    "explanation": "High‑impact reporting organises issues by severity, links them to principles, and proposes concrete fixes so designers can act on them.<br><br><strong>Example:</strong> Report says: 'Critical: 6/8 users couldn't complete checkout (missing feedback). Fix: Add confirmation message and progress indicator.' This is actionable. Users found it confusing is not."
   },
   {
     "id": 26,
@@ -369,7 +369,7 @@
   {
     "id": 27,
     "section": "10.6",
-    "question": "What does 'fidelity' refer to in prototypes?",
+    "question": "What does fidelity refer to in prototypes?",
     "options": [
       "The number of users recruited",
       "How realistic a prototype is in look and behaviour",

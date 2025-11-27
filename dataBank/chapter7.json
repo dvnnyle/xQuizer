@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": 1,
     "question": "In Chapter 7, how is a requirement defined?",
@@ -15,7 +15,7 @@
   },
   {
     "id": 2,
-    "question": "What is the main goal of the 'understanding' phase in Chapter 7?",
+    "question": "What is the main goal of the understanding phase in Chapter 7?",
     "options": [
       "To immediately sketch user interfaces",
       "To choose the technology stack",
@@ -24,7 +24,7 @@
     ],
     "answerIndex": 2,
     "answer": "To understand people, activities, contexts and generate requirements",
-    "explanation": "Understanding is about researching people, activities and contexts (PACT) to generate grounded requirements for the system.<br><br><strong>Example:</strong> A team building a delivery app doesn't jump to wireframes. They first observe drivers, interview customers, map delivery contexts (traffic, weather, rural areas), then generate requirements like 'offline route caching' based on real needs.",
+    "explanation": "Understanding is about researching people, activities and contexts (PACT) to generate grounded requirements for the system.<br><br><strong>Example:</strong> A team building a delivery app doesn't jump to wireframes. They first observe drivers, interview customers, map delivery contexts (traffic, weather, rural areas), then generate requirements like offline route caching based on real needs.",
     "shortExplanation": "Understanding means researching real people and contexts to generate grounded requirements."
   },
   {
@@ -80,7 +80,7 @@
     ],
     "answerIndex": 2,
     "answer": "The app must load within 2 seconds",
-    "explanation": "Non-functional requirements describe qualities such as performance, usability or security – here, response time is a quality.<br><br><strong>Example:</strong> Loading the home screen in 2 seconds is a performance quality, not a feature. Other qualities: '99.9% uptime' (reliability), 'WCAG AA compliant' (accessibility), 'works offline' (availability).",
+    "explanation": "Non-functional requirements describe qualities such as performance, usability or security – here, response time is a quality.<br><br><strong>Example:</strong> Loading the home screen in 2 seconds is a performance quality, not a feature. Other qualities: '99.9% uptime' (reliability), WCAG AA compliant (accessibility), works offline (availability).",
     "shortExplanation": "Non-functional requirements describe qualities like performance, security, usability."
   },
   {
@@ -136,12 +136,12 @@
     ],
     "answerIndex": 1,
     "answer": "Because that belongs to later design decisions",
-    "explanation": "Requirements describe what and which qualities, not how to implement them. The 'how' is decided later during design.<br><br><strong>Example:</strong> Requirement: 'Users must securely log in.' This doesn't specify OAuth, passwords, or biometrics—that's the how. Designers later choose the best authentication method.",
+    "explanation": "Requirements describe what and which qualities, not how to implement them. The how is decided later during design.<br><br><strong>Example:</strong> Requirement: 'Users must securely log in.This doesnt specify OAuth, passwords, or biometrics—that's the how. Designers later choose the best authentication method.",
     "shortExplanation": "Requirements define what, not how—implementation comes during design."
   },
   {
     "id": 11,
-    "question": "Which of these best describes 'requirements gathering'?",
+    "question": "Which of these best describes requirements gathering?",
     "options": [
       "Collecting requirements that exist ready-made",
       "Co-creating requirements with stakeholders",
@@ -150,8 +150,8 @@
     ],
     "answerIndex": 0,
     "answer": "Collecting requirements that exist ready-made",
-    "explanation": "The term 'requirements gathering' suggests that requirements are just lying around to be picked up, with little interaction.<br><br><strong>Example:</strong> The term suggests requirements are like apples to pick from a tree. Reality: stakeholders have vague wishes ('make it better'), not clear requirements. Discovery requires deep conversation.",
-    "shortExplanation": "'Gathering' implies requirements exist ready-made, needing little discovery effort."
+    "explanation": "The term requirements gathering suggests that requirements are just lying around to be picked up, with little interaction.<br><br><strong>Example:</strong> The term suggests requirements are like apples to pick from a tree. Reality: stakeholders have vague wishes (make it better), not clear requirements. Discovery requires deep conversation.",
+    "shortExplanation": "Gathering implies requirements exist ready-made, needing little discovery effort."
   },
   {
     "id": 12,
@@ -165,7 +165,7 @@
     "answerIndex": 3,
     "answer": "Requirements generation",
     "explanation": "‘Requirements generation’ suggests creativity and going beyond just documenting current practice.<br><br><strong>Example:</strong> If you only document what users currently do, you miss innovation. Generation means asking: 'What could they do?' Like moving from paper forms to digital wizards—not just digitizing the old form.",
-    "shortExplanation": "'Generation' emphasizes creativity and going beyond current practice."
+    "shortExplanation": "Generation emphasizes creativity and going beyond current practice."
   },
   {
     "id": 13,
@@ -179,7 +179,7 @@
     "answerIndex": 1,
     "answer": "Requirements elicitation",
     "explanation": "‘Requirements elicitation’ emphasises interactive conversations and discovery with stakeholders.<br><br><strong>Example:</strong> Elicitation means interviewing users, observing workflows, facilitating workshops. It's collaborative: 'Tell me about your typical day,' not just handing out surveys.",
-    "shortExplanation": "'Elicitation' emphasizes interactive discovery with stakeholders."
+    "shortExplanation": "Elicitation emphasizes interactive discovery with stakeholders."
   },
   {
     "id": 14,
@@ -193,11 +193,11 @@
     "answerIndex": 0,
     "answer": "Requirements engineering",
     "explanation": "‘Requirements engineering’ is the formal, structured approach commonly used in software engineering.<br><br><strong>Example:</strong> Large projects use requirements engineering: formal documents, traceability matrices, change control, sign-offs. Every requirement has an ID, priority, and test case.",
-    "shortExplanation": "'Engineering' is the formal, structured approach in software development."
+    "shortExplanation": "Engineering is the formal, structured approach in software development."
   },
   {
     "id": 15,
-    "question": "Why does the author prefer to talk about 'understanding' instead of just 'requirements gathering'?",
+    "question": "Why does the author prefer to talk about understanding instead of just requirements gathering?",
     "options": [
       "Because understanding ignores stakeholders",
       "Because it combines both gathering and generating requirements",
@@ -206,12 +206,12 @@
     ],
     "answerIndex": 1,
     "answer": "Because it combines both gathering and generating requirements",
-    "explanation": "'Understanding' captures both gathering from current practice and generating new possibilities.<br><br><strong>Example:</strong> Understanding means: learn current pain points (gathering), explore better ways (generation), involve users (elicitation). It's holistic, combining discovery and creativity.",
-    "shortExplanation": "'Understanding' captures both gathering existing needs and generating new possibilities."
+    "explanation": "Understanding captures both gathering from current practice and generating new possibilities.<br><br><strong>Example:</strong> Understanding means: learn current pain points (gathering), explore better ways (generation), involve users (elicitation). It's holistic, combining discovery and creativity.",
+    "shortExplanation": "Understanding captures both gathering existing needs and generating new possibilities."
   },
   {
     "id": 16,
-    "question": "In Chapter 7, what is a 'requirements specification'?",
+    "question": "In Chapter 7, what is a requirements specification?",
     "options": [
       "A user manual for the final system",
       "A formal document that lists and explains requirements",
@@ -248,7 +248,7 @@
     ],
     "answerIndex": 1,
     "answer": "Prototypes, screenshots and other media",
-    "explanation": "Modern requirements specifications may also include prototypes, wireframes, screenshots and other supporting media.<br><br><strong>Example:</strong> Instead of just text ('users can filter results'), specs now include: wireframe showing filter UI, clickable prototype, user flow diagram. Visuals reduce misunderstanding.",
+    "explanation": "Modern requirements specifications may also include prototypes, wireframes, screenshots and other supporting media.<br><br><strong>Example:</strong> Instead of just text (users can filter results), specs now include: wireframe showing filter UI, clickable prototype, user flow diagram. Visuals reduce misunderstanding.",
     "shortExplanation": "Modern specs include prototypes, wireframes, and other rich media."
   },
   {
@@ -309,7 +309,7 @@
   },
   {
     "id": 23,
-    "question": "In the MoSCoW method, what does 'Must have' mean?",
+    "question": "In the MoSCoW method, what does Must have mean?",
     "options": [
       "Nice to include if there is time",
       "Features planned for future releases only",
@@ -318,12 +318,12 @@
     ],
     "answerIndex": 2,
     "answer": "Fundamental requirements without which the system is unusable",
-    "explanation": "'Must have' items form the minimum viable subset – without them the system is not workable.<br><br><strong>Example:</strong> E-commerce MVP must-haves: product listing, cart, checkout, payment. Without checkout, it's not a store. Should-haves like recommendations can wait.",
+    "explanation": "Must have items form the minimum viable subset – without them the system is not workable.<br><br><strong>Example:</strong> E-commerce MVP must-haves: product listing, cart, checkout, payment. Without checkout, it's not a store. Should-haves like recommendations can wait.",
     "shortExplanation": "Must-haves are non-negotiable—without them, the system doesn't work."
   },
   {
     "id": 24,
-    "question": "In MoSCoW, what does 'Should have' typically represent?",
+    "question": "In MoSCoW, what does Should have typically represent?",
     "options": [
       "Requirements that are unnecessary",
       "Requirements that would be important if time/resources allow",
@@ -332,12 +332,12 @@
     ],
     "answerIndex": 1,
     "answer": "Requirements that would be important if time/resources allow",
-    "explanation": "'Should have' items are important but not absolutely essential to deliver a usable system in the current release.<br><br><strong>Example:</strong> A banking app should have budgeting tools and spending insights. Important features, but the app works without them. If time/budget tight, these can slip to v2.",
+    "explanation": "Should have items are important but not absolutely essential to deliver a usable system in the current release.<br><br><strong>Example:</strong> A banking app should have budgeting tools and spending insights. Important features, but the app works without them. If time/budget tight, these can slip to v2.",
     "shortExplanation": "Should-haves are important but not critical for the first release."
   },
   {
     "id": 25,
-    "question": "In MoSCoW, what does 'Could have' usually indicate?",
+    "question": "In MoSCoW, what does Could have usually indicate?",
     "options": [
       "Low-priority requirements that can be left out if necessary",
       "Essential requirements",
@@ -346,7 +346,7 @@
     ],
     "answerIndex": 0,
     "answer": "Low-priority requirements that can be left out if necessary",
-    "explanation": "'Could have' items are lower priority and can more easily be postponed or omitted.<br><br><strong>Example:</strong> A task app could have color themes, custom sounds, widget styles. Nice for some users, but low priority. Easily dropped if deadlines loom.",
+    "explanation": "Could have items are lower priority and can more easily be postponed or omitted.<br><br><strong>Example:</strong> A task app could have color themes, custom sounds, widget styles. Nice for some users, but low priority. Easily dropped if deadlines loom.",
     "shortExplanation": "Could-haves are nice-to-have features that can be postponed."
   },
   {
@@ -374,12 +374,12 @@
     ],
     "answerIndex": 2,
     "answer": "Must-have items define the minimum viable product (MVP)",
-    "explanation": "In agile, the set of 'Must have' requirements often defines the minimum viable product for a release.<br><br><strong>Example:</strong> Building a ride-share app MVP: Must (request ride, track driver, pay). Should (scheduled rides, favorites). Could (ride splitting). Won't (loyalty program). MVP ships with musts only.",
+    "explanation": "In agile, the set of Must have requirements often defines the minimum viable product for a release.<br><br><strong>Example:</strong> Building a ride-share app MVP: Must (request ride, track driver, pay). Should (scheduled rides, favorites). Could (ride splitting). Won't (loyalty program). MVP ships with musts only.",
     "shortExplanation": "In agile, Must-haves define the minimum viable product (MVP)."
   },
   {
     "id": 28,
-    "question": "Why is it said that requirements work, design, envisionment and evaluation are 'tightly interwoven'?",
+    "question": "Why is it said that requirements work, design, envisionment and evaluation are tightly interwoven?",
     "options": [
       "Because they happen only once in sequence",
       "Because understanding requirements is impossible",
@@ -416,7 +416,7 @@
     ],
     "answerIndex": 2,
     "answer": "Understanding People, Activities, Contexts and Technologies feeds into generating good requirements",
-    "explanation": "By analysing People, Activities, Contexts and Technologies, designers can derive grounded, realistic requirements.<br><br><strong>Example:</strong> Analyzing a gym app with PACT: People (varied fitness levels), Activities (track workouts, log meals), Contexts (gym, home, outdoors), Technologies (phone, wearables). This leads to requirements like 'wearable integration' and 'offline workout logging.'",
+    "explanation": "By analysing People, Activities, Contexts and Technologies, designers can derive grounded, realistic requirements.<br><br><strong>Example:</strong> Analyzing a gym app with PACT: People (varied fitness levels), Activities (track workouts, log meals), Contexts (gym, home, outdoors), Technologies (phone, wearables). This leads to requirements like wearable integration and 'offline workout logging.'",
     "shortExplanation": "PACT analysis of People, Activities, Contexts, Technologies informs requirements."
   }
 ]

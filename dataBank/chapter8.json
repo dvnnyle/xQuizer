@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": 1,
     "section": "8.1",
@@ -207,7 +207,7 @@
     "answerIndex": 0,
     "answer": "Focus on core ideas without irrelevant detail",
     "shortExplanation": "Abstraction removes details, focusing on core ideas and concepts.",
-    "explanation": "Abstraction helps explore ideas without being trapped by detail.<br><br><strong>Example:</strong> Using boxes and lines instead of real content lets designers debate information hierarchy without getting distracted by whether headlines say 'Welcome' or 'Get Started'."
+    "explanation": "Abstraction helps explore ideas without being trapped by detail.<br><br><strong>Example:</strong> Using boxes and lines instead of real content lets designers debate information hierarchy without getting distracted by whether headlines say Welcome or Get Started."
   },
   {
     "id": 15,
@@ -267,7 +267,7 @@
     "answerIndex": 0,
     "answer": "Making ideas concrete enough to discuss",
     "shortExplanation": "Envisionment makes ideas concrete, enabling shared understanding with clients.",
-    "explanation": "Representations enable shared understanding and alignment with stakeholders.<br><br><strong>Example:</strong> Instead of describing a 'dashboard' verbally, showing a wireframe lets clients see exactly what you mean, point to elements, and give specific feedback."
+    "explanation": "Representations enable shared understanding and alignment with stakeholders.<br><br><strong>Example:</strong> Instead of describing a dashboard verbally, showing a wireframe lets clients see exactly what you mean, point to elements, and give specific feedback."
   },
   {
     "id": 19,

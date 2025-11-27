@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": 1,
     "principle": "Consistency",
@@ -63,7 +63,7 @@
     "id": 6,
     "principle": "User Control",
     "description": "Users should feel they are in charge of the system, able to initiate actions, make decisions, and interrupt or reverse processes. Systems should respond to user intentions, not impose their own agenda.",
-    "example": "Video players let users pause, skip, adjust volume, and change speed. Websites with 'Skip intro' buttons respect user control. Browser Back buttons let users reverse navigation mistakes.",
+    "example": "Video players let users pause, skip, adjust volume, and change speed. Websites with Skip intro buttons respect user control. Browser Back buttons let users reverse navigation mistakes.",
     "takeaways": [
       "Loss of control creates anxiety and frustration.",
       "Users need the ability to stop unwanted processes.",
@@ -75,11 +75,11 @@
     "id": 7,
     "principle": "Feedback",
     "description": "The system must clearly communicate the results and consequences of user actions, keeping users informed about system status at all times.",
-    "example": "Email confirmation messages ('Message sent'). Form fields showing checkmarks or errors as you type. Progress bars for downloads. Button color changes when clicked. Car lock sounds.",
+    "example": "Email confirmation messages (Message sent). Form fields showing checkmarks or errors as you type. Progress bars for downloads. Button color changes when clicked. Car lock sounds.",
     "takeaways": [
       "Users need continuous confirmation of what actions accomplished.",
       "Lack of feedback creates uncertainty and anxiety.",
-      "Good feedback answers: 'Did that work?' and 'What happened?'"
+      "Good feedback answers: 'Did that work?andWhat happened?'"
     ],
     "whyItMatters": "Feedback prevents users from operating blindly, reducing repeated actions and errors caused by uncertainty."
   },
@@ -123,7 +123,7 @@
     "id": 11,
     "principle": "Error Prevention & Recovery",
     "description": "Design systems that both prevent errors before they occur and provide safe, easy ways to fix mistakes when they happen. Humans make errors—good design accounts for this.",
-    "example": "Undo/Redo in text editors. Gmail's 'Undo send' feature. Confirmation dialogs for destructive actions. Auto-save preventing data loss. Trash bins allowing file recovery.",
+    "example": "Undo/Redo in text editors. GmailsUndo send' feature. Confirmation dialogs for destructive actions. Auto-save preventing data loss. Trash bins allowing file recovery.",
     "takeaways": [
       "Errors are inevitable in human interaction.",
       "Prevention is better than recovery, but both are necessary.",

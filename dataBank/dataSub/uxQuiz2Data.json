@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": 1,
     "section": "UX",
@@ -252,7 +252,7 @@
     ],
     "answerIndex": 1,
     "answer": "Von Restorff Effect",
-    "explanation": "The Von Restorff Effect (Isolation Effect) states that when multiple similar objects are present, the one that differs is most likely to be remembered. <strong><strong>Example:</strong></strong> Call-to-action buttons use bright colors (green 'Sign Up' among gray buttons). Featured pricing plans are highlighted. Important notifications use distinct colors or icons."
+    "explanation": "The Von Restorff Effect (Isolation Effect) states that when multiple similar objects are present, the one that differs is most likely to be remembered. <strong><strong>Example:</strong></strong> Call-to-action buttons use bright colors (green Sign Up among gray buttons). Featured pricing plans are highlighted. Important notifications use distinct colors or icons."
   },
   {
     "id": 18,
