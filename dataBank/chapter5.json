@@ -75,6 +75,21 @@
     "explanation": "Conceptual exclusion occurs when users face cognitive difficulties understanding how a system works. This happens when:<br><br>• <strong>Commands or terminology are unclear</strong>: Users don't understand what actions mean<br>• <strong>Mental models don't match system behavior</strong>: System works differently than users expect<br>• <strong>Metaphors are culturally unfamiliar</strong>: References don't translate across cultures<br>• <strong>Interface logic is too complex</strong>: Too many steps or confusing workflows<br><br>Example: A cloud storage app that uses terms like sync conflict or versioning without clear explanations creates conceptual barriers for non-technical users trying to understand why their files look different."
   },
   {
+    "id": 5.5,
+    "section": "5.2",
+    "question": "Which type of exclusion occurs when users cannot afford necessary technology or services?",
+    "options": [
+      "Physical exclusion",
+      "Conceptual exclusion",
+      "Economic exclusion",
+      "Cultural exclusion"
+    ],
+    "answerIndex": 2,
+    "answer": "Economic exclusion",
+    "shortExplanation": "Economic exclusion prevents access due to cost barriers.",
+    "explanation": "Different types of exclusion in design include:<br><br>• <strong>Physical exclusion</strong>: Inappropriate equipment placement or device design demanding too much ability (ATM too high for wheelchair users, mice too large for children, phones too fiddly for arthritis)<br>• <strong>Conceptual exclusion</strong>: Users cannot understand complex instructions, obscure commands, or form clear mental models<br>• <strong>Economic exclusion</strong>: Inability to afford necessary technology or services<br>• <strong>Cultural exclusion</strong>: Reliance on inappropriate metaphors (American football references) or language barriers<br>• <strong>Social exclusion</strong>: Lack of access to technology at the right time/place, or exclusion from group-specific norms and practices<br><br>Example: Requiring expensive smartphones or paid subscriptions for essential services creates economic exclusion. Designers must balance functionality with affordability and consider free or low-cost alternatives for underserved populations."
+  },
+  {
     "id": 6,
     "section": "5.2",
     "question": "inclusive design is:",
