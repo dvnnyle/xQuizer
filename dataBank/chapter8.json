@@ -1,4 +1,4 @@
-ï»¿[
+[
   {
     "id": 1,
     "section": "8.1",
@@ -12,7 +12,7 @@
     "answerIndex": 0,
     "answer": "To bring abstract ideas to life so they can be explored and evaluated",
     "shortExplanation": "Envisionment makes abstract ideas concrete for exploration and early evaluation.",
-    "explanation": "Envisionment focuses on expressing and exploring design ideas early using representations so issues appear before heavy investment.<br><br><strong>Example:</strong> Instead of debating 'Should we add social features?' abstractly, a team sketches a profile page and sharing flow, making the idea concrete enough to discuss trade-offs and spot problems."
+    "explanation": "Envisionment focuses on expressing and exploring design ideas early using representations so issues appear before heavy investment.<br><br><strong>Example:</strong> Instead of debating Should we add social features? abstractly, a team sketches a profile page and sharing flow, making the idea concrete enough to discuss trade-offs and spot problems."
   },
   {
     "id": 2,
@@ -27,7 +27,7 @@
     "answerIndex": 0,
     "answer": "They make ideas visible and discussable",
     "shortExplanation": "Representations make ideas visible, revealing gaps and enabling discussion.",
-    "explanation": "Representations help teams reason about ideas, reveal gaps and communicate with stakeholders.<br><br><strong>Example:</strong> A team debates navigation structure verbally for hours. Once they sketch it on a whiteboard, everyone immediately sees the problem: too many menu levels. Representation reveals what words couldn't."
+    "explanation": "Representations help teams reason about ideas, reveal gaps and communicate with stakeholders.<br><br><strong>Example:</strong> A team debates navigation structure verbally for hours. Once they sketch it on a whiteboard, everyone immediately sees the problem: too many menu levels. Representation reveals what words couldnt."
   },
   {
     "id": 3,
@@ -41,13 +41,13 @@
     ],
     "answerIndex": 2,
     "answer": "Calculating development budgets",
-    "shortExplanation": "Envisionment supports creativity, flaw detection, and evaluationâ€”not budgeting.",
-    "explanation": "Envisionment tools support creativity, detection of flaws, and evaluationâ€”not budgeting tasks.<br><br><strong>Example:</strong> Designers create wireframes to explore layouts, test user flows, and spot usability issuesâ€”not to calculate development costs or project ROI."
+    "shortExplanation": "Envisionment supports creativity, flaw detection, and evaluation—not budgeting.",
+    "explanation": "Envisionment tools support creativity, detection of flaws, and evaluation—not budgeting tasks.<br><br><strong>Example:</strong> Designers create wireframes to explore layouts, test user flows, and spot usability issues—not to calculate development costs or project ROI."
   },
   {
     "id": 4,
     "section": "8.2",
-    "question": "Lowâ€‘fidelity prototypes are best described as:",
+    "question": "Low-fidelity prototypes are best described as:",
     "options": [
       "Quick, rough representations used early",
       "Fully interactive final systems",
@@ -57,12 +57,12 @@
     "answerIndex": 0,
     "answer": "Quick, rough representations used early",
     "shortExplanation": "Low-fidelity prototypes are quick, rough representations for early exploration.",
-    "explanation": "Lowâ€‘fidelity prototypes include sketches or paper mockups for rapid exploration.<br><br><strong>Example:</strong> Paper sketches of screen layouts drawn in 10 minutes with markersâ€”rough but fast, letting designers explore multiple ideas before committing to detailed designs."
+    "explanation": "Low-fidelity prototypes include sketches or paper mockups for rapid exploration.<br><br><strong>Example:</strong> Paper sketches of screen layouts drawn in 10 minutes with markers—rough but fast, letting designers explore multiple ideas before committing to detailed designs."
   },
   {
     "id": 5,
     "section": "8.2",
-    "question": "A key advantage of lowâ€‘fidelity prototypes is:",
+    "question": "A key advantage of low-fidelity prototypes is:",
     "options": [
       "They encourage discussion and rapid change",
       "They accurately show timing and animation",
@@ -72,22 +72,22 @@
     "answerIndex": 0,
     "answer": "They encourage discussion and rapid change",
     "shortExplanation": "Low-fi prototypes are cheap and easily changed, encouraging experimentation.",
-    "explanation": "Lowâ€‘fi artifacts are cheap and changeable, perfect for early exploration.<br><br><strong>Example:</strong> Paper wireframes can be redrawn in minutes when someone suggests a better layoutâ€”nobody feels attached to rough sketches, so iteration is fast and friction-free."
+    "explanation": "Low-fi artifacts are cheap and changeable, perfect for early exploration.<br><br><strong>Example:</strong> Paper wireframes can be redrawn in minutes when someone suggests a better layout—nobody feels attached to rough sketches, so iteration is fast and friction-free."
   },
   {
     "id": 6,
     "section": "8.2",
-    "question": "Highâ€‘fidelity prototypes are:",
+    "question": "High-fidelity prototypes are:",
     "options": [
       "More realistic and detailed, showing behaviour and styling",
-      "Always paperâ€‘based",
+      "Always paper-based",
       "Used only after deployment",
       "Not suitable for evaluation"
     ],
     "answerIndex": 0,
     "answer": "More realistic and detailed, showing behaviour and styling",
     "shortExplanation": "High-fidelity prototypes are realistic, showing actual look, feel, and behavior.",
-    "explanation": "Highâ€‘fidelity prototypes represent look, feel and interaction more accurately.<br><br><strong>Example:</strong> A Figma prototype with actual fonts, colors, animations, and clickable buttons that mimics the real app experienceâ€”detailed enough to test specific interactions."
+    "explanation": "High-fidelity prototypes represent look, feel and interaction more accurately.<br><br><strong>Example:</strong> A Figma prototype with actual fonts, colors, animations, and clickable buttons that mimics the real app experience—detailed enough to test specific interactions."
   },
   {
     "id": 7,
@@ -101,8 +101,8 @@
     ],
     "answerIndex": 0,
     "answer": "You can only evaluate what the prototype represents",
-    "shortExplanation": "Prototypes can only test what they includeâ€”missing features can't be evaluated.",
-    "explanation": "If the prototype lacks certain flows, animations or data, these cannot be evaluated.<br><br><strong>Example:</strong> A prototype shows successful login but not error messages for wrong passwordsâ€”you can test the happy path but can't evaluate error handling."
+    "shortExplanation": "Prototypes can only test what they include—missing features cant be evaluated.",
+    "explanation": "If the prototype lacks certain flows, animations or data, these cannot be evaluated.<br><br><strong>Example:</strong> A prototype shows successful login but not error messages for wrong passwords—you can test the happy path but cant evaluate error handling."
   },
   {
     "id": 8,
@@ -117,7 +117,7 @@
     "answerIndex": 0,
     "answer": "Are fast, disposable and encourage divergence",
     "shortExplanation": "Sketches are fast, disposable, and encourage creative exploration.",
-    "explanation": "Sketches support early creativity and exploration without commitment.<br><br><strong>Example:</strong> In 20 minutes, a designer sketches 8 different homepage layouts on napkinsâ€”quickly exploring diverse ideas without worrying about perfection or commitment."
+    "explanation": "Sketches support early creativity and exploration without commitment.<br><br><strong>Example:</strong> In 20 minutes, a designer sketches 8 different homepage layouts on napkins—quickly exploring diverse ideas without worrying about perfection or commitment."
   },
   {
     "id": 9,
@@ -132,7 +132,7 @@
     "answerIndex": 0,
     "answer": "Sequences of user actions over time",
     "shortExplanation": "Storyboards show sequences of actions over time with visual frames.",
-    "explanation": "Storyboards use frames to communicate activities, flow and context.<br><br><strong>Example:</strong> Six comic-style panels showing: (1) User opens app on bus, (2) Searches for coffee shop, (3) Checks reviews, (4) Navigates there, (5) Orders ahead, (6) Picks up coffeeâ€”illustrating the complete journey."
+    "explanation": "Storyboards use frames to communicate activities, flow and context.<br><br><strong>Example:</strong> Six comic-style panels showing: (1) User opens app on bus, (2) Searches for coffee shop, (3) Checks reviews, (4) Navigates there, (5) Orders ahead, (6) Picks up coffee—illustrating the complete journey."
   },
   {
     "id": 10,
@@ -147,7 +147,7 @@
     "answerIndex": 0,
     "answer": "Tell stories of users interacting in context",
     "shortExplanation": "Scenarios are narrative stories embedding people, activities, and context.",
-    "explanation": "Scenarios embed people, activities and context to frame design thinking.<br><br><strong>Example:</strong> 'Maria, a busy nurse, checks her schedule during her 15-minute break in a noisy hospital cafeteria on her phone with low battery'â€”a scenario grounding design in real context."
+    "explanation": "Scenarios embed people, activities and context to frame design thinking.<br><br><strong>Example:</strong> Maria, a busy nurse, checks her schedule during her 15-minute break in a noisy hospital cafeteria on her phone with low battery—a scenario grounding design in real context."
   },
   {
     "id": 11,
@@ -162,7 +162,7 @@
     "answerIndex": 0,
     "answer": "Each form reveals different insights",
     "shortExplanation": "Different representations highlight different aspects of design.",
-    "explanation": "Different representations highlight different aspects of use, interaction and context.<br><br><strong>Example:</strong> Sketches reveal layout problems, storyboards expose workflow gaps, clickable prototypes uncover interaction issues, and scenarios identify context mismatchesâ€”each form shows something unique."
+    "explanation": "Different representations highlight different aspects of use, interaction and context.<br><br><strong>Example:</strong> Sketches reveal layout problems, storyboards expose workflow gaps, clickable prototypes uncover interaction issues, and scenarios identify context mismatches—each form shows something unique."
   },
   {
     "id": 12,
@@ -192,7 +192,7 @@
     "answerIndex": 0,
     "answer": "Limit creativity and exploration",
     "shortExplanation": "Too much detail early discourages changes and limits exploration.",
-    "explanation": "Overâ€‘detailed artefacts may discourage change and make ideas seem fixed.<br><br><strong>Example:</strong> A pixel-perfect mockup with custom icons early on makes the team reluctant to rethink the conceptâ€”people focus on tweaking colors instead of questioning if the approach is right."
+    "explanation": "Over-detailed artefacts may discourage change and make ideas seem fixed.<br><br><strong>Example:</strong> A pixel-perfect mockup with custom icons early on makes the team reluctant to rethink the concept—people focus on tweaking colors instead of questioning if the approach is right."
   },
   {
     "id": 14,
@@ -229,15 +229,15 @@
     "section": "8.5",
     "question": "Tools like Figma or Adobe XD are mainly used for:",
     "options": [
-      "Highâ€‘fidelity digital envisionment",
+      "High-fidelity digital envisionment",
       "Collecting analytics",
       "Conducting field studies",
       "Requirement documentation"
     ],
     "answerIndex": 0,
-    "answer": "Highâ€‘fidelity digital envisionment",
+    "answer": "High-fidelity digital envisionment",
     "shortExplanation": "Figma and Adobe XD create interactive, high-fidelity visual prototypes.",
-    "explanation": "These tools allow interactive, visual, highâ€‘fidelity mockups of interfaces.<br><br><strong>Example:</strong> In Figma, designers create a clickable prototype with real fonts, images, buttons, and page transitionsâ€”looking and behaving almost like the final product."
+    "explanation": "These tools allow interactive, visual, high-fidelity mockups of interfaces.<br><br><strong>Example:</strong> In Figma, designers create a clickable prototype with real fonts, images, buttons, and page transitions—looking and behaving almost like the final product."
   },
   {
     "id": 17,
@@ -252,7 +252,7 @@
     "answerIndex": 0,
     "answer": "Rapid ideation and participatory design",
     "shortExplanation": "Paper prototypes enable fast ideation and collaborative participation.",
-    "explanation": "Paper mockups invite collaboration and quick changes.<br><br><strong>Example:</strong> A team sits with users, drawing interface elements on index cards. Users rearrange cards, suggest changes, and co-create the designâ€”paper makes collaboration tangible and accessible."
+    "explanation": "Paper mockups invite collaboration and quick changes.<br><br><strong>Example:</strong> A team sits with users, drawing interface elements on index cards. Users rearrange cards, suggest changes, and co-create the design—paper makes collaboration tangible and accessible."
   },
   {
     "id": 18,
@@ -272,7 +272,7 @@
   {
     "id": 19,
     "section": "8.6",
-    "question": "Why is coâ€‘creation valuable in envisionment?",
+    "question": "Why is co-creation valuable in envisionment?",
     "options": [
       "Users and stakeholders contribute ideas and reveal needs",
       "Designers avoid all responsibility",
@@ -282,7 +282,7 @@
     "answerIndex": 0,
     "answer": "Users and stakeholders contribute ideas and reveal needs",
     "shortExplanation": "Co-creation surfaces insights by involving users and stakeholders directly.",
-    "explanation": "Coâ€‘creation helps surface insights and values directly from participants.<br><br><strong>Example:</strong> Teachers co-design a classroom app by arranging interface elements on sticky notes, revealing that they need quick attendance access more than the designers assumedâ€”uncovering real needs."
+    "explanation": "Co-creation helps surface insights and values directly from participants.<br><br><strong>Example:</strong> Teachers co-design a classroom app by arranging interface elements on sticky notes, revealing that they need quick attendance access more than the designers assumed—uncovering real needs."
   },
   {
     "id": 20,
@@ -297,7 +297,7 @@
     "answerIndex": 0,
     "answer": "Stakeholders may think the design is final",
     "shortExplanation": "Polished mockups can falsely signal the design is finished.",
-    "explanation": "Highâ€‘fi artifacts can create the illusion that the design is finished.<br><br><strong>Example:</strong> Showing a client a pixel-perfect mockup too early makes them think it's nearly done, resisting major changes even though the concept needs rethinking."
+    "explanation": "High-fi artifacts can create the illusion that the design is finished.<br><br><strong>Example:</strong> Showing a client a pixel-perfect mockup too early makes them think its nearly done, resisting major changes even though the concept needs rethinking."
   },
   {
     "id": 21,
@@ -312,7 +312,7 @@
     "answerIndex": 0,
     "answer": "Providing concrete artefacts to critique and refine",
     "shortExplanation": "Concrete artifacts enable critique, evaluation, and iterative refinement.",
-    "explanation": "Representation encourages evaluation, critique and refinement.<br><br><strong>Example:</strong> After testing a prototype, users identify confusing navigation. The team revises the design, tests again, finds new issues, iteratesâ€”envisionment makes this cycle tangible."
+    "explanation": "Representation encourages evaluation, critique and refinement.<br><br><strong>Example:</strong> After testing a prototype, users identify confusing navigation. The team revises the design, tests again, finds new issues, iterates—envisionment makes this cycle tangible."
   },
   {
     "id": 22,
@@ -327,22 +327,22 @@
     "answerIndex": 0,
     "answer": "It externalises ideas so gaps and contradictions become visible",
     "shortExplanation": "Externalizing ideas reveals hidden assumptions and contradictions.",
-    "explanation": "Externalising concepts reveals mismatches in mental models.<br><br><strong>Example:</strong> Two designers both say they agree on the checkout flow. Drawing it reveals one assumes payment comes first, the other assumes address firstâ€”envisionment exposes the hidden mismatch."
+    "explanation": "Externalising concepts reveals mismatches in mental models.<br><br><strong>Example:</strong> Two designers both say they agree on the checkout flow. Drawing it reveals one assumes payment comes first, the other assumes address first—envisionment exposes the hidden mismatch."
   },
   {
     "id": 23,
     "section": "8.7",
     "question": "Which is an example of an envisionment question?",
     "options": [
-      "â€˜What would the user do next?â€™",
-      "â€˜What is the server RAM?â€™",
-      "â€˜How much will hosting cost?â€™",
-      "â€˜What is our marketing slogan?â€™"
+      "‘What would the user do next?’",
+      "‘What is the server RAM?’",
+      "‘How much will hosting cost?’",
+      "‘What is our marketing slogan?’"
     ],
     "answerIndex": 0,
-    "answer": "'What would the user do next?'",
+    "answer": "What would the user do next?",
     "shortExplanation": "Envisionment prompts questions about interaction, flow, and user behavior.",
-    "explanation": "Envisionment generates questions about interaction, flow and behaviour.<br><br><strong>Example:</strong> Looking at a wireframe, the team asks: What if users want to undo? How do they return to the previous screen? Where's the confirmation? Representation sparks these critical questions."
+    "explanation": "Envisionment generates questions about interaction, flow and behaviour.<br><br><strong>Example:</strong> Looking at a wireframe, the team asks: What if users want to undo? How do they return to the previous screen? Wheres the confirmation? Representation sparks these critical questions."
   },
   {
     "id": 24,
@@ -357,7 +357,7 @@
     "answerIndex": 0,
     "answer": "Test ideas before committing resources",
     "shortExplanation": "Prototypes test usability and ideas before expensive development.",
-    "explanation": "Prototypes help evaluate usability, flow and understanding early.<br><br><strong>Example:</strong> Testing a clickable prototype reveals users can't find the save button. Fixing it in the prototype takes 5 minutes; fixing it in code would take daysâ€”early evaluation saves resources."
+    "explanation": "Prototypes help evaluate usability, flow and understanding early.<br><br><strong>Example:</strong> Testing a clickable prototype reveals users cant find the save button. Fixing it in the prototype takes 5 minutes; fixing it in code would take days—early evaluation saves resources."
   },
   {
     "id": 25,
@@ -387,6 +387,6 @@
     "answerIndex": 0,
     "answer": "It reduces the cost of changes",
     "shortExplanation": "Early envisionment catches issues when changes are cheap.",
-    "explanation": "Early visualisation and critique reduce cost by catching issues early.<br><br><strong>Example:</strong> Discovering a fundamental navigation problem in a sketch costs nothing to fix. Finding it after coding takes weeks to repairâ€”envisionment prevents expensive late-stage changes."
+    "explanation": "Early visualisation and critique reduce cost by catching issues early.<br><br><strong>Example:</strong> Discovering a fundamental navigation problem in a sketch costs nothing to fix. Finding it after coding takes weeks to repair—envisionment prevents expensive late-stage changes."
   }
 ]
