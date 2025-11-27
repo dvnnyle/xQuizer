@@ -4,6 +4,51 @@ import NavigationMenu from '../pages/widget/navigationMenu'
 import questionsData from '../../dataBank/dataSub/uxQuiz2Data.json'
 import '../chapterList/chapter3.css'
 
+// Import all UX law images
+import AestheticUsabilityEffect from '../assets/uxImg/AestheticUsabilityEffect.png'
+import DohertyThreshold from '../assets/uxImg/DohertyThreshold.png'
+import FittsLaw from '../assets/uxImg/FittsLaw.png'
+import hicksLaw from '../assets/uxImg/hicksLaw.png'
+import jakobLaw from '../assets/uxImg/jakobLaw.png'
+import lawofcommenregion from '../assets/uxImg/lawofcommenregion.png'
+import lawofpragnaz from '../assets/uxImg/lawofpragnaz.png'
+import lawofproximity from '../assets/uxImg/lawofproximity.png'
+import lawofsimilaraity from '../assets/uxImg/lawofsimilaraity.png'
+import lawofuniformconectedneess from '../assets/uxImg/lawofuniformconectedneess.png'
+import millersLaw from '../assets/uxImg/millersLaw.png'
+import occamRazor from '../assets/uxImg/occamRazor.png'
+import ParetoPrinciple from '../assets/uxImg/ParetoPrinciple.png'
+import parkinsonslaw from '../assets/uxImg/parkinsonslaw.png'
+import peakEndrule from '../assets/uxImg/peakEndrule.png'
+import postelslaw from '../assets/uxImg/postelslaw.png'
+import serialpostionEffect from '../assets/uxImg/serialpostionEffect.png'
+import teslerLaw from '../assets/uxImg/teslerLaw.png'
+import vonRestorffEffect from '../assets/uxImg/vonRestorffEffect.png'
+import ZeigarnikEffect from '../assets/uxImg/ZeigarnikEffect.png'
+
+const imageMap = {
+  '/src/assets/uxImg/AestheticUsabilityEffect.png': AestheticUsabilityEffect,
+  '/src/assets/uxImg/DohertyThreshold.png': DohertyThreshold,
+  '/src/assets/uxImg/FittsLaw.png': FittsLaw,
+  '/src/assets/uxImg/hicksLaw.png': hicksLaw,
+  '/src/assets/uxImg/jakobLaw.png': jakobLaw,
+  '/src/assets/uxImg/lawofcommenregion.png': lawofcommenregion,
+  '/src/assets/uxImg/lawofpragnaz.png': lawofpragnaz,
+  '/src/assets/uxImg/lawofproximity.png': lawofproximity,
+  '/src/assets/uxImg/lawofsimilaraity.png': lawofsimilaraity,
+  '/src/assets/uxImg/lawofuniformconectedneess.png': lawofuniformconectedneess,
+  '/src/assets/uxImg/millersLaw.png': millersLaw,
+  '/src/assets/uxImg/occamRazor.png': occamRazor,
+  '/src/assets/uxImg/ParetoPrinciple.png': ParetoPrinciple,
+  '/src/assets/uxImg/parkinsonslaw.png': parkinsonslaw,
+  '/src/assets/uxImg/peakEndrule.png': peakEndrule,
+  '/src/assets/uxImg/postelslaw.png': postelslaw,
+  '/src/assets/uxImg/serialpostionEffect.png': serialpostionEffect,
+  '/src/assets/uxImg/teslerLaw.png': teslerLaw,
+  '/src/assets/uxImg/vonRestorffEffect.png': vonRestorffEffect,
+  '/src/assets/uxImg/ZeigarnikEffect.png': ZeigarnikEffect
+}
+
 function UxQuiz2() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [selectedAnswer, setSelectedAnswer] = useState(null)
@@ -231,7 +276,7 @@ function UxQuiz2() {
           
           {currentQuestion.imageUrl && (
             <div className="question-image">
-              <img src={currentQuestion.imageUrl} alt="Question illustration" />
+              <img src={imageMap[currentQuestion.imageUrl] || currentQuestion.imageUrl} alt="Question illustration" />
             </div>
           )}
           
