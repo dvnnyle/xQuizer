@@ -197,12 +197,12 @@
   {
     "id": 14,
     "section": "5.3",
-    "question": "Norman’s Gulf of Execution refers to:",
+    "question": "Norman's Gulf of Execution refers to:",
     "options": [
-      "Difficulty turning goals into actions",
-      "Difficulty understanding interface visuals",
-      "High subscription costs",
-      "System performance lag"
+      "Difficulty translating user goals into system actions",
+      "Difficulty interpreting visual design elements and layouts",
+      "Difficulty affording premium subscription features",
+      "Difficulty processing commands due to system lag"
     ],
     "answerIndex": 0,
     "answer": "Difficulty turning goals into actions",
@@ -214,10 +214,10 @@
     "section": "5.3",
     "question": "Gulf of Evaluation refers to:",
     "options": [
-      "Seeing whether action succeeded",
-      "Choosing between apps",
-      "Understanding pricing",
-      "Understanding app store rules"
+      "Difficulty determining whether actions succeeded",
+      "Difficulty choosing between competing applications",
+      "Difficulty understanding subscription pricing models",
+      "Difficulty interpreting app marketplace policies"
     ],
     "answerIndex": 0,
     "answer": "Seeing whether action succeeded",
@@ -229,10 +229,10 @@
     "section": "5.3",
     "question": "Affordances support usability by:",
     "options": [
-      "Showing possible actions",
-      "Adding legal text",
-      "Speeding CPU",
-      "Removing features"
+      "Indicating what interactions are possible",
+      "Including comprehensive legal disclaimers",
+      "Optimizing central processing unit speed",
+      "Minimizing available functionality options"
     ],
     "answerIndex": 0,
     "answer": "Showing possible actions",
@@ -244,10 +244,10 @@
     "section": "5.3",
     "question": "Feedforward gives:",
     "options": [
-      "Clues before action",
-      "Feedback after action",
-      "Discount information",
-      "Security warnings"
+      "Predictive cues before taking action",
+      "Confirmation responses after taking action",
+      "Promotional discount code information",
+      "Critical security and privacy warnings"
     ],
     "answerIndex": 0,
     "answer": "Clues before action",
@@ -259,10 +259,10 @@
     "section": "5.3",
     "question": "Feedback gives:",
     "options": [
-      "Response after action",
-      "Hints before action",
-      "Marketing info",
-      "Error logs only for developers"
+      "Confirmation of action results and outcomes",
+      "Predictive guidance before taking any action",
+      "Promotional content and marketing materials",
+      "Technical diagnostic logs for development"
     ],
     "answerIndex": 0,
     "answer": "Response after action",
@@ -274,10 +274,10 @@
     "section": "5.3",
     "question": "Value-sensitive design focuses on:",
     "options": [
-      "Human values, ethics & usability",
-      "Only speed",
-      "Only minimal UI",
-      "Only aesthetics"
+      "Integrating human values, ethics and usability",
+      "Optimizing application performance and speed",
+      "Creating minimalist user interface layouts",
+      "Prioritizing visual aesthetics and branding"
     ],
     "answerIndex": 0,
     "answer": "Human values, ethics & usability",
