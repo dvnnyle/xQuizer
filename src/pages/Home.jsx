@@ -81,11 +81,11 @@ function Home() {
           <a href="#chapter8" className="toc-link">Chapter 8</a>
           <a href="#chapter10" className="toc-link">Chapter 10</a>
           <a href="#uxlaws" className="toc-link">UX Laws</a>
-          <a href="#benyon12lit" className="toc-link">Benyon's Principles</a>
           <a href="#uxquiz1" className="toc-link">UX Quiz</a>
           <a href="#uxquiz2" className="toc-link">UX Quiz 2</a>
-          <a href="#findincorrect" className="toc-link">Find Incorrect</a>
+          <a href="#benyon12lit" className="toc-link">Benyon's Principles</a>
           <a href="#benyon12" className="toc-link">Benyon's 12 Principles</a>
+          <a href="#findincorrect" className="toc-link">Find Incorrect</a>
           <a href="#findincorrect2" className="toc-link">Find All Incorrect</a>
         </nav>
       </aside>
