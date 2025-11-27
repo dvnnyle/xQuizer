@@ -174,6 +174,9 @@ function Home() {
             <p>Master fundamental UX design principles</p>
             <span className="question-count">20 questions</span>
           </a>
+          <div className="chapter-divider">
+            <span>Challenge</span>
+          </div>
           <div className="quiz-grid">
             <a href="/findincorrect" className="chapter-button" id="findincorrect">
               <h3>❌ Find Incorrect</h3>
