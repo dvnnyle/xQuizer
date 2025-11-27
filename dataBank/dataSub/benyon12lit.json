@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "principle": "Consistency",
+    "description": "Similar elements should look similar and behave in predictable, uniform ways throughout an interface. When users learn one interaction pattern, it should transfer to other similar contexts.",
+    "example": "Microsoft Office uses Ctrl+S to save across all applications. The File menu is always in the same location. Bold buttons look identical everywhere. This lets users transfer knowledge seamlessly between Word, Excel, and PowerPoint.",
+    "takeaways": [
+      "Consistency reduces cognitive load by allowing learned patterns to transfer across contexts.",
+      "Users should not need to relearn behaviors for similar elements in different parts of the interface.",
+      "Inconsistent designs force users to think about every interaction, increasing errors and frustration."
+    ],
+    "whyItMatters": "Consistency prevents users from having to relearn behaviors for similar interactions, reducing cognitive load and errors."
+  },
+  {
+    "id": 2,
+    "principle": "Consider Users' Resources",
+    "description": "Design with awareness that users have limited attention, memory, physical capability, and time. Good design minimizes unnecessary mental and physical workload.",
+    "example": "Amazon's 1-Click ordering stores payment and shipping details, eliminating repetitive form-filling. Autocomplete in search bars reduces typing effort. Netflix auto-plays the next episode to respect decision fatigue.",
+    "takeaways": [
+      "Users have limited cognitive resources—don't waste them on unnecessary tasks.",
+      "Minimize scrolling, complex memorization, and repetitive actions.",
+      "Systems that respect users' resources feel effortless and natural."
+    ],
+    "whyItMatters": "Users don't have infinite patience or mental energy. Respecting their resources prevents fatigue, errors, and abandonment."
+  },
+  {
+    "id": 3,
+    "principle": "Familiarity",
+    "description": "Leverage users' existing knowledge from the real world and prior system experiences. Familiar interfaces feel intuitive because they match mental models users already possess.",
+    "example": "The trash can icon for deletion matches the real-world metaphor of throwing away unwanted items. Shopping carts in e-commerce mirror physical shopping. Volume sliders resemble physical knobs.",
+    "takeaways": [
+      "Users approach new systems with expectations from past experiences.",
+      "Violating familiar conventions creates confusion and slows learning.",
+      "Familiar designs allow instant understanding with minimal instruction."
+    ],
+    "whyItMatters": "Familiarity enables users to apply existing knowledge immediately, reducing learning time and cognitive load."
+  },
+  {
+    "id": 4,
+    "principle": "Responsiveness",
+    "description": "The system must react quickly and appropriately to user actions, providing timely confirmation that input was received and processing is happening.",
+    "example": "Buttons visually respond when clicked (color change, pressed state) even if backend processing takes longer. Google Search shows results in milliseconds. Loading spinners communicate that work is progressing.",
+    "takeaways": [
+      "Slow or absent responses create uncertainty about whether actions registered.",
+      "Users judge system quality partly by response speed.",
+      "Acknowledge every user action immediately, even if full processing takes time."
+    ],
+    "whyItMatters": "Responsiveness prevents users from repeating actions due to uncertainty, reducing errors and frustration."
+  },
+  {
+    "id": 5,
+    "principle": "Constraints",
+    "description": "Strategically limit user actions to prevent errors before they occur. By making invalid or dangerous actions impossible or difficult, constraints guide users toward correct behavior.",
+    "example": "Date picker calendars prevent selecting invalid dates like February 30th. Form fields that only accept numbers reject text input. USB connectors are physically asymmetric—they only fit one way.",
+    "takeaways": [
+      "Preventing errors is better than allowing them and requiring recovery.",
+      "Constraints reduce cognitive load by enforcing rules physically.",
+      "Well-designed constraints make invalid states impossible."
+    ],
+    "whyItMatters": "Constraints prevent costly mistakes before they happen, making interfaces safer and easier to use correctly."
+  },
+  {
+    "id": 6,
+    "principle": "User Control",
+    "description": "Users should feel they are in charge of the system, able to initiate actions, make decisions, and interrupt or reverse processes. Systems should respond to user intentions, not impose their own agenda.",
+    "example": "Video players let users pause, skip, adjust volume, and change speed. Websites with 'Skip intro' buttons respect user control. Browser Back buttons let users reverse navigation mistakes.",
+    "takeaways": [
+      "Loss of control creates anxiety and frustration.",
+      "Users need the ability to stop unwanted processes.",
+      "Control creates confidence and trust in the system."
+    ],
+    "whyItMatters": "User control prevents feelings of helplessness and allows users to work at their own pace and style."
+  },
+  {
+    "id": 7,
+    "principle": "Feedback",
+    "description": "The system must clearly communicate the results and consequences of user actions, keeping users informed about system status at all times.",
+    "example": "Email confirmation messages ('Message sent'). Form fields showing checkmarks or errors as you type. Progress bars for downloads. Button color changes when clicked. Car lock sounds.",
+    "takeaways": [
+      "Users need continuous confirmation of what actions accomplished.",
+      "Lack of feedback creates uncertainty and anxiety.",
+      "Good feedback answers: 'Did that work?' and 'What happened?'"
+    ],
+    "whyItMatters": "Feedback prevents users from operating blindly, reducing repeated actions and errors caused by uncertainty."
+  },
+  {
+    "id": 8,
+    "principle": "Obviousness (Affordance)",
+    "description": "The interface should clearly communicate how it can be used without requiring explanation. Interactive elements should visually signal their function.",
+    "example": "Buttons that look clickable (raised, colored, with hover effects). Door handles showing push vs. pull. Underlined blue text signals hyperlinks. Sliders have draggable handles.",
+    "takeaways": [
+      "Users shouldn't need to hunt for functionality or read manuals.",
+      "Obvious interfaces feel intuitive and discoverable.",
+      "Visual design should communicate interaction possibilities."
+    ],
+    "whyItMatters": "Obviousness reduces the learning curve and prevents users from missing important functionality."
+  },
+  {
+    "id": 9,
+    "principle": "Flexibility",
+    "description": "Offer multiple ways to accomplish tasks, accommodating different user preferences, skill levels, and working styles. Flexible systems adapt to diverse user needs.",
+    "example": "Software offering both menu navigation and keyboard shortcuts. Voice commands alongside touch interfaces. Multiple payment methods. Customizable dashboards where users arrange widgets.",
+    "takeaways": [
+      "Users have different expertise levels and preferences.",
+      "Novices need guidance; experts want shortcuts.",
+      "Flexible design accommodates the full spectrum from beginner to expert."
+    ],
+    "whyItMatters": "Flexibility improves satisfaction and efficiency across diverse user groups with varying needs."
+  },
+  {
+    "id": 10,
+    "principle": "Compatibility",
+    "description": "Design systems that work well with existing platforms, tools, standards, and user workflows. Compatible systems integrate seamlessly into users' existing ecosystems.",
+    "example": "Apps that sync between desktop and mobile. Software importing/exporting standard file formats (CSV, PDF). Payment systems supporting Apple Pay, Google Pay, and cards. Cross-platform apps working on Windows, Mac, iOS, Android.",
+    "takeaways": [
+      "Users already have established tools and workflows.",
+      "Systems that don't integrate create friction and extra work.",
+      "Compatibility reduces adoption barriers."
+    ],
+    "whyItMatters": "Compatibility ensures your system fits into users' existing practices rather than forcing disruptive changes."
+  },
+  {
+    "id": 11,
+    "principle": "Error Prevention & Recovery",
+    "description": "Design systems that both prevent errors before they occur and provide safe, easy ways to fix mistakes when they happen. Humans make errors—good design accounts for this.",
+    "example": "Undo/Redo in text editors. Gmail's 'Undo send' feature. Confirmation dialogs for destructive actions. Auto-save preventing data loss. Trash bins allowing file recovery.",
+    "takeaways": [
+      "Errors are inevitable in human interaction.",
+      "Prevention is better than recovery, but both are necessary.",
+      "Forgiving systems reduce stress and encourage exploration."
+    ],
+    "whyItMatters": "Error prevention and recovery reduce anxiety, prevent costly mistakes, and allow users to work confidently."
+  },
+  {
+    "id": 12,
+    "principle": "Directness",
+    "description": "Minimize the gap between user intentions and system actions. Direct interfaces let users manipulate objects and see results immediately, creating a feeling of direct engagement.",
+    "example": "Touchscreens where you drag icons with your finger. Slider controls you manipulate directly. Drag-and-drop file management. Drawing apps where stylus movements instantly appear as marks.",
+    "takeaways": [
+      "Indirect interactions feel clunky and abstract.",
+      "Direct manipulation feels natural and intuitive.",
+      "Reduce cognitive translation between intention and action."
+    ],
+    "whyItMatters": "Directness makes interactions feel natural and effortless, reducing the mental burden of translating intentions into commands."
+  }
+]

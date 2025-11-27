@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "question": "During interviews for understanding user needs, which statements are INCORRECT?",
+    "options": {
+      "a": "It is good to build rapport by using body language.",
+      "b": "It is best to start with focused questions and finish with broad questions.",
+      "c": "It is best to avoid uncomfortable silence by trying to keep talking.",
+      "d": "There is the possibility to use fully predefined questions, no predefined questions at all, or a mix of both."
+    },
+    "incorrectAnswers": ["b", "c"],
+    "explanation": {
+      "b": "Incorrect because interviews typically start with broad, open-ended questions and progressively narrow down. This helps users open up.",
+      "c": "Incorrect because silence can be productive. Interviewers should not fill every silence; pauses often lead to deeper insights."
+    }
+  },
+  {
+    "id": 2,
+    "question": "Which statements about questionnaires are INCORRECT?",
+    "options": {
+      "a": "They can be used for understanding what people want when designing a digital interface.",
+      "b": "They can be constructed and distributed in ways that guarantee the anonymity of respondents.",
+      "c": "They always consume less resources than interviews.",
+      "d": "They can include closed or open questions."
+    },
+    "incorrectAnswers": ["c"],
+    "explanation": {
+      "c": "Incorrect because questionnaires do not ALWAYS consume fewer resources. Creating, distributing, and analysing them can be time-consuming and costly depending on scale."
+    }
+  },
+  {
+    "id": 3,
+    "question": "Which statements about controlled experiments for UI evaluation are INCORRECT?",
+    "options": {
+      "a": "They require distinguishing dependent from independent variables.",
+      "b": "They can be helpful when comparing design choices to see which is better.",
+      "c": "They can only be performed in a laboratory.",
+      "d": "They do not require participants representative of the target user groups."
+    },
+    "incorrectAnswers": ["c", "d"],
+    "explanation": {
+      "c": "Incorrect because controlled experiments can be done outside labs (e.g., remote testing) as long as variables are controlled.",
+      "d": "Incorrect because participants SHOULD represent the target user group for results to be useful."
+    }
+  },
+  {
+    "id": 4,
+    "question": "Which statements about cooperative evaluations are INCORRECT?",
+    "options": {
+      "a": "They can be performed by experts using a Cognitive Walkthrough approach.",
+      "b": "Participants are encouraged to comment on what they are doing, why, and any difficulties.",
+      "c": "They are useful for evaluating usability.",
+      "d": "They are called 'cooperative' because participants act as co-evaluators rather than passive subjects."
+    },
+    "incorrectAnswers": ["a"],
+    "explanation": {
+      "a": "Incorrect because cooperative evaluation involves users, not just experts. Cognitive Walkthroughs are an expert-only method, not cooperative."
+    }
+  }
+]

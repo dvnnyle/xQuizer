@@ -1,0 +1,263 @@
+[
+  {
+    "id": 1,
+    "question": "Which of Benyon's 12 principles focuses on making similar things behave similarly?",
+    "options": [
+      "Flexibility",
+      "Responsiveness",
+      "Consistency",
+      "Constraints"
+    ],
+    "answerIndex": 2,
+    "answer": "Consistency",
+    "explanation": "'Consistency' means that similar elements should look similar and behave in predictable, uniform ways throughout an interface. When users learn one interaction pattern, it should transfer to other similar contexts without relearning.<br><br><strong>Why it matters:</strong> Consistency reduces cognitive load—users don't need to think about every interaction because learned patterns apply everywhere. Inconsistency forces users to relearn behaviors, increases errors, and creates frustration.<br><br><strong>Example:</strong> In Microsoft Office, the keyboard shortcut Ctrl+S saves documents across Word, Excel, and PowerPoint. The 'File' menu is always in the top-left corner. Bold buttons look the same everywhere. This consistency lets users transfer knowledge between applications seamlessly. Contrast this with inconsistent designs where 'Submit' is a button on one page but a link on another, or where deletion requires confirmation sometimes but not others—users become confused and make mistakes.",
+    "shortExplanation": "'Consistency' ensures similar elements behave in predictable ways across the interface."
+  },
+  {
+    "id": 2,
+    "question": "Which principle is about ensuring users do not waste unnecessary physical or cognitive effort?",
+    "options": [
+      "Directness",
+      "Feedback",
+      "Consider Users' Resources",
+      "Compatibility"
+    ],
+    "answerIndex": 2,
+    "answer": "Consider Users' Resources",
+    "explanation": "'Consider Users' Resources' means designing with awareness that users have limited attention, memory, physical capability, and time. Good design minimizes unnecessary mental and physical workload.<br><br><strong>Why it matters:</strong> Users don't have infinite patience or mental energy. Systems that demand excessive scrolling, complex memorization, or repetitive actions cause fatigue, errors, and abandonment. Respecting users' resources makes interfaces feel effortless.<br><br><strong>Example:</strong> Amazon's '1-Click ordering' respects users' cognitive resources by storing payment and shipping details, eliminating repetitive form-filling. Autocomplete in search bars reduces typing effort. Netflix auto-playing the next episode respects decision fatigue. Poor design: requiring users to re-enter credit card details for every purchase, or forcing them to remember complex 16-character passwords without showing a 'reveal password' option."
+  },
+  {
+    "id": 3,
+    "question": "Which principle states that designs should match user expectations and real‑world experience?",
+    "options": [
+      "User Control",
+      "Familiarity",
+      "Compatibility",
+      "Constraints"
+    ],
+    "answerIndex": 1,
+    "answer": "Familiarity",
+    "explanation": "'Familiarity' leverages users' existing knowledge from the real world and prior experiences with similar systems. Familiar interfaces feel intuitive because they match mental models users already possess.<br><br><strong>Why it matters:</strong> Users approach new systems with expectations based on past experiences. Violating these expectations creates confusion and slows learning. Familiar designs allow instant understanding with minimal instruction.<br><br><strong>Example:</strong> The 'trash can' or 'recycle bin' icon for deletion is familiar because it matches the real-world metaphor of throwing away unwanted items. Shopping carts in e-commerce match physical shopping experiences. Volume controls using sliders match physical knobs. When Snapchat introduced unconventional navigation (swipe left/right/down for different features), users were confused because it violated familiar app patterns—their mental models didn't transfer."
+  },
+  {
+    "id": 4,
+    "question": "Which principle ensures the system responds quickly and appropriately to user actions?",
+    "options": [
+      "Constraints",
+      "Obviousness",
+      "Responsiveness",
+      "Consistency"
+    ],
+    "answerIndex": 2,
+    "answer": "Responsiveness",
+    "explanation": "'Responsiveness' means the system reacts quickly and appropriately to user actions, providing timely confirmation that input was received and processing is happening.<br><br><strong>Why it matters:</strong> Slow or absent responses create uncertainty ('Did my click register?'), leading users to repeat actions, causing errors or frustration. Users judge system quality partly by response speed—delays feel like the system is broken.<br><br><strong>Example:</strong> When you click a button, it should visually respond instantly (change color, show pressed state) even if backend processing takes longer. Loading spinners communicate that the system is working. Google Search shows results in milliseconds. Poor responsiveness: clicking 'Submit' on a form and seeing nothing happen for 5 seconds—users click again, creating duplicate submissions. Responsive design acknowledges every action immediately, even if the full result takes time."
+  },
+  {
+    "id": 5,
+    "question": "Which principle helps prevent users from making errors by guiding or limiting available actions?",
+    "options": [
+      "Feedback",
+      "Compatibility",
+      "Flexibility",
+      "Constraints"
+    ],
+    "answerIndex": 3,
+    "answer": "Constraints",
+    "explanation": "'Constraints' strategically limit user actions to prevent errors before they occur. By making invalid or dangerous actions impossible or difficult, constraints guide users toward correct behavior.<br><br><strong>Why it matters:</strong> Preventing errors is better than allowing them and requiring recovery. Constraints reduce cognitive load—users don't need to remember complex rules because the interface enforces them physically.<br><br><strong>Example:</strong> Date picker calendars constrain input to valid dates—you can't select February 30th. Form fields that only accept numbers prevent text input. A 'Submit' button disabled until all required fields are filled prevents incomplete submissions. USB connectors are physically asymmetric—they only fit one way. ATMs retain your card until you take your cash, preventing you from forgetting it. Poor constraint: allowing users to type any format into a date field, then showing an error message after submission."
+  },
+  {
+    "id": 6,
+    "question": "Which principle emphasises giving users enough freedom to decide how to interact?",
+    "options": [
+      "Obviousness",
+      "Compatibility",
+      "User Control",
+      "Directness"
+    ],
+    "answerIndex": 2,
+    "answer": "User Control",
+    "explanation": "'User Control' means users should feel they are in charge of the system, able to initiate actions, make decisions, and interrupt or reverse processes. Systems should respond to user intentions, not impose their own agenda.<br><br><strong>Why it matters:</strong> Loss of control creates anxiety and frustration. When systems force actions or prevent users from stopping unwanted processes, users feel helpless. Control creates confidence and trust.<br><br><strong>Example:</strong> Video players let users pause, skip, adjust volume, and change speed—they control the experience. Websites with 'Skip intro' buttons respect user control. Browser 'Back' buttons let users reverse navigation mistakes. Poor control: auto-playing videos with hidden controls, websites that hijack scrolling behavior, forced tutorials that can't be skipped, systems that prevent copy-pasting into password fields, or pop-ups that are hard to close."
+  },
+  {
+    "id": 7,
+    "question": "Which principle says a system should always show the result of user actions clearly?",
+    "options": [
+      "Responsiveness",
+      "Feedback",
+      "Consistency",
+      "Compatibility"
+    ],
+    "answerIndex": 1,
+    "answer": "Feedback",
+    "explanation": "'Feedback' means the system clearly communicates the results and consequences of user actions, keeping users informed about system status at all times. Without feedback, users operate blindly.<br><br><strong>Why it matters:</strong> Users need continuous confirmation that their actions were registered and what effect they had. Lack of feedback creates uncertainty, leading to repeated actions, errors, and anxiety about whether the system is working.<br><br><strong>Example:</strong> When you send an email, you see 'Message sent' confirmation. Form fields show checkmarks or error messages as you type. Progress bars show how long a download will take. Button color changes when clicked. Sound when locking a car. Poor feedback: clicking 'Delete' with no confirmation or visual change—did it work? Online shopping carts that don't update immediately when adding items. File uploads with no progress indication—users don't know if it's working or frozen."
+  },
+  {
+    "id": 8,
+    "question": "Which principle ensures that users can immediately see how to interact with the system?",
+    "options": [
+      "User Control",
+      "Constraints",
+      "Obviousness",
+      "Responsiveness"
+    ],
+    "answerIndex": 2,
+    "answer": "Obviousness",
+    "explanation": "'Obviousness' (also called 'Affordance') means the interface should clearly communicate how it can be used without requiring explanation. Interactive elements should visually signal their function.<br><br><strong>Why it matters:</strong> Users shouldn't need to hunt for functionality or read manuals. Obvious interfaces feel intuitive and discoverable—users immediately understand what actions are possible and how to perform them.<br><br><strong>Example:</strong> Buttons that look clickable (raised, colored, with hover effects). Door handles that clearly show whether to push or pull. Underlined blue text signals a hyperlink. Sliders have draggable handles. Icons like magnifying glass (search) or house (home) are universally recognized. Poor obviousness: flat design where buttons look like decoration, links that don't look clickable, hidden navigation in 'hamburger menus' that users don't discover, or interfaces where interactive and static elements look identical."
+  },
+  {
+    "id": 9,
+    "question": "Which principle allows different users to choose different ways of interacting?",
+    "options": [
+      "Compatibility",
+      "Flexibility",
+      "Directness",
+      "Consistency"
+    ],
+    "answerIndex": 1,
+    "answer": "Flexibility",
+    "explanation": "'Flexibility' means offering multiple ways to accomplish tasks, accommodating different user preferences, skill levels, and working styles. Flexible systems adapt to diverse user needs rather than forcing one approach.<br><br><strong>Why it matters:</strong> Users have different expertise levels, physical abilities, and preferences. Novices need guidance; experts want shortcuts. One interaction method doesn't suit everyone. Flexibility improves satisfaction and efficiency across user groups.<br><br><strong>Example:</strong> Software offering both menu navigation and keyboard shortcuts—beginners browse menus, experts use Ctrl+C. Voice commands alongside touch interfaces for accessibility. Multiple payment methods in e-commerce. Customizable dashboards where users arrange widgets. Gmail's 'Compose' button with dropdown for templates. Poor flexibility: forcing mouse-only interaction when keyboard would be faster, or providing only one path to complete critical tasks."
+  },
+  {
+    "id": 10,
+    "question": "Which principle prioritises aligning the system with other tools, norms or platforms?",
+    "options": [
+      "Constraints",
+      "Feedback",
+      "Responsiveness",
+      "Compatibility"
+    ],
+    "answerIndex": 3,
+    "answer": "Compatibility",
+    "explanation": "'Compatibility' means designing systems that work well with existing platforms, tools, standards, and user workflows. Compatible systems integrate seamlessly into users' existing ecosystems rather than demanding special accommodation.<br><br><strong>Why it matters:</strong> Users already have established tools and workflows. Systems that don't integrate create friction, requiring extra work to bridge gaps. Compatibility reduces adoption barriers and increases value by fitting into existing practices.<br><br><strong>Example:</strong> Mobile apps that sync with desktop versions. Software that imports/exports standard file formats (CSV, PDF). Payment systems that work with Apple Pay, Google Pay, and traditional cards. Cross-platform apps that work on Windows, Mac, iOS, Android. APIs that allow third-party integrations. Poor compatibility: proprietary file formats that only open in one program, apps that only work on one device type, or systems that require users to completely change their workflow."
+  },
+  {
+    "id": 11,
+    "question": "A system that allows undo and redo operations follows which principle?",
+    "options": [
+      "Responsiveness",
+      "Obviousness",
+      "Error Prevention & Recovery",
+      "Flexibility"
+    ],
+    "answerIndex": 2,
+    "answer": "Error Prevention & Recovery",
+    "explanation": "'Error Prevention & Recovery' means designing systems that both prevent errors before they occur and provide safe, easy ways to fix mistakes when they happen. Humans make errors—good design accounts for this reality.<br><br><strong>Why it matters:</strong> Errors are inevitable in human interaction. Systems that punish errors harshly or make recovery difficult create anxiety and slow productivity. Forgiving systems that enable easy recovery reduce stress and encourage exploration.<br><br><strong>Example:</strong> Undo/Redo in text editors lets users experiment without fear. Gmail's 'Undo send' feature prevents accidental sends. Confirmation dialogs for destructive actions ('Are you sure you want to delete?'). Auto-save preventing data loss from crashes. Trash/Recycle bins allowing recovery of deleted files. Password reset options. Poor error handling: permanent deletion without confirmation, no undo for destructive actions, or cryptic error messages that don't explain how to fix problems."
+  },
+  {
+    "id": 12,
+    "question": "Which principle aims to make actions feel natural and closely connected to their effects?",
+    "options": [
+      "Familiarity",
+      "Directness",
+      "Constraints",
+      "Compatibility"
+    ],
+    "answerIndex": 1,
+    "answer": "Directness",
+    "explanation": "'Directness' means minimizing the gap between user intentions and system actions. Direct interfaces let users manipulate objects and see results immediately, creating a feeling of direct engagement rather than issuing commands through intermediaries.<br><br><strong>Why it matters:</strong> Indirect interactions feel clunky and abstract, requiring users to translate intentions into system commands. Direct manipulation feels natural and intuitive—users operate on objects directly, reducing cognitive translation.<br><br><strong>Example:</strong> Touchscreens where you drag icons directly with your finger vs. using a mouse cursor. Slider controls you manipulate directly vs. typing numbers into fields. Drag-and-drop file management vs. cut/paste commands. Drawing apps where stylus movements instantly appear as marks. Poor directness: complex command-line interfaces requiring memorized syntax, multi-step wizards for simple tasks, or modal dialogs that interrupt flow and require navigating through layers of indirection to accomplish simple actions."
+  },
+  {
+    "id": 13,
+    "question": "Providing a progress bar during a long task is an example of which principle?",
+    "options": [
+      "User Control",
+      "Feedback",
+      "Consistency",
+      "Flexibility"
+    ],
+    "answerIndex": 1,
+    "answer": "Feedback",
+    "explanation": "A progress bar is a classic example of 'Feedback'—it continuously informs users about system status during long operations. Progress bars answer critical questions: 'Is it working?' and 'How much longer?'<br><br><strong>Why it matters:</strong> During long tasks (file uploads, installations, processing), users need reassurance that the system is working and hasn't frozen. Without feedback, users don't know whether to wait or restart, leading to premature cancellations or duplicate actions.<br><br><strong>Example:</strong> Software installations show progress bars with percentage complete. YouTube displays buffer progress while videos load. File transfers show speed and time remaining. Even indeterminate spinners ('loading...') provide feedback that processing is happening. Poor feedback: blank screens during processing—users can't tell if the system is working or crashed, leading them to force-quit and try again."
+  },
+  {
+    "id": 14,
+    "question": "Disabling a button until all required fields are filled follows which principle?",
+    "options": [
+      "Familiarity",
+      "Responsiveness",
+      "Constraints",
+      "Obviousness"
+    ],
+    "answerIndex": 2,
+    "answer": "Constraints",
+    "explanation": "Disabling a button until prerequisites are met is a perfect example of 'Constraints'—the system physically prevents invalid actions, guiding users toward correct behavior before they can make mistakes.<br><br><strong>Why it matters:</strong> This constraint is better than allowing submission and then showing error messages. It prevents frustration by making invalid states impossible, and visually communicates requirements—when the button enables, users know they've satisfied all conditions.<br><br><strong>Example:</strong> Online forms where 'Submit' stays greyed out until all required fields have valid input. Registration forms where 'Next' enables only after accepting terms. E-commerce checkout where 'Place Order' requires selecting shipping method. Signup forms where password confirmation must match. This is superior to the old approach of allowing submit and then returning a page of error messages."
+  },
+  {
+    "id": 15,
+    "question": "Allowing expert users to use keyboard shortcuts follows which principle?",
+    "options": [
+      "Directness",
+      "User Control",
+      "Compatibility",
+      "Flexibility"
+    ],
+    "answerIndex": 3,
+    "answer": "Flexibility",
+    "explanation": "Keyboard shortcuts demonstrate 'Flexibility' by providing alternative interaction methods suited to different user expertise. Novices use graphical menus; experts use memorized shortcuts for speed—both accomplish the same task via different paths.<br><br><strong>Why it matters:</strong> As users gain expertise, they want efficiency. Forcing experts to use slow graphical interfaces frustrates them. Providing only shortcuts excludes beginners. Flexible design accommodates both through progressive disclosure and multiple interaction modes.<br><br><strong>Example:</strong> Ctrl+C/Ctrl+V for copy/paste alongside menu options. Photoshop's keyboard shortcuts alongside toolbar buttons. Gmail's keyboard shortcuts ('c' to compose) for power users. Excel formulas for experts vs. graphical formula builder for novices. Video games offering both simple and advanced control schemes. This flexibility respects that users exist on a spectrum from beginner to expert."
+  },
+  {
+    "id": 16,
+    "question": "Matching colour conventions (red = stop, green = go) follows which principle?",
+    "options": [
+      "Feedback",
+      "Directness",
+      "Familiarity",
+      "Consistency"
+    ],
+    "answerIndex": 2,
+    "answer": "Familiarity",
+    "explanation": "Using red for 'stop/danger' and green for 'go/success' leverages 'Familiarity'—these color associations come from traffic lights and universal safety conventions. Users instantly understand meaning without learning new associations.<br><br><strong>Why it matters:</strong> Users bring cultural and experiential knowledge to interfaces. Violating familiar conventions (e.g., using green for errors) creates confusion and cognitive dissonance. Respecting familiar patterns enables instant comprehension across diverse user groups.<br><br><strong>Example:</strong> Red for delete/error/stop, green for confirm/success/proceed, yellow/orange for warnings. Plus (+) for add, minus (−) for remove. Calendar icons for dates, envelope for email, magnifying glass for search. Violating familiarity: using unconventional icons (a cat for 'save'), reversing expected color meanings, or creating entirely new visual languages without justification forces users to relearn basic concepts."
+  },
+  {
+    "id": 17,
+    "question": "Providing both drag‑and‑drop and menu‑based ways to complete an action exemplifies which principle?",
+    "options": [
+      "Obviousness",
+      "Responsiveness",
+      "Compatibility",
+      "Flexibility"
+    ],
+    "answerIndex": 3,
+    "answer": "Flexibility",
+    "explanation": "Offering both drag-and-drop and menu-based methods is 'Flexibility' in action—users can choose their preferred interaction style based on context, skill level, or physical capability.<br><br><strong>Why it matters:</strong> Different methods suit different situations. Drag-and-drop is fast and intuitive for some users but difficult for others (touchscreen users, accessibility needs, precision requirements). Menu-based approaches work universally. Providing both maximizes usability across contexts.<br><br><strong>Example:</strong> File management systems allowing drag-and-drop between folders OR right-click menu with 'Move to...' options. Email attachments added via drag-and-drop OR 'Attach file' button. Text formatting via toolbar buttons, keyboard shortcuts, OR right-click menus. Calendar events created by clicking-and-dragging on timeslots OR using 'New Event' forms. This flexibility ensures everyone can accomplish tasks regardless of preference or ability."
+  },
+  {
+    "id": 18,
+    "question": "Ensuring that a mobile app behaves similarly to the desktop version supports which principle?",
+    "options": [
+      "Obviousness",
+      "Constraints",
+      "User Control",
+      "Consistency"
+    ],
+    "answerIndex": 3,
+    "answer": "Consistency",
+    "explanation": "Maintaining similar behavior across mobile and desktop platforms exemplifies 'Consistency'—users who learn one version can transfer that knowledge to the other, reducing cognitive load and learning time.<br><br><strong>Why it matters:</strong> Users increasingly switch between devices (desktop at work, mobile on-the-go). Inconsistent behavior across platforms forces users to relearn the system for each context, creating frustration and errors. Consistent cross-platform design creates seamless experiences.<br><br><strong>Example:</strong> Spotify, Netflix, and Gmail maintain consistent navigation, iconography, and core interactions across desktop, mobile, and tablet—users know where to find features regardless of device. Settings use the same organization. Features have the same names. Poor consistency: apps where navigation is completely different on mobile vs. desktop, features available on one platform but hidden on another, or actions that work differently depending on device."
+  },
+  {
+    "id": 19,
+    "question": "Warning the user when deleting a file is an application of which principle?",
+    "options": [
+      "Compatibility",
+      "Error Prevention & Recovery",
+      "Responsiveness",
+      "Flexibility"
+    ],
+    "answerIndex": 1,
+    "answer": "Error Prevention & Recovery",
+    "explanation": "Confirmation dialogs before deletion demonstrate 'Error Prevention'—a core part of Error Prevention & Recovery. The warning intercepts potentially destructive actions, giving users a chance to cancel accidental commands before damage occurs.<br><br><strong>Why it matters:</strong> Deletion is irreversible (or difficult to reverse), making prevention critical. Humans make mistakes—they click wrong buttons, select wrong items, or change their minds. A simple confirmation can prevent catastrophic data loss.<br><br><strong>Example:</strong> 'Are you sure you want to delete this file?' dialogs. Trash/Recycle bin systems that allow recovery. Email 'Move to Trash' rather than permanent deletion. Cloud storage requiring confirmation before permanently deleting shared documents. Systems that require typing 'DELETE' for critical actions. Poor prevention: instant permanent deletion with no confirmation—one misclick destroys work. Good systems combine prevention (confirmation) with recovery (trash bins, version history)."
+  },
+  {
+    "id": 20,
+    "question": "Allowing users to stop an automatic slideshow demonstrates which principle?",
+    "options": [
+      "Obviousness",
+      "User Control",
+      "Constraints",
+      "Responsiveness"
+    ],
+    "answerIndex": 1,
+    "answer": "User Control",
+    "explanation": "Providing controls to stop or pause automatic processes exemplifies 'User Control'—users can override system automation and dictate the pace and flow of their interaction.<br><br><strong>Why it matters:</strong> Automatic processes that can't be stopped make users feel trapped and helpless. People read at different speeds, get interrupted, or simply want control over timing. Forced automation creates anxiety and frustration—users feel the system is controlling them, not vice versa.<br><br><strong>Example:</strong> Slideshow presentations with pause/play buttons. Carousels with stop/manual navigation controls. Video auto-play with visible pause buttons. Animated tutorials that can be paused or skipped. WCAG requires animations to be pauseable for accessibility. Poor control: auto-advancing carousels that can't be stopped, forced tutorial videos that can't be skipped, automatic page redirects without cancel options—users lose agency and become frustrated when systems ignore their intentions."
+  }
+]

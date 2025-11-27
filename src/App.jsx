@@ -14,8 +14,12 @@ import ChapterTest from './chapterList/chapterTest'
 import RandomizerQuiz from './chapterList/randomnizerQuiz'
 import FullQuestionList from './chapterList/fullQuestionList'
 import UxLaws from './litterature/uxLaws'
+import Benyon12Lit from './litterature/benyon12lit'
 import UxQuiz1 from './moreQuizes/uxQuiz1'
 import UxQuiz2 from './moreQuizes/uxQuiz2'
+import QuizFindIncorrect from './moreQuizes/quizFindIncorrect'
+import Benyon12Quiz from './moreQuizes/benyon12Quiz'
+import QuizFindIncorrect2 from './moreQuizes/quizFindIncorrect2'
 
 function AnimatedRoutes() {
   const location = useLocation()
@@ -37,8 +41,12 @@ function AnimatedRoutes() {
         <Route path="/randomquiz" element={<RandomizerQuiz key="random" />} />
         <Route path="/fullquestions" element={<FullQuestionList key="fullq" />} />
         <Route path="/uxlaws" element={<UxLaws key="uxlaws" />} />
+        <Route path="/benyon12lit" element={<Benyon12Lit key="benyon12lit" />} />
         <Route path="/uxquiz1" element={<UxQuiz1 key="uxquiz1" />} />
         <Route path="/uxquiz2" element={<UxQuiz2 key="uxquiz2" />} />
+        <Route path="/findincorrect" element={<QuizFindIncorrect key="findincorrect" />} />
+        <Route path="/benyon12" element={<Benyon12Quiz key="benyon12" />} />
+        <Route path="/findincorrect2" element={<QuizFindIncorrect2 key="findincorrect2" />} />
       </Routes>
     </AnimatePresence>
   )

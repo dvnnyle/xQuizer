@@ -81,8 +81,12 @@ function Home() {
           <a href="#chapter8" className="toc-link">Chapter 8</a>
           <a href="#chapter10" className="toc-link">Chapter 10</a>
           <a href="#uxlaws" className="toc-link">UX Laws</a>
+          <a href="#benyon12lit" className="toc-link">Benyon's Principles</a>
           <a href="#uxquiz1" className="toc-link">UX Quiz</a>
           <a href="#uxquiz2" className="toc-link">UX Quiz 2</a>
+          <a href="#findincorrect" className="toc-link">Find Incorrect</a>
+          <a href="#benyon12" className="toc-link">Benyon's 12 Principles</a>
+          <a href="#findincorrect2" className="toc-link">Find All Incorrect</a>
         </nav>
       </aside>
       <div className="home-content">
@@ -145,6 +149,11 @@ function Home() {
             <p>Read about essential principles for user experience design</p>
             <span className="question-count">21 laws</span>
           </a>
+          <a href="/benyon12lit" className="chapter-button green-theme" id="benyon12lit">
+            <h3>📖 Benyon's Principles</h3>
+            <p>Learn the 12 fundamental principles of UX design</p>
+            <span className="question-count">12 principles</span>
+          </a>
           <div className="quiz-grid">
             <a href="/uxquiz1" className="chapter-button" id="uxquiz1">
               <h3>🎯 UX Laws Quiz</h3>
@@ -155,6 +164,26 @@ function Home() {
               <h3>🎯 UX Laws Quiz 2</h3>
               <p>Match laws with descriptions</p>
               <span className="question-count">21 questions</span>
+            </a>
+          </div>
+          <div className="chapter-divider">
+            <span>Extra Quizzes</span>
+          </div>
+          <div className="quiz-grid">
+            <a href="/findincorrect" className="chapter-button" id="findincorrect">
+              <h3>❌ Find Incorrect</h3>
+              <p>Identify incorrect statements about design concepts</p>
+              <span className="question-count">6 questions</span>
+            </a>
+            <a href="/benyon12" className="chapter-button" id="benyon12">
+              <h3>📐 Benyon's 12 Principles</h3>
+              <p>Master fundamental UX design principles</p>
+              <span className="question-count">20 questions</span>
+            </a>
+            <a href="/findincorrect2" className="chapter-button" id="findincorrect2">
+              <h3>🎯 Find All Incorrect</h3>
+              <p>Select multiple incorrect statements per question</p>
+              <span className="question-count">4 questions</span>
             </a>
           </div>
         </div>

@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the following statements about the design principle of Recovery is INCORRECT?",
+    "options": [
+      "It is about offering users ways to reverse the effects of an action.",
+      "It is about providing information to users about the effect of an action.",
+      "It is important for interaction effectiveness.",
+      "It can be used as a heuristic when evaluating a user interface."
+    ],
+    "answerIndex": 1,
+    "answer": "It is about providing information to users about the effect of an action.",
+    "explanation": "Option b is incorrect because providing information about the effect of an action is mainly about FEEDBACK, not Recovery. Recovery is about letting users undo or fix problems after an action, for example with undo, cancel or revert options."
+  },
+  {
+    "id": 2,
+    "question": "Which of the following statements about Value Sensitive Design is INCORRECT?",
+    "options": [
+      "It is a design approach that incorporates human values throughout the design process.",
+      "It takes into account what people judge as important, for example privacy and human welfare.",
+      "It is a design approach where shareholder value is prioritised over user values.",
+      "It focuses on users’ ethical preferences and the impact of design on stakeholders."
+    ],
+    "answerIndex": 2,
+    "answer": "It is a design approach where shareholder value is prioritised over user values.",
+    "explanation": "Option c is incorrect because Value Sensitive Design explicitly focuses on human and ethical values (like privacy, dignity and welfare), not on maximising shareholder value over user values."
+  },
+  {
+    "id": 3,
+    "question": "Which of the following statements about Web Content Accessibility Guidelines (WCAG) is INCORRECT?",
+    "options": [
+      "They cover design aspects such as colour, contrast and text size.",
+      "They aim at removing barriers that can exclude some people from using a system.",
+      "They can be used for evaluating interfaces in terms of accessibility.",
+      "Their main goal is to make interfaces aesthetically pleasant to use, regardless of accessibility."
+    ],
+    "answerIndex": 3,
+    "answer": "Their main goal is to make interfaces aesthetically pleasant to use, regardless of accessibility.",
+    "explanation": "Option d is incorrect because WCAG’s main purpose is accessibility – removing barriers so people with disabilities can use web content. A design might be visually pleasant but still fail WCAG if it is not accessible."
+  },
+  {
+    "id": 4,
+    "question": "Which of the following statements about bad usability is INCORRECT?",
+    "options": [
+      "Bad usability can lead to errors, frustration and inefficiency.",
+      "Bad usability can cause people to abandon a system or avoid using it.",
+      "Bad usability has one consequence only: people make many mistakes.",
+      "Bad usability can increase cognitive workload and stress for users."
+    ],
+    "answerIndex": 2,
+    "answer": "Bad usability has one consequence only: people make many mistakes.",
+    "explanation": "Option c is incorrect because bad usability has MANY consequences, not just more mistakes. It can also cause frustration, stress, slow work, workarounds and users abandoning the system entirely."
+  },
+  {
+    "id": 5,
+    "question": "Which of the following statements about designing with people from marginalised groups is INCORRECT?",
+    "options": [
+      "Designing with marginalised groups can require more planning and resources.",
+      "Involving marginalised groups can reveal barriers and exclusions that others do not see.",
+      "We should not design with people from marginalised groups because it requires more resources and planning.",
+      "Including marginalised groups in design supports fairness, accessibility and inclusion."
+    ],
+    "answerIndex": 2,
+    "answer": "We should not design with people from marginalised groups because it requires more resources and planning.",
+    "explanation": "Option c is incorrect because the fact that it may require more planning/resources is NOT a reason to exclude marginalised groups. On the contrary, involving them is essential for inclusive, ethical and accessible design."
+  },
+  {
+    "id": 6,
+    "question": "Which of the following statements about a controlled experiment on button size and speed is INCORRECT?",
+    "options": [
+      "In such an experiment, button size is an independent variable because it is manipulated by the researcher.",
+      "The time needed to perform the task is a dependent variable because it is measured as an outcome.",
+      "An independent variable is a factor that the experimenter deliberately changes to observe its effect.",
+      "A dependent variable is the factor that the experimenter manipulates directly during the experiment."
+    ],
+    "answerIndex": 3,
+    "answer": "A dependent variable is the factor that the experimenter manipulates directly during the experiment.",
+    "explanation": "Option d is incorrect because the dependent variable is NOT manipulated; it is measured. The independent variable is what the researcher changes (e.g. button size), and the dependent variable is the outcome affected (e.g. completion time)."
+  }
+]
