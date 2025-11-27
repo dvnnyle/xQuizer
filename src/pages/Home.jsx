@@ -167,18 +167,18 @@ function Home() {
             </a>
           </div>
           <div className="chapter-divider">
-            <span>Extra Quizzes</span>
+            <span>Extra</span>
           </div>
+          <a href="/benyon12" className="chapter-button blue-theme" id="benyon12">
+            <h3>📐 Benyon's 12 Principles</h3>
+            <p>Master fundamental UX design principles</p>
+            <span className="question-count">20 questions</span>
+          </a>
           <div className="quiz-grid">
             <a href="/findincorrect" className="chapter-button" id="findincorrect">
               <h3>❌ Find Incorrect</h3>
               <p>Identify incorrect statements about design concepts</p>
               <span className="question-count">6 questions</span>
-            </a>
-            <a href="/benyon12" className="chapter-button" id="benyon12">
-              <h3>📐 Benyon's 12 Principles</h3>
-              <p>Master fundamental UX design principles</p>
-              <span className="question-count">20 questions</span>
             </a>
             <a href="/findincorrect2" className="chapter-button" id="findincorrect2">
               <h3>🎯 Find All Incorrect</h3>
