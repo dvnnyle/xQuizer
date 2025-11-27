@@ -463,5 +463,35 @@
     "answer": "User control & trust",
     "shortExplanation": "Dark patterns intentionally mislead users, violating usability & trust.",
     "explanation": "Dark patterns are deceptive design practices that violate user control and trust. Common examples include:<br><br>• <strong>Hidden costs revealed at checkout</strong>: Fees appear only at final step<br>• <strong>Difficult unsubscribe processes</strong>: Easy to sign up, hard to cancel<br>• <strong>Pre-checked boxes for unwanted options</strong>: Opt-out instead of opt-in<br>• <strong>Fake urgency</strong>: Only 2 left! pressure tactics without real scarcity<br>• <strong>Misleading button labels</strong>: No thanks, I don't want to save money guilt trips<br><br>Dark patterns prioritize business goals over user needs, damaging trust and often violating consumer protection laws. Ethical design puts user interests first."
+  },
+  {
+    "id": 31,
+    "section": "5.3",
+    "question": "According to Shackel (1990), a usable system should be:",
+    "options": [
+      "Expensive, complex, and feature-rich",
+      "Easy to use, easy to learn, engender good attitude",
+      "Colorful, animated, and entertaining",
+      "Fast loading, lightweight, and portable"
+    ],
+    "answerIndex": 1,
+    "answer": "Easy to use, easy to learn, engender good attitude",
+    "shortExplanation": "Shackel's usability framework emphasizes ease of use, learnability, and positive user attitudes.",
+    "explanation": "Shackel (1990) defined a classic framework for usability based on three core principles:<br><br>• <strong>Easy to use</strong>: System should be efficient and effective for accomplishing tasks with minimal effort<br>• <strong>Easy to learn</strong>: Users should quickly become proficient without extensive training<br>• <strong>Engender a good attitude</strong>: System should create positive feelings and user satisfaction, not frustration<br><br>This framework recognizes that usability isn't just about functionality—it's also about the emotional and attitudinal response users have toward the system. A truly usable system makes users feel confident, competent, and satisfied.<br><br>Example: A word processor that is easy to use (simple formatting tools), easy to learn (familiar icons, tooltips), and engenders good attitude (satisfying to create polished documents quickly) demonstrates Shackel's principles in action."
+  },
+  {
+    "id": 32,
+    "section": "5.4",
+    "question": "Designing for pleasure goes beyond acceptability by:",
+    "options": [
+      "Adding more features and functionality",
+      "Creating delightful, enjoyable experiences",
+      "Increasing system processing speed",
+      "Reducing production costs"
+    ],
+    "answerIndex": 1,
+    "answer": "Creating delightful, enjoyable experiences",
+    "shortExplanation": "Pleasure design aims for delight and enjoyment beyond basic usability and acceptability.",
+    "explanation": "While acceptability ensures technology fits into users' lives, designing for pleasure aims higher—creating experiences that are genuinely delightful and enjoyable. Jordan (2000) identified four types of pleasure in design:<br><br>• <strong>Physio-pleasure</strong>: Sensory delight from touch, sound, visual beauty (smooth animations, satisfying haptic feedback)<br>• <strong>Socio-pleasure</strong>: Enjoyment from social interaction and connection (sharing features, multiplayer experiences)<br>• <strong>Psycho-pleasure</strong>: Cognitive satisfaction from accomplishment and mastery (progress indicators, achievements)<br>• <strong>Ideo-pleasure</strong>: Values-based satisfaction from aesthetics and meaning (beautiful design, alignment with personal values)<br><br>Designing for pleasure transforms functional tools into experiences users actively enjoy, not just tolerate.<br><br>Example: Duolingo gamifies language learning with streak counters, playful animations, and encouraging messages—creating psycho-pleasure (achievement) and physio-pleasure (delightful visuals) that go far beyond a merely acceptable language app."
   }
 ]
