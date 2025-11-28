@@ -198,6 +198,30 @@
   }
 }
 
+/* Star Badge Styles */
+.star-badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 2;
+  animation: starPulse 2s ease-in-out infinite;
+}
+
+.star-badge svg {
+  filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.6));
+}
+
+@keyframes starPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
 .chapter-button.pulse-effect {
   animation: pulseGlow 1.5s ease-in-out;
 }
