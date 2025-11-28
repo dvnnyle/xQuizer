@@ -70,6 +70,7 @@ function UxMatchLaws() {
   const [userAnswers, setUserAnswers] = useState([])
   const [showReview, setShowReview] = useState(false)
   const [imageOptions, setImageOptions] = useState([])
+  const [loadedImages, setLoadedImages] = useState({})
 
   // Generate shuffled questions with image options
   const [questions, setQuestions] = useState([])
@@ -174,6 +175,7 @@ function UxMatchLaws() {
     setAnsweredQuestions(0)
     setUserAnswers([])
     setShowReview(false)
+    setLoadedImages({})
     
     // Regenerate questions with new shuffled options
     const generatedQuestions = uxData.map((law) => {
@@ -356,6 +358,7 @@ function UxMatchLaws() {
               const isCorrect = index === currentQuestion.answerIndex
               const showCorrect = selectedAnswer !== null && isCorrect
               const showWrong = selectedAnswer !== null && isSelected && !isCorrect
+              const imageLoaded = loadedImages[imagePath]
 
               return (
                 <div
@@ -363,11 +366,13 @@ function UxMatchLaws() {
                   className={`image-option ${isSelected ? 'selected' : ''} ${showCorrect ? 'correct' : ''} ${showWrong ? 'wrong' : ''}`}
                   onClick={() => handleAnswerClick(index)}
                 >
+                  {!imageLoaded && <div className="image-skeleton"></div>}
                   <img 
                     src={imageMap[imagePath] || imagePath} 
                     alt={`Option ${index + 1}`}
-                    className="law-image"
+                    className={`law-image ${imageLoaded ? 'loaded' : 'loading'}`}
                     loading="eager"
+                    onLoad={() => setLoadedImages(prev => ({ ...prev, [imagePath]: true }))}
                   />
                   {showCorrect && <span className="check-icon">✓</span>}
                   {showWrong && <span className="x-icon">✗</span>}
