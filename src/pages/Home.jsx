@@ -160,6 +160,11 @@ function Home() {
               <p>Match laws with descriptions</p>
               <span className="question-count">21 questions</span>
             </a>
+            <a href="/uxmatchlaws" className="chapter-button" id="uxmatchlaws">
+              <h3>🖼️ UX Laws Image Match</h3>
+              <p>Match UX law names with their visual diagrams</p>
+              <span className="question-count">21 questions</span>
+            </a>
           </div>
           <div className="chapter-divider">
             <span>Extra</span>
