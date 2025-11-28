@@ -75,6 +75,12 @@ function UxMatchLaws() {
   const [questions, setQuestions] = useState([])
 
   useEffect(() => {
+    // Preload all images
+    Object.values(imageMap).forEach((src) => {
+      const img = new Image()
+      img.src = src
+    })
+
     // Create questions from uxData
     const generatedQuestions = uxData.map((law) => {
       // Get 3 random wrong images
@@ -353,7 +359,7 @@ function UxMatchLaws() {
 
               return (
                 <div
-                  key={index}
+                  key={`${currentQuestionIndex}-${imagePath}`}
                   className={`image-option ${isSelected ? 'selected' : ''} ${showCorrect ? 'correct' : ''} ${showWrong ? 'wrong' : ''}`}
                   onClick={() => handleAnswerClick(index)}
                 >
@@ -361,6 +367,7 @@ function UxMatchLaws() {
                     src={imageMap[imagePath] || imagePath} 
                     alt={`Option ${index + 1}`}
                     className="law-image"
+                    loading="eager"
                   />
                   {showCorrect && <span className="check-icon">✓</span>}
                   {showWrong && <span className="x-icon">✗</span>}
