@@ -135,16 +135,16 @@ const isAnswerCorrect = (userAnswer, correctAnswer) => {
   
   // Allow typos with Levenshtein distance on core names
   // This handles "tessler" vs "tesler", "conectedness" vs "connectedness", etc.
-  if (coreUser.length >= 4 && coreCorrect.length >= 4) {
+  if (coreUser.length >= 3 && coreCorrect.length >= 3) {
     const distance = levenshteinDistance(coreUser, coreCorrect)
-    // Allow more typos for longer names (very lenient)
-    if (coreCorrect.length > 12 && distance <= 4) {
+    // Very lenient - allow up to 3 character differences for most names
+    if (coreCorrect.length > 10 && distance <= 4) {
       return true
     }
-    if (coreCorrect.length > 8 && distance <= 3) {
+    if (coreCorrect.length > 6 && distance <= 3) {
       return true
     }
-    if (coreCorrect.length > 5 && distance <= 2) {
+    if (coreCorrect.length >= 4 && distance <= 2) {
       return true
     }
     if (distance <= 1) {
@@ -152,21 +152,21 @@ const isAnswerCorrect = (userAnswer, correctAnswer) => {
     }
   }
   
-  // Allow typos on full normalized strings (more lenient)
-  if (normalizedCorrect.length > 10) {
+  // Also check distance on full normalized strings (more lenient)
+  if (normalizedUser.length >= 4 && normalizedCorrect.length >= 4) {
     const distance = levenshteinDistance(normalizedUser, normalizedCorrect)
-    return distance <= 4
-  }
-  
-  if (normalizedCorrect.length > 5) {
-    const distance = levenshteinDistance(normalizedUser, normalizedCorrect)
-    return distance <= 3
-  }
-  
-  // For shorter strings, allow distance of 2
-  if (normalizedCorrect.length > 3) {
-    const distance = levenshteinDistance(normalizedUser, normalizedCorrect)
-    return distance <= 2
+    if (normalizedCorrect.length > 12 && distance <= 5) {
+      return true
+    }
+    if (normalizedCorrect.length > 8 && distance <= 4) {
+      return true
+    }
+    if (normalizedCorrect.length > 5 && distance <= 3) {
+      return true
+    }
+    if (distance <= 2) {
+      return true
+    }
   }
   
   return false
@@ -182,6 +182,7 @@ function NameTheLaw() {
   const [userAnswers, setUserAnswers] = useState([])
   const [showReview, setShowReview] = useState(false)
   const [loadedImages, setLoadedImages] = useState({})
+  const [streak, setStreak] = useState(0)
 
   // Generate shuffled questions
   const [questions, setQuestions] = useState([])
@@ -225,6 +226,9 @@ function NameTheLaw() {
 
     if (isCorrect) {
       setScore(score + 1)
+      setStreak(streak + 1)
+    } else {
+      setStreak(0)
     }
 
     // Refocus after submit to keep keyboard shortcuts active
@@ -296,6 +300,7 @@ function NameTheLaw() {
     setUserAnswers([])
     setShowReview(false)
     setLoadedImages({})
+    setStreak(0)
     
     // Reshuffle questions
     const shuffled = [...uxData].sort(() => Math.random() - 0.5)
@@ -464,8 +469,14 @@ function NameTheLaw() {
         <div className="quiz-header">
           <h2>Name the UX Law</h2>
           <div className="progress-info">
-            <span>Question {currentQuestionIndex + 1} of {questions.length}</span>
-            <span>Score: {score}/{answeredQuestions}</span>
+            <div style={{ display: 'flex', alignItems: 'center', width: '100%' }}>
+              <span>Question {currentQuestionIndex + 1} of {questions.length}</span>
+              <div style={{ flex: 1 }}></div>
+              {streak >= 2 && (
+                <span className="streak-fire" style={{ marginRight: '1.5rem' }}>🔥 {streak}</span>
+              )}
+              <span>Score: {score}/{answeredQuestions}</span>
+            </div>
           </div>
           <div className="progress-bar">
             <div 
