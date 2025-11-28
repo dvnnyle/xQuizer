@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import NavigationMenu from '../pages/widget/navigationMenu'
+import CelebrationBackground from '../components/CelebrationBackground'
 import uxData from '../../dataBank/dataSub.json/uxData.json'
+import logo from '../assets/day17logo.png'
 import '../chapterList/chapter3.css'
 
 // Import all UX law images
@@ -334,21 +336,21 @@ function NameTheLaw() {
           <div className="quiz-container">
             <div className="quiz-header">
               <h2>Answer Review - Name the UX Law</h2>
-              <p className="question-counter">
-                Review all {questions.length} questions and their correct answers
-              </p>
+              <div className="progress-info">
+                <span>Score: {score}/{questions.length} ({percentage}%)</span>
+              </div>
             </div>
 
-            <div className="review-list">
+            <div className="review-container">
               {questions.map((question, qIndex) => {
                 const userAnswer = userAnswers[qIndex]
                 const isCorrect = userAnswer?.isCorrect || false
 
                 return (
-                  <div key={qIndex} className={`review-item ${isCorrect ? 'correct' : 'incorrect'}`}>
-                    <div className="review-question-header">
-                      <span className="review-question-number">Question {qIndex + 1}</span>
-                      <span className={`review-status ${isCorrect ? 'correct' : 'incorrect'}`}>
+                  <div key={qIndex} className="review-question-card">
+                    <div className="review-header">
+                      <span className="question-number">Question {qIndex + 1}</span>
+                      <span className={`result-badge ${isCorrect ? 'correct-badge' : 'wrong-badge'}`}>
                         {isCorrect ? '✓ Correct' : '✗ Incorrect'}
                       </span>
                     </div>
@@ -377,10 +379,10 @@ function NameTheLaw() {
                     </div>
 
                     <div className="review-explanation">
-                      <strong>{question.law}</strong>
-                      <p style={{ marginTop: '12px' }}><strong>Description:</strong><br />{question.description}</p>
-                      <p style={{ marginTop: '12px' }}><strong>Principle:</strong><br />{question.principle}</p>
-                      <p style={{ marginTop: '12px' }}><strong>In Practice:</strong><br />{question.practice}</p>
+                      <strong>Explanation:</strong>
+                      <p style={{ marginTop: '12px' }}><strong>Description:</strong> {question.description}</p>
+                      <p style={{ marginTop: '12px' }}><strong>Principle:</strong> {question.principle}</p>
+                      <p style={{ marginTop: '12px' }}><strong>In Practice:</strong> {question.practice}</p>
                     </div>
                   </div>
                 )
@@ -400,29 +402,79 @@ function NameTheLaw() {
       )
     }
     
+    const percentageNum = Math.round((score / questions.length) * 100)
+    
+    // Determine celebration level and message
+    let celebration = '🎉'
+    let title = 'Quiz Complete!'
+    let message = ''
+    
+    if (percentageNum === 100) {
+      celebration = '🏆✨🎊'
+      title = 'Perfect Score!'
+      message = 'Absolutely outstanding! You know your UX laws inside and out! 🌟'
+    } else if (percentageNum >= 90) {
+      celebration = '🎉🌟🔥'
+      title = 'Excellent Work!'
+      message = 'Amazing job! You really know your stuff! 💪'
+    } else if (percentageNum >= 75) {
+      celebration = '🎉👏'
+      title = 'Great Job!'
+      message = 'Well done! You have a solid understanding of UX laws!'
+    } else if (percentageNum >= 60) {
+      celebration = '👍'
+      title = 'Good Effort!'
+      message = 'Not bad! Keep practicing and you\'ll master these!'
+    } else {
+      celebration = '📚'
+      title = 'Keep Learning!'
+      message = 'Every expert was once a beginner. Review and try again!'
+    }
+    
     return (
       <>
         <NavigationMenu />
+        <CelebrationBackground score={score} total={questions.length} />
         <div className="quiz-container">
           <div className="result-card">
-            <h1>Quiz Complete! 🎉</h1>
+            <h1>{title}</h1>
+            {message && (
+              <p style={{ 
+                fontSize: '1.1rem', 
+                color: 'rgba(255, 255, 255, 0.8)', 
+                marginTop: '1rem',
+                marginBottom: '2rem',
+                maxWidth: '500px',
+                marginLeft: 'auto',
+                marginRight: 'auto',
+                lineHeight: '1.6'
+              }}>
+                {message}
+              </p>
+            )}
             <div className="score-display">
-              <div className="score-number">{score}</div>
+              <div className="score-number">
+                {score}
+              </div>
               <div className="score-total">out of {questions.length}</div>
             </div>
             <div className="score-percentage">
-              {Math.round((score / questions.length) * 100)}%
+              {percentageNum}%
             </div>
             <div className="button-group">
-              <button onClick={handleShowReview} className="next-button" style={{ marginBottom: '10px' }}>
-                📋 Review Answers
+              <button onClick={handleShowReview} className="next-button">
+                Review Answers
               </button>
               <button onClick={handleRestart} className="restart-button">
-                Try Again
+                {percentageNum >= 90 ? 'Challenge Yourself Again' : 'Try Again'}
               </button>
               <a href="/" className="home-link">
                 Back to Home
               </a>
+            </div>
+            <div className="result-divider"></div>
+            <div className="result-logo">
+              <img src={logo} alt="xQuizer Logo" style={{ width: '120px' }} />
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import NavigationMenu from '../pages/widget/navigationMenu'
+import CelebrationBackground from '../components/CelebrationBackground'
 import questionsData from '../../dataBank/chapter3.json'
 import './chapter3.css'
 
@@ -179,9 +180,10 @@ function Chapter3() {
     return (
       <>
         <NavigationMenu />
+        <CelebrationBackground score={score} total={questionsData.length} />
         <div className="quiz-container">
           <div className="result-card">
-            <h1>Quiz Complete! 🎉</h1>
+            <h1>Quiz Complete!</h1>
             <div className="score-display">
               <div className="score-number">{score}</div>
               <div className="score-total">out of {questionsData.length}</div>
@@ -191,7 +193,7 @@ function Chapter3() {
             </div>
             <div className="button-group">
               <button onClick={handleShowReview} className="next-button" style={{ marginBottom: '10px' }}>
-                📋 Review Answers
+                Review Answers
               </button>
               <button onClick={handleRestart} className="restart-button">
                 Try Again

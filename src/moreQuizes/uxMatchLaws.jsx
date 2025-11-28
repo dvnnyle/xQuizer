@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import NavigationMenu from '../pages/widget/navigationMenu'
+import CelebrationBackground from '../components/CelebrationBackground'
 import uxData from '../../dataBank/dataSub.json/uxData.json'
 import '../chapterList/chapter3.css'
 
@@ -299,9 +300,10 @@ function UxMatchLaws() {
     return (
       <>
         <NavigationMenu />
+        <CelebrationBackground score={score} total={questions.length} />
         <div className="quiz-container">
           <div className="result-card">
-            <h1>Quiz Complete! 🎉</h1>
+            <h1>Quiz Complete!</h1>
             <div className="score-display">
               <div className="score-number">{score}</div>
               <div className="score-total">out of {questions.length}</div>
