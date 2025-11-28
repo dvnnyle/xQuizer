@@ -440,7 +440,7 @@ function NameTheLaw() {
         if (e.key === 'ArrowLeft' && currentQuestionIndex > 0) {
           e.preventDefault()
           handlePrevious()
-        } else if (e.key === 'ArrowRight' && selectedAnswer !== null) {
+        } else if ((e.key === 'ArrowRight' || e.key === 'Enter') && selectedAnswer !== null) {
           e.preventDefault()
           handleNext()
         } else if (e.key === 'ArrowDown' && selectedAnswer === null && userInput.trim() === '') {
@@ -595,6 +595,9 @@ function NameTheLaw() {
 
           {selectedAnswer === null && (
             <p className="keyboard-hint">💡 Press Enter to submit • Arrow keys to navigate • Arrow Down to skip</p>
+          )}
+          {selectedAnswer !== null && (
+            <p className="keyboard-hint">💡 Press Enter or Arrow Right for next question</p>
           )}
         </div>
       </div>
