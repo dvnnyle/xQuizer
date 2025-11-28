@@ -709,11 +709,20 @@
   margin: 0.5rem 0;
   font-size: 0.95rem;
   color: #ddd;
+  text-align: left;
 }
 
 .wrong-text {
   color: #ef4444;
   font-weight: 600;
+}
+
+.keyboard-hint {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #888;
+  margin: 1rem 0;
+  font-style: italic;
 }
 
 .review-answer-comparison {

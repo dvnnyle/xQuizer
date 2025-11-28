@@ -260,12 +260,6 @@ function NameTheLaw() {
     setShowReview(false)
   }
 
-  const handleKeyPress = (e) => {
-    if (e.key === 'Enter' && userInput.trim() !== '' && selectedAnswer === null) {
-      handleSubmit()
-    }
-  }
-
   if (questions.length === 0) {
     return <div className="loading">Loading quiz...</div>
   }
@@ -423,17 +417,27 @@ function NameTheLaw() {
               type="text"
               value={userInput}
               onChange={(e) => setUserInput(e.target.value)}
-              onKeyPress={handleKeyPress}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' && userInput.trim() !== '' && selectedAnswer === null) {
+                  handleSubmit()
+                } else if (e.key === 'Enter' && selectedAnswer !== null) {
+                  handleNext()
+                } else if (e.key === 'ArrowLeft' && currentQuestionIndex > 0) {
+                  handlePrevious()
+                } else if (e.key === 'ArrowRight' && selectedAnswer !== null) {
+                  handleNext()
+                }
+              }}
               placeholder="Type the name of the law..."
               className={`law-name-input ${selectedAnswer !== null ? (selectedAnswer ? 'correct-input' : 'wrong-input') : ''}`}
               disabled={selectedAnswer !== null}
             />
             <button 
-              onClick={handleSubmit}
+              onClick={selectedAnswer === null ? handleSubmit : handleNext}
               className="submit-button"
-              disabled={userInput.trim() === '' || selectedAnswer !== null}
+              disabled={selectedAnswer === null && userInput.trim() === ''}
             >
-              {selectedAnswer === null ? 'Submit' : (selectedAnswer ? '✓ Correct' : '✗ Incorrect')}
+              {selectedAnswer === null ? 'Submit' : (currentQuestionIndex < questions.length - 1 ? 'Next Question →' : 'See Results')}
             </button>
           </div>
 
@@ -475,20 +479,19 @@ function NameTheLaw() {
             </div>
           )}
 
-          <div className="navigation-buttons">
-            {currentQuestionIndex > 0 && (
-              <button onClick={handlePrevious} className="previous-button">
-                Previous
-              </button>
-            )}
-            <button 
-              onClick={handleNext} 
-              className="next-button"
-              disabled={selectedAnswer === null}
-            >
-              {selectedAnswer === null ? '🔒 Submit your answer first' : (currentQuestionIndex < questions.length - 1 ? 'Next Question' : 'See Results')}
-            </button>
-          </div>
+          {selectedAnswer !== null && (
+            <div className="navigation-buttons">
+              {currentQuestionIndex > 0 && (
+                <button onClick={handlePrevious} className="previous-button">
+                  ← Previous
+                </button>
+              )}
+            </div>
+          )}
+          
+          {selectedAnswer === null && (
+            <p className="keyboard-hint">💡 Press Enter to submit • Arrow keys to navigate</p>
+          )}
         </div>
       </div>
     </motion.div>
