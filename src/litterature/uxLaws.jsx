@@ -84,19 +84,28 @@ function UxLaws() {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    // Simulate loading delay to map images
+    // Load and merge both data sources
     const loadData = async () => {
       setIsLoading(true)
-      // Small delay to show skeleton on slow networks
       await new Promise(resolve => setTimeout(resolve, 300))
       
+      // Import the quiz data with principle and practice
+      const quizDataModule = await import('../../dataBank/dataSub.json/uxData.json')
+      const quizData = quizDataModule.default
+      
+      // Merge both data sources by ID
       const lawsWithImages = uxLawsData.map(law => {
         const imageName = law.image.split('/').pop()
+        const quizLaw = quizData.find(q => q.id === law.id)
+        
         return {
           ...law,
-          image: imageMap[imageName] || law.image
+          image: imageMap[imageName] || law.image,
+          principle: quizLaw?.principle,
+          practice: quizLaw?.practice
         }
       })
+      
       setUxLaws(lawsWithImages)
       setIsLoading(false)
     }
@@ -298,13 +307,13 @@ function UxLaws() {
               </div>
 
               <div className="modal-description">
-                <h4>Description</h4>
+                <h4 style={{ marginBottom: '0', fontSize: '0.95rem', fontWeight: '600' }}>Description</h4>
                 <p>{selectedLaw.description}</p>
               </div>
 
               {selectedLaw.takeaways && selectedLaw.takeaways.length > 0 && (
                 <div className="modal-takeaways" style={{ marginTop: '1em' }}>
-                  <h4>Takeaways</h4>
+                  <h4 style={{ marginBottom: '0', fontSize: '0.95rem', fontWeight: '600' }}>Takeaways</h4>
                   <ul>
                     {selectedLaw.takeaways.map((takeaway, idx) => (
                       <li key={idx}>{takeaway}</li>
@@ -314,15 +323,24 @@ function UxLaws() {
               )}
               {selectedLaw.origins && (
                 <div className="modal-origins" style={{ marginTop: '1em' }}>
-                  <h4>Origins</h4>
+                  <h4 style={{ marginBottom: '0', fontSize: '0.95rem', fontWeight: '600' }}>Origins</h4>
                   <p>{selectedLaw.origins}</p>
                 </div>
               )}
 
-              <div className="modal-example" style={{ marginTop: '1em' }}>
-                <h4>Example</h4>
-                <p>{selectedLaw.example}</p>
-              </div>
+              {selectedLaw.principle && (
+                <div className="modal-principle" style={{ marginTop: '1em' }}>
+                  <h4 style={{ marginBottom: '0', fontSize: '0.95rem', fontWeight: '600' }}>Principle</h4>
+                  <p>{selectedLaw.principle}</p>
+                </div>
+              )}
+
+              {selectedLaw.practice && (
+                <div className="modal-practice" style={{ marginTop: '1em' }}>
+                  <h4 style={{ marginBottom: '0', fontSize: '0.95rem', fontWeight: '600' }}>In Practice</h4>
+                  <p>{selectedLaw.practice}</p>
+                </div>
+              )}
 
               <div className="modal-actions">
                 <a
