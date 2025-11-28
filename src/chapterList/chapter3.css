@@ -705,6 +705,15 @@
   transform: none;
 }
 
+.skip-button {
+  background: rgba(255, 255, 255, 0.1);
+  min-width: 100px;
+}
+
+.skip-button:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.15);
+}
+
 .your-answer-text {
   margin: 0.5rem 0;
   font-size: 0.95rem;
@@ -721,8 +730,50 @@
   text-align: center;
   font-size: 0.875rem;
   color: #888;
-  margin: 1rem 0;
+  margin: 1rem 0 0 0;
   font-style: italic;
+}
+
+.law-hint {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  background: rgba(100, 108, 255, 0.1);
+  border-left: 4px solid #646cff;
+  border-radius: 8px;
+}
+
+.hint-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.hint-text {
+  color: #ddd;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.hint-toggle-button {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 2px solid rgba(100, 108, 255, 0.3);
+  border-radius: 8px;
+  background: rgba(100, 108, 255, 0.1);
+  color: #646cff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hint-toggle-button:hover {
+  background: rgba(100, 108, 255, 0.2);
+  border-color: rgba(100, 108, 255, 0.5);
+  transform: translateY(-2px);
 }
 
 .review-answer-comparison {

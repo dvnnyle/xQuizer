@@ -134,10 +134,13 @@ const isAnswerCorrect = (userAnswer, correctAnswer) => {
   }
   
   // Allow typos with Levenshtein distance on core names
-  // This handles "tessler" vs "tesler", double letters, etc.
+  // This handles "tessler" vs "tesler", "conectedness" vs "connectedness", etc.
   if (coreUser.length >= 4 && coreCorrect.length >= 4) {
     const distance = levenshteinDistance(coreUser, coreCorrect)
-    // Allow more typos for longer names
+    // Allow more typos for longer names (very lenient)
+    if (coreCorrect.length > 12 && distance <= 4) {
+      return true
+    }
     if (coreCorrect.length > 8 && distance <= 3) {
       return true
     }
@@ -149,13 +152,18 @@ const isAnswerCorrect = (userAnswer, correctAnswer) => {
     }
   }
   
-  // Allow typos on full normalized strings
+  // Allow typos on full normalized strings (more lenient)
+  if (normalizedCorrect.length > 10) {
+    const distance = levenshteinDistance(normalizedUser, normalizedCorrect)
+    return distance <= 4
+  }
+  
   if (normalizedCorrect.length > 5) {
     const distance = levenshteinDistance(normalizedUser, normalizedCorrect)
     return distance <= 3
   }
   
-  // For shorter strings, allow distance of 1
+  // For shorter strings, allow distance of 2
   if (normalizedCorrect.length > 3) {
     const distance = levenshteinDistance(normalizedUser, normalizedCorrect)
     return distance <= 2
@@ -190,6 +198,14 @@ function NameTheLaw() {
     setQuestions(shuffled)
   }, [])
 
+  useEffect(() => {
+    // Auto-focus on mount to enable keyboard shortcuts immediately
+    const timer = setTimeout(() => {
+      document.activeElement?.blur()
+    }, 100)
+    return () => clearTimeout(timer)
+  }, [])
+
   const currentQuestion = questions[currentQuestionIndex]
 
   const handleSubmit = () => {
@@ -210,6 +226,12 @@ function NameTheLaw() {
     if (isCorrect) {
       setScore(score + 1)
     }
+
+    // Refocus after submit to keep keyboard shortcuts active
+    setTimeout(() => {
+      const container = document.querySelector('[tabindex="-1"]')
+      container?.focus()
+    }, 10)
   }
 
   const handleNext = () => {
@@ -219,6 +241,12 @@ function NameTheLaw() {
       setUserInput(nextAnswer ? nextAnswer.userAnswer : '')
       setSelectedAnswer(nextAnswer ? nextAnswer.isCorrect : null)
       setAnsweredQuestions(answeredQuestions + 1)
+      
+      // Auto-focus input on next question
+      setTimeout(() => {
+        const input = document.querySelector('.law-name-input')
+        input?.focus()
+      }, 50)
     } else {
       setAnsweredQuestions(answeredQuestions + 1)
       const finalScore = score + (selectedAnswer ? 1 : 0)
@@ -249,6 +277,12 @@ function NameTheLaw() {
       const prevAnswer = userAnswers[currentQuestionIndex - 1]
       setUserInput(prevAnswer ? prevAnswer.userAnswer : '')
       setSelectedAnswer(prevAnswer ? prevAnswer.isCorrect : null)
+      
+      // Auto-focus input on previous question
+      setTimeout(() => {
+        const input = document.querySelector('.law-name-input')
+        input?.focus()
+      }, 50)
     }
   }
 
@@ -397,6 +431,33 @@ function NameTheLaw() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
+      onKeyDown={(e) => {
+        if (e.key === 'ArrowLeft' && currentQuestionIndex > 0) {
+          e.preventDefault()
+          handlePrevious()
+        } else if (e.key === 'ArrowRight' && selectedAnswer !== null) {
+          e.preventDefault()
+          handleNext()
+        } else if (e.key === 'ArrowDown' && selectedAnswer === null && userInput.trim() === '') {
+          e.preventDefault()
+          // Skip: mark as wrong and show explanation
+          const newAnswers = [...userAnswers]
+          newAnswers[currentQuestionIndex] = { 
+            userAnswer: '', 
+            correctAnswer: currentQuestion.law,
+            isCorrect: false 
+          }
+          setUserAnswers(newAnswers)
+          setSelectedAnswer(false)
+        } else if (e.key === 'Enter' && selectedAnswer === null && document.activeElement?.className !== 'law-name-input') {
+          e.preventDefault()
+          // Focus input field when pressing Enter
+          const input = document.querySelector('.law-name-input')
+          input?.focus()
+        }
+      }}
+      tabIndex={-1}
+      style={{ outline: 'none' }}
     >
       <NavigationMenu />
       <div className="quiz-container">
@@ -434,29 +495,38 @@ function NameTheLaw() {
               value={userInput}
               onChange={(e) => setUserInput(e.target.value)}
               onKeyDown={(e) => {
-                if (e.key === 'Enter' && userInput.trim() !== '' && selectedAnswer === null) {
-                  handleSubmit()
-                } else if (e.key === 'Enter' && selectedAnswer !== null) {
-                  handleNext()
-                } else if (e.key === 'ArrowLeft' && currentQuestionIndex > 0) {
-                  handlePrevious()
-                } else if (e.key === 'ArrowRight' && selectedAnswer !== null) {
-                  handleNext()
+                if (e.key === 'Enter') {
+                  e.preventDefault()
+                  if (selectedAnswer === null && userInput.trim() !== '') {
+                    handleSubmit()
+                  } else if (selectedAnswer !== null) {
+                    handleNext()
+                  }
                 }
               }}
               placeholder="Type the name of the law..."
               className={`law-name-input ${selectedAnswer !== null ? (selectedAnswer ? 'correct-input' : 'wrong-input') : ''}`}
               disabled={selectedAnswer !== null}
             />
-            {selectedAnswer === null && (
-              <button 
-                onClick={handleSubmit}
-                className="submit-button"
-                disabled={userInput.trim() === ''}
-              >
-                Submit
-              </button>
-            )}
+            <button 
+              onClick={() => {
+                if (userInput.trim() === '') {
+                  // Skip: mark as wrong and show explanation
+                  const newAnswers = [...userAnswers]
+                  newAnswers[currentQuestionIndex] = { 
+                    userAnswer: '', 
+                    correctAnswer: currentQuestion.law,
+                    isCorrect: false 
+                  }
+                  setUserAnswers(newAnswers)
+                  setSelectedAnswer(false)
+                }
+              }}
+              className="submit-button skip-button"
+              disabled={userInput.trim() !== '' || selectedAnswer !== null}
+            >
+              Skip
+            </button>
           </div>
 
           {selectedAnswer !== null && (
@@ -497,10 +567,6 @@ function NameTheLaw() {
             </div>
           )}
 
-          {selectedAnswer === null && (
-            <p className="keyboard-hint">💡 Press Enter to submit • Arrow keys to navigate</p>
-          )}
-
           <div className="navigation-buttons">
             {currentQuestionIndex > 0 && (
               <button onClick={handlePrevious} className="previous-button">
@@ -508,13 +574,17 @@ function NameTheLaw() {
               </button>
             )}
             <button 
-              onClick={handleNext} 
+              onClick={selectedAnswer === null ? handleSubmit : handleNext}
               className="next-button"
-              disabled={selectedAnswer === null}
+              disabled={selectedAnswer === null && userInput.trim() === ''}
             >
-              {selectedAnswer === null ? '🔒 Submit your answer first' : (currentQuestionIndex < questions.length - 1 ? 'Next Question' : 'See Results')}
+              {selectedAnswer === null ? 'Submit Answer' : (currentQuestionIndex < questions.length - 1 ? 'Next Question' : 'See Results')}
             </button>
           </div>
+
+          {selectedAnswer === null && (
+            <p className="keyboard-hint">💡 Press Enter to submit • Arrow keys to navigate • Arrow Down to skip</p>
+          )}
         </div>
       </div>
     </motion.div>
