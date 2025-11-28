@@ -45,6 +45,21 @@
     "explanation": "UK Equality Act 2010 requires organisations to make reasonable adjustments, including accessible digital services. US Section 508 mandates that federal electronic and information technology be accessible to individuals with disabilities.<br><br>Other key global accessibility laws include:<br><br>• <strong>EU • European Accessibility Act (EAA)</strong>: Requires accessible products and services across member states.<br>• <strong>Canada • Accessible Canada Act (ACA)</strong>: Sets accessibility requirements for federal organisations.<br>• <strong>Australia • Disability Discrimination Act (DDA)</strong>: ProhibIt's discrimination and encourages accessible digital content.<br>• <strong>New Zealand • Web Accessibility Standard</strong>: Requires government sites to meet WCAG guidelines.<br>• <strong>Norway • Anti-Discrimination and Accessibility Act</strong>: Requires universal design of ICT solutions.<br><br>Example: A UK government website must provide text alternatives for images, keyboard navigation, and sufficient color contrast to comply with the Equality Act."
   },
   {
+    "id": 3.5,
+    "section": "5.2",
+    "question": "What are the four main principles of WCAG (Web Content Accessibility Guidelines)?",
+    "options": [
+      "Perceivable, Operable, Understandable, Robust",
+      "Visible, Interactive, Learnable, Reliable",
+      "Accessible, Usable, Functional, Stable",
+      "Clear, Simple, Consistent, Efficient"
+    ],
+    "answerIndex": 0,
+    "answer": "Perceivable, Operable, Understandable, Robust",
+    "shortExplanation": "WCAG's four principles (POUR) guide accessible web design.",
+    "explanation": "WCAG (Web Content Accessibility Guidelines) are international standards for web accessibility organized around four core principles, remembered by the acronym POUR:<br><br>• <strong>Perceivable</strong>: Information must be presentable to users in ways they can perceive—provide text alternatives for images, captions for videos, sufficient color contrast, and content that can be presented in different ways without losing meaning.<br><br>• <strong>Operable</strong>: Interface components must be operable by all users—ensure keyboard accessibility, provide enough time to read content, don't use flashing content that could cause seizures, and help users navigate and find content.<br><br>• <strong>Understandable</strong>: Information and operation must be understandable—make text readable and predictable, help users avoid and correct mistakes, use consistent navigation patterns.<br><br>• <strong>Robust</strong>: Content must work with current and future technologies—maximize compatibility with assistive technologies, use valid HTML, ensure content works across different browsers and devices.<br><br>WCAG defines three conformance levels: A (minimum), AA (mid-range, most common target), AAA (highest).<br><br>Example: A news website following WCAG AA provides alt text for all images (Perceivable), allows full keyboard navigation (Operable), writes clear headlines (Understandable), and uses semantic HTML that screen readers can parse (Robust)."
+  },
+  {
     "id": 4,
     "section": "5.2",
     "question": "Which is an example of physical exclusion?",

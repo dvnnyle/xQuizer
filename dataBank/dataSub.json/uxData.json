@@ -3,147 +3,168 @@
     "id": 1,
     "law": "Aesthetic-Usability Effect",
     "description": "Users perceive aesthetically pleasing design as easier to use.",
-    "example": "A clean interface feels more usable even before the user learns it.",
+    "principle": "A clean interface feels more usable even before the user learns it.",
+    "practice": "Apple's iOS uses elegant typography, smooth animations, and clean layouts—making users feel the system is more intuitive and reliable even before mastering all features.",
     "image": "/src/assets/uxImg/AestheticUsabilityEffect.png"
   },
   {
     "id": 2,
     "law": "Doherty Threshold",
     "description": "Productivity increases when a system responds in less than 400ms.",
-    "example": "Showing skeleton loaders immediately keeps users engaged.",
+    "principle": "Showing skeleton loaders immediately keeps users engaged.",
+    "practice": "Instagram displays skeleton screens while posts load, giving immediate visual feedback that the app is responding within 400ms.",
     "image": "/src/assets/uxImg/DohertyThreshold.png"
   },
   {
     "id": 3,
     "law": "Fitts's Law",
     "description": "The time to reach a target depends on its size and distance.",
-    "example": "Make primary buttons large and easy to tap.",
+    "principle": "Make primary buttons large and easy to tap.",
+    "practice": "Spotify's Play button is significantly larger than other controls, making it faster to tap and prioritizing the most common action.",
     "image": "/src/assets/uxImg/FittsLaw.png"
   },
   {
     "id": 4,
     "law": "Hick's Law",
     "description": "Decision time increases with the number of choices.",
-    "example": "Group menu options into categories for faster decisions.",
+    "principle": "Group menu options into categories for faster decisions.",
+    "practice": "Netflix groups thousands of shows into clear categories (Trending, Action, Comedy) instead of one overwhelming list, speeding up decision-making.",
     "image": "/src/assets/uxImg/hicksLaw.png"
   },
   {
     "id": 5,
     "law": "Jakob's Law",
     "description": "Users prefer your product to work like other familiar products.",
-    "example": "Use common UI patterns so users feel at home instantly.",
+    "principle": "Use common UI patterns so users feel at home instantly.",
+    "practice": "Instagram's navigation bar (Home, Search, Reels, Profile) mirrors Facebook and Twitter's layout, so users instantly know how to navigate.",
     "image": "/src/assets/uxImg/jakobLaw.png"
   },
   {
     "id": 6,
     "law": "Law of Common Region",
     "description": "Elements sharing a boundary are perceived as grouped.",
-    "example": "Product information inside a card clearly belongs together.",
+    "principle": "Product information inside a card clearly belongs together.",
+    "practice": "Twitter groups each tweet's text, image, likes, and retweets inside a card with subtle borders, clearly showing what content belongs together.",
     "image": "/src/assets/uxImg/lawofcommenregion.png"
   },
   {
     "id": 7,
     "law": "Law of Prägnanz",
     "description": "People perceive complex forms in the simplest way possible.",
-    "example": "Icons use simplified shapes to make recognition easier.",
+    "principle": "Icons use simplified shapes to make recognition easier.",
+    "practice": "YouTube's play button is a simple triangle inside a rectangle—universally understood without any text or complex graphics.",
     "image": "/src/assets/uxImg/lawofpragnaz.png"
   },
   {
     "id": 8,
     "law": "Law of Proximity",
     "description": "Elements close together are seen as related.",
-    "example": "Labels placed near input fields show clear connection.",
+    "principle": "Labels placed near input fields show clear connection.",
+    "practice": "Google Search results place the blue title link right above the description snippet, showing they're related without needing extra visual cues.",
     "image": "/src/assets/uxImg/lawofproximity.png"
   },
   {
     "id": 9,
     "law": "Law of Similarity",
     "description": "Similar items appear related.",
-    "example": "All primary buttons use the same color and style.",
+    "principle": "All primary buttons use the same color and style.",
+    "practice": "Spotify keeps all playlist covers the same square size and format, creating visual consistency that helps users scan content efficiently.",
     "image": "/src/assets/uxImg/lawofsimilaraity.png"
   },
   {
     "id": 10,
     "law": "Law of Uniform Connectedness",
     "description": "Connected items are seen as more related than unconnected items.",
-    "example": "Links grouped by a line or background are perceived as a unit.",
+    "principle": "Items with a shared background or border are perceived as a connected group.",
+    "practice": "Spotify connects song titles to artist names and album art with a consistent background row, making each track clearly separate from others.",
     "image": "/src/assets/uxImg/lawofuniformconectedneess.png"
   },
   {
     "id": 11,
     "law": "Miller's Law",
     "description": "People can store about 7±2 items in short-term memory.",
-    "example": "Group information into smaller chunks.",
+    "principle": "Limit visible items to 5-7 to prevent cognitive overload.",
+    "practice": "iPhone's home screen shows 5 dock icons maximum, respecting memory limits and preventing cognitive overload.",
     "image": "/src/assets/uxImg/millersLaw.png"
   },
   {
     "id": 12,
     "law": "Occam's Razor",
     "description": "The simplest solution is usually the best.",
-    "example": "A login form should only ask for email and password.",
+    "principle": "Remove all distractions and focus on one primary task.",
+    "practice": "Google's homepage is famously minimal—just a search bar and logo—removing all distractions from the main task of searching.",
     "image": "/src/assets/uxImg/occamRazor.png"
   },
   {
     "id": 13,
     "law": "Pareto Principle",
     "description": "80% of the effects come from 20% of the causes.",
-    "example": "Focus design efforts on the most-used features.",
+    "principle": "Focus design efforts on the most-used features.",
+    "practice": "YouTube prioritizes video playback, recommendations, and search (20% of features) because they generate 80% of watch time and user engagement.",
     "image": "/src/assets/uxImg/ParetoPrinciple.png"
   },
   {
     "id": 14,
     "law": "Parkinson's Law",
     "description": "Work expands to fill the time available.",
-    "example": "Short onboarding steps increase completion speed.",
+    "principle": "Set strict time limits to force quick decisions and action.",
+    "practice": "Instagram Stories have a 15-second limit, forcing quick creation and preventing overthinking, which increases posting frequency.",
     "image": "/src/assets/uxImg/parkinsonslaw.png"
   },
   {
     "id": 15,
     "law": "Peak-End Rule",
     "description": "People judge an experience by its peak and end moments.",
-    "example": "A delightful success animation improves memory of the journey.",
+    "principle": "Create memorable peak moments that define how users remember the experience.",
+    "practice": "Spotify Wrapped creates an annual peak moment with personalized music stats and sharing features, making users remember Spotify fondly all year.",
     "image": "/src/assets/uxImg/peakEndrule.png"
   },
   {
     "id": 16,
     "law": "Postel's Law",
     "description": "Be liberal in what you accept, and conservative in what you send.",
-    "example": "Allow flexible phone number formats during input.",
+    "principle": "Accept flexible inputs and correct common mistakes automatically.",
+    "practice": "Google Search accepts queries with typos and still returns correct results—searching 'youtub' automatically shows YouTube results.",
     "image": "/src/assets/uxImg/postelslaw.png"
   },
   {
     "id": 17,
     "law": "Serial Position Effect",
     "description": "People remember the first and last items best.",
-    "example": "Put important items at the top or bottom of lists.",
+    "principle": "Put important items at the top or bottom of lists.",
+    "practice": "Netflix places 'Continue Watching' at the very top and 'My List' near the bottom—leveraging prime memory positions to increase engagement.",
     "image": "/src/assets/uxImg/SerialpostitonEffect.png"
   },
   {
     "id": 18,
     "law": "Tesler's Law",
     "description": "Every system has irreducible complexity—manage it wisely.",
-    "example": "Password helpers reduce user complexity.",
+    "principle": "Hide technical complexity behind simple user interactions.",
+    "practice": "Apple's Face ID manages incredibly complex facial recognition internally, but users just glance at their phone—the system absorbs all complexity.",
     "image": "/src/assets/uxImg/teslerLaw.png"
   },
   {
     "id": 19,
     "law": "Von Restorff Effect",
     "description": "Distinct items are more memorable.",
-    "example": "A red delete button stands out from other options.",
+    "principle": "A red delete button stands out from other options.",
+    "practice": "YouTube's red Subscribe button stands out dramatically against white/gray backgrounds, making it impossible to miss and increasing subscription rates.",
     "image": "/src/assets/uxImg/vonRestorffEffect.png"
   },
   {
     "id": 20,
     "law": "Zeigarnik Effect",
     "description": "People remember incomplete tasks better than completed ones.",
-    "example": "A progress indicator encourages finishing a profile.",
+    "principle": "A progress indicator encourages finishing a profile.",
+    "practice": "LinkedIn shows profile completion percentage ('65% complete') with prompts to finish, creating psychological tension that drives users to complete their profiles.",
     "image": "/src/assets/uxImg/ZeigarnikEffect.png"
   },
   {
     "id": 21,
     "law": "Chunking",
     "description": "Breaking content into small units improves understanding.",
-    "example": "Phone numbers and credit card entries are grouped into chunks.",
+    "principle": "Phone numbers and credit card entries are grouped into chunks.",
+    "practice": "Credit card forms display 16 digits as 4 groups of 4 (1234 5678 9012 3456), making them dramatically easier to read and verify.",
     "image": "/src/assets/uxImg/chunking.png"
   }
 ]

@@ -563,6 +563,31 @@
   margin-bottom: 0.25rem;
 }
 
+.review-images-container {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.review-image-item {
+  flex: 1;
+  min-width: 200px;
+}
+
+.review-label {
+  font-weight: 600;
+  color: #646cff;
+  margin-bottom: 0.5rem;
+}
+
+.review-law-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
   .quiz-container {

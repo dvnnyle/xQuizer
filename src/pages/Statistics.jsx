@@ -28,6 +28,7 @@ function Statistics() {
       { id: 'fulllist', name: '🔥 All Questions', total: 209 },
       { id: 'uxquiz1', name: '🎯 UX Laws Quiz', total: 21 },
       { id: 'uxquiz2', name: '🎯 UX Laws Quiz 2', total: 21 },
+      { id: 'uxmatchlaws', name: '🖼️ UX Laws Image Match', total: 21 },
       { id: 'benyon12', name: '📚 Benyon\'s 12 Principles', total: 20 },
       { id: 'findincorrect', name: '🔍 Find Incorrect', total: 6 },
       { id: 'findincorrect2', name: '🔍 Find Incorrect 2', total: 4 }
@@ -233,6 +234,7 @@ function Statistics() {
                 localStorage.removeItem('quiz_fulllist')
                 localStorage.removeItem('quiz_uxquiz1')
                 localStorage.removeItem('quiz_uxquiz2')
+                localStorage.removeItem('quiz_uxmatchlaws')
                 localStorage.removeItem('quiz_benyon12')
                 localStorage.removeItem('quiz_findincorrect')
                 localStorage.removeItem('quiz_findincorrect2')

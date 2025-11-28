@@ -93,7 +93,8 @@ function UxMatchLaws() {
         question: `Which image represents ${law.law}?`,
         law: law.law,
         description: law.description,
-        example: law.example,
+        principle: law.principle,
+        practice: law.practice,
         correctImage: law.image,
         options: allImages,
         answerIndex: correctIndex
@@ -184,7 +185,8 @@ function UxMatchLaws() {
         question: `Which image represents ${law.law}?`,
         law: law.law,
         description: law.description,
-        example: law.example,
+        principle: law.principle,
+        practice: law.practice,
         correctImage: law.image,
         options: allImages,
         answerIndex: correctIndex
@@ -194,78 +196,153 @@ function UxMatchLaws() {
     setQuestions(generatedQuestions)
   }
 
-  const handleReview = () => {
+  const handleShowReview = () => {
     setShowReview(true)
-    setShowResult(false)
-    setCurrentQuestionIndex(0)
-    setSelectedAnswer(userAnswers[0] ? userAnswers[0].selectedIndex : null)
   }
 
-  const handleBackToHome = () => {
-    window.location.href = '/'
+  const handleBackToResults = () => {
+    setShowReview(false)
   }
 
   if (questions.length === 0) {
     return <div className="loading">Loading quiz...</div>
   }
 
-  if (showResult && !showReview) {
-    const percentage = ((score / questions.length) * 100).toFixed(0)
-    return (
-      <div className="quiz-container">
-        <NavigationMenu />
+  if (showResult) {
+    const percentage = ((score / questions.length) * 100).toFixed(1)
+    
+    if (showReview) {
+      return (
         <motion.div
-          className="result-card"
-          initial={{ scale: 0.8, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h2>Quiz Complete! 🎉</h2>
-          <div className="score-display">
-            <div className="score-number">{score}/{questions.length}</div>
-            <div className="score-percentage">{percentage}%</div>
-          </div>
-          <div className="button-group">
-            <button onClick={handleReview} className="review-btn">
-              Review Answers
-            </button>
-            <button onClick={handleRestart} className="restart-btn">
-              Try Again
-            </button>
-            <button onClick={handleBackToHome} className="home-btn">
-              Back to Home
-            </button>
+          <NavigationMenu />
+          <div className="quiz-container">
+            <div className="quiz-header">
+              <h2>Answer Review - UX Laws Image Match</h2>
+              <p className="question-counter">
+                Review all {questions.length} questions and their correct answers
+              </p>
+            </div>
+
+            <div className="review-list">
+              {questions.map((question, qIndex) => {
+                const userAnswer = userAnswers[qIndex]
+                const isCorrect = userAnswer?.isCorrect || false
+
+                return (
+                  <div key={qIndex} className={`review-item ${isCorrect ? 'correct' : 'incorrect'}`}>
+                    <div className="review-question-header">
+                      <span className="review-question-number">Question {qIndex + 1}</span>
+                      <span className={`review-status ${isCorrect ? 'correct' : 'incorrect'}`}>
+                        {isCorrect ? '✓ Correct' : '✗ Incorrect'}
+                      </span>
+                    </div>
+                    <h3>{question.question}</h3>
+                    
+                    <div className="review-images-container">
+                      <div className="review-image-item">
+                        <p className="review-label">Your Answer:</p>
+                        <img 
+                          src={imageMap[question.options[userAnswer?.selectedIndex]] || question.options[userAnswer?.selectedIndex]} 
+                          alt="Your answer"
+                          className="review-law-image"
+                        />
+                      </div>
+                      {!isCorrect && (
+                        <div className="review-image-item">
+                          <p className="review-label">Correct Answer:</p>
+                          <img 
+                            src={imageMap[question.correctImage] || question.correctImage} 
+                            alt="Correct answer"
+                            className="review-law-image"
+                          />
+                        </div>
+                      )}
+                    </div>
+
+                    <div className="review-explanation">
+                      <strong>{question.law}</strong>
+                      <p style={{ marginTop: '12px' }}><strong>Description:</strong><br />{question.description}</p>
+                      <p style={{ marginTop: '12px' }}><strong>Principle:</strong><br />{question.principle}</p>
+                      <p style={{ marginTop: '12px' }}><strong>In Practice:</strong><br />{question.practice}</p>
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+
+            <div className="review-actions">
+              <button onClick={handleBackToResults} className="next-button">
+                ← Back to Results
+              </button>
+              <button onClick={handleRestart} className="restart-button">
+                Try Again
+              </button>
+            </div>
           </div>
         </motion.div>
-      </div>
+      )
+    }
+    
+    return (
+      <>
+        <NavigationMenu />
+        <div className="quiz-container">
+          <div className="result-card">
+            <h1>Quiz Complete! 🎉</h1>
+            <div className="score-display">
+              <div className="score-number">{score}</div>
+              <div className="score-total">out of {questions.length}</div>
+            </div>
+            <div className="score-percentage">
+              {Math.round((score / questions.length) * 100)}%
+            </div>
+            <div className="button-group">
+              <button onClick={handleShowReview} className="next-button" style={{ marginBottom: '10px' }}>
+                📋 Review Answers
+              </button>
+              <button onClick={handleRestart} className="restart-button">
+                Try Again
+              </button>
+              <a href="/" className="home-link">
+                Back to Home
+              </a>
+            </div>
+          </div>
+        </div>
+      </>
     )
   }
 
   return (
-    <div className="quiz-container">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <NavigationMenu />
-      <div className="quiz-content">
+      <div className="quiz-container">
         <div className="quiz-header">
-          <h1>UX Laws - Image Matching</h1>
+          <h2>UX Laws - Image Matching</h2>
+          <div className="progress-info">
+            <span>Question {currentQuestionIndex + 1} of {questions.length}</span>
+            <span>Score: {score}/{answeredQuestions}</span>
+          </div>
           <div className="progress-bar">
             <div 
               className="progress-fill" 
               style={{ width: `${((currentQuestionIndex + 1) / questions.length) * 100}%` }}
             />
           </div>
-          <p className="question-counter">
-            Question {currentQuestionIndex + 1} of {questions.length}
-          </p>
         </div>
 
-        <motion.div
-          key={currentQuestionIndex}
-          className="question-card"
-          initial={{ x: 50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.3 }}
-        >
-          <h2 className="question-text">{currentQuestion.question}</h2>
+        <div className="question-card">
+          <h3 className="question-text">{currentQuestion.question}</h3>
 
           <div className="image-options-grid">
             {currentQuestion.options.map((imagePath, index) => {
@@ -275,12 +352,10 @@ function UxMatchLaws() {
               const showWrong = selectedAnswer !== null && isSelected && !isCorrect
 
               return (
-                <motion.div
+                <div
                   key={index}
                   className={`image-option ${isSelected ? 'selected' : ''} ${showCorrect ? 'correct' : ''} ${showWrong ? 'wrong' : ''}`}
                   onClick={() => handleAnswerClick(index)}
-                  whileHover={{ scale: selectedAnswer === null ? 1.02 : 1 }}
-                  whileTap={{ scale: selectedAnswer === null ? 0.98 : 1 }}
                 >
                   <img 
                     src={imageMap[imagePath] || imagePath} 
@@ -289,53 +364,63 @@ function UxMatchLaws() {
                   />
                   {showCorrect && <span className="check-icon">✓</span>}
                   {showWrong && <span className="x-icon">✗</span>}
-                </motion.div>
+                </div>
               )
             })}
           </div>
 
           {selectedAnswer !== null && (
-            <motion.div
-              className="explanation-box"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-            >
-              <h3>{currentQuestion.law}</h3>
-              <p className="explanation-description">
-                <strong>Description:</strong> {currentQuestion.description}
+            <div className="explanation-box">
+              <div className="explanation-header">
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width="24" 
+                  height="24" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                <span>Explanation</span>
+              </div>
+              <div className="correct-answer">
+                {currentQuestion.law}
+              </div>
+              <p className="explanation-text" style={{ marginTop: '12px' }}>
+                <strong>Description:</strong><br />{currentQuestion.description}
               </p>
-              <p className="explanation-example">
-                <strong>Example:</strong> {currentQuestion.example}
+              <p className="explanation-text" style={{ marginTop: '12px' }}>
+                <strong>Principle:</strong><br />{currentQuestion.principle}
               </p>
-            </motion.div>
+              <p className="explanation-text" style={{ marginTop: '12px' }}>
+                <strong>In Practice:</strong><br />{currentQuestion.practice}
+              </p>
+            </div>
           )}
-        </motion.div>
 
-        <div className="navigation-buttons">
-          <button
-            onClick={handlePrevious}
-            disabled={currentQuestionIndex === 0}
-            className="nav-btn prev-btn"
-          >
-            ← Previous
-          </button>
-          <button
-            onClick={handleNext}
-            disabled={selectedAnswer === null}
-            className="nav-btn next-btn"
-          >
-            {currentQuestionIndex === questions.length - 1 ? 'Finish' : 'Next →'}
-          </button>
-        </div>
-
-        {showReview && (
-          <div className="review-indicator">
-            Review Mode - Question {currentQuestionIndex + 1}/{questions.length}
+          <div className="navigation-buttons">
+            {currentQuestionIndex > 0 && (
+              <button onClick={handlePrevious} className="previous-button">
+                Previous
+              </button>
+            )}
+            <button 
+              onClick={handleNext} 
+              className="next-button"
+              disabled={selectedAnswer === null}
+            >
+              {selectedAnswer === null ? '🔒 Select an answer' : (currentQuestionIndex < questions.length - 1 ? 'Next Question' : 'See Results')}
+            </button>
           </div>
-        )}
+        </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
