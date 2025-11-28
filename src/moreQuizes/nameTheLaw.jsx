@@ -432,13 +432,15 @@ function NameTheLaw() {
               className={`law-name-input ${selectedAnswer !== null ? (selectedAnswer ? 'correct-input' : 'wrong-input') : ''}`}
               disabled={selectedAnswer !== null}
             />
-            <button 
-              onClick={selectedAnswer === null ? handleSubmit : handleNext}
-              className="submit-button"
-              disabled={selectedAnswer === null && userInput.trim() === ''}
-            >
-              {selectedAnswer === null ? 'Submit' : (currentQuestionIndex < questions.length - 1 ? 'Next Question →' : 'See Results')}
-            </button>
+            {selectedAnswer === null && (
+              <button 
+                onClick={handleSubmit}
+                className="submit-button"
+                disabled={userInput.trim() === ''}
+              >
+                Submit
+              </button>
+            )}
           </div>
 
           {selectedAnswer !== null && (
@@ -479,19 +481,24 @@ function NameTheLaw() {
             </div>
           )}
 
-          {selectedAnswer !== null && (
-            <div className="navigation-buttons">
-              {currentQuestionIndex > 0 && (
-                <button onClick={handlePrevious} className="previous-button">
-                  ← Previous
-                </button>
-              )}
-            </div>
-          )}
-          
           {selectedAnswer === null && (
             <p className="keyboard-hint">💡 Press Enter to submit • Arrow keys to navigate</p>
           )}
+
+          <div className="navigation-buttons">
+            {currentQuestionIndex > 0 && (
+              <button onClick={handlePrevious} className="previous-button">
+                Previous
+              </button>
+            )}
+            <button 
+              onClick={handleNext} 
+              className="next-button"
+              disabled={selectedAnswer === null}
+            >
+              {selectedAnswer === null ? '🔒 Submit your answer first' : (currentQuestionIndex < questions.length - 1 ? 'Next Question' : 'See Results')}
+            </button>
+          </div>
         </div>
       </div>
     </motion.div>
