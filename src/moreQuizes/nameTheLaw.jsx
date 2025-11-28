@@ -133,16 +133,32 @@ const isAnswerCorrect = (userAnswer, correctAnswer) => {
     }
   }
   
-  // Allow typos: max distance of 2 for strings longer than 5 chars
+  // Allow typos with Levenshtein distance on core names
+  // This handles "tessler" vs "tesler", double letters, etc.
+  if (coreUser.length >= 4 && coreCorrect.length >= 4) {
+    const distance = levenshteinDistance(coreUser, coreCorrect)
+    // Allow more typos for longer names
+    if (coreCorrect.length > 8 && distance <= 3) {
+      return true
+    }
+    if (coreCorrect.length > 5 && distance <= 2) {
+      return true
+    }
+    if (distance <= 1) {
+      return true
+    }
+  }
+  
+  // Allow typos on full normalized strings
   if (normalizedCorrect.length > 5) {
     const distance = levenshteinDistance(normalizedUser, normalizedCorrect)
-    return distance <= 2
+    return distance <= 3
   }
   
   // For shorter strings, allow distance of 1
   if (normalizedCorrect.length > 3) {
     const distance = levenshteinDistance(normalizedUser, normalizedCorrect)
-    return distance <= 1
+    return distance <= 2
   }
   
   return false
