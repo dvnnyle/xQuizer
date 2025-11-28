@@ -598,6 +598,159 @@
   margin-bottom: 0.25rem;
 }
 
+/* Name the Law - Single image display */
+.name-law-image-container {
+  position: relative;
+  max-width: 600px;
+  margin: 2rem auto;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.name-law-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  transition: opacity 0.3s ease;
+}
+
+.name-law-image.loading {
+  opacity: 0;
+}
+
+.name-law-image.loaded {
+  opacity: 1;
+}
+
+.name-law-review-image {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.name-law-review-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Input answer section */
+.input-answer-section {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  align-items: stretch;
+}
+
+.law-name-input {
+  flex: 1;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.law-name-input:focus {
+  outline: none;
+  border-color: #646cff;
+  background: rgba(100, 108, 255, 0.05);
+}
+
+.law-name-input.correct-input {
+  border-color: #22c55e;
+  background: rgba(34, 197, 94, 0.1);
+}
+
+.law-name-input.wrong-input {
+  border-color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.law-name-input:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.submit-button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background: #646cff;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 150px;
+}
+
+.submit-button:hover:not(:disabled) {
+  background: #535bf2;
+  transform: translateY(-2px);
+}
+
+.submit-button:disabled {
+  background: rgba(100, 108, 255, 0.3);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.your-answer-text {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+.wrong-text {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+.review-answer-comparison {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.answer-box {
+  flex: 1;
+  min-width: 200px;
+  padding: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.answer-box strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #646cff;
+}
+
+.answer-box p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.answer-box .correct-answer {
+  color: #22c55e;
+}
+
+.answer-box .wrong-answer {
+  color: #ef4444;
+}
+
 .review-images-container {
   display: flex;
   gap: 1.5rem;

@@ -83,6 +83,8 @@ function Home() {
           <a href="#uxlaws" className="toc-link">UX Laws</a>
           <a href="#uxquiz1" className="toc-link">UX Quiz</a>
           <a href="#uxquiz2" className="toc-link">UX Quiz 2</a>
+          <a href="#uxmatchlaws" className="toc-link">UX Image Match</a>
+          <a href="#namedlaw" className="toc-link">Name the Law</a>
           <a href="#benyon12lit" className="toc-link">Benyon's Principles</a>
           <a href="#benyon12" className="toc-link">Benyon's 12 Principles</a>
           <a href="#findincorrect" className="toc-link">Find Incorrect</a>
@@ -163,6 +165,11 @@ function Home() {
             <a href="/uxmatchlaws" className="chapter-button" id="uxmatchlaws">
               <h3>🖼️ UX Laws Image Match</h3>
               <p>Match UX law names with their visual diagrams</p>
+              <span className="question-count">21 questions</span>
+            </a>
+            <a href="/namedlaw" className="chapter-button" id="namedlaw">
+              <h3>✍️ Name the UX Law</h3>
+              <p>Type the name of the UX law from the diagram</p>
               <span className="question-count">21 questions</span>
             </a>
           </div>

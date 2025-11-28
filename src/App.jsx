@@ -18,6 +18,7 @@ import Benyon12Lit from './litterature/benyon12lit'
 import UxQuiz1 from './moreQuizes/uxQuiz1'
 import UxQuiz2 from './moreQuizes/uxQuiz2'
 import UxMatchLaws from './moreQuizes/uxMatchLaws'
+import NameTheLaw from './moreQuizes/nameTheLaw'
 import QuizFindIncorrect from './moreQuizes/quizFindIncorrect'
 import Benyon12Quiz from './moreQuizes/benyon12Quiz'
 import QuizFindIncorrect2 from './moreQuizes/quizFindIncorrect2'
@@ -46,6 +47,7 @@ function AnimatedRoutes() {
         <Route path="/uxquiz1" element={<UxQuiz1 key="uxquiz1" />} />
         <Route path="/uxquiz2" element={<UxQuiz2 key="uxquiz2" />} />
         <Route path="/uxmatchlaws" element={<UxMatchLaws key="uxmatchlaws" />} />
+        <Route path="/namedlaw" element={<NameTheLaw key="namedlaw" />} />
         <Route path="/findincorrect" element={<QuizFindIncorrect key="findincorrect" />} />
         <Route path="/benyon12" element={<Benyon12Quiz key="benyon12" />} />
         <Route path="/findincorrect2" element={<QuizFindIncorrect2 key="findincorrect2" />} />
