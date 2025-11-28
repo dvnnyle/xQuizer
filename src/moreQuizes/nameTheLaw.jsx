@@ -95,9 +95,9 @@ const isAnswerCorrect = (userAnswer, correctAnswer) => {
     return true
   }
   
-  // Extract the core name (remove common words like "law", "effect", "principle", "rule", "of")
+  // Extract the core name (remove common words like "law", "effect", "principle", "rule", "of", "threshold")
   const removeCommonWords = (str) => {
-    return str.replace(/\b(law|effect|principle|rule|the|of)\b/gi, '').replace(/\s+/g, '').toLowerCase()
+    return str.replace(/\b(law|effect|principle|rule|the|of|threshold)\b/gi, '').replace(/\s+/g, '').toLowerCase()
   }
   
   const coreUser = removeCommonWords(userAnswer)
@@ -105,6 +105,19 @@ const isAnswerCorrect = (userAnswer, correctAnswer) => {
   
   // Check if core names match (handles "parkinsons" vs "parkinsons law" vs "law of parkinsons")
   if (coreUser === coreCorrect && coreUser.length >= 4) {
+    return true
+  }
+  
+  // Check if user's core answer is contained in the correct core answer
+  // This handles partial matches like "aesthetic" matching "aestheticusability"
+  // or "restorff" matching "vonrestorff", "doherty" matching "doherty"
+  if (coreCorrect.includes(coreUser) && coreUser.length >= 4) {
+    return true
+  }
+  
+  // Check if correct core answer is contained in user's answer
+  // This handles cases where user adds extra words
+  if (coreUser.includes(coreCorrect) && coreCorrect.length >= 4) {
     return true
   }
   
