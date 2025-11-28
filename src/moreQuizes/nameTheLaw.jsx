@@ -95,6 +95,31 @@ const isAnswerCorrect = (userAnswer, correctAnswer) => {
     return true
   }
   
+  // Extract the core name (remove common words like "law", "effect", "principle", "rule", "of")
+  const removeCommonWords = (str) => {
+    return str.replace(/\b(law|effect|principle|rule|the|of)\b/gi, '').replace(/\s+/g, '').toLowerCase()
+  }
+  
+  const coreUser = removeCommonWords(userAnswer)
+  const coreCorrect = removeCommonWords(correctAnswer)
+  
+  // Check if core names match (handles "parkinsons" vs "parkinsons law" vs "law of parkinsons")
+  if (coreUser === coreCorrect && coreUser.length >= 4) {
+    return true
+  }
+  
+  // Check if user answer is contained in correct answer or vice versa
+  // This handles cases like "zeigarnik" matching "Zeigarnik Effect"
+  // or "pareto" matching "Pareto Principle"
+  if (normalizedCorrect.includes(normalizedUser) || normalizedUser.includes(normalizedCorrect)) {
+    // Only accept if it's a substantial match (at least 50% of the correct answer)
+    const matchRatio = Math.min(normalizedUser.length, normalizedCorrect.length) / 
+                       Math.max(normalizedUser.length, normalizedCorrect.length)
+    if (matchRatio >= 0.5) {
+      return true
+    }
+  }
+  
   // Allow typos: max distance of 2 for strings longer than 5 chars
   if (normalizedCorrect.length > 5) {
     const distance = levenshteinDistance(normalizedUser, normalizedCorrect)
@@ -376,6 +401,7 @@ function NameTheLaw() {
               alt="UX Law diagram"
               className={`name-law-image ${loadedImages[currentQuestion.image] ? 'loaded' : 'loading'}`}
               onLoad={() => setLoadedImages(prev => ({ ...prev, [currentQuestion.image]: true }))}
+              loading="eager"
             />
           </div>
 
