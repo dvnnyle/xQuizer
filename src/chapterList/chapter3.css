@@ -182,7 +182,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #646cff;
+  color: #fff;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
@@ -225,7 +225,7 @@
 }
 
 .explanation-text .highlight {
-  color: #646cff;
+  color: #fff;
   font-weight: 600;
 }
 
@@ -484,7 +484,7 @@
 }
 
 .review-explanation strong {
-  color: #646cff;
+  color: #fff;
   display: block;
   margin-bottom: 0.5rem;
 }
