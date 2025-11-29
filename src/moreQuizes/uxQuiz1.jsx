@@ -1,8 +1,9 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import NavigationMenu from '../pages/widget/navigationMenu'
 import CelebrationBackground from '../components/CelebrationBackground'
 import questionsData from '../../dataBank/dataSub/uxDataQBank.json'
+import uxData from '../../dataBank/dataSub.json/uxData.json'
 import '../chapterList/chapter3.css'
 
 // Import all UX law images
@@ -58,8 +59,23 @@ function UxQuiz1() {
   const [answeredQuestions, setAnsweredQuestions] = useState(0)
   const [userAnswers, setUserAnswers] = useState([])
   const [showReview, setShowReview] = useState(false)
+  const [mergedData, setMergedData] = useState([])
 
-  const currentQuestion = questionsData[currentQuestionIndex]
+  useEffect(() => {
+    // Merge questionsData with uxData to get description, principle, and practice
+    const merged = questionsData.map((question, index) => {
+      const uxLaw = uxData[index] // Match by index since they're in same order
+      return {
+        ...question,
+        description: uxLaw?.description,
+        principle: uxLaw?.principle,
+        practice: uxLaw?.practice
+      }
+    })
+    setMergedData(merged)
+  }, [])
+
+  const currentQuestion = mergedData[currentQuestionIndex] || questionsData[currentQuestionIndex]
 
   const handleAnswerClick = (index) => {
     if (selectedAnswer !== null) return // Already answered
@@ -155,7 +171,7 @@ function UxQuiz1() {
             </div>
 
             <div className="review-container">
-              {questionsData.map((question, qIndex) => {
+              {mergedData.map((question, qIndex) => {
                 const userAnswer = userAnswers[qIndex]
                 const isCorrect = userAnswer?.isCorrect
                 const userSelectedIndex = userAnswer?.selectedIndex
@@ -198,7 +214,16 @@ function UxQuiz1() {
                     </div>
                     
                     <div className="review-explanation">
-                      <strong>Explanation:</strong> {question.explanation}
+                      <strong>Explanation:</strong>
+                      <p className="explanation-text" style={{ marginTop: '12px' }}>
+                        <strong>Description:</strong><br />{question.description}
+                      </p>
+                      <p className="explanation-text" style={{ marginTop: '12px' }}>
+                        <strong>Principle:</strong><br />{question.principle}
+                      </p>
+                      <p className="explanation-text" style={{ marginTop: '12px' }}>
+                        <strong>In Practice:</strong><br />{question.practice}
+                      </p>
                     </div>
                   </div>
                 )
@@ -317,26 +342,15 @@ function UxQuiz1() {
               <div className="correct-answer">
                 The correct answer is: {currentQuestion.answer}
               </div>
-              {currentQuestion.shortExplanation && (
-                <p 
-                  className="short-explanation"
-                  dangerouslySetInnerHTML={{ 
-                    __html: currentQuestion.shortExplanation.replace(
-                      /'([^']+)'/g, 
-                      "<span class='highlight'>$1</span>"
-                    )
-                  }}
-                />
-              )}
-              <p 
-                className="explanation-text"
-                dangerouslySetInnerHTML={{ 
-                  __html: currentQuestion.explanation.replace(
-                    /'([^']+)'/g, 
-                    "<span class='highlight'>$1</span>"
-                  )
-                }}
-              />
+              <p className="explanation-text" style={{ marginTop: '12px' }}>
+                <strong>Description:</strong><br />{currentQuestion.description}
+              </p>
+              <p className="explanation-text" style={{ marginTop: '12px' }}>
+                <strong>Principle:</strong><br />{currentQuestion.principle}
+              </p>
+              <p className="explanation-text" style={{ marginTop: '12px' }}>
+                <strong>In Practice:</strong><br />{currentQuestion.practice}
+              </p>
             </div>
           )}
 
