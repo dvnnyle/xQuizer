@@ -60,6 +60,7 @@ function UxQuiz1() {
   const [userAnswers, setUserAnswers] = useState([])
   const [showReview, setShowReview] = useState(false)
   const [mergedData, setMergedData] = useState([])
+  const [imageLoaded, setImageLoaded] = useState(false)
 
   useEffect(() => {
     // Merge questionsData with uxData to get description, principle, and practice
@@ -74,6 +75,11 @@ function UxQuiz1() {
     })
     setMergedData(merged)
   }, [])
+
+  useEffect(() => {
+    // Reset image loaded state when question changes
+    setImageLoaded(false)
+  }, [currentQuestionIndex])
 
   const currentQuestion = mergedData[currentQuestionIndex] || questionsData[currentQuestionIndex]
 
@@ -303,7 +309,15 @@ function UxQuiz1() {
           
           {currentQuestion.imageUrl && (
             <div className="question-image">
-              <img src={imageMap[currentQuestion.imageUrl] || currentQuestion.imageUrl} alt="Question illustration" />
+              {!imageLoaded && (
+                <div className="image-skeleton"></div>
+              )}
+              <img 
+                src={imageMap[currentQuestion.imageUrl] || currentQuestion.imageUrl} 
+                alt="Question illustration"
+                onLoad={() => setImageLoaded(true)}
+                style={{ display: imageLoaded ? 'block' : 'none' }}
+              />
             </div>
           )}
           
