@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import NavigationMenu from '../pages/widget/navigationMenu'
 import questionsData from '../../dataBank/chapter10.json'
+import CelebrationBackground from '../components/CelebrationBackground'
 import '../chapterList/chapter3.css'
 
 function Chapter10() {
@@ -42,20 +43,19 @@ function Chapter10() {
       setAnsweredQuestions(answeredQuestions + 1)
     } else {
       setAnsweredQuestions(answeredQuestions + 1)
-      const finalScore = score + (currentQuestion.answerIndex === selectedAnswer ? 1 : 0)
       
       // Save to localStorage
       const existingData = localStorage.getItem('quiz_chapter10')
       const previousData = existingData ? JSON.parse(existingData) : { bestScore: 0, attempts: 0, attemptHistory: [] }
       
-      const newAttempt = { score: finalScore, date: new Date().toISOString() }
+      const newAttempt = { score: score, date: new Date().toISOString() }
       const attemptHistory = [...(previousData.attemptHistory || []), newAttempt]
       
       localStorage.setItem('quiz_chapter10', JSON.stringify({
-        score: finalScore,
+        score: score,
         completed: questionsData.length,
         total: questionsData.length,
-        bestScore: Math.max(finalScore, previousData.bestScore || 0),
+        bestScore: Math.max(score, previousData.bestScore || 0),
         attempts: attemptHistory.length,
         lastAttempt: new Date().toISOString(),
         attemptHistory: attemptHistory
