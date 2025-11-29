@@ -27,7 +27,7 @@
     "answerIndex": 3,
     "answer": "What technology framework is used?",
     "shortExplanation": "Evaluation focuses on usability, not technical implementation details.",
-    "explanation": "Evaluation cares about learnability, effectiveness, accommodation and fitness for purpose, not about which implementation framework is used.<br><br><strong>Example:</strong> Evaluators test whether elderly users can successfully book appointments (usability), not whether the app uses React or Vue (technical implementation choice)."
+    "explanation": "Evaluation cares about learnability, effectiveness, and accommodation, not about which implementation framework is used.<br><br><strong>Example:</strong> Evaluators test whether elderly users can successfully book appointments (usability), not whether the app uses React or Vue."
   },
   {
     "id": 3,
@@ -70,7 +70,7 @@
     ],
     "answerIndex": 3,
     "answer": "Automated accessibility testing",
-    "explanation": "The three main types of UX evaluation:<br><br><strong>Three evaluation approaches:</strong><br>• <strong>Expert-based:</strong> UX specialists review designs using heuristics and principles (quick, finds many issues without users)<br>• <strong>Participant-based:</strong> Real users test the design while performing tasks (reveals actual usage problems and behaviors)<br>• <strong>Data analytics-based:</strong> Analyze behavioral data from actual usage (shows patterns at scale, objective metrics)<br><br>Marketing testing focuses on brand perception and sales, not usability.<br><br><strong>Example:</strong> A banking app uses expert review (UX specialists check heuristics), usability testing (customers try tasks), and analytics (track login success rates)•these are UX evaluations, not marketing ads."
+    "explanation": "The three main types of UX evaluation:<br><br>• <strong>Expert-based:</strong> UX specialists review designs using heuristics and principles<br>• <strong>Participant-based:</strong> Real users test the design while performing tasks<br>• <strong>Data analytics-based:</strong> Analyze behavioral data from actual usage<br><br><strong>Example:</strong> A banking app uses expert review (specialists check heuristics), usability testing (customers try tasks), and analytics (track login success rates). These are UX evaluations, not marketing ads."
   },
   {
     "id": 6,
@@ -154,7 +154,7 @@
     ],
     "answerIndex": 2,
     "answer": "Experts review a design against principles without involving real users",
-    "explanation": "Expert evaluation involves trained UX or usability specialists reviewing a design using known principles and heuristics to find issues quickly and cheaply.<br><br><strong>Example:</strong> A UX expert walks through a mobile app checking for consistency, feedback, and error prevention (heuristics), identifying 15 issues in 2 hours without needing to recruit any users."
+    "explanation": "Expert evaluation involves trained specialists reviewing a design using principles and heuristics to find issues quickly.<br><br><strong>Example:</strong> A UX expert walks through a mobile app checking for consistency, feedback, and error prevention, identifying 15 issues in 2 hours without recruiting any users."
   },
   {
     "id": 12,
@@ -182,7 +182,7 @@
     ],
     "answerIndex": 1,
     "answer": "Heuristic evaluation",
-    "explanation": "Heuristic evaluation reviews a design against usability heuristics like visibility, consistency, feedback and recovery.<br><br><strong>Key heuristics:</strong><br>• <strong>Visibility:</strong> Important information and functions are clearly visible and discoverable<br>• <strong>Consistency:</strong> Similar elements behave similarly across the interface<br>• <strong>Feedback:</strong> System provides clear responses to user actions<br>• <strong>Recovery:</strong> Users can easily undo mistakes and recover from errors<br><br><strong>Example:</strong> Using Nielsens 10 heuristics, an expert evaluates a banking app and finds violations: no confirmation after transfers (missing feedback), inconsistent button placement (lacks consistency), no undo option (poor error recovery)."
+    "explanation": "Heuristic evaluation reviews a design against usability heuristics.<br><br>• <strong>Visibility:</strong> Important information and functions are clearly visible<br>• <strong>Consistency:</strong> Similar elements behave similarly across the interface<br>• <strong>Feedback:</strong> System provides clear responses to user actions<br>• <strong>Recovery:</strong> Users can easily undo mistakes and recover from errors<br><br><strong>Example:</strong> An expert evaluates a banking app and finds violations: no confirmation after transfers (missing feedback), inconsistent button placement (lacks consistency), no undo option (poor error recovery)."
   },
   {
     "id": 14,
@@ -196,7 +196,7 @@
     ],
     "answerIndex": 2,
     "answer": "Core design principles such as visibility, consistency, feedback and constraints",
-    "explanation": "The notes list principles like visibility, consistency, familiarity, affordances, navigation, control, feedback, recovery, constraints, flexibility, style and conviviality as heuristics.<br><br><strong>Common heuristics explained:</strong><br>• <strong>Visibility:</strong> Functions and information are easy to find and see<br>• <strong>Consistency:</strong> Interface elements work the same way throughout<br>• <strong>Feedback:</strong> System responds clearly to every user action<br>• <strong>Constraints:</strong> Design prevents errors by limiting invalid options<br>• <strong>Recovery:</strong> Easy undo and error correction mechanisms<br>• <strong>Affordances:</strong> Elements show what they can do (buttons look clickable)<br><br><strong>Example:</strong> Evaluating a form: Visibility (are required fields marked?), Consistency (do all buttons look similar?), Feedback (does submission show success?), Constraints (are invalid inputs prevented?)."
+    "explanation": "Usability heuristics are core design principles used to evaluate interfaces.<br><br>• <strong>Visibility:</strong> Important information and functions are clearly visible<br>• <strong>Consistency:</strong> Similar elements behave similarly across the interface<br>• <strong>Feedback:</strong> System provides clear responses to user actions<br>• <strong>Constraints:</strong> Design prevents errors by limiting invalid options<br>• <strong>Recovery:</strong> Users can easily undo mistakes and recover from errors<br>• <strong>Affordances:</strong> Elements show what they can do (buttons look clickable)<br><br><strong>Example:</strong> Evaluating a form: Visibility (are required fields marked?), Consistency (do all buttons look similar?), Feedback (does submission show success?), Constraints (are invalid inputs prevented?)."
   },
   {
     "id": 15,
@@ -336,7 +336,7 @@
     ],
     "answerIndex": 1,
     "answer": "If no one acts on your evaluation, the evaluation fails",
-    "explanation": "Evaluation only has impact if findings lead to design changes; otherwise it has failed It's purpose.<br><br><strong>Example:</strong> A usability report identifies 20 critical issues, but the team ignores it and launches unchanged. Six months later, users complain and ratings drop—the evaluation was wasted because nobody acted on it."
+    "explanation": "Evaluation only has impact if findings lead to design changes, otherwise it has failed its purpose.<br><br><strong>Example:</strong> A usability report identifies 20 critical issues, but the team ignores it and launches unchanged. Six months later, users complain and ratings drop because nobody acted on the evaluation."
   },
   {
     "id": 25,
@@ -350,7 +350,7 @@
     ],
     "answerIndex": 2,
     "answer": "Prioritising issues by severity and suggesting improvements",
-    "explanation": "High-impact reporting organises issues by severity, links them to principles, and proposes concrete fixes so designers can act on them.<br><br><strong>Example:</strong> Report says: Critical: 6/8 users couldn't complete checkout (missing feedback). Fix: Add confirmation message and progress indicator. This is actionable. Users found it confusing is not."
+    "explanation": "High-impact reporting organizes issues by severity, links them to principles, and proposes concrete fixes.<br><br><strong>Example:</strong> Report says: Critical issue: 6/8 users couldn't complete checkout (missing feedback). Proposed fix: Add confirmation message and progress indicator. This is actionable."
   },
   {
     "id": 26,
@@ -364,7 +364,7 @@
     ],
     "answerIndex": 2,
     "answer": "Because environment (noise, mobility, lighting) strongly influences behaviour",
-    "explanation": "Evaluation should reflect real physical and social environments; otherwise results may be misleading, especially for mobile, wearables and public services.<br><br><strong>Example:</strong> A museum audio guide works perfectly in a quiet lab but fails in the actual museum where echoing crowds and bright exhibIt's distract users—context matters for accurate evaluation."
+    "explanation": "Evaluation should reflect real physical and social environments, otherwise results may be misleading.<br><br><strong>Example:</strong> A museum audio guide works perfectly in a quiet lab but fails in the actual museum where echoing crowds and bright exhibits distract users. Context matters for accurate evaluation."
   },
   {
     "id": 27,
@@ -378,7 +378,7 @@
     ],
     "answerIndex": 1,
     "answer": "How realistic a prototype is in look and behaviour",
-    "explanation": "Fidelity is the degree of realism of a prototype; low-fidelity sketches cannot reveal timing or animations, while high-fidelity prototypes can.<br><br><strong>Example:</strong> Low-fidelity: Paper sketches show layout but not button clicks. High-fidelity: Interactive Figma prototype with working buttons, animations, and realistic timing—allows testing actual interactions."
+    "explanation": "Fidelity is the degree of realism of a prototype. Low-fidelity sketches cannot reveal timing or animations, while high-fidelity prototypes can.<br><br><strong>Example:</strong> Low-fidelity paper sketches show layout but not interactions. High-fidelity Figma prototypes have working buttons, animations, and realistic timing."
   },
   {
     "id": 28,
