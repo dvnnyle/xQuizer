@@ -38,6 +38,7 @@ function DragDropLaws() {
   const [score, setScore] = useState(0)
   const [showResult, setShowResult] = useState(false)
   const [attempts, setAttempts] = useState(0)
+  const [mistakes, setMistakes] = useState(0)
   const [swapColumns, setSwapColumns] = useState(false)
   const [flashEffect, setFlashEffect] = useState(null) // 'correct' or 'wrong'
 
@@ -91,12 +92,66 @@ function DragDropLaws() {
 
       // Check if all matched
       if (correctMatches.size + 1 === lawPairs.length) {
-        setTimeout(() => setShowResult(true), 500)
+        const finalAttempts = attempts + 1 // Current attempt count after this match
+        const finalMistakes = mistakes
+        setTimeout(() => {
+          // Save to localStorage
+          const savedData = localStorage.getItem('quiz_dragdroplaws')
+          const currentScore = lawPairs.length
+          const currentAccuracy = ((currentScore / finalAttempts) * 100).toFixed(1)
+          
+          if (savedData) {
+            const data = JSON.parse(savedData)
+            const attemptHistory = data.attemptHistory || []
+            attemptHistory.push({
+              score: currentScore,
+              accuracy: parseFloat(currentAccuracy),
+              mistakes: finalMistakes,
+              date: new Date().toISOString()
+            })
+            
+            const bestAccuracy = Math.max(...attemptHistory.map(a => a.accuracy))
+            
+            localStorage.setItem('quiz_dragdroplaws', JSON.stringify({
+              score: currentScore,
+              bestScore: currentScore,
+              accuracy: parseFloat(currentAccuracy),
+              bestAccuracy: bestAccuracy,
+              mistakes: finalMistakes,
+              total: lawPairs.length,
+              completed: true,
+              attemptHistory: attemptHistory,
+              lastAttempt: new Date().toISOString()
+            }))
+          } else {
+            localStorage.setItem('quiz_dragdroplaws', JSON.stringify({
+              score: currentScore,
+              bestScore: currentScore,
+              accuracy: parseFloat(currentAccuracy),
+              bestAccuracy: parseFloat(currentAccuracy),
+              mistakes: finalMistakes,
+              total: lawPairs.length,
+              completed: true,
+              attemptHistory: [{
+                score: currentScore,
+                accuracy: parseFloat(currentAccuracy),
+                mistakes: finalMistakes,
+                date: new Date().toISOString()
+              }],
+              lastAttempt: new Date().toISOString()
+            }))
+          }
+          
+          setShowResult(true)
+        }, 500)
       }
     } else {
       // Show wrong flash effect
       setFlashEffect('wrong')
       setTimeout(() => setFlashEffect(null), 600)
+      
+      // Count mistake
+      setMistakes(mistakes + 1)
       
       // Wrong match - show feedback
       setWrongMatches({ ...wrongMatches, [selectedDescription.id]: desc.id })
@@ -129,10 +184,11 @@ function DragDropLaws() {
     setScore(0)
     setShowResult(false)
     setAttempts(0)
+    setMistakes(0)
   }
 
   if (showResult) {
-    const accuracy = ((score / attempts) * 100).toFixed(1)
+    const accuracy = ((lawPairs.length / attempts) * 100).toFixed(1)
     
     return (
       <>
@@ -149,7 +205,7 @@ function DragDropLaws() {
               {Math.round((score / lawPairs.length) * 100)}%
             </div>
             <p style={{ color: '#888', fontSize: '1rem', marginTop: '1rem' }}>
-              Accuracy: {accuracy}% • {attempts} attempts
+              Accuracy: {accuracy}% • {attempts} attempts • {mistakes} mistake{mistakes !== 1 ? 's' : ''}
             </p>
             <div className="button-group">
               <button onClick={handleRestart} className="restart-button">

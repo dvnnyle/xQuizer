@@ -30,7 +30,7 @@ function Statistics() {
         { id: 'uxquiz2', name: 'UX Laws Quiz 2', total: 21 },
         { id: 'uxmatchlaws', name: 'UX Laws Image Match', total: 21 },
         { id: 'namedlaw', name: 'Name the UX Law', total: 21 },
-        { id: 'dragdroplaws', name: 'Match UX Laws', total: 21 }
+        { id: 'dragdroplaws', name: 'Match the Pairs', total: 21 }
       ],
       benyonQuizzes: [
         { id: 'benyon12', name: 'Benyon\'s 12 Principles', total: 20 }
