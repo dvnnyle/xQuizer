@@ -90,6 +90,7 @@ function Home() {
           <a href="#benyon12" className="toc-link">Benyon's 12 Principles</a>
           <a href="#findincorrect" className="toc-link">Find Incorrect</a>
           <a href="#findincorrect2" className="toc-link">Find All Incorrect</a>
+          <a href="#acronymquiz" className="toc-link">Acronym Quiz</a>
         </nav>
       </aside>
       <div className="home-content">
@@ -232,6 +233,14 @@ function Home() {
               <span className="question-count">4 questions</span>
             </a>
           </div>
+          <div className="chapter-divider">
+            <span>Extra Tests</span>
+          </div>
+          <a href="/acronymquiz" className="chapter-button" id="acronymquiz">
+            <h3>🔤 Acronym Quiz</h3>
+            <p>Test your knowledge of UX/UI acronyms and terminology</p>
+            <span className="question-count">30 questions</span>
+          </a>
         </div>
       </div>
       <Footer />

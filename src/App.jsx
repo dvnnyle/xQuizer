@@ -23,6 +23,7 @@ import QuizFindIncorrect from './moreQuizes/quizFindIncorrect'
 import Benyon12Quiz from './moreQuizes/benyon12Quiz'
 import QuizFindIncorrect2 from './moreQuizes/quizFindIncorrect2'
 import DragDropLaws from './moreQuizes/dragDropLaws'
+import AcronymQuiz from './moreQuizes/acronymQuiz'
 
 function AnimatedRoutes() {
   const location = useLocation()
@@ -53,6 +54,7 @@ function AnimatedRoutes() {
         <Route path="/benyon12" element={<Benyon12Quiz key="benyon12" />} />
         <Route path="/findincorrect2" element={<QuizFindIncorrect2 key="findincorrect2" />} />
         <Route path="/dragdroplaws" element={<DragDropLaws key="dragdroplaws" />} />
+        <Route path="/acronymquiz" element={<AcronymQuiz key="acronymquiz" />} />
       </Routes>
     </AnimatePresence>
   )
