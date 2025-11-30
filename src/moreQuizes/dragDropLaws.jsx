@@ -252,7 +252,8 @@ function DragDropLaws() {
                     animate={{
                       boxShadow: isSelected && flashEffect === 'selected'
                         ? ['0 0 0 0px rgba(251, 191, 36, 0)', '0 0 0 3px rgba(251, 191, 36, 0.8)', '0 0 0 0px rgba(251, 191, 36, 0)']
-                        : '0 0 0 0px rgba(0, 0, 0, 0)'
+                        : '0 0 0 0px rgba(0, 0, 0, 0)',
+                      borderColor: isSelected ? '#fbbf24' : 'rgba(255, 255, 255, 0.1)'
                     }}
                     transition={{
                       duration: 0.4,
@@ -269,8 +270,7 @@ function DragDropLaws() {
                       fontWeight: swapColumns ? '400' : '500',
                       position: 'relative',
                       padding: '0.75rem',
-                      opacity: isCorrect ? 0.3 : 1,
-                      border: isSelected ? '2px solid #fbbf24' : undefined
+                      opacity: isCorrect ? 0.3 : 1
                     }}
                   >
                     {swapColumns ? item.description : item.law}

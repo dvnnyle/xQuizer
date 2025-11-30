@@ -14,25 +14,48 @@ function Statistics() {
   })
 
   useEffect(() => {
-    // Load statistics from localStorage
+    // Load statistics from localStorage - organized by categories
+    const quizCategories = {
+      chapters: [
+        { id: 'chapter2', name: 'Chapter 2', total: 31 },
+        { id: 'chapter3', name: 'Chapter 3', total: 29 },
+        { id: 'chapter5', name: 'Chapter 5', total: 30 },
+        { id: 'chapter6', name: 'Chapter 6', total: 33 },
+        { id: 'chapter7', name: 'Chapter 7', total: 30 },
+        { id: 'chapter8', name: 'Chapter 8', total: 26 },
+        { id: 'chapter10', name: 'Chapter 10', total: 30 }
+      ],
+      uxLaws: [
+        { id: 'uxquiz1', name: 'UX Laws Quiz', total: 21 },
+        { id: 'uxquiz2', name: 'UX Laws Quiz 2', total: 21 },
+        { id: 'uxmatchlaws', name: 'UX Laws Image Match', total: 21 },
+        { id: 'namedlaw', name: 'Name the UX Law', total: 21 },
+        { id: 'dragdroplaws', name: 'Match UX Laws', total: 21 }
+      ],
+      benyonQuizzes: [
+        { id: 'benyon12', name: 'Benyon\'s 12 Principles', total: 20 }
+      ],
+      challengeQuizzes: [
+        { id: 'findincorrect', name: 'Find Incorrect', total: 6 },
+        { id: 'findincorrect2', name: 'Find Incorrect 2', total: 4 }
+      ],
+      extraTests: [
+        { id: 'acronymquiz', name: 'Acronym Quiz', total: 45 }
+      ],
+      mixedQuizzes: [
+        { id: 'randomizer', name: 'Random Quiz', total: 30 },
+        { id: 'fulllist', name: 'All Questions', total: 209 }
+      ]
+    }
+
+    // Flatten all quizzes for overall stats
     const chapters = [
-      { id: 'chapter2', name: 'Chapter 2', total: 31 },
-      { id: 'chapter3', name: 'Chapter 3', total: 29 },
-      { id: 'chapter5', name: 'Chapter 5', total: 30 },
-      { id: 'chapter6', name: 'Chapter 6', total: 33 },
-      { id: 'chapter7', name: 'Chapter 7', total: 30 },
-      { id: 'chapter8', name: 'Chapter 8', total: 26 },
-      { id: 'chapter10', name: 'Chapter 10', total: 30 },
-      { id: 'chaptertest', name: 'Test Chapter', total: 5 },
-      { id: 'randomizer', name: '🎲 Random Quiz', total: 30 },
-      { id: 'fulllist', name: '🔥 All Questions', total: 209 },
-      { id: 'uxquiz1', name: '🎯 UX Laws Quiz', total: 21 },
-      { id: 'uxquiz2', name: '🎯 UX Laws Quiz 2', total: 21 },
-      { id: 'uxmatchlaws', name: '🖼️ UX Laws Image Match', total: 21 },
-      { id: 'namedlaw', name: '✍️ Name the UX Law', total: 21 },
-      { id: 'benyon12', name: '📚 Benyon\'s 12 Principles', total: 20 },
-      { id: 'findincorrect', name: '🔍 Find Incorrect', total: 6 },
-      { id: 'findincorrect2', name: '🔍 Find Incorrect 2', total: 4 }
+      ...quizCategories.chapters,
+      ...quizCategories.uxLaws,
+      ...quizCategories.benyonQuizzes,
+      ...quizCategories.challengeQuizzes,
+      ...quizCategories.extraTests,
+      ...quizCategories.mixedQuizzes
     ]
 
     const chapterProgress = chapters.map(chapter => {
@@ -125,9 +148,9 @@ function Statistics() {
         </div>
 
         <div className="chapter-stats">
-          <h2>Chapter Performance - Attempt History</h2>
+          <h2>📚 Chapters</h2>
           <div className="bar-graph-container">
-            {stats.chapterProgress.map((chapter) => {
+            {stats.chapterProgress.filter(ch => ['chapter2', 'chapter3', 'chapter5', 'chapter6', 'chapter7', 'chapter8', 'chapter10'].includes(ch.id)).map((chapter) => {
               return (
                 <div key={chapter.id} className="bar-graph-item">
                   <div className="bar-graph-label">
@@ -183,7 +206,297 @@ function Statistics() {
         </div>
 
         <div className="chapter-stats">
-          <h2>Detailed Progress</h2>
+          <h2>🎯 UX Laws Quizzes</h2>
+          <div className="bar-graph-container">
+            {stats.chapterProgress.filter(ch => ['uxquiz1', 'uxquiz2', 'uxmatchlaws', 'namedlaw', 'dragdroplaws'].includes(ch.id)).map((chapter) => {
+              return (
+                <div key={chapter.id} className="bar-graph-item">
+                  <div className="bar-graph-label">
+                    <span className="chapter-name">{chapter.name}</span>
+                    <span className="chapter-score">
+                      {chapter.attempts > 0 ? `${chapter.attempts} attempt${chapter.attempts > 1 ? 's' : ''}` : 'Not started'}
+                    </span>
+                  </div>
+                  
+                  {chapter.attemptHistory.length > 0 ? (
+                    <div className="attempts-graph">
+                      {[...chapter.attemptHistory].reverse().map((attempt, reverseIndex) => {
+                        const index = chapter.attemptHistory.length - 1 - reverseIndex
+                        const percentage = (attempt.score / chapter.total) * 100
+                        const isLatest = index === chapter.attemptHistory.length - 1
+                        const isBest = attempt.score === chapter.bestScore
+                        
+                        return (
+                          <div key={index} className="attempt-bar-wrapper">
+                            <span className="attempt-percentage">{percentage.toFixed(0)}%</span>
+                            <div className="attempt-bar-container">
+                              <div 
+                                className={`attempt-bar ${isLatest ? 'latest' : ''} ${isBest ? 'best' : ''}`}
+                                style={{ height: `${percentage}%` }}
+                              />
+                            </div>
+                            <div className="attempt-label">
+                              <span className="attempt-number">#{index + 1}</span>
+                              <span className="attempt-score">{attempt.score}/{chapter.total}</span>
+                            </div>
+                          </div>
+                        )
+                      })}
+                    </div>
+                  ) : (
+                    <div className="no-attempts">
+                      <p>No attempts yet. Start the quiz to see your progress!</p>
+                    </div>
+                  )}
+                  
+                  <div className="bar-graph-stats">
+                    {chapter.attempts > 0 && (
+                      <>
+                        <span>Best Score: {chapter.bestScore}/{chapter.total} ({((chapter.bestScore / chapter.total) * 100).toFixed(0)}%)</span>
+                        <span>Latest: {chapter.lastScore}/{chapter.total}</span>
+                      </>
+                    )}
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+
+        <div className="chapter-stats">
+          <h2>📖 Benyon's Principles</h2>
+          <div className="bar-graph-container">
+            {stats.chapterProgress.filter(ch => ['benyon12'].includes(ch.id)).map((chapter) => {
+              return (
+                <div key={chapter.id} className="bar-graph-item">
+                  <div className="bar-graph-label">
+                    <span className="chapter-name">{chapter.name}</span>
+                    <span className="chapter-score">
+                      {chapter.attempts > 0 ? `${chapter.attempts} attempt${chapter.attempts > 1 ? 's' : ''}` : 'Not started'}
+                    </span>
+                  </div>
+                  
+                  {chapter.attemptHistory.length > 0 ? (
+                    <div className="attempts-graph">
+                      {[...chapter.attemptHistory].reverse().map((attempt, reverseIndex) => {
+                        const index = chapter.attemptHistory.length - 1 - reverseIndex
+                        const percentage = (attempt.score / chapter.total) * 100
+                        const isLatest = index === chapter.attemptHistory.length - 1
+                        const isBest = attempt.score === chapter.bestScore
+                        
+                        return (
+                          <div key={index} className="attempt-bar-wrapper">
+                            <span className="attempt-percentage">{percentage.toFixed(0)}%</span>
+                            <div className="attempt-bar-container">
+                              <div 
+                                className={`attempt-bar ${isLatest ? 'latest' : ''} ${isBest ? 'best' : ''}`}
+                                style={{ height: `${percentage}%` }}
+                              />
+                            </div>
+                            <div className="attempt-label">
+                              <span className="attempt-number">#{index + 1}</span>
+                              <span className="attempt-score">{attempt.score}/{chapter.total}</span>
+                            </div>
+                          </div>
+                        )
+                      })}
+                    </div>
+                  ) : (
+                    <div className="no-attempts">
+                      <p>No attempts yet. Start the quiz to see your progress!</p>
+                    </div>
+                  )}
+                  
+                  <div className="bar-graph-stats">
+                    {chapter.attempts > 0 && (
+                      <>
+                        <span>Best Score: {chapter.bestScore}/{chapter.total} ({((chapter.bestScore / chapter.total) * 100).toFixed(0)}%)</span>
+                        <span>Latest: {chapter.lastScore}/{chapter.total}</span>
+                      </>
+                    )}
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+
+        <div className="chapter-stats">
+          <h2>🔍 Challenge Quizzes</h2>
+          <div className="bar-graph-container">
+            {stats.chapterProgress.filter(ch => ['findincorrect', 'findincorrect2'].includes(ch.id)).map((chapter) => {
+              return (
+                <div key={chapter.id} className="bar-graph-item">
+                  <div className="bar-graph-label">
+                    <span className="chapter-name">{chapter.name}</span>
+                    <span className="chapter-score">
+                      {chapter.attempts > 0 ? `${chapter.attempts} attempt${chapter.attempts > 1 ? 's' : ''}` : 'Not started'}
+                    </span>
+                  </div>
+                  
+                  {chapter.attemptHistory.length > 0 ? (
+                    <div className="attempts-graph">
+                      {[...chapter.attemptHistory].reverse().map((attempt, reverseIndex) => {
+                        const index = chapter.attemptHistory.length - 1 - reverseIndex
+                        const percentage = (attempt.score / chapter.total) * 100
+                        const isLatest = index === chapter.attemptHistory.length - 1
+                        const isBest = attempt.score === chapter.bestScore
+                        
+                        return (
+                          <div key={index} className="attempt-bar-wrapper">
+                            <span className="attempt-percentage">{percentage.toFixed(0)}%</span>
+                            <div className="attempt-bar-container">
+                              <div 
+                                className={`attempt-bar ${isLatest ? 'latest' : ''} ${isBest ? 'best' : ''}`}
+                                style={{ height: `${percentage}%` }}
+                              />
+                            </div>
+                            <div className="attempt-label">
+                              <span className="attempt-number">#{index + 1}</span>
+                              <span className="attempt-score">{attempt.score}/{chapter.total}</span>
+                            </div>
+                          </div>
+                        )
+                      })}
+                    </div>
+                  ) : (
+                    <div className="no-attempts">
+                      <p>No attempts yet. Start the quiz to see your progress!</p>
+                    </div>
+                  )}
+                  
+                  <div className="bar-graph-stats">
+                    {chapter.attempts > 0 && (
+                      <>
+                        <span>Best Score: {chapter.bestScore}/{chapter.total} ({((chapter.bestScore / chapter.total) * 100).toFixed(0)}%)</span>
+                        <span>Latest: {chapter.lastScore}/{chapter.total}</span>
+                      </>
+                    )}
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+
+        <div className="chapter-stats">
+          <h2>✨ Extra Tests</h2>
+          <div className="bar-graph-container">
+            {stats.chapterProgress.filter(ch => ['acronymquiz'].includes(ch.id)).map((chapter) => {
+              return (
+                <div key={chapter.id} className="bar-graph-item">
+                  <div className="bar-graph-label">
+                    <span className="chapter-name">{chapter.name}</span>
+                    <span className="chapter-score">
+                      {chapter.attempts > 0 ? `${chapter.attempts} attempt${chapter.attempts > 1 ? 's' : ''}` : 'Not started'}
+                    </span>
+                  </div>
+                  
+                  {chapter.attemptHistory.length > 0 ? (
+                    <div className="attempts-graph">
+                      {[...chapter.attemptHistory].reverse().map((attempt, reverseIndex) => {
+                        const index = chapter.attemptHistory.length - 1 - reverseIndex
+                        const percentage = (attempt.score / chapter.total) * 100
+                        const isLatest = index === chapter.attemptHistory.length - 1
+                        const isBest = attempt.score === chapter.bestScore
+                        
+                        return (
+                          <div key={index} className="attempt-bar-wrapper">
+                            <span className="attempt-percentage">{percentage.toFixed(0)}%</span>
+                            <div className="attempt-bar-container">
+                              <div 
+                                className={`attempt-bar ${isLatest ? 'latest' : ''} ${isBest ? 'best' : ''}`}
+                                style={{ height: `${percentage}%` }}
+                              />
+                            </div>
+                            <div className="attempt-label">
+                              <span className="attempt-number">#{index + 1}</span>
+                              <span className="attempt-score">{attempt.score}/{chapter.total}</span>
+                            </div>
+                          </div>
+                        )
+                      })}
+                    </div>
+                  ) : (
+                    <div className="no-attempts">
+                      <p>No attempts yet. Start the quiz to see your progress!</p>
+                    </div>
+                  )}
+                  
+                  <div className="bar-graph-stats">
+                    {chapter.attempts > 0 && (
+                      <>
+                        <span>Best Score: {chapter.bestScore}/{chapter.total} ({((chapter.bestScore / chapter.total) * 100).toFixed(0)}%)</span>
+                        <span>Latest: {chapter.lastScore}/{chapter.total}</span>
+                      </>
+                    )}
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+
+        <div className="chapter-stats">
+          <h2>🎲 Mixed Quizzes</h2>
+          <div className="bar-graph-container">
+            {stats.chapterProgress.filter(ch => ['randomizer', 'fulllist'].includes(ch.id)).map((chapter) => {
+              return (
+                <div key={chapter.id} className="bar-graph-item">
+                  <div className="bar-graph-label">
+                    <span className="chapter-name">{chapter.name}</span>
+                    <span className="chapter-score">
+                      {chapter.attempts > 0 ? `${chapter.attempts} attempt${chapter.attempts > 1 ? 's' : ''}` : 'Not started'}
+                    </span>
+                  </div>
+                  
+                  {chapter.attemptHistory.length > 0 ? (
+                    <div className="attempts-graph">
+                      {[...chapter.attemptHistory].reverse().map((attempt, reverseIndex) => {
+                        const index = chapter.attemptHistory.length - 1 - reverseIndex
+                        const percentage = (attempt.score / chapter.total) * 100
+                        const isLatest = index === chapter.attemptHistory.length - 1
+                        const isBest = attempt.score === chapter.bestScore
+                        
+                        return (
+                          <div key={index} className="attempt-bar-wrapper">
+                            <span className="attempt-percentage">{percentage.toFixed(0)}%</span>
+                            <div className="attempt-bar-container">
+                              <div 
+                                className={`attempt-bar ${isLatest ? 'latest' : ''} ${isBest ? 'best' : ''}`}
+                                style={{ height: `${percentage}%` }}
+                              />
+                            </div>
+                            <div className="attempt-label">
+                              <span className="attempt-number">#{index + 1}</span>
+                              <span className="attempt-score">{attempt.score}/{chapter.total}</span>
+                            </div>
+                          </div>
+                        )
+                      })}
+                    </div>
+                  ) : (
+                    <div className="no-attempts">
+                      <p>No attempts yet. Start the quiz to see your progress!</p>
+                    </div>
+                  )}
+                  
+                  <div className="bar-graph-stats">
+                    {chapter.attempts > 0 && (
+                      <>
+                        <span>Best Score: {chapter.bestScore}/{chapter.total} ({((chapter.bestScore / chapter.total) * 100).toFixed(0)}%)</span>
+                        <span>Latest: {chapter.lastScore}/{chapter.total}</span>
+                      </>
+                    )}
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+
+        <div className="chapter-stats">
+          <h2>Detailed Progress - All Quizzes</h2>
           <div className="chapter-stats-list">
             {stats.chapterProgress.map((chapter) => (
               <div key={chapter.id} className="chapter-stat-card">
@@ -240,6 +553,8 @@ function Statistics() {
                 localStorage.removeItem('quiz_benyon12')
                 localStorage.removeItem('quiz_findincorrect')
                 localStorage.removeItem('quiz_findincorrect2')
+                localStorage.removeItem('quiz_dragdroplaws')
+                localStorage.removeItem('quiz_acronymquiz')
                 window.location.reload()
               }
             }}
