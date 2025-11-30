@@ -99,180 +99,197 @@ function AcronymQuiz() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="quiz-container"
+          transition={{ duration: 0.5 }}
         >
           <NavigationMenu />
-          <div className="result-screen">
-            <h2>📝 Review Your Answers</h2>
-            <div className="review-summary">
-              <p>Score: {score}/{questionsData.length} ({percentage}%)</p>
+          <div className="quiz-container">
+            <div className="quiz-header">
+              <h2>Answer Review - Acronym Quiz</h2>
+              <div className="progress-info">
+                <span>Score: {score}/{questionsData.length} ({percentage}%)</span>
+              </div>
             </div>
-            <div className="review-list">
-              {questionsData.map((question, index) => {
-                const userAnswer = userAnswers[index]
+
+            <div className="review-container">
+              {questionsData.map((question, qIndex) => {
+                const userAnswer = userAnswers[qIndex]
                 const isCorrect = userAnswer?.isCorrect
+                const userSelectedIndex = userAnswer?.selectedIndex
+
                 return (
-                  <div key={question.id} className={`review-item ${isCorrect ? 'correct' : 'incorrect'}`}>
-                    <h3>Question {index + 1}</h3>
-                    <p className="review-question">{question.question}</p>
-                    <div className="review-answers">
-                      <p className="your-answer">
-                        Your answer: <span className={isCorrect ? 'correct-text' : 'incorrect-text'}>
-                          {question.options[userAnswer?.selectedIndex]}
-                        </span>
-                      </p>
-                      {!isCorrect && (
-                        <p className="correct-answer">
-                          Correct answer: <span className="correct-text">{question.answer}</span>
-                        </p>
-                      )}
+                  <div key={question.id} className="review-question-card">
+                    <div className="review-header">
+                      <span className="question-number">Question {qIndex + 1}</span>
+                      <span className={`result-badge ${isCorrect ? 'correct-badge' : 'wrong-badge'}`}>
+                        {isCorrect ? '✓ Correct' : '✗ Incorrect'}
+                      </span>
                     </div>
-                    <p className="explanation">{question.explanation}</p>
+                    
+                    <h3 className="question-text">{question.question}</h3>
+                    
+                    <div className="review-options">
+                      {question.options.map((option, optIndex) => {
+                        const isCorrectOption = optIndex === question.answerIndex
+                        const isUserSelection = optIndex === userSelectedIndex
+                        
+                        let optionClass = 'review-option'
+                        if (isCorrectOption) optionClass += ' correct-option'
+                        if (isUserSelection && !isCorrect) optionClass += ' wrong-option'
+                        
+                        return (
+                          <div key={optIndex} className={optionClass}>
+                            <span className="option-letter">
+                              {String.fromCharCode(65 + optIndex)}
+                            </span>
+                            <span className="option-text">{option}</span>
+                            {isUserSelection && (
+                              <span className="selection-badge">Your answer</span>
+                            )}
+                            {isCorrectOption && (
+                              <span className="correct-badge-mini">Correct</span>
+                            )}
+                          </div>
+                        )
+                      })}
+                    </div>
+                    
+                    <div className="review-explanation">
+                      <strong>Explanation:</strong> {question.explanation}
+                    </div>
                   </div>
                 )
               })}
             </div>
-            <button onClick={handleBackToResults} className="back-button">
-              Back to Results
-            </button>
+
+            <div className="review-actions">
+              <button onClick={handleBackToResults} className="next-button">
+                ← Back to Results
+              </button>
+              <button onClick={handleRestart} className="restart-button">
+                Try Again
+              </button>
+            </div>
           </div>
         </motion.div>
       )
     }
-
+    
     return (
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        className="quiz-container"
-      >
+      <>
         <NavigationMenu />
-        <CelebrationBackground />
-        <div className="result-screen">
-          <h2>🎉 Quiz Complete!</h2>
-          <div className="score-display">
-            <div className="score-circle">
-              <span className="score-number">{score}</span>
-              <span className="score-total">/ {questionsData.length}</span>
+        <CelebrationBackground score={score} total={questionsData.length} />
+        <div className="quiz-container">
+          <div className="result-card">
+            <h1>Quiz Complete!</h1>
+            <div className="score-display">
+              <div className="score-number">{score}</div>
+              <div className="score-total">out of {questionsData.length}</div>
             </div>
-            <p className="percentage">{percentage}%</p>
-          </div>
-          <div className="result-message">
-            {percentage >= 90 ? (
-              <p>🌟 Outstanding! You're an acronym master!</p>
-            ) : percentage >= 70 ? (
-              <p>👏 Great job! You know your acronyms!</p>
-            ) : percentage >= 50 ? (
-              <p>👍 Good effort! Keep practicing!</p>
-            ) : (
-              <p>📚 Review the acronyms and try again!</p>
-            )}
-          </div>
-          <div className="result-actions">
-            <button onClick={handleRestart} className="restart-button">
-              Try Again
-            </button>
-            <button onClick={handleShowReview} className="review-button">
-              Review Answers
-            </button>
-            <a href="/" className="home-button">
-              Back to Home
-            </a>
+            <div className="score-percentage">
+              {Math.round((score / questionsData.length) * 100)}%
+            </div>
+            <div className="button-group">
+              <button onClick={handleShowReview} className="next-button" style={{ marginBottom: '10px' }}>
+                Review Answers
+              </button>
+              <button onClick={handleRestart} className="restart-button">
+                Try Again
+              </button>
+              <a href="/" className="home-link">
+                Back to Home
+              </a>
+            </div>
           </div>
         </div>
-      </motion.div>
+      </>
     )
   }
-
-  const isAnswered = selectedAnswer !== null
-  const isCorrect = isAnswered && selectedAnswer === currentQuestion.answerIndex
 
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="quiz-container"
+      transition={{ duration: 0.5 }}
     >
       <NavigationMenu />
-      <div className="quiz-content">
-        <div className="progress-bar">
-          <div 
-            className="progress-fill" 
-            style={{ width: `${((currentQuestionIndex + 1) / questionsData.length) * 100}%` }}
-          />
-        </div>
-        
-        <div className="question-header">
-          <span className="question-number">
-            Question {currentQuestionIndex + 1} of {questionsData.length}
-          </span>
-          {streak > 2 && (
-            <span className="streak-badge">🔥 {streak} streak!</span>
-          )}
+      <div className="quiz-container">
+        <div className="quiz-header">
+          <h2>Acronym Quiz</h2>
+          <div className="progress-info">
+            <div style={{ display: 'flex', alignItems: 'center', width: '100%' }}>
+              <span>Question {currentQuestionIndex + 1} of {questionsData.length}</span>
+              <div style={{ flex: 1 }}></div>
+              {streak >= 2 && (
+                <span className="streak-fire" style={{ marginRight: '1.5rem' }}>🔥 {streak}</span>
+              )}
+              <span>Score: {score}/{answeredQuestions}</span>
+            </div>
+          </div>
+          <div className="progress-bar">
+            <div 
+              className="progress-fill" 
+              style={{ width: `${((currentQuestionIndex + 1) / questionsData.length) * 100}%` }}
+            />
+          </div>
         </div>
 
         <div className="question-card">
-          <h2 className="question-text">{currentQuestion.question}</h2>
+          <h3 className="question-text">{currentQuestion.question}</h3>
           
-          <div className="options-container">
-            {currentQuestion.options.map((option, index) => (
-              <motion.button
-                key={index}
-                className={`option-button ${
-                  selectedAnswer === index
-                    ? index === currentQuestion.answerIndex
-                      ? 'correct'
-                      : 'incorrect'
-                    : selectedAnswer !== null && index === currentQuestion.answerIndex
-                    ? 'correct'
-                    : ''
-                }`}
-                onClick={() => handleAnswerClick(index)}
-                disabled={selectedAnswer !== null}
-                whileHover={selectedAnswer === null ? { scale: 1.02 } : {}}
-                whileTap={selectedAnswer === null ? { scale: 0.98 } : {}}
-              >
-                <span className="option-letter">{String.fromCharCode(65 + index)}</span>
-                <span className="option-text">{option}</span>
-                {selectedAnswer !== null && index === currentQuestion.answerIndex && (
-                  <span className="checkmark">✓</span>
-                )}
-                {selectedAnswer === index && index !== currentQuestion.answerIndex && (
-                  <span className="crossmark">✗</span>
-                )}
-              </motion.button>
-            ))}
+          <div className="options-list">
+            {currentQuestion.options.map((option, index) => {
+              const isSelected = selectedAnswer === index
+              const isCorrect = index === currentQuestion.answerIndex
+              const showCorrect = selectedAnswer !== null && isCorrect
+              const showWrong = selectedAnswer !== null && isSelected && !isCorrect
+
+              return (
+                <button
+                  key={index}
+                  onClick={() => handleAnswerClick(index)}
+                  className={`option-button ${isSelected ? 'selected' : ''} ${showCorrect ? 'correct' : ''} ${showWrong ? 'wrong' : ''}`}
+                  disabled={selectedAnswer !== null}
+                >
+                  <span className="option-letter">{String.fromCharCode(65 + index)}</span>
+                  <span className="option-text">{option}</span>
+                  {isSelected && <span className="you-chose">You chose</span>}
+                </button>
+              )
+            })}
           </div>
 
-          {isAnswered && (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="explanation-box"
-            >
-              <h3>{isCorrect ? '✓ Correct!' : '✗ Incorrect'}</h3>
-              <p>{currentQuestion.explanation}</p>
-            </motion.div>
+          {selectedAnswer !== null && (
+            <div className="explanation-box">
+              <div className="explanation-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                <span>Explanation</span>
+              </div>
+              <div className="correct-answer">
+                The correct answer is: {currentQuestion.answer}
+              </div>
+              <p className="explanation-text">{currentQuestion.explanation}</p>
+            </div>
           )}
-        </div>
 
-        <div className="navigation-buttons">
-          <button
-            onClick={handlePrevious}
-            disabled={currentQuestionIndex === 0}
-            className="nav-button prev-button"
-          >
-            ← Previous
-          </button>
-          <button
-            onClick={handleNext}
-            disabled={selectedAnswer === null}
-            className="nav-button next-button"
-          >
-            {currentQuestionIndex === questionsData.length - 1 ? 'Finish' : 'Next →'}
-          </button>
+          <div className="navigation-buttons">
+            {currentQuestionIndex > 0 && (
+              <button onClick={handlePrevious} className="previous-button">
+                Previous
+              </button>
+            )}
+            <button 
+              onClick={handleNext} 
+              className="next-button"
+              disabled={selectedAnswer === null}
+            >
+              {selectedAnswer === null ? '🔒 Select an answer' : (currentQuestionIndex < questionsData.length - 1 ? 'Next Question' : 'See Results')}
+            </button>
+          </div>
         </div>
       </div>
     </motion.div>
