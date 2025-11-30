@@ -117,8 +117,11 @@ function DragDropLaws() {
               <div className="score-total">out of {lawPairs.length}</div>
             </div>
             <div className="score-percentage">
-              Accuracy: {accuracy}% ({attempts} attempts)
+              {Math.round((score / lawPairs.length) * 100)}%
             </div>
+            <p style={{ color: '#888', fontSize: '1rem', marginTop: '1rem' }}>
+              Accuracy: {accuracy}% • {attempts} attempts
+            </p>
             <div className="button-group">
               <button onClick={handleRestart} className="restart-button">
                 Try Again
@@ -167,18 +170,19 @@ function DragDropLaws() {
           <div style={{ 
             display: 'grid',
             gridTemplateColumns: '1fr 1fr',
-            gap: '2rem',
+            gap: '3rem',
             alignItems: 'start'
           }}>
             {/* Descriptions column */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               <h3 style={{ 
                 color: '#646cff', 
                 marginBottom: '0.5rem',
-                fontSize: '1.2rem',
-                fontWeight: '600'
+                fontSize: '1.1rem',
+                fontWeight: '600',
+                textAlign: 'center'
               }}>
-                Descriptions
+                📝 Descriptions
               </h3>
               {descriptions.map((desc) => {
                 const isSelected = selectedDescription?.id === desc.id
@@ -189,31 +193,39 @@ function DragDropLaws() {
                   <motion.div
                     key={desc.id}
                     onClick={() => handleDescriptionClick(desc)}
-                    whileHover={!isCorrect ? { scale: 1.02 } : {}}
-                    whileTap={!isCorrect ? { scale: 0.98 } : {}}
+                    whileHover={!isCorrect ? { scale: 1.01 } : {}}
+                    whileTap={!isCorrect ? { scale: 0.99 } : {}}
                     style={{
-                      padding: '1.5rem',
-                      borderRadius: '12px',
-                      border: isSelected ? '3px solid #646cff' : 
-                              isCorrect ? '3px solid #10b981' :
-                              isWrong ? '3px solid #ef4444' :
-                              '2px solid #333',
-                      backgroundColor: isCorrect ? 'rgba(16, 185, 129, 0.1)' :
-                                     isWrong ? 'rgba(239, 68, 68, 0.1)' :
-                                     '#1a1a1a',
-                      cursor: isCorrect ? 'default' : 'pointer',
-                      opacity: isCorrect ? 0.6 : 1,
-                      transition: 'all 0.3s ease',
-                      fontSize: '1rem',
-                      lineHeight: '1.6',
-                      color: isCorrect ? '#10b981' : '#fff'
+                      padding: '1.2rem',
+                      borderRadius: '10px',
+                      border: isSelected ? '2px solid #646cff' : 
+                              isCorrect ? '2px solid #22c55e' :
+                              isWrong ? '2px solid #ef4444' :
+                              '1px solid rgba(255, 255, 255, 0.1)',
+                      backgroundColor: isCorrect ? 'rgba(34, 197, 94, 0.08)' :
+                                     isWrong ? 'rgba(239, 68, 68, 0.08)' :
+                                     isSelected ? 'rgba(100, 108, 255, 0.08)' :
+                                     'rgba(255, 255, 255, 0.02)',
+                      cursor: isCorrect ? 'not-allowed' : 'pointer',
+                      opacity: isCorrect ? 0.5 : 1,
+                      transition: 'all 0.2s ease',
+                      fontSize: '0.95rem',
+                      lineHeight: '1.5',
+                      color: isCorrect ? '#22c55e' : '#ddd',
+                      position: 'relative',
+                      boxShadow: isSelected ? '0 0 0 3px rgba(100, 108, 255, 0.1)' : 
+                                isCorrect ? '0 0 0 2px rgba(34, 197, 94, 0.1)' :
+                                'none'
                     }}
                   >
                     {desc.description}
                     {isCorrect && (
                       <span style={{ 
-                        marginLeft: '0.5rem',
-                        fontSize: '1.2rem'
+                        position: 'absolute',
+                        top: '0.5rem',
+                        right: '0.5rem',
+                        fontSize: '1.3rem',
+                        color: '#22c55e'
                       }}>✓</span>
                     )}
                   </motion.div>
@@ -222,14 +234,15 @@ function DragDropLaws() {
             </div>
 
             {/* Laws column */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               <h3 style={{ 
                 color: '#646cff', 
                 marginBottom: '0.5rem',
-                fontSize: '1.2rem',
-                fontWeight: '600'
+                fontSize: '1.1rem',
+                fontWeight: '600',
+                textAlign: 'center'
               }}>
-                UX Laws
+                🎯 UX Laws
               </h3>
               {laws.map((law) => {
                 const isMatched = correctMatches.has(law.id)
@@ -239,31 +252,36 @@ function DragDropLaws() {
                   <motion.div
                     key={law.id}
                     onClick={() => handleLawClick(law)}
-                    whileHover={!isMatched ? { scale: 1.02 } : {}}
-                    whileTap={!isMatched ? { scale: 0.98 } : {}}
+                    whileHover={!isMatched ? { scale: 1.01 } : {}}
+                    whileTap={!isMatched ? { scale: 0.99 } : {}}
                     style={{
-                      padding: '1.5rem',
-                      borderRadius: '12px',
-                      border: isMatched ? '3px solid #10b981' :
-                              isWrongTarget ? '3px solid #ef4444' :
-                              '2px solid #333',
-                      backgroundColor: isMatched ? 'rgba(16, 185, 129, 0.1)' :
-                                     isWrongTarget ? 'rgba(239, 68, 68, 0.1)' :
-                                     '#1a1a1a',
-                      cursor: isMatched ? 'default' : 'pointer',
-                      opacity: isMatched ? 0.6 : 1,
-                      transition: 'all 0.3s ease',
-                      fontSize: '1.1rem',
+                      padding: '1.2rem',
+                      borderRadius: '10px',
+                      border: isMatched ? '2px solid #22c55e' :
+                              isWrongTarget ? '2px solid #ef4444' :
+                              '1px solid rgba(255, 255, 255, 0.1)',
+                      backgroundColor: isMatched ? 'rgba(34, 197, 94, 0.08)' :
+                                     isWrongTarget ? 'rgba(239, 68, 68, 0.08)' :
+                                     'rgba(255, 255, 255, 0.02)',
+                      cursor: isMatched ? 'not-allowed' : 'pointer',
+                      opacity: isMatched ? 0.5 : 1,
+                      transition: 'all 0.2s ease',
+                      fontSize: '1rem',
                       fontWeight: '600',
                       textAlign: 'center',
-                      color: isMatched ? '#10b981' : '#fff'
+                      color: isMatched ? '#22c55e' : '#fff',
+                      position: 'relative',
+                      boxShadow: isMatched ? '0 0 0 2px rgba(34, 197, 94, 0.1)' : 'none'
                     }}
                   >
                     {law.law}
                     {isMatched && (
                       <span style={{ 
-                        marginLeft: '0.5rem',
-                        fontSize: '1.2rem'
+                        position: 'absolute',
+                        top: '0.5rem',
+                        right: '0.5rem',
+                        fontSize: '1.3rem',
+                        color: '#22c55e'
                       }}>✓</span>
                     )}
                   </motion.div>
