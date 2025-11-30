@@ -39,6 +39,7 @@ function DragDropLaws() {
   const [showResult, setShowResult] = useState(false)
   const [attempts, setAttempts] = useState(0)
   const [swapColumns, setSwapColumns] = useState(false)
+  const [flashEffect, setFlashEffect] = useState(null) // 'correct' or 'wrong'
 
   useEffect(() => {
     // Shuffle both arrays
@@ -55,8 +56,13 @@ function DragDropLaws() {
     // If clicking the same law, deselect it
     if (selectedDescription?.id === law.id) {
       setSelectedDescription(null)
+      setFlashEffect(null)
       return
     }
+    
+    // Show yellow flash when selecting
+    setFlashEffect('selected')
+    setTimeout(() => setFlashEffect(null), 400)
     
     setSelectedDescription(law)
   }
@@ -69,6 +75,10 @@ function DragDropLaws() {
 
     // Check if it's a correct match
     if (selectedDescription.id === desc.id) {
+      // Show correct flash effect
+      setFlashEffect('correct')
+      setTimeout(() => setFlashEffect(null), 600)
+      
       setMatches({ ...matches, [selectedDescription.id]: desc.id })
       setCorrectMatches(new Set([...correctMatches, selectedDescription.id]))
       setScore(score + 1)
@@ -84,6 +94,10 @@ function DragDropLaws() {
         setTimeout(() => setShowResult(true), 500)
       }
     } else {
+      // Show wrong flash effect
+      setFlashEffect('wrong')
+      setTimeout(() => setFlashEffect(null), 600)
+      
       // Wrong match - show feedback
       setWrongMatches({ ...wrongMatches, [selectedDescription.id]: desc.id })
       setTimeout(() => {
@@ -230,11 +244,20 @@ function DragDropLaws() {
                 const isWrong = wrongMatches[item.id] !== undefined
                 
                 return (
-                  <button
+                  <motion.button
                     key={item.id}
                     onClick={() => handleLawClick(item)}
-                    className={`option-button ${isSelected ? 'selected' : ''} ${isWrong ? 'wrong' : ''}`}
+                    className={`option-button ${isWrong ? 'wrong' : ''}`}
                     disabled={isCorrect}
+                    animate={{
+                      boxShadow: isSelected && flashEffect === 'selected'
+                        ? ['0 0 0 0px rgba(251, 191, 36, 0)', '0 0 0 3px rgba(251, 191, 36, 0.8)', '0 0 0 0px rgba(251, 191, 36, 0)']
+                        : '0 0 0 0px rgba(0, 0, 0, 0)'
+                    }}
+                    transition={{
+                      duration: 0.4,
+                      ease: 'easeInOut'
+                    }}
                     style={{
                       height: '70px',
                       width: '100%',
@@ -246,11 +269,12 @@ function DragDropLaws() {
                       fontWeight: swapColumns ? '400' : '500',
                       position: 'relative',
                       padding: '0.75rem',
-                      opacity: isCorrect ? 0.3 : 1
+                      opacity: isCorrect ? 0.3 : 1,
+                      border: isSelected ? '2px solid #fbbf24' : undefined
                     }}
                   >
                     {swapColumns ? item.description : item.law}
-                  </button>
+                  </motion.button>
                 )
               })}
             </div>
@@ -271,11 +295,22 @@ function DragDropLaws() {
                 const isWrongTarget = Object.values(wrongMatches).includes(item.id)
                 
                 return (
-                  <button
+                  <motion.button
                     key={item.id}
                     onClick={() => handleDescriptionClick(item)}
                     className={`option-button ${isWrongTarget ? 'wrong' : ''}`}
                     disabled={isMatched}
+                    animate={{
+                      boxShadow: flashEffect === 'correct' && Object.keys(matches).includes(String(item.id))
+                        ? ['0 0 0 0px rgba(34, 197, 94, 0)', '0 0 0 3px rgba(34, 197, 94, 0.8)', '0 0 0 0px rgba(34, 197, 94, 0)']
+                        : flashEffect === 'wrong' && isWrongTarget
+                        ? ['0 0 0 0px rgba(239, 68, 68, 0)', '0 0 0 3px rgba(239, 68, 68, 0.8)', '0 0 0 0px rgba(239, 68, 68, 0)']
+                        : '0 0 0 0px rgba(0, 0, 0, 0)'
+                    }}
+                    transition={{
+                      duration: 0.6,
+                      ease: 'easeInOut'
+                    }}
                     style={{
                       height: '70px',
                       width: '100%',
@@ -291,7 +326,7 @@ function DragDropLaws() {
                     }}
                   >
                     {swapColumns ? item.law : item.description}
-                  </button>
+                  </motion.button>
                 )
               })}
             </div>
