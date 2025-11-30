@@ -38,6 +38,7 @@ function DragDropLaws() {
   const [score, setScore] = useState(0)
   const [showResult, setShowResult] = useState(false)
   const [attempts, setAttempts] = useState(0)
+  const [swapColumns, setSwapColumns] = useState(false)
 
   useEffect(() => {
     // Shuffle both arrays
@@ -48,20 +49,27 @@ function DragDropLaws() {
     setLaws(shuffledLaws)
   }, [])
 
-  const handleDescriptionClick = (desc) => {
-    if (correctMatches.has(desc.id)) return
-    setSelectedDescription(desc)
+  const handleLawClick = (law) => {
+    if (correctMatches.has(law.id)) return
+    
+    // If clicking the same law, deselect it
+    if (selectedDescription?.id === law.id) {
+      setSelectedDescription(null)
+      return
+    }
+    
+    setSelectedDescription(law)
   }
 
-  const handleLawClick = (law) => {
+  const handleDescriptionClick = (desc) => {
     if (!selectedDescription) return
-    if (correctMatches.has(law.id)) return
+    if (correctMatches.has(desc.id)) return
 
     setAttempts(attempts + 1)
 
     // Check if it's a correct match
-    if (selectedDescription.id === law.id) {
-      setMatches({ ...matches, [selectedDescription.id]: law.id })
+    if (selectedDescription.id === desc.id) {
+      setMatches({ ...matches, [selectedDescription.id]: desc.id })
       setCorrectMatches(new Set([...correctMatches, selectedDescription.id]))
       setScore(score + 1)
       setSelectedDescription(null)
@@ -77,13 +85,20 @@ function DragDropLaws() {
       }
     } else {
       // Wrong match - show feedback
-      setWrongMatches({ ...wrongMatches, [selectedDescription.id]: law.id })
+      setWrongMatches({ ...wrongMatches, [selectedDescription.id]: desc.id })
       setTimeout(() => {
         const newWrongMatches = { ...wrongMatches }
         delete newWrongMatches[selectedDescription.id]
         setWrongMatches(newWrongMatches)
         setSelectedDescription(null)
       }, 1000)
+    }
+  }
+
+  const handleBackgroundClick = (e) => {
+    // Only deselect if clicking the background, not the buttons
+    if (e.target === e.currentTarget) {
+      setSelectedDescription(null)
     }
   }
 
@@ -153,138 +168,130 @@ function DragDropLaws() {
           </div>
         </div>
 
-        <div style={{ 
-          padding: '2rem',
-          maxWidth: '1400px',
-          margin: '0 auto'
-        }}>
-          <p style={{ 
-            textAlign: 'center', 
-            marginBottom: '2rem',
-            color: '#aaa',
-            fontSize: '1rem'
+        <div className="question-card" onClick={handleBackgroundClick}>
+          <div style={{ 
+            display: 'flex', 
+            alignItems: 'center', 
+            justifyContent: 'center',
+            gap: '1rem',
+            marginBottom: '2rem'
           }}>
-            Click a description, then click the matching law name
-          </p>
+            <p style={{ 
+              color: '#888',
+              fontSize: '0.95rem',
+              margin: 0
+            }}>
+              {swapColumns ? 'Click a description, then click its matching UX law' : 'Click a UX law, then click its matching description'}
+            </p>
+            <button
+              onClick={() => setSwapColumns(!swapColumns)}
+              style={{
+                padding: '0.5rem 1rem',
+                background: 'rgba(100, 108, 255, 0.1)',
+                border: '1px solid rgba(100, 108, 255, 0.3)',
+                borderRadius: '8px',
+                color: '#646cff',
+                cursor: 'pointer',
+                fontSize: '0.9rem',
+                fontWeight: '500',
+                transition: 'all 0.2s'
+              }}
+              onMouseOver={(e) => {
+                e.target.style.background = 'rgba(100, 108, 255, 0.2)'
+              }}
+              onMouseOut={(e) => {
+                e.target.style.background = 'rgba(100, 108, 255, 0.1)'
+              }}
+            >
+              ⇄ Swap Columns
+            </button>
+          </div>
 
           <div style={{ 
             display: 'grid',
             gridTemplateColumns: '1fr 1fr',
-            gap: '3rem',
+            gap: '2rem',
             alignItems: 'start'
           }}>
-            {/* Descriptions column */}
+            {/* Left column */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               <h3 style={{ 
                 color: '#646cff', 
                 marginBottom: '0.5rem',
-                fontSize: '1.1rem',
+                fontSize: '1rem',
                 fontWeight: '600',
                 textAlign: 'center'
               }}>
-                📝 Descriptions
+                {swapColumns ? 'Descriptions' : 'UX Laws'}
               </h3>
-              {descriptions.map((desc) => {
-                const isSelected = selectedDescription?.id === desc.id
-                const isCorrect = correctMatches.has(desc.id)
-                const isWrong = wrongMatches[desc.id] !== undefined
+              {(swapColumns ? descriptions : laws).map((item) => {
+                const isSelected = selectedDescription?.id === item.id
+                const isCorrect = correctMatches.has(item.id)
+                const isWrong = wrongMatches[item.id] !== undefined
                 
                 return (
-                  <motion.div
-                    key={desc.id}
-                    onClick={() => handleDescriptionClick(desc)}
-                    whileHover={!isCorrect ? { scale: 1.01 } : {}}
-                    whileTap={!isCorrect ? { scale: 0.99 } : {}}
+                  <button
+                    key={item.id}
+                    onClick={() => handleLawClick(item)}
+                    className={`option-button ${isSelected ? 'selected' : ''} ${isWrong ? 'wrong' : ''}`}
+                    disabled={isCorrect}
                     style={{
-                      padding: '1.2rem',
-                      borderRadius: '10px',
-                      border: isSelected ? '2px solid #646cff' : 
-                              isCorrect ? '2px solid #22c55e' :
-                              isWrong ? '2px solid #ef4444' :
-                              '1px solid rgba(255, 255, 255, 0.1)',
-                      backgroundColor: isCorrect ? 'rgba(34, 197, 94, 0.08)' :
-                                     isWrong ? 'rgba(239, 68, 68, 0.08)' :
-                                     isSelected ? 'rgba(100, 108, 255, 0.08)' :
-                                     'rgba(255, 255, 255, 0.02)',
-                      cursor: isCorrect ? 'not-allowed' : 'pointer',
-                      opacity: isCorrect ? 0.5 : 1,
-                      transition: 'all 0.2s ease',
+                      height: '70px',
+                      width: '100%',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      textAlign: 'center',
                       fontSize: '0.95rem',
-                      lineHeight: '1.5',
-                      color: isCorrect ? '#22c55e' : '#ddd',
+                      fontWeight: swapColumns ? '400' : '500',
                       position: 'relative',
-                      boxShadow: isSelected ? '0 0 0 3px rgba(100, 108, 255, 0.1)' : 
-                                isCorrect ? '0 0 0 2px rgba(34, 197, 94, 0.1)' :
-                                'none'
+                      padding: '0.75rem',
+                      opacity: isCorrect ? 0.3 : 1
                     }}
                   >
-                    {desc.description}
-                    {isCorrect && (
-                      <span style={{ 
-                        position: 'absolute',
-                        top: '0.5rem',
-                        right: '0.5rem',
-                        fontSize: '1.3rem',
-                        color: '#22c55e'
-                      }}>✓</span>
-                    )}
-                  </motion.div>
+                    {swapColumns ? item.description : item.law}
+                  </button>
                 )
               })}
             </div>
 
-            {/* Laws column */}
+            {/* Right column */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               <h3 style={{ 
                 color: '#646cff', 
                 marginBottom: '0.5rem',
-                fontSize: '1.1rem',
+                fontSize: '1rem',
                 fontWeight: '600',
                 textAlign: 'center'
               }}>
-                🎯 UX Laws
+                {swapColumns ? 'UX Laws' : 'Descriptions'}
               </h3>
-              {laws.map((law) => {
-                const isMatched = correctMatches.has(law.id)
-                const isWrongTarget = Object.values(wrongMatches).includes(law.id)
+              {(swapColumns ? laws : descriptions).map((item) => {
+                const isMatched = correctMatches.has(item.id)
+                const isWrongTarget = Object.values(wrongMatches).includes(item.id)
                 
                 return (
-                  <motion.div
-                    key={law.id}
-                    onClick={() => handleLawClick(law)}
-                    whileHover={!isMatched ? { scale: 1.01 } : {}}
-                    whileTap={!isMatched ? { scale: 0.99 } : {}}
+                  <button
+                    key={item.id}
+                    onClick={() => handleDescriptionClick(item)}
+                    className={`option-button ${isWrongTarget ? 'wrong' : ''}`}
+                    disabled={isMatched}
                     style={{
-                      padding: '1.2rem',
-                      borderRadius: '10px',
-                      border: isMatched ? '2px solid #22c55e' :
-                              isWrongTarget ? '2px solid #ef4444' :
-                              '1px solid rgba(255, 255, 255, 0.1)',
-                      backgroundColor: isMatched ? 'rgba(34, 197, 94, 0.08)' :
-                                     isWrongTarget ? 'rgba(239, 68, 68, 0.08)' :
-                                     'rgba(255, 255, 255, 0.02)',
-                      cursor: isMatched ? 'not-allowed' : 'pointer',
-                      opacity: isMatched ? 0.5 : 1,
-                      transition: 'all 0.2s ease',
-                      fontSize: '1rem',
-                      fontWeight: '600',
+                      height: '70px',
+                      width: '100%',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
                       textAlign: 'center',
-                      color: isMatched ? '#22c55e' : '#fff',
+                      fontSize: '0.9rem',
+                      fontWeight: swapColumns ? '500' : '400',
                       position: 'relative',
-                      boxShadow: isMatched ? '0 0 0 2px rgba(34, 197, 94, 0.1)' : 'none'
+                      padding: '0.75rem',
+                      opacity: isMatched ? 0.3 : 1
                     }}
                   >
-                    {law.law}
-                    {isMatched && (
-                      <span style={{ 
-                        position: 'absolute',
-                        top: '0.5rem',
-                        right: '0.5rem',
-                        fontSize: '1.3rem',
-                        color: '#22c55e'
-                      }}>✓</span>
-                    )}
-                  </motion.div>
+                    {swapColumns ? item.law : item.description}
+                  </button>
                 )
               })}
             </div>
