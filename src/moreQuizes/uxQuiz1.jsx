@@ -27,6 +27,7 @@ import serialpostionEffect from '../assets/uxImg/serialpostionEffect.png'
 import teslerLaw from '../assets/uxImg/teslerLaw.png'
 import vonRestorffEffect from '../assets/uxImg/vonRestorffEffect.png'
 import ZeigarnikEffect from '../assets/uxImg/ZeigarnikEffect.png'
+import chunking from '../assets/uxImg/chunking.png'
 
 const imageMap = {
   '/src/assets/uxImg/AestheticUsabilityEffect.png': AestheticUsabilityEffect,
@@ -48,7 +49,8 @@ const imageMap = {
   '/src/assets/uxImg/serialpostionEffect.png': serialpostionEffect,
   '/src/assets/uxImg/teslerLaw.png': teslerLaw,
   '/src/assets/uxImg/vonRestorffEffect.png': vonRestorffEffect,
-  '/src/assets/uxImg/ZeigarnikEffect.png': ZeigarnikEffect
+  '/src/assets/uxImg/ZeigarnikEffect.png': ZeigarnikEffect,
+  '/src/assets/uxImg/chunking.png': chunking
 }
 
 function UxQuiz1() {
@@ -63,6 +65,12 @@ function UxQuiz1() {
   const [imageLoaded, setImageLoaded] = useState(false)
 
   useEffect(() => {
+    // Preload all images for faster loading
+    Object.values(imageMap).forEach(src => {
+      const img = new Image()
+      img.src = src
+    })
+
     // Merge questionsData with uxData to get description, principle, and practice
     const merged = questionsData.map((question, index) => {
       const uxLaw = uxData[index] // Match by index since they're in same order
