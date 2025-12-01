@@ -3,7 +3,6 @@ import { motion } from 'framer-motion'
 import NavigationMenu from '../pages/widget/navigationMenu'
 import CelebrationBackground from '../components/CelebrationBackground'
 import questionsData from '../../dataBank/dataSub/uxQuiz2Data.json'
-import uxData from '../../dataBank/dataSub.json/uxData.json'
 import '../chapterList/chapter3.css'
 
 // Import all UX law images
@@ -63,17 +62,8 @@ function UxQuiz2() {
   const [imageLoaded, setImageLoaded] = useState(false)
 
   useEffect(() => {
-    // Merge questionsData with uxData to get description, principle, and practice
-    const merged = questionsData.map((question, index) => {
-      const uxLaw = uxData[index] // Match by index since they're in same order
-      return {
-        ...question,
-        description: uxLaw?.description,
-        principle: uxLaw?.principle,
-        practice: uxLaw?.practice
-      }
-    })
-    setMergedData(merged)
+    // Use questionsData directly since it already has explanations
+    setMergedData(questionsData)
   }, [])
 
   useEffect(() => {
@@ -220,15 +210,7 @@ function UxQuiz2() {
                     
                     <div className="review-explanation">
                       <strong>Explanation:</strong>
-                      <p className="explanation-text" style={{ marginTop: '12px' }}>
-                        <strong>Description:</strong><br />{question.description}
-                      </p>
-                      <p className="explanation-text" style={{ marginTop: '12px' }}>
-                        <strong>Principle:</strong><br />{question.principle}
-                      </p>
-                      <p className="explanation-text" style={{ marginTop: '12px' }}>
-                        <strong>In Practice:</strong><br />{question.practice}
-                      </p>
+                      <p className="explanation-text" style={{ marginTop: '12px' }} dangerouslySetInnerHTML={{ __html: question.explanation }}></p>
                     </div>
                   </div>
                 )
@@ -341,15 +323,7 @@ function UxQuiz2() {
               <div className="correct-answer">
                 The correct answer is: {currentQuestion.answer}
               </div>
-              <p className="explanation-text" style={{ marginTop: '12px' }}>
-                <strong>Description:</strong><br />{currentQuestion.description}
-              </p>
-              <p className="explanation-text" style={{ marginTop: '12px' }}>
-                <strong>Principle:</strong><br />{currentQuestion.principle}
-              </p>
-              <p className="explanation-text" style={{ marginTop: '12px' }}>
-                <strong>In Practice:</strong><br />{currentQuestion.practice}
-              </p>
+              <p className="explanation-text" style={{ marginTop: '12px' }} dangerouslySetInnerHTML={{ __html: currentQuestion.explanation }}></p>
             </div>
           )}
 
