@@ -62,8 +62,9 @@ function UxQuiz2() {
   const [imageLoaded, setImageLoaded] = useState(false)
 
   useEffect(() => {
-    // Use questionsData directly since it already has explanations
-    setMergedData(questionsData)
+    // Shuffle questions to prevent pattern recognition
+    const shuffled = [...questionsData].sort(() => Math.random() - 0.5)
+    setMergedData(shuffled)
   }, [])
 
   useEffect(() => {
