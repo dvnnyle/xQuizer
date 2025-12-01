@@ -311,12 +311,16 @@ function UxQuiz1() {
             <div className="question-image" style={{ position: 'relative', width: '100%' }}>
               {!imageLoaded && (
                 <div style={{ 
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
                   width: '100%',
-                  paddingTop: '56.25%',
+                  height: '100%',
                   background: 'linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%)',
                   backgroundSize: '200% 100%',
                   animation: 'shimmer 1.5s infinite',
-                  borderRadius: '12px'
+                  borderRadius: '12px',
+                  zIndex: 1
                 }}></div>
               )}
               <img 
@@ -328,7 +332,9 @@ function UxQuiz1() {
                   transition: 'opacity 0.5s ease-in-out',
                   width: '100%',
                   height: 'auto',
-                  display: 'block'
+                  display: 'block',
+                  position: 'relative',
+                  zIndex: 2
                 }}
               />
             </div>
