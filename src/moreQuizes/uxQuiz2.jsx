@@ -306,31 +306,6 @@ function UxQuiz2() {
           <div className="section-badge">Section {currentQuestion.section}</div>
           <h3 className="question-text">{currentQuestion.question}</h3>
           
-          {currentQuestion.imageUrl && (
-            <div className="question-image" style={{ position: 'relative', width: '100%' }}>
-              {!imageLoaded && (
-                <div style={{ 
-                  width: '100%',
-                  paddingTop: '56.25%',
-                  background: 'linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%)',
-                  backgroundSize: '200% 100%',
-                  animation: 'shimmer 1.5s infinite',
-                  borderRadius: '12px'
-                }}></div>
-              )}
-              <img 
-                src={imageMap[currentQuestion.imageUrl] || currentQuestion.imageUrl} 
-                alt="Question illustration"
-                onLoad={() => setImageLoaded(true)}
-                style={{ 
-                  display: imageLoaded ? 'block' : 'none',
-                  width: '100%',
-                  height: 'auto'
-                }}
-              />
-            </div>
-          )}
-          
           <div className="options-list">
             {currentQuestion.options.map((option, index) => {
               const isSelected = selectedAnswer === index
