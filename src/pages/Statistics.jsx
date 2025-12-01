@@ -222,9 +222,14 @@ function Statistics() {
                     <div className="attempts-graph">
                       {[...chapter.attemptHistory].reverse().map((attempt, reverseIndex) => {
                         const index = chapter.attemptHistory.length - 1 - reverseIndex
-                        const percentage = (attempt.score / chapter.total) * 100
+                        // For dragdroplaws, use accuracy instead of score percentage
+                        const percentage = chapter.id === 'dragdroplaws' && attempt.accuracy 
+                          ? attempt.accuracy 
+                          : (attempt.score / chapter.total) * 100
                         const isLatest = index === chapter.attemptHistory.length - 1
-                        const isBest = attempt.score === chapter.bestScore
+                        const isBest = chapter.id === 'dragdroplaws' && attempt.accuracy
+                          ? attempt.accuracy === chapter.bestAccuracy
+                          : attempt.score === chapter.bestScore
                         
                         return (
                           <div key={index} className="attempt-bar-wrapper">
@@ -237,7 +242,12 @@ function Statistics() {
                             </div>
                             <div className="attempt-label">
                               <span className="attempt-number">#{index + 1}</span>
-                              <span className="attempt-score">{attempt.score}/{chapter.total}</span>
+                              <span className="attempt-score">
+                                {chapter.id === 'dragdroplaws' && attempt.accuracy
+                                  ? `${percentage.toFixed(0)}% (${attempt.mistakes || 0} miss)`
+                                  : `${attempt.score}/${chapter.total}`
+                                }
+                              </span>
                             </div>
                           </div>
                         )
@@ -252,8 +262,17 @@ function Statistics() {
                   <div className="bar-graph-stats">
                     {chapter.attempts > 0 && (
                       <>
-                        <span>Best Score: {chapter.bestScore}/{chapter.total} ({((chapter.bestScore / chapter.total) * 100).toFixed(0)}%)</span>
-                        <span>Latest: {chapter.lastScore}/{chapter.total}</span>
+                        {chapter.id === 'dragdroplaws' && chapter.bestAccuracy ? (
+                          <>
+                            <span>Best Accuracy: {chapter.bestAccuracy.toFixed(0)}%</span>
+                            <span>Latest: {chapter.accuracy?.toFixed(0) || 0}%</span>
+                          </>
+                        ) : (
+                          <>
+                            <span>Best Score: {chapter.bestScore}/{chapter.total} ({((chapter.bestScore / chapter.total) * 100).toFixed(0)}%)</span>
+                            <span>Latest: {chapter.lastScore}/{chapter.total}</span>
+                          </>
+                        )}
                       </>
                     )}
                   </div>
