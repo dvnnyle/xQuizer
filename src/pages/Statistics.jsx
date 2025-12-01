@@ -104,6 +104,26 @@ function Statistics() {
     ? ((stats.correctAnswers / stats.completedQuestions) * 100).toFixed(1)
     : 0
 
+  // Helper function to get gradient color based on percentage (red -> yellow -> green)
+  const getGradientColor = (percentage) => {
+    if (percentage >= 80) {
+      // Green gradient for 80-100%
+      return 'linear-gradient(180deg, #22c55e, #16a34a)'
+    } else if (percentage >= 60) {
+      // Yellow-green gradient for 60-80%
+      return 'linear-gradient(180deg, #84cc16, #65a30d)'
+    } else if (percentage >= 40) {
+      // Yellow gradient for 40-60%
+      return 'linear-gradient(180deg, #fbbf24, #f59e0b)'
+    } else if (percentage >= 20) {
+      // Orange gradient for 20-40%
+      return 'linear-gradient(180deg, #fb923c, #f97316)'
+    } else {
+      // Red gradient for 0-20%
+      return 'linear-gradient(180deg, #ef4444, #dc2626)'
+    }
+  }
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -173,8 +193,11 @@ function Statistics() {
                             <span className="attempt-percentage">{percentage.toFixed(0)}%</span>
                             <div className="attempt-bar-container">
                               <div 
-                                className={`attempt-bar ${isLatest ? 'latest' : ''} ${isBest ? 'best' : ''}`}
-                                style={{ height: `${percentage}%` }}
+                                className="attempt-bar"
+                                style={{ 
+                                  height: `${percentage}%`,
+                                  background: getGradientColor(percentage)
+                                }}
                               />
                             </div>
                             <div className="attempt-label">
@@ -237,8 +260,11 @@ function Statistics() {
                             <span className="attempt-percentage">{percentage.toFixed(0)}%</span>
                             <div className="attempt-bar-container">
                               <div 
-                                className={`attempt-bar ${isLatest ? 'latest' : ''} ${isBest ? 'best' : ''}`}
-                                style={{ height: `${percentage}%` }}
+                                className="attempt-bar"
+                                style={{ 
+                                  height: `${percentage}%`,
+                                  background: getGradientColor(percentage)
+                                }}
                               />
                             </div>
                             <div className="attempt-label">
@@ -311,8 +337,11 @@ function Statistics() {
                             <span className="attempt-percentage">{percentage.toFixed(0)}%</span>
                             <div className="attempt-bar-container">
                               <div 
-                                className={`attempt-bar ${isLatest ? 'latest' : ''} ${isBest ? 'best' : ''}`}
-                                style={{ height: `${percentage}%` }}
+                                className="attempt-bar"
+                                style={{ 
+                                  height: `${percentage}%`,
+                                  background: getGradientColor(percentage)
+                                }}
                               />
                             </div>
                             <div className="attempt-label">
@@ -370,8 +399,11 @@ function Statistics() {
                             <span className="attempt-percentage">{percentage.toFixed(0)}%</span>
                             <div className="attempt-bar-container">
                               <div 
-                                className={`attempt-bar ${isLatest ? 'latest' : ''} ${isBest ? 'best' : ''}`}
-                                style={{ height: `${percentage}%` }}
+                                className="attempt-bar"
+                                style={{ 
+                                  height: `${percentage}%`,
+                                  background: getGradientColor(percentage)
+                                }}
                               />
                             </div>
                             <div className="attempt-label">
@@ -429,8 +461,11 @@ function Statistics() {
                             <span className="attempt-percentage">{percentage.toFixed(0)}%</span>
                             <div className="attempt-bar-container">
                               <div 
-                                className={`attempt-bar ${isLatest ? 'latest' : ''} ${isBest ? 'best' : ''}`}
-                                style={{ height: `${percentage}%` }}
+                                className="attempt-bar"
+                                style={{ 
+                                  height: `${percentage}%`,
+                                  background: getGradientColor(percentage)
+                                }}
                               />
                             </div>
                             <div className="attempt-label">
@@ -488,8 +523,11 @@ function Statistics() {
                             <span className="attempt-percentage">{percentage.toFixed(0)}%</span>
                             <div className="attempt-bar-container">
                               <div 
-                                className={`attempt-bar ${isLatest ? 'latest' : ''} ${isBest ? 'best' : ''}`}
-                                style={{ height: `${percentage}%` }}
+                                className="attempt-bar"
+                                style={{ 
+                                  height: `${percentage}%`,
+                                  background: getGradientColor(percentage)
+                                }}
                               />
                             </div>
                             <div className="attempt-label">
