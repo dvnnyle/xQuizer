@@ -73,7 +73,9 @@ function UxQuiz1() {
         practice: uxLaw?.practice
       }
     })
-    setMergedData(merged)
+    // Shuffle the questions
+    const shuffled = merged.sort(() => Math.random() - 0.5)
+    setMergedData(shuffled)
   }, [])
 
   useEffect(() => {
