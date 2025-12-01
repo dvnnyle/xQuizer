@@ -324,9 +324,11 @@ function UxQuiz1() {
                 alt="Question illustration"
                 onLoad={() => setImageLoaded(true)}
                 style={{ 
-                  display: imageLoaded ? 'block' : 'none',
+                  opacity: imageLoaded ? 1 : 0,
+                  transition: 'opacity 0.5s ease-in-out',
                   width: '100%',
-                  height: 'auto'
+                  height: 'auto',
+                  display: 'block'
                 }}
               />
             </div>
