@@ -329,7 +329,7 @@ function UxQuiz1() {
                 onLoad={() => setImageLoaded(true)}
                 style={{ 
                   opacity: imageLoaded ? 1 : 0,
-                  transition: 'opacity 0.5s ease-in-out',
+                  transition: 'opacity 0.2s ease-in-out',
                   width: '100%',
                   height: 'auto',
                   display: 'block',
