@@ -110,61 +110,63 @@ function Home() {
           <div className="chapter-divider">
             <span>Chapters</span>
           </div>
-          <a href="/chapter2" className="chapter-button starred" id="chapter2">
-            <div className="star-badge">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ffd700">
-                <polygon points="12,2 15,10 23,10 17,15 19,23 12,18 5,23 7,15 1,10 9,10" />
-              </svg>
-            </div>
-            <h3>Chapter 2</h3>
-            <p>PACT: A Framework for Designing UX</p>
-            <span className="question-count">31 questions</span>
-          </a>
-          <a href="/chapter3" className="chapter-button starred" id="chapter3">
-            <div className="star-badge">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ffd700">
-                <polygon points="12,2 15,10 23,10 17,15 19,23 12,18 5,23 7,15 1,10 9,10" />
-              </svg>
-            </div>
-            <h3>Chapter 3</h3>
-            <p>The process of human-centred UX design</p>
-            <span className="question-count">29 questions</span>
-          </a>
-          <a href="/chapter5" className="chapter-button starred" id="chapter5">
-            <div className="star-badge">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ffd700">
-                <polygon points="12,2 15,10 23,10 17,15 19,23 12,18 5,23 7,15 1,10 9,10" />
-              </svg>
-            </div>
-            <h3>Chapter 5</h3>
-            <p>Designing for people</p>
-            <span className="question-count">30 questions</span>
-          </a>
-          <a href="/chapter6" className="chapter-button" id="chapter6">
-            <h3>Chapter 6</h3>
-            <p>Designing for experience</p>
-            <span className="question-count">33 questions</span>
-          </a>
-          <a href="/chapter7" className="chapter-button" id="chapter7">
-            <h3>Chapter 7</h3>
-            <p>Understanding</p>
-            <span className="question-count">30 questions</span>
-          </a>
-          <a href="/chapter8" className="chapter-button" id="chapter8">
-            <h3>Chapter 8</h3>
-            <p>Envisionment</p>
-            <span className="question-count">26 questions</span>
-          </a>
-          <a href="/chapter10" className="chapter-button starred" id="chapter10">
-            <div className="star-badge">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ffd700">
-                <polygon points="12,2 15,10 23,10 17,15 19,23 12,18 5,23 7,15 1,10 9,10" />
-              </svg>
-            </div>
-            <h3>Chapter 10</h3>
-            <p>Evaluation</p>
-            <span className="question-count">30 questions</span>
-          </a>
+          <div className="chapters-grid">
+            <a href="/chapter2" className="chapter-button starred" id="chapter2">
+              <div className="star-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ffd700">
+                  <polygon points="12,2 15,10 23,10 17,15 19,23 12,18 5,23 7,15 1,10 9,10" />
+                </svg>
+              </div>
+              <h3>Chapter 2</h3>
+              <p>PACT: A Framework for Designing UX</p>
+              <span className="question-count">31 questions</span>
+            </a>
+            <a href="/chapter3" className="chapter-button starred" id="chapter3">
+              <div className="star-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ffd700">
+                  <polygon points="12,2 15,10 23,10 17,15 19,23 12,18 5,23 7,15 1,10 9,10" />
+                </svg>
+              </div>
+              <h3>Chapter 3</h3>
+              <p>The process of human-centred UX design</p>
+              <span className="question-count">29 questions</span>
+            </a>
+            <a href="/chapter5" className="chapter-button starred" id="chapter5">
+              <div className="star-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ffd700">
+                  <polygon points="12,2 15,10 23,10 17,15 19,23 12,18 5,23 7,15 1,10 9,10" />
+                </svg>
+              </div>
+              <h3>Chapter 5</h3>
+              <p>Designing for people</p>
+              <span className="question-count">30 questions</span>
+            </a>
+            <a href="/chapter6" className="chapter-button" id="chapter6">
+              <h3>Chapter 6</h3>
+              <p>Designing for experience</p>
+              <span className="question-count">33 questions</span>
+            </a>
+            <a href="/chapter7" className="chapter-button" id="chapter7">
+              <h3>Chapter 7</h3>
+              <p>Understanding</p>
+              <span className="question-count">30 questions</span>
+            </a>
+            <a href="/chapter8" className="chapter-button" id="chapter8">
+              <h3>Chapter 8</h3>
+              <p>Envisionment</p>
+              <span className="question-count">26 questions</span>
+            </a>
+            <a href="/chapter10" className="chapter-button starred" id="chapter10">
+              <div className="star-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ffd700">
+                  <polygon points="12,2 15,10 23,10 17,15 19,23 12,18 5,23 7,15 1,10 9,10" />
+                </svg>
+              </div>
+              <h3>Chapter 10</h3>
+              <p>Evaluation</p>
+              <span className="question-count">30 questions</span>
+            </a>
+          </div>
           <div className="chapter-divider">
             <span>UX Laws</span>
           </div>
