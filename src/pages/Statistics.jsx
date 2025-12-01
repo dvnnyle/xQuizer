@@ -70,6 +70,8 @@ function Statistics() {
           lastScore: data.score || 0,
           attempts: attemptHistory.length,
           bestScore: data.bestScore || data.score || 0,
+          accuracy: data.accuracy,
+          bestAccuracy: data.bestAccuracy,
           attemptHistory: attemptHistory
         }
       }
