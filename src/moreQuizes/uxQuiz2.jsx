@@ -210,7 +210,15 @@ function UxQuiz2() {
                     
                     <div className="review-explanation">
                       <strong>Explanation:</strong>
-                      <p className="explanation-text" style={{ marginTop: '12px' }} dangerouslySetInnerHTML={{ __html: question.explanation }}></p>
+                      <p className="explanation-text" style={{ marginTop: '12px' }}>
+                        <strong>Description:</strong><br />{question.description}
+                      </p>
+                      <p className="explanation-text" style={{ marginTop: '12px' }}>
+                        <strong>Principle:</strong><br />{question.principle}
+                      </p>
+                      <p className="explanation-text" style={{ marginTop: '12px' }}>
+                        <strong>In Practice:</strong><br />{question.practice}
+                      </p>
                     </div>
                   </div>
                 )
@@ -323,7 +331,15 @@ function UxQuiz2() {
               <div className="correct-answer">
                 The correct answer is: {currentQuestion.answer}
               </div>
-              <p className="explanation-text" style={{ marginTop: '12px' }} dangerouslySetInnerHTML={{ __html: currentQuestion.explanation }}></p>
+              <p className="explanation-text" style={{ marginTop: '12px' }}>
+                <strong>Description:</strong><br />{currentQuestion.description}
+              </p>
+              <p className="explanation-text" style={{ marginTop: '12px' }}>
+                <strong>Principle:</strong><br />{currentQuestion.principle}
+              </p>
+              <p className="explanation-text" style={{ marginTop: '12px' }}>
+                <strong>In Practice:</strong><br />{currentQuestion.practice}
+              </p>
             </div>
           )}
 

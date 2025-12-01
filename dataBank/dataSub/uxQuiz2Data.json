@@ -12,6 +12,9 @@
     ],
     "answerIndex": 3,
     "answer": "Aesthetic-Usability Effect",
+    "description": "Users perceive aesthetically pleasing design as easier to use.",
+    "principle": "A clean interface feels more usable even before the user learns it.",
+    "practice": "Apple's iOS uses elegant typography, smooth animations, and clean layouts—making users feel the system is more intuitive and reliable even before mastering all features.",
     "explanation": "The Aesthetic-Usability Effect states that users perceive aesthetically pleasing designs as easier to use, even before they learn how to actually use them. <br><br><strong>Example:</strong> A clean, modern interface with good typography and spacing makes users feel more confident about using an app, even if they haven't explored its features yet."
   },
   {
@@ -27,6 +30,9 @@
     ],
     "answerIndex": 2,
     "answer": "More choices lead to slower decisions",
+    "description": "Decision time increases with the number of choices.",
+    "principle": "Group menu options into categories for faster decisions.",
+    "practice": "Netflix groups thousands of shows into clear categories (Trending, Action, Comedy) instead of one overwhelming list, speeding up decision-making.",
     "explanation": "Hick's Law states that decision time increases with the number of choices available. Designers should limit options to reduce cognitive load. <br><br><strong>Example:</strong> A restaurant menu with 5 categories is easier to navigate than one with 20 categories. Netflix groups content into genres to avoid overwhelming users."
   },
   {
@@ -42,6 +48,9 @@
     ],
     "answerIndex": 0,
     "answer": "Fitts's Law",
+    "description": "The time to reach a target depends on its size and distance.",
+    "principle": "Make primary buttons large and easy to tap.",
+    "practice": "Spotify's Play button is significantly larger than other controls, making it faster to tap and prioritizing the most common action.",
     "explanation": "Fitts's Law states that the time to reach a target depends on its size and distance. Larger, closer targets are easier and faster to interact with. <br><br><strong>Example:</strong> Mobile apps make primary action buttons large and positioned at thumb-friendly locations. Small close buttons in the corner are harder to tap."
   },
   {
@@ -57,6 +66,9 @@
     ],
     "answerIndex": 2,
     "answer": "Miller's Law",
+    "description": "People can store about 7±2 items in short-term memory.",
+    "principle": "Limit visible items to 5-7 to prevent cognitive overload.",
+    "practice": "iPhone's home screen shows 5 dock icons maximum, respecting memory limits and preventing cognitive overload.",
     "explanation": "Miller's Law states that the average person can hold about 7 (plus or minus 2) items in their working memory at once. <br><br><strong>Example:</strong> Phone numbers are chunked into groups (555-123-4567), and navigation menus typically have 5-7 main items. Credit card numbers are shown in 4-digit groups."
   },
   {
@@ -72,6 +84,9 @@
     ],
     "answerIndex": 2,
     "answer": "Jakob's Law",
+    "description": "Users prefer your product to work like other familiar products.",
+    "principle": "Use common UI patterns so users feel at home instantly.",
+    "practice": "Instagram's navigation bar (Home, Search, Reels, Profile) mirrors Facebook and Twitter's layout, so users instantly know how to navigate.",
     "explanation": "Jakob's Law states that users spend most of their time on other sites, so they prefer your site to work the same way as sites they already know. <br><br><strong>Example:</strong> E-commerce sites put shopping carts in the top-right corner and use familiar checkout flows because that's what users expect from Amazon and other major retailers."
   },
   {
@@ -87,6 +102,9 @@
     ],
     "answerIndex": 3,
     "answer": "Law of Proximity",
+    "description": "Elements close together are seen as related.",
+    "principle": "Labels placed near input fields show clear connection.",
+    "practice": "Google Search results place the blue title link right above the description snippet, showing they're related without needing extra visual cues.",
     "explanation": "The Law of Proximity states that objects near each other tend to be grouped together in perception. <br><br><strong>Example:</strong> Form labels placed directly above their input fields show they belong together. Product images positioned close to their prices indicate the relationship between them."
   },
   {
@@ -102,6 +120,9 @@
     ],
     "answerIndex": 0,
     "answer": "Law of Similarity",
+    "description": "Similar items appear related.",
+    "principle": "All primary buttons use the same color and style.",
+    "practice": "Spotify keeps all playlist covers the same square size and format, creating visual consistency that helps users scan content efficiently.",
     "explanation": "The Law of Similarity states that elements with similar visual characteristics are perceived as being more related than dissimilar elements. <br><br><strong>Example:</strong> All buttons with the same blue color are understood as clickable actions, while gray text indicates non-interactive labels. Links share the same underline style."
   },
   {
@@ -117,6 +138,9 @@
     ],
     "answerIndex": 1,
     "answer": "Law of Common Region",
+    "description": "Elements sharing a boundary are perceived as grouped.",
+    "principle": "Product information inside a card clearly belongs together.",
+    "practice": "Twitter groups each tweet's text, image, likes, and retweets inside a card with subtle borders, clearly showing what content belongs together.",
     "explanation": "The Law of Common Region states that elements within a clearly defined boundary are perceived as part of a group. <br><br><strong>Example:</strong> A card container with a border groups related information together. Pricing tables use boxes to separate different plan tiers."
   },
   {
@@ -132,6 +156,9 @@
     ],
     "answerIndex": 2,
     "answer": "Law of Uniform Connectedness",
+    "description": "Connected items are seen as more related than unconnected items.",
+    "principle": "Items with a shared background or border are perceived as a connected group.",
+    "practice": "Spotify connects song titles to artist names and album art with a consistent background row, making each track clearly separate from others.",
     "explanation": "The Law of Uniform Connectedness states that elements visually connected through lines, colors, or other properties are perceived as more related. <br><br><strong>Example:</strong> Progress bars connect steps in a checkout process. Connected dots in a timeline show the flow of events."
   },
   {
@@ -147,6 +174,9 @@
     ],
     "answerIndex": 0,
     "answer": "Law of Prägnanz",
+    "description": "People perceive complex forms in the simplest way possible.",
+    "principle": "Icons use simplified shapes to make recognition easier.",
+    "practice": "YouTube's play button is a simple triangle inside a rectangle—universally understood without any text or complex graphics.",
     "explanation": "The Law of Prägnanz (Good Figure) states that people perceive ambiguous or complex images in their simplest, most stable form. <br><br><strong>Example:</strong> The Olympic rings are seen as overlapping circles, not complex curved shapes. Logos use simple geometric forms that are easy to recognize and remember."
   },
   {
@@ -162,6 +192,9 @@
     ],
     "answerIndex": 0,
     "answer": "Tesler's Law",
+    "description": "Every system has irreducible complexity—manage it wisely.",
+    "principle": "Hide technical complexity behind simple user interactions.",
+    "practice": "Apple's Face ID manages incredibly complex facial recognition internally, but users just glance at their phone—the system absorbs all complexity.",
     "explanation": "Tesler's Law (Law of Conservation of Complexity) states that every system has inherent complexity that cannot be removed, only shifted between the user and the system. <br><br><strong>Example:</strong> Email apps handle spam filtering complexity behind the scenes so users don't have to. Smart defaults reduce user choices but require more system intelligence."
   },
   {
@@ -177,6 +210,9 @@
     ],
     "answerIndex": 0,
     "answer": "Pareto Principle",
+    "description": "80% of the effects come from 20% of the causes.",
+    "principle": "Focus design efforts on the most-used features.",
+    "practice": "YouTube prioritizes video playback, recommendations, and search (20% of features) because they generate 80% of watch time and user engagement.",
     "explanation": "The Pareto Principle (80/20 Rule) states that roughly 80% of effects come from 20% of causes. In UX, 80% of users typically use 20% of features. <br><br><strong>Example:</strong> Microsoft found that 80% of errors come from 20% of bugs. Focus on optimizing the most-used features like search, checkout, and navigation rather than rarely-used advanced settings."
   },
   {
@@ -192,6 +228,9 @@
     ],
     "answerIndex": 0,
     "answer": "Parkinson's Law",
+    "description": "Work expands to fill the time available.",
+    "principle": "Set strict time limits to force quick decisions and action.",
+    "practice": "Instagram Stories have a 15-second limit, forcing quick creation and preventing overthinking, which increases posting frequency.",
     "explanation": "Parkinson's Law states that work expands to fill the time available for its completion. Setting constraints can improve productivity and decision-making. <br><br><strong>Example:</strong> Limited-time offers create urgency. Twitter's character limit forces concise communication. Countdown timers in checkout flows reduce cart abandonment."
   },
   {
@@ -207,6 +246,9 @@
     ],
     "answerIndex": 3,
     "answer": "Peak-End Rule",
+    "description": "People judge an experience by its peak and end moments.",
+    "principle": "Create memorable peak moments that define how users remember the experience.",
+    "practice": "Spotify Wrapped creates an annual peak moment with personalized music stats and sharing features, making users remember Spotify fondly all year.",
     "explanation": "The Peak-End Rule states that people judge experiences based on how they felt at the peak (most intense point) and at the end, not the average. <br><br><strong>Example:</strong> Uber shows a summary screen at trip end. Duolingo celebrates lesson completion with animations. Airbnb sends thank-you messages after checkout."
   },
   {
@@ -222,6 +264,9 @@
     ],
     "answerIndex": 2,
     "answer": "Postel's Law",
+    "description": "Be liberal in what you accept, and conservative in what you send.",
+    "principle": "Accept flexible inputs and correct common mistakes automatically.",
+    "practice": "Google Search accepts queries with typos and still returns correct results—searching 'youtub' automatically shows YouTube results.",
     "explanation": "Postel's Law (Robustness Principle) states: Be liberal in what you accept from others, and conservative in what you send. Systems should be flexible with input but provide consistent output. <br><br><strong>Example:</strong> Search accepts misspellings, different formats, and variations. Phone number inputs accept various formats (555-1234, 555 1234, 5551234) but display consistently."
   },
   {
@@ -237,6 +282,9 @@
     ],
     "answerIndex": 1,
     "answer": "Serial Position Effect",
+    "description": "People remember the first and last items best.",
+    "principle": "Put important items at the top or bottom of lists.",
+    "practice": "Netflix places 'Continue Watching' at the very top and 'My List' near the bottom—leveraging prime memory positions to increase engagement.",
     "explanation": "The Serial Position Effect shows that users remember the first items (primacy) and last items (recency) in a series best, while middle items are less memorable. <br><br><strong>Example:</strong> Place important navigation items at the start and end of menus. Put key features first in lists. Show important terms at the beginning and end of agreements."
   },
   {
@@ -252,6 +300,9 @@
     ],
     "answerIndex": 1,
     "answer": "Von Restorff Effect",
+    "description": "Distinct items are more memorable.",
+    "principle": "A red delete button stands out from other options.",
+    "practice": "YouTube's red Subscribe button stands out dramatically against white/gray backgrounds, making it impossible to miss and increasing subscription rates.",
     "explanation": "The Von Restorff Effect (Isolation Effect) states that when multiple similar objects are present, the one that differs is most likely to be remembered. <br><br><strong>Example:</strong> Call-to-action buttons use bright colors (green Sign Up among gray buttons). Featured pricing plans are highlighted. Important notifications use distinct colors or icons."
   },
   {
@@ -267,6 +318,9 @@
     ],
     "answerIndex": 0,
     "answer": "Zeigarnik Effect",
+    "description": "People remember incomplete tasks better than completed ones.",
+    "principle": "A progress indicator encourages finishing a profile.",
+    "practice": "LinkedIn shows profile completion percentage ('65% complete') with prompts to finish, creating psychological tension that drives users to complete their profiles.",
     "explanation": "The Zeigarnik Effect states that people remember uncompleted or interrupted tasks better than completed tasks. Use this in progress indicators and onboarding. <br><br><strong>Example:</strong> LinkedIn shows 'Profile 80% complete' to motivate completion. Saved shopping carts remind users of unfinished purchases. Progress bars in multi-step forms keep users engaged."
   },
   {
@@ -282,6 +336,9 @@
     ],
     "answerIndex": 2,
     "answer": "Doherty Threshold",
+    "description": "Productivity increases when a system responds in less than 400ms.",
+    "principle": "Showing skeleton loaders immediately keeps users engaged.",
+    "practice": "Instagram displays skeleton screens while posts load, giving immediate visual feedback that the app is responding within 400ms.",
     "explanation": "The Doherty Threshold states that productivity increases when system response time is less than 400ms, keeping users engaged and in flow. <br><br><strong>Example:</strong> Google shows instant search suggestions as you type. Skeleton screens appear immediately while content loads. Button presses provide instant visual feedback."
   },
   {
@@ -297,6 +354,9 @@
     ],
     "answerIndex": 1,
     "answer": "Occam's Razor",
+    "description": "The simplest solution is usually the best.",
+    "principle": "Remove all distractions and focus on one primary task.",
+    "practice": "Google's homepage is famously minimal—just a search bar and logo—removing all distractions from the main task of searching.",
     "explanation": "Occam's Razor states that among competing solutions, the simplest one is usually the best. In UX, remove unnecessary elements and focus on essential features. <br><br><strong>Example:</strong> Google's homepage has just a search box. Instagram's camera-first interface removes complexity. One-click checkout simplifies the buying process."
   },
   {
@@ -312,6 +372,9 @@
     ],
     "answerIndex": 3,
     "answer": "Chunking",
+    "description": "Breaking content into small units improves understanding.",
+    "principle": "Phone numbers and credit card entries are grouped into chunks.",
+    "practice": "Credit card forms display 16 digits as 4 groups of 4 (1234 5678 9012 3456), making them dramatically easier to read and verify.",
     "explanation": "Chunking is the practice of breaking information into smaller, manageable pieces. This helps users process and remember information more effectively, working with Miller's Law. <br><br><strong>Example:</strong> Multi-step forms break long processes into digestible sections. Credit cards display numbers in 4-digit chunks. Tutorial wizards present information step-by-step."
   }
 ]
