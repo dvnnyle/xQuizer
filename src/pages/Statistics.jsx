@@ -195,6 +195,7 @@ function Statistics() {
                     {chapter.attempts > 0 && (
                       <>
                         <span>Best Score: {chapter.bestScore}/{chapter.total} ({((chapter.bestScore / chapter.total) * 100).toFixed(0)}%)</span>
+                        <span>Average: {(chapter.attemptHistory.reduce((sum, att) => sum + att.score, 0) / chapter.attemptHistory.length / chapter.total * 100).toFixed(0)}%</span>
                         <span>Latest: {chapter.lastScore}/{chapter.total}</span>
                       </>
                     )}
@@ -244,7 +245,7 @@ function Statistics() {
                               <span className="attempt-number">#{index + 1}</span>
                               <span className="attempt-score">
                                 {chapter.id === 'dragdroplaws' && attempt.accuracy
-                                  ? `${percentage.toFixed(0)}% (${attempt.mistakes || 0} miss)`
+                                  ? `${attempt.mistakes || 0} miss${(attempt.mistakes || 0) !== 1 ? 'es' : ''}`
                                   : `${attempt.score}/${chapter.total}`
                                 }
                               </span>
@@ -265,11 +266,13 @@ function Statistics() {
                         {chapter.id === 'dragdroplaws' && chapter.bestAccuracy ? (
                           <>
                             <span>Best Accuracy: {chapter.bestAccuracy.toFixed(0)}%</span>
+                            <span>Average: {(chapter.attemptHistory.reduce((sum, att) => sum + (att.accuracy || 0), 0) / chapter.attemptHistory.length).toFixed(0)}%</span>
                             <span>Latest: {chapter.accuracy?.toFixed(0) || 0}%</span>
                           </>
                         ) : (
                           <>
                             <span>Best Score: {chapter.bestScore}/{chapter.total} ({((chapter.bestScore / chapter.total) * 100).toFixed(0)}%)</span>
+                            <span>Average: {(chapter.attemptHistory.reduce((sum, att) => sum + att.score, 0) / chapter.attemptHistory.length / chapter.total * 100).toFixed(0)}%</span>
                             <span>Latest: {chapter.lastScore}/{chapter.total}</span>
                           </>
                         )}
@@ -330,6 +333,7 @@ function Statistics() {
                     {chapter.attempts > 0 && (
                       <>
                         <span>Best Score: {chapter.bestScore}/{chapter.total} ({((chapter.bestScore / chapter.total) * 100).toFixed(0)}%)</span>
+                        <span>Average: {(chapter.attemptHistory.reduce((sum, att) => sum + att.score, 0) / chapter.attemptHistory.length / chapter.total * 100).toFixed(0)}%</span>
                         <span>Latest: {chapter.lastScore}/{chapter.total}</span>
                       </>
                     )}
@@ -388,6 +392,7 @@ function Statistics() {
                     {chapter.attempts > 0 && (
                       <>
                         <span>Best Score: {chapter.bestScore}/{chapter.total} ({((chapter.bestScore / chapter.total) * 100).toFixed(0)}%)</span>
+                        <span>Average: {(chapter.attemptHistory.reduce((sum, att) => sum + att.score, 0) / chapter.attemptHistory.length / chapter.total * 100).toFixed(0)}%</span>
                         <span>Latest: {chapter.lastScore}/{chapter.total}</span>
                       </>
                     )}
@@ -446,6 +451,7 @@ function Statistics() {
                     {chapter.attempts > 0 && (
                       <>
                         <span>Best Score: {chapter.bestScore}/{chapter.total} ({((chapter.bestScore / chapter.total) * 100).toFixed(0)}%)</span>
+                        <span>Average: {(chapter.attemptHistory.reduce((sum, att) => sum + att.score, 0) / chapter.attemptHistory.length / chapter.total * 100).toFixed(0)}%</span>
                         <span>Latest: {chapter.lastScore}/{chapter.total}</span>
                       </>
                     )}
@@ -504,6 +510,7 @@ function Statistics() {
                     {chapter.attempts > 0 && (
                       <>
                         <span>Best Score: {chapter.bestScore}/{chapter.total} ({((chapter.bestScore / chapter.total) * 100).toFixed(0)}%)</span>
+                        <span>Average: {(chapter.attemptHistory.reduce((sum, att) => sum + att.score, 0) / chapter.attemptHistory.length / chapter.total * 100).toFixed(0)}%</span>
                         <span>Latest: {chapter.lastScore}/{chapter.total}</span>
                       </>
                     )}
