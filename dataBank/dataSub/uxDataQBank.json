@@ -226,7 +226,7 @@
   {
     "section": "UX",
     "question": "The Serial Position Effect describes what memory phenomenon?",
-    "imageUrl": "/src/assets/uxImg/SerialpostitonEffect.png",
+    "imageUrl": "/src/assets/uxImg/serialpostionEffect.png",
     "options": [
       "People remember items alphabetically",
       "People remember items by color",
