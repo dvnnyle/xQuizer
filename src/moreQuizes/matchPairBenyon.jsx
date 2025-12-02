@@ -296,7 +296,7 @@ function MatchPairBenyon() {
                       ease: 'easeInOut'
                     }}
                     style={{
-                      minHeight: '70px',
+                      height: '100px',
                       width: '100%',
                       display: 'flex',
                       alignItems: 'center',
@@ -348,7 +348,7 @@ function MatchPairBenyon() {
                       ease: 'easeInOut'
                     }}
                     style={{
-                      minHeight: '70px',
+                      height: '100px',
                       width: '100%',
                       display: 'flex',
                       alignItems: 'center',
