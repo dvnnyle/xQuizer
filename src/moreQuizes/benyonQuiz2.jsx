@@ -188,6 +188,18 @@ function BenyonQuiz2() {
   const handlePrevious = () => {
     if (currentQuestionIndex > 0) {
       setCurrentQuestionIndex(currentQuestionIndex - 1)
+      const prevAnswer = userAnswers[currentQuestionIndex - 1]
+      setUserInput(prevAnswer ? prevAnswer.userAnswer : '')
+      setIsAnswered(!!prevAnswer)
+      
+      // Auto-focus input on previous question
+      setTimeout(() => {
+        const input = document.querySelector('.answer-input')
+        input?.focus()
+      }, 50)
+    }
+  }
+
   const handleRestart = () => {
     setCurrentQuestionIndex(0)
     setUserInput('')
@@ -201,22 +213,14 @@ function BenyonQuiz2() {
     // Reshuffle questions
     const shuffled = [...questionsData].sort(() => Math.random() - 0.5)
     setMergedData(shuffled)
-  } }
-  }
-
-  const handleRestart = () => {
-    setCurrentQuestionIndex(0)
-    setUserInput('')
-    setIsAnswered(false)
-    setShowResult(false)
-    setShowReview(false)
-    setScore(0)
-    setAnsweredQuestions(0)
-    setUserAnswers([])
   }
 
   const handleShowReview = () => {
     setShowReview(true)
+  }
+
+  const handleBackToResults = () => {
+    setShowReview(false)
   }
 
   if (showResult) {
@@ -243,10 +247,6 @@ function BenyonQuiz2() {
       title = 'Keep Learning!'
       message = 'Every expert was once a beginner. Review and try again!'
     }
-    
-    if (showReview) {
-  if (showResult) {
-    const percentage = ((score / questionsData.length) * 100).toFixed(1)
     
     if (showReview) {
       return (
@@ -299,6 +299,32 @@ function BenyonQuiz2() {
                       </p>
                       <p className="explanation-text" style={{ marginTop: '12px' }}>
                         <strong>Principle:</strong><br />{question.principle}
+                      </p>
+                      <p className="explanation-text" style={{ marginTop: '12px' }}>
+                        <strong>In Practice:</strong><br />{question.practice}
+                      </p>
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+
+            <div className="review-actions">
+              <button onClick={handleBackToResults} className="next-button">
+                ← Back to Results
+              </button>
+              <button onClick={handleRestart} className="restart-button">
+                Try Again
+              </button>
+            </div>
+          </div>
+        </motion.div>
+      )
+    }
+    
+    return (
+      <>
+        <NavigationMenu />
         <CelebrationBackground score={score} total={questionsData.length} />
         <div className="quiz-container">
           <div className="result-card">
@@ -331,6 +357,16 @@ function BenyonQuiz2() {
               <button onClick={handleRestart} className="restart-button">
                 {percentageNum >= 90 ? 'Challenge Yourself Again' : 'Try Again'}
               </button>
+              <a href="/" className="home-link">
+                Back to Home
+              </a>
+            </div>
+          </div>
+        </div>
+      </>
+    )
+  }
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -358,6 +394,33 @@ function BenyonQuiz2() {
         } else if (e.key === 'Enter' && !isAnswered && document.activeElement?.className !== 'answer-input') {
           e.preventDefault()
           // Focus input field when pressing Enter
+          const input = document.querySelector('.answer-input')
+          input?.focus()
+        }
+      }}
+      tabIndex={-1}
+      style={{ outline: 'none' }}
+    >
+      <NavigationMenu />
+      <div className="quiz-container">
+        <div className="quiz-header">
+          <h2>Name the Principle - Benyon's 12</h2>
+          <div className="progress-info">
+            <span>Question {currentQuestionIndex + 1} of {questionsData.length}</span>
+            <span>Score: {score}/{answeredQuestions}</span>
+          </div>
+          <div className="progress-bar">
+            <div 
+              className="progress-fill" 
+              style={{ width: `${((currentQuestionIndex + 1) / questionsData.length) * 100}%` }}
+            />
+          </div>
+        </div>
+
+        <div className="question-card">
+          <div className="section-badge">Section {currentQuestion.section}</div>
+          <h3 className="question-text">{currentQuestion.question}</h3>
+          
           <div className="type-in-section">
             <label htmlFor="answer-input" className="input-label">
               Type the principle name:
@@ -398,6 +461,21 @@ function BenyonQuiz2() {
               }}
               className="submit-button skip-button"
               disabled={userInput.trim() !== '' || isAnswered}
+            >
+              Skip
+            </button>
+          </div>
+
+          {isAnswered && (
+            <div className="explanation-box">
+              <div className="explanation-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                <span>Explanation</span>
+              </div>
               <div className="correct-answer">
                 {currentQuestion.answer}
               </div>
@@ -407,12 +485,15 @@ function BenyonQuiz2() {
               <p className="explanation-text" style={{ marginTop: '12px' }}>
                 <strong>Description:</strong><br />{currentQuestion.description}
               </p>
-        </div>
-      </>
-    )
-  }
+              <p className="explanation-text" style={{ marginTop: '12px' }}>
+                <strong>Principle:</strong><br />{currentQuestion.principle}
+              </p>
+              <p className="explanation-text" style={{ marginTop: '12px' }}>
+                <strong>In Practice:</strong><br />{currentQuestion.practice}
+              </p>
+            </div>
+          )}
 
-  return (
           <div className="navigation-buttons">
             {currentQuestionIndex > 0 && (
               <button onClick={handlePrevious} className="previous-button">
@@ -434,87 +515,6 @@ function BenyonQuiz2() {
           {isAnswered && (
             <p className="keyboard-hint">💡 Press Enter or Arrow Right for next question</p>
           )}
-        </div>
-      </div>
-    </motion.div>
-  )
-}           />
-          </div>
-        </div>
-
-        <div className="question-card">
-          <div className="section-badge">Section {currentQuestion.section}</div>
-          <h3 className="question-text">{currentQuestion.question}</h3>
-          
-          <div className="type-in-section">
-            <label htmlFor="answer-input" className="input-label">
-              Type the principle name:
-            </label>
-            <input
-              id="answer-input"
-              type="text"
-              value={userInput}
-              onChange={(e) => setUserInput(e.target.value)}
-              onKeyPress={(e) => {
-                if (e.key === 'Enter' && userInput.trim() && !isAnswered) {
-                  handleSubmit()
-                }
-              }}
-              disabled={isAnswered}
-              placeholder="Enter your answer..."
-              className={`answer-input ${isAnswered ? (userAnswers[currentQuestionIndex]?.isCorrect ? 'correct-input' : 'wrong-input') : ''}`}
-              autoFocus
-            />
-            {!isAnswered && (
-              <button 
-                onClick={handleSubmit}
-                disabled={!userInput.trim()}
-                className="submit-button"
-              >
-                Submit Answer
-              </button>
-            )}
-          </div>
-
-          {isAnswered && (
-            <div className="explanation-box">
-              <div className="explanation-header">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <line x1="12" y1="16" x2="12" y2="12"></line>
-                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
-                </svg>
-                <span>Explanation</span>
-              </div>
-              <div className="correct-answer">
-                The correct answer is: {currentQuestion.answer}
-              </div>
-              <p className="explanation-text" style={{ marginTop: '12px' }}>
-                <strong>Description:</strong><br />{currentQuestion.description}
-              </p>
-              <p className="explanation-text" style={{ marginTop: '12px' }}>
-                <strong>Principle:</strong><br />{currentQuestion.principle}
-              </p>
-              <p className="explanation-text" style={{ marginTop: '12px' }}>
-                <strong>In Practice:</strong><br />{currentQuestion.practice}
-              </p>
-            </div>
-          )}
-
-          <div className="navigation-buttons">
-            {currentQuestionIndex > 0 && (
-              <button onClick={handlePrevious} className="previous-button">
-                Previous
-              </button>
-            )}
-            <button 
-              onClick={handleNext} 
-              className="next-button"
-              disabled={!isAnswered}
-            >
-              {!isAnswered ? '🔒 Submit your answer first' : (currentQuestionIndex < questionsData.length - 1 ? 'Next Question' : 'See Results')}
-            </button>
-          </div>
         </div>
       </div>
     </motion.div>
