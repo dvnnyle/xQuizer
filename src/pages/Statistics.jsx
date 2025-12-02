@@ -39,7 +39,9 @@ function Statistics() {
       ],
       challengeQuizzes: [
         { id: 'findincorrect', name: 'Find Incorrect', total: 6 },
-        { id: 'findincorrect2', name: 'Find Incorrect 2', total: 4 }
+        { id: 'findincorrect2', name: 'Find Incorrect 2', total: 4 },
+        { id: 'findincorrect3', name: 'Find Incorrect 3', total: 15 },
+        { id: 'findincorrect4', name: 'Find Incorrect 4', total: 15 }
       ],
       extraTests: [
         { id: 'acronymquiz', name: 'Acronym Quiz', total: 45 }
@@ -401,7 +403,7 @@ function Statistics() {
         <div className="chapter-stats">
           <h2>🔍 Challenge Quizzes</h2>
           <div className="bar-graph-container">
-            {stats.chapterProgress.filter(ch => ['findincorrect', 'findincorrect2'].includes(ch.id)).map((chapter) => {
+            {stats.chapterProgress.filter(ch => ['findincorrect', 'findincorrect2', 'findincorrect3', 'findincorrect4'].includes(ch.id)).map((chapter) => {
               return (
                 <div key={chapter.id} className="bar-graph-item">
                   <div className="bar-graph-label">
@@ -644,6 +646,8 @@ function Statistics() {
                 localStorage.removeItem('quiz_matchpairbenyon')
                 localStorage.removeItem('quiz_findincorrect')
                 localStorage.removeItem('quiz_findincorrect2')
+                localStorage.removeItem('quiz_findincorrect3')
+                localStorage.removeItem('quiz_findincorrect4')
                 localStorage.removeItem('quiz_dragdroplaws')
                 localStorage.removeItem('quiz_acronymquiz')
                 window.location.reload()

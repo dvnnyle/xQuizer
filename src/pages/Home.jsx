@@ -92,6 +92,8 @@ function Home() {
           <a href="#matchpairbenyon" className="toc-link">Match Pairs - Benyon</a>
           <a href="#findincorrect" className="toc-link">Find Incorrect</a>
           <a href="#findincorrect2" className="toc-link">Find All Incorrect</a>
+          <a href="#findincorrect3" className="toc-link">Find Incorrect 3</a>
+          <a href="#findincorrect4" className="toc-link">Find Incorrect 4</a>
           <a href="#acronymquiz" className="toc-link">Acronym Quiz</a>
         </nav>
       </aside>
@@ -217,21 +219,23 @@ function Home() {
             <p>Learn the 12 fundamental principles of UX design</p>
             <span className="question-count">12 principles</span>
           </a>
-          <a href="/benyon12" className="chapter-button" id="benyon12">
-            <h3>📐 Benyon's 12 Principles</h3>
-            <p>Master fundamental UX design principles</p>
-            <span className="question-count">20 questions</span>
-          </a>
-          <a href="/benyonquiz2" className="chapter-button" id="benyonquiz2">
-            <h3>🎯 Name the Principle</h3>
-            <p>Identify Benyon's principles from descriptions</p>
-            <span className="question-count">12 questions</span>
-          </a>
-          <a href="/matchpairbenyon" className="chapter-button" id="matchpairbenyon">
-            <h3>🔗 Match Pairs - Benyon</h3>
-            <p>Match principles with their descriptions</p>
-            <span className="question-count">12 pairs</span>
-          </a>
+          <div className="quiz-grid">
+            <a href="/benyon12" className="chapter-button" id="benyon12">
+              <h3>📐 Benyon's 12 Principles</h3>
+              <p>Master fundamental UX design principles</p>
+              <span className="question-count">20 questions</span>
+            </a>
+            <a href="/benyonquiz2" className="chapter-button" id="benyonquiz2">
+              <h3>🎯 Name the Principle</h3>
+              <p>Identify Benyon's principles from descriptions</p>
+              <span className="question-count">12 questions</span>
+            </a>
+            <a href="/matchpairbenyon" className="chapter-button" id="matchpairbenyon">
+              <h3>🔗 Match Pairs - Benyon</h3>
+              <p>Match principles with their descriptions</p>
+              <span className="question-count">12 pairs</span>
+            </a>
+          </div>
           <div className="chapter-divider">
             <span>Challenge</span>
           </div>
@@ -245,6 +249,16 @@ function Home() {
               <h3>🎯 Find All Incorrect</h3>
               <p>Select multiple incorrect statements per question</p>
               <span className="question-count">4 questions</span>
+            </a>
+            <a href="/findincorrect3" className="chapter-button" id="findincorrect3">
+              <h3>❌ Find Incorrect 3</h3>
+              <p>Identify incorrect statements from chapters 2-10</p>
+              <span className="question-count">15 questions</span>
+            </a>
+            <a href="/findincorrect4" className="chapter-button" id="findincorrect4">
+              <h3>❌ Find Incorrect 4</h3>
+              <p>Challenge your knowledge from all chapters</p>
+              <span className="question-count">15 questions</span>
             </a>
           </div>
           <div className="chapter-divider">
