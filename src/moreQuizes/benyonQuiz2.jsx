@@ -24,23 +24,107 @@ function BenyonQuiz2() {
 
   const currentQuestion = mergedData[currentQuestionIndex] || questionsData[currentQuestionIndex]
 
-  const normalizeAnswer = (text) => {
-    return text.toLowerCase().trim().replace(/[^\w\s]/g, '').replace(/\s+/g, ' ')
+  // Function to normalize string for comparison
+  const normalizeString = (str) => {
+    return str.toLowerCase().replace(/['\s-]/g, '')
+  }
+
+  // Function to calculate Levenshtein distance for fuzzy matching
+  const levenshteinDistance = (str1, str2) => {
+    const matrix = []
+    
+    for (let i = 0; i <= str2.length; i++) {
+      matrix[i] = [i]
+    }
+    
+    for (let j = 0; j <= str1.length; j++) {
+      matrix[0][j] = j
+    }
+    
+    for (let i = 1; i <= str2.length; i++) {
+      for (let j = 1; j <= str1.length; j++) {
+        if (str2.charAt(i - 1) === str1.charAt(j - 1)) {
+          matrix[i][j] = matrix[i - 1][j - 1]
+        } else {
+          matrix[i][j] = Math.min(
+            matrix[i - 1][j - 1] + 1,
+            matrix[i][j - 1] + 1,
+            matrix[i - 1][j] + 1
+          )
+        }
+      }
+    }
+    
+    return matrix[str2.length][str1.length]
+  }
+
+  // Function to check if answer is correct (allows for typos)
+  const isAnswerCorrect = (userAnswer, correctAnswer) => {
+    const normalizedUser = normalizeString(userAnswer)
+    const normalizedCorrect = normalizeString(correctAnswer)
+    
+    // Exact match
+    if (normalizedUser === normalizedCorrect) {
+      return true
+    }
+    
+    // Extract the core name (remove parentheses content)
+    const removeParentheses = (str) => {
+      return str.replace(/\([^)]*\)/g, '').trim().toLowerCase().replace(/['\s-]/g, '')
+    }
+    
+    const coreUser = removeParentheses(userAnswer)
+    const coreCorrect = removeParentheses(correctAnswer)
+    
+    // Check if core names match
+    if (coreUser === coreCorrect && coreUser.length >= 3) {
+      return true
+    }
+    
+    // Check if user's answer is contained in the correct answer or vice versa
+    if (normalizedCorrect.includes(normalizedUser) || normalizedUser.includes(normalizedCorrect)) {
+      const matchRatio = Math.min(normalizedUser.length, normalizedCorrect.length) / 
+                        Math.max(normalizedUser.length, normalizedCorrect.length)
+      if (matchRatio >= 0.5) {
+        return true
+      }
+    }
+    
+    // Allow typos with Levenshtein distance
+    if (normalizedUser.length >= 3 && normalizedCorrect.length >= 3) {
+      const distance = levenshteinDistance(normalizedUser, normalizedCorrect)
+      if (normalizedCorrect.length > 10 && distance <= 3) {
+        return true
+      }
+      if (normalizedCorrect.length > 6 && distance <= 2) {
+        return true
+      }
+      if (distance <= 1) {
+        return true
+      }
+    }
+    
+    // Also check distance on core names
+    if (coreUser.length >= 3 && coreCorrect.length >= 3) {
+      const distance = levenshteinDistance(coreUser, coreCorrect)
+      if (coreCorrect.length > 8 && distance <= 3) {
+        return true
+      }
+      if (coreCorrect.length >= 4 && distance <= 2) {
+        return true
+      }
+      if (distance <= 1) {
+        return true
+      }
+    }
+    
+    return false
   }
 
   const handleSubmit = () => {
     if (isAnswered) return
 
-    const normalizedInput = normalizeAnswer(userInput)
-    const normalizedCorrect = normalizeAnswer(currentQuestion.answer)
-    
-    // Also check against alternative answers (without parentheses content)
-    const alternativeAnswer = currentQuestion.answer.includes('(') 
-      ? normalizeAnswer(currentQuestion.answer.split('(')[0])
-      : null
-
-    const isCorrect = normalizedInput === normalizedCorrect || 
-                     (alternativeAnswer && normalizedInput === alternativeAnswer)
+    const isCorrect = isAnswerCorrect(userInput, currentQuestion.answer)
 
     // Store the answer
     const newAnswers = [...userAnswers]
@@ -56,6 +140,12 @@ function BenyonQuiz2() {
     }
     
     setIsAnswered(true)
+
+    // Refocus after submit to keep keyboard shortcuts active
+    setTimeout(() => {
+      const container = document.querySelector('[tabindex="-1"]')
+      container?.focus()
+    }, 10)
   }
 
   const handleNext = () => {
@@ -65,23 +155,29 @@ function BenyonQuiz2() {
       setUserInput(nextAnswer ? nextAnswer.userAnswer : '')
       setIsAnswered(!!nextAnswer)
       setAnsweredQuestions(answeredQuestions + 1)
+      
+      // Auto-focus input on next question
+      setTimeout(() => {
+        const input = document.querySelector('.answer-input')
+        input?.focus()
+      }, 50)
     } else {
       setAnsweredQuestions(answeredQuestions + 1)
+      const finalScore = score + (isAnswered && userAnswers[currentQuestionIndex]?.isCorrect ? 1 : 0)
       
       // Save to localStorage
       const existingData = localStorage.getItem('quiz_benyonquiz2')
       const previousData = existingData ? JSON.parse(existingData) : { bestScore: 0, attempts: 0, attemptHistory: [] }
       
-      const newAttempt = { score: score, date: new Date().toISOString() }
+      const newAttempt = { score: finalScore, date: new Date().toISOString() }
       const attemptHistory = [...(previousData.attemptHistory || []), newAttempt]
       
       localStorage.setItem('quiz_benyonquiz2', JSON.stringify({
-        score: score,
+        score: finalScore,
         completed: questionsData.length,
         total: questionsData.length,
-        bestScore: Math.max(score, previousData.bestScore || 0),
-        attempts: attemptHistory.length,
-        lastAttempt: new Date().toISOString(),
+        bestScore: Math.max(finalScore, previousData.bestScore || 0),
+        attempts: (previousData.attempts || 0) + 1,
         attemptHistory: attemptHistory
       }))
       
@@ -92,10 +188,20 @@ function BenyonQuiz2() {
   const handlePrevious = () => {
     if (currentQuestionIndex > 0) {
       setCurrentQuestionIndex(currentQuestionIndex - 1)
-      const prevAnswer = userAnswers[currentQuestionIndex - 1]
-      setUserInput(prevAnswer ? prevAnswer.userAnswer : '')
-      setIsAnswered(!!prevAnswer)
-    }
+  const handleRestart = () => {
+    setCurrentQuestionIndex(0)
+    setUserInput('')
+    setIsAnswered(false)
+    setShowResult(false)
+    setShowReview(false)
+    setScore(0)
+    setAnsweredQuestions(0)
+    setUserAnswers([])
+    
+    // Reshuffle questions
+    const shuffled = [...questionsData].sort(() => Math.random() - 0.5)
+    setMergedData(shuffled)
+  } }
   }
 
   const handleRestart = () => {
@@ -113,10 +219,32 @@ function BenyonQuiz2() {
     setShowReview(true)
   }
 
-  const handleBackToResults = () => {
-    setShowReview(false)
-  }
-
+  if (showResult) {
+    const percentageNum = Math.round((score / questionsData.length) * 100)
+    const percentage = percentageNum.toFixed(1)
+    
+    // Determine celebration level and message
+    let title = 'Quiz Complete!'
+    let message = ''
+    
+    if (percentageNum === 100) {
+      title = 'Perfect Score!'
+      message = 'Absolutely outstanding! You know Benyon\'s principles perfectly! 🌟'
+    } else if (percentageNum >= 90) {
+      title = 'Excellent Work!'
+      message = 'Amazing job! You really know your principles! 💪'
+    } else if (percentageNum >= 75) {
+      title = 'Great Job!'
+      message = 'Well done! You have a solid understanding of Benyon\'s principles!'
+    } else if (percentageNum >= 60) {
+      title = 'Good Effort!'
+      message = 'Not bad! Keep practicing and you\'ll master these!'
+    } else {
+      title = 'Keep Learning!'
+      message = 'Every expert was once a beginner. Review and try again!'
+    }
+    
+    if (showReview) {
   if (showResult) {
     const percentage = ((score / questionsData.length) * 100).toFixed(1)
     
@@ -171,80 +299,146 @@ function BenyonQuiz2() {
                       </p>
                       <p className="explanation-text" style={{ marginTop: '12px' }}>
                         <strong>Principle:</strong><br />{question.principle}
-                      </p>
-                      <p className="explanation-text" style={{ marginTop: '12px' }}>
-                        <strong>In Practice:</strong><br />{question.practice}
-                      </p>
-                    </div>
-                  </div>
-                )
-              })}
-            </div>
-
-            <div className="review-actions">
-              <button onClick={handleBackToResults} className="next-button">
-                ← Back to Results
-              </button>
-              <button onClick={handleRestart} className="restart-button">
-                Try Again
-              </button>
-            </div>
-          </div>
-        </motion.div>
-      )
-    }
-    
-    return (
-      <>
-        <NavigationMenu />
         <CelebrationBackground score={score} total={questionsData.length} />
         <div className="quiz-container">
           <div className="result-card">
-            <h1>Quiz Complete!</h1>
+            <h1>{title}</h1>
+            {message && (
+              <p style={{ 
+                fontSize: '1.1rem', 
+                color: 'rgba(255, 255, 255, 0.8)', 
+                marginTop: '1rem',
+                marginBottom: '2rem',
+                maxWidth: '500px',
+                marginLeft: 'auto',
+                marginRight: 'auto',
+                lineHeight: '1.6'
+              }}>
+                {message}
+              </p>
+            )}
             <div className="score-display">
               <div className="score-number">{score}</div>
               <div className="score-total">out of {questionsData.length}</div>
             </div>
             <div className="score-percentage">
-              {Math.round((score / questionsData.length) * 100)}%
+              {percentageNum}%
             </div>
             <div className="button-group">
               <button onClick={handleShowReview} className="next-button" style={{ marginBottom: '10px' }}>
                 📋 Review Answers
               </button>
               <button onClick={handleRestart} className="restart-button">
-                Try Again
+                {percentageNum >= 90 ? 'Challenge Yourself Again' : 'Try Again'}
               </button>
-              <a href="/" className="home-link">
-                Back to Home
-              </a>
-            </div>
-          </div>
-        </div>
-      </>
-    )
-  }
-
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-    >
-      <NavigationMenu />
-      <div className="quiz-container">
-        <div className="quiz-header">
-          <h2>Name the Principle - Benyon's 12</h2>
-          <div className="progress-info">
-            <span>Question {currentQuestionIndex + 1} of {questionsData.length}</span>
-            <span>Score: {score}/{answeredQuestions}</span>
-          </div>
-          <div className="progress-bar">
-            <div 
-              className="progress-fill" 
-              style={{ width: `${((currentQuestionIndex + 1) / questionsData.length) * 100}%` }}
+      onKeyDown={(e) => {
+        if (e.key === 'ArrowLeft' && currentQuestionIndex > 0) {
+          e.preventDefault()
+          handlePrevious()
+        } else if ((e.key === 'ArrowRight' || e.key === 'Enter') && isAnswered) {
+          e.preventDefault()
+          handleNext()
+        } else if (e.key === 'ArrowDown' && !isAnswered && userInput.trim() === '') {
+          e.preventDefault()
+          // Skip: mark as wrong and show explanation
+          const newAnswers = [...userAnswers]
+          newAnswers[currentQuestionIndex] = { 
+            userAnswer: '', 
+            correctAnswer: currentQuestion.answer,
+            isCorrect: false 
+          }
+          setUserAnswers(newAnswers)
+          setIsAnswered(true)
+        } else if (e.key === 'Enter' && !isAnswered && document.activeElement?.className !== 'answer-input') {
+          e.preventDefault()
+          // Focus input field when pressing Enter
+          <div className="type-in-section">
+            <label htmlFor="answer-input" className="input-label">
+              Type the principle name:
+            </label>
+            <input
+              id="answer-input"
+              type="text"
+              value={userInput}
+              onChange={(e) => setUserInput(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  e.preventDefault()
+                  if (!isAnswered && userInput.trim() !== '') {
+                    handleSubmit()
+                  } else if (isAnswered) {
+                    handleNext()
+                  }
+                }
+              }}
+              disabled={isAnswered}
+              placeholder="Enter your answer..."
+              className={`answer-input ${isAnswered ? (userAnswers[currentQuestionIndex]?.isCorrect ? 'correct-input' : 'wrong-input') : ''}`}
+              autoFocus
             />
+            <button 
+              onClick={() => {
+                if (userInput.trim() === '' && !isAnswered) {
+                  // Skip: mark as wrong and show explanation
+                  const newAnswers = [...userAnswers]
+                  newAnswers[currentQuestionIndex] = { 
+                    userAnswer: '', 
+                    correctAnswer: currentQuestion.answer,
+                    isCorrect: false 
+                  }
+                  setUserAnswers(newAnswers)
+                  setIsAnswered(true)
+                }
+              }}
+              className="submit-button skip-button"
+              disabled={userInput.trim() !== '' || isAnswered}
+              <div className="correct-answer">
+                {currentQuestion.answer}
+              </div>
+              {!userAnswers[currentQuestionIndex]?.isCorrect && (
+                <p className="your-answer-text">Your answer: <span className="wrong-text">{userInput || '(skipped)'}</span></p>
+              )}
+              <p className="explanation-text" style={{ marginTop: '12px' }}>
+                <strong>Description:</strong><br />{currentQuestion.description}
+              </p>
+        </div>
+      </>
+    )
+  }
+
+  return (
+          <div className="navigation-buttons">
+            {currentQuestionIndex > 0 && (
+              <button onClick={handlePrevious} className="previous-button">
+                Previous
+              </button>
+            )}
+            <button 
+              onClick={!isAnswered ? handleSubmit : handleNext}
+              className="next-button"
+              disabled={!isAnswered && userInput.trim() === ''}
+            >
+              {!isAnswered ? 'Submit Answer' : (currentQuestionIndex < questionsData.length - 1 ? 'Next Question' : 'See Results')}
+            </button>
+          </div>
+
+          {!isAnswered && (
+            <p className="keyboard-hint">💡 Press Enter to submit • Arrow keys to navigate • Arrow Down to skip</p>
+          )}
+          {isAnswered && (
+            <p className="keyboard-hint">💡 Press Enter or Arrow Right for next question</p>
+          )}
+        </div>
+      </div>
+    </motion.div>
+  )
+}           />
           </div>
         </div>
 
