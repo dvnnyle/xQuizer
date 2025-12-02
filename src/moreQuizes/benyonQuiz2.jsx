@@ -7,7 +7,8 @@ import '../chapterList/chapter3.css'
 
 function BenyonQuiz2() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
-  const [selectedAnswer, setSelectedAnswer] = useState(null)
+  const [userInput, setUserInput] = useState('')
+  const [isAnswered, setIsAnswered] = useState(false)
   const [showResult, setShowResult] = useState(false)
   const [score, setScore] = useState(0)
   const [answeredQuestions, setAnsweredQuestions] = useState(0)
@@ -23,27 +24,46 @@ function BenyonQuiz2() {
 
   const currentQuestion = mergedData[currentQuestionIndex] || questionsData[currentQuestionIndex]
 
-  const handleAnswerClick = (index) => {
-    if (selectedAnswer !== null) return // Already answered
+  const normalizeAnswer = (text) => {
+    return text.toLowerCase().trim().replace(/[^\w\s]/g, '').replace(/\s+/g, ' ')
+  }
 
-    setSelectedAnswer(index)
-    const isCorrect = index === currentQuestion.answerIndex
+  const handleSubmit = () => {
+    if (isAnswered) return
+
+    const normalizedInput = normalizeAnswer(userInput)
+    const normalizedCorrect = normalizeAnswer(currentQuestion.answer)
+    
+    // Also check against alternative answers (without parentheses content)
+    const alternativeAnswer = currentQuestion.answer.includes('(') 
+      ? normalizeAnswer(currentQuestion.answer.split('(')[0])
+      : null
+
+    const isCorrect = normalizedInput === normalizedCorrect || 
+                     (alternativeAnswer && normalizedInput === alternativeAnswer)
 
     // Store the answer
     const newAnswers = [...userAnswers]
-    newAnswers[currentQuestionIndex] = { selectedIndex: index, isCorrect }
+    newAnswers[currentQuestionIndex] = { 
+      userAnswer: userInput, 
+      correctAnswer: currentQuestion.answer,
+      isCorrect 
+    }
     setUserAnswers(newAnswers)
 
     if (isCorrect) {
       setScore(score + 1)
     }
+    
+    setIsAnswered(true)
   }
 
   const handleNext = () => {
     if (currentQuestionIndex < questionsData.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1)
       const nextAnswer = userAnswers[currentQuestionIndex + 1]
-      setSelectedAnswer(nextAnswer ? nextAnswer.selectedIndex : null)
+      setUserInput(nextAnswer ? nextAnswer.userAnswer : '')
+      setIsAnswered(!!nextAnswer)
       setAnsweredQuestions(answeredQuestions + 1)
     } else {
       setAnsweredQuestions(answeredQuestions + 1)
@@ -73,13 +93,15 @@ function BenyonQuiz2() {
     if (currentQuestionIndex > 0) {
       setCurrentQuestionIndex(currentQuestionIndex - 1)
       const prevAnswer = userAnswers[currentQuestionIndex - 1]
-      setSelectedAnswer(prevAnswer ? prevAnswer.selectedIndex : null)
+      setUserInput(prevAnswer ? prevAnswer.userAnswer : '')
+      setIsAnswered(!!prevAnswer)
     }
   }
 
   const handleRestart = () => {
     setCurrentQuestionIndex(0)
-    setSelectedAnswer(null)
+    setUserInput('')
+    setIsAnswered(false)
     setShowResult(false)
     setShowReview(false)
     setScore(0)
@@ -119,7 +141,6 @@ function BenyonQuiz2() {
               {mergedData.map((question, qIndex) => {
                 const userAnswer = userAnswers[qIndex]
                 const isCorrect = userAnswer?.isCorrect
-                const userSelectedIndex = userAnswer?.selectedIndex
 
                 return (
                   <div key={question.id} className="review-question-card">
@@ -132,30 +153,15 @@ function BenyonQuiz2() {
                     
                     <h3 className="question-text">{question.question}</h3>
                     
-                    <div className="review-options">
-                      {question.options.map((option, optIndex) => {
-                        const isCorrectOption = optIndex === question.answerIndex
-                        const isUserSelection = optIndex === userSelectedIndex
-                        
-                        let optionClass = 'review-option'
-                        if (isCorrectOption) optionClass += ' correct-option'
-                        if (isUserSelection && !isCorrect) optionClass += ' wrong-option'
-                        
-                        return (
-                          <div key={optIndex} className={optionClass}>
-                            <span className="option-letter">
-                              {String.fromCharCode(65 + optIndex)}
-                            </span>
-                            <span className="option-text">{option}</span>
-                            {isUserSelection && (
-                              <span className="selection-badge">Your answer</span>
-                            )}
-                            {isCorrectOption && (
-                              <span className="correct-badge-mini">Correct</span>
-                            )}
-                          </div>
-                        )
-                      })}
+                    <div className="review-answer-section">
+                      <div className={`user-answer ${isCorrect ? 'correct' : 'wrong'}`}>
+                        <strong>Your answer:</strong> {userAnswer?.userAnswer || '(No answer)'}
+                      </div>
+                      {!isCorrect && (
+                        <div className="correct-answer-display">
+                          <strong>Correct answer:</strong> {question.answer}
+                        </div>
+                      )}
                     </div>
                     
                     <div className="review-explanation">
@@ -246,29 +252,37 @@ function BenyonQuiz2() {
           <div className="section-badge">Section {currentQuestion.section}</div>
           <h3 className="question-text">{currentQuestion.question}</h3>
           
-          <div className="options-list">
-            {currentQuestion.options.map((option, index) => {
-              const isSelected = selectedAnswer === index
-              const isCorrect = index === currentQuestion.answerIndex
-              const showCorrect = selectedAnswer !== null && isCorrect
-              const showWrong = selectedAnswer !== null && isSelected && !isCorrect
-
-              return (
-                <button
-                  key={index}
-                  onClick={() => handleAnswerClick(index)}
-                  className={`option-button ${isSelected ? 'selected' : ''} ${showCorrect ? 'correct' : ''} ${showWrong ? 'wrong' : ''}`}
-                  disabled={selectedAnswer !== null}
-                >
-                  <span className="option-letter">{String.fromCharCode(65 + index)}</span>
-                  <span className="option-text">{option}</span>
-                  {isSelected && <span className="you-chose">You chose</span>}
-                </button>
-              )
-            })}
+          <div className="type-in-section">
+            <label htmlFor="answer-input" className="input-label">
+              Type the principle name:
+            </label>
+            <input
+              id="answer-input"
+              type="text"
+              value={userInput}
+              onChange={(e) => setUserInput(e.target.value)}
+              onKeyPress={(e) => {
+                if (e.key === 'Enter' && userInput.trim() && !isAnswered) {
+                  handleSubmit()
+                }
+              }}
+              disabled={isAnswered}
+              placeholder="Enter your answer..."
+              className={`answer-input ${isAnswered ? (userAnswers[currentQuestionIndex]?.isCorrect ? 'correct-input' : 'wrong-input') : ''}`}
+              autoFocus
+            />
+            {!isAnswered && (
+              <button 
+                onClick={handleSubmit}
+                disabled={!userInput.trim()}
+                className="submit-button"
+              >
+                Submit Answer
+              </button>
+            )}
           </div>
 
-          {selectedAnswer !== null && (
+          {isAnswered && (
             <div className="explanation-box">
               <div className="explanation-header">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -302,9 +316,9 @@ function BenyonQuiz2() {
             <button 
               onClick={handleNext} 
               className="next-button"
-              disabled={selectedAnswer === null}
+              disabled={!isAnswered}
             >
-              {selectedAnswer === null ? '🔒 Select an answer' : (currentQuestionIndex < questionsData.length - 1 ? 'Next Question' : 'See Results')}
+              {!isAnswered ? '🔒 Submit your answer first' : (currentQuestionIndex < questionsData.length - 1 ? 'Next Question' : 'See Results')}
             </button>
           </div>
         </div>
