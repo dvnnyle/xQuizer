@@ -89,6 +89,7 @@ function Home() {
           <a href="#benyon12lit" className="toc-link">Benyon's Principles</a>
           <a href="#benyon12" className="toc-link">Benyon's 12 Principles</a>
           <a href="#benyonquiz2" className="toc-link">Name the Principle</a>
+          <a href="#matchpairbenyon" className="toc-link">Match Pairs - Benyon</a>
           <a href="#findincorrect" className="toc-link">Find Incorrect</a>
           <a href="#findincorrect2" className="toc-link">Find All Incorrect</a>
           <a href="#acronymquiz" className="toc-link">Acronym Quiz</a>
@@ -225,6 +226,11 @@ function Home() {
             <h3>🎯 Name the Principle</h3>
             <p>Identify Benyon's principles from descriptions</p>
             <span className="question-count">12 questions</span>
+          </a>
+          <a href="/matchpairbenyon" className="chapter-button" id="matchpairbenyon">
+            <h3>🔗 Match Pairs - Benyon</h3>
+            <p>Match principles with their descriptions</p>
+            <span className="question-count">12 pairs</span>
           </a>
           <div className="chapter-divider">
             <span>Challenge</span>

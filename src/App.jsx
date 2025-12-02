@@ -22,6 +22,7 @@ import NameTheLaw from './moreQuizes/nameTheLaw'
 import QuizFindIncorrect from './moreQuizes/quizFindIncorrect'
 import Benyon12Quiz from './moreQuizes/benyon12Quiz'
 import BenyonQuiz2 from './moreQuizes/benyonQuiz2'
+import MatchPairBenyon from './moreQuizes/matchPairBenyon'
 import QuizFindIncorrect2 from './moreQuizes/quizFindIncorrect2'
 import DragDropLaws from './moreQuizes/dragDropLaws'
 import AcronymQuiz from './moreQuizes/acronymQuiz'
@@ -54,6 +55,7 @@ function AnimatedRoutes() {
         <Route path="/findincorrect" element={<QuizFindIncorrect key="findincorrect" />} />
         <Route path="/benyon12" element={<Benyon12Quiz key="benyon12" />} />
         <Route path="/benyonquiz2" element={<BenyonQuiz2 key="benyonquiz2" />} />
+        <Route path="/matchpairbenyon" element={<MatchPairBenyon key="matchpairbenyon" />} />
         <Route path="/findincorrect2" element={<QuizFindIncorrect2 key="findincorrect2" />} />
         <Route path="/dragdroplaws" element={<DragDropLaws key="dragdroplaws" />} />
         <Route path="/acronymquiz" element={<AcronymQuiz key="acronymquiz" />} />

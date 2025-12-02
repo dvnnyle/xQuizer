@@ -34,7 +34,8 @@ function Statistics() {
       ],
       benyonQuizzes: [
         { id: 'benyon12', name: 'Benyon\'s 12 Principles', total: 20 },
-        { id: 'benyonquiz2', name: 'Name the Principle', total: 12 }
+        { id: 'benyonquiz2', name: 'Name the Principle', total: 12 },
+        { id: 'matchpairbenyon', name: 'Match Pairs - Benyon', total: 12 }
       ],
       challengeQuizzes: [
         { id: 'findincorrect', name: 'Find Incorrect', total: 6 },
@@ -317,7 +318,9 @@ function Statistics() {
         <div className="chapter-stats">
           <h2>📖 Benyon's Principles</h2>
           <div className="bar-graph-container">
-            {stats.chapterProgress.filter(ch => ['benyon12'].includes(ch.id)).map((chapter) => {
+            {stats.chapterProgress.filter(ch => ['benyon12', 'benyonquiz2', 'matchpairbenyon'].includes(ch.id)).map((chapter) => {
+              const isMatchPairs = chapter.id === 'matchpairbenyon'
+              const useAccuracy = isMatchPairs
               return (
                 <div key={chapter.id} className="bar-graph-item">
                   <div className="bar-graph-label">
@@ -331,9 +334,13 @@ function Statistics() {
                     <div className="attempts-graph">
                       {[...chapter.attemptHistory].reverse().map((attempt, reverseIndex) => {
                         const index = chapter.attemptHistory.length - 1 - reverseIndex
-                        const percentage = (attempt.score / chapter.total) * 100
+                        const percentage = useAccuracy 
+                          ? (attempt.accuracy || (attempt.score / chapter.total) * 100)
+                          : (attempt.score / chapter.total) * 100
                         const isLatest = index === chapter.attemptHistory.length - 1
-                        const isBest = attempt.score === chapter.bestScore
+                        const isBest = useAccuracy 
+                          ? (attempt.accuracy === chapter.bestAccuracy)
+                          : (attempt.score === chapter.bestScore)
                         
                         return (
                           <div key={index} className="attempt-bar-wrapper">
@@ -349,7 +356,12 @@ function Statistics() {
                             </div>
                             <div className="attempt-label">
                               <span className="attempt-number">#{index + 1}</span>
-                              <span className="attempt-score">{attempt.score}/{chapter.total}</span>
+                              <span className="attempt-score">
+                                {useAccuracy 
+                                  ? `${attempt.mistakes || 0} miss${(attempt.mistakes || 0) !== 1 ? 'es' : ''}`
+                                  : `${attempt.score}/${chapter.total}`
+                                }
+                              </span>
                             </div>
                           </div>
                         )
@@ -364,9 +376,19 @@ function Statistics() {
                   <div className="bar-graph-stats">
                     {chapter.attempts > 0 && (
                       <>
-                        <span>Best Score: {chapter.bestScore}/{chapter.total} ({((chapter.bestScore / chapter.total) * 100).toFixed(0)}%)</span>
-                        <span>Average: {(chapter.attemptHistory.reduce((sum, att) => sum + att.score, 0) / chapter.attemptHistory.length / chapter.total * 100).toFixed(0)}%</span>
-                        <span>Latest: {chapter.lastScore}/{chapter.total}</span>
+                        {useAccuracy ? (
+                          <>
+                            <span>Best Accuracy: {chapter.bestAccuracy?.toFixed(0) || 0}%</span>
+                            <span>Average: {(chapter.attemptHistory.reduce((sum, att) => sum + (att.accuracy || 0), 0) / chapter.attemptHistory.length).toFixed(0)}%</span>
+                            <span>Latest: {chapter.accuracy?.toFixed(0) || 0}%</span>
+                          </>
+                        ) : (
+                          <>
+                            <span>Best Score: {chapter.bestScore}/{chapter.total} ({((chapter.bestScore / chapter.total) * 100).toFixed(0)}%)</span>
+                            <span>Average: {(chapter.attemptHistory.reduce((sum, att) => sum + att.score, 0) / chapter.attemptHistory.length / chapter.total * 100).toFixed(0)}%</span>
+                            <span>Latest: {chapter.lastScore}/{chapter.total}</span>
+                          </>
+                        )}
                       </>
                     )}
                   </div>
@@ -619,6 +641,7 @@ function Statistics() {
                 localStorage.removeItem('quiz_namedlaw')
                 localStorage.removeItem('quiz_benyon12')
                 localStorage.removeItem('quiz_benyonquiz2')
+                localStorage.removeItem('quiz_matchpairbenyon')
                 localStorage.removeItem('quiz_findincorrect')
                 localStorage.removeItem('quiz_findincorrect2')
                 localStorage.removeItem('quiz_dragdroplaws')
