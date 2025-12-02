@@ -4,7 +4,7 @@
     "question": "Which of Benyon's 12 principles focuses on making similar things behave similarly?",
     "options": [
       "Flexibility",
-      "Responsiveness",
+      "Visibility",
       "Consistency",
       "Constraints"
     ],
@@ -15,16 +15,16 @@
   },
   {
     "id": 2,
-    "question": "Which principle is about ensuring users do not waste unnecessary physical or cognitive effort?",
+    "question": "Which principle is about making system state and available options clearly visible to users?",
     "options": [
-      "Directness",
+      "Navigation",
       "Feedback",
-      "Consider Users' Resources",
-      "Compatibility"
+      "Visibility",
+      "Style"
     ],
     "answerIndex": 2,
-    "answer": "Consider Users' Resources",
-    "explanation": "Consider Users' Resources means users have limited energy, time, and memory. Don't make them work harder than needed.<br><br><strong>Why it matters:</strong> Users get tired easily. Too much scrolling, typing, or remembering things makes them frustrated and more likely to quit.<br><br><strong>Example:</strong><br>• Amazon's 1-Click ordering saves your payment info so you don't retype it every time<br>• Google autocomplete finishes your searches so you type less<br>• Bad example: Making users enter their credit card for every purchase"
+    "answer": "Visibility",
+    "explanation": "Visibility means users should be able to see what the system is doing and what options are available. Don't hide important things.<br><br><strong>Why it matters:</strong> Hidden information forces users to remember or guess, increasing cognitive load and errors.<br><br><strong>Example:</strong><br>• Shopping cart showing items and total clearly visible<br>• Status bars displaying upload/download progress<br>• Bad example: Hidden menus where users can't find important features"
   },
   {
     "id": 3,
@@ -41,23 +41,23 @@
   },
   {
     "id": 4,
-    "question": "Which principle ensures the system responds quickly and appropriately to user actions?",
+    "question": "Which principle ensures users always know where they are and how to get where they want to go?",
     "options": [
       "Constraints",
-      "Obviousness",
-      "Responsiveness",
+      "Affordance",
+      "Navigation",
       "Consistency"
     ],
     "answerIndex": 2,
-    "answer": "Responsiveness",
-    "explanation": "Responsiveness means the system reacts quickly when users do something. Show them you received their action right away.<br><br><strong>Why it matters:</strong> When nothing happens after a click, users think it's broken. They click again, causing errors and frustration.<br><br><strong>Example:</strong><br>• Button changes color immediately when clicked<br>• Loading spinner shows while the page loads<br>• Bad example: Clicking Submit and seeing nothing for 5 seconds—users click multiple times"
+    "answer": "Navigation",
+    "explanation": "Navigation means users should always know their location in the system and how to move around. Provide clear paths and wayfinding.<br><br><strong>Why it matters:</strong> Lost users become frustrated and abandon tasks. Clear navigation creates confidence.<br><br><strong>Example:</strong><br>• Breadcrumbs showing location (Home > Products > Electronics)<br>• Highlighted current page in menu<br>• Bad example: Deep website with no way to know where you are or go back"
   },
   {
     "id": 5,
     "question": "Which principle helps prevent users from making errors by guiding or limiting available actions?",
     "options": [
       "Feedback",
-      "Compatibility",
+      "Conviviality",
       "Flexibility",
       "Constraints"
     ],
@@ -69,23 +69,23 @@
     "id": 6,
     "question": "Which principle emphasises giving users enough freedom to decide how to interact?",
     "options": [
-      "Obviousness",
-      "Compatibility",
-      "User Control",
-      "Directness"
+      "Affordance",
+      "Visibility",
+      "Control",
+      "Navigation"
     ],
     "answerIndex": 2,
-    "answer": "User Control",
-    "explanation": "User Control means users should feel in charge. Let them start, stop, or undo actions anytime they want.<br><br><strong>Why it matters:</strong> When systems force actions or won't let users stop things, people feel trapped and frustrated.<br><br><strong>Example:</strong><br>• Video players let you pause, skip, or adjust volume<br>• Skip intro button on streaming sites<br>• Bad example: Auto-playing videos you can't pause, or forced tutorials you can't skip"
+    "answer": "Control",
+    "explanation": "Control means users feel in charge and can decide when, how, and if they do something. Don't force users down a path.<br><br><strong>Why it matters:</strong> Users hate feeling trapped or forced. They need to control the pace and make choices themselves.<br><br><strong>Example:</strong><br>• Skip intro button—users choose if they watch<br>• Video player controls (play, pause, rewind)—users control it<br>• Bad example: Auto-playing videos that can't be paused—users feel forced to watch"
   },
   {
     "id": 7,
     "question": "Which principle says a system should always show the result of user actions clearly?",
     "options": [
-      "Responsiveness",
+      "Navigation",
       "Feedback",
       "Consistency",
-      "Compatibility"
+      "Style"
     ],
     "answerIndex": 1,
     "answer": "Feedback",
@@ -95,22 +95,22 @@
     "id": 8,
     "question": "Which principle ensures that users can immediately see how to interact with the system?",
     "options": [
-      "User Control",
+      "Control",
       "Constraints",
-      "Obviousness",
-      "Responsiveness"
+      "Affordance",
+      "Feedback"
     ],
     "answerIndex": 2,
-    "answer": "Obviousness",
-    "explanation": "Obviousness means users should instantly see how to use things without instructions. Make it clear what's clickable.<br><br><strong>Why it matters:</strong> Users shouldn't guess or search for how to use your interface. Everything should be obvious at first glance.<br><br><strong>Example:</strong><br>• Buttons look raised and colored so you know to click them<br>• Blue underlined text = clickable link<br>• Bad example: Buttons that look like plain text—users don't know they can click"
+    "answer": "Affordance",
+    "explanation": "Affordance means users should instantly see how to use things without instructions. Make it clear what's clickable.<br><br><strong>Why it matters:</strong> Users shouldn't guess or search for how to use your interface. Everything should be obvious at first glance.<br><br><strong>Example:</strong><br>• Buttons look raised and colored so you know to click them<br>• Blue underlined text = clickable link<br>• Bad example: Buttons that look like plain text—users don't know they can click"
   },
   {
     "id": 9,
     "question": "Which principle allows different users to choose different ways of interacting?",
     "options": [
-      "Compatibility",
+      "Conviviality",
       "Flexibility",
-      "Directness",
+      "Navigation",
       "Consistency"
     ],
     "answerIndex": 1,
@@ -119,48 +119,48 @@
   },
   {
     "id": 10,
-    "question": "Which principle prioritises aligning the system with other tools, norms or platforms?",
+    "question": "Which principle focuses on aesthetic design and removing unnecessary visual clutter?",
     "options": [
       "Constraints",
       "Feedback",
-      "Responsiveness",
-      "Compatibility"
+      "Conviviality",
+      "Style"
     ],
     "answerIndex": 3,
-    "answer": "Compatibility",
-    "explanation": "Compatibility means your system works well with other tools and platforms users already have. Fit into their existing setup.<br><br><strong>Why it matters:</strong> Users already have their favorite tools. If your system doesn't work with them, users need to do extra work or switch everything.<br><br><strong>Example:</strong><br>• Apps that sync between phone and computer<br>• Software that opens PDF, CSV files everyone uses<br>• Bad example: Files that only open in one specific program"
+    "answer": "Style",
+    "explanation": "Style means designing with aesthetic and minimalist principles that reduce clutter and highlight what matters.<br><br><strong>Why it matters:</strong> Clean, beautiful design creates positive emotions and trust. Cluttered interfaces overwhelm users.<br><br><strong>Example:</strong><br>• Apple's clean interfaces with generous white space<br>• Google's simple search page focusing on one task<br>• Bad example: Crowded interface with too many buttons, ads, and distractions"
   },
   {
     "id": 11,
     "question": "A system that allows undo and redo operations follows which principle?",
     "options": [
-      "Responsiveness",
-      "Obviousness",
-      "Error Prevention & Recovery",
+      "Feedback",
+      "Affordance",
+      "Recovery",
       "Flexibility"
     ],
     "answerIndex": 2,
-    "answer": "Error Prevention & Recovery",
-    "explanation": "Error Prevention & Recovery means stop mistakes before they happen, and make it easy to fix them when they do happen.<br><br><strong>Why it matters:</strong> Everyone makes mistakes. If you can't undo or fix mistakes easily, users feel stressed and scared to try things.<br><br><strong>Example:</strong><br>• Undo button in text editors<br>• Gmail's 'Undo send' feature<br>• Bad example: Deleting files permanently with no way to get them back"
+    "answer": "Recovery",
+    "explanation": "Recovery means making it easy to fix mistakes when they happen. Provide undo, redo, and recovery options.<br><br><strong>Why it matters:</strong> Everyone makes mistakes. If you can't undo or fix mistakes easily, users feel stressed and scared to try things.<br><br><strong>Example:</strong><br>• Undo button in text editors<br>• Gmail's 'Undo send' feature<br>• Bad example: Deleting files permanently with no way to get them back"
   },
   {
     "id": 12,
-    "question": "Which principle aims to make actions feel natural and closely connected to their effects?",
+    "question": "Which principle focuses on making systems polite, respectful, and friendly to users?",
     "options": [
       "Familiarity",
-      "Directness",
+      "Conviviality",
       "Constraints",
-      "Compatibility"
+      "Style"
     ],
     "answerIndex": 1,
-    "answer": "Directness",
-    "explanation": "Directness means users can touch or move things directly to make changes. Actions feel natural and instant.<br><br><strong>Why it matters:</strong> When actions feel indirect, users get confused. Direct control feels easier and more natural.<br><br><strong>Example:</strong><br>• Drag icons with your finger on a touchscreen<br>• Slide a volume control instead of typing numbers<br>• Bad example: Complex commands you need to memorize to do simple things"
+    "answer": "Conviviality",
+    "explanation": "Conviviality means designing systems that are polite, respectful, and supportive. Make users feel welcomed, not judged.<br><br><strong>Why it matters:</strong> Harsh or judgmental interfaces create negative emotions. Friendly systems reduce anxiety and build trust.<br><br><strong>Example:</strong><br>• Helpful error messages that suggest solutions, not blame<br>• Friendly onboarding that welcomes new users<br>• Bad example: Error messages like 'Invalid input!' with no help or guidance"
   },
   {
     "id": 13,
     "question": "Providing a progress bar during a long task is an example of which principle?",
     "options": [
-      "User Control",
+      "Control",
       "Feedback",
       "Consistency",
       "Flexibility"
@@ -174,9 +174,9 @@
     "question": "Disabling a button until all required fields are filled follows which principle?",
     "options": [
       "Familiarity",
-      "Responsiveness",
+      "Visibility",
       "Constraints",
-      "Obviousness"
+      "Affordance"
     ],
     "answerIndex": 2,
     "answer": "Constraints",
@@ -186,9 +186,9 @@
     "id": 15,
     "question": "Allowing expert users to use keyboard shortcuts follows which principle?",
     "options": [
-      "Directness",
-      "User Control",
-      "Compatibility",
+      "Navigation",
+      "Control",
+      "Style",
       "Flexibility"
     ],
     "answerIndex": 3,
@@ -200,7 +200,7 @@
     "question": "Matching colour conventions (red = stop, green = go) follows which principle?",
     "options": [
       "Feedback",
-      "Directness",
+      "Navigation",
       "Familiarity",
       "Consistency"
     ],
@@ -212,9 +212,9 @@
     "id": 17,
     "question": "Providing both drag‑and‑drop and menu‑based ways to complete an action exemplifies which principle?",
     "options": [
-      "Obviousness",
-      "Responsiveness",
-      "Compatibility",
+      "Affordance",
+      "Navigation",
+      "Style",
       "Flexibility"
     ],
     "answerIndex": 3,
@@ -225,9 +225,9 @@
     "id": 18,
     "question": "Ensuring that a mobile app behaves similarly to the desktop version supports which principle?",
     "options": [
-      "Obviousness",
+      "Affordance",
       "Constraints",
-      "User Control",
+      "Control",
       "Consistency"
     ],
     "answerIndex": 3,
@@ -238,26 +238,26 @@
     "id": 19,
     "question": "Warning the user when deleting a file is an application of which principle?",
     "options": [
-      "Compatibility",
-      "Error Prevention & Recovery",
-      "Responsiveness",
+      "Style",
+      "Recovery",
+      "Conviviality",
       "Flexibility"
     ],
     "answerIndex": 1,
-    "answer": "Error Prevention & Recovery",
-    "explanation": "Warning users before deleting files is Error Prevention—it stops accidents before they happen.<br><br><strong>Why it matters:</strong> People make mistakes. They click the wrong button or change their mind. A simple warning can save their work.<br><br><strong>Example:</strong><br>• 'Are you sure you want to delete?' message before deleting<br>• Trash bin you can recover files from<br>• Bad example: Deleting files permanently with one click—no way to undo"
+    "answer": "Recovery",
+    "explanation": "Warning users before deleting files is Recovery—it stops accidents before they happen and allows recovery.<br><br><strong>Why it matters:</strong> People make mistakes. They click the wrong button or change their mind. A simple warning can save their work.<br><br><strong>Example:</strong><br>• 'Are you sure you want to delete?' message before deleting<br>• Trash bin you can recover files from<br>• Bad example: Deleting files permanently with one click—no way to undo"
   },
   {
     "id": 20,
     "question": "Allowing users to stop an automatic slideshow demonstrates which principle?",
     "options": [
-      "Obviousness",
-      "User Control",
+      "Affordance",
+      "Control",
       "Constraints",
-      "Responsiveness"
+      "Feedback"
     ],
     "answerIndex": 1,
-    "answer": "User Control",
-    "explanation": "Letting users stop automatic slideshows is User Control—users should control the speed, not the system.<br><br><strong>Why it matters:</strong> People read at different speeds. Auto-playing content they can't stop makes them feel trapped.<br><br><strong>Example:</strong><br>• Pause button on slideshows<br>• Skip button on auto-playing videos<br>• Bad example: Carousel that auto-advances and won't stop—users can't read fast enough"
+    "answer": "Control",
+    "explanation": "Letting users stop automatic slideshows is Control—users should control the speed, not the system.<br><br><strong>Why it matters:</strong> People read at different speeds. Auto-playing content they can't stop makes them feel trapped.<br><br><strong>Example:</strong><br>• Pause button on slideshows<br>• Skip button on auto-playing videos<br>• Bad example: Carousel that auto-advances and won't stop—users can't read fast enough"
   }
 ]
