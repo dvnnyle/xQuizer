@@ -25,7 +25,7 @@ function BenyonQuiz2() {
   useEffect(() => {
     // Auto-focus input field when component mounts
     const timer = setTimeout(() => {
-      const input = document.querySelector('.answer-input')
+      const input = document.querySelector('.law-name-input')
       input?.focus()
     }, 100)
     return () => clearTimeout(timer)
@@ -162,7 +162,7 @@ function BenyonQuiz2() {
       
       // Auto-focus input on next question
       setTimeout(() => {
-        const input = document.querySelector('.answer-input')
+        const input = document.querySelector('.law-name-input')
         input?.focus()
       }, 50)
     } else {
@@ -198,7 +198,7 @@ function BenyonQuiz2() {
       
       // Auto-focus input on previous question
       setTimeout(() => {
-        const input = document.querySelector('.answer-input')
+        const input = document.querySelector('.law-name-input')
         input?.focus()
       }, 50)
     }
@@ -395,10 +395,10 @@ function BenyonQuiz2() {
           }
           setUserAnswers(newAnswers)
           setIsAnswered(true)
-        } else if (e.key === 'Enter' && !isAnswered && document.activeElement?.className !== 'answer-input') {
+        } else if (e.key === 'Enter' && !isAnswered && !document.activeElement?.className?.includes('law-name-input')) {
           e.preventDefault()
           // Focus input field when pressing Enter
-          const input = document.querySelector('.answer-input')
+          const input = document.querySelector('.law-name-input')
           input?.focus()
         }
       }}
