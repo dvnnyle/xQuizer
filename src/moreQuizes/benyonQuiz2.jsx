@@ -24,9 +24,12 @@ function BenyonQuiz2() {
 
   const currentQuestion = mergedData[currentQuestionIndex] || questionsData[currentQuestionIndex]
 
-  // Function to normalize string for comparison
+  // Function to normalize string for comparison - remove all punctuation, special chars, spaces
   const normalizeString = (str) => {
-    return str.toLowerCase().replace(/['\s-]/g, '')
+    return str.toLowerCase()
+      .replace(/['\s\-_&.,;:!?]/g, '') // Remove spaces, hyphens, underscores, ampersands, punctuation
+      .replace(/\([^)]*\)/g, '') // Remove parentheses and content
+      .trim()
   }
 
   // Function to calculate Levenshtein distance for fuzzy matching
@@ -58,64 +61,56 @@ function BenyonQuiz2() {
     return matrix[str2.length][str1.length]
   }
 
-  // Function to check if answer is correct (allows for typos)
+  // Function to check if answer is correct (very lenient - allows typos, case, punctuation differences)
   const isAnswerCorrect = (userAnswer, correctAnswer) => {
+    if (!userAnswer || userAnswer.trim() === '') return false
+    
     const normalizedUser = normalizeString(userAnswer)
     const normalizedCorrect = normalizeString(correctAnswer)
     
-    // Exact match
+    // Exact match after normalization
     if (normalizedUser === normalizedCorrect) {
       return true
     }
     
-    // Extract the core name (remove parentheses content)
-    const removeParentheses = (str) => {
-      return str.replace(/\([^)]*\)/g, '').trim().toLowerCase().replace(/['\s-]/g, '')
+    // Check if one contains the other (handles partial answers)
+    if (normalizedUser.length >= 3 && normalizedCorrect.length >= 3) {
+      if (normalizedCorrect.includes(normalizedUser) || normalizedUser.includes(normalizedCorrect)) {
+        const matchRatio = Math.min(normalizedUser.length, normalizedCorrect.length) / 
+                          Math.max(normalizedUser.length, normalizedCorrect.length)
+        // Accept if at least 60% match
+        if (matchRatio >= 0.6) {
+          return true
+        }
+      }
     }
     
-    const coreUser = removeParentheses(userAnswer)
-    const coreCorrect = removeParentheses(correctAnswer)
+    // Very lenient typo tolerance with Levenshtein distance
+    if (normalizedUser.length >= 3 && normalizedCorrect.length >= 3) {
+      const distance = levenshteinDistance(normalizedUser, normalizedCorrect)
+      const maxLength = Math.max(normalizedUser.length, normalizedCorrect.length)
+      
+      // Allow up to 40% character differences for longer words
+      if (maxLength > 12 && distance <= 5) return true
+      if (maxLength > 8 && distance <= 4) return true
+      if (maxLength > 5 && distance <= 3) return true
+      if (distance <= 2) return true
+    }
     
-    // Check if core names match
-    if (coreUser === coreCorrect && coreUser.length >= 3) {
+    // Special handling for common variations
+    const userLower = userAnswer.toLowerCase().trim()
+    const correctLower = correctAnswer.toLowerCase().trim()
+    
+    // Handle "and" vs "&"
+    const normalizeAndAmpersand = (str) => str.replace(/\s*&\s*/g, 'and').replace(/\s+/g, ' ')
+    if (normalizeString(normalizeAndAmpersand(userLower)) === normalizeString(normalizeAndAmpersand(correctLower))) {
       return true
     }
     
-    // Check if user's answer is contained in the correct answer or vice versa
-    if (normalizedCorrect.includes(normalizedUser) || normalizedUser.includes(normalizedCorrect)) {
-      const matchRatio = Math.min(normalizedUser.length, normalizedCorrect.length) / 
-                        Math.max(normalizedUser.length, normalizedCorrect.length)
-      if (matchRatio >= 0.5) {
-        return true
-      }
-    }
-    
-    // Allow typos with Levenshtein distance
-    if (normalizedUser.length >= 3 && normalizedCorrect.length >= 3) {
-      const distance = levenshteinDistance(normalizedUser, normalizedCorrect)
-      if (normalizedCorrect.length > 10 && distance <= 3) {
-        return true
-      }
-      if (normalizedCorrect.length > 6 && distance <= 2) {
-        return true
-      }
-      if (distance <= 1) {
-        return true
-      }
-    }
-    
-    // Also check distance on core names
-    if (coreUser.length >= 3 && coreCorrect.length >= 3) {
-      const distance = levenshteinDistance(coreUser, coreCorrect)
-      if (coreCorrect.length > 8 && distance <= 3) {
-        return true
-      }
-      if (coreCorrect.length >= 4 && distance <= 2) {
-        return true
-      }
-      if (distance <= 1) {
-        return true
-      }
+    // Handle apostrophes and possessives (user's vs users)
+    const removeApostrophes = (str) => str.replace(/[']/g, '')
+    if (normalizeString(removeApostrophes(userLower)) === normalizeString(removeApostrophes(correctLower))) {
+      return true
     }
     
     return false
