@@ -5,18 +5,18 @@ import CelebrationBackground from '../components/CelebrationBackground'
 import '../chapterList/chapter3.css'
 
 const principlePairs = [
-  { id: 1, description: "Similar elements should look similar and behave in predictable, uniform ways throughout an interface.", principle: "Consistency" },
-  { id: 2, description: "Design with awareness that users have limited attention, memory, physical capability, and time.", principle: "Consider Users' Resources" },
+  { id: 1, description: "Users should be able to see clearly what the system is doing and what options are available.", principle: "Visibility" },
+  { id: 2, description: "Similar elements should look similar and behave in predictable, uniform ways throughout an interface.", principle: "Consistency" },
   { id: 3, description: "Leverage users' existing knowledge from the real world and prior system experiences.", principle: "Familiarity" },
-  { id: 4, description: "The system must react quickly and appropriately to user actions, providing timely confirmation.", principle: "Responsiveness" },
-  { id: 5, description: "Strategically limit user actions to prevent errors before they occur.", principle: "Constraints" },
-  { id: 6, description: "Users should feel they are in charge of the system, able to initiate actions and make decisions.", principle: "User Control" },
+  { id: 4, description: "Users should always know where they are in the system and how to get where they want to go.", principle: "Navigation" },
+  { id: 5, description: "The interface should clearly communicate how it can be used without requiring explanation.", principle: "Affordance" },
+  { id: 6, description: "Users should feel they are in charge of the system, able to initiate actions and make decisions.", principle: "Control" },
   { id: 7, description: "The system must clearly communicate the results and consequences of user actions.", principle: "Feedback" },
-  { id: 8, description: "The interface should clearly communicate how it can be used without requiring explanation.", principle: "Obviousness (Affordance)" },
-  { id: 9, description: "Offer multiple ways to accomplish tasks, accommodating different user preferences and skill levels.", principle: "Flexibility" },
-  { id: 10, description: "Design systems that work well with existing platforms, tools, standards, and user workflows.", principle: "Compatibility" },
-  { id: 11, description: "Design systems that both prevent errors before they occur and provide safe, easy ways to fix mistakes.", principle: "Error Prevention & Recovery" },
-  { id: 12, description: "Minimize the gap between user intentions and system actions.", principle: "Directness" },
+  { id: 8, description: "Provide safe, easy ways to fix mistakes when they happen.", principle: "Recovery" },
+  { id: 9, description: "Strategically limit user actions to prevent errors before they occur.", principle: "Constraints" },
+  { id: 10, description: "Offer multiple ways to accomplish tasks, accommodating different user preferences and skill levels.", principle: "Flexibility" },
+  { id: 11, description: "Design with aesthetic and minimalist principles that communicate professionalism and respect.", principle: "Style" },
+  { id: 12, description: "Design systems that are polite, respectful, friendly, and supportive to users.", principle: "Conviviality" },
 ]
 
 function MatchPairBenyon() {
