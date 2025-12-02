@@ -33,7 +33,8 @@ function Statistics() {
         { id: 'dragdroplaws', name: 'Match the Pairs', total: 21 }
       ],
       benyonQuizzes: [
-        { id: 'benyon12', name: 'Benyon\'s 12 Principles', total: 20 }
+        { id: 'benyon12', name: 'Benyon\'s 12 Principles', total: 20 },
+        { id: 'benyonquiz2', name: 'Name the Principle', total: 12 }
       ],
       challengeQuizzes: [
         { id: 'findincorrect', name: 'Find Incorrect', total: 6 },
@@ -617,6 +618,7 @@ function Statistics() {
                 localStorage.removeItem('quiz_uxmatchlaws')
                 localStorage.removeItem('quiz_namedlaw')
                 localStorage.removeItem('quiz_benyon12')
+                localStorage.removeItem('quiz_benyonquiz2')
                 localStorage.removeItem('quiz_findincorrect')
                 localStorage.removeItem('quiz_findincorrect2')
                 localStorage.removeItem('quiz_dragdroplaws')

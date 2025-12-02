@@ -1,0 +1,194 @@
+[
+  {
+    "id": 1,
+    "section": "Benyon",
+    "question": "Which principle states: \"Similar elements should behave in predictable, uniform ways\"?",
+    "options": [
+      "Familiarity",
+      "Consistency",
+      "Directness",
+      "Obviousness"
+    ],
+    "answerIndex": 1,
+    "answer": "Consistency",
+    "description": "Similar elements should look similar and behave in predictable, uniform ways throughout an interface. When users learn one interaction pattern, it should transfer to other similar contexts.",
+    "principle": "Consistency reduces cognitive load by allowing learned patterns to transfer across contexts.",
+    "practice": "Microsoft Office uses Ctrl+S to save across all applications. The File menu is always in the same location. Bold buttons look identical everywhere. This lets users transfer knowledge seamlessly between Word, Excel, and PowerPoint."
+  },
+  {
+    "id": 2,
+    "section": "Benyon",
+    "question": "Design with awareness that users have limited attention, memory, and time. This is:",
+    "options": [
+      "Consider Users' Resources",
+      "User Control",
+      "Flexibility",
+      "Compatibility"
+    ],
+    "answerIndex": 0,
+    "answer": "Consider Users' Resources",
+    "description": "Design with awareness that users have limited attention, memory, physical capability, and time. Good design minimizes unnecessary mental and physical workload.",
+    "principle": "Users have limited cognitive resources—don't waste them on unnecessary tasks.",
+    "practice": "Amazon's 1-Click ordering stores payment and shipping details, eliminating repetitive form-filling. Autocomplete in search bars reduces typing effort. Netflix auto-plays the next episode to respect decision fatigue."
+  },
+  {
+    "id": 3,
+    "section": "Benyon",
+    "question": "Leverage users' existing knowledge from the real world. This principle is:",
+    "options": [
+      "Consistency",
+      "Compatibility",
+      "Familiarity",
+      "Obviousness"
+    ],
+    "answerIndex": 2,
+    "answer": "Familiarity",
+    "description": "Leverage users' existing knowledge from the real world and prior system experiences. Familiar interfaces feel intuitive because they match mental models users already possess.",
+    "principle": "Users approach new systems with expectations from past experiences.",
+    "practice": "The trash can icon for deletion matches the real-world metaphor of throwing away unwanted items. Shopping carts in e-commerce mirror physical shopping. Volume sliders resemble physical knobs."
+  },
+  {
+    "id": 4,
+    "section": "Benyon",
+    "question": "The system must react quickly to user actions, providing timely confirmation. This is:",
+    "options": [
+      "Feedback",
+      "Responsiveness",
+      "Directness",
+      "User Control"
+    ],
+    "answerIndex": 1,
+    "answer": "Responsiveness",
+    "description": "The system must react quickly and appropriately to user actions, providing timely confirmation that input was received and processing is happening.",
+    "principle": "Users judge system quality partly by response speed.",
+    "practice": "Buttons visually respond when clicked (color change, pressed state) even if backend processing takes longer. Google Search shows results in milliseconds. Loading spinners communicate that work is progressing."
+  },
+  {
+    "id": 5,
+    "section": "Benyon",
+    "question": "Strategically limit user actions to prevent errors before they occur. This is:",
+    "options": [
+      "User Control",
+      "Error Prevention & Recovery",
+      "Constraints",
+      "Feedback"
+    ],
+    "answerIndex": 2,
+    "answer": "Constraints",
+    "description": "Strategically limit user actions to prevent errors before they occur. By making invalid or dangerous actions impossible or difficult, constraints guide users toward correct behavior.",
+    "principle": "Preventing errors is better than allowing them and requiring recovery.",
+    "practice": "Date picker calendars prevent selecting invalid dates like February 30th. Form fields that only accept numbers reject text input. USB connectors are physically asymmetric—they only fit one way."
+  },
+  {
+    "id": 6,
+    "section": "Benyon",
+    "question": "Users should feel they are in charge of the system. This principle is:",
+    "options": [
+      "User Control",
+      "Flexibility",
+      "Directness",
+      "Responsiveness"
+    ],
+    "answerIndex": 0,
+    "answer": "User Control",
+    "description": "Users should feel they are in charge of the system, able to initiate actions, make decisions, and interrupt or reverse processes. Systems should respond to user intentions, not impose their own agenda.",
+    "principle": "Loss of control creates anxiety and frustration.",
+    "practice": "Video players let users pause, skip, adjust volume, and change speed. Websites with Skip intro buttons respect user control. Browser Back buttons let users reverse navigation mistakes."
+  },
+  {
+    "id": 7,
+    "section": "Benyon",
+    "question": "The system must clearly communicate results and consequences of user actions. This is:",
+    "options": [
+      "Responsiveness",
+      "Obviousness",
+      "Feedback",
+      "Directness"
+    ],
+    "answerIndex": 2,
+    "answer": "Feedback",
+    "description": "The system must clearly communicate the results and consequences of user actions, keeping users informed about system status at all times.",
+    "principle": "Users need continuous confirmation of what actions accomplished.",
+    "practice": "Email confirmation messages (Message sent). Form fields showing checkmarks or errors as you type. Progress bars for downloads. Button color changes when clicked. Car lock sounds."
+  },
+  {
+    "id": 8,
+    "section": "Benyon",
+    "question": "The interface should clearly communicate how it can be used without explanation. This is:",
+    "options": [
+      "Obviousness (Affordance)",
+      "Familiarity",
+      "Directness",
+      "Consistency"
+    ],
+    "answerIndex": 0,
+    "answer": "Obviousness (Affordance)",
+    "description": "The interface should clearly communicate how it can be used without requiring explanation. Interactive elements should visually signal their function.",
+    "principle": "Users shouldn't need to hunt for functionality or read manuals.",
+    "practice": "Buttons that look clickable (raised, colored, with hover effects). Door handles showing push vs. pull. Underlined blue text signals hyperlinks. Sliders have draggable handles."
+  },
+  {
+    "id": 9,
+    "section": "Benyon",
+    "question": "Offer multiple ways to accomplish tasks, accommodating different user preferences. This is:",
+    "options": [
+      "Compatibility",
+      "User Control",
+      "Flexibility",
+      "Directness"
+    ],
+    "answerIndex": 2,
+    "answer": "Flexibility",
+    "description": "Offer multiple ways to accomplish tasks, accommodating different user preferences, skill levels, and working styles. Flexible systems adapt to diverse user needs.",
+    "principle": "Users have different expertise levels and preferences.",
+    "practice": "Software offering both menu navigation and keyboard shortcuts. Voice commands alongside touch interfaces. Multiple payment methods. Customizable dashboards where users arrange widgets."
+  },
+  {
+    "id": 10,
+    "section": "Benyon",
+    "question": "Design systems that work well with existing platforms and standards. This is:",
+    "options": [
+      "Flexibility",
+      "Familiarity",
+      "Compatibility",
+      "Consistency"
+    ],
+    "answerIndex": 2,
+    "answer": "Compatibility",
+    "description": "Design systems that work well with existing platforms, tools, standards, and user workflows. Compatible systems integrate seamlessly into users' existing ecosystems.",
+    "principle": "Users already have established tools and workflows.",
+    "practice": "Apps that sync between desktop and mobile. Software importing/exporting standard file formats (CSV, PDF). Payment systems supporting Apple Pay, Google Pay, and cards. Cross-platform apps working on Windows, Mac, iOS, Android."
+  },
+  {
+    "id": 11,
+    "section": "Benyon",
+    "question": "Design systems that both prevent errors and provide easy ways to fix mistakes. This is:",
+    "options": [
+      "Constraints",
+      "User Control",
+      "Error Prevention & Recovery",
+      "Feedback"
+    ],
+    "answerIndex": 2,
+    "answer": "Error Prevention & Recovery",
+    "description": "Design systems that both prevent errors before they occur and provide safe, easy ways to fix mistakes when they happen. Humans make errors—good design accounts for this.",
+    "principle": "Errors are inevitable in human interaction.",
+    "practice": "Undo/Redo in text editors. Gmail's 'Undo send' feature. Confirmation dialogs for destructive actions. Auto-save preventing data loss. Trash bins allowing file recovery."
+  },
+  {
+    "id": 12,
+    "section": "Benyon",
+    "question": "Minimize the gap between user intentions and system actions. This is:",
+    "options": [
+      "Responsiveness",
+      "Directness",
+      "User Control",
+      "Obviousness"
+    ],
+    "answerIndex": 1,
+    "answer": "Directness",
+    "description": "Minimize the gap between user intentions and system actions. Direct interfaces let users manipulate objects and see results immediately, creating a feeling of direct engagement.",
+    "principle": "Direct manipulation feels natural and intuitive.",
+    "practice": "Touchscreens where you drag icons with your finger. Slider controls you manipulate directly. Drag-and-drop file management. Drawing apps where stylus movements instantly appear as marks."
+  }
+]

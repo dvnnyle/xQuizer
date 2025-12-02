@@ -88,6 +88,7 @@ function Home() {
           <a href="#dragdroplaws" className="toc-link">Match the Pairs</a>
           <a href="#benyon12lit" className="toc-link">Benyon's Principles</a>
           <a href="#benyon12" className="toc-link">Benyon's 12 Principles</a>
+          <a href="#benyonquiz2" className="toc-link">Name the Principle</a>
           <a href="#findincorrect" className="toc-link">Find Incorrect</a>
           <a href="#findincorrect2" className="toc-link">Find All Incorrect</a>
           <a href="#acronymquiz" className="toc-link">Acronym Quiz</a>
@@ -219,6 +220,11 @@ function Home() {
             <h3>📐 Benyon's 12 Principles</h3>
             <p>Master fundamental UX design principles</p>
             <span className="question-count">20 questions</span>
+          </a>
+          <a href="/benyonquiz2" className="chapter-button" id="benyonquiz2">
+            <h3>🎯 Name the Principle</h3>
+            <p>Identify Benyon's principles from descriptions</p>
+            <span className="question-count">12 questions</span>
           </a>
           <div className="chapter-divider">
             <span>Challenge</span>
