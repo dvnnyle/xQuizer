@@ -2,12 +2,28 @@
   {
     "id": 1,
     "section": "Benyon",
-    "question": "Which principle states: \"Similar elements should behave in predictable, uniform ways\"?",
+    "question": "Which principle states: \"Users should be able to see what the system is doing and understand system status\"?",
+    "options": [
+      "Familiarity",
+      "Visibility",
+      "Feedback",
+      "Affordance"
+    ],
+    "answerIndex": 1,
+    "answer": "Visibility",
+    "description": "Users should be able to see what the system is doing, what state it is in, and what alternatives and options are available. Important information should be visible and obvious.",
+    "principle": "Making system state visible helps users understand what's happening and what they can do next.",
+    "practice": "Progress bars show download status. File browsers display folder structures. Shopping carts show selected items. Menu highlighting shows current location in navigation."
+  },
+  {
+    "id": 2,
+    "section": "Benyon",
+    "question": "Similar elements should behave in predictable, uniform ways. This is:",
     "options": [
       "Familiarity",
       "Consistency",
-      "Directness",
-      "Obviousness"
+      "Style",
+      "Affordance"
     ],
     "answerIndex": 1,
     "answer": "Consistency",
@@ -16,30 +32,14 @@
     "practice": "Microsoft Office uses Ctrl+S to save across all applications. The File menu is always in the same location. Bold buttons look identical everywhere. This lets users transfer knowledge seamlessly between Word, Excel, and PowerPoint."
   },
   {
-    "id": 2,
-    "section": "Benyon",
-    "question": "Design with awareness that users have limited attention, memory, and time. This is:",
-    "options": [
-      "Consider Users' Resources",
-      "User Control",
-      "Flexibility",
-      "Compatibility"
-    ],
-    "answerIndex": 0,
-    "answer": "Consider Users' Resources",
-    "description": "Design with awareness that users have limited attention, memory, physical capability, and time. Good design minimizes unnecessary mental and physical workload.",
-    "principle": "Users have limited cognitive resources—don't waste them on unnecessary tasks.",
-    "practice": "Amazon's 1-Click ordering stores payment and shipping details, eliminating repetitive form-filling. Autocomplete in search bars reduces typing effort. Netflix auto-plays the next episode to respect decision fatigue."
-  },
-  {
     "id": 3,
     "section": "Benyon",
     "question": "Leverage users' existing knowledge from the real world. This principle is:",
     "options": [
       "Consistency",
-      "Compatibility",
+      "Style",
       "Familiarity",
-      "Obviousness"
+      "Affordance"
     ],
     "answerIndex": 2,
     "answer": "Familiarity",
@@ -50,47 +50,47 @@
   {
     "id": 4,
     "section": "Benyon",
-    "question": "The system must react quickly to user actions, providing timely confirmation. This is:",
+    "question": "Users should know where they are and how to get to where they want to go. This is:",
     "options": [
-      "Feedback",
-      "Responsiveness",
-      "Directness",
-      "User Control"
+      "Visibility",
+      "Navigation",
+      "Control",
+      "Feedback"
     ],
     "answerIndex": 1,
-    "answer": "Responsiveness",
-    "description": "The system must react quickly and appropriately to user actions, providing timely confirmation that input was received and processing is happening.",
-    "principle": "Users judge system quality partly by response speed.",
-    "practice": "Buttons visually respond when clicked (color change, pressed state) even if backend processing takes longer. Google Search shows results in milliseconds. Loading spinners communicate that work is progressing."
+    "answer": "Navigation",
+    "description": "Users should know where they are in the system and how to get to where they want to go. Clear navigation structure helps users move through the interface confidently.",
+    "principle": "Good navigation prevents users from getting lost and reduces frustration.",
+    "practice": "Breadcrumbs showing current location (Home > Products > Laptops). Clear menu structures. Back buttons. Site maps. Search functionality. Highlighted current page in navigation menus."
   },
   {
     "id": 5,
     "section": "Benyon",
-    "question": "Strategically limit user actions to prevent errors before they occur. This is:",
+    "question": "The interface should clearly communicate how it can be used without explanation. This is:",
     "options": [
-      "User Control",
-      "Error Prevention & Recovery",
-      "Constraints",
-      "Feedback"
+      "Affordance",
+      "Familiarity",
+      "Visibility",
+      "Consistency"
     ],
-    "answerIndex": 2,
-    "answer": "Constraints",
-    "description": "Strategically limit user actions to prevent errors before they occur. By making invalid or dangerous actions impossible or difficult, constraints guide users toward correct behavior.",
-    "principle": "Preventing errors is better than allowing them and requiring recovery.",
-    "practice": "Date picker calendars prevent selecting invalid dates like February 30th. Form fields that only accept numbers reject text input. USB connectors are physically asymmetric—they only fit one way."
+    "answerIndex": 0,
+    "answer": "Affordance",
+    "description": "The interface should clearly communicate how it can be used without requiring explanation. Interactive elements should visually signal their function through affordances.",
+    "principle": "Users shouldn't need to hunt for functionality or read manuals.",
+    "practice": "Buttons that look clickable (raised, colored, with hover effects). Door handles showing push vs. pull. Underlined blue text signals hyperlinks. Sliders have draggable handles."
   },
   {
     "id": 6,
     "section": "Benyon",
     "question": "Users should feel they are in charge of the system. This principle is:",
     "options": [
-      "User Control",
+      "Control",
       "Flexibility",
-      "Directness",
-      "Responsiveness"
+      "Navigation",
+      "Feedback"
     ],
     "answerIndex": 0,
-    "answer": "User Control",
+    "answer": "Control",
     "description": "Users should feel they are in charge of the system, able to initiate actions, make decisions, and interrupt or reverse processes. Systems should respond to user intentions, not impose their own agenda.",
     "principle": "Loss of control creates anxiety and frustration.",
     "practice": "Video players let users pause, skip, adjust volume, and change speed. Websites with Skip intro buttons respect user control. Browser Back buttons let users reverse navigation mistakes."
@@ -100,10 +100,10 @@
     "section": "Benyon",
     "question": "The system must clearly communicate results and consequences of user actions. This is:",
     "options": [
-      "Responsiveness",
-      "Obviousness",
+      "Visibility",
+      "Affordance",
       "Feedback",
-      "Directness"
+      "Navigation"
     ],
     "answerIndex": 2,
     "answer": "Feedback",
@@ -114,28 +114,44 @@
   {
     "id": 8,
     "section": "Benyon",
-    "question": "The interface should clearly communicate how it can be used without explanation. This is:",
+    "question": "Design systems that help users recover from errors easily. This is:",
     "options": [
-      "Obviousness (Affordance)",
-      "Familiarity",
-      "Directness",
-      "Consistency"
+      "Constraints",
+      "Control",
+      "Recovery",
+      "Feedback"
     ],
-    "answerIndex": 0,
-    "answer": "Obviousness (Affordance)",
-    "description": "The interface should clearly communicate how it can be used without requiring explanation. Interactive elements should visually signal their function.",
-    "principle": "Users shouldn't need to hunt for functionality or read manuals.",
-    "practice": "Buttons that look clickable (raised, colored, with hover effects). Door handles showing push vs. pull. Underlined blue text signals hyperlinks. Sliders have draggable handles."
+    "answerIndex": 2,
+    "answer": "Recovery",
+    "description": "Design systems that provide safe, easy ways to fix mistakes when they happen. Humans make errors—good design helps users recover gracefully.",
+    "principle": "Errors are inevitable in human interaction, so recovery mechanisms are essential.",
+    "practice": "Undo/Redo in text editors. Gmail's 'Undo send' feature. Confirmation dialogs for destructive actions. Auto-save preventing data loss. Trash bins allowing file recovery."
   },
   {
     "id": 9,
     "section": "Benyon",
+    "question": "Strategically limit user actions to prevent errors before they occur. This is:",
+    "options": [
+      "Control",
+      "Recovery",
+      "Constraints",
+      "Feedback"
+    ],
+    "answerIndex": 2,
+    "answer": "Constraints",
+    "description": "Strategically limit user actions to prevent errors before they occur. By making invalid or dangerous actions impossible or difficult, constraints guide users toward correct behavior.",
+    "principle": "Preventing errors is better than allowing them and requiring recovery.",
+    "practice": "Date picker calendars prevent selecting invalid dates like February 30th. Form fields that only accept numbers reject text input. USB connectors are physically asymmetric—they only fit one way."
+  },
+  {
+    "id": 10,
+    "section": "Benyon",
     "question": "Offer multiple ways to accomplish tasks, accommodating different user preferences. This is:",
     "options": [
-      "Compatibility",
-      "User Control",
+      "Style",
+      "Control",
       "Flexibility",
-      "Directness"
+      "Navigation"
     ],
     "answerIndex": 2,
     "answer": "Flexibility",
@@ -144,51 +160,35 @@
     "practice": "Software offering both menu navigation and keyboard shortcuts. Voice commands alongside touch interfaces. Multiple payment methods. Customizable dashboards where users arrange widgets."
   },
   {
-    "id": 10,
-    "section": "Benyon",
-    "question": "Design systems that work well with existing platforms and standards. This is:",
-    "options": [
-      "Flexibility",
-      "Familiarity",
-      "Compatibility",
-      "Consistency"
-    ],
-    "answerIndex": 2,
-    "answer": "Compatibility",
-    "description": "Design systems that work well with existing platforms, tools, standards, and user workflows. Compatible systems integrate seamlessly into users' existing ecosystems.",
-    "principle": "Users already have established tools and workflows.",
-    "practice": "Apps that sync between desktop and mobile. Software importing/exporting standard file formats (CSV, PDF). Payment systems supporting Apple Pay, Google Pay, and cards. Cross-platform apps working on Windows, Mac, iOS, Android."
-  },
-  {
     "id": 11,
     "section": "Benyon",
-    "question": "Design systems that both prevent errors and provide easy ways to fix mistakes. This is:",
+    "question": "Design with aesthetic and minimalist principles that enhance usability. This is:",
     "options": [
-      "Constraints",
-      "User Control",
-      "Error Prevention & Recovery",
-      "Feedback"
+      "Familiarity",
+      "Consistency",
+      "Style",
+      "Visibility"
     ],
     "answerIndex": 2,
-    "answer": "Error Prevention & Recovery",
-    "description": "Design systems that both prevent errors before they occur and provide safe, easy ways to fix mistakes when they happen. Humans make errors—good design accounts for this.",
-    "principle": "Errors are inevitable in human interaction.",
-    "practice": "Undo/Redo in text editors. Gmail's 'Undo send' feature. Confirmation dialogs for destructive actions. Auto-save preventing data loss. Trash bins allowing file recovery."
+    "answer": "Style",
+    "description": "Design with appropriate aesthetic and minimalist style that enhances rather than detracts from usability. Visual design should support function and create pleasant user experiences.",
+    "principle": "Good style makes interfaces more engaging and easier to use.",
+    "practice": "Apple's clean minimalist interfaces. Google's material design guidelines. Consistent color schemes and typography. White space improving readability. Visual hierarchy guiding attention."
   },
   {
     "id": 12,
     "section": "Benyon",
-    "question": "Minimize the gap between user intentions and system actions. This is:",
+    "question": "Design systems that are polite, respectful, and friendly to users. This is:",
     "options": [
-      "Responsiveness",
-      "Directness",
-      "User Control",
-      "Obviousness"
+      "Flexibility",
+      "Conviviality",
+      "Control",
+      "Style"
     ],
     "answerIndex": 1,
-    "answer": "Directness",
-    "description": "Minimize the gap between user intentions and system actions. Direct interfaces let users manipulate objects and see results immediately, creating a feeling of direct engagement.",
-    "principle": "Direct manipulation feels natural and intuitive.",
-    "practice": "Touchscreens where you drag icons with your finger. Slider controls you manipulate directly. Drag-and-drop file management. Drawing apps where stylus movements instantly appear as marks."
+    "answer": "Conviviality",
+    "description": "Design systems that are polite, respectful, and friendly to users. Convivial interfaces create pleasant social interactions between user and system.",
+    "principle": "Systems should treat users with respect and create positive experiences.",
+    "practice": "Friendly error messages that don't blame users. Polite confirmation dialogs. Welcoming onboarding experiences. Respectful notifications that don't interrupt unnecessarily. Thank you messages."
   }
 ]
