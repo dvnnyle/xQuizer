@@ -22,6 +22,15 @@ function BenyonQuiz2() {
     setMergedData(shuffled)
   }, [])
 
+  useEffect(() => {
+    // Auto-focus input field when component mounts
+    const timer = setTimeout(() => {
+      const input = document.querySelector('.answer-input')
+      input?.focus()
+    }, 100)
+    return () => clearTimeout(timer)
+  }, [])
+
   const currentQuestion = mergedData[currentQuestionIndex] || questionsData[currentQuestionIndex]
 
   // Function to normalize string for comparison - remove all punctuation, special chars, spaces
@@ -346,8 +355,8 @@ function BenyonQuiz2() {
               {percentageNum}%
             </div>
             <div className="button-group">
-              <button onClick={handleShowReview} className="next-button" style={{ marginBottom: '10px' }}>
-                📋 Review Answers
+              <button onClick={handleShowReview} className="next-button">
+                Review Answers
               </button>
               <button onClick={handleRestart} className="restart-button">
                 {percentageNum >= 90 ? 'Challenge Yourself Again' : 'Try Again'}
@@ -416,10 +425,7 @@ function BenyonQuiz2() {
           <div className="section-badge">Section {currentQuestion.section}</div>
           <h3 className="question-text">{currentQuestion.question}</h3>
           
-          <div className="type-in-section">
-            <label htmlFor="answer-input" className="input-label">
-              Type the principle name:
-            </label>
+          <div className="input-answer-section">
             <input
               id="answer-input"
               type="text"
@@ -436,13 +442,13 @@ function BenyonQuiz2() {
                 }
               }}
               disabled={isAnswered}
-              placeholder="Enter your answer..."
-              className={`answer-input ${isAnswered ? (userAnswers[currentQuestionIndex]?.isCorrect ? 'correct-input' : 'wrong-input') : ''}`}
+              placeholder="Type the principle name..."
+              className={`law-name-input ${isAnswered ? (userAnswers[currentQuestionIndex]?.isCorrect ? 'correct-input' : 'wrong-input') : ''}`}
               autoFocus
             />
             <button 
               onClick={() => {
-                if (userInput.trim() === '' && !isAnswered) {
+                if (userInput.trim() === '') {
                   // Skip: mark as wrong and show explanation
                   const newAnswers = [...userAnswers]
                   newAnswers[currentQuestionIndex] = { 
@@ -464,7 +470,17 @@ function BenyonQuiz2() {
           {isAnswered && (
             <div className="explanation-box">
               <div className="explanation-header">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width="24" 
+                  height="24" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round"
+                >
                   <circle cx="12" cy="12" r="10"></circle>
                   <line x1="12" y1="16" x2="12" y2="12"></line>
                   <line x1="12" y1="8" x2="12.01" y2="8"></line>
