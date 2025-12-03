@@ -3,12 +3,12 @@
     "id": 1,
     "question": "Which of the following statements about designing for average users is INCORRECT?",
     "options": [
+      "Creating an average user persona is the best approach for inclusive design",
       "Average users rarely exist in real life as statistical entities",
       "Designing for the middle can exclude people at both extremes",
-      "Creating an average user persona is the best approach for inclusive design",
       "Real users vary widely in abilities, so designing for averages ignores important differences"
     ],
-    "answerIndex": 2,
+    "answerIndex": 0,
     "answer": "Creating an average user persona is the best approach for inclusive design",
     "explanation": "This is incorrect. The 'average user' is a statistical fiction—no single person has all average characteristics. Designing for the middle excludes people at both extremes. For example, an interface with average technical difficulty is too complex for novices and too simple for experts. Better approach: create multiple personas representing real diversity, not an average."
   },
@@ -17,11 +17,11 @@
     "question": "Which of the following statements about scenarios in UX design is INCORRECT?",
     "options": [
       "Scenarios are stories of people doing activities in specific contexts",
-      "Scenarios should be purely abstract without any narrative or concrete details",
       "Personas and scenarios co-evolve—imagining people leads to imagining their activities",
-      "Scenarios help embed people, activities and context into design thinking"
+      "Scenarios help embed people, activities and context into design thinking",
+      "Scenarios should be purely abstract without any narrative or concrete details"
     ],
-    "answerIndex": 1,
+    "answerIndex": 3,
     "answer": "Scenarios should be purely abstract without any narrative or concrete details",
     "explanation": "This is incorrect. Scenarios are specifically narrative stories with concrete details about people, activities, and contexts—not abstract descriptions. For example: 'Maria, a busy nurse, checks her schedule during her 15-minute break in a noisy hospital cafeteria on her phone with low battery.' This concrete scenario grounds design in real situations, unlike abstract requirements."
   },
@@ -30,11 +30,11 @@
     "question": "Which of the following statements about inclusive design is INCORRECT?",
     "options": [
       "Inclusive design is a pragmatic approach that acknowledges 100% inclusion may not always be possible",
-      "Inclusive design aims to minimize exclusion by considering diverse abilities from the start",
       "Inclusive design means creating separate specialized products for each disability type",
+      "Inclusive design aims to minimize exclusion by considering diverse abilities from the start",
       "Universal Design aims to support the widest range of abilities with principles like equitable use and flexibility"
     ],
-    "answerIndex": 2,
+    "answerIndex": 1,
     "answer": "Inclusive design means creating separate specialized products for each disability type",
     "explanation": "This is incorrect. Inclusive design aims to create products that work for diverse users without requiring separate specialized versions. The goal is building accessibility in from the start so one product serves many people. For example, automatic doors benefit wheelchair users, elderly people, parents with strollers, and shoppers with bags—one solution for many, not separate doors for each group."
   },
@@ -44,10 +44,10 @@
     "options": [
       "Conceptual design defines what core concepts exist and how they relate",
       "Physical design creates concrete layouts, interactions and prototypes",
-      "Physical design must always be completed before conceptual design begins",
-      "Conceptual design focuses on abstract structure before any visual design"
+      "Conceptual design focuses on abstract structure before any visual design",
+      "Physical design must always be completed before conceptual design begins"
     ],
-    "answerIndex": 2,
+    "answerIndex": 3,
     "answer": "Physical design must always be completed before conceptual design begins",
     "explanation": "This is incorrect. Conceptual design comes BEFORE physical design, not after. First, designers define the abstract structure (what are the core objects? how do they relate?), then create concrete representations. For example, email conceptual design defines messages, folders, and labels first—then physical design creates the actual layout and interface. The order is conceptual → physical, not the reverse."
   },
@@ -55,12 +55,12 @@
     "id": 5,
     "question": "Which of the following statements about exclusion types is INCORRECT?",
     "options": [
+      "Economic exclusion means users prefer free products over paid ones",
       "Physical exclusion occurs when hardware or layout prevents physical access",
       "Conceptual exclusion happens when users face cognitive difficulties understanding the system",
-      "Economic exclusion means users prefer free products over paid ones",
       "Cultural exclusion can occur when metaphors or references don't translate across cultures"
     ],
-    "answerIndex": 2,
+    "answerIndex": 0,
     "answer": "Economic exclusion means users prefer free products over paid ones",
     "explanation": "This is incorrect. Economic exclusion occurs when users cannot AFFORD necessary technology or services, not merely that they prefer free options. It's about genuine cost barriers preventing access—for example, requiring expensive smartphones for essential government services creates economic exclusion for low-income citizens. Preference is different from financial inability to access."
   },
@@ -70,10 +70,10 @@
     "options": [
       "Sketches are fast, disposable, and encourage creative exploration",
       "Storyboards show sequences of user actions over time in visual frames",
-      "Creating overly detailed representations early encourages experimentation and flexibility",
-      "Different representation forms reveal different insights about the design"
+      "Different representation forms reveal different insights about the design",
+      "Creating overly detailed representations early encourages experimentation and flexibility"
     ],
-    "answerIndex": 2,
+    "answerIndex": 3,
     "answer": "Creating overly detailed representations early encourages experimentation and flexibility",
     "explanation": "This is incorrect. Creating overly detailed representations early actually DISCOURAGES experimentation and limits flexibility. Over-detailed artifacts make ideas seem fixed and make the team reluctant to make changes. For example, a pixel-perfect mockup with custom icons early on makes people focus on tweaking colors instead of questioning whether the approach is right. Low-fidelity first preserves flexibility."
   },
@@ -82,11 +82,11 @@
     "question": "Which of the following statements about pleasure in design is INCORRECT?",
     "options": [
       "Patrick Jordan identifies four types of pleasure: physio, socio, psycho, and ideo-pleasure",
-      "Physio-pleasure comes from sensory experiences like touch and sound",
       "Socio-pleasure arises from technical specifications and system architecture",
+      "Physio-pleasure comes from sensory experiences like touch and sound",
       "Ideo-pleasure relates to alignment with personal values and beliefs"
     ],
-    "answerIndex": 2,
+    "answerIndex": 1,
     "answer": "Socio-pleasure arises from technical specifications and system architecture",
     "explanation": "This is incorrect. Socio-pleasure comes from social interaction, belonging, and communication—not technical specifications. For example, Instagram's stories feature provides socio-pleasure through sharing moments with friends and feeling part of a community. Technical architecture is irrelevant to socio-pleasure, which is entirely about human social connections."
   },
@@ -107,12 +107,12 @@
     "id": 9,
     "question": "Which of the following statements about evaluation is INCORRECT?",
     "options": [
+      "Expert evaluation always finds the same problems that real users would encounter",
       "Early evaluation checks ideas before heavy investment in development",
       "The three main evaluation types are expert-based, participant-based, and data analytics",
-      "Expert evaluation always finds the same problems that real users would encounter",
       "Analytics reveal what users do at scale but cannot explain motivations"
     ],
-    "answerIndex": 2,
+    "answerIndex": 0,
     "answer": "Expert evaluation always finds the same problems that real users would encounter",
     "explanation": "This is incorrect. Experts have different goals and mental models from real users and may miss issues of delight, frustration, or real-world context. For example, experts might approve a medical app's interface, but patient testing reveals that medical terminology scares non-experts and the tone feels cold—emotional and contextual issues experts didn't anticipate."
   },
@@ -122,10 +122,10 @@
     "options": [
       "Personality and motivation affect how willing and confident users are in using systems",
       "Anxious users need clear undo buttons and confirmations",
-      "All users have identical confidence levels and motivations regardless of context",
-      "Design implications differ for experimental users versus cautious users"
+      "Design implications differ for experimental users versus cautious users",
+      "All users have identical confidence levels and motivations regardless of context"
     ],
-    "answerIndex": 2,
+    "answerIndex": 3,
     "answer": "All users have identical confidence levels and motivations regardless of context",
     "explanation": "This is incorrect. Users have vastly different personalities and motivations affecting their interaction. Some are confident and exploratory while others are anxious and cautious. Some are persistent while others quickly abandon tasks. For example, banking apps must support both confident users who explore boldly and anxious users who need prominent undo buttons and clear confirmations."
   },
@@ -134,11 +134,11 @@
     "question": "Which of the following statements about heuristic evaluation is INCORRECT?",
     "options": [
       "Heuristics cover principles like visibility, consistency, feedback, and constraints",
-      "Heuristic evaluation reviews designs against established usability principles",
       "Heuristic evaluation requires at least 50 participants to be statistically valid",
+      "Heuristic evaluation reviews designs against established usability principles",
       "Experts can conduct heuristic evaluation without recruiting real users"
     ],
-    "answerIndex": 2,
+    "answerIndex": 1,
     "answer": "Heuristic evaluation requires at least 50 participants to be statistically valid",
     "explanation": "This is incorrect. Heuristic evaluation is an expert inspection method that doesn't use participants at all—trained specialists review the design against principles. Typically 3-5 evaluators are recommended, not 50 participants. The method is specifically valuable because it finds issues quickly without recruiting users, unlike participant-based usability testing which does involve real users."
   },
@@ -148,10 +148,10 @@
     "options": [
       "A/B testing shows two design versions to different user groups",
       "A/B testing uses analytics to compare which version performs better",
-      "A/B testing always explains why users prefer one version over another",
-      "A/B testing can optimize elements like button colors or call-to-action text"
+      "A/B testing can optimize elements like button colors or call-to-action text",
+      "A/B testing always explains why users prefer one version over another"
     ],
-    "answerIndex": 2,
+    "answerIndex": 3,
     "answer": "A/B testing always explains why users prefer one version over another",
     "explanation": "This is incorrect. A/B testing shows WHAT performs better (e.g., green button gets 12% more clicks than blue) but doesn't explain WHY users prefer it. Like other analytics methods, A/B testing reveals behavioral outcomes but not motivations or emotions. To understand why, teams must combine A/B testing with qualitative methods like user interviews."
   },
@@ -159,12 +159,12 @@
     "id": 13,
     "question": "Which of the following statements about abstraction in envisionment is INCORRECT?",
     "options": [
+      "Maximum detail at every stage creates the most effective design exploration",
       "Abstraction helps explore core ideas without getting trapped by detail",
       "Using boxes and lines lets designers debate structure without being distracted by specific content",
-      "Maximum detail at every stage creates the most effective design exploration",
       "Grayscale wireframes focus attention on layout while hiding color debates"
     ],
-    "answerIndex": 2,
+    "answerIndex": 0,
     "answer": "Maximum detail at every stage creates the most effective design exploration",
     "explanation": "This is incorrect. Maximum detail at every stage actually HINDERS effective exploration—it creates premature commitment and makes teams focus on superficial details instead of fundamental concepts. Appropriate abstraction at each stage is key: early stages need low detail to encourage flexibility, detail increases as concepts are validated. Too much detail too soon limits creativity."
   },
@@ -173,11 +173,11 @@
     "question": "Which of the following statements about social context is INCORRECT?",
     "options": [
       "Social context includes privacy expectations and who can see or hear interactions",
-      "Social context considers cultural norms and what behaviors are appropriate",
       "Social context only matters for social media applications, not other software types",
+      "Social context considers cultural norms and what behaviors are appropriate",
       "Power dynamics and hierarchy are part of social context in organizational settings"
     ],
-    "answerIndex": 2,
+    "answerIndex": 1,
     "answer": "Social context only matters for social media applications, not other software types",
     "explanation": "This is incorrect. Social context matters for ALL types of applications, not just social media. Any system used around other people must consider social factors. For example, using a phone during a quiet meeting means voice commands would be disruptive—design needs silent modes and gesture-based input. Medical apps must handle privacy when doctors use them with patients watching. Social context is universal."
   },
@@ -187,10 +187,10 @@
     "options": [
       "Participant-based evaluation observes real users performing tasks with the system",
       "Common metrics include task success rate, time on task, and errors",
-      "Any random person can represent all user types equally in usability testing",
-      "Recruiting representative participants ensures findings reflect actual target users"
+      "Recruiting representative participants ensures findings reflect actual target users",
+      "Any random person can represent all user types equally in usability testing"
     ],
-    "answerIndex": 2,
+    "answerIndex": 3,
     "answer": "Any random person can represent all user types equally in usability testing",
     "explanation": "This is incorrect. Not any random person can represent all users—recruiting representative participants who match the target audience is crucial. A tech-savvy 20-year-old developer doesn't represent a 70-year-old retiree using a health app. Testing with the wrong participants leads to misleading findings that don't reflect real users' experiences, needs, and challenges."
   }
