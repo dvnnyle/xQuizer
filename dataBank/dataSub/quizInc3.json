@@ -3,12 +3,12 @@
     "id": 1,
     "question": "Which of the following statements about the PACT framework is INCORRECT?",
     "options": [
+      "PACT is primarily used after development to evaluate completed products",
       "PACT stands for People, Activities, Contexts, Technologies",
       "The framework helps break down messy real-world situations into manageable parts",
-      "PACT is primarily used after development to evaluate completed products",
       "People in PACT considers physical, cognitive, experiential and social diversity"
     ],
-    "answerIndex": 2,
+    "answerIndex": 0,
     "answer": "PACT is primarily used after development to evaluate completed products",
     "explanation": "This is incorrect. PACT is used during the design process to analyze and understand design problems before development, not as a post-development evaluation tool. It helps designers structure their thinking about users, what they do, where they do it, and with what tools during the understanding and design phases."
   },
@@ -18,10 +18,10 @@
     "options": [
       "The model alternates between divergent and convergent thinking",
       "The four phases are Discover, Define, Develop, and Deliver",
-      "The Define phase is where designers explore the problem space broadly",
-      "Design is iterative and non-linear rather than following a fixed progression"
+      "Design is iterative and non-linear rather than following a fixed progression",
+      "The Define phase is where designers explore the problem space broadly"
     ],
-    "answerIndex": 2,
+    "answerIndex": 3,
     "answer": "The Define phase is where designers explore the problem space broadly",
     "explanation": "This is incorrect. The Discover phase is where designers explore the problem space broadly (divergent thinking). The Define phase is convergent—it's where designers narrow down to the core problem after broad exploration. The confusion here is between divergent exploration (Discover) and convergent refinement (Define)."
   },
@@ -30,11 +30,11 @@
     "question": "Which of the following statements about accessibility is INCORRECT?",
     "options": [
       "WCAG stands for Web Content Accessibility Guidelines with four principles: Perceivable, Operable, Understandable, Robust",
-      "The UK Equality Act and US Section 508 require accessible digital services",
       "Accessibility is best added as a final polish step after the product is complete",
+      "The UK Equality Act and US Section 508 require accessible digital services",
       "Physical exclusion can occur when ATMs are mounted too high for wheelchair users"
     ],
-    "answerIndex": 2,
+    "answerIndex": 1,
     "answer": "Accessibility is best added as a final polish step after the product is complete",
     "explanation": "This is incorrect. Treating accessibility as an afterthought is expensive and creates incomplete implementations. Retrofitting accessibility costs 5-10x more than building it in from the start and may require major redesigns. Best practice is to include accessibility requirements from the beginning of the design process."
   },
@@ -42,12 +42,12 @@
     "id": 4,
     "question": "Which of the following statements about personas is INCORRECT?",
     "options": [
+      "Personas should be based on the designer's intuition rather than actual user research",
       "Personas are fictional but research-based profiles representing different user types",
       "According to Alan Cooper, personas should include experience goals, end goals, and life goals",
-      "Personas should be based on the designer's intuition rather than actual user research",
       "Poorly made personas risk becoming stereotypes rather than useful design tools"
     ],
-    "answerIndex": 2,
+    "answerIndex": 0,
     "answer": "Personas should be based on the designer's intuition rather than actual user research",
     "explanation": "This is incorrect. Personas must be grounded in real user research, not designer intuition. The book warns that personas without research backing just mirror the designer or become clichés. Good personas summarize patterns from actual user interviews and observations, representing real user segments rather than imagined stereotypes."
   },
@@ -57,10 +57,10 @@
     "options": [
       "Efficiency means tasks can be completed with minimal effort and steps",
       "Effectiveness means the system provides the right functions for user goals",
-      "Learnability refers to how expensive the system is to maintain",
-      "Safety focuses on error minimization and recovery mechanisms"
+      "Safety focuses on error minimization and recovery mechanisms",
+      "Learnability refers to how expensive the system is to maintain"
     ],
-    "answerIndex": 2,
+    "answerIndex": 3,
     "answer": "Learnability refers to how expensive the system is to maintain",
     "explanation": "This is incorrect. Learnability refers to how quickly and easily users can become proficient with a system—it's about learning curves, not maintenance costs. Good learnability means the system uses consistency, familiarity, visibility, and clear feedback so users can learn to use it with minimal training."
   },
@@ -82,11 +82,11 @@
     "question": "Which of the following statements about flow theory and engagement is INCORRECT?",
     "options": [
       "Flow occurs when challenge matches skill level—not too easy, not too hard",
-      "Csikszentmihalyi's flow theory relates to deep involvement and enjoyment",
       "High engagement is best achieved by making tasks as difficult as possible",
+      "Csikszentmihalyi's flow theory relates to deep involvement and enjoyment",
       "Nathan Shedroff emphasizes engagement, authenticity and identity in experience design"
     ],
-    "answerIndex": 2,
+    "answerIndex": 1,
     "answer": "High engagement is best achieved by making tasks as difficult as possible",
     "explanation": "This is incorrect. Flow theory states that engagement happens when challenge matches skill level—tasks that are too difficult create anxiety, not flow. The balance is key: too easy causes boredom, too hard causes frustration. Optimal engagement occurs in the flow channel where tasks stretch abilities without overwhelming them."
   },
@@ -94,12 +94,12 @@
     "id": 8,
     "question": "Which of the following statements about requirements is INCORRECT?",
     "options": [
+      "Requirements should specify both what the system must do and exactly how to implement it",
       "Requirements should be written in clear, unambiguous language that can be tested",
       "Functional requirements describe what the system does, while non-functional describe qualities",
-      "Requirements should specify both what the system must do and exactly how to implement it",
       "Requirements gathering is less interactive than requirements elicitation"
     ],
-    "answerIndex": 2,
+    "answerIndex": 0,
     "answer": "Requirements should specify both what the system must do and exactly how to implement it",
     "explanation": "This is incorrect. Requirements should describe what and which qualities are needed, but NOT how to implement them. The 'how' belongs to later design decisions. For example, a requirement might state 'Users must securely log in' but shouldn't specify whether to use OAuth, passwords, or biometrics—that implementation choice comes during the design phase."
   },
@@ -109,10 +109,10 @@
     "options": [
       "Understanding involves gathering and analyzing requirements about people, activities, and contexts",
       "Conceptual design focuses on abstract structure of information, functions and concepts",
-      "Evaluation happens only once at the end of the design process after implementation",
-      "Envisionment uses representations like sketches and prototypes to explore ideas"
+      "Envisionment uses representations like sketches and prototypes to explore ideas",
+      "Evaluation happens only once at the end of the design process after implementation"
     ],
-    "answerIndex": 2,
+    "answerIndex": 3,
     "answer": "Evaluation happens only once at the end of the design process after implementation",
     "explanation": "This is incorrect. Evaluation sits at the center of human-centered design and happens continuously throughout the entire process, not just at the end. Early evaluation catches problems when they're cheap to fix. Teams evaluate requirements, concepts, prototypes, and implementations iteratively—each cycle of evaluation informs the next design iteration."
   },
@@ -121,11 +121,11 @@
     "question": "Which of the following statements about context in PACT is INCORRECT?",
     "options": [
       "Physical context includes factors like lighting, noise, movement, and space",
-      "Social context considers privacy, cultural norms, and the presence of others",
       "Organizational context only matters for enterprise software, not consumer apps",
+      "Social context considers privacy, cultural norms, and the presence of others",
       "Systems that work well in controlled labs often fail in real-world contexts"
     ],
-    "answerIndex": 2,
+    "answerIndex": 1,
     "answer": "Organizational context only matters for enterprise software, not consumer apps",
     "explanation": "This is incorrect. Organizational context matters for many types of applications, not just enterprise software. Consumer apps must also consider regulations (GDPR privacy laws), policies (parental controls, data handling), standards (accessibility requirements), and workflows (integration with existing services). For example, a consumer health app must follow HIPAA regulations."
   },
@@ -133,12 +133,12 @@
     "id": 11,
     "question": "Which of the following statements about prototyping is INCORRECT?",
     "options": [
+      "High-fidelity prototypes should always be created before low-fidelity ones",
       "Low-fidelity prototypes are quick, rough representations used for early exploration",
       "High-fidelity prototypes show realistic look, feel, and behavior with detail",
-      "High-fidelity prototypes should always be created before low-fidelity ones",
       "Prototypes can only evaluate what they actually represent and include"
     ],
-    "answerIndex": 2,
+    "answerIndex": 0,
     "answer": "High-fidelity prototypes should always be created before low-fidelity ones",
     "explanation": "This is incorrect. The typical progression is from low-fidelity to high-fidelity prototypes, not the reverse. Low-fi prototypes (sketches, paper mockups) are created first for rapid, cheap exploration of many ideas. Only after the concept is validated do teams invest time in high-fi prototypes with detailed styling and interactions. Starting with high-fi would be inefficient and expensive."
   },
@@ -148,10 +148,10 @@
     "options": [
       "Data analytics shows what users do at scale but not why they do it",
       "Expert evaluation involves trained specialists reviewing designs against heuristics",
-      "Participant-based evaluation uses real users but is too expensive to ever be worthwhile",
-      "A/B testing compares two design versions by showing them to different user groups"
+      "A/B testing compares two design versions by showing them to different user groups",
+      "Participant-based evaluation uses real users but is too expensive to ever be worthwhile"
     ],
-    "answerIndex": 2,
+    "answerIndex": 3,
     "answer": "Participant-based evaluation uses real users but is too expensive to ever be worthwhile",
     "explanation": "This is incorrect. While participant-based evaluation (usability testing) does have costs, it is absolutely worthwhile and essential for human-centered design. Testing with even 5-8 users can reveal critical usability problems that would cost far more to fix after launch. The benefits—finding issues users actually face—far outweigh the costs of recruiting and running sessions."
   },
@@ -160,11 +160,11 @@
     "question": "Which of the following statements about activities in PACT is INCORRECT?",
     "options": [
       "Activities vary in complexity, frequency, and time pressure",
-      "Creative activities are open-ended while structured activities follow rigid sequences",
       "All activities require the same interface design approach regardless of characteristics",
+      "Creative activities are open-ended while structured activities follow rigid sequences",
       "Time-sensitive activities like buying rush-hour train tickets need minimized steps and intelligent defaults"
     ],
-    "answerIndex": 2,
+    "answerIndex": 1,
     "answer": "All activities require the same interface design approach regardless of characteristics",
     "explanation": "This is incorrect. Different activity characteristics require different design approaches. Frequent activities need shortcuts while rare ones need clarity. Complex activities need structure and progress indicators while simple ones need minimal interface. Time-pressured activities need speed and defaults while leisurely ones can offer more choices. Design must adapt to activity characteristics."
   },
@@ -172,12 +172,12 @@
     "id": 14,
     "question": "Which of the following statements about Norman's gulfs is INCORRECT?",
     "options": [
+      "Wide gulfs indicate good usability and intuitive design",
       "The Gulf of Execution is the difficulty translating user goals into system actions",
       "The Gulf of Evaluation is the difficulty determining whether actions succeeded",
-      "Wide gulfs indicate good usability and intuitive design",
       "Making functions visible and using clear labels helps bridge the Gulf of Execution"
     ],
-    "answerIndex": 2,
+    "answerIndex": 0,
     "answer": "Wide gulfs indicate good usability and intuitive design",
     "explanation": "This is incorrect. Wide gulfs indicate POOR usability, not good usability. A wide Gulf of Execution means users struggle to figure out how to accomplish their goals. A wide Gulf of Evaluation means users can't tell what happened after their actions. Good design bridges these gulfs by making actions obvious and providing clear feedback—creating narrow gulfs, not wide ones."
   },
